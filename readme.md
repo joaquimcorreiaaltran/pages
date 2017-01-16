@@ -1,4 +1,4 @@
-# SGES_REPO
+# SICC_REPO
 
 Repositório de documentação de suporte ao utilizador SICC
 

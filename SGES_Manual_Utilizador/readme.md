@@ -1,6 +1,6 @@
-# Manual Utilizador SGES
+# Documentação SICC
 
-[Manual utilizador SGES](http://spms-sges.github.io/SGES_REPO/SGES_Manual_Utilizador/) para ver o resultado do repositório.
+[https://spmssicc.github.io/documents_pages/SGES_Manual_Utilizador](https://spmssicc.github.io/documents_pages/SGES_Manual_Utilizador) para ver o resultado do repositório.
 
 ## Directorias
 
@@ -9,7 +9,7 @@
  - *main.css* estilo principal
  - *style.css* estilo personalizado
 * **highslide** - imagens essenciais para zoom ([highslide webpage](http://highslide.com/))
-* **img** - imagens incluidas no manual 
+* **img** - imagens incluidas no manual
  - *pages* - imagens das páginas web da aplicação
 * **js** - bibliotecas e ficheiros de JavaScript
 * **index.html** - página inicial
@@ -22,6 +22,4 @@
 * Instalações
 
 ## A ter em atenção
-No directório superior encontra-se a pasta *_layouts* essencial para definição do output dos ficheiros de markdown.
-
-
+No diretório superior encontra-se a pasta *_layouts* essencial para definição do output dos ficheiros de Markdown.
