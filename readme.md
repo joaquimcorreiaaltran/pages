@@ -1,13 +1,10 @@
 # SGES_REPO
 
-Repositório para material do SGES (Sistema de Gestão de Entidades na Saúde). 
+RepositÃ³rio de documentaÃ§Ã£o de suporte ao utilizador SICC
 
 
 ## Directorias
 
-* **_layouts** - directoria com o layout html do conteúdo utilizado em Markdown
+* **_layouts** - diretoria com o layout HTML do conteÃºdo utilizado em Markdown
 
 ## Ajuda
-
-
-
