@@ -1,6 +1,4 @@
-![img_spms.png](Ficheiros_de_suporte/Logos/logotipo_SICC_262x140.png)
-
-# Utilizador
+# Menus da aplicação
 
 ``Os direitos de autor deste trabalho pertencem à SPMS e a informação nele contida é confidencial.``
 
