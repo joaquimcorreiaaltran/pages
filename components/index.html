@@ -20,15 +20,13 @@
 			// Add the controlbar
 			if (hs.addSlideshow) hs.addSlideshow({
 				//slideshowGroup: 'group1',
-				interval: 5000,
-				repeat: false,
+				interval: 5000,repeat: false,
 				useControls: true,
 				fixedControls: 'fit',
-				overlayOptions: {
-					opacity: .75,
-					position: 'bottom center',
-					hideOnMouseOut: true
-				}
+				overlayOptions: {	opacity: .75,
+													position: 'bottom center',
+													hideOnMouseOut: true
+												}
 			});
 		</script>
 </head>
@@ -37,7 +35,7 @@
 		<div id="content">
 	  <div id="header">
 			<p style='text-align: center'>
-				<a href="http://www.portugal.gov.pt/pt/ministerios/ms"><img src="img/pages/logos/republica_portuguesa_300x148.png" alt="Republica_Portuguesa_logo" style="border:0;"></a>
+				<a class="highslide" href="http://www.portugal.gov.pt/pt/ministerios/ms"><img src="img/pages/logos/republica_portuguesa_300x148.png" alt="Republica_Portuguesa_logo" style="border:0;" onclick="return hs.expand(this)"></a>
 				<a href="http://spms.min-saude.pt"><img src="img/pages/logos/SPMS2016B_300x148.png" alt="SPMS_logo" style="border:0;"></a>
 			</p>
 	 		<p style='text-align: center'>
