@@ -1,11 +1,9 @@
-# SICC_REPO
+###Repositório de documentação SICC
 
-Repositório de documentação SICC
-
-## Directorias
+### Diretorias
 
 * **_layouts** - diretoria com o layout HTML do conteúdo utilizado em Markdown
 
-## Ajuda
+### Ajuda
 
-- [Website](https://spmssicc.github.io/pages/components)
+#### [Documentação para utilizadores](https://spmssicc.github.io/documents_pages/documents)
