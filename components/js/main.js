@@ -59,7 +59,7 @@
 				$(
 					'<div id="titleBar">' +
 						'<a href="#sidebar" class="toggle"></a>' +
-						'<span class="title">SGES Manual Utilizador</span>' +
+						'<span class="title">SICC - Documentação</span>' +
 					'</div>'
 				)
 					.appendTo($body);
