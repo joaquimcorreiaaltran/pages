@@ -1,12 +1,4 @@
-![img_spms.png](Ficheiros_de_suporte/Logos/logotipo_SICC_262x140.png)
-
 # Chave Orçamental por Ano
-
-``Os direitos de autor deste trabalho pertencem à SPMS e a informação nele contida é confidencial.``
-
-``Este trabalho não pode ser reproduzido ou divulgado, na íntegra ou em parte, a terceiros nem utilizado para outros fins que não aqueles para que foi fornecido sem a autorização escrita prévia ou, se alguma parte do mesmo for fornecida por virtude de um contrato com terceiros, segundo autorização expressa de acordo com esse contrato. Todos os outros direitos e marcas são reconhecidos.``
-
-``As cópias impressas não assinadas representam versões não controladas.`` 
 ___
 
 # Índice

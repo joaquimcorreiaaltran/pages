@@ -1,5 +1,3 @@
-![img_spms.png](Ficheiros_de_suporte/Logos/logotipo_SICC_262x140.png)
-
 # Gestão de Exercícios
 
 ``Os direitos de autor deste trabalho pertencem à SPMS e a informação nele contida é confidencial.``
