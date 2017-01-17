@@ -1,6 +1,6 @@
 # Documentação SICC
 
-[https://spmssicc.github.io/documents_pages/SGES_Manual_Utilizador](https://spmssicc.github.io/documents_pages/SGES_Manual_Utilizador) para ver o resultado do repositório.
+website: [Documentos de apoio ao utilizador](https://spmssicc.github.io/documents_pages/documents)
 
 ## Directorias
 
