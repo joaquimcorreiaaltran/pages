@@ -29,7 +29,7 @@ $('tr').each(function(){
 });
  }
 
- /**preparar imagem para zoom*/
+ /**preparar imagem para zoom ou para não zoom (mostra ou não mostra a lupa)*/
  function zommClickImagem() {
 	 $('#paginas p>img:not([alt="logo"])').each(function(){
 		 var alt = $(this).attr("alt")

@@ -336,8 +336,8 @@ display: inline;
 width: auto;
 }
 
-
-#paginas p  img[alt=figLogin],#paginas p  img[alt=figLoginRecuperacao], #paginas p  img[alt=figAlteracaoSenha] {
+/**Quando as imagens são pequenas demais, colocar o alt de cada imagem**/
+#paginas p  img[alt=img_1],#paginas p  img[alt=figLoginRecuperacao], #paginas p  img[alt=figAlteracaoSenha] {
 width: auto;
 }
 
@@ -357,10 +357,10 @@ p.caption{
 
 
 /**tabela Campos obrigatorios*/
-.modulo table{	
-margin-top: 10px; 
+.modulo table{
+margin-top: 10px;
 margin-bottom: 10px;
-margin-left:auto; 
+margin-left:auto;
 margin-right:auto;
 border-bottom:solid #005082 1.0pt;
 width: 80%;}
@@ -393,12 +393,12 @@ border-top:    solid #005082 1.0pt;
     border-style:solid;
     border-width:6px;
     position:relative;
-    
+
     border-top:6px solid initial;
     border-bottom-width:0px;
     border-left-color:transparent;
     border-right-color: transparent;
-}  
+}
 
 #accordion li li .caret {
     margin-right:6px;
@@ -406,7 +406,7 @@ border-top:    solid #005082 1.0pt;
     display:inline-block;
     margin-top:auto;
     margin-bottom:4px;
-}  
+}
 
 #accordion .caret.active {
     margin-bottom:4px;
