@@ -28,19 +28,19 @@ $('tr').each(function(){
 	});
 });
  }
- 
+
  /**preparar imagem para zoom*/
  function zommClickImagem() {
 	 $('#paginas p>img:not([alt="logo"])').each(function(){
 		 var alt = $(this).attr("alt")
 		 if(alt != "figAlteracaoSenha" && alt != "figLogin" && alt !="figLoginRecuperacao")
-		 $(this).wrap("<a class='imagem' href='"+$(this).attr( "src" ) + "' onclick='return hs.expand(this)'></a>"); 
+		 $(this).wrap("<a class='imagem' href='"+$(this).attr( "src" ) + "' onclick='return hs.expand(this)'></a>");
 });
 }
 
 /**adicionar legendas com numeração automática*/
 function autoFigureNumber() {
-	
+
 var n="1";
 var textRef ="Fig."
 
@@ -56,7 +56,7 @@ $('.caption').each(function () {
 		$("img[alt='"+alt+"']").each(function () {
 			($(this)).attr("id",alt);
 		});
-    
+
 		$("[href='#" + alt + "']").each(function () {
 			$(this).text(textRef + n);
 		});
@@ -64,18 +64,3 @@ $('.caption').each(function () {
 	}
 });
 }
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-

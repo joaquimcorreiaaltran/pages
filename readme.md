@@ -8,4 +8,4 @@ Repositório de documentação SICC
 
 ## Ajuda
 
-- [Website](https://spmssicc.github.io/documents_pages/documents)
+- [Website](https://spmssicc.github.io/pages/components)
