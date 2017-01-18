@@ -96,7 +96,7 @@ O presente documento destina-se aos utilizadores da aplicação SICC e encontra-
 
 <a name="menu_parametrizacao"></a>
 
-# 2.	Menu Parametrização
+# Menu Parametrização
 
 Este menu permite efetuar a parametrização de informação necessária ao correto
 funcionamento da aplicação.
