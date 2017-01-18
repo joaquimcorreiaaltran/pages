@@ -472,9 +472,11 @@ com o formato CSV.
 | Sair| Sair do ecrã.|
 
 <a name="op_tabelas_genericas_instituicoes_bancarias"></a>
+
 #### Instituições Bancárias
 
 <a name="op_tabelas_genericas_instituicoes_bancarias_recolha"></a>
+
 #### Recolha
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com as Instituições
@@ -511,6 +513,7 @@ Bancárias.
 | Sair| Sair do ecrã.|
 
 <a name="op_tabelas_genericas_instituicoes_bancarias_listagens"></a>
+
 #### Listagens
 
 Este ecrã permite ao utilizador extrair uma listagem de instituições bancárias, para ficheiro de
@@ -532,6 +535,7 @@ texto com o formato CSV.
 | Sair| Sair do ecrã.|
 
 <a name="op_tabelas_genericas_responsaveis"></a>
+
 ### Responsáveis
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com os Responsáveis.
@@ -565,6 +569,7 @@ Este ecrã permite ao utilizador manipular as informações relacionadas com os 
 | Sair| Sair do ecrã.|
 
 <a name="op_tabelas_genericas_roc"></a>
+
 ### R.O.C. - Revisor Oficial de Contas
 
 Este ecrã permite ao utilizador manipular as informações relativas aos diferentes Revisores
@@ -601,6 +606,7 @@ Oficiais de Contas.
 | Sair| Sair do ecrã.|
 
 <a name="op_contabilidade"></a>
+
 ## Opção Contabilidade
 
 ![img_35](img/pages/menus/img_35.png)
@@ -610,9 +616,11 @@ como Planos de Contas, Contabilidade Pública, Tipos de Diário, Centros de Cust
 CRI/Departamentos e Associações LCPA.
 
 <a name="op_contabilidade_plano_contas"></a>
+
 ### Plano de Contas
 
 <a name="op_contabilidade_plano_contas_recolha"></a>
+
 #### Recolha
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com o Plano de Contas.
@@ -652,6 +660,7 @@ Este ecrã permite ao utilizador manipular as informações relacionadas com o P
 | Sair| Sair do ecrã.|
 
 <a name="op_contabilidade_plano_contas_listagens"></a>
+
 #### Listagens
 
 Este ecrã permite ao utilizador extrair uma listagem das diferentes entradas do Plano de Contas,
@@ -674,9 +683,11 @@ para ficheiro de texto com o formato CSV.
 | Sair| Sair do ecrã.|
 
 <a name="op_contabilidade_publica"></a>
+
 ### Contabilidade Pública
 
 <a name="op_contabilidade_publica_classificadores_economicos_recolha"></a>
+
 #### Classificadores Económicos (Recolha)
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com Classificadores
@@ -703,6 +714,7 @@ económicos da Contabilidade Pública.
 | Sair| Sair do ecrã.|
 
 <a name="op_contabilidade_publica_classificadores_economicos_listagens"></a>
+
 #### Classificadores Económicos (Listagens)
 
 Este ecrã permite ao utilizador extrair uma listagem das diferentes entradas do Plano de Contas
@@ -725,6 +737,7 @@ da Contabilidade Pública, para ficheiro de texto com o formato CSV.
 | Sair| Sair do ecrã.|
 
 <a name="op_gestao_fonte_financiamento"></a>
+
 ### Gestão Fonte de Financiamento
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Gestão das Fontes
@@ -746,6 +759,7 @@ de Financiamento.
 | Sair| Sair do ecrã.|
 
 <a name="op_gestao_programa"></a>
+
 ### Gestão Programa
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Gestão de
@@ -767,6 +781,7 @@ Programas.
 | Sair| Sair do ecrã.|
 
 <a name="op_gestao_medida"></a>
+
 ### Gestão Medida
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Gestão de
@@ -792,6 +807,7 @@ Medidas.
 | Sair| Sair do ecrã.|
 
 <a name="op_gestao_projeto"></a>
+
 ### Gestão Projeto
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Gestão de
@@ -813,6 +829,7 @@ Projectos.
 | Sair| Sair do ecrã.|
 
 <a name="op_gestao_regionalizacao"></a>
+
 ### Gestão Regionalização
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Gestão de
@@ -834,6 +851,7 @@ Regionalização.
 | Sair| Sair do ecrã.|
 
 <a name="op_gestao_atividade"></a>
+
 ### Gestão Atividade
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Gestão de
@@ -855,6 +873,7 @@ Atividade.
 | Sair| Sair do ecrã.|
 
 <a name="op_gestao_natureza"></a>
+
 ### Gestão Natureza
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Gestão de
@@ -877,6 +896,7 @@ Natureza.
 
 
 <a name="op_gestao_departamento"></a>
+
 ### Gestão Departamento
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Gestão de
@@ -898,9 +918,11 @@ Departamento.
 | Sair| Sair do ecrã.|
 
 <a name="op_tipos_diario"></a>
+
 ### Tipos de Diário
 
 <a name="op_tipos_diario_recolha"></a>
+
 #### Recolha
 Este ecrã permite ao utilizador manipular as informações relacionadas com Tipos de Diário.
 
@@ -926,6 +948,7 @@ Este ecrã permite ao utilizador manipular as informações relacionadas com Tip
 | Sair| Sair do ecrã.|
 
 <a name="op_tipos_diario_listagens"></a>
+
 #### Listagens
 
 Este ecrã permite ao utilizador extrair uma listagem dos diferentes Tipos de Diários, para ficheiro
@@ -948,9 +971,11 @@ de texto com o formato CSV.
 | Sair| Sair do ecrã.|
 
 <a name="op_centros_custos"></a>
+
 ### Centros de Custos
 
 <a name="op_centros_custos_recolha"></a>
+
 #### Recolha
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com centros de custos.
@@ -984,6 +1009,7 @@ Este ecrã permite ao utilizador manipular as informações relacionadas com cen
 | Sair| Sair do ecrã.|
 
 <a name="op_centros_custos_listagens"></a>
+
 #### Listagens
 
 Este ecrã permite ao utilizador extrair uma listagem dos diferentes centros de custos, para
@@ -1006,9 +1032,11 @@ ficheiro de texto com o formato CSV.
 | Sair| Sair do ecrã.|
 
 <a name="op_cri_departamentos"></a>
+
 ### CRI\Departamentos
 
 <a name="op_cri_departamentos_recolha"></a>
+
 #### Recolha
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com centro de
@@ -1039,6 +1067,7 @@ responsabilidade integrado.
 | Sair| Sair do ecrã.|
 
 <a name="op_cri_departamentos_listagens"></a>
+
 #### Listagens
 
 Este ecrã permite ao utilizador extrair uma listagem dos diferentes centros de responsabilidade
@@ -1061,6 +1090,7 @@ integrados, para ficheiro de texto com o formato CSV.
 | Sair| Sair do ecrã.|
 
 <a name="op_terceiros"></a>
+
 ## Terceiros
 
 ![img_59](img/pages/menus/img_59.png)
@@ -1069,9 +1099,11 @@ Este submenu permite o acesso à parametrização de informação de terceiros, 
 Gestão de Entidades, Tabelas de Projetos e Gestão de Entidades *Factoring*.
 
 <a name="op_gestao_entidades"></a>
+
 ### Gestão de Entidades
 
 <a name="op_gestao_entidades_recolha"></a>
+
 #### Recolha
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Gestão de
@@ -1154,6 +1186,7 @@ Entidades.
 | Sair| Sair do ecrã.|
 
 <a name="op_gestao_entidades_listagens"></a>
+
 #### Listagens
 
 Este ecrã permite ao utilizador extrair uma listagem das diferentes Entidades, para ficheiro de
@@ -1175,9 +1208,11 @@ texto com o formato CSV.
 | Sair| Sair do ecrã.|
 
 <a name="op_tabela_projetos"></a>
+
 ### Tabela de Projetos
 
 <a name="op_tabela_projetos_recolha"></a>
+
 #### Recolha
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Tabela de
@@ -1204,6 +1239,7 @@ Projectos.
 | Sair| Sair do ecrã.|
 
 <a name="op_tabela_projetos_listagens"></a>
+
 #### Listagens
 
 Este ecrã permite ao utilizador extrair uma listagem dos diferentes Projetos, para ficheiro de
@@ -1225,9 +1261,11 @@ texto com o formato CSV.
 | Sair| Sair do ecrã.|
 
 <a name="op_gestao_entidades_factoring"></a>
+
 ### Gestão de Entidades *Factoring*
 
 <a name="op_gestao_entidades_factoring_recolha"></a>
+
 #### Recolha
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Gestão de Entidades *Factoring*.
@@ -1262,6 +1300,7 @@ Este ecrã permite ao utilizador manipular as informações relacionadas com a G
 | Sair| Sair do ecrã.|
 
 <a name="op_gestao_entidades_factoring_listagens"></a>
+
 #### Listagens
 
 Este ecrã permite ao utilizador extrair uma listagem das diferentes Entidades *Factoring*, para
@@ -1283,6 +1322,7 @@ ficheiro de texto com o formato CSV.
 | Sair| Sair do ecrã.|
 
 <a name="op_fazer_logoff"></a>
+
 ## Fazer *Logoff*
 
 ![img_68](img/pages/menus/img_68.png)
@@ -1295,6 +1335,7 @@ diferente.
 ![img_69](img/pages/menus/img_69.png)
 
 <a name="op_sair"></a>
+
 ## Sair
 
 ![img_70](img/pages/menus/img_70.png)
@@ -1304,6 +1345,7 @@ escolher esta opção, o utilizador terá de arrancar novamente com a aplicaçã
 acesso (login) caso pretenda efetuar novas tarefas.
 
 <a name="menu_gestao_terceiros"></a>
+
 # 3. Menu Gestão de Terceiros
 
 Esta menu permite efetuar a todas as acções relacionadas com a Gestão de Terceiros.
@@ -1326,6 +1368,7 @@ Acedendo ao mesmo temos as seguintes opções disponíveis:
 | Procura de Documentos| Visualizar toda a informação respeitante a documentos, tais como a sua contabilidade geral, orçamental, analítica, POCMS, regularizações, encontros de contas, processos, contabilidade geral (inicial) e outras informações relevantes.| Todos|
 
 <a name="op_extrato_entidade"></a>
+
 ## Extrato por Entidade
 
 ![img_72](img/pages/menus/img_72.png)
@@ -1438,6 +1481,7 @@ Acedendo ao mesmo temos as seguintes opções disponíveis:
 | Total de Faturas| Valor total das faturas.|
 
 <a name="op_extrato_processo_aquisicao"></a>
+
 ##Extrato de Processo de Aquisição
 
 ![img_79](img/pages/menus/img_79.png)
@@ -1512,6 +1556,7 @@ Acedendo ao mesmo temos as seguintes opções disponíveis:
 | Ficheiro| Extrair a informação pretendida para um ficheiro de texto com o formato CSV. O utilizador deve indicar a localização onde o ficheiro será guardado através do seguinte botão:<br />![...](img/pages/menus/img_....png)|
 
 <a name="op_mapas_gestao"></a>
+
 ## Mapas de Gestão
 
 ![img_82](img/pages/menus/img_82.png)
@@ -1520,6 +1565,7 @@ Este submenu permite o acesso a Mapas de Gestão, tais como Documentos por Datas
 Documentos por Contas, Contas Correntes de Terceiros e Mapas para o IVA.
 
 <a name="op_mapas_gestao_documentos_datas"></a>
+
 ### Documentos por Datas
 
 Este ecrã permite ao utilizador aceder a mapas de gestão, utilizado uma pesquisa de
@@ -1556,6 +1602,7 @@ documentos por datas.
 
 
 <a name="op_mapas_gestao_documentos_contas"></a>
+
 ### Documentos por Contas
 
 Este ecrã permite ao utilizador aceder a mapas de gestão, utilizado uma pesquisa de
