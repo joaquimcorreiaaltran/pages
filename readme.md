@@ -6,4 +6,4 @@
 
 ### Ajuda
 
-#### [Documentação para utilizadores](https://spmssicc.github.io/documents_pages/documents)
+#### [Documentação para utilizadores](https://spmssicc.github.io/pages/components)
