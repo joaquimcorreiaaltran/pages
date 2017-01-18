@@ -88,11 +88,13 @@
 ---
 -->
 <a name="introducao"></a>
+
 # 1.	Introdução
 
 O presente documento destina-se aos utilizadores da aplicação SICC e encontra-se estruturado de acordo com os menus da aplicação.
 
 <a name="menu_parametrizacao"></a>
+
 # 2.	Menu Parametrização
 
 Este menu permite efetuar a parametrização de informação necessária ao correto
@@ -113,6 +115,7 @@ Acedendo ao mesmo temos as seguintes opções disponíveis:
 | Fazer *Logoff*| Terminar sessão de utilização.| Todos|
 
 <a name="op_instituicao"></a>
+
 ## Opção Instituição
 
 ![img_2](img/pages/menus/img_2.png)
@@ -121,6 +124,7 @@ Este submenu permite o acesso ao tratamento de informação relacionada com a in
 exercícios e configurações.
 
 <a name="op_instituicao_recolha"></a>
+
 ### Recolha
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com a instituição. Por .ex, o
@@ -164,6 +168,7 @@ instituição, nomeadamente:
 | Sair| Sair do ecrã.|
 
 <a name="op_instituicao_exercicio"></a>
+
 ### Exercícios
 
 Este ecrã permite ao utilizador introduzir novos períodos de exercício ou somente atualizar os
@@ -190,12 +195,14 @@ Os campos disponíveis para utilizador são os seguintes:
 | Sair| Sair do ecrã corrente.|
 
 <a name="op_instituicao_configuracoes"></a>
+
 ### Configurações
 
 Este ecrã permite ao utilizador atualizar as informações de sistema e do SICC, em diferentes
 tabulações.
 
 <a name="op_instituicao_configuracoes_sicc"></a>
+
 #### SICC
 
 ![img_8](img/pages/menus/img_8.png)
@@ -221,6 +228,7 @@ tabulações.
 | Sair| Sair do ecrã.|
 
 <a name="op_instituicao_configuraces_sistema"></a>
+
 #### Sistema
 
 ![img_16](img/pages/menus/img_16.png)
@@ -243,6 +251,7 @@ tabulações.
 | Sair| Sair do ecrã.|
 
 <a name="op_tabelas_genericas"></a>
+
 ## Tabelas Genéricas
 
 ![img_17](img/pages/menus/img_17.png)
@@ -252,9 +261,11 @@ Códigos Postais, bancos, Fatores de Aglutinação, Tipos de Entidades, institui
 Responsáveis e R.O.C.
 
 <a name="op_tabelas_genericas_codigos_postais"></a>
+
 ### Códigos Postais
 
 <a name="op_tabelas_genericas_codigos_postais_recolha"></a>
+
 #### Recolha
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com os Códigos Postais.
@@ -278,6 +289,7 @@ Este ecrã permite ao utilizador manipular as informações relacionadas com os 
 | Sair| Sair do ecrã.|
 
 <a name="op_tabelas_genericas_codigos_postais_listagens"></a>
+
 #### Listagens
 
 Este ecrã permite ao utilizador extrair listagem de Códigos Postais, para ficheiro de texto com
@@ -299,9 +311,11 @@ o formato CSV.
 | Sair| Sair do ecrã.|
 
 <a name="op_tabelas_genericas_bancos"></a>
+
 ### Bancos
 
 <a name="op_tabelas_genericas_bancos_recolha"></a>
+
 #### Recolha
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com os bancos.
@@ -335,6 +349,7 @@ Este ecrã permite ao utilizador manipular as informações relacionadas com os 
 | Sair| Sair do ecrã.|
 
 <a name="op_tabelas_genericas_bancos_listagens"></a>
+
 #### Listagens
 
 Este ecrã permite ao utilizador extrair uma listagem de instituições bancárias, para ficheiro de
@@ -357,9 +372,11 @@ texto com o formato CSV.
 | Sair| Sair do ecrã.|
 
 <a name="op_tabelas_genericas_fatores_aglutinacao"></a>
+
 ### Fatores de Aglutinação
 
 <a name="op_tabelas_genericas_fatores_aglutinacao_recolha"></a>
+
 #### Recolha
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com os Fatores de
@@ -383,6 +400,7 @@ Aglutinação.
 | Sair| Sair do ecrã.|
 
 <a name="op_tabelas_genericas_fatores_aglutinacao_listagens"></a>
+
 #### Listagens
 
 Este ecrã permite ao utilizador extrair listagem de Fator de Aglutinação, para ficheiro de texto
@@ -404,9 +422,11 @@ Primeiro Fator de Aglutinação| Código do primeiro fator de aglutinação a ex
 | Sair| Sair do ecrã.|
 
 <a name="op_tabelas_genericas_tipos_entidades"></a>
+
 ### Tipos de Entidades
 
 <a name="op_tabelas_genericas_tipos_entidades_recolha"></a>
+
 #### Recolha
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com os Tipos de
@@ -430,6 +450,7 @@ Entidades.
 | Sair| Sair do ecrã.|
 
 <a name="op_tabelas_genericas_tipos_entidades_listagens"></a>
+
 #### Listagens
 
 Este ecrã permite ao utilizador extrair listagem de Fator de Aglutinação, para ficheiro de texto
