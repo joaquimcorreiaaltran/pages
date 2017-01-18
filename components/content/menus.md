@@ -86,12 +86,13 @@
     2. [Documentos por Contas](#op_mapas_gestao_documentos_contas)
 
 ---
--->
+
 <a name="introducao"></a>
 
 # 1.	Introdução
 
 O presente documento destina-se aos utilizadores da aplicação SICC e encontra-se estruturado de acordo com os menus da aplicação.
+-->
 
 <a name="menu_parametrizacao"></a>
 
