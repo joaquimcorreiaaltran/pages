@@ -1483,7 +1483,7 @@ Acedendo ao mesmo temos as seguintes opções disponíveis:
 
 <a name="op_extrato_processo_aquisicao"></a>
 
-##Extrato de Processo de Aquisição
+## Extrato de Processo de Aquisição
 
 ![img_79](img/pages/menus/img_79.png)
 
