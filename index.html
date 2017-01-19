@@ -62,11 +62,13 @@
 		<div id="sidebar" style="position: fixed;overflow-y: scroll;height: 100%;">
 		    	<!-- Logo -->
 					<!-- <h1 id="logo"><a href="#">MENU</a></h1>-->
-		      <p style="font-size:40px;text-align:center;color=white;text-shadow: none;">Índice</p>
+		      <p style="font-size:40px;text-align:center;color=white;text-shadow: none;">Conteúdos</p>
 					<div id="indice" style="margin-bottom: 40px;color: rgb(46, 68, 83);text-shadow: none;"></div>
 
 					<nav id="nav">
 						<div id="accordion">
+							<ul>
+							<li>	<div id="Manual_Utilizador">Manual de Utilizador</div>
 							<ul>
 								<li>
 									<div id="Menus" onclick="loadDoc('menus')">Menus</div>
@@ -375,7 +377,9 @@
 									<li><div id="reposicao_pagamentos_cobrancas" onclick="loadDoc_reposicao_pagamentos_cobrancas()">Reposição de Pagamentos e Cobranças</div></li>
 
 
-								</ul><!--accordion-->
+									</ul><!--manual de utilizador-->
+								</li><!--manual de utilizador-->
+								</ul><!--documentos-->
 							</div><!--accordion-->
 						</nav>
 		</div> <!-- SideBar-->
@@ -392,20 +396,17 @@
 		<script>
 			/**Carrega o html dos modulos**/
 		function loadDoc_chave_orcamental_por_ano(){
+												document.getElementById("chave_orcamental_por_ano").innerHTML = $("#chave_orcamental_por_ano").load('https://spmssicc.github.io/pages/content/chave_orcamental_por_ano.html');
+												document.getElementById("documentos_af_e_ar").innerHTML = "";
+												document.getElementById("gestao_exercicios").innerHTML = "";
+												document.getElementById("importacao_csvs").innerHTML = "";
+												document.getElementById("macro_tarefas").innerHTML = "";
+												document.getElementById("menus").innerHTML = "";
+												document.getElementById("perguntas_frequentes").innerHTML = "";
+												document.getElementById("processos").innerHTML = "";
+												document.getElementById("reposicao_pagamentos_cobrancas").innerHTML = "";
+								}//loadDoc
 
-
-document.getElementById("chave_orcamental_por_ano").innerHTML = $("#chave_orcamental_por_ano").load('https://spmssicc.github.io/pages/content/chave_orcamental_por_ano.html');
-document.getElementById("documentos_af_e_ar").innerHTML = "";
-document.getElementById("gestao_exercicios").innerHTML = "";
-document.getElementById("importacao_csvs").innerHTML = "";
-document.getElementById("macro_tarefas").innerHTML = "";
-document.getElementById("menus").innerHTML = "";
-document.getElementById("perguntas_frequentes").innerHTML = "";
-document.getElementById("processos").innerHTML = "";
-document.getElementById("reposicao_pagamentos_cobrancas").innerHTML = "";
-
-
-	}//loadDoc
 		function loadDoc_documentos_af_e_ar(){$("#documentos_af_e_ar").load('https://spmssicc.github.io/pages/content/documentos_af_e_ar.html');}//loadDoc
 		function loadDoc_gestao_exercicios(){$("#gestao_exercicios").load('https://spmssicc.github.io/pages/content/gestao_exercicios.html');}//loadDoc
 		function loadDoc_importacao_csvs(){$("#importacao_csvs").load('https://spmssicc.github.io/pages/content/importacao_csvs.html');}//loadDoc
@@ -414,7 +415,6 @@ document.getElementById("reposicao_pagamentos_cobrancas").innerHTML = "";
 		function loadDoc_perguntas_frequentes(){$("#perguntas_frequentes").load('https://spmssicc.github.io/pages/content/perguntas_frequentes.html');}//loadDoc
 		function loadDoc_processos(){$("#processos").load('https://spmssicc.github.io/pages/content/processos.html');}//loadDoc
 		function loadDoc_reposicao_pagamentos_cobrancas(){$("#reposicao_pagamentos_cobrancas").load('https://spmssicc.github.io/pages/content/reposicao_pagamentos_cobrancas.html');}//loadDoc
-
 		</script>
 </body>
 	<script>
