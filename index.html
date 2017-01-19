@@ -392,7 +392,18 @@
 
 		<script>
 			/**Carrega o html dos modulos**/
-		function loadDoc_chave_orcamental_por_ano(){$("#chave_orcamental_por_ano").load('https://spmssicc.github.io/pages/content/chave_orcamentar_por_ano.html');}//loadDoc
+		function loadDoc_chave_orcamental_por_ano(){$("#chave_orcamental_por_ano").load('https://spmssicc.github.io/pages/content/chave_orcamentar_por_ano.html');
+
+document.getElementById("documentos_af_e_ar").style.visibility = "visible";
+document.getElementById("gestao_exercicios").style.visibility = "hidden";
+document.getElementById("importacao_csvs").style.visibility = "hidden";
+document.getElementById("macro_tarefas").style.visibility = "hidden";
+document.getElementById("menus").style.visibility = "hidden";
+document.getElementById("perguntas_frequentes").style.visibility = "hidden";
+document.getElementById("processos").style.visibility = "hidden";
+document.getElementById("reposicao_pagamentos_cobrancas").style.visibility = "hidden";
+
+	}//loadDoc
 		function loadDoc_documentos_af_e_ar(){$("#documentos_af_e_ar").load('https://spmssicc.github.io/pages/content/documentos_af_e_ar.html');}//loadDoc
 		function loadDoc_gestao_exercicios(){$("#gestao_exercicios").load('https://spmssicc.github.io/pages/content/gestao_exercicios.html');}//loadDoc
 		function loadDoc_importacao_csvs(){$("#importacao_csvs").load('https://spmssicc.github.io/pages/content/importacao_csvs.html');}//loadDoc
