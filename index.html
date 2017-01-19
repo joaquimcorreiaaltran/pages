@@ -369,21 +369,23 @@
 										</ul><!--Menus-->
 									</li><!--Menus-->
 
-									<li><div id="chave_orcamental_por_ano" onclick="loadDoc_chave_orcamental_por_ano()">Chave Orçamental por Ano</div><ul></ul></li>
+									<li><div id="chave_orcamental_por_ano" onclick="loadDoc_chave_orcamental_por_ano('chave_orcamental_por_ano')">Chave Orçamental por Ano</div><ul></ul></li>
 									<li><div id="documentos_af_e_ar" onclick="loadDoc_documentos_af_e_ar()">Documentos AF e AR</div><ul></ul></li>
 									<li><div id="gestao_exercicios" onclick="loadDoc_gestao_exercicios()">Gestão de Exercícios</div><ul></ul></li>
 									<li><div id="importacao_csvs" onclick="loadDoc_importacao_csvs()">Importação de CSVs</div><ul></ul></li>
 									<li><div id="macro_tarefas" onclick="loadDoc_macro_tarefas()">Macro Tarefas</div><ul></ul></li>
 									<li><div id="processos" onclick="loadDoc_processos()">Processos</div><ul></ul></li>
 									<li><div id="reposicao_pagamentos_cobrancas" onclick="loadDoc_reposicao_pagamentos_cobrancas()">Reposição de Pagamentos e Cobranças</div><ul></ul></li>
-	</ul><!--????-->
+
 									</ul><!--manual de utilizador-->
 								</li><!--manual de utilizador-->
+
 								<li><div id="perguntas_frequentes" onclick="loadDoc_perguntas_frequentes()">Perguntas Frequentes</div><ul></ul></li>
-								<li><div id="perguntas_frequentes" onclick="loadDoc_perguntas_frequentes()"><input type="button" value="Sugerir melhoria" href="https://github.com/SPMSSICC/pages/edit/master/content/documentos_af_e_ar.md"></div><ul></ul></li>
+
 								</ul><!--documentos-->
 							</div><!--accordion-->
 						</nav>
+						<input type="button" value="Sugerir melhoria" href="https://github.com/SPMSSICC/pages/edit/master/content/documentos_af_e_ar.md">
 		</div> <!-- SideBar-->
 
 		<!-- Scripts -->
@@ -397,8 +399,8 @@
 
 		<script>
 			/**Carrega o html dos modulos**/
-		function loadDoc_chave_orcamental_por_ano(){
-												document.getElementById("chave_orcamental_por_ano").innerHTML = $("#chave_orcamental_por_ano").load('https://spmssicc.github.io/pages/content/chave_orcamental_por_ano.html');
+		function loadDoc_chave_orcamental_por_ano(value){
+												document.getElementById(value).innerHTML = $("#"+value).load('https://spmssicc.github.io/pages/content/'+value+'.html');
 												document.getElementById("documentos_af_e_ar").innerHTML = "";
 												document.getElementById("gestao_exercicios").innerHTML = "";
 												document.getElementById("importacao_csvs").innerHTML = "";
