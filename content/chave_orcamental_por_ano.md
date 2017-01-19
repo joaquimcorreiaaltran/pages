@@ -1,4 +1,4 @@
-# Chave Orçamental por Ano
+# CHAVE ORÇCAMENTAL POR ANO
 ___
 
 # Índice
@@ -10,11 +10,13 @@ ___
 
 
 <a name="introducao"></a>
+
 # 1. Introdução
 
-Este manual surge no sentido de demonstrar ao utilizador as ligeiras alterações em alguns dos menus e submenus do SICC. Pretende-se assim, evidenciar a necessidade na definição da chave orçamental por ano. A estrutura do orçamento é determinada pelas chaves orçamentais que disponham de valores orçamentados, quer por via do orçamento aprovado, quer por via de reforços e como tal, só estas podem ser executadas, quer na despesa quer na receita. Para a criação do “dado mestre” da Chave orçamental, deve ser fornecida diversa informação, tal como o código, a denominação, a descrição, a data de validade, a fonte de financiamento, o programa, a medida, o projeto e/ou a atividade.
+Este capítulo surge no sentido de demonstrar ao utilizador as ligeiras alterações em alguns dos menus e submenus do SICC. Pretende-se assim, evidenciar a necessidade na definição da chave orçamental por ano. A estrutura do orçamento é determinada pelas chaves orçamentais que disponham de valores orçamentados, quer por via do orçamento aprovado, quer por via de reforços e como tal, só estas podem ser executadas, quer na despesa quer na receita. Para a criação do “dado mestre” da Chave orçamental, deve ser fornecida diversa informação, tal como o código, a denominação, a descrição, a data de validade, a fonte de financiamento, o programa, a medida, o projeto e/ou a atividade.
 
 <a name="parametrizacao-instituicao-configuracoes"></a>
+
 # 2.	Parametrização - Instituição - Configurações
 
 Menu:
@@ -34,6 +36,7 @@ Submenu (novo):
 ![img_3](img/pages/chave_orcamental_por_ano/img_3.png)
 
 <a name="parametrizacao-instituicao-exercicios"></a>
+
 # 3.	Parametrização - Instituição - Exercícios
 
 O próximo menu também sofreu ligeiras alterações, pelo que:
@@ -84,6 +87,7 @@ Outro exemplo de recolhas, podem ser as **Ligações de outras aplicações – 
 
 
 <a name="parametrizacao-contabilidade-contabilidade-publica"></a>
+
 # 4.	Parametrização - Contabilidade - Contabilidade Pública
 
 Posteriormente à criação das chaves orçamentais, o utilizador tem a possibilidade de efetuar qualquer alteração/modificação. Este cenário pode ocorrer por exemplo em situações de alteração da designação, ou fonte de financiamento. As respetivas alterações são sempre efetuadas no caminho abaixo demonstrado:
