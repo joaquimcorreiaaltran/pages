@@ -47,12 +47,14 @@
 		1. [Gestão de Produtos - Recolha](#gestão_produtos_recolha)
 
 <a name="introducao"></a>
+
 # 1. Introdução
 
 A necessidade do manual de processos, surgiu da necessidade de apresentação do novo sistema SICC.
 Desta forma, o presente manual visa especificar o funcionamento do novo sistema SICC de certa forma muito parecido com o anterior (SIDC), evidenciando no novo sistema, as novas funcionalidades e ajustes na ótica do utilizador, bem como permitir respeitar o conjunto de requisitos a cumprir na Contabilidade.
 
 <a name="menu_orcamental"></a>
+
 # 2. Menu Orçamental
 
 Neste menu, o utilizador poderá fazer o registo das dotações através do carregamento do Orçamento anual:
@@ -63,9 +65,11 @@ Este submenu permite o acesso às propostas orçamentais e respetivo registo do 
 
 
 <a name="orcamento_anual"></a>
+
 ## Orçamento Anual
 
 <a name="recolha_propostas_orcamentais"></a>
+
 ### Recolha de Propostas Orçamentais
 
 ![img_2.png](img/pages/processos/img_2.png)
@@ -132,6 +136,7 @@ Desta forma, o utilizador pode agora proceder à “Consulta” e verificar o re
 ![img_10.png](img/pages/processos/img_10.png)
 
 <a name="fundos_disponíveis_plca"></a>
+
 ### Fundos disponíveis(LPCA)
 
 Neste processo, e através do caminho abaixo indicado, será demonstrado o processo de registo dos Fundos disponíveis (LCPA).
@@ -228,6 +233,7 @@ Desta forma, o compromisso irá ser criado por uma importância de valor mais ba
 ![img_30.png](img/pages/processos/img_30.png)
 
 <a name="mapas_lpca"></a>
+
 ### Mapa(LPCA)
 
 #### Tabela 1 – Fundos Disponíveis
@@ -282,9 +288,11 @@ De igual modo à extração dos mapas anteriores, o utilizador nesta Tabela, usa
 |Diretório|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido. ![img_36.png](img/pages/processos/img_36.png)|Todos|
 
 <a name="mapas_legais"></a>
+
 ## Mapas Legais
 
 <a name="mapas_orcamento_despesa_receita"></a>
+
 ### Mapas 7.7.1 e 7.7.2 - Orçamento de Despesa/Receita
 
 Nos mapas 7.7.1 e mapas 7.7.2, os ecrãs são idênticos na construção dos relatórios. Desta forma, o seguinte menu e respetivos submenus, permitem ao utilizador fazer uma análise ao Orçamento da despesa.
@@ -294,6 +302,7 @@ Nos mapas 7.7.1 e mapas 7.7.2, os ecrãs são idênticos na construção dos rel
 Ao clicar, surge o ecrã abaixo e que permite proceder à escolha do tipo de informação que pretende analisar, podendo para o efeito fazer várias combinações possíveis.
 
 <a name="orcamento_despesa"></a>
+
 ### Orçamento de Despesa
 
 ![img_38.png](img/pages/processos/img_38.png)
@@ -319,6 +328,7 @@ O exemplo seguinte, demonstra um relatório de alteração orçamental gerada em
 ![img_46.png](img/pages/processos/img_46.png)
 
 <a name="mapas_execucao_orcamental"></a>
+
 ### Mapas de Execução Orçamental
 
 Relativamente a este processo, os mapas 7.1 (Mapa de Execução Orçamental da Despesa) e 7.2 (Mapa de Execução Orçamental da Receita), têm como finalidade permitir o controlo da execução orçamental da despesa e receita durante o exercício:
@@ -328,6 +338,7 @@ Relativamente a este processo, os mapas 7.1 (Mapa de Execução Orçamental da D
 Para tal, as opções no ecrã permite imprimir os formulários (gerando PDF), bem como, a extração para formato Excel, tendo o utilizador de definir o caminho para gravação do ficheiro.
 
 <a name="controlo_orcamental_despesa"></a>
+
 ### Controlo Orçamental - Despesa
 
 ![img_48.png](img/pages/processos/img_48.png)
@@ -353,6 +364,7 @@ O procedimento do mapa 7.2 é idêntico ao explicado anteriormente, sendo apenas
 |Irá ser incluída a chave orçamental neste mapa|
 
 <a name="mapas_alteracoes_orcamentais_despesa_receita"></a>
+
 ### Mapa 8.3.1.1 e 8.3.1.2 - Alterações Orçamentais Despesa/Receita
 
 Os Mapas 8.3.1.1 (Alterações orçamentais da Despesa) e 8.3.1.2 (Alterações orçamentais da Receita) têm por finalidade evidenciar as alterações orçamentais existentes durante o exercício depois da dotação e previsão iniciais:
@@ -388,12 +400,15 @@ O procedimento do mapa 8.3.1.2 é idêntico ao explicado anteriormente, sendo ap
 ![img_55.png](img/pages/processos/img_55.png)
 
 <a name="menu_recolhas"></a>
+
 # 3. Menu Recolhas
 
 <a name="ciclo_despesa"></a>
+
 ## Ciclo Despesa
 
 <a name="cabimento_cb"></a>
+
 ### Cabimento (CB)
 
 Esta opção permite, consultar ou criar um novo documento de Cabimento e com base em critérios selecionados pelo utilizador.
@@ -496,6 +511,7 @@ O formato na opção "Imprimir", é o seguinte:
 ![img_77.png](img/pages/processos/img_77.png)
 
 <a name="alteracoes_cabimentos_AM"></a>
+
 ### Alterações de Cabimentos (AM)
 
 Neste processo o que se pretende demonstrar é uma alteração a um CB já existente. Desta forma, iremos contemplar mais uma linha de item financeiro ao CB criado anteriormente.
@@ -544,6 +560,7 @@ Após validação dos elementos integrados e constatado que os valores estão co
 ![img_importacao_concluida_sucesso.png](img/pages/processos/img_importacao_concluida_sucesso.png)
 
 <a name="compromisso_cm"></a>
+
 ### Compromisso (CM)
 
 Entende-se por **Compromisso (CM)**, a verificação prévia de fundos disponíveis, as obrigações de efetuar pagamentos a terceiros em contrapartida do fornecimento de bens e serviços ou da satisfação de outras condições. Os compromissos consideram-se assumidos quando é executada uma ação formal pela entidade, como seja a emissão de ordem de compra, nota de encomenda ou documento equivalente, ou a assinatura de um contrato, acordo ou protocolo, podendo também ter um carácter permanente e estarem associados a pagamentos durante um período indeterminado de tempo, nomeadamente, salários, rendas, eletricidade ou pagamentos de prestações diversas.
@@ -614,6 +631,7 @@ O sistema deve apresentar a seguinte mensagem, sempre que ao “Número de Proce
 ![img_99.png](img/pages/processos/img_99.png)
 
 <a name="alteracao_compromisso_ab"></a>
+
 ### Alteração de Compromisso (AB)
 
 :warning:__Existe igualmente a possibilidade de proceder à alteração no Compromisso, pelo que o utilizador terá de ter em atenção que as alterações efetuadas também têm de estar alinhadas com o valor do Cabimento. O sistema deteta e envia mensagem de erro caso se verifique que o valor do compromisso seja superior ao cabimento ou mesmo quando não existe cabimento para determinado item financeiro produzido posteriormente no compromisso. O Processo em si é semelhante ao explicado anteriormente nas alterações dos cabimentos (AM).__
@@ -639,6 +657,7 @@ Após validação dos elementos integrados e constatado que os valores estão co
 ![img_105.png](img/pages/processos/img_105.png)
 
 <a name="lancamentos_cp"></a>
+
 ### Lançamentos (CP)
 
 Antes de realizar o registo de fatura FI, existe a necessidade de o utilizador verificar a disponibilidade do compromisso. Esta validação pode ser efetuada através utilizando para efeito o botão "Consulta", explicado em passos anteriores.
@@ -709,6 +728,7 @@ Após validação dos elementos integrados e constatado que os valores estão co
 ![img_importacao_concluida_sucesso.png](img/pages/processos/img_importacao_concluida_sucesso.png)
 
 <a name="alteracao_lancamentos_al"></a>
+
 ### Alteração de Lançamentos (AL)
 
 Neste processo o que se pretende demonstrar é uma alteração a um CP existente. O caminho que o utilizador deve seguir é:
@@ -737,6 +757,7 @@ Após validação dos elementos integrados e constatado que os valores estão co
 ![img_importacao_concluida_sucesso.png](img/pages/processos/img_importacao_concluida_sucesso.png)
 
 <a name="credores_execucao_orcamental_ce"></a>
+
 ### Credores p/ Execução Orçamental (CE)
 
 ![img_126.png](img/pages/processos/img_126.png)
@@ -760,6 +781,7 @@ Após a confirmação, o sistema regressa á página inicial e demostra que a CE
 ![img_130.png](img/pages/processos/img_130.png)
 
 <a name="autorizacao_pagamento_ap"></a>
+
 ### Autorização de Pagamento (AP)
 
 A autorização de pagamento das despesas, são autorizadas pelos dirigentes dos serviços ou outros que detenham autorização, mediante operações de tesouraria ou ainda através de transferência bancária, quando esta forma se revelar a mais conveniente.
@@ -788,6 +810,7 @@ Ao confirmar, uma nova janela surge com os movimentos contabilísticos associado
 ![img_135.png](img/pages/processos/img_135.png)
 
 <a name="impressao_autorizacoes_pagamento_ap"></a>
+
 #### Impressão de Autorizações de Pagamento (AP)
 
 Nesta etapa, é demonstrado o procedimento para fazer as impressões das AP’s (de forma **individual** ou **global**) geradas no passo anterior. Para isso, deve o utilizador seguir o seguinte caminho no sistema:
@@ -834,6 +857,7 @@ De forma **Global**, ao selecionar “imprimir”, o sistema produz a Autorizaç
 ![img_145.png](img/pages/processos/img_145.png)
 
 <a name="transferencias_bancarias"></a>
+
 ### Transferências Bancárias
 
 Nesta etapa, o utilizador vai criar os ficheiros para enviar aos respetivos órgãos com indicação das entidades e montantes associados. Deve assim seguir o seguinte caminho no sistema:
@@ -882,6 +906,7 @@ O ficheiro, após gerado, fica guardado na extensão definida pelo utilizador pa
 :warning:__No caso específico da ACSS e por se tratar de uma instituição com 2 departamentos distintos, deve o utilizador ver o ponto 4 deste manual.__
 
 <a name="importar_transferencias_bancarias"></a>
+
 #### Importar Transferências Bancárias
 
 O  sistema SICC, permite ao utilizador a importação de ficheiros TXT. e a conversão de ficheiros TXT. em XML.
@@ -905,6 +930,7 @@ Nesta etapa, um novo ecrã surge, em que o utilizador tem possibilidade de reali
 :warning:__Na importação de TXT. ou na Conversão para XML, o sistema ao carregar o ficheiro, vai determinar o ultimo "Número de sequência", sendo que o vai atribuir de forma automática e sequencial para cada um dos casos referidos.__
 
 <a name="pagamentos_pg"></a>
+
 ### Pagamentos (PG)
 
 De forma automática, uma conta de disponibilidades deve ser lançada a crédito por contrapartida da compensação da partida de autorização de pagamento com código de razão especial (252*).
@@ -962,9 +988,11 @@ Ao selecionar “imprimir”, o sistema produz o documento em PDF
 ![img_168.png](img/pages/processos/img_168.png)
 
 <a name="ciclo_receita"></a>
+
 ## Ciclo Receita
 
 <a name="faturas_devedores_fd"></a>
+
 ### Faturas Devedores (FD)
 
 Neste processo, o objetivo é o utilizador fazer as contabilizações de faturas de devedores. Desta forma, o caminho no sistema a seguir é:
@@ -989,6 +1017,7 @@ Neste ecrã, há necessidade do preenchimento dos campos obrigatórios, sendo qu
 :warning:__Igualmente ao efetuado no anterior, os botões: "Consulta", "Abater" e "Sair", apresentam as mesmas funcionalidades.__
 
 <a name="devedores_execucao_orcamental_de"></a>
+
 ### Devedores p/ execução orçamental (DE)
 
 A conta “25 – Devedores e Credores pela Execução do Orçamento”, regista os movimentos correspondentes a ”n” recebimentos, incluindo os referentes a adiantamentos, reembolsos e restituições.”, indicando que a leitura da execução orçamental da receita pode ser obtida através das contas “251 – Devedores pela Execução do Orçamento”.
@@ -1012,6 +1041,7 @@ No ecrã, surgem assim os movimentos contabilísticos associados de forma autom�
 ![img_176.png](img/pages/processos/img_176.png)
 
 <a name="guias_receita_gr"></a>
+
 ### Guias de Receita (GR)
 
 O Serviço Financeiro procede ao registo emitindo a Guia de Receita através de aplicação e que consiste na classificação económica e patrimonial das receitas. Posteriormente, os documentos são enviados para a Tesouraria para registo da cobrança.
@@ -1035,6 +1065,7 @@ Nova mensagem surgirá com a Guia de receita criada, sendo que este processo est
 ![img_181.png](img/pages/processos/img_181.png)
 
 <a name="impressao_guias_receita"></a>
+
 #### Impressão de Guias de Receita
 
 Neste passo, é demonstrado o procedimento para fazer as impressões das GR geradas no passo anterior. Para isso, deve o utilizador seguir o seguinte caminho no sistema:
@@ -1064,6 +1095,7 @@ Ao selecionar “imprimir”, o sistema produz a Guia de receita em PDF
 ![img_184.png](img/pages/processos/img_184.png)
 
 <a name="cobrancas_co_1"></a>
+
 ### Cobranças (CO)
 
 No processo de Cobrança, deve o utilizador lançar as várias contas de disponibilidades a débito por contrapartida de compensação da partida de liquidação da receita-cliente com código de razão especial (251*).
@@ -1079,6 +1111,7 @@ Os movimentos contabilísticos surgem de forma automática, pelo que o utilizado
 ![img_187.png](img/pages/processos/img_187.png)
 
 <a name="impressao_listagem_cobranca"></a>
+
 #### Impressão de Listagem de Cobrança
 
 De igual modo à impressão das GR, neste processo é demonstrado o procedimento para fazer as impressões das cobranças geradas no passo anterior. Para isso, deve o utilizador seguir o seguinte caminho no sistema:
@@ -1110,6 +1143,7 @@ Ao selecionar “imprimir”, o sistema produz a Listagem de Cobranças em PDF
 ![img_190.png](img/pages/processos/img_190.png)
 
 <a name="recolha_produtos"></a>
+
 #### Recolha de Produtos
 
 Neste processo, será abordada a questão das OR’s, referentes à faturação. Neste caso, terá o utilizador de ter em atenção que as contas 7 (a crédito), tem de ser lançadas por contrapartida de uma conta 2.
@@ -1148,6 +1182,7 @@ Ao pressionar o botão "Consulta", o utilizador pode verificar as contabilizaç�
 ![img_194.png](img/pages/processos/img_194.png)
 
 <a name="cobrancas_co_2"></a>
+
 ### Cobranças (CO)
 
 ![img_195.png](img/pages/processos/img_195.png)
@@ -1165,6 +1200,7 @@ Os movimentos contabilísticos surgem de forma automática, pelo que o utilizado
 ![img_198.png](img/pages/processos/img_198.png)
 
 <a name="impressao_documentos_or"></a>
+
 #### Impressão Documentos OR
 
 Neste passo, é demonstrado o procedimento para fazer as impressões das GR geradas no passo anterior. Para isso, deve o utilizador seguir o seguinte caminho no sistema:
@@ -1196,12 +1232,15 @@ Ao selecionar “imprimir”, o sistema produz a Guia de Receita em PDF
 :warning:__O utilizador pode verificar na impressão o novo campo de “Observações” criado no ponto 3.2.7. .__
 
 <a name="menu_parametrizacao"></a>
+
 # 4. Menu Parametrização
 
 <a name="tabelas_genericas"></a>
+
 ## Tabelas Genéricas
 
 <a name="instituicoes_bancarias_recolha"></a>
+
 ### Tabelas Genéricas
 
 Neste menu, o utilizador pode fazer as configurações referente às instituições bancárias através da seguinte ecrã.
@@ -1215,9 +1254,11 @@ O novo ecrã tem o aspeto abaixo mostrado:
 Neste ecrã, de acordo com o explicado no ponto 3.1.10 do manual, a ACSS apresenta 2 Departamentos, sendo que o utilizador neste campo define o Identificador do IGCP, o Num. de Sequência e o Departamento a que diz respeito. Todas as restantes informações já existiam, pelo que o procedimento de preenchimento continua a ser o mesmo utilizado até à data.
 
 <a name="terceiros"></a>
+
 ## Terceiros
 
 <a name="gestão_produtos_recolha"></a>
+
 ### Gestão de Produtos - Recolha
 
 Em aditamento ao manual da aplicação também já disponibilizado, no sistema SICC, surge agora um novo submenu:

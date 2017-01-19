@@ -1,4 +1,5 @@
 <a name="perguntas_frequentes"></a>
+
 ## 1. Perguntas frequentes
 
 1. [O que é o SICC?](#que_sicc)
@@ -8,6 +9,7 @@
 5. [Quais os requisitos mínimos de utilização?](#quais_requisitos_minimos)
 
 <a name="o_que_e_o_sicc"></a>
+
 #### O que é o SICC?
 
 O SICC - Sistema de Informação Centralizado de Contabilidade - é um sistema web centralizado de recolha e reporte de informação contabilística de entidades de saúde, acessível a partir da [RIS][ris], mediante autenticação individual.
@@ -15,11 +17,13 @@ O SICC - Sistema de Informação Centralizado de Contabilidade - é um sistema w
 [ris]: http://spms.min-saude.pt/product/ris-rede-informatica-da-saude/ "RIS"
 
 <a name="para_que_serve"></a>
+
 #### Para que serve?
 
 Registo na Contabilidade Orçamental, Patrimonial e Analítica, consagrando os princípios contabilísticos inerentes a estas três óticas contabilísticas e possibilitando a produção de mapas, definidos legalmente para a Direção-Geral do Orçamento, Tribunal de Contas, ACSS, IP, entre outros. Inclui, também, uma componente para conversão do relato contabilístico em POCMS para SNC.
 
 <a name="quais_principais_servicos_processos_suportados"></a>
+
 #### Quais os principais serviços e processos suportados?
 
 - Recolha de Movimentos;
@@ -34,6 +38,7 @@ Registo na Contabilidade Orçamental, Patrimonial e Analítica, consagrando os p
 - Gestão de perfis e utilizadores.
 
 <a name="quem_se_destina_sistema"></a>
+
 #### A quem se destina o sistema?
 
 Colaboradores das entidades de saúde clientes da aplicação SICC, cujas responsabilidades exijam registo e/ou leitura de informação contabilística da entidade associada.

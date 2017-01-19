@@ -10,6 +10,7 @@
 
 
 <a name="introducao"></a>
+
 # 1. Introdução
 
 A reposição de pagamentos e cobranças dividem-se em RAP/RNAP, no sistema SICC e surge sempre que é detetado um pagamento/cobrança indevido do organismo, a um fornecedor/ cliente e é finalizada quando efetivado o pagamento/ recebimento.
@@ -19,6 +20,7 @@ Sempre que seja detetado um pagamento / recebimento indevido, deverá proceder �
 - Reposição Não Abatida aos Pagamentos (RNAP) quando existe uma alteração a uma cobrança já efetuada e são consideradas contabilisticamente como CC;
 
 <a name="rap"></a>
+
 # 2. Reposição Abatida aos Pagamentos
 
 ![img_1.png](img/pages/reposicao_pagamentos_cobrancas/img_1.png)
@@ -105,6 +107,7 @@ Na mesma altura e no AP, ao gerar contabilidade, o sistema, associado ao número
 ![img_19](img/pages/reposicao_pagamentos_cobrancas/img_19.png)
 
 <a name="rnap"></a>
+
 # 3. Reposição Não Abatida nos Pagamentos
 
 ![img_20](img/pages/reposicao_pagamentos_cobrancas/img_20.png)
@@ -169,6 +172,7 @@ No valor de caixa (folha de caixa) estes valores serão positivos, dado que as c
 ![img_35](img/pages/reposicao_pagamentos_cobrancas/img_35.png)
 
 <a name="resumo"></a>
+
 # 4. Resumo
 
 As RAP e RNAP são reposições de pagamentos e cobranças respetivamente. São tratadas contabilisticamente de forma diferente das notas de crédito (NC e CC) antes do Pagamento e da Cobrança.
