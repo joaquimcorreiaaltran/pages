@@ -1,0 +1,78 @@
+<head>
+		<title>Documentação SICC</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/style.css">
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+		<script type="text/javascript">
+			hs.graphicsDir = '../highslide/graphics/';
+			hs.align = 'center';
+			hs.transitions = ['expand', 'crossfade'];
+			hs.outlineType = 'rounded-white';
+			hs.fadeInOut = true;
+			hs.numberPosition = 'caption';
+			hs.dimmingOpacity = 0.75;
+			hs.dimmingGeckoFix = true;
+			hs.blockRightClick = true
+
+			// Add the controlbar
+			if (hs.addSlideshow) hs.addSlideshow({
+				//slideshowGroup: 'group1',
+				interval: 5000,repeat: false,
+				useControls: true,
+				fixedControls: 'fit',
+				overlayOptions: {	opacity: .75,
+													position: 'bottom center',
+													hideOnMouseOut: true
+												}
+			});
+		</script>
+</head>
+<body>
+		<!-- Content -->
+		<div id="content">
+	  <div id="header">
+			<p style='text-align: center'>
+				<a href="http://www.portugal.gov.pt/pt/ministerios/ms"><img src="img/pages/logos/republica_portuguesa_300x148.png" alt="Republica_Portuguesa_logo" style="border:0;" ></a>
+				<a href="http://spms.min-saude.pt"><img src="img/pages/logos/SPMS2016B_300x148.png" alt="SPMS_logo" style="border:0;"></a>
+			</p>
+	 		<p style='text-align: center'>
+				<a href="http://spms.min-saude.pt/product/sicc"><img src="img/pages/logos/SICC_logo_300x148.png" alt="SICC_logo" style="border:0;"></a>
+			</p>
+		</div>
+		<div id="paginas">
+			<div id="menus" class="modulo"></div>
+		</div>
+
+		<!-- Sidebar -->
+		<div id="sidebar" style="position: fixed;overflow-y: scroll;height: 100%;">
+		    	<!-- Logo -->
+					<!-- <h1 id="logo"><a href="#">MENU</a></h1>-->
+		      <p style="font-size:40px;text-align:center;color=white;text-shadow: none;">Índice</p>
+					<div id="indice" style="margin-bottom: 40px;color: rgb(46, 68, 83);text-shadow: none;"></div>
+		</div>
+
+		<!-- Scripts -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.zoom.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/util.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/highslide-with-gallery.js"></script>
+
+		<script>
+			/**Carrega o html dos modulos**/
+			//$("#menus").load("https://spmssicc.github.io/pages/components/content/menus.html");
+			$("#indice").load("Indice.html");
+		</script>
+</body>
+	<script>
+	setTimeout(function(){
+	autoFigureNumber();
+	$('a[href*='+location.hash+']').click();},1000);</script>
+
+
+</html>
