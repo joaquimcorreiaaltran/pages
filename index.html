@@ -47,7 +47,15 @@
 			</p>
 		</div>
 		<div id="paginas">
+			<div id="chave_orcamental_por_ano" class="modulo"></div>
+			<div id="documentos_af_e_ar" class="modulo"></div>
+			<div id="gestao_exercicios" class="modulo"></div>
+			<div id="importacao_csvs" class="modulo"></div>
+			<div id="macro_tarefas" class="modulo"></div>
 			<div id="menus" class="modulo"></div>
+			<div id="perguntas_frequentes" class="modulo"></div>
+			<div id="processos" class="modulo"></div>
+			<div id="reposicao_pagamentos_cobrancas" class="modulo"></div>
 		</div>
 
 		<!-- Sidebar -->
@@ -61,7 +69,7 @@
 						<div id="accordion">
 							<ul>
 								<li>
-									<div id="Menus" onclick='loadDoc()'>Menus</div>
+									<div id="Menus" onclick="loadDoc('menus')">Menus</div>
 										<ul>
 											<li>
 												<div>Parametrização</div>
@@ -357,7 +365,16 @@
 										</ul><!--Menus-->
 									</li><!--Menus-->
 									<li>
-										<div>Sobre</div>
+										<div id="chave_orcamental_por_ano" onclick="loadDoc_chave_orcamental_por_ano()">Chave Orçamental por Ano</div>
+										<div id="documentos_af_e_ar" onclick="loadDoc_documentos_af_e_ar()">Documentos AF e AR</div>
+										<div id="gestao_exercicios" onclick="loadDoc_gestao_exercicios()">Gestão de Exercícios</div>
+										<div id="importacao_csvs" onclick="loadDoc_importacao_csvs()">Importação de CSVs</div>
+										<div id="macro_tarefas" onclick="loadDoc_macro_tarefas()">Macro Tarefas</div>
+										<div id="menus" onclick="loadDoc_menus()">Menus</div>
+										<div id="perguntas_frequentes" onclick="loadDoc_perguntas_frequentes()">Perguntas Frequentes</div>
+										<div id="processos" onclick="loadDoc_processos()">Processos</div>
+										<div id="reposicao_pagamentos_cobrancas" onclick="loadDoc_reposicao_pagamentos_cobrancas()">Reposição de Pagamentos e Cobranças</div>
+									</li>
 									</li>
 								</ul><!--accordion-->
 							</div><!--accordion-->
@@ -375,9 +392,15 @@
 
 		<script>
 			/**Carrega o html dos modulos**/
-		function loadDoc(){
-				$("#menus").load("https://spmssicc.github.io/pages/content/menus.html");
-			}//loadDoc
+		function loadDoc_chave_orcamental_por_ano(){$("#chave_orcamental_por_ano").load('https://spmssicc.github.io/pages/content/chave_orcamentar_por_ano.html');}//loadDoc
+		function loadDoc_documentos_af_e_ar(){$("#documentos_af_e_ar").load('https://spmssicc.github.io/pages/content/documentos_af_e_ar.html');}//loadDoc
+		function loadDoc_gestao_exercicios(){$("#gestao_exercicios").load('https://spmssicc.github.io/pages/content/gestao_exercicios.html');}//loadDoc
+		function loadDoc_importacao_csvs(){$("#importacao_csvs").load('https://spmssicc.github.io/pages/content/importacao_csvs.html');}//loadDoc
+		function loadDoc_macro_tarefas(){$("#macro_tarefas").load('https://spmssicc.github.io/pages/content/macro_tarefas.html');}//loadDoc
+		function loadDoc_menus(){$("#menus").load('https://spmssicc.github.io/pages/content/menus.html');}//loadDoc
+		function loadDoc_perguntas_frequentes(){$("#perguntas_frequentes").load('https://spmssicc.github.io/pages/content/perguntas_frequentes.html');}//loadDoc
+		function loadDoc_processos(){$("#processos").load('https://spmssicc.github.io/pages/content/processos.html');}//loadDoc
+		function loadDoc_reposicao_pagamentos_cobrancas(){$("#reposicao_pagamentos_cobrancas").load('https://spmssicc.github.io/pages/content/reposicao_pagamentos_cobrancas.html');}//loadDoc
 
 		</script>
 </body>
