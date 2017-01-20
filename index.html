@@ -44,9 +44,9 @@
 
 			/**Carrega o html do documento markdown e atualiza o botão "btnMelhorarDoc"**/
 			function loadDoc(value){
-			document.getElementById("documento").innerHTML = $("#documento").load('https://spmssicc.github.io/pages/content/'+value+'.html');
-			document.getElementById("formMelhorarDoc").setAttribute("action", "https://github.com/SPMSSICC/pages/edit/master/content/"+value+".md");
-			document.getElementById("btnMelhorarDoc").style.visibility = "visible";
+				document.getElementById("documento").innerHTML = $("#documento").load('https://spmssicc.github.io/pages/content/'+value+'.html');
+				document.getElementById("formMelhorarDoc").setAttribute("action", "https://github.com/SPMSSICC/pages/edit/master/content/"+value+".md");
+				document.getElementById("btnMelhorarDoc").style.visibility = "visible";
 			}//loadDoc
 
 		</script>
@@ -397,7 +397,8 @@
 								</ul><!---->
 							</div><!--accordion-->
 						</nav>
-						<form id="formMelhorarDoc" action="http://google.com">
+						<!--botão e form atualizado pela função loadDoc()-->
+						<form id="formMelhorarDoc" action="" >
 						    <input type="submit" value="Melhorar este Documento" id="btnMelhorarDoc" style="visibility:hidden" target="_blank" />
 						</form>
 		</div> <!-- SideBar-->
