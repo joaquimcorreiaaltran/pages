@@ -70,14 +70,23 @@
 
 			<!--TESTE-->
 			<script>
-				var markdown; $.load('https://spmssicc.github.io/pages/content/menus.html');
 
-			alert(markdown);
-				
-				this.makeHtml = function (markdown) {
-									return converter.makeHtml(markdown);
-									};
-				alert('olá');
+				var request_file = new XMLHttpRequest();
+
+				request_file.open('GET', 'https://spmssicc.github.io/pages/content/menus.md');
+
+				request_file.onreadystatechange = function() {
+
+																var converter = new showdown.Converter()
+																,text = request_file.responseText
+																,html = converter.makeHtml(text);
+																
+																document.getElementById("documento").innerHTML = html;
+															}
+				request_file.send();
+
+
+
 			</script>
 		</div>
 
