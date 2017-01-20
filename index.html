@@ -41,6 +41,14 @@
 													hideOnMouseOut: true
 												}
 			});
+
+			/**Carrega o html do documento markdown e atualiza o botão "btnMelhorarDoc"**/
+			function loadDoc(value){
+			document.getElementById("documento").innerHTML = $("#documento").load('https://spmssicc.github.io/pages/content/'+value+'.html');
+			document.getElementById("btnMelhorarDoc").setAttribute("href", "https://github.com/SPMSSICC/pages/edit/master/content/"+value+".md");
+			document.getElementById("btnMelhorarDoc").style.visibility = "visible";
+			}//loadDoc
+
 		</script>
 </head>
 <body>
@@ -392,18 +400,6 @@
 						<input type="button" id="btnMelhorarDoc" value="Melhorar este Documento" style="visibility:hidden" href="">
 		</div> <!-- SideBar-->
 
-
-
-		<script>
-			/**Carrega o html do documento markdown e atualiza o url do botão "btnMelhorarDoc"**/
-		function loadDoc(value){
-		document.getElementById("documento").innerHTML = $("#documento").load('https://spmssicc.github.io/pages/content/'+value+'.html');
-		document.getElementById("btnMelhorarDoc").setAttribute("href", "https://spmssicc.github.io/pages/content/"+value+".md");
-		document.getElementById("btnMelhorarDoc").style.visibility = "visible";
-		}//loadDoc
-
-
-		</script>
 </body>
 
 	<!--
