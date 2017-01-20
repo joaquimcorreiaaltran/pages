@@ -42,7 +42,19 @@
 													hideOnMouseOut: true
 												}
 			});
+			</script>
 
+
+			<script type="text/javascript">
+			/*showdown.setOption('tables', 'true');*/
+			/*showdown.setOption('strikethrough', 'true');*/
+
+			showdown.setFlavor('github');
+
+			</script>
+
+
+			<script type="text/javascript">
 			/**Carrega o html do documento markdown e atualiza o botão "btnMelhorarDoc"**/
 			function loadDoc(value){
 				document.getElementById("documento").innerHTML = $("#documento").load('https://spmssicc.github.io/pages/content/'+value+'.html');
