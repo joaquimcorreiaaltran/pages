@@ -18,7 +18,7 @@
 		<script src="js/main.js"></script>
 		<script src="js/highslide-with-gallery.js"></script>
 		<script> amenu.close(false); </script>
-		<script type="text/javascript" src="https://rawgit.com/showdownjs/showdown/master/dist/showdown.min.js"></script>
+		<script src="js/libs/showdown.js"></script>
 
 		<script type="text/javascript">
 			hs.graphicsDir = 'highslide/graphics/';
@@ -80,7 +80,7 @@
 																var converter = new showdown.Converter()
 																,text = request_file.responseText
 																,html = converter.makeHtml(text);
-																
+
 																document.getElementById("documento").innerHTML = html;
 															}
 				request_file.send();
