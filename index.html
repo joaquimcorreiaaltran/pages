@@ -44,12 +44,10 @@
 			});
 			</script>
 
-
 			<script type="text/javascript">
-				/*Para o Showdown interpretar o Markdown como no GitHub*/
+				/* Para o Showdown interpretar o Markdown como no GitHub */
 				showdown.setFlavor('github');
 			</script>
-
 
 			<script type="text/javascript">
 			/**Carrega o html do documento markdown e atualiza o botão "btnMelhorarDoc"**/
@@ -77,25 +75,17 @@
 			<div id="documento" class="modulo"></div>
 
 
-			<!--TESTE-->
+			<!--Pede doc. Markdown ao servidor(GitHub) e transforma em HTML-->
 			<script>
-
 				var request_file = new XMLHttpRequest();
-
 				request_file.open('GET', 'https://spmssicc.github.io/pages/content/menus.md');
-
 				request_file.onreadystatechange = function() {
-
 																var converter = new showdown.Converter()
 																,text = request_file.responseText
 																,html = converter.makeHtml(text);
-
 																document.getElementById("documento").innerHTML = html;
 															}
 				request_file.send();
-
-
-
 			</script>
 		</div>
 
