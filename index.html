@@ -18,6 +18,7 @@
 		<script src="js/main.js"></script>
 		<script src="js/highslide-with-gallery.js"></script>
 		<script> amenu.close(false); </script>
+		<script type="text/javascript" src="https://rawgit.com/showdownjs/showdown/master/dist/showdown.min.js"></script>
 
 		<script type="text/javascript">
 			hs.graphicsDir = 'highslide/graphics/';
@@ -48,6 +49,7 @@
 				document.getElementById("formMelhorarDoc").setAttribute("action", "https://github.com/SPMSSICC/pages/edit/master/content/"+value+".md");
 				document.getElementById("formMelhorarDoc").setAttribute("target", "_blank");
 				document.getElementById("btnMelhorarDoc").style.visibility = "visible";
+
 			}//loadDoc
 
 		</script>
@@ -64,6 +66,19 @@
 		</div>
 		<div id="paginas">
 			<div id="documento" class="modulo"></div>
+
+
+			<!--TESTE-->
+			<script>
+				var markdown; $.load('https://spmssicc.github.io/pages/content/menus.html');
+
+			alert(markdown);
+				
+				this.makeHtml = function (markdown) {
+									return converter.makeHtml(markdown);
+									};
+				alert('olá');
+			</script>
 		</div>
 
 		<!-- Sidebar -->
