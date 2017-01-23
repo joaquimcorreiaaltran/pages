@@ -44,7 +44,7 @@
 			});
 
 			//load HTML from the Markdown file and show it in the "#documento" object
-			function loadHtmlFromMarkdown (){
+			function loadHtmlFromMarkdown(docName){
 				var request_file = new XMLHttpRequest();
 				request_file.open('GET', 'content/markdown/'+docName+'.md');
 				request_file.onreadystatechange = function () {
@@ -55,8 +55,6 @@
 															}
 				request_file.send();
 			}
-
-
 
 			</script>
 
@@ -89,28 +87,11 @@
 		</div>
 
 		<div id="paginas">
+			<!--Elemento para mostrar documentos Markdown-->
 			<div id="documento" class="modulo"></div>
-			<!--Pede doc. Markdown ao servidor(GitHub), converte Markdown em HTML e mostra na página-->
+
 			<script>
-
-
-			var docName = "menus";
-
-			function loadHtmlFromMarkdown (){
-				var request_file = new XMLHttpRequest();
-				request_file.open('GET', 'content/markdown/'+docName+'.md');
-				request_file.onreadystatechange = function () {
-																var converter = new showdown.Converter()
-																,text = request_file.responseText
-																,htmlDoc = converter.makeHtml(text);
-																document.getElementById("documento").innerHTML = htmlDoc;
-															}
-				request_file.send();
-			}
-
-			loadHtmlFromMarkdown();
-
-
+				loadHtmlFromMarkdown("menus");
 			</script>
 		</div>
 
