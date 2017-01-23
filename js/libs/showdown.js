@@ -49,22 +49,22 @@ function getDefaultOpts(simple) {
       type: 'boolean'
     },
     literalMidWordUnderscores: {
-      defaultValue: false,
+      defaultValue: true,
       describe: 'Parse midword underscores as literal underscores',
       type: 'boolean'
     },
     strikethrough: {
-      defaultValue: false,
+      defaultValue: true,
       describe: 'Turn on/off strikethrough support',
       type: 'boolean'
     },
     tables: {
-      defaultValue: false,
+      defaultValue: true,
       describe: 'Turn on/off tables support',
       type: 'boolean'
     },
     tablesHeaderId: {
-      defaultValue: false,
+      defaultValue: true,
       describe: 'Add an id to table headers',
       type: 'boolean'
     },
@@ -74,42 +74,42 @@ function getDefaultOpts(simple) {
       type: 'boolean'
     },
     tasklists: {
-      defaultValue: false,
+      defaultValue: true,
       describe: 'Turn on/off GFM tasklist support',
       type: 'boolean'
     },
     smoothLivePreview: {
-      defaultValue: false,
+      defaultValue: true,
       describe: 'Prevents weird effects in live previews due to incomplete input',
       type: 'boolean'
     },
     smartIndentationFix: {
-      defaultValue: false,
+      defaultValue: true,
       description: 'Tries to smartly fix indentation in es6 strings',
       type: 'boolean'
     },
     disableForced4SpacesIndentedSublists: {
-      defaultValue: false,
+      defaultValue: true,
       description: 'Disables the requirement of indenting nested sublists by 4 spaces',
       type: 'boolean'
     },
     simpleLineBreaks: {
-      defaultValue: false,
+      defaultValue: true,
       description: 'Parses simple line breaks as <br> (GFM Style)',
       type: 'boolean'
     },
     requireSpaceBeforeHeadingText: {
-      defaultValue: false,
+      defaultValue: true,
       description: 'Makes adding a space between `#` and the header text mandatory (GFM Style)',
       type: 'boolean'
     },
     ghMentions: {
-      defaultValue: false,
+      defaultValue: true,
       description: 'Enables github @mentions',
       type: 'boolean'
     }
   };
-  if (simple === false) {
+  if (simple === true) {
     return JSON.parse(JSON.stringify(defaultOptions));
   }
   var ret = {};
