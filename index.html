@@ -40,13 +40,13 @@
 		<script type="text/javascript">
 		//load HTML from the Markdown file and show it in the "#documento" object
 		function loadHtmlFromMarkdown(docName){
-			var request_file = new XMLHttpRequest();
+			var request = new XMLHttpRequest();
 			//Asynchronous request (true=asynchronous)
-			request_file.open('GET', 'content/markdown/'+docName+'.md',true);
-			request_file.onreadystatechange = function () {
-															if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+			request.open('GET', 'content/markdown/'+docName+'.md',true);
+			request.onreadystatechange = function () {
+															if(request.readyState == XMLHttpRequest.DONE && request.status === 200) {
 																var converter = new showdown.Converter() //instancia
-																,text = request_file.responseText //guarda o documento em string
+																,text = request.responseText //guarda o documento em string
 																,htmlDoc = converter.makeHtml(text); //converte a string em HTML
 																document.getElementById("documento").innerHTML = htmlDoc;//coloca o html no elemento #documento
 																zommClickImagem();//adiciona a função zoom às imagens do documento
@@ -54,7 +54,7 @@
 																setAttribute("btnMelhorarDoc","style","visibility:visible");
 															}/*if*/
 														}/*function*/
-			request_file.send();
+			request.send();
 		}
 		</script>
 		<script type="text/javascript">
@@ -64,7 +64,6 @@
 		  		 var alt = $(this).attr("alt")
 		  		 //if(alt != "figAlteracaoSenha" && alt != "figLogin" && alt !="figLoginRecuperacao")
 		  		 $(this).wrap("<a class='imagem' href='"+$(this).attr( "src" ) + "' onclick='return hs.expand(this)'></a>");
-				 alert('zommClickImagem()!');
 	  });
 	  }
 		</script>
