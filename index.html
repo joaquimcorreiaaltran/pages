@@ -63,17 +63,6 @@
 				showdown.setFlavor('github');
 			</script>
 
-			<script type="text/javascript">
-			/**Carrega o html do documento markdown e atualiza o botão "btnMelhorarDoc"**/
-			function loadDoc(value){
-				document.getElementById("documento").innerHTML = $("#documento").load('https://spmssicc.github.io/pages/content/'+value+'.html');
-				document.getElementById("formMelhorarDoc").setAttribute("action", "https://github.com/SPMSSICC/pages/edit/master/content/"+value+".md");
-				document.getElementById("formMelhorarDoc").setAttribute("target", "_blank");
-				document.getElementById("btnMelhorarDoc").style.visibility = "visible";
-
-			}//loadDoc
-
-		</script>
 </head>
 <body>
 		<!-- Content -->
