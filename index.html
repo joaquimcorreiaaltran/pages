@@ -43,7 +43,7 @@
 			var request = new XMLHttpRequest();
 			//Asynchronous request (true=asynchronous)
 			request.open('GET', 'content/markdown/'+docName+'.md',true);
-			request.onreadystatechange = function () {
+			request.onreadystatechange = function() {
 															if(request.readyState == XMLHttpRequest.DONE && request.status === 200) {
 																var converter = new showdown.Converter() //instancia
 																,text = request.responseText //guarda o documento em string
@@ -93,7 +93,16 @@
 
 		<div id="paginas">
 			<!--Elemento para mostrar documentos Markdown-->
-			<div id="documento" class="modulo"></div>
+			<div id="documento" class="modulo"</div>
+
+			 <script>
+				 $('#documento').bind('input', function() {
+					 											alert('novo doc!');
+															});
+			 </script>
+
+
+
 		</div>
 
 		<!-- Sidebar -->
