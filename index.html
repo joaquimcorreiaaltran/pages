@@ -42,6 +42,22 @@
 													hideOnMouseOut: true
 												}
 			});
+
+			//load HTML from the Markdown file and show it in the "#documento" object
+			function loadHtmlFromMarkdown (){
+				var request_file = new XMLHttpRequest();
+				request_file.open('GET', 'content/markdown/'+docName+'.md');
+				request_file.onreadystatechange = function () {
+																var converter = new showdown.Converter()
+																,text = request_file.responseText
+																,htmlDoc = converter.makeHtml(text);
+																document.getElementById("documento").innerHTML = htmlDoc;
+															}
+				request_file.send();
+			}
+
+
+
 			</script>
 
 			<script type="text/javascript">
@@ -63,7 +79,7 @@
 </head>
 <body>
 		<!-- Content -->
-		<div id="content">
+	<div id="content">
 	  <div id="header">
 			<p style='text-align: center'>
 				<a href="http://spms.min-saude.pt/product/sicc" target="_blank"><img src="img/pages/logos/SICC_logo_300x148.png" alt="SICC_logo" style="border:0;"></a>
@@ -71,21 +87,30 @@
 				<a href="http://www.portugal.gov.pt/pt/ministerios/ms" target="_blank"><img src="img/pages/logos/republica_portuguesa_300x148.png" alt="Republica_Portuguesa_logo" style="border:0;" ></a>
 			</p>
 		</div>
+
 		<div id="paginas">
 			<div id="documento" class="modulo"></div>
-
-
-			<!--Pede doc. Markdown ao servidor(GitHub) e transforma em HTML-->
+			<!--Pede doc. Markdown ao servidor(GitHub), converte Markdown em HTML e mostra na página-->
 			<script>
+
+
+			var docName = "menus";
+
+			function loadHtmlFromMarkdown (){
 				var request_file = new XMLHttpRequest();
-				request_file.open('GET', 'https://spmssicc.github.io/pages/content/menus.md');
-				request_file.onreadystatechange = function() {
+				request_file.open('GET', 'content/markdown/'+docName+'.md');
+				request_file.onreadystatechange = function () {
 																var converter = new showdown.Converter()
 																,text = request_file.responseText
-																,html = converter.makeHtml(text);
-																document.getElementById("documento").innerHTML = html;
+																,htmlDoc = converter.makeHtml(text);
+																document.getElementById("documento").innerHTML = htmlDoc;
 															}
 				request_file.send();
+			}
+
+			loadHtmlFromMarkdown();
+
+
 			</script>
 		</div>
 
@@ -105,6 +130,8 @@
 		<script type="text/javascript">
 			document.getElementById("sidebar_menu").innerHTML = $("#sidebar_menu").load('content/html/sidebar_menu.html');
 		</script>
+
+		</div> <!-- Content -->
 </body>
 
 	<!--
