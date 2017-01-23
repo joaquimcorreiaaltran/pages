@@ -1,8 +1,7 @@
 /*!
-	Zoom v1.7.13 - 2014-04-29
-	Enlarge images on click or mouseover.
-	(c) 2014 Jack Moore - http://www.jacklmoore.com/zoom
-	license: http://www.opensource.org/licenses/mit-license.php
+	Zoom 1.7.18
+	license: MIT
+	http://www.jacklmoore.com/zoom
 */
 (function ($) {
 	var defaults = {
@@ -26,13 +25,13 @@
 			xRatio,
 			yRatio,
 			offset,
-			position = $(target).css('position'),
+			$target = $(target),
+			position = $target.css('position'),
 			$source = $(source);
 
 		// The parent element needs positioning so that the zoomed element can be correctly positioned within.
 		target.style.position = /(absolute|fixed)/.test(position) ? position : 'relative';
 		target.style.overflow = 'hidden';
-
 		img.style.width = img.style.height = '';
 
 		$(img)
@@ -52,8 +51,8 @@
 
 		return {
 			init: function() {
-				targetWidth = $(target).outerWidth();
-				targetHeight = $(target).outerHeight();
+				targetWidth = $target.outerWidth();
+				targetHeight = $target.outerHeight();
 
 				if (source === target) {
 					sourceWidth = targetWidth;
@@ -86,7 +85,7 @@
 			var
 			settings = $.extend({}, defaults, options || {}),
 			//target will display the zoomed image
-			target = settings.target || this,
+			target = settings.target && $(settings.target)[0] || this,
 			//source will provide zoom location info (thumbnail)
 			source = this,
 			$source = $(source),
@@ -94,32 +93,26 @@
 			$img = $(img),
 			mousemove = 'mousemove.zoom',
 			clicked = false,
-			touched = false,
-			$urlElement;
+			touched = false;
 
 			// If a url wasn't specified, look for an image element.
 			if (!settings.url) {
-				$urlElement = $source.find('img');
-				if ($urlElement[0]) {
-					settings.url = $urlElement.data('src') || $urlElement.attr('src');
+				var srcElement = source.querySelector('img');
+				if (srcElement) {
+					settings.url = srcElement.getAttribute('data-src') || srcElement.currentSrc || srcElement.src;
 				}
 				if (!settings.url) {
 					return;
 				}
 			}
 
-			(function(){
-				var position = target.style.position;
-				var overflow = target.style.overflow;
-
-				$source.one('zoom.destroy', function(){
-					$source.off(".zoom");
-					target.style.position = position;
-					target.style.overflow = overflow;
-					$img.remove();
-				});
-				
-			}());
+			$source.one('zoom.destroy', function(position, overflow){
+				$source.off(".zoom");
+				target.style.position = position;
+				target.style.overflow = overflow;
+				img.onload = null;
+				$img.remove();
+			}.bind(this, target.style.position, target.style.overflow));
 
 			img.onload = function () {
 				var zoom = $.zoom(target, source, img, settings.magnify);
@@ -218,6 +211,13 @@
 						.on('touchmove.zoom', function (e) {
 							e.preventDefault();
 							zoom.move( e.originalEvent.touches[0] || e.originalEvent.changedTouches[0] );
+						})
+						.on('touchend.zoom', function (e) {
+							e.preventDefault();
+							if (touched) {
+								touched = false;
+								stop();
+							}
 						});
 				}
 				

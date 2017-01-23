@@ -31,10 +31,11 @@
 
  /**preparar imagem para zoom ou para não zoom (mostra ou não mostra a lupa)*/
  function zommClickImagem() {
-	 $('#paginas p>img:not([alt="logo"])').each(function(){
+	 $('<img)').each(function(){
 		 var alt = $(this).attr("alt")
-		 if(alt != "figAlteracaoSenha" && alt != "figLogin" && alt !="figLoginRecuperacao")
+		 //if(alt != "figAlteracaoSenha" && alt != "figLogin" && alt !="figLoginRecuperacao")
 		 $(this).wrap("<a class='imagem' href='"+$(this).attr( "src" ) + "' onclick='return hs.expand(this)'></a>");
+       alert('script.js');
 });
 }
 
