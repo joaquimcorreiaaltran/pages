@@ -45,7 +45,8 @@
 			//load HTML from the Markdown file and show it in the "#documento" object
 			function loadHtmlFromMarkdown(docName){
 				var request_file = new XMLHttpRequest();
-				request_file.open('GET', 'content/markdown/'+docName+'.md');
+				//Asynchronous request (true=asynchronous)
+				request_file.open('GET', 'content/markdown/'+docName+'.md',true);
 				request_file.onreadystatechange = function () {
 																var converter = new showdown.Converter()
 																,text = request_file.responseText
