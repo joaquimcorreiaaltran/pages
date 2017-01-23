@@ -44,14 +44,16 @@
 			//Asynchronous request (true=asynchronous)
 			request_file.open('GET', 'content/markdown/'+docName+'.md',true);
 			request_file.onreadystatechange = function () {
-															var converter = new showdown.Converter() //instancia
-															,text = request_file.responseText //guarda o documento em string
-															,htmlDoc = converter.makeHtml(text); //converte a string em HTML
-															document.getElementById("documento").innerHTML = htmlDoc;//coloca o html no elemento #documento
-															zommClickImagem();//adiciona a função zoom às imagens do documento
-															setAttribute("formMelhorarDoc","action","https://github.com/SPMSSICC/pages/blob/master/content/markdown/"+docName+".md");
-															setAttribute("btnMelhorarDoc","style","visibility:visible");
-														}
+															if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+																var converter = new showdown.Converter() //instancia
+																,text = request_file.responseText //guarda o documento em string
+																,htmlDoc = converter.makeHtml(text); //converte a string em HTML
+																document.getElementById("documento").innerHTML = htmlDoc;//coloca o html no elemento #documento
+																zommClickImagem();//adiciona a função zoom às imagens do documento
+																setAttribute("formMelhorarDoc","action","https://github.com/SPMSSICC/pages/blob/master/content/markdown/"+docName+".md");
+																setAttribute("btnMelhorarDoc","style","visibility:visible");
+															}/*if*/
+														}/*function*/
 			request_file.send();
 		}
 		</script>
@@ -62,6 +64,7 @@
 		  		 var alt = $(this).attr("alt")
 		  		 //if(alt != "figAlteracaoSenha" && alt != "figLogin" && alt !="figLoginRecuperacao")
 		  		 $(this).wrap("<a class='imagem' href='"+$(this).attr( "src" ) + "' onclick='return hs.expand(this)'></a>");
+				 alert('zommClickImagem()!');
 	  });
 	  }
 		</script>
@@ -69,7 +72,6 @@
 		<script type="text/javascript">
 		function setAttribute(element_id,attr,attr_value){
 			document.getElementById(element_id).setAttribute(attr, attr_value);
-			alert('  ,'+element_id+'  ,'+attr+'  ,'+attr_value);
 		}
 		</script>
 
