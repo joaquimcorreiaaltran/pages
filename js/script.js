@@ -1,17 +1,17 @@
 
 /**colocar tabela mais apresentavel*/
- function atualizarTabela(){
+// function atualizarTabela(){
  /**retirar borders das células vazias*/
-  $('td').each(function(){
+/*  $('td').each(function(){
   if($(this).html() == "&nbsp;")
 		$(this).css("border-top","solid #005082 1.0pt");
 		$(this).css("border-bottom","none");
 		$(this).css("border-right","none");
 		$(this).css("border-left","none");
 });
-
+*/
  /**unir células (que tenham numero de linhas >1)*/
-$('tr').each(function(){
+/*$('tr').each(function(){
 	var n =1;
 	var anteriorvazio = 1;
 	$(this).find('td').each(function(){
@@ -27,7 +27,7 @@ $('tr').each(function(){
 			n++;
 	});
 });
- }
+ }*/
 
  /**preparar imagem para zoom ou para não zoom (mostra ou não mostra a lupa)*/
  function zommClickImagem() {
