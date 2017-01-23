@@ -50,6 +50,7 @@
 															document.getElementById("documento").innerHTML = htmlDoc;//coloca o html no elemento #documento
 															zommClickImagem();//adiciona a função zoom às imagens do documento
 															setAttribute("formMelhorarDoc","action","https://github.com/SPMSSICC/pages/blob/master/content/markdown/"+docName+".md");
+															setAttribute("btnMelhorarDoc","style","visibility:visible");
 														}
 			request_file.send();
 		}
@@ -84,7 +85,7 @@
 				<a href="http://www.portugal.gov.pt/pt/ministerios/ms" target="_blank"><img src="img/pages/logos/republica_portuguesa_300x148.png" alt="Republica_Portuguesa_logo" style="border:0;" ></a>
 				<!--botão para editar documento no GitHub. É mostrado/atualzido quando é consultado um documento-->
 				<form id="formMelhorarDoc" action="" target="_blank">
-					 <input type="submit" value="Melhorar este documento" id="btnMelhorarDoc" style="visibility:visible" />
+					 <input type="submit" value="Melhorar este documento" id="btnMelhorarDoc" style="visibility:hidden" />
 				</form>
 			</p>
 		</div>
