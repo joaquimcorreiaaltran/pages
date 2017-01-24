@@ -186,11 +186,13 @@
 		<div id="sidebar" style="position: fixed;overflow-y: scroll;height: 100%;">
 				<!--<div id="sidebar_menu" style="color: white;text-shadow: none;"></div>-->
 				<a id="amenuLink" href="content/html/amenu-source.html">Menu</a>
-				<script>
-					alert(window.location.href );
-				</script>
 		</div> <!-- SideBar-->
-
 		</div> <!-- Content -->
+		<script>
+		window.setInterval(function(){
+  			alert(window.location.href );
+		}, 5000);
+
+		</script>
 </body>
 </html>
