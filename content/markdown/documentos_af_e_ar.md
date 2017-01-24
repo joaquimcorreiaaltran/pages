@@ -1,13 +1,13 @@
 # Documentos de Anulação de Faturas e Anulação de Receitas
 
 ---
-
+<!--
 # Índice
 
 1. [Introdução](#introducao)
 2. [Criação de novo tipo de documento – Anulação de Faturas (AF)](#AF)
 3. [Criação de novo tipo de documento – Anulação de Receita (AR)](#AR)
-
+-->
 <a name="">introducao</a>
 
 # 1.	Introdução

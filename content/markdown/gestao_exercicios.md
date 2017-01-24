@@ -7,14 +7,14 @@
 ``As cópias impressas não assinadas representam versões não controladas. ``
 
 ---
-
+<!--
 # Índice
 
 1. [Introdução](#introducao)
 2. [Abertura e encerramento de períodos contabilísticos](#abertura_encerramento_periodos_contabilisticos)
 3. [Produção de extrato de contas](#producao_extrato_contas)
 4. [Apuramento de resultados](#apuramento_resultados)
-
+-->
 ___
 
 <a name="introducao"></a>
