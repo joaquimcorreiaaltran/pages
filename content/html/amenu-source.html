@@ -1,6 +1,6 @@
 <div id="accordion">
     <ul>
-      <li><div><ul><li> a </li></ul></div></li>
+      <li id="pri_li"><div><ul><li><ul><li>a </li></ul></li></ul></div></li>
       <li><div>Instituição</div>
          <ul>
             <li><a href="#op_instituicao_recolha">Recolha</a></li>
@@ -50,4 +50,11 @@
          </ul>
       </li>
     </ul>
+    <script>
+      //ocultaElemento("pri_li");
+      alert(ocument.getElementById("pri_li").style);
+      //while (document.getElementById("pri_li").style) {
+      // code block to be executed
+      //}
+    </script>
 </div>
