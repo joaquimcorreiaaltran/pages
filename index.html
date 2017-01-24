@@ -30,17 +30,21 @@
 		<script>
 		/*Mantem as opções do menu colapsadas ao abrir a página*/
   			//amenu.close(true);
-			$('.accordion').accordion({
-			 active: false,
-			 collapsible: true
-			});
 
 			$(document).ready(function() {
-			  $('.accordion').removeClass('active');
-			});
+					$("#accordion").accordion({
+					 active: false,
+					 collapsible: true
+					});
 
-			$('ul.accordion ul').hide();
+					$(document).ready(function() {
+					  $("#accordion").removeClass('active');
+					});
 
+					$("ul.accordion ul").hide();
+
+					$("#accordion").accordion({ header: "h3", active: false, collapsible: true });
+			}
 	  	</script>
 
 		<script type="text/javascript">
