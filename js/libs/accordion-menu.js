@@ -2,7 +2,7 @@
 var amenuOptions =
 {
     menuId: "accordion",
-    linkIdToMenuHtml: null,
+    linkIdToMenuHtml: "amenuLink",
     expand: "single", //"single", "full,180px", "multiple", "all" or "alltop"
     speed: 300, //in ms
     license: "2a8e9"

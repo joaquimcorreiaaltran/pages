@@ -66,6 +66,40 @@
 	  }
 		</script>
 
+
+		<script type="text/javascript">
+		//Atualiza o elemento #documento
+		function updateDocumentHTML(docName, htmlDoc){
+			document.getElementById("documento").innerHTML = htmlDoc;//coloca o html no elemento #documento
+			zommClickImagem();//adiciona a função zoom às imagens do documento
+			setAttribute("btnEditarDoc","onclick","openInNewTab('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md')");
+			mostraElemento("p_btns");
+			ocultaElemento("p_logos");
+		}
+		</script>
+
+		<script type="text/javascript">
+		function setAttribute(element_id,attr,attr_value){
+			document.getElementById(element_id).setAttribute(attr, attr_value);
+		}
+		</script>
+
+		<script>
+		function openInNewTab(url) {
+		  var win = window.open(url, '_blank');
+		  win.focus();
+		}
+		</script>
+
+		<script>
+		function mostraElemento(elementId) {
+		    document.getElementById(elementId).style.display = 'block';
+    	}
+	 	function ocultaElemento(elementId) {
+		  document.getElementById(elementId).style.display = 'none';
+  		}
+		</script>
+
 		<!--Browser Zoom-->
 		<script>
 			var currFFZoom = 1;
@@ -112,39 +146,6 @@
 			 };
 	 	 </script>
 
-		<script type="text/javascript">
-		//Atualiza o elemento #documento
-		function updateDocumentHTML(docName, htmlDoc){
-			document.getElementById("documento").innerHTML = htmlDoc;//coloca o html no elemento #documento
-			zommClickImagem();//adiciona a função zoom às imagens do documento
-			setAttribute("btnEditarDoc","onclick","openInNewTab('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md')");
-			mostraElemento("p_btns");
-			ocultaElemento("p_logos");
-			alert('updateDocumentHTML(docName,htmlDoc): '+ docName+ ', '+htmlDoc);
-		}
-		</script>
-
-		<script type="text/javascript">
-		function setAttribute(element_id,attr,attr_value){
-			document.getElementById(element_id).setAttribute(attr, attr_value);
-		}
-		</script>
-
-		<script>
-		function openInNewTab(url) {
-		  var win = window.open(url, '_blank');
-		  win.focus();
-		}
-		</script>
-
-		<script>
-		function mostraElemento(elementId) {
-		    document.getElementById(elementId).style.display = 'block';
-    	}
-	 	function ocultaElemento(elementId) {
-		  document.getElementById(elementId).style.display = 'none';
-  		}
-		</script>
 
 </head>
 <body>
@@ -176,11 +177,8 @@
 
 		<!-- Sidebar -->
 		<div id="sidebar" style="position: fixed;overflow-y: scroll;height: 100%;">
-				<div id="sidebar_menu" style="color: white;text-shadow: none;"></div>
-				<script type="text/javascript">
-					//load sidebar_menu from html file
-					document.getElementById("sidebar_menu").innerHTML = $("#sidebar_menu").load('content/html/sidebar_menu.html');
-				</script>
+				<!--<div id="sidebar_menu" style="color: white;text-shadow: none;"></div>-->
+				<a id="amenuLink" href="content/html/amenu-source.html">Menu</a>
 		</div> <!-- SideBar-->
 
 		</div> <!-- Content -->
