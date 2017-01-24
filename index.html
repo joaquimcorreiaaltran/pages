@@ -30,6 +30,15 @@
 		<script>
 		/*Mantem as opções do menu colapsadas ao abrir a página*/
   			//amenu.close(true);
+			$('.accordion').accordion({
+			 active: false,
+			 collapsible: true
+			});
+
+			$(document).ready(function() {
+			  $('.accordion').removeClass('active');
+			});
+			
 	  	</script>
 
 		<script type="text/javascript">
@@ -189,10 +198,6 @@
 		</div> <!-- SideBar-->
 		</div> <!-- Content -->
 		<script>
-		window.setInterval(function(){
-  			alert(window.location.href );
-		}, 5000);
-
 		</script>
 </body>
 </html>
