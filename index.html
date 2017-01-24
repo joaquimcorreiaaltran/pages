@@ -117,10 +117,10 @@
 			document.getElementById("documento").innerHTML = htmlDoc;//coloca o html no elemento #documento
 			zommClickImagem();//adiciona a função zoom às imagens do documento
 			//setAttribute("formMelhorarDoc","action","https://github.com/SPMSSICC/pages/blob/master/content/markdown/"+docName+".md");
-			setAttribute("btnMelhorarDoc","onclick","https://github.com/SPMSSICC/pages/blob/master/content/markdown/"+docName+".md");
-			setAttribute("btnMelhorarDoc","style","display: block;alignt: center;float: right;color: white; height:80px; width:80px");
-			setAttribute("plusBtn","style","display: block;alignt: center;float: right;color: white; height:80px; width:80px");
-			setAttribute("minusBtn","style","display: block;alignt: center;float: right;color: white; height:80px; width:80px");
+			setAttribute("btnMelhorarDoc","onclick","openInNewTab(https://github.com/SPMSSICC/pages/blob/master/content/markdown/"+docName+".md)");
+			mostraElemento("btnMelhorarDoc");
+			mostraElemento("plusBtn");
+			mostraElemento("minusBtn");
 			ocultaElemento("p_logos");
 			ocultaElemento("SICC_logo");
 			ocultaElemento("SPMS_logo");
