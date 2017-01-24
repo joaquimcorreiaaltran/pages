@@ -102,7 +102,6 @@
 						currFFZoom -= step;
 						$('body').css('MozTransform','scale(' + currFFZoom + ')')
 						;
-
 				  } else {
 						var step = 2;
 						currIEZoom -= step;
@@ -117,9 +116,10 @@
 			document.getElementById("documento").innerHTML = htmlDoc;//coloca o html no elemento #documento
 			zommClickImagem();//adiciona a função zoom às imagens do documento
 			//setAttribute("formMelhorarDoc","action","https://github.com/SPMSSICC/pages/blob/master/content/markdown/"+docName+".md");
-			setAttribute("btnMelhorarDoc","onclick","openInNewTab('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md')");
+			setAttribute("btnEditarDoc","onclick","openInNewTab('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md')");
 			mostraElemento("p_btns");
 			ocultaElemento("p_logos");
+			document.title = "SICC - "+docName;
 		}
 		</script>
 
@@ -156,10 +156,10 @@
 				<a id="Republica_Portuguesa_logo" href="http://www.portugal.gov.pt/pt/ministerios/ms" target="_blank"><img src="content/img/pages/logos/republica_portuguesa_300x148.png" alt="Republica_Portuguesa_logo" style="border:0;" ></a>
 			</div>
 
-			<p id="p_btns" style='text-align: center'>
-				<button id="plusBtn" type="button" alt="plusBtn" onclick="zoomInBrowser()" style="alignt: center;float: right;color: white; height:80px; width:80px">+</button>
-	 		  	<button id="minusBtn" type="button" alt="minusBtn" onclick="zoomOutBrowser()" style="alignt: center;float: right;color: white; height:80px; width:80px">-</button>
-				<button id="btnMelhorarDoc" type="button" alt="btnMelhorarDoc" onclick="openInNewTab()" style="alignt: center;float: right;color: white; height:80px; width:80px">Editar</button>
+			<p id="p_btns" style='text-align: center; display: none;'>
+				<button id="plusBtn" type="button" alt="plusBtn" onclick="zoomInBrowser()" style="alignt: center;float: right;color: white; height:auto; width:auto">aumentar</button>
+	 		  	<button id="minusBtn" type="button" alt="minusBtn" onclick="zoomOutBrowser()" style="alignt: center;float: right;color: white; height:auto; width:auto">diminuir</button>
+				<button id="btnEditarDoc" type="button" alt="btnEditarDoc" onclick="openInNewTab()" style="alignt: center;float: right;color: white; height:auto; width: auto">Editar</button>
 			</p>
 		</div>
 
