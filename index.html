@@ -117,14 +117,9 @@
 			document.getElementById("documento").innerHTML = htmlDoc;//coloca o html no elemento #documento
 			zommClickImagem();//adiciona a função zoom às imagens do documento
 			//setAttribute("formMelhorarDoc","action","https://github.com/SPMSSICC/pages/blob/master/content/markdown/"+docName+".md");
-			setAttribute("btnMelhorarDoc","onclick","openInNewTab('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md)");
-			mostraElemento("btnMelhorarDoc");
-			mostraElemento("plusBtn");
-			mostraElemento("minusBtn");
+			setAttribute("btnMelhorarDoc","onclick","openInNewTab('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md')");
+			mostraElemento("p_btns");
 			ocultaElemento("p_logos");
-			//ocultaElemento("SICC_logo");
-			//ocultaElemento("SPMS_logo");
-			//ocultaElemento("Republica_Portuguesa_logo");
 		}
 		</script>
 
@@ -162,9 +157,9 @@
 			</div>
 
 			<p id="p_btns" style='text-align: center'>
-				<button id="plusBtn" type="button" alt="plusBtn" onclick="zoomInBrowser()" style="display: none;alignt: center;float: right;color: white; height:80px; width:80px">+</button>
-	 		  	<button id="minusBtn" type="button" alt="minusBtn" onclick="zoomOutBrowser()" style="display: none;alignt: center;float: right;color: white; height:80px; width:80px">-</button>
-				<button id="btnMelhorarDoc" type="button" alt="btnMelhorarDoc" onclick="openInNewTab()" style="display: none;alignt: center;float: right;color: white; height:80px; width:80px">Editar</button>
+				<button id="plusBtn" type="button" alt="plusBtn" onclick="zoomInBrowser()" style="alignt: center;float: right;color: white; height:80px; width:80px">+</button>
+	 		  	<button id="minusBtn" type="button" alt="minusBtn" onclick="zoomOutBrowser()" style="alignt: center;float: right;color: white; height:80px; width:80px">-</button>
+				<button id="btnMelhorarDoc" type="button" alt="btnMelhorarDoc" onclick="openInNewTab()" style="alignt: center;float: right;color: white; height:80px; width:80px">Editar</button>
 			</p>
 		</div>
 
