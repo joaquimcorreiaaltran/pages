@@ -64,14 +64,61 @@
 	  }
 		</script>
 
+		<!--Browser Zoom-->
+		<script>
+			var currFFZoom = 1;
+			var currIEZoom = 100;
+
+			 // Opera 8.0+
+			var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+			// Firefox 1.0+
+			var isFirefox = typeof InstallTrigger !== 'undefined';
+			// Safari 3.0+ "[object HTMLElementConstructor]"
+			var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0 || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
+			// Internet Explorer 6-11
+			var isIE = /*@cc_on!@*/false || !!document.documentMode;
+			// Edge 20+
+			var isEdge = !isIE && !!window.StyleMedia;
+			// Chrome 1+
+			var isChrome = !!window.chrome && !!window.chrome.webstore;
+			// Blink engine detection
+			var isBlink = (isChrome || isOpera) && !!window.CSS;
+
+			 function zoomInBrowser(){
+				  if (isFirefox){
+						var step = 0.02;
+						currFFZoom += step;
+						$('body').css('MozTransform','scale(' + currFFZoom + ')');
+				  } else {
+						var step = 2;
+						currIEZoom += step;
+						$('body').css('zoom', ' ' + currIEZoom + '%');
+				  }
+			 };
+
+			 function zoomOutBrowser(){
+				  if (isFirefox){
+						var step = 0.02;
+						currFFZoom -= step;
+						$('body').css('MozTransform','scale(' + currFFZoom + ')')
+						;
+
+				  } else {
+						var step = 2;
+						currIEZoom -= step;
+						$('body').css('zoom', ' ' + currIEZoom + '%');
+				  }
+			 };
+	 	 </script>
+
 		<script type="text/javascript">
 		//Atualiza o elemento #documento
 		function updateContent(docName,htmlDoc){
 			document.getElementById("documento").innerHTML = htmlDoc;//coloca o html no elemento #documento
 			zommClickImagem();//adiciona a função zoom às imagens do documento
-			setAttribute("formMelhorarDoc","action","https://github.com/SPMSSICC/pages/blob/master/content/markdown/"+docName+".md");
-			setAttribute("btnMelhorarDoc","style","visibility:visible");
-			setAttribute("btnMelhorarDoc","style","visibility:visible");
+			//setAttribute("formMelhorarDoc","action","https://github.com/SPMSSICC/pages/blob/master/content/markdown/"+docName+".md");
+			setAttribute("btnMelhorarDoc","action","https://github.com/SPMSSICC/pages/blob/master/content/markdown/"+docName+".md");
+			setAttribute("btnMelhorarDoc","style","alignt: top;visibility:visible;color: white; height:40px; width:70px; text-align: center;");
 			setAttribute("SICC_logo","style","border:0;height:5");
 			setAttribute("SPMS_logo","style","border:0;height:5");
 			setAttribute("Republica_Portuguesa_logo","style","border:0;height:5");
@@ -95,76 +142,17 @@
 				<a id="SPMS_logo" href="http://spms.min-saude.pt" target="_blank"><img src="content/img/pages/logos/SPMS2016B_300x148.png" alt="SPMS_logo" style="border:0;"></a>
 				<a id="Republica_Portuguesa_logo" href="http://www.portugal.gov.pt/pt/ministerios/ms" target="_blank"><img src="content/img/pages/logos/republica_portuguesa_300x148.png" alt="Republica_Portuguesa_logo" style="border:0;" ></a>
 			</p>
-			<p id="pbtnMelhorarDoc" style='text-align: center'>
-				<!--botão para editar documento no GitHub. É mostrado/atualzido quando é consultado um documento-->
-				<form id="formMelhorarDoc" action="" target="_blank">
-					 <input type="submit" value="Otimizar documento" id="btnMelhorarDoc" style="visibility:hidden" />
-				</form>
-			</p>
 
-			<p>
-				<button id="plusBtn" type="button" alt="plusBtn" onclick="zoomInBrowser()">plusBtn</button>
-				<button id="minusBtn" type="button" alt="minusBtn" onclick="zoomOutBrowser()">minusBtn</button>
-				<script>
-					var currFFZoom = 1;
-				    var currIEZoom = 100;
-
-					 // Opera 8.0+
-					var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
-
-					// Firefox 1.0+
-					var isFirefox = typeof InstallTrigger !== 'undefined';
-
-					// Safari 3.0+ "[object HTMLElementConstructor]"
-					var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0 || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
-
-					// Internet Explorer 6-11
-					var isIE = /*@cc_on!@*/false || !!document.documentMode;
-
-					// Edge 20+
-					var isEdge = !isIE && !!window.StyleMedia;
-
-					// Chrome 1+
-					var isChrome = !!window.chrome && !!window.chrome.webstore;
-
-					// Blink engine detection
-					var isBlink = (isChrome || isOpera) && !!window.CSS;
-
-
-
-				    function zoomInBrowser(){
-						 alert('isOpera: 'isOpera+);
-				        if ($.browser.mozilla){
-				            var step = 0.02;
-				            currFFZoom += step;
-				            $('body').css('MozTransform','scale(' + currFFZoom + ')');
-				        } else {
-				            var step = 2;
-				            currIEZoom += step;
-				            $('body').css('zoom', ' ' + currIEZoom + '%');
-				        }
-				    };
-
-				    function zoomOutBrowser(){
-				        if ($.browser.mozilla){
-				            var step = 0.02;
-				            currFFZoom -= step;
-				            $('body').css('MozTransform','scale(' + currFFZoom + ')');
-
-				        } else {
-				            var step = 2;
-				            currIEZoom -= step;
-				            $('body').css('zoom', ' ' + currIEZoom + '%');
-				        }
-				    };
-			 </script>
-	 		</p>
-
-
-
+			<p id="p_btns" style='text-align: center'>
+			<!--<form id="formMelhorarDoc" action="" target="_blank" style="clear: both;">-->
+			<input type="submit" action="" value="Otimizar" id="btnMelhorarDoc" style="alignt: top;float: right;visibility:visible;height:80px; width:80px" />
+			<!--</form>-->
+			<button id="plusBtn" type="button" alt="plusBtn" onclick="zoomInBrowser()" style="alignt: top;float: right;color: white; height:80px; width:80px">+</button>
+ 		  <button id="minusBtn" type="button" alt="minusBtn" onclick="zoomOutBrowser()" style="alignt: top;float: right;color: white; height:80px; width:80px">-</button>
 		</div>
 
 		<div id="paginas">
+
 			<!--Elemento para mostrar documentos Markdown-->
 			<div id="documento" class="modulo" onchange="updateElement()"</div>
 		</div>
