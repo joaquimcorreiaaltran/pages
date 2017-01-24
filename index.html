@@ -143,14 +143,14 @@
 
 		<script>
 		function mostraElemento(elementId) {
-		    var x = document.getElementById(elementId).style.display = 'block';
+		    document.getElementById(elementId).style.display = 'block';
 			 alert('document.getElementById(elementId).style.display = '+document.getElementById(elementId).style.display);
     	}
-	 function ocultaElemento(elementId) {
-		  var x = document.getElementById(elementId).style.display = 'none';
-  	}
-}
-</script>
+	 	function ocultaElemento(elementId) {
+		  document.getElementById(elementId).style.display = 'none';
+  		}
+		</script>
+
 </head>
 <body>
 		<!-- Content -->
