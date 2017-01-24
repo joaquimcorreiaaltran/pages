@@ -114,12 +114,13 @@
 
 		<script type="text/javascript">
 		//Atualiza o elemento #documento
-		function updateDocumentHTML(docName,htmlDoc){
+		function updateDocumentHTML(docName, htmlDoc){
 			document.getElementById("documento").innerHTML = htmlDoc;//coloca o html no elemento #documento
 			zommClickImagem();//adiciona a função zoom às imagens do documento
 			setAttribute("btnEditarDoc","onclick","openInNewTab('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md')");
 			mostraElemento("p_btns");
 			ocultaElemento("p_logos");
+			alert('updateDocumentHTML(docName,htmlDoc): '+ docName+ ', '+htmlDoc);
 		}
 		</script>
 
@@ -151,9 +152,10 @@
 	<div id="content">
 	  <div id="header">
 
-		  	<H1>Bem vindo à página de documentação do SICC.</H1>
+
 
 			<div id="p_logos" style='text-align: center'>
+				<H1>Bem vindo à página de documentação do SICC.</H1>
 				<a id="SICC_logo" href="http://spms.min-saude.pt/product/sicc" target="_blank"><img id="SICC_logo_img" src="content/img/pages/logos/SICC_logo_300x148.png" alt="SICC_logo" style="border:0;"></a>
 				<a id="SPMS_logo" href="http://spms.min-saude.pt" target="_blank"><img src="content/img/pages/logos/SPMS2016B_300x148.png" alt="SPMS_logo" style="border:0;"></a>
 				<a id="Republica_Portuguesa_logo" href="http://www.portugal.gov.pt/pt/ministerios/ms" target="_blank"><img src="content/img/pages/logos/republica_portuguesa_300x148.png" alt="Republica_Portuguesa_logo" style="border:0;" ></a>
