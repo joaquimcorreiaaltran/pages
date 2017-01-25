@@ -174,27 +174,35 @@
 		<!-- Content -->
 	<div id="content">
 	  <div id="header">
-
-
-
 			<div id="p_logos" style='text-align: center'>
 				<H1>Bem vindo à página de documentação do SICC.</H1>
+				<p>
+					O que pretende consultar?
+						<a>
+				</p>
 				<a id="SICC_logo" href="http://spms.min-saude.pt/product/sicc" target="_blank"><img id="SICC_logo_img" src="content/img/pages/logos/SICC_logo_300x148.png" alt="SICC_logo" style="border:0;"></a>
 				<a id="SPMS_logo" href="http://spms.min-saude.pt" target="_blank"><img src="content/img/pages/logos/SPMS2016B_300x148.png" alt="SPMS_logo" style="border:0;"></a>
 				<a id="Republica_Portuguesa_logo" href="http://www.portugal.gov.pt/pt/ministerios/ms" target="_blank"><img src="content/img/pages/logos/republica_portuguesa_300x148.png" alt="Republica_Portuguesa_logo" style="border:0;" ></a>
 			</div>
 
 			<p id="p_btns" style='text-align: center; display: none;'>
-				<button id="plusBtn" type="button" alt="plusBtn" onclick="zoomInBrowser()" style="alignt: center;float: right;color: white; height:auto; width:auto">aumentar</button>
-	 		  	<button id="minusBtn" type="button" alt="minusBtn" onclick="zoomOutBrowser()" style="alignt: center;float: right;color: white; height:auto; width:auto">diminuir</button>
+				<button id="minusBtn" type="button" alt="minusBtn" onclick="zoomOutBrowser()" style="alignt: center;float: right;color: white; height:auto; width:auto">Reduzir</button>
+				<button id="plusBtn" type="button" alt="plusBtn" onclick="zoomInBrowser()" style="alignt: center;float: right;color: white; height:auto; width:auto">Ampliar</button>
 				<button id="btnEditarDoc" type="button" alt="btnEditarDoc" onclick="openInNewTab()" style="alignt: center;float: right;color: white; height:auto; width: auto">Editar</button>
 			</p>
 		</div>
 
 		<div id="paginas">
-
 			<!--Elemento para mostrar documentos Markdown-->
 			<div id="documento" class="modulo" onchange="updateElement()"</div>
+			<div id="chave_orcamental_por_ano" class="modulo"></div>
+			<div id="ModuloEntidades" class="modulo"></div>
+			<div id="ModuloEstabelecimentos" class="modulo"></div>
+			<div id="ModuloRhServicos" class="modulo"></div>
+			<div id="ModuloProducao" class="modulo"></div>
+			<div id="ModuloTempoEspera" class="modulo"></div>
+			<div id="ModuloEquipamentos" class="modulo"></div>
+			<div id="ModuloValidacao" class="modulo"></div>
 		</div>
 
 		<!-- Sidebar -->
