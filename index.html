@@ -26,26 +26,6 @@
 		  showdown.setFlavor('github');
 		</script>
 
-		<script>
-		/*Mantem as opções do menu colapsadas ao abrir a página*/
-  			//amenu.close(true);
-
-			/*$(document).ready(function()  {
-					$("#accordion").accordion({
-					 active: false,
-					 collapsible: true
-					});
-
-					$(document).ready(function() {
-					  $("#accordion").removeClass("active");
-					});
-
-					$("ul.accordion ul").hide();
-
-					$("#accordion").accordion({ header: "h3", active: false, collapsible: true });
-			})*/
-	  	</script>
-
 		<script type="text/javascript">
 			hs.graphicsDir = 'content/img/highslide/graphics/';
 			hs.align = 'center';
@@ -185,9 +165,10 @@
 			</div>
 
 			<p id="p_btns" style='text-align: center; display: none;'>
-				<button id="minusBtn" type="button" alt="minusBtn" onclick="zoomOutBrowser()" style="alignt: center;float: right;color: white; height:auto; width:auto">Reduzir</button>
-				<button id="plusBtn" type="button" alt="plusBtn" onclick="zoomInBrowser()" style="alignt: center;float: right;color: white; height:auto; width:auto">Ampliar</button>
-				<button id="btnEditarDoc" type="button" alt="btnEditarDoc" onclick="openInNewTab()" style="alignt: center;float: right;color: white; height:auto; width: auto">Editar</button>
+				<button id="minusBtn" type="button" alt="minusBtn" onclick="zoomOutBrowser()" style="alignt: center;float: right;color: white; height:auto; width:auto"><i class="fa fa-minus fa-fw"></i></button>
+				<button id="plusBtn" type="button" alt="plusBtn" onclick="zoomInBrowser()" style="alignt: center;float: right;color: white; height:auto; width:auto"><i class="fa fa-plus fa-fw"></i></button>
+				<button id="btnEditarDoc" type="button" alt="btnEditarDoc" onclick="openInNewTab()" style="alignt: center;float: right;color: white; height:auto; width: auto"><i class="fa fa-pencil fa-fw"></i></button>
+
 			</p>
 		</div>
 
