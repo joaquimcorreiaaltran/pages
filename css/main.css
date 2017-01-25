@@ -1547,7 +1547,7 @@
 
 	body {
 		background-color: #e8e8e8;
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Source Sans Pro', verdana;
 		font-weight: 400;
 		color: #565656;
 	}
@@ -1564,7 +1564,7 @@
 		}
 
 	input, textarea, select {
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Source Sans Pro', verdana;
 		font-weight: 400;
 		color: #565656;
 	}
@@ -1579,7 +1579,7 @@
 	}
 
 	h2, h3, h4, h5, h6 {
-		font-family: 'Open Sans Condensed', sans-serif;
+		font-family: 'Open Sans Condensed', verdana;
 		font-weight: 700;
 		color: #232323;
 	}
@@ -1655,7 +1655,7 @@
 /* Form */
 
 	form label {
-		font-family: 'Open Sans Condensed', sans-serif;
+		font-family: 'Open Sans Condensed', verdana;
 		font-weight: 700;
 		color: #232323;
 		margin: 0 0 0.75em 0;
@@ -1706,7 +1706,7 @@
 	}
 
 		header > p {
-			font-family: 'Open Sans Condensed', sans-serif;
+			font-family: 'Open Sans Condensed', verdana;
 			font-weight: 300;
 			display: block;
 			margin-top: 1em;
@@ -1760,7 +1760,7 @@
 		text-align: center;
 		box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.15);
 		color: #fff;
-		font-family: 'Open Sans Condensed', sans-serif;
+		font-family: 'Open Sans Condensed', verdana;
 		font-weight: 700;
 		text-decoration: none;
 		-moz-transition: background-color .25s ease-in-out, color .25s ease-in-out;
@@ -1851,7 +1851,7 @@
 
 	.pagination .pages {
 		display: inline-block;
-		font-family: 'Open Sans Condensed', sans-serif;
+		font-family: 'Open Sans Condensed', verdana;
 		font-weight: 700;
 	}
 
@@ -2018,7 +2018,7 @@
 
 		.box.search form:before {
 			display: inline-block;
-			font-family: FontAwesome;
+			font-family: Verdana;
 			font-size: 18px;
 			text-decoration: none;
 			font-style: normal;
@@ -2058,7 +2058,7 @@
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
+			font-family: Verdana;
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
@@ -2159,7 +2159,7 @@
 			color: #fff;
 			line-height: 44px;
 			font-size: 1.25em;
-			font-family: 'Open Sans Condensed', sans-serif;
+			font-family: 'Open Sans Condensed', verdana;
 			font-weight: 700;
 			letter-spacing: 0.1em;
 			text-shadow: none;
@@ -2182,7 +2182,7 @@
 		}
 
 			#titleBar .toggle:before {
-				font-family: FontAwesome;
+				font-family: Verdana;
 				text-decoration: none;
 				font-style: normal;
 				font-weight: normal;
@@ -2389,7 +2389,7 @@
 		/* Logo */
 
 			#logo {
-				font-family: 'Open Sans Condensed', sans-serif;
+				font-family: 'Open Sans Condensed', verdana;
 				font-weight: 700;
 				font-size: 2em;
 				letter-spacing: 0.1em;
@@ -2502,7 +2502,7 @@
 				.box.post .info .date {
 					position: relative;
 					z-index: 1;
-					font-family: 'Open Sans Condensed', sans-serif;
+					font-family: 'Open Sans Condensed', verdana;
 					font-weight: 400;
 					text-align: center;
 					display: block;
@@ -2736,7 +2736,7 @@
 
 				.box.post header > p {
 					font-size: 1em;
-					font-family: 'Source Sans Pro', sans-serif;
+					font-family: 'Source Sans Pro', verdana;
 					line-height: 1.5em;
 				}
 
