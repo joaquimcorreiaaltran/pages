@@ -50,10 +50,8 @@
 																var converter = new showdown.Converter() //instancia
 																,text = request.responseText //guarda o documento em string
 																,htmlDoc = converter.makeHtml(text); //converte a string em HTML
-																alert('document.getElementById("documento")');
 																document.getElementById("documento").innerHTML = htmlDoc;//coloca o html no elemento #documento
 																setAttribute("btnEditarDoc","onclick","openInNewTab('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md')");
-																alert('antes da ocultaElemento');
 																ocultaElemento("p_logos");
 																mostraElemento("p_btns");
 																zommClickImagem();//adiciona a função zoom às imagens do documento
@@ -92,7 +90,6 @@
 
 		<script>
 		function mostraElemento(elementId) {
-			alert('mostraElemento');
 		    document.getElementById(elementId).style.display = 'block';
     	}
 	 	function ocultaElemento(elementId) {
@@ -162,7 +159,7 @@
 			<article>
 				<div id="paginas">
 					<!--Elemento para mostrar documentos Markdown-->
-					<div id="documento" class="modulo" onchange="updateElement()"</div>
+					<div id="documento" class="modulo" onchange="updateElement()"></div>
 					<p id="p_btns" style='position:fixed; bottom:0;right:0; text-align: center; display: none;'>
 						<button title="Diminuir tamanho da página" id="minusBtn" type="button" alt="minusBtn" onclick="zoomOutBrowser()" style="alignt: center;float: right;color: white; height:30px; width: 30px">
 							<i class="fa fa-minus fa-fw"></i>
