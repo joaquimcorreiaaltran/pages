@@ -21,11 +21,11 @@ Este capítulo surge no sentido de demonstrar ao utilizador as ligeiras alteraç
 
 Menu:
 
-![img_1](img/pages/chave_orcamental_por_ano/img_1.png)
+![img_1](https://spmssicc.github.io/pages/content/img/markdown_docs/chave_orcamental_por_ano/img_1.png)
 
 Submenu (antigo):
 
-![img_2](img/pages/chave_orcamental_por_ano/img_2.png)
+![img_2](https://spmssicc.github.io/pages/content/img/markdown_docs/chave_orcamental_por_ano/img_2.png)
 
 Com as referidas alterações, a informação referente à chave orçamental, exceto os métodos, deixam de existir neste submenu e passa a ser integrada na **Parametrização – Instituição – Exercícios.**
 
@@ -33,7 +33,7 @@ Desta forma, este novo submenu apresenta o aspeto abaixo evidenciado, contendo i
 
 Submenu (novo):
 
-![img_3](img/pages/chave_orcamental_por_ano/img_3.png)
+![img_3](https://spmssicc.github.io/pages/content/img/markdown_docs/chave_orcamental_por_ano/img_3.png)
 
 <a name="parametrizacao-instituicao-exercicios"></a>
 
@@ -43,20 +43,20 @@ O próximo menu também sofreu ligeiras alterações, pelo que:
 
 Menu:
 
-![img_4](img/pages/chave_orcamental_por_ano/img_4.png)
+![img_4](https://spmssicc.github.io/pages/content/img/markdown_docs/chave_orcamental_por_ano/img_4.png)
 
 Submenu (antigo):
 
 
-![img_5](img/pages/chave_orcamental_por_ano/img_5.png)
+![img_5](https://spmssicc.github.io/pages/content/img/markdown_docs/chave_orcamental_por_ano/img_5.png)
 
 Em jeito de melhoria da aplicação SICC, chegou-se assim á conclusão que faz todo o sentido o utilizador poder verificar na mesma tela a chave orçamental que foi utilizada em anos anteriores. Desta forma e neste submenu foi feita a seguinte alteração.
 
 Submenu (novo):
 
-![img_6](img/pages/chave_orcamental_por_ano/img_6.png)
+![img_6](https://spmssicc.github.io/pages/content/img/markdown_docs/chave_orcamental_por_ano/img_6.png)
 
-![img_7](img/pages/chave_orcamental_por_ano/img_7.png)
+![img_7](https://spmssicc.github.io/pages/content/img/markdown_docs/chave_orcamental_por_ano/img_7.png)
 
 Assim, é necessário (depois de parametrizado no menu: **Parametrização**; submenu **contabilidade pública**) preencher a tela “Contabilidade Orçamental”, nomeadamente o campo de referência F. Financiamento, Programa, Medida, Projeto, regionalização, Atividade, Centro Funcional, Natureza.
 
@@ -68,21 +68,21 @@ A título de exemplo e na criação de um CB, demonstra-se que o sistema SICC, f
 
 **2015:**
 
-![img_8](img/pages/chave_orcamental_por_ano/img_8.png)
+![img_8](https://spmssicc.github.io/pages/content/img/markdown_docs/chave_orcamental_por_ano/img_8.png)
 
 **2016:**
 
-![img_9](img/pages/chave_orcamental_por_ano/img_9.png)
+![img_9](https://spmssicc.github.io/pages/content/img/markdown_docs/chave_orcamental_por_ano/img_9.png)
 
 Outro exemplo de recolhas, podem ser as **Ligações de outras aplicações – Ligações Pessoal**
 
 **2015:**
 
-![img_10](img/pages/chave_orcamental_por_ano/img_10.png)
+![img_10](https://spmssicc.github.io/pages/content/img/markdown_docs/chave_orcamental_por_ano/img_10.png)
 
 **2016:**
 
-![img_11](img/pages/chave_orcamental_por_ano/img_11.png)
+![img_11](https://spmssicc.github.io/pages/content/img/markdown_docs/chave_orcamental_por_ano/img_11.png)
 
 
 
@@ -92,11 +92,11 @@ Outro exemplo de recolhas, podem ser as **Ligações de outras aplicações – 
 
 Posteriormente à criação das chaves orçamentais, o utilizador tem a possibilidade de efetuar qualquer alteração/modificação. Este cenário pode ocorrer por exemplo em situações de alteração da designação, ou fonte de financiamento. As respetivas alterações são sempre efetuadas no caminho abaixo demonstrado:
 
-![img_12](img/pages/chave_orcamental_por_ano/img_12.png)
+![img_12](https://spmssicc.github.io/pages/content/img/markdown_docs/chave_orcamental_por_ano/img_12.png)
 
 :warning:__Todas as manutenções e gestões dos elementos da Chave Orçamental, devem ser parametrizados através do caminho acima supra referenciado. Seja a nível da Fonte de Financiamento; Programa; Medida; Projeto; Regionalização; Atividade ou Natureza.__
 
-![img_13](img/pages/chave_orcamental_por_ano/img_13.png)
+![img_13](https://spmssicc.github.io/pages/content/img/markdown_docs/chave_orcamental_por_ano/img_13.png)
 
 Nestas telas, pode o utilizador criar “Novo” ou “Abater”, sendo que para qualquer procedimento, no final deve pressionar o botão “confirmar”.
 Em jeito de conclusão, podemos dizer, que estes conceitos nos permitem contemplar as formas de orçamentação e de controlo da execução do orçamento, bem como o conjunto de atividades que visam o carregamento do orçamento aprovado no início de cada ano e registo das suas modificações aprovadas ao longo do ano.
