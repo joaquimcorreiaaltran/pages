@@ -95,11 +95,9 @@
 		<script>
 		function mostraElemento(elementId) {
 		    document.getElementById(elementId).style.display = 'block';
-			 alert('mostraElemento("'+elementId+'")');
     	}
 	 	function ocultaElemento(elementId) {
 		  document.getElementById(elementId).style.display = 'none';
-		  alert('ocultaElemento("'+elementId+'")');
   		}
 		</script>
 
@@ -158,6 +156,12 @@
 			<div id="p_logos" style='text-align: center'>
 				<H1 style="padding: 10px 10px 50px 10px">Bem vindo à página de documentação do SICC</H1>
 			</div>
+			<p id="p_btns" style='position:fixed; bottom:0;right:0; text-align: center; display: none;'>
+				<button id="minusBtn" type="button" alt="minusBtn" onclick="zoomOutBrowser()" style="alignt: center;float: right;color: white; height:30px; width: 30px"><i class="fa fa-minus fa-fw"></i></button>
+				<button id="plusBtn" type="button" alt="plusBtn" onclick="zoomInBrowser()" style="alignt: center;float: right;color: white; height: 30px; width: 30px"><i class="fa fa-plus fa-fw"></i></button>
+				<button id="btnPDF" type="button" alt="btnPDF" onclick="" style="alignt: center;float: right;color: white; height: 30px; width: 30px"><i class="fa fa-cloud-download fa-fw"></i></button>
+				<button id="btnEditarDoc" type="button" alt="btnEditarDoc" onclick="openInNewTab()" style="alignt: center;float: right;color: white; height: 30px; width: 30px"><i class="fa fa-pencil fa-fw"></i></button>
+			</p>
 		</div>
 
 		<section>
@@ -165,12 +169,6 @@
 				<div id="paginas">
 					<!--Elemento para mostrar documentos Markdown-->
 					<div id="documento" class="modulo" onchange="updateElement()"</div>
-					<p id="p_btns" style='position:fixed; bottom:0;right:0; text-align: center; display: none;'>
-						<button id="minusBtn" type="button" alt="minusBtn" onclick="zoomOutBrowser()" style="alignt: center;float: right;color: white; height:30px; width: 30px"><i class="fa fa-minus fa-fw"></i></button>
-						<button id="plusBtn" type="button" alt="plusBtn" onclick="zoomInBrowser()" style="alignt: center;float: right;color: white; height: 30px; width: 30px"><i class="fa fa-plus fa-fw"></i></button>
-						<button id="btnPDF" type="button" alt="btnPDF" onclick="" style="alignt: center;float: right;color: white; height: 30px; width: 30px"><i class="fa fa-cloud-download fa-fw"></i></button>
-						<button id="btnEditarDoc" type="button" alt="btnEditarDoc" onclick="openInNewTab()" style="alignt: center;float: right;color: white; height: 30px; width: 30px"><i class="fa fa-pencil fa-fw"></i></button>
-					</p>
 				</div>
 			</article>
 		</section>
