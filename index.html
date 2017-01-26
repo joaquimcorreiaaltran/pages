@@ -19,13 +19,6 @@
 		<script src="js/highslide-with-gallery.js"></script>
 		<script src="js/libs/showdown.js"></script>
 
-
-		<!-- configurations -->
-		<script type="text/javascript">
-		  /* Para o Showdown interpretar o Markdown como no GitHub */
-		  showdown.setFlavor('github');
-		</script>
-
 		<script type="text/javascript">
 			hs.graphicsDir = 'content/img/highslide/graphics/';
 			hs.align = 'center';
@@ -38,119 +31,6 @@
 			hs.blockRightClick = true
 			</script>
 
-		<!-- functions -->
-		<script type="text/javascript">
-		//load HTML from the Markdown file and show it in the "#documento" object
-		function loadHtmlFromMarkdown(docName){
-			var request = new XMLHttpRequest();
-			//Asynchronous request (true=asynchronous)
-			request.open('GET', 'content/markdown/'+docName+'.md',true);
-			request.onreadystatechange = function() {
-															if(request.readyState == XMLHttpRequest.DONE && request.status === 200) {
-																var converter = new showdown.Converter() //instancia
-																,text = request.responseText //guarda o documento em string
-																,htmlDoc = converter.makeHtml(text); //converte a string em HTML
-																document.getElementById("documento").innerHTML = htmlDoc;//coloca o html no elemento #documento
-																setAttribute("btnEditarDoc","onclick","openInNewTab('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md')");
-																ocultaElemento("p_logos");
-																mostraElemento("p_btns");
-																zommClickImagem();//adiciona a função zoom às imagens do documento
-															}/*if*/
-														}/*function*/
-			request.send();
-		}
-		</script>
-		<script type="text/javascript">
-		/**preparar imagem para zoom ou para não zoom (mostra ou não mostra a lupa)*/
-   	function zommClickImagem() {
-		  	 $('#documento img').each(function(){
-		  		 var alt = $(this).attr("alt")
-		  		 //if(alt != "figAlteracaoSenha" && alt != "figLogin" && alt !="figLoginRecuperacao")
-		  		 $(this).wrap("<a class='imagem' href='"+$(this).attr( "src" ) + "' onclick='return hs.expand(this)'></a>");
-	  });
-	  }
-		</script>
-
-		<script type="text/javascript">
-			function loadAbout(){
-				alert('before load()');
-				$("#documento").load("about.html");
-				alert('after load()');
-				//ocultaElemento("p_logos");
-				//ocultaElemento("p_btns");
-			}
-
-		</script>
-
-		<script type="text/javascript">
-		function setAttribute(element_id,attr,attr_value){
-			document.getElementById(element_id).setAttribute(attr, attr_value);
-		}
-		</script>
-
-		<script>
-		function openInNewTab(url) {
-		  var win = window.open(url, '_blank');
-		  win.focus();
-		}
-		</script>
-
-		<script>
-		function mostraElemento(elementId) {
-		    document.getElementById(elementId).style.display = 'block';
-    	}
-	 	function ocultaElemento(elementId) {
-		  document.getElementById(elementId).style.display = 'none';
-  		}
-		</script>
-
-		<!--Browser Zoom-->
-		<script>
-			var currFFZoom = 1;
-			var currIEZoom = 100;
-
-			 // Opera 8.0+
-			var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
-			// Firefox 1.0+
-			var isFirefox = typeof InstallTrigger !== 'undefined';
-			// Safari 3.0+ "[object HTMLElementConstructor]"
-			var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0 || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
-			// Internet Explorer 6-11
-			var isIE = /*@cc_on!@*/false || !!document.documentMode;
-			// Edge 20+
-			var isEdge = !isIE && !!window.StyleMedia;
-			// Chrome 1+
-			var isChrome = !!window.chrome && !!window.chrome.webstore;
-			// Blink engine detection
-			var isBlink = (isChrome || isOpera) && !!window.CSS;
-
-			 function zoomInBrowser(){
-				  if (isFirefox){
-						var step = 0.02;
-						currFFZoom += step;
-						$('body').css('MozTransform','scale(' + currFFZoom + ')');
-				  } else {
-						var step = 2;
-						currIEZoom += step;
-						$('body').css('zoom', ' ' + currIEZoom + '%');
-				  }
-			 };
-
-			 function zoomOutBrowser(){
-				  if (isFirefox){
-						var step = 0.02;
-						currFFZoom -= step;
-						$('body').css('MozTransform','scale(' + currFFZoom + ')')
-						;
-				  } else {
-						var step = 2;
-						currIEZoom -= step;
-						$('body').css('zoom', ' ' + currIEZoom + '%');
-				  }
-			 };
-	 	 </script>
-
-
 </head>
 <body>
 		<!-- Content -->
@@ -161,20 +41,6 @@
 
 		<section id="section_docs">
 			<article id="documento" class="modulo"></article>
-			<p id="p_btns" style='position:fixed; bottom:0;right:0; text-align: center; display: none;'>
-				<button title="Diminuir tamanho da página" id="minusBtn" type="button" alt="minusBtn" onclick="zoomOutBrowser()" style="alignt: center;float: right;color: white; height:30px; width: 30px">
-					<i class="fa fa-minus fa-fw"></i>
-				</button>
-				<button title="Aumentar tamanho da página" id="plusBtn" type="button" alt="plusBtn" onclick="zoomInBrowser()" style="alignt: center;float: right;color: white; height: 30px; width: 30px">
-					<i class="fa fa-plus fa-fw"></i>
-				</button>
-				<button title="Transferir documento" id="btnPDF" type="button" alt="btnPDF" onclick="" style="alignt: center;float: right;color: white; height: 30px; width: 30px">
-					<i class="fa fa-cloud-download fa-fw"></i>
-				</button>
-				<button title="Sugerir alterações ao documento" id="btnEditarDoc" type="button" alt="btnEditarDoc" onclick="openInNewTab()" style="alignt: center;float: right;color: white; height: 30px; width: 30px">
-					<i class="fa fa-pencil fa-fw"></i>
-				</button>
-			</p>
 		</section>
 
 
@@ -189,12 +55,11 @@
 			<a id="Republica_Portuguesa_logo" href="http://www.portugal.gov.pt/pt/ministerios/ms" target="_blank" title="Abrir página">
 				<img id="Republica_Portuguesa_logo_img" src="content/img/logos/republica_portuguesa_300x148.png" alt="Republica_Portuguesa_logo" style="height:74px; width:150px; border:0; vertical-align: middle;" >
 			</a>
-			<p style="text-align:center; padding-top:50px">
+			<H1 style="text-align:center; padding-top:50px">
 				© 2017 Direitos Reservados
-			</p>
+			</H1>
 		</div>
 	</footer>
-
 
 	<!-- Sidebar -->
 	<div id="sidebar" style="position: fixed;overflow-y: scroll;height: 100%;">

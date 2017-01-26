@@ -69,29 +69,10 @@
 		  		 $(this).wrap("<a class='imagem' href='"+$(this).attr( "src" ) + "' onclick='return hs.expand(this)'></a>");
 	  });
 	  }
-		</script>
-
-		<script type="text/javascript">
-			function loadAbout(){
-				alert('before load()');
-				$("#documento").load("about.html");
-				alert('after load()');
-				//ocultaElemento("p_logos");
-				//ocultaElemento("p_btns");
-			}
-
-		</script>
 
 		<script type="text/javascript">
 		function setAttribute(element_id,attr,attr_value){
 			document.getElementById(element_id).setAttribute(attr, attr_value);
-		}
-		</script>
-
-		<script>
-		function openInNewTab(url) {
-		  var win = window.open(url, '_blank');
-		  win.focus();
 		}
 		</script>
 
@@ -206,6 +187,11 @@
 		</div> <!-- Content -->
 	<script>
 		loadHtmlFromMarkdown("menus");
+		if(isSafari){
+			ocultaElemento(plusBtn);
+			ocultaElemento(minusBtn);
+		}
+
 	</script>
 </body>
 </html>
