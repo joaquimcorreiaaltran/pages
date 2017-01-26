@@ -71,8 +71,15 @@
 	  }
 		</script>
 
-		<script>
-			//$('#myLink').click(function(){ MyFunction(); return false; });
+		<script type="text/javascript">
+			function loadAbout(){
+				alert('before load()');
+				$("#documento").load("about.html");
+				alert('after load()');
+				ocultaElemento("p_logos");
+				ocultaElemento("p_btns");
+			}
+
 		</script>
 
 		<script type="text/javascript">
