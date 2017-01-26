@@ -44,7 +44,7 @@
 		function loadHtmlFromMarkdown(docName){
 			var request = new XMLHttpRequest();
 			//Asynchronous request (true=asynchronous)
-			request.open('GET', 'content/markdown/'+docName+'.md',true);
+			request.open('GET', '../content/markdown/'+docName+'.md',true);
 			request.onreadystatechange = function() {
 															if(request.readyState == XMLHttpRequest.DONE && request.status === 200) {
 																var converter = new showdown.Converter() //instancia
@@ -201,7 +201,7 @@
 	<div id="sidebar" style="position: fixed;overflow-y: scroll;height: 100%;">
 		<nav>
 			<!--<div id="sidebar_menu" style="color: white;text-shadow: none;"></div>-->
-			<a id="amenuLink" href="amenu-source.html">Menu</a>
+			<a id="amenuLink-menu-doc" href="amenu-source-menu-doc.html">Menu</a>
 		</nav>
 	</div> <!-- SideBar-->
 
