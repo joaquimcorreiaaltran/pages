@@ -42,7 +42,6 @@
 		<script type="text/javascript">
 		//load HTML from the Markdown file and show it in the "#documento" object
 		function loadHtmlFromMarkdown(docName){
-			alert('docName: '+docName);
 			var request = new XMLHttpRequest();
 			//Asynchronous request (true=asynchronous)
 			request.open('GET', '../markdown/'+docName+'.md',true);
