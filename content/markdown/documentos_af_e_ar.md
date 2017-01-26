@@ -35,14 +35,14 @@ No fluxograma do ciclo da despesa, irá surgir um novo tipo de documento designa
 
 Este novo tipo de documento surgirá assim no fluxograma:
 
-![fluxograma despesa.png](img/pages/documentos_af_e_ar/fluxograma_despesa.png)
+![fluxograma despesa.png](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/documentos_af_e_ar/fluxograma_despesa.png)
 
 Proveniente exclusivamente do P2 ou da NC (exceto RAP), este novo tipo de documento obriga o utilizador a selecionar pelo menos uma fatura e uma NC com o objetivo do resultado final ter valor “0” para proceder ao registo de anulação.
 
 
 Desta forma, no menu:
 
-![Anulação P2eNc.png](img/pages/documentos_af_e_ar/Anula%C3%A7%C3%A3o_P2eNc.png)
+![Anulação P2eNc.png](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/documentos_af_e_ar/Anula%C3%A7%C3%A3o_P2eNc.png)
 
 Estes movimentos não são refletidos na contabilidade, sendo que o principal objetivo dos
 documentos selecionados (P2 e NC) seja a sua regularização, não necessitando de registos
@@ -52,15 +52,15 @@ O número do documento pode ser atribuído pelo sistema. Na tela abaixo demonstr
 foram adicionados campos de procura dos documentos que permitem a associação entre NC
 e P2.
 
-![Anulação de faturas AF.png](img/pages/documentos_af_e_ar/AF.png)
+![Anulação de faturas AF.png](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/documentos_af_e_ar/AF.png)
 
 Ao premir o botão “imprimir”, o comando redireciona para a tela abaixo mostrada, na qual o utilizador escolhe os critérios de seleção da impressão:
 
-![Image_A.png](img/pages/documentos_af_e_ar/Image_A.png)
+![Image_A.png](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/documentos_af_e_ar/Image_A.png)
 
 Na impressão, o resultado da Anulação de Faturas deve ser:
 
-![Image_B.png](img/pages/documentos_af_e_ar/Image_B.png)
+![Image_B.png](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/documentos_af_e_ar/Image_B.png)
 
 <a name="">AR</a>
 
@@ -70,13 +70,13 @@ No fluxograma do ciclo da receita, irá surgir um novo tipo de documento designa
 
 Este novo tipo de documento surgirá assim no fluxograma:
 
-![fluxograma receita.png](img/pages/documentos_af_e_ar/fluxograma_receita.png)
+![fluxograma receita.png](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/documentos_af_e_ar/fluxograma_receita.png)
 
 Proveniente exclusivamente de, FD e CC (exceto RNAP), este novo tipo de documento obrigam o utilizador a selecionar pelo menos uma FD e uma CC com o objetivo do resultado final ter valor “0” para proceder ao registo de anulação de receita.
 
 Desta forma, no menu:
 
-![anulação FD e CC.png](img/pages/documentos_af_e_ar/anula%C3%A7%C3%A3o_FD_e_CC.png)
+![anulação FD e CC.png](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/documentos_af_e_ar/anula%C3%A7%C3%A3o_FD_e_CC.png)
 
 Estes movimentos não são refletidos na contabilidade, sendo que o principal objetivo dos
 documentos selecionados (FD e CC) seja a sua regularização, não necessitando de registos
@@ -84,7 +84,7 @@ contabilísticos.
 
 O número do documento pode ser atribuído pelo sistema. Na tela abaixo demonstrada, foram adicionados campos de procura dos documentos que permitem a associação entre CC e FD.
 
-![Anulação de Receitas AR.png](img/pages/documentos_af_e_ar/AR.png)
+![Anulação de Receitas AR.png](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/documentos_af_e_ar/AR.png)
 
 **Nota**: Estes novos documentos devem aparecer no extrato de entidade.
 
@@ -92,10 +92,10 @@ Nas restantes listagens de gestão de terceiros o documento P2 e NC ficam como r
 
 Ao premir o botão “imprimir”, o comando redireciona para a tela abaixo mostrada, na qual o utilizador escolhe os critérios de seleção da impressão:
 
-![Encontro_de_Contas](img/pages/documentos_af_e_ar/Encontro_de_Contas.png)
+![Encontro_de_Contas](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/documentos_af_e_ar/Encontro_de_Contas.png)
 
 Na impressão, o resultado da Anulação de Receita ou Anulação de Faturas deve ser:
 
-![resultado_da_impessao](img/pages/documentos_af_e_ar/resultado_da_impessao.png)
+![resultado_da_impessao](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/documentos_af_e_ar/resultado_da_impessao.png)
 
-![resultado_da_impessao2](img/pages/documentos_af_e_ar/resultado_da_impessao2.png)
+![resultado_da_impessao2](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/documentos_af_e_ar/resultado_da_impessao2.png)

@@ -51,33 +51,33 @@ Para importar dados de um arquivo de texto usando o Microsoft Office Excel: O ut
 Os formatos de arquivo de texto usados com frequência:
 Arquivos de texto com valores separados por vírgulas (.CSV), nos quais o caracter vírgula (,) geralmente separa cada campo de texto.
 
-![imagem3](img/pages/importacao_csvs/image3.png)
+![imagem3](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image3.png)
 
 
 Findo o preenchimento do respetivo ficheiro de integração, o utilizador deve guardar o caminho do documento com a respetiva extensão anteriormente referida.
-![imagem4](img/pages/importacao_csvs/image4.png)
+![imagem4](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image4.png)
 
 Menu:
 
-![imagem5](img/pages/importacao_csvs/image5.png)
+![imagem5](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image5.png)
 
 Submenu:
 
-![imagem6](img/pages/importacao_csvs/image6.png)
+![imagem6](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image6.png)
 
 
-No submenu acima referido, é onde o utilizador tem de fazer a importação do ficheiro, pressionando para o efeito o botão![botão_importar](img/pages/importacao_csvs/botão_importar.png).
+No submenu acima referido, é onde o utilizador tem de fazer a importação do ficheiro, pressionando para o efeito o botão![botão_importar](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/botão_importar.png).
 
 Nova tela surge, sendo que o utilizador tem de escolher o caminho para chegar ao ficheiro criado nos passos anteriores.
 
-![imagem7](img/pages/importacao_csvs/image7.png)
+![imagem7](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image7.png)
 
 O utilizador para verificar a integração do ficheiro, terá para o efeito de pressionar “ver/testar Ficheiro”. Ao carregar, o ficheiro CSV. corre em background podendo dar um de dois resultados:
 
 
 Erro no ficheiro:
 
-![imagem8](img/pages/importacao_csvs/image8.png)
+![imagem8](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image8.png)
 
 Caso esta situação aconteça, o Responsável pela integração tem de verificar a natureza do erro, corrigir, gravar e proceder de novo ao teste do ficheiro. As mensagens de erro aparecem sempre que se verifique uma incompatibilidade entre a estrutura do ficheiro com as validações do SICC.
 
@@ -85,16 +85,16 @@ Após correção desses mesmos erros, o resultado esperado é:
 
 ***Ficheiro Testado e pronto para importação:***
 
-![imagem9](img/pages/importacao_csvs/image9.png)
+![imagem9](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image9.png)
 
 **Nota:**
 Aquando da criação do Orçamento Ordinário, o utilizador tem a possibilidade de ver os valores importados e respetivos aos totais das Receitas e Despesas.
 
-Se o ficheiro apresentar o aspeto acima demonstrado, quer dizer que não foram detetados problemas entre a estrutura do ficheiro, sendo que nesta etapa o utilizador pode fazer a importação, pressionando para o efeito o botão ![botão_importa_ligação](img/pages/importacao_csvs/botão_importa_ligação.png).
+Se o ficheiro apresentar o aspeto acima demonstrado, quer dizer que não foram detetados problemas entre a estrutura do ficheiro, sendo que nesta etapa o utilizador pode fazer a importação, pressionando para o efeito o botão ![botão_importa_ligação](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/botão_importa_ligação.png).
 
 Uma nova mensagem surge e o ficheiro integrado, dando-se assim como encerrado o carregamento.
 
-![imagem10](img/pages/importacao_csvs/image10.png)
+![imagem10](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image10.png)
 
 <a name="CB_CM"></a>
 
@@ -103,16 +103,16 @@ Uma nova mensagem surge e o ficheiro integrado, dando-se assim como encerrado o 
 Conforme mencionado no capítulo anterior, os vários lançamentos no sistema SICC, obedecem a uma determinada estrutura, a qual tem de ser respeitada para a integração dos mesmos ficheiros. Neste segundo capítulo é demonstrada assim a estrutura para os Cabimentos e para os Compromissos.
 
 Cabimentos:
-![imagem11](img/pages/importacao_csvs/image11.png)
+![imagem11](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image11.png)
 
 Compromissos:
-![imagem12](img/pages/importacao_csvs/image12.png)
+![imagem12](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image12.png)
 
 Menu:
-![imagem13](img/pages/importacao_csvs/image13.png)
+![imagem13](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image13.png)
 
 Submenu:
-![imagem14](img/pages/importacao_csvs/image14.png)
+![imagem14](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image14.png)
 
 **Nota:**
 Escolher o separador do Cabimento (CB) ou do Compromisso (CM), sendo que ambos têm a possibilidade de Importação
@@ -120,7 +120,7 @@ Escolher o separador do Cabimento (CB) ou do Compromisso (CM), sendo que ambos t
 Como explicado anteriormente, as telas de importação funcionam de igual forma em todos os ecrãs, sendo que podem acontecer duas situações:
 - Erro no ficheiro;
 - Ficheiro testado e pronto para importação;
-![imagem15](img/pages/importacao_csvs/image15.png)
+![imagem15](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image15.png)
 
 **Nota:**
 O Processo de importação é em todo igual ao explicado no capítulo anterior. Realçando no entanto que qualquer erro que aconteça durante o processo terá de ser revisto, salvo e sujeito a novo teste de verificação de documento. Enquanto existirem mensagens de erro não resolvidas o sistema não completa a importação.
@@ -129,15 +129,15 @@ O Processo de importação é em todo igual ao explicado no capítulo anterior. 
 
 # 5.    CP
 
-![imagem16](img/pages/importacao_csvs/image16.png)
+![imagem16](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image16.png)
 
 Menu:
-![imagem17](img/pages/importacao_csvs/image17.png)
+![imagem17](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image17.png)
 
 Submenu:
-![imagem18](img/pages/importacao_csvs/image18.png)
+![imagem18](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image18.png)
 
-![imagem19](img/pages/importacao_csvs/image19.png)
+![imagem19](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image19.png)
 
 
 **Nota:**
@@ -150,15 +150,15 @@ O Processo de importação é em todo igual ao explicado no capítulo anterior. 
 Neste capítulo pretende-se demonstrar a criação dos ficheiros de importação relativos ao P1 e P2. Desta forma, abaixo demonstrado, encontram-se as estruturas dos ficheiros CSV. com as respetivas obrigatoriedades de preenchimento assinaladas a Bold/Negrito.
 
 **P1**
-![imagem20](img/pages/importacao_csvs/image20.png)
+![imagem20](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image20.png)
 
 **P2**
-![imagem21](img/pages/importacao_csvs/image21.png)
+![imagem21](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image21.png)
 
 Para integração dos ficheiros criados no passo anterior, deve o utilizador usar o seguinte caminho:
 
 Menu:
-![imagem22](img/pages/importacao_csvs/image22.png)
+![imagem22](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image22.png)
 
 
 
@@ -166,16 +166,16 @@ Abaixo, encontram-se as telas relativas à importação dos ficheiros CSV. Confo
 Submenu:
 
 **P1**
-![imagem23](img/pages/importacao_csvs/image23.png)
+![imagem23](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image23.png)
 
 
 **P2**
-![imagem24](img/pages/importacao_csvs/image24.png)
+![imagem24](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image24.png)
 
 
 Para efeitos de manual, é demonstrada a tela de importação do P2, onde o utilizador faz a importação do ficheiro CSV. As recomendações e notas evidenciadas anteriormente servem de igual forma para este capítulo.
 
-![imagem25](img/pages/importacao_csvs/image25.png)
+![imagem25](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image25.png)
 
 <a name="AM_AB_AL"></a>
 
@@ -189,21 +189,21 @@ De forma abrangente, neste capítulo pretende-se demonstrar as telas das posiç�
 
 Os menus para estas alterações encontram-se no seguinte caminho:
 
-![imagem26](img/pages/importacao_csvs/image26.png)
+![imagem26](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image26.png)
 
 Os ficheiros de integração são os seguintes:
 
 **AM**
 
-![imagem27](img/pages/importacao_csvs/image27.png)
+![imagem27](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image27.png)
 
 **AB**
 
-![imagem28](img/pages/importacao_csvs/image28.png)
+![imagem28](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image28.png)
 
 **AL**
 
-![imagem29](img/pages/importacao_csvs/image29.png)
+![imagem29](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image29.png)
 
 **Nota:**
 O Processo de importação é em todo igual ao explicado no capítulo anterior. Realçando no entanto que qualquer erro que aconteça durante o processo terá de ser revisto, salvo e sujeito a novo teste de verificação de documento. Enquanto existirem mensagens de erro não resolvidas o sistema não completa a importação.
@@ -214,36 +214,36 @@ O Processo de importação é em todo igual ao explicado no capítulo anterior. 
 
 De igual forma aos capítulos anteriores, o procedimento de importação é idêntico, no entanto e na elaboração do ficheiro CSV. No entanto e neste caso específico, constatamos que para o carregamento do CE (conforme imagem abaixo), o ficheiro pode conter vários tipos de documentos gerados em passos anteriores e que entrarão todos em conjunto na integração (ao contrário da individualidade de tipos de documentos demonstrados anteriormente).
 
-![imagem30](img/pages/importacao_csvs/image30.png)
+![imagem30](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image30.png)
 
 Menu:
 
-![imagem31](img/pages/importacao_csvs/image31.png)
+![imagem31](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image31.png)
 
 Submenu:
 
-![imagem32](img/pages/importacao_csvs/image32.png)
+![imagem32](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image32.png)
 
 Nova tela surge, sendo que o utilizador tem de escolher o caminho para chegar ao ficheiro criado com extensão CSV.
 
-![imagem33](img/pages/importacao_csvs/image33.png)
+![imagem33](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image33.png)
 
 O utilizador para verificar a integração do ficheiro, terá para o efeito de pressionar “ver/testar Ficheiro”. Igualmente ao explicado anteriormente, ao carregar, o ficheiro CSV., o mesmo corre em background podendo dar um de dois resultados:
 
 Erro no ficheiro:
 
-![imagem34](img/pages/importacao_csvs/image34.png)
+![imagem34](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image34.png)
 
 Caso esta situação aconteça, o Responsável pela integração tem de verificar a natureza do erro, corrigir, gravar e proceder de novo ao teste do ficheiro. As mensagens de erro aparecem sempre que se verifique uma incompatibilidade entre a estrutura do ficheiro com as validações do SICC.
 O segundo resultado é:
 
 Ficheiro Testado e pronto para importação:
 
-![imagem35](img/pages/importacao_csvs/image35.png)
+![imagem35](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image35.png)
 
-Se o ficheiro apresentar o aspeto acima demonstrado, quer dizer que não foram detetados problemas entre a estrutura do ficheiro, sendo que nesta etapa o utilizador pode fazer a importação, pressionando para o efeito o botão![botão_importa_ligação](img/pages/importacao_csvs/botão_importa_ligação.png).
+Se o ficheiro apresentar o aspeto acima demonstrado, quer dizer que não foram detetados problemas entre a estrutura do ficheiro, sendo que nesta etapa o utilizador pode fazer a importação, pressionando para o efeito o botão![botão_importa_ligação](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/botão_importa_ligação.png).
 
-![imagem36](img/pages/importacao_csvs/image36.png)
+![imagem36](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image36.png)
 
 Uma nova mensagem surge e o ficheiro integrado, dando-se assim como encerrado o carregamento dos CE's.
 
@@ -253,36 +253,36 @@ Uma nova mensagem surge e o ficheiro integrado, dando-se assim como encerrado o 
 
 Neste capítulo e de igual maneira ao procedimento de importação do CE (conforme imagem abaixo), o ficheiro pode conter vários tipos de documentos gerados no passo anterior (CE), sendo que neste caso em concreto e para realização da AP, necessitamos de dados como a conta bancária e o IBAN. A atribuição do Nº da AP é também definida pelo utilizador.
 
-![imagem37](img/pages/importacao_csvs/image37.png)
+![imagem37](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image37.png)
 
 
 **Nota:**
 A categoria de motivo é de preenchimento obrigatório quando existam contas bancárias e IBAN associados. Desta forma, a numeração da categoria deve ser preenchida pelo utilizador, conforme a tabela abaixo demonstrada:
 
-![imagem38](img/pages/importacao_csvs/image38.png)
+![imagem38](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image38.png)
 
 Menu:
 
-![imagem39](img/pages/importacao_csvs/image39.png)
+![imagem39](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image39.png)
 
 Submenu:
 
-![imagem40](img/pages/importacao_csvs/image40.png)
+![imagem40](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image40.png)
 
 Procedimento igual aos efetuados anteriormente, em que o utilizador escolhe o ficheiro CSV no diretório de origem.
 
-![imagem41](img/pages/importacao_csvs/image41.png)
+![imagem41](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image41.png)
 
 De igual forma, o carregamento na fase de testar o ficheiro pode apresentar erros, pelo que a responsabilidade de quem cria é a de corrigir, salvar e carregar novamente.
 Neste caso, e visto que anteriormente já foram demonstrados *Logs* de erros, demonstramos somente o resultado do carregamento.
 
 **Ficheiro Testado e pronto para importação:**
-![imagem42](img/pages/importacao_csvs/image42.png)
+![imagem42](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image42.png)
 
 
-Se o ficheiro apresentar o aspeto acima demonstrado, quer dizer que não foram detetados problemas entre a estrutura do ficheiro, sendo que nesta etapa o utilizador pode fazer a importação, pressionando para o efeito o botão! [botão_importa_ligação](img/pages/importacao_csvs/botão_importa_ligação.png).
+Se o ficheiro apresentar o aspeto acima demonstrado, quer dizer que não foram detetados problemas entre a estrutura do ficheiro, sendo que nesta etapa o utilizador pode fazer a importação, pressionando para o efeito o botão! [botão_importa_ligação](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/botão_importa_ligação.png).
 
-![imagem43](img/pages/importacao_csvs/image43.png)
+![imagem43](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image43.png)
 
 Uma nova mensagem surge e o ficheiro integrado, dando-se assim como encerrado o carregamento das AP’s.
 
@@ -292,30 +292,30 @@ Uma nova mensagem surge e o ficheiro integrado, dando-se assim como encerrado o 
 
 Este é o último capítulo referente ao processo da despesa, pelo que a ultima fase é a correspondente ao Pagamento. Desta forma, depois de escolhidas as entidades na AP, neste processo efetiva-se o pagamento. Para o efeito, novo ficheiro CSV. é criado com a estrutura abaixo demonstrada.
 
-![imagem44](img/pages/importacao_csvs/image44.png)
+![imagem44](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image44.png)
 
 Menu:
 
-![imagem45](img/pages/importacao_csvs/image45.png)
+![imagem45](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image45.png)
 
 
 Submenu:
 
-![imagem46](img/pages/importacao_csvs/image46.png)
+![imagem46](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image46.png)
 
 O procedimento é semelhante aos efetuados anteriormente, em que o utilizador escolhe o ficheiro CSV no diretório de origem.
 
-![imagem47](img/pages/importacao_csvs/image47.png)
+![imagem47](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image47.png)
 
 O carregamento na fase de testar o ficheiro pode apresentar erros, pelo que a responsabilidade de quem cria é a de corrigir, salvar e carregar novamente.
 
 Caso o ficheiro no teste/ver ficheiro não produza erros, o resultado é o abaixo demonstrado:
 
-![imagem48](img/pages/importacao_csvs/image48.png)
+![imagem48](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image48.png)
 
 Nova mensagem é despoletada pelo Sistema, dando-se assim como findo o carregamento. Poderá o utilizador constatar a sua integração através de uma consulta.
 
-![imagem49](img/pages/importacao_csvs/image49.png)
+![imagem49](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image49.png)
 
 <a name="OD"></a>
 
@@ -324,24 +324,24 @@ Nova mensagem é despoletada pelo Sistema, dando-se assim como findo o carregame
 A importação das operações diversas (OD), em nada difere dos procedimentos de importação demonstrados anteriormente.
 Desta forma, o utilizador terá somente de proceder ao preenchimento não esquecendo que para uma conta 6*, 7* ou 3* é obrigatória a atribuição de um centro de custo.
 
-![imagem50](img/pages/importacao_csvs/image50.png)
+![imagem50](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image50.png)
 
 Menu:
 
-![imagem51](img/pages/importacao_csvs/image51.png)
+![imagem51](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image51.png)
 
 Submenu:
 
-![imagem52](img/pages/importacao_csvs/image52.png)
+![imagem52](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image52.png)
 
 De acordo com o que tem vindo a ser demonstrado o utilizador terá de escolher o caminho onde tem o ficheiro CSV. para importação.
 
-![imagem53](img/pages/importacao_csvs/image53.png)
+![imagem53](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image53.png)
 
 Para verificar se a informação do ficheiro está correta, deve o utilizador ver/testar o ficheiro para validar. Caso existam mensagens de erro, as mesmas serão despoletadas na tela de log. de erros no canto inferior direito.
 
-![imagem54](img/pages/importacao_csvs/image54.png)
+![imagem54](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image54.png)
 
 A mensagem de importação concluída surgirá no sistema, sendo que para o efeito, o utilizador tem a possibilidade de proceder á consulta dos registos que acabou de importar.
 
-![imagem55](img/pages/importacao_csvs/image55.png)
+![imagem55](https://spmssicc.github.io/pages/content/html/content/img/markdown_docs/importacao_csvs/image55.png)
