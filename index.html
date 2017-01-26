@@ -50,6 +50,7 @@
 																var converter = new showdown.Converter() //instancia
 																,text = request.responseText //guarda o documento em string
 																,htmlDoc = converter.makeHtml(text); //converte a string em HTML
+																alert('document.getElementById("documento")');
 																document.getElementById("documento").innerHTML = htmlDoc;//coloca o html no elemento #documento
 																setAttribute("btnEditarDoc","onclick","openInNewTab('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md')");
 																alert('antes da ocultaElemento');
