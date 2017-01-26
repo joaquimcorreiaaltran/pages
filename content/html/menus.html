@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<title>SICC - Documentação</title>
+		<title>SICC - Manual de Utilizador</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="../css/style.css">
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 
 		<!-- libs -->
-		<script src="js/libs/accordion-menu.js"></script>
-		<script src="js/jquery-3.1.1.js"></script>
-		<script src="js/jquery.zoom.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/util.js"></script>
-		<script src="js/main.js"></script>
-		<script src="js/highslide-with-gallery.js"></script>
-		<script src="js/libs/showdown.js"></script>
+		<script src="../../js/libs/accordion-menu.js"></script>
+		<script src="../../js/jquery-3.1.1.js"></script>
+		<script src="../../js/jquery.zoom.js"></script>
+		<script src="../../js/skel.min.js"></script>
+		<script src="../../js/util.js"></script>
+		<script src="../../js/main.js"></script>
+		<script src="../../js/highslide-with-gallery.js"></script>
+		<script src="../../js/libs/showdown.js"></script>
 
 
 		<!-- configurations -->
@@ -27,7 +27,7 @@
 		</script>
 
 		<script type="text/javascript">
-			hs.graphicsDir = 'content/img/highslide/graphics/';
+			hs.graphicsDir = '../../content/img/highslide/graphics/';
 			hs.align = 'center';
 			hs.transitions = ['expand', 'crossfade'];
 			hs.outlineType = 'rounded-white';//'rounded-white';'rounded-black'
@@ -161,6 +161,7 @@
 
 		<section id="section_docs">
 			<article id="documento" class="modulo"></article>
+			<script>loadHtmlFromMarkdown(menus);</script>
 			<p id="p_btns" style='position:fixed; bottom:0;right:0; text-align: center; display: none;'>
 				<button title="Diminuir tamanho da página" id="minusBtn" type="button" alt="minusBtn" onclick="zoomOutBrowser()" style="alignt: center;float: right;color: white; height:30px; width: 30px">
 					<i class="fa fa-minus fa-fw"></i>
@@ -181,13 +182,13 @@
 	<footer>
 		<div id="p_logos" style='text-align: center'>
 			<a id="SICC_logo" href="http://spms.min-saude.pt/product/sicc" target="_blank" title="Abrir página">
-				<img id="SICC_logo_img" src="content/img/pages/logos/SICC_logo_300x148.png" alt="SICC_logo" style="height:74px; width:150px; border:0;vertical-align: middle;">
+				<img id="SICC_logo_img" src="../content/img/pages/logos/SICC_logo_300x148.png" alt="SICC_logo" style="height:74px; width:150px; border:0;vertical-align: middle;">
 			</a>
 			<a id="SPMS_logo" href="http://spms.min-saude.pt" target="_blank" title="Abrir página">
-				<img id="SPMS_logo_img" src="content/img/pages/logos/SPMS2016B_300x148.png" alt="SPMS_logo" style="height:74px; width:150px; border:0;vertical-align: middle;">
+				<img id="SPMS_logo_img" src="../content/img/pages/logos/SPMS2016B_300x148.png" alt="SPMS_logo" style="height:74px; width:150px; border:0;vertical-align: middle;">
 			</a>
 			<a id="Republica_Portuguesa_logo" href="http://www.portugal.gov.pt/pt/ministerios/ms" target="_blank" title="Abrir página">
-				<img id="Republica_Portuguesa_logo_img" src="content/img/pages/logos/republica_portuguesa_300x148.png" alt="Republica_Portuguesa_logo" style="height:74px; width:150px; border:0; vertical-align: middle;" >
+				<img id="Republica_Portuguesa_logo_img" src="../img/pages/logos/republica_portuguesa_300x148.png" alt="Republica_Portuguesa_logo" style="height:74px; width:150px; border:0; vertical-align: middle;" >
 			</a>
 			<p style="text-align:center; padding-top:50px">
 				© 2016 Todos os Direitos Reservados ao Governo da República Portuguesa - Ministério da Saúde
@@ -200,7 +201,7 @@
 	<div id="sidebar" style="position: fixed;overflow-y: scroll;height: 100%;">
 		<nav>
 			<!--<div id="sidebar_menu" style="color: white;text-shadow: none;"></div>-->
-			<a id="amenuLink" href="content/html/amenu-source.html">Menu</a>
+			<a id="amenuLink" href="amenu-source.html">Menu</a>
 		</nav>
 	</div> <!-- SideBar-->
 
