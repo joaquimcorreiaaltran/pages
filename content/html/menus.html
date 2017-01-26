@@ -161,7 +161,6 @@
 
 		<section id="section_docs">
 			<article id="documento" class="modulo"></article>
-			<script>loadHtmlFromMarkdown(menus);</script>
 			<p id="p_btns" style='position:fixed; bottom:0;right:0; text-align: center; display: none;'>
 				<button title="Diminuir tamanho da página" id="minusBtn" type="button" alt="minusBtn" onclick="zoomOutBrowser()" style="alignt: center;float: right;color: white; height:30px; width: 30px">
 					<i class="fa fa-minus fa-fw"></i>
@@ -201,13 +200,14 @@
 	<div id="sidebar" style="position: fixed;overflow-y: scroll;height: 100%;">
 		<nav>
 			<!--<div id="sidebar_menu" style="color: white;text-shadow: none;"></div>-->
-			<a id="amenuLink-menu-doc" href="amenu-source-menu-doc.html">Menu</a>
+			<a id="amenuLink" href="amenu-source.html">Menu</a>
 		</nav>
 	</div> <!-- SideBar-->
-
-
-
 		</div> <!-- Content -->
+	<script>
+	$(document).ready(function() {
 
+		   loadHtmlFromMarkdown(menus);
+		});</script>
 </body>
 </html>
