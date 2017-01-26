@@ -165,10 +165,18 @@
 					<!--Elemento para mostrar documentos Markdown-->
 					<div id="documento" class="modulo" onchange="updateElement()"</div>
 					<p id="p_btns" style='position:fixed; bottom:0;right:0; text-align: center; display: none;'>
-						<button title="zoom" id="minusBtn" type="button" alt="minusBtn" onclick="zoomOutBrowser()" style="alignt: center;float: right;color: white; height:30px; width: 30px"><i class="fa fa-minus fa-fw"></i></button>
-						<button title="zoom" id="plusBtn" type="button" alt="plusBtn" onclick="zoomInBrowser()" style="alignt: center;float: right;color: white; height: 30px; width: 30px"><i class="fa fa-plus fa-fw"></i></button>
-						<button id="btnPDF" type="button" alt="btnPDF" onclick="" style="alignt: center;float: right;color: white; height: 30px; width: 30px"><i class="fa fa-cloud-download fa-fw"></i></button>
-						<button id="btnEditarDoc" type="button" alt="btnEditarDoc" onclick="openInNewTab()" style="alignt: center;float: right;color: white; height: 30px; width: 30px"><i class="fa fa-pencil fa-fw"></i></button>
+						<button title="Diminuir tamanho da página" id="minusBtn" type="button" alt="minusBtn" onclick="zoomOutBrowser()" style="alignt: center;float: right;color: white; height:30px; width: 30px">
+							<i class="fa fa-minus fa-fw"></i>
+						</button>
+						<button title="Aumentar tamanho da página" id="plusBtn" type="button" alt="plusBtn" onclick="zoomInBrowser()" style="alignt: center;float: right;color: white; height: 30px; width: 30px">
+							<i class="fa fa-plus fa-fw"></i>
+						</button>
+						<button title="Transferir documento" id="btnPDF" type="button" alt="btnPDF" onclick="" style="alignt: center;float: right;color: white; height: 30px; width: 30px">
+							<i class="fa fa-cloud-download fa-fw"></i>
+						</button>
+						<button title="Sugerir alterações ao documento" id="btnEditarDoc" type="button" alt="btnEditarDoc" onclick="openInNewTab()" style="alignt: center;float: right;color: white; height: 30px; width: 30px">
+							<i class="fa fa-pencil fa-fw"></i>
+						</button>
 					</p>
 					<script>mostraElemento("p_btns");</script>
 				</div>
@@ -177,10 +185,16 @@
 
 
 	<footer>
-		<div id="p_logos" style='text-align: center'
-			<a id="SICC_logo" href="http://spms.min-saude.pt/product/sicc" target="_blank"><img id="SICC_logo_img" src="content/img/pages/logos/SICC_logo_300x148.png" alt="SICC_logo" style="height:74px; width:150px; border:0;"></a>
-			<a id="SPMS_logo" href="http://spms.min-saude.pt" target="_blank"><img src="content/img/pages/logos/SPMS2016B_300x148.png" alt="SPMS_logo" style="height:74px; width:150px; border:0;"></a>
-			<a id="Republica_Portuguesa_logo" href="http://www.portugal.gov.pt/pt/ministerios/ms" target="_blank"><img src="content/img/pages/logos/republica_portuguesa_300x148.png" alt="Republica_Portuguesa_logo" style="height:74px; width:150px; border:0;" ></a>
+		<div id="p_logos" style='text-align: center'>
+			<a id="SICC_logo" href="http://spms.min-saude.pt/product/sicc" target="_blank" title="Abrir página">
+				<img id="SICC_logo_img" src="content/img/pages/logos/SICC_logo_300x148.png" alt="SICC_logo" style="height:74px; width:150px; border:0;">
+			</a>
+			<a id="SPMS_logo" href="http://spms.min-saude.pt" target="_blank" title="Abrir página">
+				<img id="SPMS_logo_img" src="content/img/pages/logos/SPMS2016B_300x148.png" alt="SPMS_logo" style="height:74px; width:150px; border:0;">
+			</a>
+			<a id="Republica_Portuguesa_logo" href="http://www.portugal.gov.pt/pt/ministerios/ms" target="_blank" title="Abrir página">
+				<img id="Republica_Portuguesa_logo_img" src="content/img/pages/logos/republica_portuguesa_300x148.png" alt="Republica_Portuguesa_logo" style="height:74px; width:150px; border:0;" >
+			</a>
 			<p style="text-align:center; padding-top:50px">
 				© 2016 Todos os Direitos Reservados ao Governo da República Portuguesa - Ministério da Saúde
 			</p>
