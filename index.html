@@ -52,6 +52,7 @@
 																,htmlDoc = converter.makeHtml(text); //converte a string em HTML
 																document.getElementById("documento").innerHTML = htmlDoc;//coloca o html no elemento #documento
 																setAttribute("btnEditarDoc","onclick","openInNewTab('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md')");
+																alert('antes da ocultaElemento');
 																ocultaElemento("p_logos");
 																mostraElemento("p_btns");
 																zommClickImagem();//adiciona a função zoom às imagens do documento
@@ -92,7 +93,6 @@
 		function mostraElemento(elementId) {
 			alert('mostraElemento');
 		    document.getElementById(elementId).style.display = 'block';
-			 alert('mostraElemento');
     	}
 	 	function ocultaElemento(elementId) {
 		  document.getElementById(elementId).style.display = 'none';
