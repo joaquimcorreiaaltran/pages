@@ -62,7 +62,6 @@ dimmingOpacity: 50, // Lightbox style dimming background
 dimmingDuration: 50, // 0 for instant dimming
 //Configurations
 
-fadeInOut = true,
 numberPosition = 'caption',
 dimmingOpacity = 0.5,
 dimmingGeckoFix = true,
