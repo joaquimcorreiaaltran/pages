@@ -51,7 +51,7 @@
 																,text = request.responseText //guarda o documento em string
 																,htmlDoc = converter.makeHtml(text); //converte a string em HTML
 																document.getElementById("documento").innerHTML = htmlDoc;//coloca o html no elemento #documento
-																setAttribute("btnEditarDoc","onclick","openInNewTab('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md')");
+																setAttribute("btnEditarDoc","href","https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md')");
 																setAttribute("btnEditarDoc","target","_blank")
 																ocultaElemento("p_logos");
 																mostraElemento("p_btns");
