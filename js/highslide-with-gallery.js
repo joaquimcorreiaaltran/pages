@@ -60,13 +60,6 @@ transitions : ['expand', 'crossfade'],
 transitionDuration: 250,
 dimmingOpacity: 50, // Lightbox style dimming background
 dimmingDuration: 50, // 0 for instant dimming
-//Configurations
-
-numberPosition = 'caption',
-dimmingOpacity = 0.5,
-dimmingGeckoFix = true,
-blockRightClick = true,
-
 
 anchor : 'auto', // where the image expands from
 align : 'center', // position in the client (overrides anchor)
