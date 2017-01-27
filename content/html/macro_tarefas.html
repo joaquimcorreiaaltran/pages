@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>SICC - Manual de Utilizador</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../../css/main.css">
+		<link rel="stylesheet" href="../../css/style.css">
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+
+		<!-- libs -->
+		<script src="../../js/libs/accordion-menu.js"></script>
+		<script src="../../js/jquery-3.1.1.js"></script>
+		<script src="../../js/jquery.zoom.js"></script>
+		<script src="../../js/skel.min.js"></script>
+		<script src="../../js/util.js"></script>
+		<script src="../../js/main.js"></script>
+		<script src="../../js/highslide-with-gallery.js"></script>
+		<script src="../../js/libs/showdown.js"></script>
+		<script src="../../js/sicc-project.js"></script>
+
+		<!--highslide-with-gallery configs-->
+		<script>
+			hs.graphicsDir = '../../content/img/highslide/graphics/';
+		</script>
+</head>
+<body>
+	<!-- Content -->
+	<div id="content">
+	  	<header></header>
+
+		<section id="section_docs">
+			<article id="documento" class="modulo">
+				<!--loaded with js-->
+			</article>
+			<div id="docButtons" style='position:fixed; bottom:0;right:0; text-align: center; display: block;'>
+				<!--loaded with js-->
+			</div>
+		</section>
+
+		<footer><!--loaded with js--></footer>
+
+		<!-- Sidebar -->
+		<div id="sidebar" style="position: fixed;overflow-y: scroll;height: 100%;">
+			<nav>
+				<a id="amenuLink" href="amenu-source.html">Menu</a>
+			</nav>
+		</div> <!-- SideBar-->
+	</div> <!-- Content -->
+
+	<script>
+		convertMdToHtml("macro_tarefas","documento");
+		$("footer").load("footer.html");
+		$("#docButtons").load("docButtons.html");
+	</script>
+
+</body>
+</html>
