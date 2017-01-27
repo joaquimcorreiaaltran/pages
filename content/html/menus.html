@@ -47,7 +47,7 @@
 
 	<script>
 		convertMdToHtml("menus","documento");
-		document.getElementsByTagName("footer")[0].innerHTML = $("#footer").load("footer.html");
+		document.getElementsByTagName("footer")[0].innerHTML = $("footer").load("footer.html");
 		document.getElementById("docButtons")[0].innerHTML = $("#docButtons").load("docButtons.html");
 
 		if(isSafari){
@@ -56,6 +56,6 @@
 			ocultaElemento(minusBtn);
 		}
 	</script>
-	
+
 </body>
 </html>
