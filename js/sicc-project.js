@@ -9,7 +9,7 @@ Feb-2017
  /* Para o Showdown interpretar o Markdown como no GitHub */
  showdown.setFlavor('github');
 
-hs.graphicsDir = '../../content/img/highslide/graphics/';
+hs.graphicsDir = ('../../content/img/highslide/graphics/' || 'content/img/highslide/graphics/');
 hs.align = 'center';
 hs.transitions = ['expand', 'crossfade'];
 hs.outlineType = 'rounded-white';//'rounded-white';'rounded-black'
