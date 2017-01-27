@@ -32,8 +32,8 @@ lang : {
 	restoreTitle : 'Clique para fechar a imagem, mantenha premido para mover.'
 
 },
-// See http://highslide.com/ref for examples of settings
-graphicsDir : ('../../pages/content/img/highslide/graphics/' || 'pages/content/img/highslide/graphics/'),
+// See https://highslide.com/ref for examples of settings
+graphicsDir : '../../pages/content/img/highslide/graphics/',
 expandCursor : 'zoomin.cur', // null disables
 restoreCursor : 'zoomout.cur', // null disables
 expandDuration : 250, // milliseconds
@@ -767,7 +767,7 @@ init : function () {
 			}, hs.container, 1
 		);
 
-		// http://www.robertpenner.com/easing/
+		// https://www.robertpenner.com/easing/
 		Math.linearTween = function (t, b, c, d) {
 			return c*t/d + b;
 		};
