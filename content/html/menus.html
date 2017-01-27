@@ -19,7 +19,15 @@
 		<script src="../../js/highslide-with-gallery.js"></script>
 		<script src="../../js/libs/showdown.js"></script>
 		<script src="../../js/sicc-project.js"></script>
+		<script>
+			alert('isChrome: '+isChrome+'isSafari: '+isSafari+'isIE: '+isIE);
 
+			if(isSafari){
+				alert('Está a utilizar o Safari');
+				ocultaElemento(plusBtn);
+				ocultaElemento(minusBtn);
+			}
+		</script>
 </head>
 <body>
 	<!-- Content -->
@@ -49,14 +57,6 @@
 		convertMdToHtml("menus","documento");
 		document.getElementsByTagName("footer")[0].innerHTML = $("footer").load("footer.html");
 		document.getElementById("docButtons")[0].innerHTML = $("#docButtons").load("docButtons.html");
-
-alert('isChrome: '+isChrome+'isSafari: '+isSafari+'isIE: '+isIE);
-
-		if(isSafari){
-			alert('Está a utilizar o Safari');
-			ocultaElemento(plusBtn);
-			ocultaElemento(minusBtn);
-		}
 	</script>
 
 </body>
