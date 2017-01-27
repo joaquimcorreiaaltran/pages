@@ -8,7 +8,7 @@ Feb-2017
 
  /* Para o Showdown interpretar o Markdown como no GitHub */
  showdown.setFlavor('github');
-
+/*
 hs.graphicsDir = ('../../pages/content/img/highslide/graphics/' || 'pages/content/img/highslide/graphics/');
 hs.align = 'center';
 hs.transitions = ['expand', 'crossfade'];
@@ -18,7 +18,7 @@ hs.numberPosition = 'caption';
 hs.dimmingOpacity = 0.5;
 hs.dimmingGeckoFix = true;
 hs.blockRightClick = true;
-
+*/
 
 // functions
 
