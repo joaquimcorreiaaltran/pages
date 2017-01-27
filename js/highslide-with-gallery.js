@@ -58,7 +58,7 @@ enableKeyListener : true,
 openerTagNames : ['a'], // Add more to allow slideshow indexing
 transitions : [],
 transitionDuration: 250,
-dimmingOpacity: 0, // Lightbox style dimming background
+dimmingOpacity: 50, // Lightbox style dimming background
 dimmingDuration: 50, // 0 for instant dimming
 
 anchor : 'auto', // where the image expands from
