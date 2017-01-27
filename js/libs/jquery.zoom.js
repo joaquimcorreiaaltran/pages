@@ -1,7 +1,7 @@
 /*!
 	Zoom 1.7.18
 	license: MIT
-	http://www.jacklmoore.com/zoom
+	https://www.jacklmoore.com/zoom
 */
 (function ($) {
 	var defaults = {
@@ -220,7 +220,7 @@
 							}
 						});
 				}
-				
+
 				if ($.isFunction(settings.callback)) {
 					settings.callback.call(img);
 				}

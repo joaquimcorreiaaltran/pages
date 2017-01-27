@@ -52,7 +52,7 @@ padToMinWidth : false, // pad the popup width to make room for wide caption
 fullExpandPosition : 'bottom right',
 fullExpandOpacity : 1,
 showCredits : true, // you can set this to false if you want
-creditsHref : 'http://highslide.com/',
+creditsHref : 'https://highslide.com/',
 creditsTarget : '_self',
 enableKeyListener : true,
 openerTagNames : ['a'], // Add more to allow slideshow indexing

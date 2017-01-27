@@ -26,7 +26,7 @@
       <header>
          <H1>AJUDA</H1>
       </header>
-		
+
       <article>
 			<section id="section_docs">
 				<article id="documento" class="modulo">
@@ -38,7 +38,7 @@
 			</section>
       </article>
 
-      <footer><!-- Loaded with JS --></footer>
+      <footer><script>$("footer").load("footer.html");</script></footer>
 
    	<!-- Sidebar -->
    	<div id="sidebar" style="position: fixed;overflow-y: scroll;height: 100%;">
@@ -48,10 +48,6 @@
    		</nav>
    	</div> <!-- SideBar-->
 	</div> <!-- Content -->
-
-	<script>
-		document.getElementsByTagName("footer")[0].innerHTML = $("footer").load("footer.html");
-	</script>
 
 </body>
 </html>

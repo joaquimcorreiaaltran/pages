@@ -29,26 +29,21 @@
 		</header>
 
 		<section id="section_docs">
-			<article id="documento" class="modulo">
-			</article>
+			<article id="documento" class="modulo"></article>
 		</section>
 
 		<footer>
-			<!--loaded with js-->
+			<script>$("footer").load("content/html/footer.html");</script>
 		</footer>
 
 		<!-- Sidebar -->
 		<div id="sidebar" style="position: fixed;overflow-y: scroll;height: 100%;">
 			<nav>
 				<!--<div id="sidebar_menu" style="color: white;text-shadow: none;"></div>-->
-				<a id="amenuLink" href="content/html/amenu-source.html">Menu</a>
+				<a id="amenuLink" href="content/html/amenu-source.html"></a>
 			</nav>
 		</div> <!-- SideBar-->
 	</div> <!-- Content -->
-
-<script>
-	document.getElementsByTagName("footer")[0].innerHTML = $("footer").load("content/html/footer.html");
-</script>
 
 </body>
 </html>
