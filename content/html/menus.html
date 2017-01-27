@@ -50,6 +50,8 @@
 		document.getElementsByTagName("footer")[0].innerHTML = $("footer").load("footer.html");
 		document.getElementById("docButtons")[0].innerHTML = $("#docButtons").load("docButtons.html");
 
+alert('isChrome: '+isChrome+'isSafari: '+isSafari+'isIE: '+isIE);
+
 		if(isSafari){
 			alert('Está a utilizar o Safari');
 			ocultaElemento(plusBtn);
