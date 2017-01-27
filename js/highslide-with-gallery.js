@@ -33,7 +33,7 @@ lang : {
 
 },
 // See https://highslide.com/ref for examples of settings
-graphicsDir : '',//'../../pages/content/img/highslide/graphics/',
+graphicsDir : '../../content/img/highslide/graphics/',//'../../pages/content/img/highslide/graphics/',
 expandCursor : 'zoomin.cur', // null disables
 restoreCursor : 'zoomout.cur', // null disables
 expandDuration : 250, // milliseconds
@@ -56,20 +56,28 @@ creditsHref : 'https://highslide.com/',
 creditsTarget : '_self',
 enableKeyListener : true,
 openerTagNames : ['a'], // Add more to allow slideshow indexing
-transitions : [],
+transitions : ['expand', 'crossfade'];
 transitionDuration: 250,
 dimmingOpacity: 50, // Lightbox style dimming background
 dimmingDuration: 50, // 0 for instant dimming
+//Configurations
+
+fadeInOut = true;
+numberPosition = 'caption';
+dimmingOpacity = 0.5;
+dimmingGeckoFix = true;
+blockRightClick = true;
+
 
 anchor : 'auto', // where the image expands from
-align : 'auto', // position in the client (overrides anchor)
+align : 'center', // position in the client (overrides anchor)
 targetX: null, // the id of a target element
 targetY: null,
 dragByHeading: true,
 minWidth: 200,
 minHeight: 200,
 allowSizeReduction: true, // allow the image to reduce to fit client size. If false, this overrides minWidth and minHeight
-outlineType : 'drop-shadow', // set null to disable outlines
+outlineType :  'rounded-white';//'rounded-white';'rounded-black';'drop-shadow'// set null to disable outlines
 skin : {
 	controls:
 		'<div class="highslide-controls"><ul>'+
