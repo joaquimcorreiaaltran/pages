@@ -32,7 +32,7 @@ lang : {
 	restoreTitle : 'Clique para fechar a imagem, mantenha premido para mover.'
 
 },
-// See https://highslide.com/ref for examples of settings
+// See http://highslide.com/ref for examples of settings
 graphicsDir : '../../content/img/highslide/graphics/',//'../../pages/content/img/highslide/graphics/',
 expandCursor : 'zoomin.cur', // null disables
 restoreCursor : 'zoomout.cur', // null disables
@@ -77,7 +77,7 @@ dragByHeading: true,
 minWidth: 200,
 minHeight: 200,
 allowSizeReduction: true, // allow the image to reduce to fit client size. If false, this overrides minWidth and minHeight
-outlineType :  'rounded-white';//'rounded-white';'rounded-black';'drop-shadow'// set null to disable outlines
+outlineType : 'rounded-white',//'rounded-white';'rounded-black';'drop-shadow'// set null to disable outlines
 skin : {
 	controls:
 		'<div class="highslide-controls"><ul>'+
