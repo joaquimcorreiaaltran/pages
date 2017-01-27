@@ -1,6 +1,6 @@
 # Macro Tarefas
 ---
-<!--
+
 # Índice
 
 1. [Introdução](#introducao)
@@ -12,7 +12,6 @@
 7. [Processo de Manual do utilizador](#processo_manual_utilizador)
 8. [Repositório em GitHub](#repositorio_github)
 9. [Conclusão](#conclusao)
--->
 
 <a name="introducao"></a>
 

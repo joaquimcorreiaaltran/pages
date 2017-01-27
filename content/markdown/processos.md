@@ -1,7 +1,7 @@
 # Processos
 
 ---
-<!--
+
 # Índice
 
 1. [Introdução](#introducao)
@@ -45,7 +45,6 @@
 		1. [Instituições Bancárias - Recolha](#instituicoes_bancarias_recolha)
 	2. [Terceiros](#terceiros)
 		1. [Gestão de Produtos - Recolha](#gestão_produtos_recolha)
--->
 
 <a name="introducao"></a>
 

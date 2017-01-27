@@ -1,5 +1,4 @@
 # MENUS DA APLICAÇÃO
-
 <!--
 # Índice
 
@@ -81,8 +80,6 @@
   3.	[Opção Mapas de Gestão](#op_mapas_gestao)
     1. [Documentos por Datas](#op_mapas_gestao_documentos_datas)
     2. [Documentos por Contas](#op_mapas_gestao_documentos_contas)
-
----
 
 <a name="introducao"></a>
 

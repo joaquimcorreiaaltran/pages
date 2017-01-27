@@ -1,13 +1,12 @@
 # Reposição de Pagamentos e Cobranças
 ---
-<!--
+
 # Índice
 
 1. [Introdução](#introducao)
 2. [Reposição Abatida aos Pagamentos](#rap)
 3. [Reposição Não Abatida nos Pagamentos](#rnap)
 4. [Resumo](#resumo)
--->
 
 <a name="introducao"></a>
 

@@ -7,17 +7,17 @@
 ``As cópias impressas não assinadas representam versões não controladas. ``
 
 ---
-<!--
+
 # Índice
 
 1. [Introdução](#introducao)
 2. [Abertura e encerramento de períodos contabilísticos](#abertura_encerramento_periodos_contabilisticos)
 3. [Produção de extrato de contas](#producao_extrato_contas)
 4. [Apuramento de resultados](#apuramento_resultados)
--->
-___
+
 
 <a name="introducao"></a>
+
 # 1. Introdução
 
 Surge a necessidade de com o presente manual demonstrar as operações que permitem definir os períodos contabilísticos para cada organismo, isto é, definir o período do ano fiscal disponível para efetuar lançamentos contabilísticos.
@@ -27,6 +27,7 @@ Podem ser abertos, em simultâneo, vários períodos contabilísticos. Geralment
 Períodos especiais podem ser abertos, para fecho de contas, durante o encerramento do exercício.
 
 <a name="abertura_encerramento_periodos_contabilisticos"></a>
+
 # 2. Abertura e encerramento de períodos contabilísticos
 
 A parametrização dos exercícios serve de elemento agregador de todo o processo de fecho de ano na contabilidade.
@@ -47,6 +48,7 @@ Após o encerramento do mês 13, o mesmo procedimento tem de ser feito para o m�
 ![img_3.png](https://spmssicc.github.io/pages/content/img/markdown_docs/gestao_exercicios/img_3.png)
 
 <a name="producao_extrato_contas"></a>
+
 # 3. Produção de extrato de contas
 
 Neste capítulo, será demonstrada a produção do ficheiro de extrato de contas, evidenciando igualmente a qual o período que se refere, sendo que para o efeito usaremos uma conta específica a título de exemplo.
@@ -68,6 +70,7 @@ Os meses 13, 14 e 15 devem sempre ter data contabilística do ultimo mês do exe
 ![img_7.png](https://spmssicc.github.io/pages/content/img/markdown_docs/gestao_exercicios/img_7.png)
 
 <a name="apuramento_resultados"></a>
+
 # 4. Apuramento de resultados
 
 Para o apuramento do resultado Líquido do exercício (RLE) concorrem todos os custos e perdas e todos os proveitos e ganhos reconhecidos no período respetivo.
