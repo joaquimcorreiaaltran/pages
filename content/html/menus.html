@@ -51,8 +51,7 @@
 																,text = request.responseText //guarda o documento em string
 																,htmlDoc = converter.makeHtml(text); //converte a string em HTML
 																document.getElementById("documento").innerHTML = htmlDoc;//coloca o html no elemento #documento
-																setAttribute("btnEditarDoc","href","https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md");
-																setAttribute("btnEditarDoc","target","_blank")
+																setAttribute("btnEditarDoc","onclick","window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank');")
 																ocultaElemento("p_logos");
 																mostraElemento("p_btns");
 																zommClickImagem();//adiciona a função zoom às imagens do documento
@@ -150,7 +149,7 @@
 				<button title="Transferir documento" id="btnPDF" type="button" alt="btnPDF" onclick="" style="alignt: center;float: right;color: white; height: 30px; width: 30px">
 					<i class="fa fa-cloud-download fa-fw"></i>
 				</button>
-				<button title="Sugerir alterações ao documento" id="btnEditarDoc" type="button" alt="btnEditarDoc" target="_blank" style="alignt: center;float: right;color: white; height: 30px; width: 30px">
+				<button title="Sugerir alterações ao documento" id="btnEditarDoc" type="button" alt="btnEditarDoc" onclick="window.open(url,'_blank');" style="alignt: center;float: right;color: white; height: 30px; width: 30px">
 					<i class="fa fa-pencil fa-fw"></i>
 				</button>
 			</p>
