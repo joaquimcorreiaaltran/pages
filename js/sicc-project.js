@@ -4,6 +4,21 @@ Author: SPMS, EPE
 Feb-2017
 */
 
+//Configurations
+
+ /* Para o Showdown interpretar o Markdown como no GitHub */
+ showdown.setFlavor('github');
+
+hs.graphicsDir = '../../content/img/highslide/graphics/';
+hs.align = 'center';
+hs.transitions = ['expand', 'crossfade'];
+hs.outlineType = 'rounded-white';//'rounded-white';'rounded-black'
+hs.fadeInOut = true;
+hs.numberPosition = 'caption';
+hs.dimmingOpacity = 0.5;
+hs.dimmingGeckoFix = true;
+hs.blockRightClick = true;
+
 
 // functions
 
