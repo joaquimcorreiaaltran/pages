@@ -18,9 +18,7 @@ function convertMdToHtml(docName,elementId){
                                           ,text = request.responseText //guarda o documento em string
                                           ,htmlDoc = converter.makeHtml(text); //converte a string em HTML
                                           document.getElementById(elementId).innerHTML = htmlDoc;//coloca o html no elemento #documento
-                                          alert('antes da zommClickImagem');
                                           zommClickImagem();
-                                          alert('depois da zommClickImagem');
                                        }/*if*/
                                     }/*function*/
    request.send();
@@ -29,7 +27,6 @@ function convertMdToHtml(docName,elementId){
 
 //Preparar imagem para zoom ou para não zoom (mostra ou não mostra a lupa)
 function zommClickImagem() {
-   alert('dentro da zommClickImagem');
     $('#documento img').each(function(){
       var alt = $(this).attr("alt")
       //if(alt != "figAlteracaoSenha" && alt != "figLogin" && alt !="figLoginRecuperacao")
