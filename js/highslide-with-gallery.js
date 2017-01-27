@@ -45,13 +45,13 @@ marginBottom : 15,
 zIndexCounter : 1001, // adjust to other absolutely positioned elements
 loadingOpacity : 0.75,
 allowMultipleInstances: true,
-numberOfImagesToPreload : 5,
+numberOfImagesToPreload : 3,
 outlineWhileAnimating : 2, // 0 = never, 1 = always, 2 = HTML only
 outlineStartOffset : 3, // ends at 10
 padToMinWidth : false, // pad the popup width to make room for wide caption
 fullExpandPosition : 'bottom right',
 fullExpandOpacity : 1,
-showCredits : true, // you can set this to false if you want
+showCredits : false, // you can set this to false if you want
 creditsHref : 'https://highslide.com/',
 creditsTarget : '_self',
 enableKeyListener : true,
