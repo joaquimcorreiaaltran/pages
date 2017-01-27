@@ -7,10 +7,10 @@ Feb-2017
 //Configurations
 
  /* Para o Showdown interpretar o Markdown como no GitHub */
- showdown.setFlavor('github');
- hs.fadeInOut = true;
-/*
-hs.graphicsDir = ('../../pages/content/img/highslide/graphics/' || 'pages/content/img/highslide/graphics/');*/
+showdown.setFlavor('github');
+
+//highslide-with-gallery configs
+hs.fadeInOut = true;
 hs.align = 'center';
 hs.transitions = ['expand', 'crossfade'];
 hs.outlineType = 'rounded-white';//'rounded-white';'rounded-black'
