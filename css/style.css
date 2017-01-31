@@ -32,7 +32,7 @@ audio:not([controls]) { display: none; }
 
 html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-html, button, input, select, textarea { font-family: sans-serif; color: #222; }
+html, button, input, select, textarea { font-family: verdana; color: #222; }
 
 body { margin: 0; font-size: 1em; line-height: 1.4;  width: 96%;margin: auto;}
 
@@ -47,7 +47,7 @@ margin-top:.0001pt;margin-bottom: .0001pt;font-size:  11.0pt;
 <<<<<<< HEAD
 font-family:"verdana";line-height:  150%;text-align:  left;}
 =======
-font-family:"sans-serif";line-height:  150%;text-align:  justify;}
+font-family:"verdana";line-height:  150%;text-align:  justify;}
 >>>>>>> parent of 875119e... a
 
 
@@ -273,7 +273,7 @@ padding: 0cm 5.4pt 0cm 5.4pt;
 h1{margin-top: 12.0pt;
 margin-bottom: 6.0pt;
 font-size:  18.0pt;
-font-family:"sans-serif";
+font-family:"verdana";
 color: #3d596d;
 letter-spacing: -1pt;
 font-weight: bold;
@@ -289,7 +289,7 @@ margin-top:12.0pt;
 margin-bottom:6.0pt;
 margin-left:5pt;
 font-size:17.0pt;
-font-family:"sans-serif";
+font-family:"verdana";
 color: #3d596d;
 letter-spacing: -1pt;
 font-weight: bold;
@@ -301,7 +301,7 @@ margin-top:11.0pt;
 margin-bottom:6.0pt;
 margin-left:10pt;
 font-size:16.0pt;
-font-family:"sans-serif";
+font-family:"verdana";
 color: #3d596d;
 letter-spacing: -1pt;
 font-weight: bold;
@@ -314,27 +314,30 @@ content:'  ' ;
 
 /**imagens*/
 
-#paginas p img{
+#documento p img{
 position: inherit;
 text-align: center;
 display:block;
  margin-left: auto;
  margin-right: auto;
- margin-top: 50;
+ margin-top: 20px;
+ margin-bottom: 20px;
  width:80%
 }
 
-#paginas p a img:not([alt='logo']){
-    cursor: url(../img/zoomin.cur), pointer !important;
+#documento table img{
+position: inherit;
+display:block;
+ max-width:80px;
 }
 
-#paginas p  img[alt=logo]{
-height: 20px;
-display: inline;
-width: auto;
+#documento img:not([alt='logo']){
+    cursor: url(../../pages/content/img/highslide/graphics/zoomin.cur), pointer !important;
+    max-width:500px;
 }
 
-#paginas ul+p  img[alt=logo]{
+
+#documento ul+p  img[alt=logo]{
 height: auto;
 display: inline;
 width: auto;

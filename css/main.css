@@ -1728,11 +1728,13 @@
 	header .imagem img {
 			display: block;;
 			width: 100%;
+			max-width: 500px;
 		}
 
 		.image.fit {
 			display: block;
 			width: 100%;
+			max-width: 500px;
 		}
 
 		.image.featured {
