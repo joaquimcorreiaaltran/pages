@@ -26,17 +26,21 @@ hs.blockRightClick = true;
 //load and convert Markdown to Html and show it
 function convertMdToHtml(docName,elementId){
    var request = new XMLHttpRequest();
-   //Asynchronous request (true=asynchronous)
-   request.open('GET', '../markdown/'+docName+'.md',true);
+   request.open('GET', '../markdown/'+docName+'.md',true);//Asynchronous request (true=asynchronous)
    request.onreadystatechange = function() {
                                        if(request.readyState == XMLHttpRequest.DONE && request.status === 200) {
                                           var converter = new showdown.Converter() //instancia
                                           ,text = request.responseText //guarda o documento em string
                                           ,htmlDoc = converter.makeHtml(text); //converte a string em HTML
-                                          document.getElementById(elementId).innerHTML = htmlDoc;//coloca o html no elemento #documento
-                                          zommClickImagem();
+                                          //document.getElementById(elementId).innerHTML = htmlDoc;//coloca o html no elemento #documento
+                                          //zommClickImagem();
+                                          //return htmlDoc;
+
                                        }/*if*/
                                     }/*function*/
+
+
+   //request.onerror = $("#"+elementId).html("<H2 style='text-align:center'>Não foi possível carregar o documento :(</H2><p style='text-align:center'> Está ligado à internet?</p>");
    request.send();
 }
 
