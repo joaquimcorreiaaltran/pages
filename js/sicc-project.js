@@ -34,8 +34,9 @@ function convertMdToHtml(docName,elementId){
                                           $("#"+elementId).ready($("#"+elementId).html(converter.makeHtml(request.responseText)));//converte markdown para html e coloca o html no elemento #documento
                                           $.("#docButtons").ready(function(){
                                                                      $("#docButtons").load("docButtons.html");
-                                                                     $("#docButtons").attr("onclick", "window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank');"));
-                                                                  }
+                                                                     $("#docButtons").attr("onclick", "window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank');")
+
+                                                                  });
                                           zommClickImagem();
 
                                        }/*if*/
