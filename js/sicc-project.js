@@ -38,7 +38,7 @@ function convertMdToHtml(docName,elementId){
                                                                   });
                                           zommClickImagem();
                                        }/*if*/
-                                       else {
+                                       else if(request.readyState == XMLHttpRequest.DONE && request.status != 200){
                                           $("#"+elementId).html(msg_erro_1)
                                        }
                                  }/*function*/
