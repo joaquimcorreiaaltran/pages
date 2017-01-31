@@ -26,7 +26,7 @@ hs.blockRightClick = true;
 //load and convert Markdown to Html and show it
 function convertMdToHtml(docName,elementId){
    var request = new XMLHttpRequest();
-   var msg_erro_1 = "<H2 style='text-align:center'>Não foi possível carregar o conteúdo :(";
+   var msg_erro_1 = "<H2 style='text-align:center'>Não foi possível carregar o conteúdo :("+request.;
    request.open('GET', '../markdown/'+docName+'.md',true);//Asynchronous request (true=asynchronous)
    request.onreadystatechange = function(){
                                        if(request.readyState == XMLHttpRequest.DONE && request.status === 200){
@@ -34,8 +34,12 @@ function convertMdToHtml(docName,elementId){
                                           $("#"+elementId).ready($("#"+elementId).html(converter.makeHtml(request.responseText)));//converte markdown para html e coloca o html no elemento #documento
                                           zommClickImagem();
                                        }/*if*/
+                                       else if(request.readyState == XMLHttpRequest.DONE && request.status <> 200)
+                                       {
+                                          $("#"+elementId).html(msg_erro_1);
+                                       }
                                  }/*function*/
-   request.onerror = function(){$("#"+elementId).html(msg_erro_1);}
+   request.onerror = $("#"+elementId).html(msg_erro_1);
    request.send();
 }
 
