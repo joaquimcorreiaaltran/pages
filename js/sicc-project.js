@@ -29,18 +29,14 @@ function convertMdToHtml(docName,elementId){
    request.open('GET', '../markdown/'+docName+'.md',true);//Asynchronous request (true=asynchronous)
    request.onreadystatechange = function() {
                                        if(request.readyState == XMLHttpRequest.DONE && request.status === 200) {
-                                          var converter = new showdown.Converter() //instancia
-                                          ,text = request.responseText //guarda o documento em string
-                                          ,htmlDoc = converter.makeHtml(text); //converte a string em HTML
-                                          //document.getElementById(elementId).innerHTML = htmlDoc;//coloca o html no elemento #documento
-                                          //zommClickImagem();
-                                          //return htmlDoc;
-
+                                          var converter = new showdown.Converter(); //instancia
+                                          $("#"+elementId).html(converter.makeHtml(request.responseText));//converte markdown para html e coloca o html no elemento #documento
+                                          zommClickImagem();
                                        }/*if*/
                                     }/*function*/
 
 
-   //request.onerror = $("#"+elementId).html("<H2 style='text-align:center'>Não foi possível carregar o documento :(</H2><p style='text-align:center'> Está ligado à internet?</p>");
+   request.onerror = $("#"+elementId).html("<H2 style='text-align:center'>Não foi possível carregar o documento :(</H2><p style='text-align:center'> Está ligado à internet?</p>");
    request.send();
 }
 

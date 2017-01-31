@@ -51,9 +51,12 @@
 
 	<script>
 
-	$(document).ready(function(){
-					$("#documento").html(convertMdToHtml("menus","documento"));
-					//	$("footer").load("footer.html");
+	$("#documento").ready(function(){
+					convertMdToHtml("menus","documento");
+				});
+				
+	$("footer").ready(function(){
+					$("footer").load("footer.html");
 					});
 
 
