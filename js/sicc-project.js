@@ -91,3 +91,8 @@ function zoomOutBrowser(){
          $('body').css('zoom', ' ' + currIEZoom + '%');
      }
  };
+
+//verifica se um elemento html tem conteúdo
+function isEmpty( el ){
+    return !$.trim(el.html())
+}
