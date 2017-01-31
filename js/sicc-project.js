@@ -31,7 +31,11 @@ function convertMdToHtml(docName,elementId){
    request.onreadystatechange = function() {
                                        if(request.readyState == XMLHttpRequest.DONE && request.status === 200) {
                                           var converter = new showdown.Converter(); //instancia
-                                          $("#"+elementId).html(converter.makeHtml(request.responseText));//converte markdown para html e coloca o html no elemento #documento
+                                          $("#"+elementId).ready(
+                                             $("#"+elementId).html(
+                                                converter.makeHtml(request.responseText)
+                                             )
+                                          );//converte markdown para html e coloca o html no elemento #documento
                                           zommClickImagem();
                                        }/*if*/
                                        /*else if(request.readyState == XMLHttpRequest.UNSENT)
