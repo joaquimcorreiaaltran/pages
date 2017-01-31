@@ -50,14 +50,9 @@
 	</div> <!-- Content -->
 
 	<script>
-
-	$("#documento").ready(function(){
-					convertMdToHtml("menus","documento");
-		});
-
-	$("footer").ready(function(){
-					$("footer").load("footer.html");
-					});
+	convertMdToHtml("menus","documento");
+	$("footer").load("footer.html");
+					$("#docButtons").load("docButtons.html");
 
 
 
