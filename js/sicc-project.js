@@ -34,12 +34,14 @@ function convertMdToHtml(docName,elementId){
                                           $("#"+elementId).ready($("#"+elementId).html(converter.makeHtml(request.responseText)));//converte markdown para html e coloca o html no elemento #documento
                                           zommClickImagem();
                                        }/*if*/
-                                       else if(request.readyState == XMLHttpRequest.DONE && request.status <> 200)
+                                       else if(request.readyState == XMLHttpRequest.DONE && request.status === 404)
                                        {
-                                          $("#"+elementId).html(msg_erro_1);
+                                          $("#"+elementId).html(msg_erro_1+"<p> </p><p>O ficheiro pedido não existe no servidor</p>");
+                                       }
+                                       else {
+                                          $("#"+elementId).html(msg_erro_1)
                                        }
                                  }/*function*/
-   request.onerror = $("#"+elementId).html(msg_erro_1);
    request.send();
 }
 
