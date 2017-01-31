@@ -36,7 +36,9 @@ function convertMdToHtml(docName,elementId){
                                     }/*function*/
 
 
-   request.onerror = $("#"+elementId).html("<H2 style='text-align:center'>Não foi possível carregar o documento :(</H2><p style='text-align:center'> Está ligado à internet?</p>");
+   request.onerror = function(){
+                        $("#"+elementId).html("<H2 style='text-align:center'>Não foi possível carregar o conteúdo :(</H2><p style='text-align:center'> Está ligado à internet?</p>")
+                     };
    request.send();
 }
 
