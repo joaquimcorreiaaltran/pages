@@ -35,6 +35,7 @@ function convertMdToHtml(docName,elementId){
                                           zommClickImagem();
                                           $("#docButtons").load("docButtons.html");
                                           $("#docButtons").ready(
+                                             alert('docbuttons ready');
                                              //$("#btnEditarDoc").attr("onclick", "window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank');");
                                              document.getElementById("btnEditarDoc").setAttribute("onclick", "window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank');");
                                           );
