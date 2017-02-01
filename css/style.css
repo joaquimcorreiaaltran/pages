@@ -114,7 +114,7 @@ ins { background: #ff9; color: #000; text-decoration: none; }
 mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
 
 /* Redeclare monospace font family: h5bp.com/j */
-pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+pre, code, kbd, samp { font-family:verdana; _font-family: 'courier new', monospace; font-size: 1em; }
 
 /* Improve readability of pre-formatted text in all browsers */
 pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
@@ -292,7 +292,7 @@ margin-bottom: 6.0pt;
 font-size:  18.0pt;
 font-family:"verdana";
 color: #3d596d;
-letter-spacing: -1pt;
+letter-spacing: 0pt;
 font-weight: bold;
 }
 
@@ -308,7 +308,7 @@ margin-left:0pt;
 font-size:17.0pt;
 font-family:"verdana";
 color: #3d596d;
-letter-spacing: -1pt;
+letter-spacing: 0pt;
 font-weight: bold;
 }
 
@@ -320,7 +320,7 @@ margin-left:0pt;
 font-size:16.0pt;
 font-family:"verdana";
 color: #3d596d;
-letter-spacing: -1pt;
+letter-spacing: 0pt;
 font-weight: bold;
 }
 
@@ -524,8 +524,6 @@ border-top:    solid #005082 1.0pt;
 ==================================================================================
    ========================================================================== */
 
-@import url("font-awesome.min.css");
-/*@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700|Open+Sans+Condensed:300,700");*/
 /*
 	Striped by HTML5 UP
 	html5up.net | @ajlkn
@@ -534,7 +532,7 @@ border-top:    solid #005082 1.0pt;
 
 /* Reset */
 
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+/*	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
 		border: 0;
@@ -542,6 +540,7 @@ border-top:    solid #005082 1.0pt;
 		font: inherit;
 		vertical-align: baseline;
 	}
+*/
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
