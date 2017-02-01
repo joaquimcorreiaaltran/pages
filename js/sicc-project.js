@@ -24,7 +24,7 @@ hs.blockRightClick = true;
 // functions
 
 //load and convert Markdown to Html and show it
-function convertMdToHtml(docName,elementId,elementToFocus){
+function convertMdToHtml(docName,elementId){
    var request = new XMLHttpRequest();
    var msg_erro_1 = "<H2 style='text-align:center'>Não foi possível carregar o conteúdo :(";
    request.open('GET', '../markdown/'+docName+'.md',true);//Asynchronous request (true=asynchronous)
@@ -32,15 +32,10 @@ function convertMdToHtml(docName,elementId,elementToFocus){
                                        if(request.readyState == XMLHttpRequest.DONE && request.status === 200){
                                           var converter = new showdown.Converter(); //instancia
                                           $("#"+elementId).ready($("#"+elementId).html(converter.makeHtml(request.responseText))); //converte markdown para html e coloca o html no elemento #documento
-                                          $("#docButtons").ready(function(){
-                                                                     alert('aqui!');
-                                                                     $("#docButtons").load("docButtons.html");
-                                                                     $("#btnEditarDoc").attr("onclick", "window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank');")
-                                                                  });
                                           zommClickImagem();
-                                          if(elementToFocus){
-                                             $("#"+elementToFocus).focus();
-                                          }
+                                          alert('aqui!');
+                                          $("#docButtons").load("docButtons.html");
+                                          $("#btnEditarDoc").attr("onclick", "window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank');")
                                        }/*if*/
                                        else if(request.readyState == XMLHttpRequest.DONE && request.status != 200){
                                           $("#"+elementId).html(msg_erro_1)
