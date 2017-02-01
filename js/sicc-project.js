@@ -33,7 +33,6 @@ function convertMdToHtml(docName,elementId){
                                           var converter = new showdown.Converter(); //instancia
                                           $("#"+elementId).ready($("#"+elementId).html(converter.makeHtml(request.responseText))); //converte markdown para html e coloca o html no elemento #documento
                                           zommClickImagem();
-                                          alert('aqui!');
                                           $("#docButtons").load("docButtons.html");
                                           $("#btnEditarDoc").attr("onclick", "window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank');")
                                        }/*if*/
