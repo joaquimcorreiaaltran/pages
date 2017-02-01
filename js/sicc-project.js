@@ -24,7 +24,7 @@ hs.blockRightClick = true;
 // functions
 
 //load and convert Markdown to Html and show it
-function convertMdToHtml(docName,elementId){
+function convertMdToHtml(docName,elementId,elementToFocus){
    var request = new XMLHttpRequest();
    var msg_erro_1 = "<H2 style='text-align:center'>Não foi possível carregar o conteúdo :(";
    request.open('GET', '../markdown/'+docName+'.md',true);//Asynchronous request (true=asynchronous)
@@ -37,6 +37,9 @@ function convertMdToHtml(docName,elementId){
                                                                      $("#btnEditarDoc").attr("onclick", "window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank');")
                                                                   });
                                           zommClickImagem();
+                                          if(elementToFocus){
+                                             $("#"+elementToFocus).focus();
+                                          }
                                        }/*if*/
                                        else if(request.readyState == XMLHttpRequest.DONE && request.status != 200){
                                           $("#"+elementId).html(msg_erro_1)
