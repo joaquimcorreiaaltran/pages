@@ -54,8 +54,10 @@
 	convertMdToHtml(docName,"documento");
 	$("footer").load("footer.html");
 	$("#docButtons").load("docButtons.html");
-	document.getElementById("btnEditarDoc").setAttribute("onclick","window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank')");
-	//$("btnEditarDoc").attr("width","500");
+	//document.getElementById("btnEditarDoc").setAttribute("onclick","window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank')");
+	$("#btnEditarDoc").ready(function functionName() {
+			$("#btnEditarDoc").attr("onclick","window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank')");
+			})
 	</script>
 
 </body>
