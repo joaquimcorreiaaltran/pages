@@ -35,7 +35,7 @@ function convertMdToHtml(docName,elementId){
                                           zommClickImagem();
                                           $("#docButtons").load("docButtons.html");
                                           //$("#btnEditarDoc").attr("onclick", "window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank');");
-                                          document.getElementsByTagName("#btnEditarDoc")[0].setAttribute("onclick", "window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank');");
+                                          $("#btnEditarDoc").setAttribute("onclick", "window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank');");
                                        }/*if*/
                                        else if(request.readyState == XMLHttpRequest.DONE && request.status != 200){
                                           $("#"+elementId).html(msg_erro_1)
