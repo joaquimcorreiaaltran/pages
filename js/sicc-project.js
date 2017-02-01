@@ -37,10 +37,10 @@ function convertMdToHtml(docName,elementId){
                                           $("#docButtons").ready(
                                              //$("#btnEditarDoc").attr("onclick", "window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank');");
                                              document.getElementById("btnEditarDoc").setAttribute("onclick", "window.open('https://github.com')")
+
+                                             alert($("#docButtons").ready());
                                           );
                                              //"window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank')"
-
-
                                        }/*if*/
                                        else if(request.readyState == XMLHttpRequest.DONE && request.status != 200){
                                           $("#"+elementId).html(msg_erro_1)
