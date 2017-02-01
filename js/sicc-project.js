@@ -33,7 +33,6 @@ function convertMdToHtml(docName,elementId){
                                           var converter = new showdown.Converter(); //instancia
                                           $("#"+elementId).ready($("#"+elementId).html(converter.makeHtml(request.responseText))); //converte markdown para html e coloca o html no elemento #documento
                                           zommClickImagem();
-                                          $("#docButtons").load("docButtons.html");
                                        }/*if*/
                                        else if(request.readyState == XMLHttpRequest.DONE && request.status != 200){
                                           $("#"+elementId).html(msg_erro_1)

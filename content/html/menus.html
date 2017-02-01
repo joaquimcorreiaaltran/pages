@@ -53,6 +53,8 @@
 	var docName = "menus";
 	convertMdToHtml(docName,"documento");
 	$("footer").load("footer.html");
+	$("#docButtons").load("docButtons.html");
+	document.getElementById("btnEditarDoc").setAttribute("window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank')");
 	</script>
 
 </body>
