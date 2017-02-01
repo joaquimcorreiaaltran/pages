@@ -55,10 +55,12 @@
 	$("footer").load("footer.html");
 	$("#docButtons").load("docButtons.html");
 	//document.getElementById("btnEditarDoc").setAttribute("onclick","window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank')");
-alert($("#btnEditarDoc").onload());
-	$("#btnEditarDoc").onload(function functionName() {
-			$("#btnEditarDoc").attr("onclick","window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank')");
-			})
+
+
+	setInterval(
+		function setBtnLink() {
+				$("#btnEditarDoc").attr("onclick","window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank')");
+				}, 3000);
 	</script>
 
 </body>
