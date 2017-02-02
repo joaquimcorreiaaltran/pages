@@ -51,27 +51,15 @@ var currFFZoom = 1;
 var currIEZoom = 100;
 
 function zoomInBrowser() {
-    if (isFirefox) {
-        var FFstep = 0.02;
-        currFFZoom += FFstep;
-        $('body').css('MozTransform', 'scale(' + currFFZoom + ')');
-    } else {
-        var IEstep = 2;
-        currIEZoom += IEstep;
-        $('body').css('zoom', ' ' + currIEZoom + '%');
-    }
+    var IEstep = 2;
+    currIEZoom += IEstep;
+    $('body').css('zoom', ' ' + currIEZoom + '%');
 }
 
 function zoomOutBrowser() {
-    if (isFirefox) {
-        var FFstep = 0.02;
-        currFFZoom -= FFstep;
-         $('body').css('MozTransform', 'scale(' + currFFZoom + ')');
-    } else {
-        var IEstep = 2;
-        currIEZoom -= IEstep;
-         $('body').css('zoom', ' ' + currIEZoom + '%');
-    }
+    var IEstep = 2;
+    currIEZoom -= IEstep;
+    $('body').css('zoom', ' ' + currIEZoom + '%');
 }
 
 //verifica se um elemento html tem conteúdo
