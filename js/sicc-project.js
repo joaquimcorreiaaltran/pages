@@ -28,7 +28,7 @@ function convertMdToHtml(docName, elementId) {
 //Preparar imagem para zoom ou para não zoom (mostra ou não mostra a lupa)
 function zommClickImagem() {
     $('#documento img').each(function () {
-        var alt = $(this).attr("alt");
+        //var alt = $(this).attr("alt");
         //if(alt != "figAlteracaoSenha" && alt != "figLogin" && alt !="figLoginRecuperacao")
        $(this).wrap("<a class='imagem' href='" +$(this).attr("src") + "' onclick='return hs.expand(this)'></a>");
     });
