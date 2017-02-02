@@ -1,4 +1,8 @@
 ;/*! showdown 09-01-2017 */
+
+/* Para o Showdown interpretar o Markdown como no GitHub */
+showdown.setFlavor('github');
+
 (function(){
 /**
  * Created by Tivie on 13-07-2015.

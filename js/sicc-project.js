@@ -7,9 +7,6 @@ Feb-2017
 
 //Configurations
 
- /* Para o Showdown interpretar o Markdown como no GitHub */
-showdown.setFlavor('github');
-
 //highslide-with-gallery configs
 hs.fadeInOut = true;
 hs.align = 'center';
@@ -84,16 +81,15 @@ function zoomOutBrowser(){
      if (isFirefox){
          var FFstep = 0.02;
          currFFZoom -= step;
-         $('body').css('MozTransform','scale(' + currFFZoom + ')')
-         ;
-     } else {
-         var IEstep = 2;
-         currIEZoom -= step;
+         $('body').css('MozTransform', 'scale(' + currFFZoom + ')');
+    } else {
+      var IEstep = 2;
+      currIEZoom -= step;
          $('body').css('zoom', ' ' + currIEZoom + '%');
      }
- }
+}
 
 //verifica se um elemento html tem conteúdo
-function isEmpty(el){
+function isEmpty(el) {
     return !$.trim(el.html());
 }

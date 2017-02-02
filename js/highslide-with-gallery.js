@@ -33,6 +33,22 @@ lang : {
 
 },
 // See http://highslide.com/ref for examples of settings
+//highslide-with-gallery configs
+hs.fadeInOut = true;
+hs.align = 'center';
+hs.transitions = ['expand', 'crossfade'];
+hs.outlineType = 'rounded-white';//'rounded-white';'rounded-black'
+hs.fadeInOut = true;
+hs.numberPosition = 'caption';
+hs.dimmingOpacity = 0.5;
+hs.dimmingGeckoFix = true;
+hs.blockRightClick = true;
+
+
+
+
+
+
 graphicsDir : '../../pages/content/img/highslide/graphics/',//'../../pages/content/img/highslide/graphics/',
 expandCursor : 'zoomin.cur', // null disables
 restoreCursor : 'zoomout.cur', // null disables
@@ -260,7 +276,7 @@ getPageSize : function () {
 	return hs.page;
 },
 
-getPosition : function(el)	{
+getPosition : function(el) {
 	var p = { x: el.offsetLeft, y: el.offsetTop };
 	while (el.offsetParent)	{
 		el = el.offsetParent;
@@ -292,8 +308,8 @@ getElementByClass : function (el, tagName, className) {
 	return null;
 },
 replaceLang : function(s) {
-	s = s.replace(/\s/g, ' ');
-	var re = /{hs\.lang\.([^}]+)\}/g,
+s = s.replace(/\s/g, ' ');
+var re = /{hs\.lang\.([^}]+)\}/g,
 		matches = s.match(re),
 		lang;
 	if (matches) for (var i = 0; i < matches.length; i++) {
