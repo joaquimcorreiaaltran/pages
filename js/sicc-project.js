@@ -3,7 +3,7 @@ Miscellaneous functions to use in SICC project (https://spmssicc.github.io/pages
 Feb-2017
 */
 
-"use strict"; //Ajuda no debug
+//"use strict"; //Ajuda no debug
 
 //Configurations
 
