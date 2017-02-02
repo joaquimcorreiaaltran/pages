@@ -7,17 +7,6 @@
  * License: MIT
  */
 
- //highslide-with-gallery configs
- hs.fadeInOut = true;
- hs.align = 'center';
- hs.transitions = ['expand', 'crossfade'];
- hs.outlineType = 'rounded-white';//'rounded-white';'rounded-black'
- hs.fadeInOut = true;
- hs.numberPosition = 'caption';
- hs.dimmingOpacity = 0.5;
- hs.dimmingGeckoFix = true;
- hs.blockRightClick = true;
-
 if (!hs) { var hs = {
 // Language strings
 lang : {

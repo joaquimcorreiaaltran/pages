@@ -18,8 +18,15 @@
 		<script src="../../js/main.js"></script>
 		<script src="../../js/highslide-with-gallery.js"></script>
 
-		<script type="text/javascript">
+		<script>
+			/*Para o Showdown interpretar o Markdown como no GitHub */
+			showdown.setFlavor('github');
+		</script>
+
+		<script>
+			//highslide-with-gallery configs
 			hs.graphicsDir = '../../content/img/highslide/graphics/';
+			hs.fadeInOut = true;
 			hs.align = 'center';
 			hs.transitions = ['expand', 'crossfade'];
 			hs.outlineType = 'rounded-white';//'rounded-white';'rounded-black'
@@ -27,8 +34,8 @@
 			hs.numberPosition = 'caption';
 			hs.dimmingOpacity = 0.5;
 			hs.dimmingGeckoFix = true;
-			hs.blockRightClick = true
-			</script>
+			hs.blockRightClick = true;
+		</script>
 
 </head>
 <body>

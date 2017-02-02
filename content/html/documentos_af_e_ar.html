@@ -20,9 +20,23 @@
 		<script src="../../js/libs/showdown.js"></script>
 		<script src="../../js/sicc-project.js"></script>
 
-		<!--highslide-with-gallery configs-->
 		<script>
+			/*Para o Showdown interpretar o Markdown como no GitHub */
+			showdown.setFlavor('github');
+		</script>
+
+		<script>
+			//highslide-with-gallery configs
 			hs.graphicsDir = '../../content/img/highslide/graphics/';
+			hs.fadeInOut = true;
+			hs.align = 'center';
+			hs.transitions = ['expand', 'crossfade'];
+			hs.outlineType = 'rounded-white';//'rounded-white';'rounded-black'
+			hs.fadeInOut = true;
+			hs.numberPosition = 'caption';
+			hs.dimmingOpacity = 0.5;
+			hs.dimmingGeckoFix = true;
+			hs.blockRightClick = true;
 		</script>
 </head>
 <body>
