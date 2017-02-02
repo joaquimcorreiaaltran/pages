@@ -9,33 +9,32 @@ Feb-2017
 
 //load and convert Markdown to Html and show it
 function convertMdToHtml(docName, elementId) {
-   var request = new XMLHttpRequest();
-   var msg_erro_1 = "<H2 style='text-align:center'>Não foi possível carregar o conteúdo :(";
-   request.open('GET', '../markdown/' + docName + '.md', true);//Asynchronous request (true=asynchronous)
-   request.onreadystatechange = function () {
+    var request = new XMLHttpRequest();
+    var msg_erro_1 = "<H2 style='text-align:center'>Não foi possível carregar o conteúdo :(";
+    request.open('GET', '../markdown/' + docName + '.md', true);//Asynchronous request (true=asynchronous)
+    request.onreadystatechange = function () {
         if (request.readyState === XMLHttpRequest.DONE && request.status === 200) {
-                                          var converter = new showdown.Converter(); //instancia
-                                          $("#" +elementId).ready($("#"+elementId).html(converter.makeHtml(request.responseText))); //converte markdown para html e coloca o html no elemento #documento
-                                          zommClickImagem();
-                                       }/*if*/
-                                       else if(request.readyState == XMLHttpRequest.DONE && request.status != 200){
-                                          $("#"+elementId).html(msg_erro_1);
+            var converter = new showdown.Converter(); //instancia
+                                          $("#" + elementId).ready($("#" + elementId).html(converter.makeHtml(request.responseText))); //converte markdown para html e coloca o html no elemento #documento
+                                          //zommClickImagem();
+        } else if (request.readyState === XMLHttpRequest.DONE && request.status !== 200) {
+                                          $("#" + elementId).html(msg_erro_1);
         }
-                                 };/*function*/
-   request.send();
+    };/*function*/
+    request.send();
 }
 
 
 //Preparar imagem para zoom ou para não zoom (mostra ou não mostra a lupa)
-function zommClickImagem(){
-    $('#documento img').each(function(){
-                                 var alt = $(this).attr("alt");
-                                 //if(alt != "figAlteracaoSenha" && alt != "figLogin" && alt !="figLoginRecuperacao")
-                                 $(this).wrap("<a class='imagem' href='"+$(this).attr("src") + "' onclick='return hs.expand(this)'></a>");
-                              });
+function zommClickImagem() {
+    $('#documento img').each(function () {
+        //var alt = $(this).attr("alt");
+        //if(alt != "figAlteracaoSenha" && alt != "figLogin" && alt !="figLoginRecuperacao")
+       $(this).wrap("<a class='imagem' href='" +$(this).attr("src") + "' onclick='return hs.expand(this)'></a>");
+    });
 }
 
-function setAttribute(element_id,attr,attr_value){
+function setAttribute(element_id, attr, attr_value) {
    document.getElementById(element_id).setAttribute(attr, attr_value);
 }
 
@@ -52,27 +51,27 @@ var currFFZoom = 1;
 var currIEZoom = 100;
 
 function zoomInBrowser() {
-     if (isFirefox) {
-      var FFstep = 0.02;
-      currFFZoom += FFstep;
-         $('body').css('MozTransform', 'scale(' + currFFZoom + ')');
-     } else {
-         var IEstep = 2;
-         currIEZoom += IEstep;
-         $('body').css('zoom', ' ' + currIEZoom + '%');
-     }
- }
+    if (isFirefox) {
+        var FFstep = 0.02;
+        currFFZoom += FFstep;
+        $('body').css('MozTransform', 'scale(' + currFFZoom + ')');
+    } else {
+        var IEstep = 2;
+        currIEZoom += IEstep;
+        $('body').css('zoom', ' ' + currIEZoom + '%');
+    }
+}
 
 function zoomOutBrowser() {
-     if (isFirefox) {
-         var FFstep = 0.02;
-         currFFZoom -= step;
+    if (isFirefox) {
+        var FFstep = 0.02;
+        currFFZoom -= FFstep;
          $('body').css('MozTransform', 'scale(' + currFFZoom + ')');
     } else {
-      var IEstep = 2;
-      currIEZoom -= step;
+        var IEstep = 2;
+        currIEZoom -= IEstep;
          $('body').css('zoom', ' ' + currIEZoom + '%');
-     }
+    }
 }
 
 //verifica se um elemento html tem conteúdo
