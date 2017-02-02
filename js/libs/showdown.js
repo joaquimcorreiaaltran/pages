@@ -1,7 +1,5 @@
 ;/*! showdown 09-01-2017 */
 
-/* Para o Showdown interpretar o Markdown como no GitHub */
-showdown.setFlavor('github');
 
 (function(){
 /**
