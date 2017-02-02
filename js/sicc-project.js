@@ -2,7 +2,6 @@
 Miscellaneous functions to use in SICC project (https://spmssicc.github.io/pages)
 Feb-2017
 */
-
 "use strict"; //Ajuda no debug
 
 // functions
@@ -15,10 +14,11 @@ function convertMdToHtml(docName, elementId) {
     request.onreadystatechange = function () {
         if (request.readyState === XMLHttpRequest.DONE && request.status === 200) {
             var converter = new showdown.Converter(); //instancia
-                                          $("#" + elementId).ready($("#" + elementId).html(converter.makeHtml(request.responseText))); //converte markdown para html e coloca o html no elemento #documento
-                                          //zommClickImagem();
+            var html_from_md = converter.makeHtml(request.responseText);
+            $("#" + elementId).html(html_from_md); //converte markdown para html e coloca o html no elemento #documento
+            zommClickImagem();
         } else if (request.readyState === XMLHttpRequest.DONE && request.status !== 200) {
-                                          $("#" + elementId).html(msg_erro_1);
+            $("#" + elementId).html(msg_erro_1);
         }
     };/*function*/
     request.send();
@@ -28,7 +28,7 @@ function convertMdToHtml(docName, elementId) {
 //Preparar imagem para zoom ou para não zoom (mostra ou não mostra a lupa)
 function zommClickImagem() {
     $('#documento img').each(function () {
-        //var alt = $(this).attr("alt");
+        var alt = $(this).attr("alt");
         //if(alt != "figAlteracaoSenha" && alt != "figLogin" && alt !="figLoginRecuperacao")
        $(this).wrap("<a class='imagem' href='" +$(this).attr("src") + "' onclick='return hs.expand(this)'></a>");
     });

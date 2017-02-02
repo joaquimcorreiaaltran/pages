@@ -65,11 +65,10 @@
 
 	<script>
 	var docName = "menus";
-	convertMdToHtml(docName,"documento");
+	convertMdToHtml(docName,"documento",zommClickImagem());
 	$("footer").load("footer.html");
 	$("#docButtons").load("docButtons.html");
 	//document.getElementById("btnEditarDoc").setAttribute("onclick","window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank')");
-	zommClickImagem();
 
 	setInterval(
 		function setBtnLink() {
