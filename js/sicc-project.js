@@ -1,8 +1,9 @@
 /*
 Miscellaneous functions to use in SICC project (https://spmssicc.github.io/pages)
-Author: SPMS, EPE
 Feb-2017
 */
+
+"use strict"; //Ajuda no debug
 
 //Configurations
 
@@ -27,17 +28,17 @@ hs.blockRightClick = true;
 function convertMdToHtml(docName,elementId){
    var request = new XMLHttpRequest();
    var msg_erro_1 = "<H2 style='text-align:center'>Não foi possível carregar o conteúdo :(";
-   request.open('GET', '../markdown/'+docName+'.md',true);//Asynchronous request (true=asynchronous)
-   request.onreadystatechange = function(){
-                                       if(request.readyState == XMLHttpRequest.DONE && request.status === 200){
+   request.open('GET', '../markdown/' + docName + '.md', true);//Asynchronous request (true=asynchronous)
+   request.onreadystatechange = function () {
+                                       if (request.readyState === XMLHttpRequest.DONE && request.status === 200){
                                           var converter = new showdown.Converter(); //instancia
                                           $("#"+elementId).ready($("#"+elementId).html(converter.makeHtml(request.responseText))); //converte markdown para html e coloca o html no elemento #documento
                                           zommClickImagem();
                                        }/*if*/
                                        else if(request.readyState == XMLHttpRequest.DONE && request.status != 200){
-                                          $("#"+elementId).html(msg_erro_1)
+                                          $("#"+elementId).html(msg_erro_1);
                                        }
-                                 }/*function*/
+                                 };/*function*/
    request.send();
 }
 
@@ -45,10 +46,10 @@ function convertMdToHtml(docName,elementId){
 //Preparar imagem para zoom ou para não zoom (mostra ou não mostra a lupa)
 function zommClickImagem(){
     $('#documento img').each(function(){
-      var alt = $(this).attr("alt")
-      //if(alt != "figAlteracaoSenha" && alt != "figLogin" && alt !="figLoginRecuperacao")
-      $(this).wrap("<a class='imagem' href='"+$(this).attr( "src" ) + "' onclick='return hs.expand(this)'></a>");
-});
+                                 var alt = $(this).attr("alt");
+                                 //if(alt != "figAlteracaoSenha" && alt != "figLogin" && alt !="figLoginRecuperacao")
+                                 $(this).wrap("<a class='imagem' href='"+$(this).attr( "src" ) + "' onclick='return hs.expand(this)'></a>");
+                              });
 }
 
 function setAttribute(element_id,attr,attr_value){
@@ -69,30 +70,30 @@ var currIEZoom = 100;
 
 function zoomInBrowser(){
      if (isFirefox){
-         var step = 0.02;
+         var FFstep = 0.02;
          currFFZoom += step;
          $('body').css('MozTransform','scale(' + currFFZoom + ')');
      } else {
-         var step = 2;
+         var IEstep = 2;
          currIEZoom += step;
          $('body').css('zoom', ' ' + currIEZoom + '%');
      }
- };
+ }
 
 function zoomOutBrowser(){
      if (isFirefox){
-         var step = 0.02;
+         var FFstep = 0.02;
          currFFZoom -= step;
          $('body').css('MozTransform','scale(' + currFFZoom + ')')
          ;
      } else {
-         var step = 2;
+         var IEstep = 2;
          currIEZoom -= step;
          $('body').css('zoom', ' ' + currIEZoom + '%');
      }
- };
+ }
 
 //verifica se um elemento html tem conteúdo
-function isEmpty( el ){
-    return !$.trim(el.html())
+function isEmpty(el){
+    return !$.trim(el.html());
 }
