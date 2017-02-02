@@ -6,6 +6,18 @@
  * Support: www.highslide.com/support
  * License: MIT
  */
+
+ //highslide-with-gallery configs
+ hs.fadeInOut = true;
+ hs.align = 'center';
+ hs.transitions = ['expand', 'crossfade'];
+ hs.outlineType = 'rounded-white';//'rounded-white';'rounded-black'
+ hs.fadeInOut = true;
+ hs.numberPosition = 'caption';
+ hs.dimmingOpacity = 0.5;
+ hs.dimmingGeckoFix = true;
+ hs.blockRightClick = true;
+
 if (!hs) { var hs = {
 // Language strings
 lang : {
@@ -32,18 +44,6 @@ lang : {
  restoreTitle : 'Clique para fechar a imagem, mantenha premido para mover.'
 
 },
-
-//highslide-with-gallery configs
-hs.fadeInOut = true;
-hs.align = 'center';
-hs.transitions = ['expand', 'crossfade'];
-hs.outlineType = 'rounded-white';//'rounded-white';'rounded-black'
-hs.fadeInOut = true;
-hs.numberPosition = 'caption';
-hs.dimmingOpacity = 0.5;
-hs.dimmingGeckoFix = true;
-hs.blockRightClick = true;
-
 // See http://highslide.com/ref for examples of settings
 graphicsDir : '../../pages/content/img/highslide/graphics/',//'../../pages/content/img/highslide/graphics/',
 expandCursor : 'zoomin.cur', // null disables
