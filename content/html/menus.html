@@ -39,10 +39,17 @@
 			hs.blockRightClick = true;
 		</script>
 </head>
-<body>
+<body>	  <header>
+			<!-- Sidebar -->
+			<div id="sidebar" style="position: fixed; top:0;left:0;overflow-y: auto;height: 100vh;">
+				<nav>
+					<a id="amenuLink" href="amenu-source.html">Menu</a>
+				</nav>
+			</div> <!-- SideBar-->
+		</header>
 	<!-- Content -->
 	<div id="content">
-	  	<header></header>
+
 
 		<section id="section_docs">
 			<article id="documento" class="modulo">
@@ -51,17 +58,14 @@
 			<div id="docButtons" style="position:fixed; bottom:0;right:0; text-align: center; display: block;">
 				<!--loaded with js-->
 			</div>
+
 		</section>
 
-		<footer><!--loaded with js--></footer>
 
-		<!-- Sidebar -->
-		<div id="sidebar" style="position: fixed;overflow-y: auto;height: 100vh;">
-			<nav>
-				<a id="amenuLink" href="amenu-source.html">Menu</a>
-			</nav>
-		</div> <!-- SideBar-->
+		<footer><!--loaded with js--></footer>
 	</div> <!-- Content -->
+
+
 
 	<script>
 	var docName = "menus";
