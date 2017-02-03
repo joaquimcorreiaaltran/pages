@@ -2765,7 +2765,7 @@ border-top:    solid #005082 1.0pt;
 		position: fixed;
 		top: 0;
 		width: 100%;
-		z-index: 99;
+		z-index: 100;
 	}
 
 		#titleBar .title {
@@ -2841,7 +2841,7 @@ border-top:    solid #005082 1.0pt;
 		left: 0;
         background-color: #2e4453;
 		box-shadow: inset -0.1em 0em 0.35em 0em rgba(0, 0, 0, 0.15);
-    z-index:-1;
+    z-index:99;
 	}
 
 		#sidebar form input, #sidebar form select, #sidebar form textarea {
