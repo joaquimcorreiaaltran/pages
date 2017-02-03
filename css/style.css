@@ -411,8 +411,12 @@ border-top:    solid #005082 1.0pt;
     /*box-shadow:rgba(0,0,0,0.3) 0 0 90px inset;*/
     overflow-y:none;
     /*height:100%;*/
-    max-height: 90vh; /*is equal to the height of the browser window, regardless of where the element is situated in the DOM tree*/
+    max-height: 100vh; /*is equal to the height of the browser window, regardless of where the element is situated in the DOM tree*/
     padding-top:10px;
+    font-family:"verdana";
+    font-weight:bold;
+    font-size:large;
+    text-decoration:none;
 }
 
 /* root UL */
@@ -425,16 +429,10 @@ border-top:    solid #005082 1.0pt;
 /*---------- Indents ------*/
 
 /*top-level*/
-#accordion .top > a, #accordion .top > div, #accordion .top > li {
-    padding-left:5px;
-    padding-top:10px;padding-bottom:10px;
-}
+#accordion .top > a, #accordion .top > div, #accordion .top > li { padding-left:5px; padding-top:10px;padding-bottom:10px; }
 
 /*2nd-level*/
-#accordion li li > a, #accordion li li > div {
-    padding-left:20px;
-    padding-top:8px;padding-bottom:8px;
-}
+#accordion li li > a, #accordion li li > div { padding-left:20px; padding-top:5px;padding-bottom:8px; }
 
 /*3rd-level*/
 #accordion li li li > a, #accordion li li li > div { padding-left:35px; }
@@ -449,50 +447,50 @@ border-top:    solid #005082 1.0pt;
 /*---------- Other styles ------*/
 
 /* headings */
-#accordion li > div{
-    font-family:'Lucida Grande', Geneva, Candara, Tahoma, sans-serif;
-    font-weight:bold;
-    font-size:large;
-    color:#eee;
+#accordion li > div {
+  color:#eee;
+  cursor: pointer;
 }
 #accordion .active > div{
-    color:white;
+  color:white;
 }
 
-#accordion li {
-    font-family:Arial, sans-serif;
-    font-size:13px;
-	padding: 0;
-    margin:0;
-	cursor: pointer;
-    overflow:hidden;
-}
-
-/* Add borders to the top LIs */
-#accordion li.top {
-	border-top: 1px solid #486779;
-    border-bottom: 1px solid #1a252c;
-    /*padding-left: 16px;*/
-    padding-top: 10px;
-    padding-bottom: 10px;
+#accordion li > a {
+  padding: 0;
+  margin:0;
+  cursor: pointer;
+  overflow:hidden;
 }
 
 /* links */
 #accordion a {
-    color:#ddd;
-    font-weight:normal;
-    font-size:13px;
-    text-decoration:none;
-    /*display:block;*/
-    line-height:1;
-    transition:all 0.3s;
+  color:#ddd;
+  /*display:block;*/
+  line-height:1;
+  transition:all 0.3s;
+  text-decoration:none;
 }
-#accordion a:hover {
-    color: white;
-}
+
 #accordion a.active {
-    color:white;
-    background-color:#243a46;
+  color:white;
+  background-color:#243a46;
+}
+
+/* Add borders to the top LIs */
+#accordion li.top {
+  border-top: 1px solid #486779;
+  border-bottom: 1px solid #1a252c;
+  /*padding-left: 16px;*/
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#accordion li {
+    -ms-user-select:none;
+    -mos-user-select:none;
+    -webkit-user-select:none;
+    -o-user-select:none;
+    user-select:none;
 }
 
 
@@ -516,20 +514,19 @@ border-top:    solid #005082 1.0pt;
 }
 
 #accordion div.caret.active {
-    margin-bottom:3px;
-    margin-right:6px;
-    border-bottom:none;
-    border-right: 6px solid transparent;
-    border-left-color: transparent;
-    border-top-color:initial;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
-#accordion li {
-    -ms-user-select:none;
-    -mos-user-select:none;
-    -webkit-user-select:none;
-    -o-user-select:none;
-    user-select:none;
+
+
+/* hovers */
+#accordion a:hover, #accordion .top div:hover {
+  color: white;
+  font-size: 1.1em;
 }
 
 
@@ -2834,7 +2831,6 @@ border-top:    solid #005082 1.0pt;
 	#sidebar {
 		color: #aaa;
 		color: rgba(255, 255, 255, 0.55);
-		text-shadow: none;
 		width: 21em;
 		padding: 0em 0em 0em 0em;
 		overflow-y: auto;
@@ -2844,36 +2840,6 @@ border-top:    solid #005082 1.0pt;
     z-index:99;
 	}
 
-		#sidebar form input, #sidebar form select, #sidebar form textarea {
-			border: 0;
-		}
-
-		#sidebar section, #sidebar nav {
-			position: relative;
-			margin: 0 0 0 0;
-			font-size: 1em;
-		}
-
-		#sidebar strong, #sidebar b {
-			color: #fff;
-		}
-
-		#sidebar a {
-			color: white; /*#d4dde0;*/
-		}
-
-		#sidebar a:hover {
-			color: white;
-			font-size: 1.1em;
-		}
-
-		#sidebar h2, #sidebar h3, #sidebar h4, #sidebar h5, #sidebar h6 {
-			color: #fff;
-		}
-
-		#sidebar header {
-			margin: 0 0 1.25em 0;
-		}
 
 /* Content */
 
