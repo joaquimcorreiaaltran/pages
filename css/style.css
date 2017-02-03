@@ -520,6 +520,10 @@ border-top:    solid #005082 1.0pt;
     color:#00aadc;
 }
 
+#accordion a.active{
+  color:#00aadc;
+}
+
 /* hovers */
 #accordion a:hover, #accordion .top div:hover {
   color: white;
