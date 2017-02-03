@@ -408,6 +408,7 @@ border-top:    solid #005082 1.0pt;
 #accordion {
     visibility:hidden;
     background:#2e4453;
+    box-shadow:4px 0 18px rgba(0,0,0,0.2);
     /*box-shadow:rgba(0,0,0,0.3) 0 0 90px inset;*/
     overflow-y:none;
     /*height:100%;*/
@@ -2841,7 +2842,8 @@ border-top:    solid #005082 1.0pt;
 		overflow-y: auto;
 		left: 0;
     background-color: #2e4453;
-		box-shadow: inset -0.1em 0em 0.35em 0em rgba(0, 0, 0, 0.15);
+		/*box-shadow: inset -0.1em 0em 0.35em 0em rgba(0, 0, 0, 0.15);*/
+    box-shadow:4px 0 18px rgba(0,0,0,0.2);
     z-index:99;
 	}
 
