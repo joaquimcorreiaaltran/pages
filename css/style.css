@@ -473,7 +473,7 @@ border-top:    solid #005082 1.0pt;
 
 #accordion a.active {
   color:white;
-  background-color:#243a46;
+  background-color:none;
 }
 
 /* Add borders to the top LIs */
@@ -492,8 +492,6 @@ border-top:    solid #005082 1.0pt;
     -o-user-select:none;
     user-select:none;
 }
-
-
 
 /* carets */
 #accordion div.caret {
@@ -521,8 +519,6 @@ border-top:    solid #005082 1.0pt;
     transform: rotate(90deg);
     color:#00aadc;
 }
-
-
 
 /* hovers */
 #accordion a:hover, #accordion .top div:hover {
