@@ -456,7 +456,7 @@ border-top:    solid #005082 1.0pt;
     color:#eee;
 }
 #accordion .active > div{
-    color:orange;
+    color:white;
 }
 
 #accordion li {
@@ -488,10 +488,10 @@ border-top:    solid #005082 1.0pt;
     transition:all 0.3s;
 }
 #accordion a:hover {
-    color: orange;
+    color: white;
 }
 #accordion a.active {
-    color:orange;
+    color:white;
     background-color:#243a46;
 }
 
