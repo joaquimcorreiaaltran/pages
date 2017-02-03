@@ -526,6 +526,10 @@ border-top:    solid #005082 1.0pt;
   font-size: 1.1em;
 }
 
+#accordion a > i:hover {
+  font-size: 1.5em;
+  color:#00aadc;
+}
 
 /* ==|== media queries ======================================================
    EXAMPLE Media Query for Responsive Design.
