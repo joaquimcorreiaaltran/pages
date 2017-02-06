@@ -45,27 +45,17 @@ html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 10
 
 html, button, input, select, textarea { font-family: verdana; color: #222; }
 
-button:hover{
-   font-size: 1.1em;
-   width:100%;
-   height:100%;
-}
+button:hover{ font-size: 1.1em; width:100%; height:100%;}
 
 body { margin: 0; font-size: 1em; line-height: 1.4;  width: 96%;margin: auto;}
 
-div.content{
-    width: 70%;
-    margin: auto;
-    margin-left: 20%;
-}
+div.content{  width: 70%;  margin: auto;  margin-left: 20%;}
 
 p, li, div{
-margin-top:.0001pt;margin-bottom: .0001pt;font-size:  11.0pt;
-<<<<<<< HEAD
-font-family:"verdana";line-height:  150%;text-align:  left;}
-=======
-font-family:"verdana";line-height:  150%;text-align:  justify;}
->>>>>>> parent of 875119e... a
+  margin-top:.0001pt;margin-bottom: .0001pt;font-size:  11.0pt;
+  font-family:"verdana";line-height:  150%;text-align:  justify;
+}
+
 
 
 
@@ -409,7 +399,6 @@ border-top:    solid #005082 1.0pt;
     visibility:hidden;
     background:#2e4453;
     box-shadow:4px 0 18px rgba(0,0,0,0.2);
-    /*box-shadow:rgba(0,0,0,0.3) 0 0 90px inset;*/
     overflow-y:none;
     /*height:100%;*/
     max-height: 100vh; /*is equal to the height of the browser window, regardless of where the element is situated in the DOM tree*/

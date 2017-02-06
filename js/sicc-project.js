@@ -1,40 +1,56 @@
 /*
 Miscellaneous functions to use in SICC project (https://spmssicc.github.io/pages)
+Author: SPMS, EPE
 Feb-2017
 */
-"use strict"; //Ajuda no debug
+
+//Configurations
+
+ /* Para o Showdown interpretar o Markdown como no GitHub */
+showdown.setFlavor('github');
+
+//highslide-with-gallery configs
+hs.fadeInOut = true;
+hs.align = 'center';
+hs.transitions = ['expand', 'crossfade'];
+hs.outlineType = 'rounded-white';//'rounded-white';'rounded-black'
+hs.fadeInOut = true;
+hs.numberPosition = 'caption';
+hs.dimmingOpacity = 0.5;
+hs.dimmingGeckoFix = true;
+hs.blockRightClick = true;
+
 
 // functions
 
 //load and convert Markdown to Html and show it
-function convertMdToHtml(docName, elementId) {
-    var request = new XMLHttpRequest();
-    var msg_erro_1 = "<H2 style='text-align:center'>Não foi possível carregar o conteúdo :(";
-    request.open('GET', '../markdown/' + docName + '.md', true);//Asynchronous request (true=asynchronous)
-    request.onreadystatechange = function () {
-        if (request.readyState === XMLHttpRequest.DONE && request.status === 200) {
-            var converter = new showdown.Converter(); //instancia
-            var html_from_md = converter.makeHtml(request.responseText);
-            $("#" + elementId).html(html_from_md); //converte markdown para html e coloca o html no elemento #documento
-            zommClickImagem();
-        } else if (request.readyState === XMLHttpRequest.DONE && request.status !== 200) {
-            $("#" + elementId).html(msg_erro_1);
-        }
-    };/*function*/
-    request.send();
+function convertMdToHtml(docName,elementId){
+   var request = new XMLHttpRequest();
+   //Asynchronous request (true=asynchronous)
+   request.open('GET', '../markdown/'+docName+'.md',true);
+   request.onreadystatechange = function() {
+                                       if(request.readyState == XMLHttpRequest.DONE && request.status === 200) {
+                                          var converter = new showdown.Converter() //instancia
+                                          ,text = request.responseText //guarda o documento em string
+                                          ,htmlDoc = converter.makeHtml(text); //converte a string em HTML
+                                          document.getElementById(elementId).innerHTML = htmlDoc;//coloca o html no elemento #documento
+                                          zommClickImagem();
+                                       }/*if*/
+                                    }/*function*/
+   request.send();
 }
 
 
 //Preparar imagem para zoom ou para não zoom (mostra ou não mostra a lupa)
 function zommClickImagem() {
-    $('#documento img').each(function () {
-        //var alt = $(this).attr("alt");
-        //if(alt != "figAlteracaoSenha" && alt != "figLogin" && alt !="figLoginRecuperacao")
-       $(this).wrap("<a class='imagem' href='" +$(this).attr("src") + "' onclick='return hs.expand(this)'></a>");
-    });
+    $('#documento img').each(function(){
+      var alt = $(this).attr("alt")
+      //if(alt != "figAlteracaoSenha" && alt != "figLogin" && alt !="figLoginRecuperacao")
+      $(this).wrap("<a class='imagem' href='"+$(this).attr( "src" ) + "' onclick='return hs.expand(this)'></a>");
+});
 }
 
-function setAttribute(element_id, attr, attr_value) {
+function setAttribute(element_id,attr,attr_value){
    document.getElementById(element_id).setAttribute(attr, attr_value);
 }
 
@@ -47,22 +63,30 @@ function ocultaElemento(elementId) {
 
 //Browser Zoom
 
-var currFFZoom = 1;
-var currIEZoom = 100;
+   var currFFZoom = 1;
+   var currIEZoom = 100;
 
-function zoomInBrowser() {
-    var IEstep = 2;
-    currIEZoom += IEstep;
-    $('body').css('zoom', ' ' + currIEZoom + '%');
-}
+    function zoomInBrowser(){
+        if (isFirefox){
+            var step = 0.02;
+            currFFZoom += step;
+            $('body').css('MozTransform','scale(' + currFFZoom + ')');
+        } else {
+            var step = 2;
+            currIEZoom += step;
+            $('body').css('zoom', ' ' + currIEZoom + '%');
+        }
+    };
 
-function zoomOutBrowser() {
-    var IEstep = 2;
-    currIEZoom -= IEstep;
-    $('body').css('zoom', ' ' + currIEZoom + '%');
-}
-
-//verifica se um elemento html tem conteúdo
-function isEmpty(el) {
-    return !$.trim(el.html());
-}
+    function zoomOutBrowser(){
+        if (isFirefox){
+            var step = 0.02;
+            currFFZoom -= step;
+            $('body').css('MozTransform','scale(' + currFFZoom + ')')
+            ;
+        } else {
+            var step = 2;
+            currIEZoom -= step;
+            $('body').css('zoom', ' ' + currIEZoom + '%');
+        }
+    };
