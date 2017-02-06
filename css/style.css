@@ -1365,6 +1365,7 @@ p.caption{
 			#titleBar {display: block;}
 
 			#sidebar {
+        top:0;
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
 				-ms-backface-visibility: hidden;

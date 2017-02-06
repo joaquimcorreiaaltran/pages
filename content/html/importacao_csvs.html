@@ -42,7 +42,14 @@
 <body>
 	<!-- Content -->
 	<div id="content">
-	  	<header></header>
+		<header>
+				<!-- Sidebar -->
+				<div id="sidebar">
+					<nav>
+						<a id="amenuLink" href="amenu-source.html">Menu</a>
+					</nav>
+				</div> <!-- SideBar-->
+		</header>
 
 		<section id="section_docs">
 			<article id="documento" class="modulo">
@@ -55,14 +62,6 @@
 
 		<footer><!--loaded with js--></footer>
 
-		<!-- Sidebar -->
-		<div id="sidebar" style="position: fixed;overflow-y: scroll;height: 100%;">
-			<nav>
-				<a id="amenuLink" href="amenu-source.html">Menu</a>
-			</nav>
-		</div> <!-- SideBar-->
-	</div> <!-- Content -->
-
 	<script>
 		var docName = "importacao_csvs";
 		convertMdToHtml(docName,"documento");
@@ -70,7 +69,7 @@
 		$("#docButtons").load("docButtons.html");
 		//document.getElementById("btnEditarDoc").setAttribute("onclick","window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank')");
 		zommClickImagem();
-		
+
 		setInterval(
 			function setBtnLink() {
 					$("#btnEditarDoc").attr("onclick","window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank')");
