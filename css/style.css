@@ -406,7 +406,7 @@ p.caption{
 #accordion {
     visibility:hidden;
     background:#2e4453;
-    box-shadow:4px 0 18px rgba(0,0,0,0.2);
+    /*box-shadow:4px 0 18px rgba(0,0,0,0.2);*/
     overflow-y:none;
     /*height:100%;*/
     max-height: 100vh; /*is equal to the height of the browser window, regardless of where the element is situated in the DOM tree*/
@@ -538,20 +538,31 @@ p.caption{
 
 
 /* #docButtons */
+
+#docButtons {
+  height: auto;
+  width: auto;
+  display: inline-block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+
 #docButtons button{
   background-color: #00aadc; /* blue */
   text-align: center;
   float: right;
   color: white;
   height: 35px;
-  width:35px;
-  padding: 0.5em 0.5em 0.5em 0.5em;
-  /*border: 0;*/
+  width: 35px;
+  padding: 0.1em 0.1em 0.1em 0.1em;
   margin: 0 0 0 0;
   text-decoration: none;
-  display: inline-block;
   font-size: 1em;
   border-radius: 0.5em;
+  text-align: center;
+  display: block;
 }
 
 #docButtons button:hover{
@@ -559,10 +570,7 @@ p.caption{
   text-align: center;
   float: right;
   color: white;
-  height: 35px;
-  width:35px;
   padding: 0.5em 0.5em 0.5em 0.5em;
-  /*border: 0;*/
   margin: 0 0 0 0;
   text-decoration: none;
   display: inline-block;
