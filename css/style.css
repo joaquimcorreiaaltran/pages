@@ -52,7 +52,7 @@ body { margin: 0; font-size: 1em; line-height: 1.4;  width: 96%;margin: auto;}
 div.content{  width: 70%;  margin: auto;  margin-left: 20%;}
 
 p, li, div{
-  margin-top:.0001pt;margin-bottom: .0001pt;font-size:  11.0pt;
+  margin-top:.0001pt;margin-bottom: .0001pt;font-size:  1em;
   font-family:"verdana";line-height:  150%;text-align:  justify;
 }
 
@@ -112,10 +112,10 @@ pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
 q { quotes: none; }
 q:before, q:after { content: ""; content: none; }
 
-small { font-size: 85%; }
+small { font-size: 0.85em; }
 
 /* Position subscript and superscript content without affecting line-height: h5bp.com/k */
-sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sub, sup { font-size: 0.75em; line-height: 0; position: relative; vertical-align: baseline; }
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
 
@@ -174,8 +174,8 @@ label { cursor: pointer; }
 
 legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
 p.imagem +p.MsoCaption {margin-top: 0cm;margin-right: 0cm;margin-bottom: 12.0pt;margin-left: 36.0pt;
-text-align: center;text-indent: -36.0pt;font-size: 10.0pt;
-font-family:"verdana";letter-spacing: -.25pt;line-height: 150%;
+text-align: center;text-indent: -36.0pt;font-size: 0.7em;
+letter-spacing: -.25pt;line-height: 150%;
 }
 
 
@@ -185,7 +185,7 @@ font-family:"verdana";letter-spacing: -.25pt;line-height: 150%;
  * 3. Define consistent vertical alignment display in all browsers
  */
 
-button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input, select, textarea { font-size: 1em; margin: 0; vertical-align: baseline; *vertical-align: middle; }
 
 /*
  * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
@@ -279,8 +279,8 @@ padding: 0cm 5.4pt 0cm 5.4pt;
 
 h1{margin-top: 14.0pt;
 margin-bottom: 6.0pt;
-font-size:  18.0pt;
-font-family:"verdana";
+font-size:  2em;
+/*font-family:"verdana";*/
 color: #3d596d;
 letter-spacing: 0pt;
 font-weight: bold;
@@ -295,9 +295,9 @@ h2{
 margin-top:12.0pt;
 margin-bottom:6.0pt;
 margin-left:0pt;
-font-size:17.0pt;
-font-family:"verdana";
-color: #3d596d;
+font-size:1.5em;
+/*font-family:"verdana";
+color: #3d596d;*/
 letter-spacing: 0pt;
 font-weight: bold;
 }
@@ -307,8 +307,8 @@ h3{
 margin-top:11.0pt;
 margin-bottom:6.0pt;
 margin-left:0pt;
-font-size:16.0pt;
-font-family:"verdana";
+font-size:1.3em;
+/*font-family:"verdana";*/
 color: #3d596d;
 letter-spacing: 0pt;
 font-weight: bold;
@@ -361,8 +361,8 @@ width: auto;
 
 p.caption{
   color: #333;
-  font-family: "verdana", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 12px;
+  /*font-family: "verdana", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
+  font-size: 0.8em;
   text-align: center;
   margin-bottom:50px;
 }
@@ -402,10 +402,10 @@ border-top:    solid #005082 1.0pt;
     overflow-y:none;
     /*height:100%;*/
     max-height: 100vh; /*is equal to the height of the browser window, regardless of where the element is situated in the DOM tree*/
-    padding-top:10px;
-    font-family:"verdana";
-    font-weight:bold;
-    font-size:large;
+    padding-top:0px;
+    /*font-family:"verdana";*/
+    /*font-weight:bold;*/
+    /*font-size:large;*/
     text-decoration:none;
 }
 
@@ -2152,7 +2152,7 @@ border-top:    solid #005082 1.0pt;
 
 	body {
 		background-color: #e8e8e8;
-		font-family: 'verdana';
+		/*font-family: 'verdana';*/
 		font-weight: 400;
 		color: #565656;
 	}
@@ -2169,7 +2169,7 @@ border-top:    solid #005082 1.0pt;
 		}
 
 	input, textarea, select {
-		font-family: 'verdana';
+		/*font-family: 'verdana';*/
 		font-weight: 400;
 		color: #565656;
 	}
@@ -2184,7 +2184,7 @@ border-top:    solid #005082 1.0pt;
 	}
 
 	h2, h3, h4, h5, h6 {
-		font-family:"verdana";
+		/*font-family:"verdana";*/
 		font-weight: bold;
 		color: #3d596d;
 	}
@@ -2257,53 +2257,6 @@ border-top:    solid #005082 1.0pt;
 			background: #eee;
 		}
 
-/* Form */
-
-	form label {
-		font-family: 'verdana';
-		font-weight: 700;
-		color: #232323;
-		margin: 0 0 0.75em 0;
-	}
-
-	form input[type="text"],
-	form input[type="email"],
-	form input[type="password"],
-	form select,
-	form textarea {
-		display: block;
-		border-radius: 0.4em;
-		-webkit-appearance: none;
-		border: solid 1px #ddd;
-		padding: 0.5em 0.75em;
-		width: 100%;
-		line-height: 1.25em;
-	}
-
-		form input[type="text"]:focus,
-		form input[type="email"]:focus,
-		form input[type="password"]:focus,
-		form select:focus,
-		form textarea:focus {
-			box-shadow: 0px 0px 2px 2px #00aadc;
-		}
-
-	form ::-webkit-input-placeholder {
-		color: #aaa;
-	}
-
-	form :-moz-placeholder {
-		color: #aaa;
-	}
-
-	form ::-moz-placeholder {
-		color: #aaa;
-	}
-
-	form :-ms-input-placeholder {
-		color: #aaa;
-	}
-
 /* Section/Article */
 
 	header {
@@ -2311,7 +2264,7 @@ border-top:    solid #005082 1.0pt;
 	}
 
 		header > p {
-			font-family: 'verdana';
+			/*font-family: 'verdana';*/
 			font-weight: 300;
 			display: block;
 			margin-top: 1em;
@@ -2367,7 +2320,7 @@ border-top:    solid #005082 1.0pt;
 		text-align: center;
 		box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.15);
 		color: #fff;
-		font-family: 'verdana';
+		/*font-family: 'verdana';*/
 		font-weight: 700;
 		text-decoration: none;
 		-moz-transition: background-color .25s ease-in-out, color .25s ease-in-out;
@@ -2458,7 +2411,7 @@ border-top:    solid #005082 1.0pt;
 
 	.pagination .pages {
 		display: inline-block;
-		font-family: 'verdana';
+		/*font-family: 'verdana';*/
 		font-weight: 700;
 	}
 
@@ -2766,7 +2719,7 @@ border-top:    solid #005082 1.0pt;
 			color: #fff;
 			line-height: 44px;
 			font-size: 1.25em;
-			font-family: 'verdana';
+			/*font-family: 'verdana';*/
 			font-weight: 700;
 			letter-spacing: 0.1em;
 			text-shadow: none;
@@ -2783,7 +2736,7 @@ border-top:    solid #005082 1.0pt;
 
 
 		#titleBar .toggle {
-			width: 80px;
+			width: 100px;
 			height: 60px;
 			position: absolute;
 			top: 0;
@@ -2802,7 +2755,7 @@ border-top:    solid #005082 1.0pt;
 				display: block;
 				position: absolute;
 				top: 7px;
-				font-size: 14px;
+				font-size: 1.2em;
 				width: 50px;
 				height: 30px;
 				line-height: 30px;
@@ -2810,8 +2763,8 @@ border-top:    solid #005082 1.0pt;
 				border-radius: 5px;
 				color: #fff;
 				text-align: center;
-				box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.15), 0 0.025em 0.15em 0em rgba(0, 0, 0, 0.25);
-				text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5);
+				/*box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.15), 0 0.025em 0.15em 0em rgba(0, 0, 0, 0.25);*/
+				/*text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5);*/
 				left: 7px;
 			}
 
@@ -2979,7 +2932,7 @@ border-top:    solid #005082 1.0pt;
 		/* Logo */
 
 			#logo {
-				font-family: 'verdana';
+				/*font-family: 'verdana';*/
 				font-weight: 700;
 				font-size: 2em;
 				letter-spacing: 0.1em;
@@ -3049,11 +3002,11 @@ border-top:    solid #005082 1.0pt;
 
 			body {
 				min-width: 1200px;
-				font-size: 12pt;
+				font-size: 100%;
 			}
 
 			input, textarea, select {
-				font-size: 12pt;
+				font-size: 1em;
 			}
 
 		/* Box */
@@ -3092,7 +3045,7 @@ border-top:    solid #005082 1.0pt;
 				.box.post .info .date {
 					position: relative;
 					z-index: 1;
-					font-family: 'verdana';
+					/*font-family: 'verdana';*/
 					font-weight: 400;
 					text-align: center;
 					display: block;
@@ -3160,11 +3113,11 @@ border-top:    solid #005082 1.0pt;
 
 			body {
 				min-width: 1000px;
-				font-size: 11pt;
+				font-size: 100%;
 			}
 
 			input, textarea, select {
-				font-size: 11pt;
+				font-size: 1em;
 			}
 
 		/* Box */
@@ -3240,11 +3193,11 @@ border-top:    solid #005082 1.0pt;
 
 			body {
 				min-width: 641px;
-				font-size: 14pt;
+				font-size: 100%;
 			}
 
 			input, textarea, select {
-				font-size: 14pt;
+				font-size: 1em;
 			}
 
 		/* Logo */
@@ -3283,7 +3236,7 @@ border-top:    solid #005082 1.0pt;
 
 			body, input, textarea, select {
 				line-height: 1.75em;
-				font-size: 11pt;
+				font-size: 1em;
 				letter-spacing: 0;
 			}
 
@@ -3326,7 +3279,7 @@ border-top:    solid #005082 1.0pt;
 
 				.box.post header > p {
 					font-size: 1em;
-					font-family: 'verdana';
+					/*font-family: 'verdana';*/
 					line-height: 1.5em;
 				}
 
