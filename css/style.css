@@ -2453,93 +2453,6 @@ border-top:    solid #005082 1.0pt;
 				text-shadow: none;
 			}
 
-
-
-/* Icons */
-
-	/*.icon {
-		position: relative;
-		text-decoration: none;
-	}
-
-		.icon:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
-			font-style: normal;
-			font-weight: normal;
-			text-transform: none !important;
-		}
-
-		.icon > .label {
-			display: none;
-		}*/
-
-/* Nav */
-/*
-	#nav > ul > li > ul {
-		display: none;
-	}
-
-	#nav ul {
-		margin: 0;
-	}
-
-	#nav li {
-		/*border-top: solid 1px rgba(0, 0, 0, 0.25);
-		box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.075);/*
-	/*	padding: 0.5em 0 0.5em 0;
-	}
-
-		#nav li:first-child {
-			border: 0;
-			box-shadow: none;
-			padding-top: 0;
-		}
-
-		#nav li:last-child {
-			padding-bottom: 0;
-		}
-
-		#nav li a {
-            color: #f3f6f8;
-			display: block;
-			padding: 0.4em 1em 0.4em 1em;
-			text-decoration: none;
-			border-radius: 0.4em;
-			outline: 0;
-			-moz-transition: background-color .25s ease-in-out, color .25s ease-in-out;
-			-webkit-transition: background-color .25s ease-in-out, color .25s ease-in-out;
-			-ms-transition: background-color .25s ease-in-out, color .25s ease-in-out;
-			transition: background-color .25s ease-in-out, color .25s ease-in-out;
-		}
-
-        #nav li div {
-            color: #a8bece;
-			display: block;
-			text-decoration: none;
-			border-radius: 0.4em;
-			outline: 0;
-			-moz-transition: background-color .25s ease-in-out, color .25s ease-in-out;
-			-webkit-transition: background-color .25s ease-in-out, color .25s ease-in-out;
-			-ms-transition: background-color .25s ease-in-out, color .25s ease-in-out;
-			transition: background-color .25s ease-in-out, color .25s ease-in-out;
-		}
-
-        #nav li.has-sub {
-            margin-left: 1em;
-        }
-
-		#nav li.current a {
-			background-color: #272E39 !important;
-			background-color: rgba(0, 0, 0, 0.15) !important;
-			box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
-			font-weight: 700;
-			color: #fff;
-		}*/
-
-
-
 /* Sidebar */
 
 	#titleBar {
@@ -2650,27 +2563,10 @@ border-top:    solid #005082 1.0pt;
 
 /* Copyright */
 
-	#copyright {
-		padding-bottom: 0em;
-	}
-
-		#copyright p {
-			opacity: 0;
-		}
-
-		#copyright a {
-			color: inherit !important;
-		}
-
-		#copyright:before {
-			content: '';
-			border-top: solid 0px;
-			border-bottom: solid 0px;
-			border-color: #171E29;
-			border-color: rgba(0, 0, 0, 0.25);
-			box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.075), 0px 1px 0px 0px rgba(255, 255, 255, 0.075);
-			display: hidden;
-		}
+#copyright {
+  display: hidden;
+  font-size: 0em;
+}
 
 /* Desktop */
 
@@ -2775,27 +2671,6 @@ border-top:    solid #005082 1.0pt;
 				background-color: #f4f4f4;
 				opacity: 1.0;
 			}
-
-		/* Logo */
-
-			#logo {
-				/*font-family: 'verdana';*/
-				font-weight: 700;
-				font-size: 2em;
-				letter-spacing: 0.1em;
-			}
-
-				#logo a {
-					display: block;
-					background-color: #00aadc;
-					padding: 0.875em 0.25em;
-					border-radius: 0.2em;
-					text-align: center;
-					box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.15), 0 0.025em 0.15em 0em rgba(0, 0, 0, 0.25);
-					text-decoration: none;
-					color: #fff;
-				}
-
 		/* Content */
 
 			#content {
@@ -2824,20 +2699,10 @@ border-top:    solid #005082 1.0pt;
 
 		/* Copyright */
 
-			#copyright {
-				margin: 0 0 0 0;
-				text-align: center;
-			}
-
-				#copyright p {
-					font-size: 0em;
-					line-height: 0em;
-				}
-
-				#copyright:before {
-					height: 0em;
-					margin: 0;
-				}
+    #copyright {
+      display: hidden;
+      font-size: 0em;
+  	}
 
 	}
 
@@ -3047,26 +2912,6 @@ border-top:    solid #005082 1.0pt;
 				font-size: 1em;
 			}
 
-		/* Logo */
-
-			#logo {
-				display: none;
-			}
-
-		/* Nav */
-
-			#nav {
-				margin-top: 0 !important;
-			}
-
-				#nav:before {
-					display: none !important;
-				}
-
-				#nav li:hover a {
-					background: red;
-				}
-
 		/* Sidebar */
 
 			#sidebar {
@@ -3175,26 +3020,6 @@ border-top:    solid #005082 1.0pt;
 									opacity: 1.0;
 								}
 
-		/* Logo */
-
-			#logo {
-				display: none;
-			}
-
-		/* Nav */
-
-			#nav {
-				margin-top: 0 !important;
-			}
-
-				#nav:before {
-					display: none !important;
-				}
-
-				#nav li:hover a {
-					background: none;
-				}
-
 		/* Content */
 
 			#content {
@@ -3211,20 +3036,10 @@ border-top:    solid #005082 1.0pt;
 
 		/* Copyright */
 
-			#copyright {
-				margin: 2em 0 0 0;
-				text-align: center;
-			}
-
-				#copyright p {
-					font-size: 0.9em;
-					line-height: 2em;
-				}
-
-				#copyright:before {
-					height: 0.5em;
-					margin: 0 0 2em 0;
-				}
+    #copyright {
+      display: hidden;
+      font-size: 0em;
+  	}
 
 	}
 
