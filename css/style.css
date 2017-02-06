@@ -237,31 +237,47 @@ input:invalid, textarea:invalid { background-color: #f0dddd; }
    Tables
    ========================================================================== */
 
-table { border-collapse: collapse; border-spacing: 0; }
-td { vertical-align: top; }
-
-
-table {margin-left:1%;
-margin-top: 10px;
-border-collapse: collapse;
+table {
+  border-collapse: collapse;
+  border-spacing: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left:auto;
+  margin-right:auto;
 }
 
+td {
+  vertical-align: top;
+  padding: 0.3em 0.3em 0.3em 0.3em;
+  border: solid #3d596d 1.0px;
+}
+
+tr {
+  padding: 0.3em 0.3em 0.3em 0.3em;
+  border: solid #3d596d 1.0px;
+}
 
 table th {
   font-weight: bold;
-  border:none;
-  padding: 0cm 5.4pt 0cm 5.4pt;
-text-align: center;
-background:#818181;
+  /*border:solid;*/
+  padding: 0.3em 0.3em 0.3em 0.3em;
+  text-align: center;
+  background:#3d596d;
+  color:white;
+}
+
+table thead tr th {
+  border: 1px solid white;
 }
 
 table thead tr {
-  border: 1px solid #ccc;
+  border: 1px solid #3d596d;
 }
 
 table tbody td {
-border-left: solid black 0.5pt;
-padding: 0cm 5.4pt 0cm 5.4pt;
+  border-left: solid #3d596d 1px;
+  border-right: solid #3d596d 1px;
+  padding: 0.3em 0.3em 0.3em 0.3em;
 }
 
 
@@ -384,38 +400,6 @@ p.caption{
   text-align: center;
   margin-bottom:50px;
 }
-
-
-/**tabela Campos obrigatorios*/
-.modulo table{
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left:auto;
-  margin-right:auto;
-  border-bottom:solid #005082 1.0pt;
-  width: 80%;
-}
-
-.modulo table th {
-  background:#3d596d;
-  color: white;
-  border: 1px;
-  border-style: solid;
-  border-color:#3d596d;
-
-}/*#F5FAFB*/
-
-.modulo table th  p {text-align:    center;}
-
-.modulo table tbody tr {
-border-left:    solid #005082 1.0pt;
-border-right:    solid #005082 1.0pt;}
-
-.modulo table td {
-border-left:    solid #005082 1.0pt;
-border-top:    solid #005082 1.0pt;
-}
-
 
 /*************************************************************/
 /* Accordion Menu by www.menucool.com/vertical/accordion-menu*/
@@ -671,35 +655,83 @@ border-top:    solid #005082 1.0pt;
 		margin-bottom: 1em;
 	}
 
-/* Table */
+/* Table .default*/
 
-	table {
-		margin-bottom: 1em;
-		width: 100%;
+	/*table .default {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left:auto;
+    margin-right:auto;
+    border: 1px;
+    border-style: solid;
+    border-color:#3d596d;
+    width: 80%;
 	}
 
-		table.default tbody tr:nth-child(2n+2) {
-			background: #f4f4f4;
+		table .default tbody tr:nth-child(2n+2) {
+			background: #3d596d;
 		}
 
-		table.default td {
-			padding: 0.5em 1em 0.5em 1em;
+		table .default td {
+      padding: 0.3em 0.3em 0.3em 0.3em;
+      border: solid #3d596d 1.0px;
 		}
 
 		table.default th {
-			text-align: left;
-			font-weight: 700;
-			padding: 0.75em 1em 0.75em 1em;
+			text-align:center;
+			padding: 0.3em 0.3em 0.3em 0.3em;
 		}
 
 		table.default thead {
-			border-bottom: solid 1px #ddd;
+			border-bottom: solid 1px #3d596d;
 		}
 
 		table.default tfoot {
-			border-top: solid 1px #ddd;
+			border-top: solid 1px #3d596d;
 			background: #eee;
+		}*/
+
+/* Table .modulo*/
+
+    /*table .modulo {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left:auto;
+      margin-right:auto;
+      border: 1px;
+      border-style: solid;
+      border-color:#3d596d;
+      width: 80%;
+  	}
+
+    table .modulo tbody tr:nth-child(2n+2) {
+			background: #3d596d;
 		}
+
+    table .modulo td {
+      border: solid #3d596d 1.0px;
+      padding: 0.3em 0.3em 0.3em 0.3em;
+    }
+
+    .modulo table th {
+      padding: 0.3em 0.3em 0.3em 0.3em;
+      text-align: center;
+      background:#3d596d;
+      color: white;
+      border-color:#3d596d;
+      border-style: solid;
+      border: 1px;
+    }
+    .modulo table th p {text-align:center;}
+
+    .modulo table tbody tr {border: solid #3d596d 1.0px;}
+
+
+
+
+
+
+*/
 
 /* Section/Article */
 
