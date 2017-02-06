@@ -60,33 +60,3 @@ function mostraElemento(elementId) {
 function ocultaElemento(elementId) {
    document.getElementById(elementId).style.display = 'none';
 }
-
-//Browser Zoom
-
-   var currFFZoom = 1;
-   var currIEZoom = 100;
-
-    function zoomInBrowser(){
-        if (isFirefox){
-            var step = 0.02;
-            currFFZoom += step;
-            $('body').css('MozTransform','scale(' + currFFZoom + ')');
-        } else {
-            var step = 2;
-            currIEZoom += step;
-            $('body').css('zoom', ' ' + currIEZoom + '%');
-        }
-    };
-
-    function zoomOutBrowser(){
-        if (isFirefox){
-            var step = 0.02;
-            currFFZoom -= step;
-            $('body').css('MozTransform','scale(' + currFFZoom + ')')
-            ;
-        } else {
-            var step = 2;
-            currIEZoom -= step;
-            $('body').css('zoom', ' ' + currIEZoom + '%');
-        }
-    };

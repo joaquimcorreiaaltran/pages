@@ -45,8 +45,6 @@ html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 10
 
 html, button, input, select, textarea { font-family: verdana; color: #565656; }
 
-button:hover{ font-size: 1.1em; width:100%; height:100%;}
-
 body { margin: 0; font-size: 1em; line-height: 1.4;  width: 96%;margin: auto;}
 
 div.content{  width: 70%;  margin: auto;  margin-left: 20%;}
@@ -543,6 +541,79 @@ p.caption{
   color:#00aadc;
 }
 
+
+
+
+
+/* #docButtons */
+#docButtons button{
+  background-color: #00aadc; /* blue */
+  text-align: center;
+  float: right;
+  color: white;
+  height: 35px;
+  width:35px;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  /*border: 0;*/
+  margin: 0 0 0 0;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  border-radius: 0.5em;
+}
+
+#docButtons button:hover{
+  background-color: #0b4add;
+  text-align: center;
+  float: right;
+  color: white;
+  height: 35px;
+  width:35px;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  /*border: 0;*/
+  margin: 0 0 0 0;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  border-radius: 0.5em;
+}
+
+#docButtons i{
+  color: white;
+  vertical-align: middle;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 1.2em;
+  text-align: center;
+}
+
+#docButtons i:hover{
+  color: white;
+  vertical-align: middle;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 1.2em;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==|== media queries ======================================================
    EXAMPLE Media Query for Responsive Design.
    This example overrides the primary ('mobile first') styles
@@ -1000,7 +1071,7 @@ p.caption{
 				line-height: 30px;
 				background: #00aadc;
 				border-radius: 5px;
-				color: #fff;
+				color: white;
 				text-align: center;
 				/*box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.15), 0 0.025em 0.15em 0em rgba(0, 0, 0, 0.25);*/
 				/*text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5);*/
@@ -1011,7 +1082,7 @@ p.caption{
 				background-color: #0b4add;
 			}
 			#titleBar .toggle:active:before:hover {
-				background-color: red;
+				/*background-color: red;*/
 			}
 
 
@@ -1309,7 +1380,6 @@ p.caption{
 
 			#sidebar {
 				padding: 0px 0px 0px 0px;
-				box-shadow: inset -1px 0 0 0 rgba(255, 255, 255, 0.15), inset -0.1em 0 0.5em 0 rgba(0, 0, 0, 0.25);
 			}
 
 		/* Copyright */
