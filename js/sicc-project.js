@@ -44,3 +44,8 @@ function mostraElemento(elementId) {
 function ocultaElemento(elementId) {
    document.getElementById(elementId).style.display = 'none';
 }
+
+//Remove text from html
+$("body").children().each(function () {
+  $(this).html( $(this).html().replace("Accordion Menu trial version","") );
+});
