@@ -41,17 +41,13 @@
 
 </head>
 <body>
-	<!-- Content -->
-	<div id="content">
-		<header>
-				<!-- Sidebar -->
-				<div id="sidebar">
-					<nav>
-						<a id="amenuLink" href="amenu-source.html">Menu</a>
-					</nav>
-				</div> <!-- SideBar-->
-		</header>
+	<header>
+			<div id="sidebar">
+					<a id="amenuLink" href="amenu-source.html">Menu</a>
+			</div>
+	</header>
 
+	<div id="content">
 		<section id="section_docs">
 			<article id="documento" class="modulo">
 				<!--loaded with js-->
@@ -59,10 +55,9 @@
 			<div id="docButtons">
 				<!--loaded with js-->
 			</div>
+			<footer><!--loaded with js--></footer>
 		</section>
-
-		<footer><!--loaded with js--></footer>
-
+	</div>
 	<script>
 		var docName = "chave_orcamental_por_ano";
 		convertMdToHtml(docName,"documento");
