@@ -903,19 +903,11 @@ footer img {
       z-index:100;
 		}
 
-			#titleBar a {
-          text-align: center;
-			}
 
-      #titleBar a:hover {
-        font-size: 1em;
-        color: #40A293;
-      }
-
-
-		#titleBar .toggle {
-
-		}
+    #titleBar a:hover {
+      font-size: 1em;
+      color: #40A293;
+    }
 
 			#titleBar .toggle:before {
         position: absolute;
@@ -941,10 +933,6 @@ footer img {
 
       #titleBar a:hover {
           font-size: 1.1em;
-      }
-
-      #titleBar .toggle::hover{
-        /*background-color: red;*/
       }
 
     	#sidebar {
