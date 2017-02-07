@@ -1334,10 +1334,10 @@ footer img {
 			}
 
 			body.sidebar-visible #content, body.sidebar-visible #titleBar {
-				-moz-transform: translateX(1em);
+				/*-moz-transform: translateX(1em);
 				-webkit-transform: translateX(1em);
 				-ms-transform: translateX(1em);
-				transform: translateX(1em);
+				transform: translateX(1em);*/
 			}
 
 			body.sidebar-visible #sidebar {
