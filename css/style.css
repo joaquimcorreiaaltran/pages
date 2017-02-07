@@ -911,7 +911,7 @@ footer img {
 
 			#titleBar .toggle:before {
         position: absolute;
-        padding: 0 7 0 7;
+        padding: 0px 7px 0px 7px;
         font-family: FontAwesome;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
