@@ -43,7 +43,7 @@ audio:not([controls]) { display: none; }
 
 html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-html, button, input, select, textarea { font-family: verdana; color: #565656; }
+html, button, input, select, textarea { font-family: Roboto; color: #656565; }
 
 body { margin: 0; font-size: 1em; line-height: 1.4;  width: 96%;margin: auto;}
 
@@ -51,7 +51,7 @@ div.content{  width: 70%;  margin: auto;  margin-left: 20%;}
 
 p, li, div{
   margin-top:.0001pt;margin-bottom: .0001pt;font-size:  1em;
-  font-family:"verdana";line-height:  150%;text-align:  justify;
+  font-family:"Roboto";line-height:  150%;text-align:  justify;
 }
 
 
@@ -72,9 +72,9 @@ p, li, div{
    Links
    ========================================================================== */
 
-a { color: #3d596d; }
+a { color: #666666; }
 a:visited { color: #3d596d; }
-a:hover { color: #1384d6; }
+a:hover { color: #40A293; }
 a:focus { outline: thin dotted; }
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
 a:hover, a:active { outline: 0; }
@@ -102,7 +102,7 @@ ins { background: #ff9; color: #000; text-decoration: none; }
 mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
 
 /* Redeclare monospace font family: h5bp.com/j */
-pre, code, kbd, samp { font-family:verdana; _font-family: 'courier new', monospace; font-size: 1em; }
+pre, code, kbd, samp { font-family:Roboto; _font-family: 'courier new', monospace; font-size: 1em; }
 
 /* Improve readability of pre-formatted text in all browsers */
 pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
@@ -143,17 +143,12 @@ img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
  * Correct overflow not hidden in IE9
  */
 
-
 /* =============================================================================
    Figures
    ========================================================================== */
 
 figure { margin: 0; }
 p.imagem { margin: auto; padding-top: 20px}
-
-
-
-
 
 /* =============================================================================
    Forms
@@ -299,7 +294,7 @@ h1{
   font-weight: bold;
   line-height: 1em;
   text-align:left;
-  color: #3d596d;
+  color: #40A293;
 }
 
 h1 a span:nth-child(2)::before {
@@ -315,7 +310,7 @@ h2{
   font-weight: bold;
   line-height: 1em;
   text-align:left;
-  color: #3d596d;
+  color: #40A293;
 }
 
 h2 a span:nth-child(2)::before {
@@ -331,7 +326,7 @@ h3{
   font-weight: bold;
   line-height: 1em;
   text-align:left;
-  color: #3d596d;
+  color: #40A293;
 }
 
 h4{
@@ -343,7 +338,7 @@ h4{
   font-weight: bold;
   line-height: 1em;
   text-align:left;
-  color: #3d596d;
+  color: #40A293;
 }
 
 h5{
@@ -355,7 +350,7 @@ h5{
   font-weight: bold;
   line-height: 1em;
   text-align:left;
-  color: #3d596d;
+  color: #40A293;
 }
 /* ==|== primary styles =====================================================
     Imagens
@@ -395,7 +390,7 @@ width: auto;
 
 p.caption{
   color: #333;
-  /*font-family: "verdana", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
+  /*font-family: "Roboto", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
   font-size: 0.8em;
   text-align: center;
   margin-bottom:50px;
@@ -406,7 +401,7 @@ p.caption{
 /*************************************************************/
 #accordion {
     visibility:hidden;
-    background:#2e4453;
+    background: white;/*original color: 2e4453; SNS color: 40A293*/
     overflow-y:none;
     height:100vh;
     max-height: 100vh; /*is equal to the height of the browser window, regardless of where the element is situated in the DOM tree*/
@@ -443,11 +438,11 @@ p.caption{
 
 /* headings */
 #accordion li > div {
-  color:#eee;
+  color: #666666;
   cursor: pointer;
 }
 #accordion .active > div{
-  color:white;
+  color: #40A293;
 }
 
 #accordion li > a {
@@ -459,7 +454,7 @@ p.caption{
 
 /* links */
 #accordion a {
-  color:#ddd;
+  color: #666666;/*#ddd;*/
   /*display:block;*/
   line-height:1;
   transition:all 0.3s;
@@ -468,7 +463,7 @@ p.caption{
 
 #accordion a.active {
   color:white;
-  background-color:none;
+  background-color: #40A293;
 }
 
 /* Add borders to the top LIs */
@@ -515,22 +510,27 @@ p.caption{
     -o-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
-    color:#00aadc;
+    color:#40A293;
 }
 
-#accordion a.active{
-  color:#00aadc;
+#accordion a.active, #accordion div.active, #accordion li.active{
+  color:#40A293;
 }
 
 /* hovers */
-#accordion a:hover, #accordion .top div:hover {
-  color: white;
-  font-size: 1.1em;
+#accordion a:hover, #accordion li.top:hover, #accordion div:hover {
+  color: #40A293;
+  font-size: 1em;
+}
+
+#accordion li.top:hover {
+  color: #40A293;
+  font-size: 1em;
 }
 
 #accordion a > i:hover {
   font-size: 1.5em;
-  color:#00aadc;
+  color:#40A293;
 }
 
 
@@ -545,56 +545,35 @@ p.caption{
   right: 0;
 }
 
-
 #docButtons button{
-  background-color: #00aadc; /* blue */
+  background-color: white; /* blue */
   text-align: center;
   float: right;
-  color: white;
+  color: #666666;
   height: 35px;
   width: 35px;
   padding: 0.1em 0.1em 0.1em 0.1em;
   margin: 0 0 0 0;
-  text-decoration: none;
-  font-size: 1em;
+  border-width: 1px;
+  border-color: #888888;
   border-radius: 0.5em;
   text-align: center;
   display: block;
 }
 
 #docButtons button:hover{
-  background-color: #0b4add;
-  text-align: center;
-  float: right;
-  color: white;
-  padding: 0.5em 0.5em 0.5em 0.5em;
-  margin: 0 0 0 0;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1em;
+  background-color: #40A293;
   border-radius: 0.5em;
 }
 
 #docButtons i{
-  color: white;
-  vertical-align: middle;
-  font-weight: normal;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  width: 1.2em;
+  color: #666666;
   text-align: center;
 }
 
 #docButtons i:hover{
   color: white;
-  vertical-align: middle;
-  font-weight: normal;
-  margin: 0;
-  padding: 0;
-  border: 0;
   width: 1.2em;
-  text-align: center;
 }
 
 /*copyright*/
@@ -647,9 +626,7 @@ p.caption{
 
 	body {
 		background-color: #e8e8e8;
-		/*font-family: 'verdana';*/
-		font-weight: 400;
-		color: #565656;
+		color: #656565;
 	}
 
 		body.is-loading * {
@@ -663,43 +640,10 @@ p.caption{
 			animation: none;
 		}
 
-	input, textarea, select {
-		/*font-family: 'verdana';*/
-		font-weight: 400;
-		color: #565656;
-	}
-
-	a {
-		color: #00aadc;
-	}
-
-	strong, b {
-		font-weight: 700;
-		color: #232323;
-	}
-
-	h2, h3, h4, h5, h6 {
-		/*font-family:"verdana";*/
-		font-weight: bold;
-		color: #3d596d;
-	}
-
-
 	blockquote {
-		border-left: solid 5px #ddd;
+		border-left: solid 5px #666666;
 		padding: 1em 0 1em 2em;
 		font-style: italic;
-	}
-
-	em, i {
-		font-style: italic;
-	}
-
-	hr {
-		border: 0;
-		border-top: solid 1px #ddd;
-		padding: 1.5em 0 0 0;
-		margin: 1.75em 0 0 0;
 	}
 
 	sub {
@@ -718,10 +662,6 @@ p.caption{
 		clear: both;
 	}
 
-	p, ul, ol, dl {
-		margin-bottom: 1em;
-	}
-
 /* Section/Article */
 
 	header {
@@ -729,7 +669,7 @@ p.caption{
 	}
 
 		header > p {
-			/*font-family: 'verdana';*/
+			/*font-family: 'Roboto';*/
 			font-weight: 300;
 			display: block;
 			margin-top: 1em;
@@ -798,12 +738,12 @@ footer img {
 	button,
 	.button {
 		cursor: pointer;
-		background-color: #00aadc;
+		background-color: #40A293;
 		border-radius: 0.4em;
 		text-align: center;
 		box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.15);
 		color: #fff;
-		/*font-family: 'verdana';*/
+		/*font-family: 'Roboto';*/
 		font-weight: 700;
 		text-decoration: none;
 		-moz-transition: background-color .25s ease-in-out, color .25s ease-in-out;
@@ -894,7 +834,7 @@ footer img {
 
 	.pagination .pages {
 		display: inline-block;
-		/*font-family: 'verdana';*/
+		/*font-family: 'Roboto';*/
 		font-weight: 700;
 	}
 
@@ -912,7 +852,7 @@ footer img {
 			text-decoration: none;
 			color: inherit;
 			background-color: #e8e8e8;
-			color: #565656;
+			color: #656565;
 			margin: 0 0.4em 0 0;
 			border-radius: 0.4em;
 			-moz-transition: background-color .25s ease-in-out;
@@ -945,21 +885,20 @@ footer img {
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		display: none;
+    width: 100%;
 		height: 44px;
+    top: 0;
 		left: 0;
 		position: fixed;
-		top: 0;
-		width: 100%;
 		z-index: 100;
 	}
 
 		#titleBar .title {
-            background-color: #2e4453;
+      background-color: #40A293;
 			display: block;
-			color: #fff;
+			color: white;
 			line-height: 44px;
 			font-size: 1.25em;
-			/*font-family: 'verdana';*/
 			font-weight: 700;
 			letter-spacing: 0.1em;
 			text-shadow: none;
@@ -974,61 +913,49 @@ footer img {
 				text-decoration: none;
 			}
 
+      #titleBar a:hover {
+        font-size: 1em;
+        color: #40A293;
+      }
+
 
 		#titleBar .toggle {
-			width: 100px;
-			height: 60px;
-			position: absolute;
-			top: 0;
-			left: 0;
+
 		}
 
 			#titleBar .toggle:before {
 				font-family: FontAwesome;
-				text-decoration: none;
-				font-style: normal;
-				font-weight: normal;
 				-webkit-font-smoothing: antialiased;
 				-moz-osx-font-smoothing: grayscale;
 				content: '\f0c9';
 				display: block;
 				position: absolute;
-				top: 7px;
-				font-size: 1.2em;
-				width: 50px;
-				height: 30px;
+				top: 5px;
+        left: 7px;
 				line-height: 30px;
-				background: #00aadc;
-				border-radius: 5px;
+        margin: 0;
+        padding: 0 7 0 7;
 				color: white;
+        font-size: 1.5em;
 				text-align: center;
-				/*box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.15), 0 0.025em 0.15em 0em rgba(0, 0, 0, 0.25);*/
-				/*text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5);*/
-				left: 7px;
-			}
-
-			#titleBar .toggle:active:before {
-				background-color: #0b4add;
-			}
-			#titleBar .toggle:active:before:hover {
-				/*background-color: red;*/
+        background-color: #40A293;
+        border-color: white;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 5px;
 			}
 
     	#sidebar {
-    		color: white;
+    		background-color: white;
     		width: 21em;
     		padding: 0em 0em 0em 0em;
     		overflow-y: auto;
-    		left: 0;
-        background-color: #2e4453;
+        position: fixed;
+        top: 0;
+        left: 0;
         box-shadow:4px 0 18px rgba(0,0,0,0.2);
-        z-index:99;
-        style="position: fixed;
-        top:0;
-        left:0;
-        overflow-y: auto;
+        z-index:-1;
         height: 100vh;
-        position: fixed;/*absolute*/
         -moz-animation: sideBarLeft 0.01s;
   			-webkit-animation: sideBarLeft 0.01s;
   			-ms-animation: sideBarLeft 0.01s;
@@ -1038,6 +965,14 @@ footer img {
         -ms-animation-timing-function: ease-out;
         animation-timing-function: ease-out;
     	}
+
+      #titleBar a:hover {
+          font-size: 1.1em;
+      }
+
+      #titleBar .toggle::hover{
+        background-color: red;
+      }
 
       @-ms-keyframes sideBarLeft {
         from {left: 0em;}
@@ -1193,23 +1128,23 @@ footer img {
 
 	@media screen and (min-width: 1201px) {
 
-		/* Basic */
 			body {
 				min-width: 1200px;
 			}
 
-		/* Content */
 			#content {
-				padding: 3em 5em 8em 5em;
+				padding: 1em 5em 8em 5em;
 				margin-left: 21em;
+        /*position: fixed;*/
+        top: 0px;
 			}
+
+      #titleBar {height: 0px;}
 
       #documento img{max-width:700px; max-height:525px}
       #documento table img{max-width:500px;max-height:375px}
 
-      #accordion {
-        margin-top: 0px;
-      }
+      #accordion {margin-top: 0px;}
 	}
 
 /* Narrow */
@@ -1289,6 +1224,7 @@ footer img {
 
     #accordion {
       margin-top: 45px;
+      max-height: 95vh;
     }
 
 	}
@@ -1335,13 +1271,11 @@ footer img {
 				min-height: 0;
 				overflow-y: auto;
 				position: fixed;/*static|absolute|fixed|relative|initial|inherit;*/
-				top: 0;
 				z-index: 99;
 				-moz-transform: translateX(-21em);
 				-webkit-transform: translateX(-21em);
 				-ms-transform: translateX(-21em);
 				transform: translateX(-21em);
-        background-color: #2e4453;
 			}
 
 			body.sidebar-visible #content, body.sidebar-visible #titleBar {
