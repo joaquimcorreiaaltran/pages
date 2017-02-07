@@ -903,9 +903,8 @@ footer img {
       z-index:100;
 		}
 
-			#titleBar .title a {
-				color: inherit;
-				text-decoration: none;
+			#titleBar a {
+          text-align: center;
 			}
 
       #titleBar a:hover {
@@ -940,6 +939,14 @@ footer img {
         border-radius: 5px;
 			}
 
+      #titleBar a:hover {
+          font-size: 1.1em;
+      }
+
+      #titleBar .toggle::hover{
+        /*background-color: red;*/
+      }
+
     	#sidebar {
     		background-color: white;
     		width: 21em;
@@ -961,13 +968,12 @@ footer img {
         animation-timing-function: ease-out;
     	}
 
-      #titleBar a:hover {
-          font-size: 1.1em;
+      #sideBar .toggle{
+        color:red;
+        padding-left: 5px;
+        padding-right: 5px;
       }
 
-      #titleBar .toggle::hover{
-        background-color: red;
-      }
 
       @-ms-keyframes sideBarLeft {
         from {left: 0em;}
