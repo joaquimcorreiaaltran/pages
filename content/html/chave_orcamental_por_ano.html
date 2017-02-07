@@ -68,7 +68,9 @@
 	function setBtnLink() {
 		alert('setBtnLink!');
 		var btn = document.getElementById("btnEditarDoc");
+		alert('btn!: '+btn);
 			if(btn) {
+				alert('if!: '+btn);
 				$("#btnEditarDoc").attr("onclick","window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank')");
 				clearInterval(refreshIntervalId);
 			}
