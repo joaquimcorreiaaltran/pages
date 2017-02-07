@@ -918,20 +918,20 @@ footer img {
 		}
 
 			#titleBar .toggle:before {
-				font-family: FontAwesome;
-				-webkit-font-smoothing: antialiased;
-				-moz-osx-font-smoothing: grayscale;
-				content: '\f0c9';
-				display: block;
-				position: absolute;
-				top: 5px;
-        left: 7px;
-				line-height: 30px;
-        margin: 0;
+        position: absolute;
         padding: 0 7 0 7;
-				color: white;
+        font-family: FontAwesome;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: '\f0c9';
+        display: block;
+        top: 5px;
+        left: 7px;
+        line-height: 30px;
+        margin: 0;
+        color: white;
         font-size: 1.5em;
-				text-align: center;
+        text-align: center;
         background-color: #40A293;
         border-color: white;
         border-style: solid;
@@ -956,7 +956,7 @@ footer img {
         top: 0;
         left: 0;
         box-shadow:4px 0 18px rgba(0,0,0,0.2);
-        z-index:-1;
+        z-index:99;
         height: 100vh;
         -moz-animation: sideBarLeft 0.01s;
   			-webkit-animation: sideBarLeft 0.01s;
@@ -967,12 +967,6 @@ footer img {
         -ms-animation-timing-function: ease-out;
         animation-timing-function: ease-out;
     	}
-
-      #sideBar .toggle{
-        color:red;
-        padding-left: 5px;
-        padding-right: 5px;
-      }
 
 
       @-ms-keyframes sideBarLeft {
