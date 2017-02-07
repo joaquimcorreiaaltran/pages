@@ -1,4 +1,6 @@
-### O que é?
+#Ajuda
+
+### Github, o que é?
 É o local onde os documentos de suporte à utilização do [SICC][ac27677d] são armazenados e disponibilizados [com segurança][b175e238], permitindo, entre outras, que as entidades proponham melhorias à documentação, através desta plataforma [GitHub][094a4abd], sem recurso a outras ferramentas e sem necessitar de conhecimentos de programação.
 
 ### Quais os objetivos?
