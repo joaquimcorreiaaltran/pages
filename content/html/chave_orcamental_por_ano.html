@@ -67,15 +67,14 @@
 		function setBtnLink() {
 			var btn = document.getElementById("btnEditarDoc");
 				if(btn) {
-					alert('antes:'+refreshIntervalId);
 					$("#btnEditarDoc").attr("onclick","window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank')");
 					clearInterval(refreshIntervalId);
-					alert('depois:'+refreshIntervalId);
 				}
 			}
 
 		var refreshIntervalId = setInterval(setBtnLink, 3000);
 		setTimeout(clearInterval(refreshIntervalId), 60000);
+		setBtnLink();
 	</script>
 
 </body>
