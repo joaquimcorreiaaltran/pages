@@ -67,11 +67,11 @@
 <script>
 	function setBtnLink() {
 		var btn = document.getElementById("btnEditarDoc");
-		alert('btn!: '+btn);
 			if(btn) {
-				alert('if!: '+btn);
 				$("#btnEditarDoc").attr("onclick","window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank')");
+				alert('1 - refreshIntervalId!: '+refreshIntervalId);
 				clearInterval(refreshIntervalId);
+				alert('2 - refreshIntervalId!: '+refreshIntervalId);
 			}
 		}
 
