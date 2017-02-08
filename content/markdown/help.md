@@ -1,10 +1,10 @@
 # AJUDA
 
-## Como posso propôr melhorias à documentação?
+### Como propôr melhorias à documentação?
 
-1. **Selecionar o documento**: aceda ao website spmssicc.github.io/pages, navegue até ao documento pretendido e selecione o botão ![botão editar doc](..\markdown\assets\help-85f5ce98.png), que irá abrir uma página com o site GitHub [(o que é?)](#github);
+1. **Selecionar o documento**: aceda ao website spmssicc.github.io/pages, navegue até ao documento pretendido e selecione o botão ![botão editar doc](..\markdown\assets\help-85f5ce98.png), que irá abrir uma página com o site GitHub [(o que é o GitHub?)](#github);
 2. **Autenticar e copiar o repositório**: no GitHub, valide o  _username_ e a _password_ e selecione a opção ![fork the repository](..\markdown\assets\help-44d17d18.png) [(como crio uma conta?)](#criar_conta);
-3. **Efetuar as alterações**: Com o separador ![edit file](..\markdown\assets\help-54c0c097.png) aberto, efetue as alterações pretendidas;
+3. **Efetuar as alterações**: Com o separador ![edit file](..\markdown\assets\help-54c0c097.png) aberto, efetue as alterações pretendidas formatadas em Markdown [o que é Markdown?](#markdown);
 4. **Submeter as alterações**: no fundo da página, selecione ![Propose file change](..\markdown\assets\help-120bc218.png), que irá abrir uma nova página onde selecionará ![create pull request](..\markdown\assets\help-1ff0f086.png) e de seguida ![create pull request 2](..\markdown\assets\help-5a9d7515.png).
 
 
@@ -78,6 +78,8 @@ README.md
 ## Formato da documentação.
 
 A documentação encontra-se no formato Markdown, com o objetivo de i) reduzir o esforço na produção e manutenção dos conteúdos, ii) aumentar a uniformização documental e iii) aumentar a disponibilidade e a facilidade de acesso à documentação.
+
+<a name="markdown"></a>
 
 ### O que é Markdown?
 
