@@ -512,11 +512,9 @@ p.caption{
 }
 
 /* hovers */
-#accordion a:hover, #accordion li.top:hover, #accordion div:hover {
+#accordion a:hover, #accordion div:hover {
   color: #40A293;
   font-size: 1em;
-  font-weight: bold;
-  letter-spacing: 0.1em;
 }
 
 #accordion li.top:hover {
