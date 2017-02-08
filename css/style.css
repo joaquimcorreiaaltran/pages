@@ -462,14 +462,10 @@ p.caption{
   text-decoration:none;
 }
 
-#accordion a.active {
-  color: #40A293;
-}
-
 /* Add borders to the top LIs */
 #accordion li.top {
   border-top: 1px solid #aaa;
-  border-bottom: 1px solid #40A293;
+  /*border-bottom: 1px solid #40A293;*/
 }
 
 #accordion li {
@@ -507,21 +503,27 @@ p.caption{
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
     color:#40A293;
+    font-weight: bold;
 }
 
 #accordion a.active, #accordion div.active, #accordion li.active{
   color:#40A293;
+  font-weight: bold;
 }
 
 /* hovers */
 #accordion a:hover, #accordion li.top:hover, #accordion div:hover {
   color: #40A293;
   font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
 }
 
 #accordion li.top:hover {
   color: #40A293;
   font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
 }
 
 #accordion a > i:hover {
@@ -533,8 +535,6 @@ p.caption{
 /* #docButtons */
 
 #docButtons {
-  height: auto;
-  width: auto;
   display: inline-block;
   position: fixed;
   bottom: 0;
@@ -545,13 +545,12 @@ p.caption{
   background-color: white; /* blue */
   text-align: center;
   float: right;
-  color: #666666;
   height: 35px;
   width: 35px;
   padding: 0.1em 0.1em 0.1em 0.1em;
   margin: 0 0 0 0;
-  border-width: 1px;
-  border-color: #888888;
+  border-width: 2px;
+  border-color: #40A293;
   border-radius: 0.5em;
   text-align: center;
   display: block;
@@ -559,7 +558,7 @@ p.caption{
 
 #docButtons button:hover{
   background-color: #40A293;
-  border-radius: 0.5em;
+  width: 40px;
 }
 
 #docButtons i{
@@ -569,15 +568,7 @@ p.caption{
 
 #docButtons i:hover{
   color: white;
-  width: 1.2em;
 }
-
-/*copyright*/
-#copyright {
-  display: hidden;
-  font-size: 0em;
-}
-
 
 /* ==|== media queries ======================================================
    EXAMPLE Media Query for Responsive Design.
@@ -739,7 +730,6 @@ footer img {
 		text-align: center;
 		box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.15);
 		color: #fff;
-		/*font-family: 'Roboto';*/
 		font-weight: 700;
 		text-decoration: none;
 		-moz-transition: background-color .25s ease-in-out, color .25s ease-in-out;

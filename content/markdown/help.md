@@ -1,4 +1,10 @@
-#Ajuda
+# Ajuda
+
+## Posso melhorar a documentação?
+Sim, pode seguir este passos:
+
+1. Com o documento aberto, selecione a opção "Editar". Será aberta uma nova página para editar o documento, ;
+2.
 
 ### Github, o que é?
 É o local onde os documentos de suporte à utilização do [SICC][ac27677d] são armazenados e disponibilizados [com segurança][b175e238], permitindo, entre outras, que as entidades proponham melhorias à documentação, através desta plataforma [GitHub][094a4abd], sem recurso a outras ferramentas e sem necessitar de conhecimentos de programação.
