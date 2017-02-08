@@ -33,8 +33,16 @@ Markdown é uma sintaxe para formatação de texto, sobretudo para utilização 
 
 ### Sintaxe Markdown
 
+- Negrito: \** negrito \** -> ** negrito**
+- Itálico \_ texto negrito \_ -> _itálico_
+- Listas
+  - Com ordenação
+  - Sem ordenação;
+- Títulos
+- Tabelas
+- Imagens
+- Ligações
+
 ### Como crio/edito ficheiros Markdown?
 
-É possível criar/editar texto (extensão .md ou .markdown) num editor de texto simples (ex. Bloco de notas do Windows) mas é recomendável a utilização do editor on-line do GitHub ou do editor [Atom][c854dffd] para utilização intensiva.
-
-  [c854dffd]: https://atom.io/contact "Atom"
+É possível criar/editar texto (extensão .md ou .markdown) num editor de texto simples (ex. Bloco de notas do Windows) mas é recomendável a utilização do editor on-line do GitHub.
