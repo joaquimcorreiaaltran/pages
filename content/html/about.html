@@ -18,6 +18,7 @@
 		<script src="../../js/main.js"></script>
 		<script src="../../js/highslide-with-gallery.js"></script>
 		<script src="../../js/sicc-project.js"></script>
+		<script src="../../js/libs/showdown.js"></script>
 
 		<script>
 			//highslide-with-gallery configs
@@ -32,6 +33,12 @@
 			hs.dimmingGeckoFix = true;
 			hs.blockRightClick = true;
 		</script>
+		<style>
+			h1 {margin-top: 2em;}
+			h2 {margin-top: 2em;}
+			h3 {margin-top: 2em;}
+			h4 {margin-top: 2em;}
+		</style>
 </head>
 <body>
   <header>
@@ -40,7 +47,7 @@
 	 </div> <!-- SideBar-->
   </header>
 	<div id="content">
-		<article id="documento" class="modulo">
+		<article id="about_md" class="modulo">
 			<h1>SOBRE</h1>
 			<a id="SICC_logo" href="http://spms.min-saude.pt/product/sicc" target="_blank"><img id="SICC_logo_img" src="../img/logos/SICC_logo_300x148.png" alt="SICC_logo" style="border:0;"></a>
 	    <a id="SPMS_logo" href="http://spms.min-saude.pt" target="_blank"><img src="../img/logos/SPMS2016B_300x148.png" alt="SPMS_logo" style="border:0;"></a>
@@ -53,7 +60,7 @@
 	</footer>
 	<script>
 		var docName = "about";
-		convertMdToHtml(docName,"documento");
+		convertMdToHtml(docName,"about_md");
 		$("footer").load("footer.html");
 		$("#docButtons").load("docButtons.html");
 		function setBtnLink() {
