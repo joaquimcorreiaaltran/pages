@@ -1,12 +1,15 @@
-# Ajuda
+# AJUDA
 
-## Posso melhorar a documentação?
+## Como posso melhorar a documentação?
 Sim, pode seguir este passos:
 
-1. Com o documento aberto, selecione a opção "Editar". Será aberta uma nova página para editar o documento, ;
-2.
+1. Com o documento aberto, selecione o botão ![botão editar doc](assets\help-85f5ce98.png) (no canto inf. dto. da janela). Será aberta uma página para editar o documento na plataforma GitHub [(o que é?)](#Github);
+2. Na nova página aberta, efetue as alterações e verifique o aspeto final do documento na opção ![](assets\help-636fbc92.png)
 
-### Github, o que é?
+
+
+
+### Github, o que é? <a name="GitHub"></a>
 É o local onde os documentos de suporte à utilização do [SICC][ac27677d] são armazenados e disponibilizados [com segurança][b175e238], permitindo, entre outras, que as entidades proponham melhorias à documentação, através desta plataforma [GitHub][094a4abd], sem recurso a outras ferramentas e sem necessitar de conhecimentos de programação.
 
 ### Quais os objetivos?
