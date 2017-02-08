@@ -1,16 +1,28 @@
 # AJUDA
 
-## Como posso melhorar a documentação?
-Sim, pode seguir este passos:
+## Como posso propôr melhorias à documentação?
 
-1. Com o documento aberto, selecione o botão ![botão editar doc](assets\help-85f5ce98.png) (no canto inf. dto. da janela). Será aberta uma página para editar o documento na plataforma GitHub [(o que é?)](#Github);
-2. Na nova página aberta, efetue as alterações e verifique o aspeto final do documento na opção ![](assets\help-636fbc92.png)
+1. **Selecionar o documento**: aceda ao website spmssicc.github.io/pages, navegue até ao documento pretendido e selecione o botão ![botão editar doc](assets\help-85f5ce98.png), que irá abrir uma página com o site GitHub [(o que é?)](#github);
+2. **Autenticar e copiar o repositório**: no GitHub, valide o  _username_ e a _password_ e selecione a opção ![fork the repository](assets\help-44d17d18.png) [(como crio uma conta?)](#criar_conta);
+3. **Efetuar as alterações**: Com o separador ![edit file](assets\help-54c0c097.png) aberto, efetue as alterações pretendidas;
+4. **Submeter as alterações**: no fundo da página, selecione ![Propose file change](assets\help-120bc218.png), que irá abrir uma nova página onde selecionará ![create pull request](assets\help-1ff0f086.png) e de seguida ![create pull request 2](assets\help-5a9d7515.png).
 
 
 
+<a name="github"></a>
 
-### Github, o que é? <a name="GitHub"></a>
-É o local onde os documentos de suporte à utilização do [SICC][ac27677d] são armazenados e disponibilizados [com segurança][b175e238], permitindo, entre outras, que as entidades proponham melhorias à documentação, através desta plataforma [GitHub][094a4abd], sem recurso a outras ferramentas e sem necessitar de conhecimentos de programação.
+### O que é o Github?
+É o local onde os documentos de suporte à utilização do [SICC][ac27677d] são armazenados e disponibilizados [com segurança][b175e238] publicamente, permitindo, entre outras, que as entidades proponham melhorias à documentação, através desta plataforma [GitHub][094a4abd], sem recurso a outras ferramentas e sem necessitar de conhecimentos de programação.
+
+<a name="criar_conta"></a>
+
+### Como crio uma conta GitHub?
+
+1. **Registar conta**: aceda ao _website_ github.com, digite o _username_, _email_ e a _password_ pretendidos e selecione a opção ![sign up for github](assets\help-564be3da.png).
+2. **Selecione o tipo de conta**: escolha a opção gratuita _Unlimited public repositories for free._ e selecione ![continue](assets\help-2863d743.png).
+3. **Submeta as definições finais**: termine o processo através da opção ![skip this step](assets\help-2aa27076.png) ou selecione as opções de acordo com o pretendido e selecione a opção ![submit](assets\help-b88712bc.png).
+
+
 
 ### Quais os objetivos?
 - Centralizar na mesma ferramenta todo o ciclo de vida da documentação, desde a elaboração dos requisitos até a disponibilização do manual de utilizador;
