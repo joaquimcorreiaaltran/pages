@@ -2,10 +2,10 @@
 
 ## Como posso propôr melhorias à documentação?
 
-1. **Selecionar o documento**: aceda ao website spmssicc.github.io/pages, navegue até ao documento pretendido e selecione o botão ![botão editar doc](assets\help-85f5ce98.png), que irá abrir uma página com o site GitHub [(o que é?)](#github);
-2. **Autenticar e copiar o repositório**: no GitHub, valide o  _username_ e a _password_ e selecione a opção ![fork the repository](assets\help-44d17d18.png) [(como crio uma conta?)](#criar_conta);
-3. **Efetuar as alterações**: Com o separador ![edit file](assets\help-54c0c097.png) aberto, efetue as alterações pretendidas;
-4. **Submeter as alterações**: no fundo da página, selecione ![Propose file change](assets\help-120bc218.png), que irá abrir uma nova página onde selecionará ![create pull request](assets\help-1ff0f086.png) e de seguida ![create pull request 2](assets\help-5a9d7515.png).
+1. **Selecionar o documento**: aceda ao website spmssicc.github.io/pages, navegue até ao documento pretendido e selecione o botão ![botão editar doc](..\markdown\assets\help-85f5ce98.png), que irá abrir uma página com o site GitHub [(o que é?)](#github);
+2. **Autenticar e copiar o repositório**: no GitHub, valide o  _username_ e a _password_ e selecione a opção ![fork the repository](..\markdown\assets\help-44d17d18.png) [(como crio uma conta?)](#criar_conta);
+3. **Efetuar as alterações**: Com o separador ![edit file](..\markdown\assets\help-54c0c097.png) aberto, efetue as alterações pretendidas;
+4. **Submeter as alterações**: no fundo da página, selecione ![Propose file change](..\markdown\assets\help-120bc218.png), que irá abrir uma nova página onde selecionará ![create pull request](..\markdown\assets\help-1ff0f086.png) e de seguida ![create pull request 2](..\markdown\assets\help-5a9d7515.png).
 
 
 
@@ -18,9 +18,9 @@
 
 ### Como crio uma conta GitHub?
 
-1. **Registar conta**: aceda ao _website_ github.com, digite o _username_, _email_ e a _password_ pretendidos e selecione a opção ![sign up for github](assets\help-564be3da.png).
-2. **Selecione o tipo de conta**: escolha a opção gratuita _Unlimited public repositories for free._ e selecione ![continue](assets\help-2863d743.png).
-3. **Submeta as definições finais**: termine o processo através da opção ![skip this step](assets\help-2aa27076.png) ou selecione as opções de acordo com o pretendido e selecione a opção ![submit](assets\help-b88712bc.png).
+1. **Registar conta**: aceda ao _website_ github.com, digite o _username_, _email_ e a _password_ pretendidos e selecione a opção ![sign up for github](..\markdown\assets\help-564be3da.png).
+2. **Selecione o tipo de conta**: escolha a opção gratuita _Unlimited public repositories for free._ e selecione ![continue](..\markdown\assets\help-2863d743.png).
+3. **Submeta as definições finais**: termine o processo através da opção ![skip this step](..\markdown\assets\help-2aa27076.png) ou selecione as opções de acordo com o pretendido e selecione a opção ![submit](..\markdown\assets\help-b88712bc.png).
 
 
 
