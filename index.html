@@ -33,6 +33,19 @@
 
 		<div id="content" style="min-height: 90vh;">
 			<h1 style="text-align: center;padding: 10px 10px 50px 10px">Bem vindo à página de documentação do SICC</h1>
+			<div id="js_warning">
+				<h1>Ops! :(</h1>
+				<p>
+					<br><br>Para visualizar corretamente esta página, é necessário permitir a execução de scripts no seu browser.</p>
+					<br>Por favor contacte o apoio técnico.
+					<br>Obrigado,
+					<br>Equipa SICC.
+				</p>
+			</div>
+			<script>
+				//remove script block warning
+				$("#js_warning").remove();
+			</script>
 			<footer>
 				<script>
 					$("footer").load("content/html/footer.html");
