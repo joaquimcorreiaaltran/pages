@@ -10,15 +10,15 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 
 		<!-- libs -->
-		<script src="../../js/libs/accordion-menu.js"></script>
 		<script src="../../js/jquery-3.1.1.js"></script>
-		<script src="../../js/jquery.zoom.js"></script>
 		<script src="../../js/skel.min.js"></script>
 		<script src="../../js/util.js"></script>
 		<script src="../../js/main.js"></script>
-		<script src="../../js/highslide-with-gallery.js"></script>
-		<script src="../../js/sicc-project.js"></script>
 		<script src="../../js/libs/showdown.js"></script>
+		<script src="../../js/sicc-project.js"></script>
+		<script src="../../js/libs/accordion-menu.js" async></script>
+		<script src="../../js/highslide-with-gallery.js" async></script>
+		<script src="../../js/jquery.zoom.js" async></script>
 
 		<script>
 			//highslide-with-gallery configs
@@ -33,6 +33,7 @@
 			hs.dimmingGeckoFix = true;
 			hs.blockRightClick = true;
 		</script>
+
 		<style>
 			h1 {margin-top: 2em;}
 			h2 {margin-top: 2em;}
@@ -53,19 +54,12 @@
 	    <a id="SPMS_logo" href="http://spms.min-saude.pt" target="_blank"><img src="../img/logos/SPMS2016B_300x148.png" alt="SPMS_logo" style="border:0;"></a>
 	    <a id="Republica_Portuguesa_logo" href="http://www.portugal.gov.pt/pt/ministerios/ms" target="_blank"><img src="../img/logos/republica_portuguesa_300x148.png" alt="Republica_Portuguesa_logo" style="border:0;" ></a>
 		</article>
-		<div id="docButtons">
-			<!-- <link rel="import" href="footer.html"> -->
-		</div>
-		<!-- <footer><script>$("footer").load("footer.html");</script></footer> -->
-		<footer>
-			 <link rel="import" href="footer.html">
-		</footer>
+		<div id="docButtons"></div>
 	</div> <!-- Content -->
-
+	<footer></footer>
 	<script>
 		var docName = "about";
 		convertMdToHtml(docName,"about_md");
-		$("#docButtons").load("docButtons.html");
 		function setBtnLink() {
 			var btn = document.getElementById("btnEditarDoc");
 				if(btn) {
@@ -75,6 +69,9 @@
 			}
 
 		var refreshIntervalId = setInterval(setBtnLink, 1000);
+
+		$("#docButtons").load("docButtons.html");
+		$("footer").load("footer.html");
 	</script>
 </body>
 </html>

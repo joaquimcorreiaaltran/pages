@@ -17,8 +17,10 @@ function convertMdToHtml(docName,elementId){
                                           var converter = new showdown.Converter() //instancia
                                           ,text = request.responseText //guarda o documento em string
                                           ,htmlDoc = converter.makeHtml(text); //converte a string em HTML
-                                          document.getElementById(elementId).innerHTML = htmlDoc;//coloca o html no elemento #documento
-                                          zommClickImagem();
+                                          $(function(){
+                                              document.getElementById(elementId).innerHTML = htmlDoc//carrega html no elementId
+                                              zommClickImagem();
+                                          });
                                        }/*if*/
                                     }/*function*/
    request.send();

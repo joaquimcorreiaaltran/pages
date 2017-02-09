@@ -111,7 +111,7 @@ Acedendo ao mesmo temos as seguintes opções disponíveis:
 | Sair| Sair da aplicação.| Todos|
 | Fazer *Logoff*| Terminar sessão de utilização.| Todos|
 
-<a name="op_instituicao"></a>
+<a name="op_instituicao">&nbsp;</a>
 
 ## Opção Instituição
 
@@ -120,7 +120,7 @@ Acedendo ao mesmo temos as seguintes opções disponíveis:
 Este submenu permite o acesso ao tratamento de informação relacionada com a instituição,
 exercícios e configurações.
 
-<a name="op_instituicao_recolha"></a>
+<a name="op_instituicao_recolha">&nbsp;</a>
 
 ### Recolha
 
@@ -164,7 +164,7 @@ instituição, nomeadamente:
 | X Cancelar| Gravar as alterações efetuadas e voltar ao estado anterior. <br />:warning: **Funcionalidade indisponível**|
 | Sair| Sair do ecrã.|
 
-<a name="op_instituicao_exercicio"></a>
+<a name="op_instituicao_exercicio">&nbsp;</a>
 
 ### Exercícios
 
