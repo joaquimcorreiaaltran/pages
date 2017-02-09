@@ -42,7 +42,7 @@
 		<noscrip id="js_warning">
 			<h1>Ops! :(</h1>
 			<p>
-				<br><br>Para visualizar corretamente esta página, é necessário permitir a execução de scripts no seu browser.</p>
+				<br>Para visualizar corretamente esta página, é necessário permitir a execução de scripts no seu browser.</p>
 				<br>Por favor contacte o apoio técnico.
 				<br>Obrigado,
 				<br>Equipa SICC.
@@ -50,7 +50,8 @@
 		<noscrip>
 		<script>
 			//remove script block warning
-			$("#js_warning").remove();
+			var x = document.getElementById("js_warning");
+			x.remove();
 		</script>
 		<section>
 			<h1>REGISTO DE ALTERAÇÕES</h1>
