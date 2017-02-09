@@ -8,46 +8,8 @@
 		<!--<link rel="stylesheet" href="../../css/main.css">-->
 		<link rel="stylesheet" href="../../css/style.css">
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
-
-		<!-- libs -->
-		<script src="../../js/jquery-3.1.1.js"></script>
-		<script src="../../js/skel.min.js"></script>
-		<script src="../../js/util.js"></script>
-		<script src="../../js/main.js"></script>
-		<script src="../../js/libs/showdown.js"></script>
-		<script src="../../js/sicc-project.js"></script>
-		<script src="../../js/libs/accordion-menu.js"></script>
-		<script src="../../js/highslide-with-gallery.js"></script>
-		<script src="../../js/jquery.zoom.js" async></script>
-
-		<script>
-			//get the current html document name
-			var path = window.location.pathname;
-			var page = path.split("/").pop();
-			//remove .html or .htm extension(s)
-			if(page.search(/.htm/i) != -1){
-				docName = page.replace(/.html|htm/gi,"");
-			}
-			// convert .md file to html and place it into current page
-			convertMdToHtml(docName,"documento");
-
-			//highslide-with-gallery configs
-			hs.graphicsDir = '../../content/img/highslide/graphics/';
-			hs.fadeInOut = true;
-			hs.align = 'center';
-			hs.transitions = ['expand', 'crossfade'];
-			hs.outlineType = 'rounded-white';//'rounded-white';'rounded-black'
-			hs.fadeInOut = true;
-			hs.numberPosition = 'caption';
-			hs.dimmingOpacity = 0.5;
-			hs.dimmingGeckoFix = true;
-			hs.blockRightClick = true;
-		</script>
 		<style>
-			h1 {margin-top: 2em;}
-			h2 {margin-top: 2em;}
-			h3 {margin-top: 2em;}
-			h4 {margin-top: 2em;}
+			h1, h2, h3, h4 {margin-top: 2em;}
 		</style>
 </head>
 <body>
@@ -57,6 +19,13 @@
 			</div>
 	</header>
 	<div id="content">
+		<div>
+			<h1>Ops! :(</h1>
+			<h3>Para visualizar corretamente esta página, é necessário ativar a execução de scripts no seu browser.</h3>
+			<p>Por favor contacte o seu suporte técnico.</p>
+			<p>Obrigado,</p>
+			<p>Equipa SICC.</p>
+		</div>
 			<article id="documento" class="modulo">
 				<!--loaded with js-->
 			</article>
@@ -67,7 +36,40 @@
 				<!--loaded with js-->
 			</footer>
 	</div>
+	<!-- libs -->
+	<script src="../../js/jquery-3.1.1.js"></script>
+	<script src="../../js/skel.min.js"></script>
+	<script src="../../js/util.js"></script>
+	<script src="../../js/main.js"></script>
+	<script src="../../js/libs/showdown.js"></script>
+	<script src="../../js/sicc-project.js"></script>
+	<script src="../../js/libs/accordion-menu.js"></script>
+	<script src="../../js/highslide-with-gallery.js"></script>
+	<script src="../../js/jquery.zoom.js" async></script>
+
 	<script>
+		//get the current html document name
+		var path = window.location.pathname;
+		var page = path.split("/").pop();
+		//remove .html or .htm extension(s)
+		if(page.search(/.htm/i) != -1){
+			docName = page.replace(/.html|htm/gi,"");
+		}
+		// convert .md file to html and place it into current page
+		convertMdToHtml(docName,"documento");
+
+		//highslide-with-gallery configs
+		hs.graphicsDir = '../../content/img/highslide/graphics/';
+		hs.fadeInOut = true;
+		hs.align = 'center';
+		hs.transitions = ['expand', 'crossfade'];
+		hs.outlineType = 'rounded-white';//'rounded-white';'rounded-black'
+		hs.fadeInOut = true;
+		hs.numberPosition = 'caption';
+		hs.dimmingOpacity = 0.5;
+		hs.dimmingGeckoFix = true;
+		hs.blockRightClick = true;
+
 	//update btn link to edit doc in GitHub
 		$(function(){
 			$("footer").load("footer.html");
