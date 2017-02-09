@@ -20,13 +20,22 @@
 	</header>
 	<div id="content">
 			<article id="documento" class="modulo">
-				<div>
+				<noscrip id="js_warning">
 					<h1>Ops! :(</h1>
-					<h3>Para visualizar corretamente esta página, é necessário ativar a execução de scripts no seu browser.</h3>
-					<p>Por favor contacte o seu suporte técnico.</p>
-					<p>Obrigado,</p>
-					<p>Equipa SICC.</p>
-				</div>
+					<p>
+						<br>Para visualizar corretamente esta página, é necessário permitir a execução de scripts no seu browser.</p>
+						<br>Por favor contacte o apoio técnico.
+						<br>Obrigado,
+						<br>Equipa SICC.
+					</p>
+				</noscrip>
+				<script>
+					//remove script block warning
+					var el = document.getElementById("js_warning");
+					if(el){
+						el.remove();
+					}
+				</script>
 				<!--loaded with js-->
 			</article>
 			<div id="docButtons">
