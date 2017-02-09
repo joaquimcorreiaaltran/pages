@@ -24,6 +24,10 @@
 					<p>Obrigado,</p>
 					<p>Equipa SICC.</p>
 				</div>
+				<script>
+					//remove script block warning
+					$("#js_warning").remove();
+				</script>
 				<!--loaded with js-->
 			</article>
 			<div id="docButtons">
@@ -45,9 +49,6 @@
 	<script src="../../js/jquery.zoom.js" async></script>
 
 	<script>
-		//remove script block warning
-		$("#js_warning").remove();
-
 		//get the current html document name
 		var path = window.location.pathname;
 		var page = path.split("/").pop();
