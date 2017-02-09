@@ -17,10 +17,10 @@
 	</header>
 	<div id="content">
 			<article id="documento" class="modulo">
-				<div>
+				<div id="js_warning">
 					<h1>Ops! :(</h1>
-					<h3>Para visualizar corretamente esta página, é necessário ativar a execução de scripts no seu browser.</h3>
-					<p>Por favor contacte o seu suporte.</p>
+					<h3>\n\nPara visualizar corretamente esta página, é necessário permitir a execução de scripts no seu browser.</h3>
+					<p>\nPor favor contacte o apoio técnico.</p>
 					<p>Obrigado,</p>
 					<p>Equipa SICC.</p>
 				</div>
@@ -45,6 +45,9 @@
 	<script src="../../js/jquery.zoom.js" async></script>
 
 	<script>
+		//remove script block warning
+		$("#js_warning").remove();
+
 		//get the current html document name
 		var path = window.location.pathname;
 		var page = path.split("/").pop();
