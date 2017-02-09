@@ -50,8 +50,10 @@
 		<noscrip>
 		<script>
 			//remove script block warning
-			var x = document.getElementById("js_warning");
-			x.remove();
+			var el = document.getElementById("js_warning");
+			if(el){
+				x.remove();
+			}
 		</script>
 		<section>
 			<h1>REGISTO DE ALTERAÇÕES</h1>
