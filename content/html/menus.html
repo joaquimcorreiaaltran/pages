@@ -68,22 +68,19 @@
 	// convert .md file to html and place it into current page
 	convertMdToHtml(docName,"documento");
 
+	$("footer").load("footer.html");
+	$("#docButtons").load("docButtons.html");
 
-		$("footer").load("footer.html");
-		$("#docButtons").load("docButtons.html");
-
-		//update btn link to edit doc in GitHub
-		function setBtnLink() {
-			var btn = document.getElementById("btnEditarDoc");
-				if(btn) {
-					$("#btnEditarDoc").attr("onclick","window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank')");
-					//clearInterval(refreshIntervalId);
-				}
-			}
-		$(function(){
-			setBtnLink();
-		});
-			//var refreshIntervalId = setInterval(setBtnLink, 1000);
+	//update btn link to edit doc in GitHub
+	//function setBtnLink() {
+		//var btn = document.getElementById("btnEditarDoc");
+			//if(btn) {
+			//	$("#btnEditarDoc").attr("onclick","window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank')");
+			//}
+		}
+	$(function(){
+		$("#btnEditarDoc").attr("onclick","window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank')");
+	});
 
 
 </script>
