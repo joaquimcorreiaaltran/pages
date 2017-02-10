@@ -547,18 +547,22 @@ p.caption{
   display: block;
 }
 
-#docButtons button:hover{
+#docButtons button:hover {
   background-color: #40A293;
   width: 40px;
 }
 
-#docButtons i{
+#docButtons i {
   color: #666666;
   text-align: center;
 }
 
-#docButtons i:hover{
+#docButtons i:hover {
   color: white;
+}
+
+#docButtons .showWithScroll {
+    opacity: 0;
 }
 
 /* ==|== media queries ======================================================
