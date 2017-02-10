@@ -356,31 +356,24 @@ h5{
     Imagens
    ========================================================================== */
 
-#documento img{
+#documento p img {
   position: inherit;
   text-align: center;
-  display:block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1em;
   margin-bottom: 1em;
-  margin: auto;
+  cursor: url(../../pages/content/img/highslide/graphics/zoomin.cur), pointer;
 }
 
-#documento img:not([alt='logo']){
-    cursor: url(../../pages/content/img/highslide/graphics/zoomin.cur), pointer;
+#documento img {
+   /*position: inherit;*/
+   display:inline;
+   /*margin-top: 1em;
+   margin-bottom: 1em;*/
 }
 
-/*#documento ul+p  img[alt=logo]{
-height: auto;
-display: inline;
-width: auto;
-}*/
 
-/**Quando as imagens são pequenas demais, colocar o alt de cada imagem**/
-/**#paginas p  img[alt=img_1] {
-width: auto;
-}*//
 
 .imagem {
  outline: none;
