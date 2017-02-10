@@ -8,10 +8,10 @@ Feb-2017
 // functions
 
 //load and convert Markdown to Html and show it
-function convertMdToHtml(docName,elementId) {
+function convertMdToHtml(docName, elementId) {
    var request = new XMLHttpRequest();
    //Asynchronous request (true=asynchronous)
-   request.open('GET', '../markdown/'+docName+'.md',true);
+   request.open('GET', '../markdown/'+ docName +'.md',true);
    request.onreadystatechange = function() {
                                        if(request.readyState == XMLHttpRequest.DONE && request.status === 200) {
                                           var converter = new showdown.Converter() //instancia
@@ -30,25 +30,25 @@ function convertMdToHtml(docName,elementId) {
 //Preparar imagem para zoom ou para não zoom (mostra ou não mostra a lupa)
 function zommClickImagem() {
       var show = true;
-    $('#documento p img').each(function(){
+    $('#documento p img').each(function() {
       var alt = $(this).attr("alt")
       //if(alt != "figAlteracaoSenha" && alt != "figLogin" && alt !="figLoginRecuperacao")
       $(this).wrap("<a class='imagem' href='"+$(this).attr( "src" ) + "' onclick='return hs.expand(this)'></a>");
 });
 }
 
-function setAttribute(element_id,attr,attr_value){
-   document.getElementById(element_id).setAttribute(attr, attr_value);
-}
+//transform HTML to PDF and Download
+var doc = new jsPDF();
+var specialElementHandlers = {
+    '#editor': function (element, renderer) {
+        return true;
+    }
+};
 
-function mostraElemento(elementId) {
-    document.getElementById(elementId).style.display = 'block';
-}
-function ocultaElemento(elementId) {
-   document.getElementById(elementId).style.display = 'none';
-}
-
-//Remove text from html
-$("body").children().each(function () {
-  $(this).html( $(this).html().replace("Accordion Menu trial version","") );
+$('#btnPDF').click(function () {
+    doc.fromHTML($('#content').html(), 15, 15, {
+        'width': 170,
+            'elementHandlers': specialElementHandlers
+    });
+    doc.save(docName + '.pdf');
 });
