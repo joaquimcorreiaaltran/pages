@@ -400,16 +400,17 @@ p.caption{
     height:100vh;
     max-height: 100vh; /*is equal to the height of the browser window, regardless of where the element is situated in the DOM tree*/
     padding-top:0px;
-    text-decoration:none;
+    text-decoration: none;
     background: url(../content/img/logos/imagem_background.png) no-repeat fixed;
     z-index: 101;
+    text-align: start;
 }
 
 /* root UL */
 #accordion ul {
     padding:0;
     margin-right: 0.1em;
-    list-style:none;/*none;decimal*/
+    list-style: none;/*none;decimal*/
 }
 
 /*---------- Indents ------*/
