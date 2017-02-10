@@ -396,18 +396,19 @@ p.caption{
     visibility:hidden;
     /*background: white;/*original color: 2e4453; SNS color: 40A293*/*/
     overflow-y:none;
+    overflow-x:auto;
     height:100vh;
     max-height: 100vh; /*is equal to the height of the browser window, regardless of where the element is situated in the DOM tree*/
     padding-top:0px;
     text-decoration:none;
-    background: url(../content/img/logos/imagem_background.png);
+    background: url(../content/img/logos/imagem_background.png) no-repeat fixed;
     z-index: 101;
 }
 
 /* root UL */
 #accordion ul {
     padding:0;
-    margin:0;
+    margin-right: 0.1em;
     list-style:none;/*none;decimal*/
 }
 
@@ -499,7 +500,7 @@ p.caption{
     font-weight: bold;
 }
 
-#accordion a.active, #accordion div.active, #accordion li.active{
+#accordion a.active s{
   color:#40A293;
   font-weight: bold;
 }
@@ -923,7 +924,7 @@ footer img {
     	#sidebar {
     		width: 21em;
     		padding: 0em 0em 0em 0em;
-    		overflow-y: auto;
+    		overflow: hidden;
         position: fixed;
         top: 0;
         left: 0;
@@ -1238,7 +1239,7 @@ footer img {
 				display: block;
 				height: 100vh;
 				min-height: 0;
-				overflow-y: auto;
+				overflow-y: hidden;
 				position: fixed;/*static|absolute|fixed|relative|initial|inherit;*/
 				z-index: 99;
 				-moz-transform: translateX(-21em);
