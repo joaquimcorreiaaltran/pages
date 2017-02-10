@@ -36,19 +36,3 @@ function zommClickImagem() {
       $(this).wrap("<a class='imagem' href='"+$(this).attr( "src" ) + "' onclick='return hs.expand(this)'></a>");
 });
 }
-
-//transform HTML to PDF and Download
-var doc = new jsPDF();
-var specialElementHandlers = {
-    '#editor': function (element, renderer) {
-        return true;
-    }
-};
-
-$('#btnPDF').click(function () {
-    doc.fromHTML($('#content').html(), 15, 15, {
-        'width': 170,
-            'elementHandlers': specialElementHandlers
-    });
-    doc.save(docName + '.pdf');
-});
