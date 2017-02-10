@@ -508,13 +508,14 @@ p.caption{
 #accordion a:hover, #accordion div:hover {
   color: #40A293;
   font-size: 1em;
+  font-weight: bold;
 }
 
-#accordion li.top:hover {
+/*#accordion li.top:hover {
   color: #40A293;
   font-size: 1em;
   font-weight: bold;
-}
+}*/
 
 #accordion a > i:hover {
   font-size: 1.5em;
