@@ -42,8 +42,6 @@
 				<!--loaded with js-->
 			</footer>
 	</div>
-	<!--div needed to PDF generation-->
-	<div id="editor" style="display:'none'"></div>
 	<!-- libs -->
 	<script src="../../js/jquery-3.1.1.js"></script>
 	<script src="../../js/skel.min.js"></script>
@@ -79,24 +77,36 @@
 		hs.dimmingGeckoFix = true;
 		hs.blockRightClick = true;
 
-	//update btn link to edit doc in GitHub
+
 		$(function(){
 			$("footer").load("footer.html");
 			$("#docButtons").load("docButtons.html");
+			//update btn link to edit doc in GitHub
 			setTimeout(function() {
 					$("#btnEditarDoc").attr("onclick","window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank')");
 
-
 					 //transform HTML to PDF and Download
-		 			var doc = new jsPDF();
+		 			var doc = new jsPDF('p', 'pt', 'letter');
 		 			var specialElementHandlers = {
-		 			    '#editor': function (element, renderer) {
+		 			    'noscript': function (element, renderer) {
 		 			        return true;
-		 			    }
+		 			    },
+						 'script': function (element, renderer) {
+	 		 			        return true;
+	 		 			    },
+							 '#docButtons': function (element, renderer) {
+		 		 			        return true;
+		 		 			    },
+								 'img': function (element, renderer) {
+			 		 			        return true;
+			 		 			    },
+									 'a': function (element, renderer) {
+				 		 			        return true;
+				 		 			    }
 		 			};
 
 		 			$('#btnPDF').click(function () {
-		 			    doc.fromHTML($('#content').html(), 15, 15, {
+		 			    doc.fromHTML($('#content')[0], 15, 15, {
 		 			        'width': 170,
 		 			            'elementHandlers': specialElementHandlers
 		 			    });
