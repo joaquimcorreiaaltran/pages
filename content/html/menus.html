@@ -77,41 +77,12 @@
 		hs.dimmingGeckoFix = true;
 		hs.blockRightClick = true;
 
-
 		$(function(){
 			$("footer").load("footer.html");
 			$("#docButtons").load("docButtons.html");
 			//update btn link to edit doc in GitHub
 			setTimeout(function() {
 					$("#btnEditarDoc").attr("onclick","window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank')");
-
-					 //transform HTML to PDF and Download
-		 			var doc = new jsPDF('p', 'pt', 'letter');
-		 			var specialElementHandlers = {
-		 			    'noscript': function (element, renderer) {
-		 			        return true;
-		 			    },
-						 'script': function (element, renderer) {
-	 		 			        return true;
-	 		 			    },
-							 '#docButtons': function (element, renderer) {
-		 		 			        return true;
-		 		 			    },
-								 'img': function (element, renderer) {
-			 		 			        return true;
-			 		 			    },
-									 'a': function (element, renderer) {
-				 		 			        return true;
-				 		 			    }
-		 			};
-
-		 			$('#btnPDF').click(function () {
-		 			    doc.fromHTML($('#content')[0], 15, 15, {
-		 			        'width': 170,
-		 			            'elementHandlers': specialElementHandlers
-		 			    });
-		 			    doc.save('SICC-'+ docName + '.pdf');
-		 			});
 			}, 2000);//timeout
 		});
 	</script>
