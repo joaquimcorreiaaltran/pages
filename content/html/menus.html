@@ -85,23 +85,24 @@
 			$("#docButtons").load("docButtons.html");
 			setTimeout(function() {
 					$("#btnEditarDoc").attr("onclick","window.open('https://github.com/SPMSSICC/pages/edit/master/content/markdown/"+docName+".md','_blank')");
-			 }, 2000);
 
-			 //transform HTML to PDF and Download
- 			var doc = new jsPDF();
- 			var specialElementHandlers = {
- 			    '#editor': function (element, renderer) {
- 			        return true;
- 			    }
- 			};
 
- 			$('#btnPDF').click(function () {
- 			    doc.fromHTML($('#content').html(), 15, 15, {
- 			        'width': 170,
- 			            'elementHandlers': specialElementHandlers
- 			    });
- 			    doc.save(docName + '.pdf');
- 			});
+					 //transform HTML to PDF and Download
+		 			var doc = new jsPDF();
+		 			var specialElementHandlers = {
+		 			    '#editor': function (element, renderer) {
+		 			        return true;
+		 			    }
+		 			};
+
+		 			$('#btnPDF').click(function () {
+		 			    doc.fromHTML($('#content').html(), 15, 15, {
+		 			        'width': 170,
+		 			            'elementHandlers': specialElementHandlers
+		 			    });
+		 			    doc.save('SICC-'+ docName + '.pdf');
+		 			});
+			}, 2000);//timeout
 		});
 	</script>
 </body>

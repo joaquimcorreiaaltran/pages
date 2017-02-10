@@ -1,5 +1,5 @@
 /*
-Miscellaneous functions to use in SICC project (https://spmssicc.github.io/pages)
+Functions to use in SICC project (https://spmssicc.github.io/pages)
 Author: SPMS, EPE
 Feb-2017
 */
