@@ -363,7 +363,7 @@ h5{
   margin-right: auto;
   margin-top: 1em;
   margin-bottom: 1em;
-  cursor: url(../../pages/content/img/highslide/graphics/zoomin.cur), pointer;
+  cursor: url(../img/highslide/graphics/zoomin.cur), pointer;
 }
 
 #documento img {
@@ -401,7 +401,7 @@ p.caption{
     max-height: 100vh; /*is equal to the height of the browser window, regardless of where the element is situated in the DOM tree*/
     padding-top:0px;
     text-decoration: none;
-    background: url(../content/img/logos/imagem_background.png) no-repeat fixed;
+    background: url(../img/logos/imagem_background.png) no-repeat fixed;
     z-index: 101;
     text-align: start;
 }
@@ -525,16 +525,16 @@ p.caption{
 }
 
 
-/* #docButtons */
+/* #_doc_buttons */
 
-#docButtons {
+#_doc_buttons {
   display: inline-block;
   position: fixed;
   bottom: 0;
   right: 0;
 }
 
-#docButtons button{
+#_doc_buttons button{
   background-color: white; /* blue */
   text-align: center;
   float: right;
@@ -549,21 +549,21 @@ p.caption{
   display: block;
 }
 
-#docButtons button:hover {
+#_doc_buttons button:hover {
   background-color: #40A293;
   width: 40px;
 }
 
-#docButtons i {
+#_doc_buttons i {
   color: #666666;
   text-align: center;
 }
 
-#docButtons i:hover {
+#_doc_buttons i:hover {
   color: white;
 }
 
-#docButtons .showWithScroll {
+#_doc_buttons .showWithScroll {
     opacity: 0;
 }
 

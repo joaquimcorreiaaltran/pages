@@ -31,11 +31,11 @@ O manual de Procedimentos do SICC espelha um conjunto de normas, procedimentos, 
 
 A nova estrutura do Manual de Procedimentos está organizada da seguinte forma:
 
-![Macrotarefas/1.png](https://spmssicc.github.io/pages/content/img/markdown_docs/macro_tarefas/1.png)
+![Macrotarefas/1.png](https://spmssicc.github.io/pages/img/markdown_docs/macro_tarefas/1.png)
 
 Esquematizando, entende-se por processo ou requisito uma atividade ou um conjunto de atividades que utilizam recursos para converter elementos de entrada em elementos de saída.
 
-![Macrotarefas/2.png](https://spmssicc.github.io/pages/content/img/markdown_docs/macro_tarefas/2.png)
+![Macrotarefas/2.png](https://spmssicc.github.io/pages/img/markdown_docs/macro_tarefas/2.png)
 
 <a name="">processo_identificacao_necessidades</a>
 
@@ -51,7 +51,7 @@ Alguns dos fatores que tornam complexo o processo de identificação das necessi
 
 É assim trabalho da equipa SICC identificar as necessidades tentando de certa maneira uniformizar procedimentos comuns a todas as Entidades e fazer chegar a informação de igual maneira para todos os utilizadores e suas Chefias.
 
-![Macrotarefas/3.png](https://spmssicc.github.io/pages/content/img/markdown_docs/macro_tarefas/3.png)
+![Macrotarefas/3.png](https://spmssicc.github.io/pages/img/markdown_docs/macro_tarefas/3.png)
 
 <a name="">circuito_informacao</a>
 
@@ -59,11 +59,11 @@ Alguns dos fatores que tornam complexo o processo de identificação das necessi
 
 Os diferentes tipos de informação necessária e as diferentes formas com que ela chega tornam a sua divulgação e processo de armazenamento distinto. A utilização da ferramenta Markdown é um dos principais meios de criação da informação e o seu armazenamento. Esta ferramenta converte assim o texto em HTML válido através de código.
 
-![Macrotarefas/4.png](https://spmssicc.github.io/pages/content/img/markdown_docs/macro_tarefas/4.png)
+![Macrotarefas/4.png](https://spmssicc.github.io/pages/img/markdown_docs/macro_tarefas/4.png)
 
 O desempenho, prossupõe a existência de um repositório de conhecimento acumulado e sistematicamente atualizado, cujos conteúdos sejam de utilização eficaz e eficiente em qualquer momento e em qualquer circunstância. Desta maneira complementa-se a informação gerada através do editor de texto do Markdown com o repositório do GitHub, permitindo assim que todos os utilizadores após disponibilização e transferência da informação tenham acesso sem possibilidade de alteração do repositório.
 
-![Macrotarefas/5.png](https://spmssicc.github.io/pages/content/img/markdown_docs/macro_tarefas/5.png)
+![Macrotarefas/5.png](https://spmssicc.github.io/pages/img/markdown_docs/macro_tarefas/5.png)
 
 <a name="">revisao_distribuicao</a>
 
@@ -73,11 +73,11 @@ Todos os pedidos de revisões ou novas versões de Manuais de procedimentos / Re
 
 As propostas para elaboração de novos procedimentos, para revisão ou eliminação de procedimentos existentes, deverão ser remetidas pelos responsáveis do Projeto SICC, constituído pelo seguinte organigrama:
 
-![Macrotarefas/6.png](https://spmssicc.github.io/pages/content/img/markdown_docs/macro_tarefas/6.png)
+![Macrotarefas/6.png](https://spmssicc.github.io/pages/img/markdown_docs/macro_tarefas/6.png)
 
 Após parecer de qualquer dos elementos referenciados anteriormente para a implementação das alterações propostas, é da responsabilidade da Equipa SICC proceder à alteração no manual de Procedimentos e publicá-lo na página Web e atualizar as ajudas disponibilizadas aos utilizadores do sistema.
 
-![Macrotarefas/7.png](https://spmssicc.github.io/pages/content/img/markdown_docs/macro_tarefas/7.png)
+![Macrotarefas/7.png](https://spmssicc.github.io/pages/img/markdown_docs/macro_tarefas/7.png)
 
 <a name="">processo_requisito</a>
 
@@ -87,7 +87,7 @@ O que se entende por requisito?
 
 R: Um requisito não é mais que uma condição necessária para a obtenção de objetivo ou preenchimento de certo fim, através de especificações e discrições pormenorizadas que certo serviço deva apresentar. É ainda um processo que leva a uma implementação bem-sucedida, obedecendo às etapas abaixo demonstradas.
 
-![Macrotarefas/8.png](https://spmssicc.github.io/pages/content/img/markdown_docs/macro_tarefas/8.png)
+![Macrotarefas/8.png](https://spmssicc.github.io/pages/img/markdown_docs/macro_tarefas/8.png)
 
 ## 6.1	Perceção e domínio
 
@@ -191,7 +191,7 @@ Com os manuais, pretende-se oferecer uma opção como solução ao problema que 
 
 A palavra “inovação” nos Manuais de utilizador, é o que consta das Macro Tarefas definidas para este projeto, recorrendo para o efeito a duas ferramentas essenciais. Um editor de texto (MdCharm) e um repositório (GitHub) para disponibilizar esta mesma informação aos utilizadores e utilizando o conceito *Online*.
 
-![Macrotarefas/9.png](https://spmssicc.github.io/pages/content/img/markdown_docs/macro_tarefas/9.png)
+![Macrotarefas/9.png](https://spmssicc.github.io/pages/img/markdown_docs/macro_tarefas/9.png)
 
 As imagens podem ilustrar algumas ideias melhor do que os textos, principalmente ao descrever procedimentos complexos onde o utilizador precisa de informações visuais para se certificar de que está a realizar corretamente os passos. As imagens podem ser produzidas com softwares de desenho, softwares de edição de imagem (que também podem ser utilizados nos casos de captura de tela).
 
@@ -211,7 +211,7 @@ Vocabulário básico:
 
 O primeiro passo para aceder ao GitHub, versão Web é a criação de uma conta, a qual servirá de base para o nosso repositório. Igualmente será necessário configurar a chave SSH para que se consiga comunicar com o GitHub.
 
-![Macrotarefas/10.png](https://spmssicc.github.io/pages/content/img/markdown_docs/macro_tarefas/10.png)
+![Macrotarefas/10.png](https://spmssicc.github.io/pages/img/markdown_docs/macro_tarefas/10.png)
 
 O servidor Git restringe o acesso aos repositórios;
 
@@ -222,7 +222,7 @@ A sua autenticação é feita por:
 
 Os ecrãs do GitHub, aparecem da seguinte forma:
 
-![Macrotarefas/11.png](https://spmssicc.github.io/pages/content/img/markdown_docs/macro_tarefas/11.png)
+![Macrotarefas/11.png](https://spmssicc.github.io/pages/img/markdown_docs/macro_tarefas/11.png)
 
 No nosso repositório aparece por defeito o branch *master*, dessa forma quando falamos em *branch* corrente estamos a referir-nos ao *branch* que estamos a trabalhar no momento. Se nenhum for criado, então por norma trabalhamos sempre no *master*.
 
@@ -230,43 +230,43 @@ Neste capítulo, será abordada a criação de um novo repositório, bem como os
 
 A criação de um novo repositório pode ser criada em qualquer momento, devendo para o efeito pressionar no botão “novo”.
 
-![Macrotarefas/12.png](https://spmssicc.github.io/pages/content/img/markdown_docs/macro_tarefas/12.png)
+![Macrotarefas/12.png](https://spmssicc.github.io/pages/img/markdown_docs/macro_tarefas/12.png)
 
 Atribuir um nome ao novo repositório que se pretende criar.
 
-![Macrotarefas/13.png](https://spmssicc.github.io/pages/content/img/markdown_docs/macro_tarefas/13.png)
+![Macrotarefas/13.png](https://spmssicc.github.io/pages/img/markdown_docs/macro_tarefas/13.png)
 
 Posteriormente à criação do repositório com o nome atribuído pelo utilizador, explicamos agora o procedimento para introdução dos manuais/requisitos no repositório.
 
 A opção README.md é o nosso editor de texto no qual iremos colocar o texto respeitante aos manuais ou requisitos.
 
-![Macrotarefas/14.png](https://spmssicc.github.io/pages/content/img/markdown_docs/macro_tarefas/14.png)
+![Macrotarefas/14.png](https://spmssicc.github.io/pages/img/markdown_docs/macro_tarefas/14.png)
 
 Seguidamente, pode o utilizador adicionar imagens que também ficarão guardadas no repositório, podendo juntá-las aos requisitos/manuais. Para o efeito o botão de *upload* deve ser pressionado.
 
-![Macrotarefas/15.png](https://spmssicc.github.io/pages/content/img/markdown_docs/macro_tarefas/15.png)
+![Macrotarefas/15.png](https://spmssicc.github.io/pages/img/markdown_docs/macro_tarefas/15.png)
 
 Uma nova tela surge, na qual deve o utilizador escolher quais os ficheiros a integrar ao novo repositório.
-![Macrotarefas/16.png](https://spmssicc.github.io/pages/content/img/markdown_docs/macro_tarefas/16.png)
+![Macrotarefas/16.png](https://spmssicc.github.io/pages/img/markdown_docs/macro_tarefas/16.png)
 
-Após escolha das imagens a integrarem, para as mesmas produzirem efeito, o utilizador tem de fazer ![Macrotarefas/17.png](https://spmssicc.github.io/pages/content/img/markdown_docs/macro_tarefas/17.png)  . De realçar que, tratando-se de um repositório a gravação das imagens deve obedecer a uma semântica, isto é, atribuição de uma designação ao ficheiro de maneira a que quem tenha acesso ao repositório consiga procurar a imagem.
+Após escolha das imagens a integrarem, para as mesmas produzirem efeito, o utilizador tem de fazer ![Macrotarefas/17.png](https://spmssicc.github.io/pages/img/markdown_docs/macro_tarefas/17.png)  . De realçar que, tratando-se de um repositório a gravação das imagens deve obedecer a uma semântica, isto é, atribuição de uma designação ao ficheiro de maneira a que quem tenha acesso ao repositório consiga procurar a imagem.
 Ex:
 
-![Macrotarefas/18.png](https://spmssicc.github.io/pages/content/img/markdown_docs/macro_tarefas/18.png)
+![Macrotarefas/18.png](https://spmssicc.github.io/pages/img/markdown_docs/macro_tarefas/18.png)
 
 O ficheiro será guardado com: Parametrização_instituição_recolha.png
 
 Efetuado o *commit*, o endereço tem de ser copiado de maneira a integrarmos a imagem no manual/requisito.
 
-![Macrotarefas/19.png](https://spmssicc.github.io/pages/content/img/markdown_docs/macro_tarefas/19.png)
+![Macrotarefas/19.png](https://spmssicc.github.io/pages/img/markdown_docs/macro_tarefas/19.png)
 
 O README.md tem assim de ser editado, no sentido de integrar a imagem anterior através do endereço http. Para o efeito o utilizador deve selecionar a linha onde pretende que a imagem seja refletida.
 
-![Macrotarefas/20.png](https://spmssicc.github.io/pages/content/img/markdown_docs/macro_tarefas/20.png)
+![Macrotarefas/20.png](https://spmssicc.github.io/pages/img/markdown_docs/macro_tarefas/20.png)
 
 O resultado final deve ser o evidenciado abaixo:
 
-![Macrotarefas/21.png](https://spmssicc.github.io/pages/content/img/markdown_docs/macro_tarefas/21.png)
+![Macrotarefas/21.png](https://spmssicc.github.io/pages/img/markdown_docs/macro_tarefas/21.png)
 
 Este pequeno capítulo visa somente esclarecer os conceitos básicos do GitHub, sendo que existem inúmeros conceitos que podem ser aprofundados
 
