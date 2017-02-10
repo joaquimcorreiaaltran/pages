@@ -611,7 +611,7 @@ p.caption{
 			-moz-transition: none;
 			-webkit-transition: none;
 			-ms-transition: none;
-			transition: none;
+			transition:none;
 			-moz-animation: none;
 			-webkit-animation: none;
 			-ms-animation: none;
@@ -966,7 +966,6 @@ footer img {
 	#content {
 		position: relative;
 		background-color: white;
-    margin-top: 5vh;
 	}
 		#content > .inner {
 			position: relative;
@@ -1064,10 +1063,8 @@ footer img {
 				opacity: 1.0;
 			}
 		/* Content */
-
 			#content {
 				box-shadow: 0 0 0.25em 0em rgba(0, 0, 0, 0.25);
-        margin-top: 5vh;
 			}
 
 				#content > .inner {
@@ -1101,7 +1098,8 @@ footer img {
 			#content {
 				padding: 1em 5em 5em 5em;
 				margin-left: 21em;
-        margin-top: 5px;
+        margin-top: 5vh;
+        margin-bottom: 40vh;
 			}
 
       #titleBar {height: 0px;}
@@ -1125,7 +1123,6 @@ footer img {
 			#content {
 				padding: 2em 3em 6em 3em;
 				margin-left: 14em;
-        margin-top: 5vh;
 			}
       #documento img{max-width:700px; max-height:400px}
       #documento table img{max-width:500px;max-height:300px}
@@ -1181,7 +1178,6 @@ footer img {
 
 		/* Content */
 		#content {
-			margin-top: 44px;
 			padding: 3em 20px 2em 20px;
 		}
 
@@ -1200,7 +1196,7 @@ footer img {
 	@media screen and (max-width: 1200px) {
 
 		/* Basic */
-			html, body {overflow-x: hidden;}
+			html, body {overflow-x: visible;}
 
 		/* Content */
 
@@ -1213,10 +1209,13 @@ footer img {
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
-				margin-top: 10vh;
+				margin-top: 12vh;
+        margin-bottom: 40vh;
 				margin-left: 0;
 				margin-right: 0;
 				min-height: 0;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
 			}
 
 		/* Sidebar */
