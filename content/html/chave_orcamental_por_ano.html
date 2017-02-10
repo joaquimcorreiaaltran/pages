@@ -103,6 +103,21 @@
 		 			});
 			}, 2000);//timeout
 		});
+
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 2000) {
+				//add effect / animation
+				$('.showWithScroll').stop(true).animate({
+					 opacity: 1
+				}, 500);
+			} else {
+				if ($(this).scrollTop() < 1000) {
+					$('.showWithScroll').stop(true).animate({
+						 opacity: 0
+					}, 500);
+				}
+			}
+		});
 	</script>
 </body>
 
