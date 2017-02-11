@@ -101,7 +101,7 @@ funcionamento da aplicação.
 
 Acedendo ao mesmo temos as seguintes opções disponíveis:
 
-| Opção| Descrição| Utilizadores|
+| Opção | Descrição| Utilizadores|
 |:---|:---|:---|
 | Instituição| Manipular a informação relacionada com a instituição, com os exercícios e configurações de sistema.| Todos|
 | Tabelas Genéricas| Atualizar as informações genéricas do sistema, nomeadamente a informação relativa a códigos postais, bancos, fatores de aglutinação, tipo de entidade, instituições bancárias, responsáveis e ROC.| Todos|
