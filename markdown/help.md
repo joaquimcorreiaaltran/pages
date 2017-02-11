@@ -1,5 +1,7 @@
 # AJUDA
 
+---
+
 ### Como propôr melhorias à documentação?
 
 1. **Selecionar o documento**: aceda ao website spmssicc.github.io/pages, navegue até ao documento pretendido e selecione o botão ![botão editar doc](..\markdown\assets\help-85f5ce98.png), que irá abrir uma página com o site GitHub [(o que é o GitHub?)](#github);

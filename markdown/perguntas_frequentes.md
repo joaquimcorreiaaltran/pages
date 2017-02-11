@@ -2,6 +2,8 @@
 
 ## 1. Perguntas frequentes
 
+---
+
 1. [O que é o SICC?](#que_sicc)
 2. [Para que serve?](#para_que_serve)
 3. [Quais os principais serviços e processos suportados?](#quais_principais_servicos_processos_suportados)

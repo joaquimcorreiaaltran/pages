@@ -158,9 +158,9 @@ Um documento de requisito deve conter os seguintes elementos:
         	4.2 Definir obrigatoriedades ao utilizador;
         	4.3 Preenchimento de campo de Obrigações (facultativo);
 
--	5) Conclusão
+-	  5) Conclusão
 
-            5.1 Fazer um breve resumo dos requisitos demostrando a importância deles;
+				5.1 Fazer um breve resumo dos requisitos demostrando a importância deles;
             5.2 Concretização dos objetivos ou não e dar breve explicação;
             5.3 Referir a importância de se ter efetuado o requisito;
 
@@ -182,9 +182,9 @@ Para escrever um bom manual, é preciso identificar os utilizadores alvo. Esta i
 ## 2.	Quais as necessidades do utilizador e linguagem a utilizar
 
 A menos que o utilizador possua um conhecimento técnico, é melhor evitar a linguagem técnica, sempre optando por explicações simples e claras. O texto deve ser organizado de modo a que ao ler pela primeira vez, mesmo não entendendo, seja de fácil compreensão.
--   Neste caso, é útil definir os termos e disponibilizar algum tipo de *background*, como imagens dos ecrãs do sistema, explicando-os e enquadrando para a execução de tarefas/análises financeiras definidas em requisitos.
+-   Neste caso, é útil definir os termos e disponibilizar algum tipo de _background_, como imagens dos ecrãs do sistema, explicando-os e enquadrando para a execução de tarefas/análises financeiras definidas em requisitos.
 
-## 3.	Solução para o utilizador – *Ticket’s* Redmine
+## 3.	Solução para o utilizador – _Ticket’s_ Redmine
 
 Com os manuais, pretende-se oferecer uma opção como solução ao problema que possa surgir. É necessário identificar problemas específicos que as pessoas enfrentam no seu dia-a-dia. Cumpre a esta equipa SICC criar manuais e informações, disponibilizando-as e que sejam passiveis de solução ao apresentado.
 
