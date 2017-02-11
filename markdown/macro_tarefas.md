@@ -1,17 +1,18 @@
 # Macro Tarefas
+
 ---
 
 # Índice
 
-1. [Introdução](#introducao)
-2. [Estrutura](#estrutura)
-3. [Processo de Identificação das Necessidades](#processo_identificacao_necessidades)
-4. [Circuito da Informação](#circuito_informacao)
-5. [Revisão de Distribuição](#revisao_distribuicao)
-6. [Processo de Requisito](#processo_requisito)
-7. [Processo de Manual do utilizador](#processo_manual_utilizador)
-8. [Repositório em GitHub](#repositorio_github)
-9. [Conclusão](#conclusao)
+1.  [Introdução](#introducao)
+2.  [Estrutura](#estrutura)
+3.  [Processo de Identificação das Necessidades](#processo_identificacao_necessidades)
+4.  [Circuito da Informação](#circuito_informacao)
+5.  [Revisão de Distribuição](#revisao_distribuicao)
+6.  [Processo de Requisito](#processo_requisito)
+7.  [Processo de Manual do utilizador](#processo_manual_utilizador)
+8.  [Repositório em GitHub](#repositorio_github)
+9.  [Conclusão](#conclusao)
 
 <a name="introducao"></a>
 
@@ -43,11 +44,11 @@ Esquematizando, entende-se por processo ou requisito uma atividade ou um conjunt
 
 Alguns dos fatores que tornam complexo o processo de identificação das necessidades são:
 
--	A informação é percebida de maneira diferente pelas pessoas que a consomem, consoante as suas necessidades de informação;
--	Existe informação que não é sempre necessária mas quando o é, torna-se urgente;
--	Pessoas diferentes necessitam de tipos de informação diferentes;
--	O fluxo de informação e os canais de comunicação são muitas vezes complexos.
-- Uma pessoa pode não gostar de revelar a sua necessidade de informação (Redmine).
+-	 A informação é percebida de maneira diferente pelas pessoas que a consomem, consoante as suas necessidades de informação;
+-	 Existe informação que não é sempre necessária mas quando o é, torna-se urgente;
+-	 Pessoas diferentes necessitam de tipos de informação diferentes;
+-	 O fluxo de informação e os canais de comunicação são muitas vezes complexos.
+-   Uma pessoa pode não gostar de revelar a sua necessidade de informação (Redmine).
 
 É assim trabalho da equipa SICC identificar as necessidades tentando de certa maneira uniformizar procedimentos comuns a todas as Entidades e fazer chegar a informação de igual maneira para todos os utilizadores e suas Chefias.
 
@@ -95,7 +96,7 @@ Para entender, é necessário ter a perceção do assunto e bem como saber desen
 
 ## 6.2	Recolha de Requisitos
 
-Como já referido, a recolha de requisitos é feita através de técnicas e de compreensão do tema. Igualmente nesta etapa, os requisitos são documentados à medida da recolha pretendida. É nesta altura que começa a existir um desenho ou *draft* do que se pretende fazer e contemplar no requisito.
+Como já referido, a recolha de requisitos é feita através de técnicas e de compreensão do tema. Igualmente nesta etapa, os requisitos são documentados à medida da recolha pretendida. É nesta altura que começa a existir um desenho ou _draft_ do que se pretende fazer e contemplar no requisito.
 
 ## 6.3	Classificação
 
@@ -113,9 +114,9 @@ Este ponto, está explicito no Capítulo 3 deste manual, no entanto e resumindo,
 
 Alguns dos requisitos carecem de mais urgência que outros. É assim necessário perante o Cliente compreender as prioridades e considera-las sempre em primeiro lugar. Podemos assim analisar a prioridade de um requisito em 3 fases:
 
-1. Essenciais;
-2. Importantes;
-3. Desejáveis.
+1.  Essenciais;
+2.  Importantes;
+3.  Desejáveis.
 
 ## 6.6	Validação de requisitos
 
@@ -126,34 +127,34 @@ Posteriormente à criação do requisito, poderão surgir outros tipos de valida
 ## 6.7	Definição e especificação dos requisitos
 
 Nesta etapa, podem existir mudanças aos requisitos, tanto a nível do:
-- Processo de requisito;
-- Desenvolvimento no sistema;
+-   Processo de requisito;
+-   Desenvolvimento no sistema;
 Por vezes, podem surgir requisitos novos resultantes do processo inicial, de acordo com mudança nas necessidades do negócio, sendo que essas alterações a especificidades podem ou não ser incluídas. Dependerá assim se as alterações ao objeto levam a grandes mudanças no previsto inicialmente
 
 ## 6.8	Documentos dos requisitos
 
 Um documento de requisito deve conter os seguintes elementos:
-- 1) Introdução
+-   1) Introdução
 
            	1.1 Intenção do documento
            	1.2 Referências
             1.3 Discrição do resto do documento
 
-- 2) Definição do requisito
+-   2) Definição do requisito
 
             2.1 Perspetiva do produto;
             2.2 Função do produto;
             2.3 Características;
 
-- 3) Especificação dos requisitos do sistema
+-   3) Especificação dos requisitos do sistema
 
             3.1 Definir requisitos (funcional/não funcional) com utilizador
                 3.1.1 Funcionalidade, interface, sistema, etc.;
                 3.1.2 Enquadrar nos menus / menus novos;
 
--	4) Quadro *forms*
+-	  4) Quadro _forms_
 
-          4.1 Definir campos a serem usados;
+			4.1 Definir campos a serem usados;
         	4.2 Definir obrigatoriedades ao utilizador;
         	4.3 Preenchimento de campo de Obrigações (facultativo);
 
@@ -174,14 +175,14 @@ Um bom manual explica passo a passo aos utilizadores as funções do “produto�
 
 Para escrever um bom manual, é preciso identificar os utilizadores alvo. Esta identificação é útil para ajudar levar o produto do conceito à fase final. Ao identificar um perfil de utilizador, convém ter presente:
 
-- Onde os utilizadores vão usar o manual, se em casa, no escritório, num ambiente de trabalho isolado ou no carro. Isso pode determinar não apenas o conteúdo, mas o estilo do manual e intuição;
-- Se vai ser um documento que seja consultado com frequência ou se será só de pesquisa periódica;
-- Saber qual recetividade e resistência do utilizador a manuais que sejam diferentes ou extensos do âmbito habitual;
+-   Onde os utilizadores vão usar o manual, se em casa, no escritório, num ambiente de trabalho isolado ou no carro. Isso pode determinar não apenas o conteúdo, mas o estilo do manual e intuição;
+-   Se vai ser um documento que seja consultado com frequência ou se será só de pesquisa periódica;
+-   Saber qual recetividade e resistência do utilizador a manuais que sejam diferentes ou extensos do âmbito habitual;
 
 ## 2.	Quais as necessidades do utilizador e linguagem a utilizar
 
 A menos que o utilizador possua um conhecimento técnico, é melhor evitar a linguagem técnica, sempre optando por explicações simples e claras. O texto deve ser organizado de modo a que ao ler pela primeira vez, mesmo não entendendo, seja de fácil compreensão.
-- Neste caso, é útil definir os termos e disponibilizar algum tipo de *background*, como imagens dos ecrãs do sistema, explicando-os e enquadrando para a execução de tarefas/análises financeiras definidas em requisitos.
+-   Neste caso, é útil definir os termos e disponibilizar algum tipo de *background*, como imagens dos ecrãs do sistema, explicando-os e enquadrando para a execução de tarefas/análises financeiras definidas em requisitos.
 
 ## 3.	Solução para o utilizador – *Ticket’s* Redmine
 
