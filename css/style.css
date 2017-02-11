@@ -525,16 +525,16 @@ p.caption{
 }
 
 
-/* #_doc_buttons */
+/* #doc_buttons */
 
-#_doc_buttons {
+#doc_buttons {
   display: inline-block;
   position: fixed;
   bottom: 0;
   right: 0;
 }
 
-#_doc_buttons button{
+#doc_buttons button{
   background-color: white; /* blue */
   text-align: center;
   float: right;
@@ -549,21 +549,21 @@ p.caption{
   display: block;
 }
 
-#_doc_buttons button:hover {
+#doc_buttons button:hover {
   background-color: #40A293;
   width: 40px;
 }
 
-#_doc_buttons i {
+#doc_buttons i {
   color: #666666;
   text-align: center;
 }
 
-#_doc_buttons i:hover {
+#doc_buttons i:hover {
   color: white;
 }
 
-#_doc_buttons .showWithScroll {
+#doc_buttons .showWithScroll {
     opacity: 0;
 }
 
