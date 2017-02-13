@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<title>SICC - Registo de alterações</title>
+		<title>SICC - Manual de Utilizador</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
@@ -11,37 +11,36 @@
 </head>
 <body>
 	<header>
-		<div id="sidebar">
-			<a id="amenuLink" href="amenu-source.html">Menu</a>
-		</div>
+			<div id="sidebar">
+					<a id="amenuLink" href="amenu-source.html">Menu</a>
+			</div>
 	</header>
 	<div id="content">
-		<noscrip id="js_warning">
-			<h1>Ops! :(</h1>
-			<p>
-				<br>Para visualizar corretamente esta página, é necessário permitir a execução de scripts no seu browser.</p>
-				<br>Por favor contacte o apoio técnico.
-				<br>Obrigado,
-				<br>Equipa SICC.
-			</p>
-		</noscrip>
-		<script>
-			//remove script block warning
-			var el = document.getElementById("js_warning");
-			if(el){
-				el.remove();
-			}
-		</script>
-		<section>
-			<h1>REGISTO DE ALTERAÇÕES</h1>
-		<p>Listagem de alterações relevantes da aplicação SICC em cada atualização.</p>
-		</section>
-		<section>
-			<p style="margin:100px 10px 100px 10px">[colocar tabela com alterações]</p>
-		</section>
-		<footer>
-			<!--loaded with js-->
-		</footer>
+			<article id="documento" class="modulo">
+				<noscrip id="js_warning">
+					<h1>Ops! :(</h1>
+					<p>
+						<br>Para visualizar corretamente esta página, é necessário permitir a execução de scripts no seu browser.</p>
+						<br>Por favor contacte o apoio técnico.
+						<br>Obrigado,
+						<br>Equipa SICC.
+					</p>
+				</noscrip>
+				<script>
+					//remove script block warning
+					var el = document.getElementById("js_warning");
+					if(el){
+						el.remove();
+					}
+				</script>
+				<!--loaded with js-->
+			</article>
+			<div id="docButtons">
+				<!--loaded with js-->
+			</div>
+			<footer>
+				<!--loaded with js-->
+			</footer>
 	</div>
 	<!-- libs -->
 	<script src="../js/jquery-3.1.1.js"></script>
@@ -55,7 +54,7 @@
 	<script src="../js/jquery.zoom.js" async></script>
 
 	<script>
-	/*	//get the current html document name
+		//get the current html document name
 		var path = window.location.pathname;
 		var page = path.split("/").pop();
 		//remove .html or .htm extension(s)
@@ -64,9 +63,9 @@
 		}
 		// convert .md file to html and place it into current page
 		convertMdToHtml(docName,"documento");
-*/
+
 		//highslide-with-gallery configs
-		hs.graphicsDir = '../content/img/highslide/graphics/';
+		hs.graphicsDir = '../img/highslide/graphics/';
 		hs.fadeInOut = true;
 		hs.align = 'center';
 		hs.transitions = ['expand', 'crossfade'];
@@ -77,29 +76,31 @@
 		hs.dimmingGeckoFix = true;
 		hs.blockRightClick = true;
 
-	//update btn link to edit doc in GitHub
 		$(function(){
 			$("footer").load("footer.html");
-			/*$("#docButtons").load("doc_buttons.html");
+			$("#docButtons").load("doc_buttons.html");
+			//update doc_buttons links
 			setTimeout(function() {
 					$("#btnEditarDoc").attr("onclick","window.open('https://github.com/SPMSSICC/pages/edit/master/markdown/"+docName+".md','_blank')");
-			 }, 2000);*/
+					$("#btnPDF").attr("onclick","window.open('https://gitprint.com/SPMSSICC/pages/blob/master/markdown/"+docName+".md','_blank')");
+			}, 2000);//timeout
 		});
 
 		$(window).scroll(function() {
-			if ($(this).scrollTop() > 2000) {
-				//add effect / animation
-				$('.showWithScroll').stop(true).animate({
-					 opacity: 1
-				}, 500);
-			} else {
-				if ($(this).scrollTop() < 1000) {
-					$('.showWithScroll').stop(true).animate({
+		  if ($(this).scrollTop() > 2000) {
+		    //add effect / animation
+		    $('.showWithScroll').stop(true).animate({
+		       opacity: 1
+		    }, 500);
+		  } else {
+		    if ($(this).scrollTop() < 1000) {
+		      $('.showWithScroll').stop(true).animate({
 						 opacity: 0
-					}, 500);
-				}
-			}
+		      }, 500);
+		    }
+		  }
 		});
 	</script>
 </body>
+
 </html>
