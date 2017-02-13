@@ -56,12 +56,12 @@ function loadCommitHistory() {
 
   if (docName == "changelog"){
       var branch, callback, container, limit, repo, url, username;
+      username = "SPMSSICC";
+      repo = "pages";
 
       container = $('#latest-commits');
       callback = function(response) {
-                    var index, items, result, ul, _results, username, repo;
-                    username = "SPMSSICC";
-                    repo = "pages";
+                    var index, items, result, ul, _results;
                     items = response.data;
                     ul = $('#commit-history');
                     ul.empty();

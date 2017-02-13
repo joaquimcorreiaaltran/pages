@@ -62,55 +62,10 @@
 	<script src="../js/jquery.timeago.js" async></script>
 
 	<script>
-	/*//get the current html document name
-		var path = window.location.pathname;
-		var page = path.split("/").pop();
-		//remove .html or .htm extension(s)
-		if(page.search(/.htm/i) != -1){
-			docName = page.replace(/.html|htm/gi,"");
-		}
-		// convert .md file to html and place it into current page
-		convertMdToHtml(docName,"documento");
-
-		//highslide-with-gallery configs
-		hs.graphicsDir = '../img/highslide/graphics/';
-		hs.fadeInOut = true;
-		hs.align = 'center';
-		hs.transitions = ['expand', 'crossfade'];
-		hs.outlineType = 'rounded-white';//'rounded-white';'rounded-black'
-		hs.fadeInOut = true;
-		hs.numberPosition = 'caption';
-		hs.dimmingOpacity = 0.5;
-		hs.dimmingGeckoFix = true;
-		hs.blockRightClick = true;
-	*/
 		$(function(){
 			$("footer").load("footer.html");
 			loadCommitHistory();
-	/*		$("#docButtons").load("doc_buttons.html");
-			//update doc_buttons links
-			setTimeout(function() {
-					$("#btnEditarDoc").attr("onclick","window.open('https://github.com/SPMSSICC/pages/edit/master/markdown/"+docName+".md','_blank')");
-					$("#btnPDF").attr("onclick","window.open('https://gitprint.com/SPMSSICC/pages/blob/master/markdown/"+docName+".md','_blank')");
-			}, 2000);//timeout
-	*/
 		});
-	/*
-		$(window).scroll(function() {
-		  if ($(this).scrollTop() > 2000) {
-		    //add effect / animation
-		    $('.showWithScroll').stop(true).animate({
-		       opacity: 1
-		    }, 500);
-		  } else {
-		    if ($(this).scrollTop() < 1000) {
-		      $('.showWithScroll').stop(true).animate({
-						 opacity: 0
-		      }, 500);
-		    }
-		  }
-		});
-	*/
 	</script>
 </body>
 
