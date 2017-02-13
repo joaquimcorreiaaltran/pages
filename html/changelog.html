@@ -26,8 +26,9 @@
 						<br>Equipa SICC.
 					</p>
 				</noscrip>
-				<iframe src="https://tylerlh.github.com/github-latest-commits-widget/?username=SPMSSICC&repo=pages&limit=2"
-		  allowtransparency="true" frameborder="0" scrolling="no" width="502px" height="252px"></iframe>
+				<iframe id="iframe_versions"
+				src="https://tylerlh.github.com/github-latest-commits-widget/?username=SPMSSICC&repo=pages&limit=10">
+				</iframe>
 				<script>
 					//remove script block warning
 					var el = document.getElementById("js_warning");
@@ -56,7 +57,7 @@
 	<script src="../js/jquery.zoom.js" async></script>
 
 	<script>
-		//get the current html document name
+	/*//get the current html document name
 		var path = window.location.pathname;
 		var page = path.split("/").pop();
 		//remove .html or .htm extension(s)
@@ -77,15 +78,16 @@
 		hs.dimmingOpacity = 0.5;
 		hs.dimmingGeckoFix = true;
 		hs.blockRightClick = true;
-
+	*/
 		$(function(){
 			$("footer").load("footer.html");
-			$("#docButtons").load("doc_buttons.html");
+	/*		$("#docButtons").load("doc_buttons.html");
 			//update doc_buttons links
 			setTimeout(function() {
 					$("#btnEditarDoc").attr("onclick","window.open('https://github.com/SPMSSICC/pages/edit/master/markdown/"+docName+".md','_blank')");
 					$("#btnPDF").attr("onclick","window.open('https://gitprint.com/SPMSSICC/pages/blob/master/markdown/"+docName+".md','_blank')");
 			}, 2000);//timeout
+	*/
 		});
 
 		$(window).scroll(function() {
