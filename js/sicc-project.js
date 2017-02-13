@@ -75,7 +75,7 @@ $(function() {
                     return _results;
                   };
 
-      container.find('h4').text("Atualizações");
+      //container.find('h4').text("Atualizações");
       url = "https://api.github.com/repos/SPMSSICC/pages/commits?callback=callback&callback=jQuery171010727564072631068_1487000384850&per_page=10&_=1487000384930";
 
       return $.ajax(url,
