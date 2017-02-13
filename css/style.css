@@ -569,11 +569,12 @@ p.caption{
 
 
 #iframe_versions {
-  allowtransparency="true"
-  frameborder="0"
-  scrolling="no"
-  width="502px"
-  height="80vh"
+  allowtr
+  allowtransparency="true";
+  frameborder: 0;
+  overflow: auto;
+  width: 70em;
+  height: 80vh;
 }
 
 
