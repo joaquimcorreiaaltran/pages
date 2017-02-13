@@ -21,8 +21,8 @@ function convertMdToHtml(docName, elementId) {
                                               document.getElementById(elementId).innerHTML = htmlDoc//carrega html no elementId
                                               zommClickImagem();
                                           });
-                                       }/*if*/
-                                    }/*function*/
+                                       }
+                                    }
    request.send();
 }
 
@@ -81,9 +81,9 @@ function loadCommitHistory() {
                         }
                         else {
                           //mostra se o limite de visualizações no github foi atingido
-                          alert("GitHub view limits\n\nrate_limit: "+ rate_limit/hr+"\nrate_limit_remaining: "+rate_limit_remaining+"\ntime_to_reset:"+time_to_reset);
-                          return ul.append("<li>GitHub view limits\n\nrate_limit: "+ rate_limit/hr+"\nrate_limit_remaining: "+rate_limit_remaining+"\ntime_to_reset:"+time_to_reset".</li>");
-                        }
+                         // alert("GitHub view limits\n\nrate_limit/hr: "+ rate_limit +"\nrate_limit_remaining: "+rate_limit_remaining+"\ntime_to_reset:"+time_to_reset);
+                           return ul.append("<li>GitHub view limits\n\nrate_limit: "+ rate_limit/hr+"\nrate_limit_remaining: "+rate_limit_remaining+"\ntime_to_reset:"+time_to_reset+".</li>");
+                       }
                       })(index, result));
                     }/*for*/
                     return _results;
