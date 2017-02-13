@@ -36,3 +36,52 @@ function zommClickImagem() {
       $(this).wrap("<a class='imagem' href='"+$(this).attr( "src" ) + "' onclick='return hs.expand(this)'></a>");
 });
 }
+
+
+
+
+/*
+  Para
+*/
+
+
+$(function() {
+  //get the current html document name
+  var path = window.location.pathname;
+  var page = path.split("/").pop();
+  //remove .html or .htm extension(s)
+  if(page.search(/.htm/i) != -1){
+    docName = page.replace(/.html|htm/gi,"");
+  }
+
+  if (docName == "changelog"){
+      var branch, callback, container, limit, repo, url, username;
+
+      container = $('#latest-commits');
+      callback = function(response) {
+                    var index, items, result, ul, _results;
+                    items = response.data;
+                    ul = $('#commit-history');
+                    ul.empty();
+                    _results = [];
+                    for (index in items) {
+                      result = items[index];
+                      _results.push((function(index, result) {
+                        if (result.author != null) {
+                          return ul.append("<li>\n <div>\n\n </div>\n <div>\n Autor: <a href=\"https://github.com/" + result.author.login + "\"><b>" + result.author.login + "</b></a>\n <br />\n <b>Data" + ($.timeago(result.commit.committer.date)) + "</b><br /><i>SHA: " + result.sha + "</i>\n <br />\n <a class=\"commit-message\" href=\"https://github.com/" + username + "/" + repo + "/commit/" + result.sha + "\" target=\"_blank\">" + result.commit.message + "</a>\n  </div>\n</li>");
+                        }
+                      })(index, result));
+                    }
+                    return _results;
+                  };
+
+      container.find('h4').text("Atualizações");
+      url = "https://api.github.com/repos/SPMSSICC/pages/commits?callback=callback&callback=jQuery171010727564072631068_1487000384850&per_page=10&_=1487000384930";
+
+      return $.ajax(url,
+                    { data:{per_page: "10"},
+                      dataType: "jsonp",
+                      type: "GET",
+                    }).done(function(response) {return callback(response);});
+    }/*if(docName == "changelog")*/
+});

@@ -26,9 +26,13 @@
 						<br>Equipa SICC.
 					</p>
 				</noscrip>
-				<iframe id="iframe_versions"
-				src="https://tylerlh.github.com/github-latest-commits-widget/?username=SPMSSICC&repo=pages&limit=10">
-				</iframe>
+				<div id="latest-commits">
+	        <div id="latest-commits-header">
+	          <i class="fa fa-github gh-icon"></i>
+	          <h4>Atualizações</h4>
+	        </div>
+	        <ul id="commit-history"></ul>
+    		</div>
 				<script>
 					//remove script block warning
 					var el = document.getElementById("js_warning");
@@ -50,11 +54,13 @@
 	<script src="../js/skel.min.js"></script>
 	<script src="../js/util.js"></script>
 	<script src="../js/main.js"></script>
-	<script src="../js/libs/showdown.js"></script>
+	<!-- <script src="../js/libs/showdown.js"></script> -->
 	<script src="../js/sicc-project.js"></script>
 	<script src="../js/libs/accordion-menu.js"></script>
-	<script src="../js/highslide-with-gallery.js"></script>
+	<!-- <script src="../js/highslide-with-gallery.js"></script> -->
 	<script src="../js/jquery.zoom.js" async></script>
+	<!-- <script src="../js/github-latest-commits.js" async></script> -->
+	<script src="../js/jquery.timeago.js" async></script>
 
 	<script>
 	/*//get the current html document name
@@ -89,7 +95,7 @@
 			}, 2000);//timeout
 	*/
 		});
-
+	/*
 		$(window).scroll(function() {
 		  if ($(this).scrollTop() > 2000) {
 		    //add effect / animation
@@ -104,6 +110,7 @@
 		    }
 		  }
 		});
+	*/
 	</script>
 </body>
 
