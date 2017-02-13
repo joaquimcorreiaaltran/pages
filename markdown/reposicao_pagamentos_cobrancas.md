@@ -23,13 +23,13 @@ Sempre que seja detetado um pagamento / recebimento indevido, deverá proceder �
 
 # 2. Reposição Abatida aos Pagamentos
 
-![img_1.png](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_1.png)
+![img_1.png](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_1.png)
 
 
 As reposições abatidas nos pagamentos são todas as importâncias que abatem aos pagamentos realizados, libertando as dotações correspondentes, e têm as seguintes características comuns:
 A existência de uma reposição abatida pressupõe que houve um pagamento excessivo em relação a uma determinada aquisição, cuja regularização é efetuada, no respetivo ano financeiro, através da correção da dotação utilizada e do respetivo saldo disponível, aumentando-o. Decorre deste entendimento que a reposição abatida aos pagamentos não seja tida como uma receita orçamental.
 
-![img_2.png](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_2.png)
+![img_2.png](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_2.png)
 
 **Legenda:**
 1. Esta corresponde a um documento (nota de crédito ou similar) emitida por um fornecedor, que tem associado o compromisso que deu origem ao pagamento indevido e que reflete o respetivo crédito;
@@ -42,78 +42,78 @@ A existência de uma reposição abatida pressupõe que houve um pagamento exces
 Estas operações abatem aos pagamentos realizados, libertando as dotações correspondentes. Trata-se da situação que ocorre com as entregas de fundos relativas a pagamentos em excesso ou indevidos, ocorridos no ano em curso.
 
 Desta forma, no menu:
-![img_3.png](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_3.png)
+![img_3.png](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_3.png)
 
 Este mesmo registo de reposição pagamento poderá ser efetuado por uma das seguintes contas: 3*,4*,6* ou 7*.
 
-![img_4.png](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_4.png)
+![img_4.png](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_4.png)
 
-![img_5.png](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_5.png)
+![img_5.png](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_5.png)
 
 Desta forma e para a despesa, o sistema SICC, identifica os documentos quando se efetuar o CE (automaticamente), no entanto demonstram-se os respetivos lançamentos:
 
-![img_6.png](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_6.png)
+![img_6.png](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_6.png)
 
 NC – O processo de lançamento de uma Reposição de pagamento, é bastante similar a uma Nota de crédito convencional. Desta forma, todas as contas 2* (exceto a 25*) são movimentadas a débito, por contrapartida das contas 3*, 4*, 5*, 6*, 7*.
 
 **Movimentação Contabilística: Lançar Nota de Crédito (doc. NC)**
 
-![img_7.png](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_7.png)
+![img_7.png](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_7.png)
 
 CE – Na altura do lançamento do CE, a informação é proveniente do criado anteriormente na NC, sendo que a conta 2*passa a crédito e a conta 2529* a débito, com o classificador e económico e chave orçamental associado à conta 3*, 4*, 5*, 6*, 7* gerado anteriormente.
 
-![img_8.png](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_8.png)
+![img_8.png](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_8.png)
 
 **Movimentação Contabilística: Liquidação da RAP (doc. CE)**
 
-![img_9.png](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_9.png)
+![img_9.png](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_9.png)
 
 Finda a etapa, deve o utilizador confirmar a criação do CE e passar para o nível seguinte:
 
-![img_10.png](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_10.png)
+![img_10.png](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_10.png)
 
 AP - Neste passo, pode-se efetuar a confirmação sem associar a fatura, pelo facto de se tratar de uma Reposição abatida aos pagamentos. Desta forma, todos os lançamentos aqui demonstrados, são provenientes da CE. Este movimento não é refletido na contabilidade. O valor deste documento será negativo.
 
-![img_11](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_11.png)
+![img_11](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_11.png)
 
-![img_12](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_12.png)
+![img_12](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_12.png)
 
-![img_13](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_13.png)
+![img_13](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_13.png)
 
 :warning: __Se se tratar de uma transferência bancária, é necessário acrescentar o movimento contabilístico da conta 111 (caixa) a débito por contrapartida da rubrica financeira gerada pelas contas 3; 4; 5; 6; 7.__
 
-![img_14](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_14.png)
+![img_14](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_14.png)
 
 :warning:__Se o Documento for transferência Bancária na AP, o sistema irá acrescentar registo da 111* a Crédito pela conta 112* ou 113* de acordo com a seleção efetuada na conta bancária da AP.__
 
 PG – No Pagamento, os movimentos criados na AP são replicados nesta etapa de criação.
 
-![img_15](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_15.png)
+![img_15](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_15.png)
 
 O utilizador acede aos movimentos contabilísticos, sendo que para o efeito, tem novamente de pressionar o botão de “Confirme”.
 
-![img_16](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_16.png)
+![img_16](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_16.png)
 
 **Movimentação Contabilística: Registo da entrada de Pagamento da RAP (doc. AP/PG)**
 
-![img_17](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_17.png)
+![img_17](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_17.png)
 
 Na mesma altura e no AP, ao gerar contabilidade, o sistema, associado ao número do CP ou P2, irá realizar as seguintes regularizações.
 
 **Movimentação Contabilística no NC (RAP ou NC “normal”) ao gerar contabilidade**
 
-![img_18](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_18.png)
+![img_18](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_18.png)
 
-![img_19](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_19.png)
+![img_19](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_19.png)
 
 <a name="rnap"></a>
 
 # 3. Reposição Não Abatida nos Pagamentos
 
-![img_20](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_20.png)
+![img_20](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_20.png)
 As reposições não abatidas nos pagamentos abrangem as receitas provenientes das entradas de fundos em resultado de cobranças orçamentais indevidos.
 
-![img_21](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_21.png)
+![img_21](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_21.png)
 
 **Legenda:**
 1. A contabilidade analisa a cobrança indevida;
@@ -123,53 +123,53 @@ As reposições não abatidas nos pagamentos abrangem as receitas provenientes d
 
 Desta forma, no menu:
 
-![img_22](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_22.png)
+![img_22](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_22.png)
 
 Um novo ecrã surge com uma *checkbox* que permite ao utilizador, definir se trata de um CC ou uma RNAP. Este mesmo registo de reposição pagamento, igualmente à RAP, poderá ser efetuado por uma das seguintes contas: 3*,4*,6* ou 7* a débito, por contrapartida de uma 2* (expeto 25*).
 Assim, e para efeitos de manual de  utilizador, demonstramos o processo de contabilização abaixo da RNAP.
 Deve o utilizador escolher a entidade, bem como atribuir um número de documento com o respetivo valor. Tratando-se de uma RNAP, a *checkbox* tem de estar ativa.
 
-![img_23](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_23.png)
+![img_23](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_23.png)
 
-![img_24](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_24.png)
+![img_24](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_24.png)
 
 Desta forma e para a receita, o sistema SICC, identifica os documentos quando se efetuar o CC (automaticamente).
 
-![img_25](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_25.png)
+![img_25](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_25.png)
 
 CC – O processo de lançamento de uma Reposição de pagamento, é bastante similar a um crédito a clientes convencional. Desta forma, todas as contas 2* (exceto a 2529*) são movimentadas a débito, por contrapartida das contas 3*, 4*, 5*, 6*, 7*.
 
 **Movimentação Contabilística: Registar RNAP (doc. CC)**
 
-![img_26](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_26.png)
+![img_26](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_26.png)
 
 DE – Na altura do lançamento do DE, a informação é proveniente do criado anteriormente no CC, sendo que a conta 2* passa a crédito e a conta 2519* a débito, com o classificador económico associado à conta 3*, 4*, 5*, 6*, 7* gerado anteriormente no CC.
 
-![img_27](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_27.png)
+![img_27](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_27.png)
 
-![img_28](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_28.png)
+![img_28](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_28.png)
 
 **Movimentação Contabilística: Liquidação da Receita (doc. DE)**
 
-![img_29](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_29.png)
+![img_29](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_29.png)
 
 Finda a etapa, deve o utilizador confirmar a criação do CC e passar para o nível seguinte:
 GR - Neste passo, pode-se efetuar a confirmação sem associar a fatura, pelo facto de se tratar de uma Reposição não abatida nos pagamentos. Desta forma, todos os lançamentos aqui demonstrados, são provenientes do CC.
 
-![img_30](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_30.png)
+![img_30](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_30.png)
 
-![img_31](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_31.png)
+![img_31](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_31.png)
 
-![img_32](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_32.png)
+![img_32](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_32.png)
 
 **Movimentação Contabilística: Registo da entrada de Pagamento da RNAP (doc. GR/CO)**
 
-![img_33](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_33.png)
+![img_33](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_33.png)
 
-![img_34](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_34.png)
+![img_34](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_34.png)
 
 No valor de caixa (folha de caixa) estes valores serão positivos, dado que as contas 1 são registadas a crédito e não a débito.
-![img_35](https://github.com/SPMSSICC/pages/raw/master/markdown/assets/reposicao_pagamentos_cobrancas/img_35.png)
+![img_35](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_35.png)
 
 <a name="resumo"></a>
 
