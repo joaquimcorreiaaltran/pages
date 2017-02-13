@@ -45,7 +45,7 @@ function zommClickImagem() {
 */
 
 
-$(function() {
+function loadCommitHistory() {
   //get the current html document name
   var path = window.location.pathname;
   var page = path.split("/").pop();
@@ -71,21 +71,23 @@ $(function() {
                       _results.push((function(index, result) {
                         if (result.author != null) {
                           return ul.append("<li>\n <div>\n\n </div>\n <div>\n Autor: <a href=\"https://github.com/" + result.author.login + "\"><b>" + result.author.login + "</b></a>\n <br />\n <b>Data: " + ($.timeago(result.commit.committer.date)) + "</b><br /><i>SHA: " + result.sha + "</i>\n <br />\n Descrição: <a href=\"https://github.com/" + username + "/" + repo + "/commit/" + result.sha + "\" target=\"_blank\">" + result.commit.message + "</a>\n  </div>\n</li><br />");
-                        }else {
-                          return ul.append("<li>[erro] GitHub response: "+response+";\n\nGitHub result"+result".</li>");
+                        }
+                        else {
+                          return ul.append("<li>[erro] GitHub response: "+response+";\n\nGitHub result"+result+".</li>");
                         }
                       })(index, result));
-                    }
+                    }/*for*/
                     return _results;
-                  };
+                  };/*function*/
 
-      //container.find('h4').text("Atualizações");
       url = "https://api.github.com/repos/"+username+"/"+repo+"/commits?callback=callback&callback=jQuery171010727564072631068_1487000384850&per_page=10&_=1487000384930";
 
       return $.ajax(url,
                     { data:{per_page: "10"},
                       dataType: "jsonp",
                       type: "GET",
-                    }).done(function(response) {return callback(response);});
+                    }).done(function(response) {
+                              return callback(response);
+                            });
     }/*if(docName == "changelog")*/
-});
+}/*loadCommitHistory()*/
