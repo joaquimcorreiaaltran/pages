@@ -568,24 +568,6 @@ p.caption{
 }
 
 
-#iframe_versions {
-  allowtr
-  allowtransparency="true";
-  frameborder: 0;
-  overflow: auto;
-  width: 70em;
-  height: 80vh;
-}
-
-
-
-
-
-
-
-
-
-
 
 /* ==|== media queries ======================================================
    EXAMPLE Media Query for Responsive Design.
