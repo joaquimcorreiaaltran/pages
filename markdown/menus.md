@@ -100,7 +100,7 @@ O presente documento destina-se aos utilizadores da aplicação SICC e encontra-
 Este menu permite efetuar a parametrização de informação necessária ao correto
 funcionamento da aplicação.
 
-![img_1](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_1.png)
+![img_1](..\markdown\assets\menus\img_1.png)
 
 Acedendo ao mesmo temos as seguintes opções disponíveis:
 
@@ -118,7 +118,7 @@ Acedendo ao mesmo temos as seguintes opções disponíveis:
 
 ## Opção Instituição
 
-![img_2](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_2.png)
+![img_2](..\markdown\assets\menus\img_2.png)
 
 Este submenu permite o acesso ao tratamento de informação relacionada com a instituição,
 exercícios e configurações.
@@ -130,7 +130,7 @@ exercícios e configurações.
 Este ecrã permite ao utilizador manipular as informações relacionadas com a instituição. Por .ex, o
 Centro Hospitalar Psiquiátrico de Lisboa.
 
-![img_3](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_3.png)
+![img_3](..\markdown\assets\menus\img_3.png)
 
 No ecrã o utilizador pode introduzir ou alterar toda a informação relacionada com uma
 instituição, nomeadamente:
@@ -143,7 +143,7 @@ instituição, nomeadamente:
 | Nome da Instituição| Nome da instituição.|
 | Morada| Morada da instituição.|
 | Localidade| Localidade a que pertence a instituição.|
-| Código Postal| Código postal associado à instituição. A lista de códigos postais é acessível através do botão redondo que se encontra entre os campos.<br /> ![img_4](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_4.png)|
+| Código Postal| Código postal associado à instituição. A lista de códigos postais é acessível através do botão redondo que se encontra entre os campos.<br /> ![img_4](..\markdown\assets\menus\img_4.png)|
 | NIF| Número de identificação fiscal da instituição.|
 | CAE| Classificação portuguesa das atividades económicas a que pertence a Instituição.|
 | Capital| Capital da instituição.|
@@ -174,13 +174,13 @@ instituição, nomeadamente:
 Este ecrã permite ao utilizador introduzir novos períodos de exercício ou somente atualizar os
 actuais.
 
-![img_6](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_6.png)
+![img_6](..\markdown\assets\menus\img_6.png)
 
 Os campos disponíveis para utilizador são os seguintes:
 
 | Campo| Descrição|
 |:---|:---|
-| Exercícios| Esta lista permite ao utilizar visualizar a informação existente para cada um dos períodos definidos. O utilizador poderá ainda atualizar a informação constante do quadro direito e confirmar essas alterações através do botão ![confirmar_verde](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_confirmar_verde.png).<br /> Para introduzir um novo exercício o utilizador deve carregar com o botão esquerdo no rato na primeira posição vazia, no final da lista Exercício (ver seta). Posteriormente deve preencher as informações do quadro direito (instruções de preenchimento, por baixo) e para finalizar carregar no botão ![confirmar_verde](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_confirmar_verde.png), conforme mostra na image:<br /> ![img_7](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_7.png)|
+| Exercícios| Esta lista permite ao utilizar visualizar a informação existente para cada um dos períodos definidos. O utilizador poderá ainda atualizar a informação constante do quadro direito e confirmar essas alterações através do botão ![confirmar_verde](..\markdown\assets\menus\img_confirmar_verde.png).<br /> Para introduzir um novo exercício o utilizador deve carregar com o botão esquerdo no rato na primeira posição vazia, no final da lista Exercício (ver seta). Posteriormente deve preencher as informações do quadro direito (instruções de preenchimento, por baixo) e para finalizar carregar no botão ![confirmar_verde](..\markdown\assets\menus\img_confirmar_verde.png), conforme mostra na image:<br /> ![img_7](..\markdown\assets\menus\img_7.png)|
 | Código| Deve ser preenchido com o código identificativo do exercício criado. Por exemplo, 2015.|
 | De| Data inicial do exercício. Este valor pode ser diferente de dia 01 de janeiro.|
 | A| Data Final do exercício. Este valor pode ser diferente de dia 31 de dezembro.|
@@ -205,7 +205,7 @@ tabulações.
 
 #### SICC
 
-![img_8](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_8.png)
+![img_8](..\markdown\assets\menus\img_8.png)
 
 | Campo| Descrição|
 |:---|:---|
@@ -213,14 +213,14 @@ tabulações.
 | Porta| Neste campo o utilizador deve definir a porta para acesso ao SICC. Este campo é de preenchimento obrigatório.|
 | Email| Neste campo o utilizador deve definir o email do responsável pelo SICC, na instituição. Este campo é de preenchimento obrigatório.|
 | Contabilidade Orçamental| Nestes campos o utilizador deve identificar qual o método classificador da Contabilidade Orçamental. Deverá escolher entre:<br /> i) Método - Classificador Económico <br /> ii) Método – Contas Patrimoniais.|
-| F. Finan| Neste campo o utilizador deve indicar o código da Fonte de Financiamento associada. <br />:warning: **Caso qualquer outro campo destes oito for preenchido, este campo passa a ter um preenchimento obrigatório, não podendo assumir o valor zero (0).**<br /> Caso o utilizador pretenda ter acesso à lista de Fontes de Financiamento disponíveis, deve carregar no círculo à direita do campo => ![radio](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_radio.png).<br />![img_9](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_9.png)|
-| Prog| Neste campo o utilizador deve indicar o código do Programa associado. <br />:warning: **Caso este campo seja preenchido, os campos Fonte de Financiamento e Classificação Funcional passam a ter preenchimento obrigatório, não podendo em qualquer dos casos assumir o valor zero (0).**<br /> Caso o utilizador pretenda ter acesso à lista de Programas disponíveis, deve carregar no círculo à direita do campo =>![radio](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_radio.png).<br />![img_10](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_10.png)|
-| Medida| Neste campo o utilizador deve indicar o código da Medida associada. <br />:warning: **Caso este campo seja preenchido, os campos Fonte de Financiamento e Classificação Funcional passam a ter preenchimento obrigatório, não podendo em qualquer dos casos assumir o valor zero (0).**<br /> Caso o utilizador pretenda ter acesso à lista de Medidas disponíveis, deve carregar no círculo à direita do campo => ![radio](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_radio.png).<br />![img_11](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_11.png)|
-| Proj| Neste campo o utilizador deve indicar o código do Projeto associado. <br />:warning: **Caso este campo seja preenchido, os campos Fonte de Financiamento e Classificação Funcional passam a ter preenchimento obrigatório, não podendo em qualquer dos casos assumir o valor zero (0).**<br />Caso o utilizador pretenda ter acesso à lista de Projetos disponíveis, deve carregar no círculo à direita do campo => ![radio](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_radio.png).<br />![img_12](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_12.png)|
-| Region.| Neste campo o utilizador deve indicar o código da Regionalização associada. <br />:warning: **Caso este campo seja preenchido, os campos Fonte de Financiamento e Classificação Funcional passam a ter preenchimento obrigatório, não podendo em qualquer dos casos assumir o valor zero (0).**<br /> Caso o utilizador pretenda ter acesso à lista de Regionalizações disponíveis, deve carregar no círculo à direita do campo => ![radio](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_radio.png).<br />![img_13](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_13.png)|
-| Ativ.| Neste campo o utilizador deve indicar o código da Atividade associada. <br />:warning: **Caso este campo seja preenchido, os campos Fonte de Financiamento e Classificação Funcional passam a ter preenchimento obrigatório, não podendo em qualquer dos casos assumir o valor zero (0).**<br /> Caso o utilizador pretenda ter acesso à lista de Atividades disponíveis, deve carregar no círculo à direita do campo => ![radio](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_radio.png).<br />![img_14](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_14.png)|
+| F. Finan| Neste campo o utilizador deve indicar o código da Fonte de Financiamento associada. <br />:warning: **Caso qualquer outro campo destes oito for preenchido, este campo passa a ter um preenchimento obrigatório, não podendo assumir o valor zero (0).**<br /> Caso o utilizador pretenda ter acesso à lista de Fontes de Financiamento disponíveis, deve carregar no círculo à direita do campo => ![radio](..\markdown\assets\menus\img_radio.png).<br />![img_9](..\markdown\assets\menus\img_9.png)|
+| Prog| Neste campo o utilizador deve indicar o código do Programa associado. <br />:warning: **Caso este campo seja preenchido, os campos Fonte de Financiamento e Classificação Funcional passam a ter preenchimento obrigatório, não podendo em qualquer dos casos assumir o valor zero (0).**<br /> Caso o utilizador pretenda ter acesso à lista de Programas disponíveis, deve carregar no círculo à direita do campo =>![radio](..\markdown\assets\menus\img_radio.png).<br />![img_10](..\markdown\assets\menus\img_10.png)|
+| Medida| Neste campo o utilizador deve indicar o código da Medida associada. <br />:warning: **Caso este campo seja preenchido, os campos Fonte de Financiamento e Classificação Funcional passam a ter preenchimento obrigatório, não podendo em qualquer dos casos assumir o valor zero (0).**<br /> Caso o utilizador pretenda ter acesso à lista de Medidas disponíveis, deve carregar no círculo à direita do campo => ![radio](..\markdown\assets\menus\img_radio.png).<br />![img_11](..\markdown\assets\menus\img_11.png)|
+| Proj| Neste campo o utilizador deve indicar o código do Projeto associado. <br />:warning: **Caso este campo seja preenchido, os campos Fonte de Financiamento e Classificação Funcional passam a ter preenchimento obrigatório, não podendo em qualquer dos casos assumir o valor zero (0).**<br />Caso o utilizador pretenda ter acesso à lista de Projetos disponíveis, deve carregar no círculo à direita do campo => ![radio](..\markdown\assets\menus\img_radio.png).<br />![img_12](..\markdown\assets\menus\img_12.png)|
+| Region.| Neste campo o utilizador deve indicar o código da Regionalização associada. <br />:warning: **Caso este campo seja preenchido, os campos Fonte de Financiamento e Classificação Funcional passam a ter preenchimento obrigatório, não podendo em qualquer dos casos assumir o valor zero (0).**<br /> Caso o utilizador pretenda ter acesso à lista de Regionalizações disponíveis, deve carregar no círculo à direita do campo => ![radio](..\markdown\assets\menus\img_radio.png).<br />![img_13](..\markdown\assets\menus\img_13.png)|
+| Ativ.| Neste campo o utilizador deve indicar o código da Atividade associada. <br />:warning: **Caso este campo seja preenchido, os campos Fonte de Financiamento e Classificação Funcional passam a ter preenchimento obrigatório, não podendo em qualquer dos casos assumir o valor zero (0).**<br /> Caso o utilizador pretenda ter acesso à lista de Atividades disponíveis, deve carregar no círculo à direita do campo => ![radio](..\markdown\assets\menus\img_radio.png).<br />![img_14](..\markdown\assets\menus\img_14.png)|
 | C. Func.| Neste campo o utilizador deve indicar o código da Classificação Funcional associada. <br />:warning: **Caso qualquer outro campo destes oito for preenchido, este campo passa a ter um preenchimento obrigatório, não podendo assumir o valor zero (0).**|
-| Natur.| Neste campo o utilizador deve indicar o código da Natureza associada. <br />:warning: **Caso este campo seja preenchido, os campos Fonte de Financiamento e Classificação Funcional passam a ter preenchimento obrigatório, não podendo em qualquer dos casos assumir o valor zero (0).**<br /> Caso o utilizador pretenda ter acesso à lista de Naturezas disponíveis, deve carregar no círculo à direita do campo => ![radio](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_radio.png).<br />![img_15](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_15.png)|
+| Natur.| Neste campo o utilizador deve indicar o código da Natureza associada. <br />:warning: **Caso este campo seja preenchido, os campos Fonte de Financiamento e Classificação Funcional passam a ter preenchimento obrigatório, não podendo em qualquer dos casos assumir o valor zero (0).**<br /> Caso o utilizador pretenda ter acesso à lista de Naturezas disponíveis, deve carregar no círculo à direita do campo => ![radio](..\markdown\assets\menus\img_radio.png).<br />![img_15](..\markdown\assets\menus\img_15.png)|
 
 | Botão| Ação|
 |:---|:---|
@@ -231,11 +231,11 @@ tabulações.
 
 #### Sistema
 
-![img_16](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_16.png)
+![img_16](..\markdown\assets\menus\img_16.png)
 
 | Campo| Descrição|
 |:---|:---|
-| Ambiente| Indicar qual o ambiente da aplicação, tendo as seguintes opção disponíveis: <br />![ambiente_desenvolvimento](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_ambiente_desenvolvimento.png)|
+| Ambiente| Indicar qual o ambiente da aplicação, tendo as seguintes opção disponíveis: <br />![ambiente_desenvolvimento](..\markdown\assets\menus\img_ambiente_desenvolvimento.png)|
 |(Reports) Servidor| Indicar o servidor de *reports* da aplicação.|
 |(Reports) Endereço| Indicar o endereço do servidor de *reports* da aplicação. Refere-se ao servidor indicado no campo anterior.|
 |(FTP) Directório BD| Indicar o diretório de base de dados da aplicação.|
@@ -254,7 +254,7 @@ tabulações.
 
 ## Tabelas Genéricas
 
-![img_17](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_17.png)
+![img_17](..\markdown\assets\menus\img_17.png)
 
 Este submenu permite o acesso ao tratamento de informação genérica do sistema, tais como
 Códigos Postais, bancos, Fatores de Aglutinação, Tipos de Entidades, instituições bancárias,
@@ -270,7 +270,7 @@ Responsáveis e R.O.C.
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com os Códigos Postais.
 
-![img_18](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_18.png)
+![img_18](..\markdown\assets\menus\img_18.png)
 
 | Campo| Descrição|
 |:---|:---|
@@ -295,7 +295,7 @@ Este ecrã permite ao utilizador manipular as informações relacionadas com os 
 Este ecrã permite ao utilizador extrair listagem de Códigos Postais, para ficheiro de texto com
 o formato CSV.
 
-![img_19](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_19.png)
+![img_19](..\markdown\assets\menus\img_19.png)
 
 | Campo| Descrição|
 |:---|:---|
@@ -305,9 +305,9 @@ o formato CSV.
 
 | Botão| Ação|
 |:---|:---|
-|"…" <br />![...](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_....png)| Escolher a localização onde pretende guardar a informação a extrair, seja dentro da máquina local ou de uma pasta de rede. O nome do ficheiro é composta pela sigla “LIST_CODPOST_” mais a data de extração, no formato DDMMAAAA ( D – Dia; M – Mês; A – Ano ).|
+|"…" <br />![...](..\markdown\assets\menus\img_....png)| Escolher a localização onde pretende guardar a informação a extrair, seja dentro da máquina local ou de uma pasta de rede. O nome do ficheiro é composta pela sigla “LIST_CODPOST_” mais a data de extração, no formato DDMMAAAA ( D – Dia; M – Mês; A – Ano ).|
 | Ficheiro| Extrair a informação pretendida para um ficheiro de texto com o formato CSV.|
-| Imprimir| Imprimir uma listagem de códigos postal com base nos critérios definidos. O resultado será semelhante ao apresentado:<br />![img_20](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_20.png)|
+| Imprimir| Imprimir uma listagem de códigos postal com base nos critérios definidos. O resultado será semelhante ao apresentado:<br />![img_20](..\markdown\assets\menus\img_20.png)|
 | Sair| Sair do ecrã.|
 
 <a name="op_tabelas_genericas_bancos"></a>
@@ -320,7 +320,7 @@ o formato CSV.
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com os bancos.
 
-![img_21](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_21.png)
+![img_21](..\markdown\assets\menus\img_21.png)
 
 | Campo| Descrição|
 |:---|:---|
@@ -331,8 +331,8 @@ Este ecrã permite ao utilizador manipular as informações relacionadas com os 
 | Código Postal| Código postal do banco. A parte do código postal (XXXX) deve ser introduzido no primeiro campo e a parte do número postal, no segundo campo.|
 | NIB| Número de Identificação Bancária do banco.|
 | Contacto| Contacto definido pelo banco.|
-| Critério de filtragem| Critério para filtragem da pesquisa. <br /> ![img_codigo_nome_filtrar](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_codigo_nome_filtrar.png)|
-| Critério de posicionamento| Critério a escolher para realçar um resultado da pesquisa. <br /> ![img_posicionar_codigo_nome](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_posicionar_codigo_nome.png)|
+| Critério de filtragem| Critério para filtragem da pesquisa. <br /> ![img_codigo_nome_filtrar](..\markdown\assets\menus\img_codigo_nome_filtrar.png)|
+| Critério de posicionamento| Critério a escolher para realçar um resultado da pesquisa. <br /> ![img_posicionar_codigo_nome](..\markdown\assets\menus\img_posicionar_codigo_nome.png)|
 
 | Botão| Ação|
 |:---|:---|
@@ -355,7 +355,7 @@ Este ecrã permite ao utilizador manipular as informações relacionadas com os 
 Este ecrã permite ao utilizador extrair uma listagem de instituições bancárias, para ficheiro de
 texto com o formato CSV.
 
-![img_22](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_22.png)
+![img_22](..\markdown\assets\menus\img_22.png)
 
 | Campo| Descrição|
 |:---|:---|
@@ -366,9 +366,9 @@ texto com o formato CSV.
 
 | Botão| Ação|
 |:---|:---|
-|… ![img_...](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_....png)| escolher a localização onde pretende guardar a informação a extrair, seja dentro da máquina local ou de uma pasta de rede. O nome do ficheiro é composta pela sigla “LIST_BANCOS_” mais a data de extração, no formato DDMMAAAA ( D – Dia; M – Mês; A – Ano ).|
+|… ![img_...](..\markdown\assets\menus\img_....png)| escolher a localização onde pretende guardar a informação a extrair, seja dentro da máquina local ou de uma pasta de rede. O nome do ficheiro é composta pela sigla “LIST_BANCOS_” mais a data de extração, no formato DDMMAAAA ( D – Dia; M – Mês; A – Ano ).|
 | Ficheiro| Extrair a informação pretendida para um ficheiro de texto com o formato CSV.|
-| Imprimir| Imprimir uma listagem de instituições bancárias com base nos critérios definidos. O resultado será semelhante ao apresentado:<br />![img_23](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_23.png)|
+| Imprimir| Imprimir uma listagem de instituições bancárias com base nos critérios definidos. O resultado será semelhante ao apresentado:<br />![img_23](..\markdown\assets\menus\img_23.png)|
 | Sair| Sair do ecrã.|
 
 <a name="op_tabelas_genericas_fatores_aglutinacao"></a>
@@ -382,12 +382,12 @@ texto com o formato CSV.
 Este ecrã permite ao utilizador manipular as informações relacionadas com os Fatores de
 Aglutinação.
 
-![img_24](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_24.png)
+![img_24](..\markdown\assets\menus\img_24.png)
 
 | Campo| Descrição|
 |:---|:---|
-| Critério de filtragem| Critério para filtragem da pesquisa. <br />![codigo_nome](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_codigo_nome.png)|
-| Critério de posicionamento| Critério a escolher para realçar um resultado da pesquisa. <br />![codigo_nome](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_codigo_nome.png)|
+| Critério de filtragem| Critério para filtragem da pesquisa. <br />![codigo_nome](..\markdown\assets\menus\img_codigo_nome.png)|
+| Critério de posicionamento| Critério a escolher para realçar um resultado da pesquisa. <br />![codigo_nome](..\markdown\assets\menus\img_codigo_nome.png)|
 
 | Botão| Ação|
 |:---|:---|
@@ -406,7 +406,7 @@ Aglutinação.
 Este ecrã permite ao utilizador extrair listagem de Fator de Aglutinação, para ficheiro de texto
 com o formato CSV.
 
-![img_25](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_25.png)
+![img_25](..\markdown\assets\menus\img_25.png)
 
 | Campo| Descrição|
 |:---|:---|
@@ -418,7 +418,7 @@ Primeiro Fator de Aglutinação| Código do primeiro fator de aglutinação a ex
 |:---|:---|
 |…| Escolher a localização onde pretende guardar a informação a extrair, seja dentro da máquina local ou de uma pasta de rede. O nome do ficheiro é composta pela sigla “LIST_FACAGLU_” mais a data de extração, no formato DDMMAAAA ( D – Dia; M – Mês; A – Ano ).|
 | Ficheiro| Extrair a informação pretendida para um ficheiro de texto com o formato CSV.|
-| Imprimir| Imprimir uma listagem de fatores de aglutinação com base nos critérios definidos. O resultado será semelhante ao apresentado:<br /> ![img_26](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_26.png)|
+| Imprimir| Imprimir uma listagem de fatores de aglutinação com base nos critérios definidos. O resultado será semelhante ao apresentado:<br /> ![img_26](..\markdown\assets\menus\img_26.png)|
 | Sair| Sair do ecrã.|
 
 <a name="op_tabelas_genericas_tipos_entidades"></a>
@@ -432,12 +432,12 @@ Primeiro Fator de Aglutinação| Código do primeiro fator de aglutinação a ex
 Este ecrã permite ao utilizador manipular as informações relacionadas com os Tipos de
 Entidades.
 
-![img_27](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_27.png)
+![img_27](..\markdown\assets\menus\img_27.png)
 
 | Campo| Descrição|
 |:---|:---|
-| Critério de filtragem| Critério para filtragem da pesquisa. <br />![codigo_nome](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_codigo_nome.png)|
-| Critério de posicionamento| Critério a escolher para realçar um resultado da pesquisa. <br /> ![codigo_nome](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_codigo_nome.png)|
+| Critério de filtragem| Critério para filtragem da pesquisa. <br />![codigo_nome](..\markdown\assets\menus\img_codigo_nome.png)|
+| Critério de posicionamento| Critério a escolher para realçar um resultado da pesquisa. <br /> ![codigo_nome](..\markdown\assets\menus\img_codigo_nome.png)|
 
 | Botão| Ação|
 |:---|:---|
@@ -456,7 +456,7 @@ Entidades.
 Este ecrã permite ao utilizador extrair listagem de Fator de Aglutinação, para ficheiro de texto
 com o formato CSV.
 
-![img_29](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_28.png)
+![img_29](..\markdown\assets\menus\img_28.png)
 
 | Campo| Descrição|
 |:---|:---|
@@ -468,7 +468,7 @@ com o formato CSV.
 |:---|:---|
 |…| Escolher a localização onde pretende guardar a informação a extrair, seja dentro da máquina local ou de uma pasta de rede. O nome do ficheiro é composta pela sigla “LIST_FACAGLU_” mais a data de extração, no formato DDMMAAAA ( D – Dia; M – Mês; A – Ano ).|
 | Ficheiro| Extrair a informação pretendida para um ficheiro de texto com o formato CSV.|
-| Imprimir| Imprimir uma listagem de tipos de entidades com base nos critérios definidos. O resultado será semelhante ao apresentado:<br />![img_29](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_29.png)|
+| Imprimir| Imprimir uma listagem de tipos de entidades com base nos critérios definidos. O resultado será semelhante ao apresentado:<br />![img_29](..\markdown\assets\menus\img_29.png)|
 | Sair| Sair do ecrã.|
 
 <a name="op_tabelas_genericas_instituicoes_bancarias"></a>
@@ -482,7 +482,7 @@ com o formato CSV.
 Este ecrã permite ao utilizador manipular as informações relacionadas com as Instituições
 Bancárias.
 
-![img_30](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_30.png)
+![img_30](..\markdown\assets\menus\img_30.png)
 
 | Campo| Descrição|
 |:---|:---|
@@ -519,7 +519,7 @@ Bancárias.
 Este ecrã permite ao utilizador extrair uma listagem de instituições bancárias, para ficheiro de
 texto com o formato CSV.
 
-![img_31](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_31.png)
+![img_31](..\markdown\assets\menus\img_31.png)
 
 | Campo| Descrição|
 |:---|:---|
@@ -531,7 +531,7 @@ texto com o formato CSV.
 |:---|:---|
 |…| Escolher a localização onde pretende guardar a informação a extrair, seja dentro da máquina local ou de uma pasta de rede. O nome do ficheiro é composta pela sigla “LIST_LISTTBAN_” mais a data de extração, no formato DDMMAAAA ( D – Dia; M – Mês; A – Ano ).|
 | Ficheiro| Extrair a informação pretendida para um ficheiro de texto com o formato CSV.|
-| Imprimir| Imprimir uma listagem de instituições bancárias com base nos critérios definidos. O resultado final será semelhante ao apresentado:<br /> ![img_32](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_32.png)|
+| Imprimir| Imprimir uma listagem de instituições bancárias com base nos critérios definidos. O resultado final será semelhante ao apresentado:<br /> ![img_32](..\markdown\assets\menus\img_32.png)|
 | Sair| Sair do ecrã.|
 
 <a name="op_tabelas_genericas_responsaveis"></a>
@@ -540,7 +540,7 @@ texto com o formato CSV.
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com os Responsáveis.
 
-![img_33](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_33.png)
+![img_33](..\markdown\assets\menus\img_33.png)
 
 | Campo| Descrição|
 |:---|:---|
@@ -575,7 +575,7 @@ Este ecrã permite ao utilizador manipular as informações relacionadas com os 
 Este ecrã permite ao utilizador manipular as informações relativas aos diferentes Revisores
 Oficiais de Contas.
 
-![img_34](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_34.png)
+![img_34](..\markdown\assets\menus\img_34.png)
 
 | Campo| Descrição|
 |:---|:---|
@@ -583,7 +583,7 @@ Oficiais de Contas.
 | Nome| Nome do revisor oficial de contas.|
 | Morada| Morada do revisor oficial de contas.|
 | Localidade| Localidade do revisor oficial de contas.|
-| Código Postal| Código Postal de residência do revisor oficial de contas. A parte do código postal (XXXX) deve ser introduzido no primeiro campo e a parte do número postal, no segundo campo. Para obter a listagem de códigos postal, o utilizador deve carregar no círculo ![radio](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_radio.png) à direita do campo.|
+| Código Postal| Código Postal de residência do revisor oficial de contas. A parte do código postal (XXXX) deve ser introduzido no primeiro campo e a parte do número postal, no segundo campo. Para obter a listagem de códigos postal, o utilizador deve carregar no círculo ![radio](..\markdown\assets\menus\img_radio.png) à direita do campo.|
 | Nº de Contribuinte| Número de identificação fiscal do revisor oficial de contas.|
 | NIB| Número de identificação bancária do revisor oficial de contas.|
 | Telefone nº 1| Primeiro número de telefone de contacto do revisor oficial de contas.|
@@ -609,7 +609,7 @@ Oficiais de Contas.
 
 ## Opção Contabilidade
 
-![img_35](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_35.png)
+![img_35](..\markdown\assets\menus\img_35.png)
 
 Este submenu permite o acesso à parametrização de informação contabilística do sistema, tais
 como Planos de Contas, Contabilidade Pública, Tipos de Diário, Centros de Custo,
@@ -625,27 +625,27 @@ CRI/Departamentos e Associações LCPA.
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com o Plano de Contas.
 
-![img_36](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_36.png)
+![img_36](..\markdown\assets\menus\img_36.png)
 
 | Campo| Descrição|
 |:---|:---|
-| Exercício| Listagem de exercícios disponíveis conforme o Plano de Contas. Neste campo o utilizador pode escolher o exercício e apenas verá as informações das contas registadas para esse ano. Caso o utilizador pretenda inserir uma nova conta, deve indicar neste campo a qual a exercício que pertence. <br />![img_2015_ano](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_2015_ano.png)|
-| Critério de filtragem| Critério para filtragem da pesquisa. Permite ao utilizador, mediante os critérios de pesquisa disponíveis, efetuar consultas aos dados(contas). Os critérios disponíveis são os indicados na imagem. <br />![tipo](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_tipo.png)|
-| Critério de posicionamento|  Critério a escolher para realçar um resultado da pesquisa. O utilizador pode escolher uma conta e após carregar no botão, o registo atual passa a ser aquele que o utilizador identificou. <br />![posicionar_contas](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_posicionar_contas.png)|
-| Tipo| A informação contida neste campo, indica se a conta selecionada é uma conta do tipo Acumulação ou do tipo Movimento. <br />![acumulacao](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_acumulacao_movimento.png)|
+| Exercício| Listagem de exercícios disponíveis conforme o Plano de Contas. Neste campo o utilizador pode escolher o exercício e apenas verá as informações das contas registadas para esse ano. Caso o utilizador pretenda inserir uma nova conta, deve indicar neste campo a qual a exercício que pertence. <br />![img_2015_ano](..\markdown\assets\menus\img_2015_ano.png)|
+| Critério de filtragem| Critério para filtragem da pesquisa. Permite ao utilizador, mediante os critérios de pesquisa disponíveis, efetuar consultas aos dados(contas). Os critérios disponíveis são os indicados na imagem. <br />![tipo](..\markdown\assets\menus\img_tipo.png)|
+| Critério de posicionamento|  Critério a escolher para realçar um resultado da pesquisa. O utilizador pode escolher uma conta e após carregar no botão, o registo atual passa a ser aquele que o utilizador identificou. <br />![posicionar_contas](..\markdown\assets\menus\img_posicionar_contas.png)|
+| Tipo| A informação contida neste campo, indica se a conta selecionada é uma conta do tipo Acumulação ou do tipo Movimento. <br />![acumulacao](..\markdown\assets\menus\img_acumulacao_movimento.png)|
 | Código| Esta informação, está dividida em dois campos. O primeiro indica o número da conta, conforme aparece na listagem. E o segundo, apresenta o descritivo dessa mesma conta.|
-| Tipo de Orçamento| Nesta área é apresentado qual ou quais os tipos de orçamento a que a conta pertence. Na inserção de uma nova conta, o utilizador deve marcar os registo que interessam. <br />![tipo_de_orcamento](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_tipo_de_orcamento.png)|
+| Tipo de Orçamento| Nesta área é apresentado qual ou quais os tipos de orçamento a que a conta pertence. Na inserção de uma nova conta, o utilizador deve marcar os registo que interessam. <br />![tipo_de_orcamento](..\markdown\assets\menus\img_tipo_de_orcamento.png)|
 | Conta Acumulação| Esta informação, está dividida em dois campos. O primeiro indica o número da conta de acumulação a que pertence a conta selecionada, conforme aparece na listagem. E o segundo, apresenta o descritivo dessa mesma conta.|
 | Valores de Balanço N-1 (Débito)| Valores a débito do balanço do ano anterior.|
 | Valores de Balanço N-1 (Crédito)| Valores a crédito do balanço do ano anterior.|
 | Valores Resultados N-1 (Débito)| Valores a débito do resultado do ano anterior.|
 | Valores Resultados N-1 (Crédito)| Valores a crédito do resultado do ano anterior.|
-| Rubrica Financeira| Informação relativa à rubrica financeira. No caso da inserção de uma nova conta, o utilizador tem acesso a uma listagem de rubricas financeiras, carregando no círculo ![radio](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_radio.png) à direita do campo de código. A descrição da rubrica financeira será colocada automaticamente pelo sistema.|
-| Rubrica Financeira Ano Anterior| Informação relativa à rubrica financeira do ano anterior. No caso da inserção de uma nova conta, o utilizador tem acesso a uma listagem de rubricas financeiras, carregando no círculo ![radio](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_radio.png) à direita do campo de código. A descrição da rubrica financeira será colocada automaticamente pelo sistema.|
-| Conta Analítica| Informação relativa à conta analítica. No caso da inserção de uma nova conta, o utilizador tem acesso a uma listagem de contas analíticas, carregando no círculo ![radio](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_radio.png) à direita do campo de código. A descrição da conta analítica será colocada automaticamente pelo sistema.|
-| Receita / Despesa| Informação relativa à conta analítica, indicando se é uma conta de despesa ou de receita. Na inserção de uma nova conta, o utilizador deve marcar a opção correta. <br />![receita_despesa](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_receita_despesa.png)|
+| Rubrica Financeira| Informação relativa à rubrica financeira. No caso da inserção de uma nova conta, o utilizador tem acesso a uma listagem de rubricas financeiras, carregando no círculo ![radio](..\markdown\assets\menus\img_radio.png) à direita do campo de código. A descrição da rubrica financeira será colocada automaticamente pelo sistema.|
+| Rubrica Financeira Ano Anterior| Informação relativa à rubrica financeira do ano anterior. No caso da inserção de uma nova conta, o utilizador tem acesso a uma listagem de rubricas financeiras, carregando no círculo ![radio](..\markdown\assets\menus\img_radio.png) à direita do campo de código. A descrição da rubrica financeira será colocada automaticamente pelo sistema.|
+| Conta Analítica| Informação relativa à conta analítica. No caso da inserção de uma nova conta, o utilizador tem acesso a uma listagem de contas analíticas, carregando no círculo ![radio](..\markdown\assets\menus\img_radio.png) à direita do campo de código. A descrição da conta analítica será colocada automaticamente pelo sistema.|
+| Receita / Despesa| Informação relativa à conta analítica, indicando se é uma conta de despesa ou de receita. Na inserção de uma nova conta, o utilizador deve marcar a opção correta. <br />![receita_despesa](..\markdown\assets\menus\img_receita_despesa.png)|
 | C.E. Rec. / Desp Pub| Valores do resultado do ano anterior, a crédito.|
-| Execução Orçamental| Informação relativa ao classificador económico. No caso da inserção de uma nova conta, o utilizador tem acesso a uma listagem de classificadores económicos, carregando no círculo ![radio](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_radio.png) à direita do campo de código. A descrição do classificador económico será colocada automaticamente pelo sistema.|
+| Execução Orçamental| Informação relativa ao classificador económico. No caso da inserção de uma nova conta, o utilizador tem acesso a uma listagem de classificadores económicos, carregando no círculo ![radio](..\markdown\assets\menus\img_radio.png) à direita do campo de código. A descrição do classificador económico será colocada automaticamente pelo sistema.|
 
 | Botão| Ação|
 |:---|:---|
@@ -666,7 +666,7 @@ Este ecrã permite ao utilizador manipular as informações relacionadas com o P
 Este ecrã permite ao utilizador extrair uma listagem das diferentes entradas do Plano de Contas,
 para ficheiro de texto com o formato CSV.
 
-![img_37](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_37.png)
+![img_37](..\markdown\assets\menus\img_37.png)
 
 | Campo| Descrição|
 |:---|:---|
@@ -679,7 +679,7 @@ para ficheiro de texto com o formato CSV.
 |:---|:---|
 |…| Escolher a localização onde pretende guardar a informação a extrair, seja dentro da máquina local ou de uma pasta de rede. O nome do ficheiro é composta pela sigla “LIST_PCONTAS_” mais a data de extração, no formato DDMMAAAA ( D – Dia; M – Mês; A – Ano ).|
 | Ficheiro| Extrair a informação pretendida para um ficheiro de texto com o formato CSV.|
-| Imprimir| Imprimir uma listagem de contas com base nos critérios definidos. O resultado final será semelhante ao apresentado:<br />![img_38](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_38.png)|
+| Imprimir| Imprimir uma listagem de contas com base nos critérios definidos. O resultado final será semelhante ao apresentado:<br />![img_38](..\markdown\assets\menus\img_38.png)|
 | Sair| Sair do ecrã.|
 
 <a name="op_contabilidade_publica"></a>
@@ -693,16 +693,16 @@ para ficheiro de texto com o formato CSV.
 Este ecrã permite ao utilizador manipular as informações relacionadas com Classificadores
 económicos da Contabilidade Pública.
 
-![img_39](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_39.png)
+![img_39](..\markdown\assets\menus\img_39.png)
 
 | Campo| Descrição|
 |:---|:---|
-| Exercício| Listagem de exercícios disponíveis conforme o Plano de Contas. Neste campo o utilizador pode escolher o exercício e apenas verá as informações das contas registadas para esse ano. Caso o utilizador pretenda inserir uma nova conta, deve indicar neste campo a qual a exercício que pertence. <br />![img_2015_ano](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_2015_ano.png)|
-| Critério de posicionamento|  Critério a escolher para realçar um resultado da pesquisa. O utilizador pode escolher uma conta e após carregar no botão, o registo atual passa a ser aquele que o utilizador identificou.<br />![img_40](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_40.png)|
-| Critério de filtragem| Critério para filtragem da pesquisa. Permite ao utilizador, mediante os critérios de pesquisa disponíveis, efetuar consultas aos dados(contas). Os critérios disponíveis são os indicados na imagem.<br />![img_41](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_41.png)|
-| Código| Esta informação, está dividida em dois campos. O primeiro indica o número da conta, conforme aparece na listagem. E o segundo, apresenta o descritivo dessa mesma conta.<br />![receitas_correntes_e_de_capital](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_receitas_correntes_e_de_capital.png)|
-| Tipo de Movimento| Indicação do tipo de movimento: despesa ou receita.<br />![despesa_despesa](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_despesa_despesa.png)|
-| Tipo de Conta| Indicação do tipo de conta. <br />![tipo_acumulacao](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_tipo_acumulacao.png)|
+| Exercício| Listagem de exercícios disponíveis conforme o Plano de Contas. Neste campo o utilizador pode escolher o exercício e apenas verá as informações das contas registadas para esse ano. Caso o utilizador pretenda inserir uma nova conta, deve indicar neste campo a qual a exercício que pertence. <br />![img_2015_ano](..\markdown\assets\menus\img_2015_ano.png)|
+| Critério de posicionamento|  Critério a escolher para realçar um resultado da pesquisa. O utilizador pode escolher uma conta e após carregar no botão, o registo atual passa a ser aquele que o utilizador identificou.<br />![img_40](..\markdown\assets\menus\img_40.png)|
+| Critério de filtragem| Critério para filtragem da pesquisa. Permite ao utilizador, mediante os critérios de pesquisa disponíveis, efetuar consultas aos dados(contas). Os critérios disponíveis são os indicados na imagem.<br />![img_41](..\markdown\assets\menus\img_41.png)|
+| Código| Esta informação, está dividida em dois campos. O primeiro indica o número da conta, conforme aparece na listagem. E o segundo, apresenta o descritivo dessa mesma conta.<br />![receitas_correntes_e_de_capital](..\markdown\assets\menus\img_receitas_correntes_e_de_capital.png)|
+| Tipo de Movimento| Indicação do tipo de movimento: despesa ou receita.<br />![despesa_despesa](..\markdown\assets\menus\img_despesa_despesa.png)|
+| Tipo de Conta| Indicação do tipo de conta. <br />![tipo_acumulacao](..\markdown\assets\menus\img_tipo_acumulacao.png)|
 | Conta Acumulação| Esta informação, está dividida em dois campos. O primeiro indica o número da conta de acumulação a que pertence a conta selecionada, conforme aparece na listagem. E o segundo, apresenta o descritivo dessa mesma conta.|
 
 | Botão| Ação|
@@ -720,7 +720,7 @@ económicos da Contabilidade Pública.
 Este ecrã permite ao utilizador extrair uma listagem das diferentes entradas do Plano de Contas
 da Contabilidade Pública, para ficheiro de texto com o formato CSV.
 
-![img_42](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_42.png)
+![img_42](..\markdown\assets\menus\img_42.png)
 
 | Campo| Descrição|
 |:---|:---|
@@ -733,7 +733,7 @@ da Contabilidade Pública, para ficheiro de texto com o formato CSV.
 |:---|:---|
 |…| Escolher a localização onde pretende guardar a informação a extrair, seja dentro da máquina local ou de uma pasta de rede. O nome do ficheiro é composta pela sigla “LIST_CPUBLICA_” mais a data de extração, no formato DDMMAAAA ( D – Dia; M – Mês; A – Ano ).|
 | Ficheiro| Extrair a informação pretendida para um ficheiro de texto com o formato CSV.|
-| Imprimir| Imprimir uma listagem de contas com base nos critérios definidos. O resultado final será semelhante ao apresentado:<br />![img_43](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_43.png)|
+| Imprimir| Imprimir uma listagem de contas com base nos critérios definidos. O resultado final será semelhante ao apresentado:<br />![img_43](..\markdown\assets\menus\img_43.png)|
 | Sair| Sair do ecrã.|
 
 <a name="op_gestao_fonte_financiamento"></a>
@@ -743,7 +743,7 @@ da Contabilidade Pública, para ficheiro de texto com o formato CSV.
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Gestão das Fontes
 de Financiamento.
 
-![img_44](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_44.png)
+![img_44](..\markdown\assets\menus\img_44.png)
 
 | Campo| Descrição|
 |:---|:---|
@@ -765,7 +765,7 @@ de Financiamento.
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Gestão de
 Programas.
 
-![img_45](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_45.png)
+![img_45](..\markdown\assets\menus\img_45.png)
 
 | Campo| Descrição|
 |:---|:---|
@@ -787,7 +787,7 @@ Programas.
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Gestão de
 Medidas.
 
-![img_46](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_46.png)
+![img_46](..\markdown\assets\menus\img_46.png)
 
 | Campo| Descrição|
 |:---|:---|
@@ -813,7 +813,7 @@ Medidas.
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Gestão de
 Projectos.
 
-![img_47](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_47.png)
+![img_47](..\markdown\assets\menus\img_47.png)
 
 | Campo| Descrição|
 |:---|:---|
@@ -835,7 +835,7 @@ Projectos.
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Gestão de
 Regionalização.
 
-![img_47](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_47.png)
+![img_47](..\markdown\assets\menus\img_47.png)
 
 | Campo| Descrição|
 |:---|:---|
@@ -857,7 +857,7 @@ Regionalização.
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Gestão de
 Atividade.
 
-![img_48](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_48.png)
+![img_48](..\markdown\assets\menus\img_48.png)
 
 | Campo| Descrição|
 |:---|:---|
@@ -879,7 +879,7 @@ Atividade.
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Gestão de
 Natureza.
 
-![img_49](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_49.png)
+![img_49](..\markdown\assets\menus\img_49.png)
 
 | Campo| Descrição|
 |:---|:---|
@@ -902,7 +902,7 @@ Natureza.
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Gestão de
 Departamento.
 
-![img_50](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_50.png)
+![img_50](..\markdown\assets\menus\img_50.png)
 
 | Campo| Descrição|
 |:---|:---|
@@ -926,11 +926,11 @@ Departamento.
 #### Recolha
 Este ecrã permite ao utilizador manipular as informações relacionadas com Tipos de Diário.
 
-![img_51](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_51.png)
+![img_51](..\markdown\assets\menus\img_51.png)
 
 | Campo| Descrição|
 |:---|:---|
-| Critério de posicionamento| Critério a escolher para realçar um resultado da pesquisa.. O utilizador pode escolher uma código e após carregar no botão, o registo atual passa a ser aquele que o utilizador identificou. ![posicionar_codigo](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_posicionar_codigo.png)|
+| Critério de posicionamento| Critério a escolher para realçar um resultado da pesquisa.. O utilizador pode escolher uma código e após carregar no botão, o registo atual passa a ser aquele que o utilizador identificou. ![posicionar_codigo](..\markdown\assets\menus\img_posicionar_codigo.png)|
 | Designação| Este campo apresenta a designação do código de diário apresentado.|
 | Ano| Este campo indica a que exercício pretende o tipo de diário.|
 |Último Número| Este campo indica o último número do tipo de diário.|
@@ -954,7 +954,7 @@ Este ecrã permite ao utilizador manipular as informações relacionadas com Tip
 Este ecrã permite ao utilizador extrair uma listagem dos diferentes Tipos de Diários, para ficheiro
 de texto com o formato CSV.
 
-![img_52](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_52.png)
+![img_52](..\markdown\assets\menus\img_52.png)
 
 | Campo| Descrição|
 |:---|:---|
@@ -967,7 +967,7 @@ de texto com o formato CSV.
 |:---|:---|
 |…| Escolher a localização onde pretende guardar a informação a extrair, seja dentro da máquina local ou de uma pasta de rede. O nome do ficheiro é composta pela sigla “LIST_TIPODIARIO_” mais a data de extração, no formato DDMMAAAA ( D – Dia; M – Mês; A – Ano ).|
 | Ficheiro| Extrair a informação pretendida para um ficheiro de texto com o formato CSV.
-| Imprimir| Imprimir uma listagem de tipos de diário com base nos critérios definidos. O resultado final será semelhante ao apresentado:<br />![img_53](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_53.png)|
+| Imprimir| Imprimir uma listagem de tipos de diário com base nos critérios definidos. O resultado final será semelhante ao apresentado:<br />![img_53](..\markdown\assets\menus\img_53.png)|
 | Sair| Sair do ecrã.|
 
 <a name="op_centros_custos"></a>
@@ -980,15 +980,15 @@ de texto com o formato CSV.
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com centros de custos.
 
-![img_54](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_54.png)
+![img_54](..\markdown\assets\menus\img_54.png)
 
 | Campo| Descrição|
 |:---|:---|
-| Critério de filtragem| Critério para filtragem da pesquisa. Permite ao utilizador, mediante os critérios de pesquisa disponíveis, efetuar consultas aos dados (centros de custos). Os critérios disponíveis são os indicados na imagem.<br />![posicionar_tipo_filtrar](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_posicionar_tipo_filtrar.png)|
-| Critério de posicionamento|  Critério a escolher para realçar um resultado da pesquisa. O utilizador pode escolher um centro de custos e após carregar no botão, o registo atual passa a ser aquele que o utilizador identificou.<br />![posicionar_centros_de_custo](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_posicionar_centros_de_custo.png)|
+| Critério de filtragem| Critério para filtragem da pesquisa. Permite ao utilizador, mediante os critérios de pesquisa disponíveis, efetuar consultas aos dados (centros de custos). Os critérios disponíveis são os indicados na imagem.<br />![posicionar_tipo_filtrar](..\markdown\assets\menus\img_posicionar_tipo_filtrar.png)|
+| Critério de posicionamento|  Critério a escolher para realçar um resultado da pesquisa. O utilizador pode escolher um centro de custos e após carregar no botão, o registo atual passa a ser aquele que o utilizador identificou.<br />![posicionar_centros_de_custo](..\markdown\assets\menus\img_posicionar_centros_de_custo.png)|
 | Ano| Este campo indica a que exercício pretende o centro de custos.|
 | Designação| Este campo apresenta a designação do código de centro de custos apresentado.|
-| Tipo| Este campo indica o tipo de centro de custo.<br />![acumulacao_movimento](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_acumulacao_movimento.png)|
+| Tipo| Este campo indica o tipo de centro de custo.<br />![acumulacao_movimento](..\markdown\assets\menus\img_acumulacao_movimento.png)|
 | Centro Custo Acumulação| Código do centro de custos de acumulação.|
 | Código CRNDepartamento| Descrição do centro de custos de acumulação.|
 | Unidade Obra| Unidade de obra.|
@@ -1015,7 +1015,7 @@ Este ecrã permite ao utilizador manipular as informações relacionadas com cen
 Este ecrã permite ao utilizador extrair uma listagem dos diferentes centros de custos, para
 ficheiro de texto com o formato CSV.
 
-![img_55](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_55.png)
+![img_55](..\markdown\assets\menus\img_55.png)
 
 | Campo| Descrição|
 |:---|:---|
@@ -1028,7 +1028,7 @@ ficheiro de texto com o formato CSV.
 |:---|:---|
 |…| Escolher a localização onde pretende guardar a informação a extrair, seja dentro da máquina local ou de uma pasta de rede. O nome do ficheiro é composta pela sigla “LIST_CCUSTO_” mais a data de extração, no formato DDMMAAAA ( D – Dia; M – Mês; A – Ano ).|
 | Ficheiro| Extrair a informação pretendida para um ficheiro de texto com o formato CSV.|
-| Imprimir| Imprimir uma listagem de centros de custos com base nos critérios definidos. O resultado final será semelhante ao apresentado:![img_56](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_56.png)|
+| Imprimir| Imprimir uma listagem de centros de custos com base nos critérios definidos. O resultado final será semelhante ao apresentado:![img_56](..\markdown\assets\menus\img_56.png)|
 | Sair| Sair do ecrã.|
 
 <a name="op_cri_departamentos"></a>
@@ -1042,11 +1042,11 @@ ficheiro de texto com o formato CSV.
 Este ecrã permite ao utilizador manipular as informações relacionadas com centro de
 responsabilidade integrado.
 
-![img_57](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_57.png)
+![img_57](..\markdown\assets\menus\img_57.png)
 
 | Campo| Descrição|
 |:---|:---|
-| Critério de posicionamento| Critério a escolher para realçar um resultado da pesquisa. O utilizador pode escolher um centro de responsabilidade integrado e após carregar no botão, o registo atual passa a ser aquele que o utilizador identificou.<br />![posicionar_codigo_2](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_posicionar_codigo_2.png)|
+| Critério de posicionamento| Critério a escolher para realçar um resultado da pesquisa. O utilizador pode escolher um centro de responsabilidade integrado e após carregar no botão, o registo atual passa a ser aquele que o utilizador identificou.<br />![posicionar_codigo_2](..\markdown\assets\menus\img_posicionar_codigo_2.png)|
 | Ano| Este campo indica a que exercício pretende o centro de responsabilidade integrado.|
 | Designação| Este campo apresenta a designação do código do centro de responsabilidade integrado apresentado.|
 | Unidade Obra| Unidade de obra.|
@@ -1073,7 +1073,7 @@ responsabilidade integrado.
 Este ecrã permite ao utilizador extrair uma listagem dos diferentes centros de responsabilidade
 integrados, para ficheiro de texto com o formato CSV.
 
-![img_58](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_58.png)
+![img_58](..\markdown\assets\menus\img_58.png)
 
 | Campo| Descrição|
 |:---|:---|
@@ -1093,7 +1093,7 @@ integrados, para ficheiro de texto com o formato CSV.
 
 ## Terceiros
 
-![img_59](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_59.png)
+![img_59](..\markdown\assets\menus\img_59.png)
 
 Este submenu permite o acesso à parametrização de informação de terceiros, tais como a
 Gestão de Entidades, Tabelas de Projetos e Gestão de Entidades *Factoring*.
@@ -1109,19 +1109,19 @@ Gestão de Entidades, Tabelas de Projetos e Gestão de Entidades *Factoring*.
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Gestão de
 Entidades.
 
-![img_60](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_60.png)
+![img_60](..\markdown\assets\menus\img_60.png)
 
 | Campo| Descrição|
 |:---|:---|
 | Número| Este campo identifica o número da entidade. Caso a entidade introduzida já exista, todos os campos são preenchidos com os dados anteriormente introduzidos, podendo o utilizador alterar a informação pretendida. Caso a entidade ainda não exista, é perguntado ao utilizador se pretende inserir uma nova (Esta entidade não existe, quer inserir uma nova?). Se o utilizador disser que Sim, todos os campos são limpos à exceção do campo Número. Caso contrário são todos os campos limpos, incluindo o campo Número.|
-| Intragrupo| Este campos indica se a entidade é intragrupo ou não. Caso seja, é apresentado um campo com o descritivo do intragrupo.<br />![intragrupo](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_intragrupo.png)|
-| Entidade Parceira| Este campos indica se a entidade é uma entidade parceira ou não. Caso seja, é apresentado um campo com o descritivo da entidade parceira.<br />![entidade_parceira](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_entidade_parceira.png)|
-| Tipo de Entidade| Identificação do tipo de entidade. Na inserção ou alteração de um registo, o utilizador carregando no círculo ![radio](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_radio.png) entre o campo de código e descritivo pode obter uma listagem de todos os tipos de entidades disponíveis.|
-| Fator de Aglutinação| Identificação do fator de aglutinação. Na inserção ou alteração de um registo, o utilizador carregando no círculo ![radio](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_radio.png) entre o campo de código e descritivo pode obter uma listagem de todos os fator de aglutinação disponíveis.|
+| Intragrupo| Este campos indica se a entidade é intragrupo ou não. Caso seja, é apresentado um campo com o descritivo do intragrupo.<br />![intragrupo](..\markdown\assets\menus\img_intragrupo.png)|
+| Entidade Parceira| Este campos indica se a entidade é uma entidade parceira ou não. Caso seja, é apresentado um campo com o descritivo da entidade parceira.<br />![entidade_parceira](..\markdown\assets\menus\img_entidade_parceira.png)|
+| Tipo de Entidade| Identificação do tipo de entidade. Na inserção ou alteração de um registo, o utilizador carregando no círculo ![radio](..\markdown\assets\menus\img_radio.png) entre o campo de código e descritivo pode obter uma listagem de todos os tipos de entidades disponíveis.|
+| Fator de Aglutinação| Identificação do fator de aglutinação. Na inserção ou alteração de um registo, o utilizador carregando no círculo ![radio](..\markdown\assets\menus\img_radio.png) entre o campo de código e descritivo pode obter uma listagem de todos os fator de aglutinação disponíveis.|
 | Nome| Nome ou descrição da entidade.|
 | Morada| Morada da entidade.|
 | Localidade| Localidade da entidade.|
-| País| País da entidade. Na inserção ou alteração de um registo, o utilizador carregando no círculo ![radio](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_radio.png) entre o campo de código e descritivo pode obter uma listagem de todos os países disponíveis.|
+| País| País da entidade. Na inserção ou alteração de um registo, o utilizador carregando no círculo ![radio](..\markdown\assets\menus\img_radio.png) entre o campo de código e descritivo pode obter uma listagem de todos os países disponíveis.|
 | Código Postal| Código postal da entidade.|
 | Telefone| Número de telefone da entidade.|
 | Fax| Número de fax da entidade.|
@@ -1129,11 +1129,11 @@ Entidades.
 | Email| Endereço de correio eletrónico da entidade.|
 | Nº de Contribuinte| Número de identificação fiscal da entidade.|
 | Situação Contributiva| As explicações deste ecrã encontram-se no final das tabelas relacionadas com este ecrã.|
-|(Entidade) – Tipo| Tipo de número de conta bancária: <br /> - NIB : Numero de Identificação Bancária; <br /> - IBAN : Número Internacional de Conta Bancária.<br />![tipo_nib](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_tipo_nib.png)|
+|(Entidade) – Tipo| Tipo de número de conta bancária: <br /> - NIB : Numero de Identificação Bancária; <br /> - IBAN : Número Internacional de Conta Bancária.<br />![tipo_nib](..\markdown\assets\menus\img_tipo_nib.png)|
 |(Entidade) – Numero| Número de conta bancária, no formato indicado no campo anterior.|
 |(Entidade) – Swift| Número de BIC (Bank Identifier Code), código que permite identificar bancos internacionais.|
 |(Entidade) – Banco| Designação da instituição bancária assignada à conta introduzida. Este campo é de preenchimento automático pelo sistema.|
-|(*Factoring*) – Número| Identificação da conta bancário responsável pelo *factoring*. Na inserção ou alteração de um registo, o utilizador carregando no círculo ![radio](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_radio.png) entre o campo de código e descritivo pode obter uma listagem de ajuda, com os dados já existentes no sistema.|
+|(*Factoring*) – Número| Identificação da conta bancário responsável pelo *factoring*. Na inserção ou alteração de um registo, o utilizador carregando no círculo ![radio](..\markdown\assets\menus\img_radio.png) entre o campo de código e descritivo pode obter uma listagem de ajuda, com os dados já existentes no sistema.|
 |(*Factoring*) – Nome Entidade| Identificação da instituição bancária escolhida no campo anterior. Este campo é de preenchimento automático pelo sistema.|
 | Observações| Campo de observações onde estão ou devem ser colocadas todas as informações pretendidas pelo utilizador.|
 
@@ -1146,12 +1146,12 @@ Entidades.
 | Confirmar| Confirmar as alterações efetuadas e registá-las.|
 | Sair| Sair do ecrã.|
 
-![img_61](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_61.png)
+![img_61](..\markdown\assets\menus\img_61.png)
 
 | Campo| Descrição|
 |:---|:---|
-| Critério de filtragem| Critério para filtragem da pesquisa. Permite ao utilizador, mediante os critérios de pesquisa disponíveis, efetuar consultas aos dados.<br />![codigo_de_entidade](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_codigo_de_entidade.png)|
-| Critério de posicionamento| Critério a escolher para realçar um resultado da pesquisa. O utilizador pode escolher um NIF e após carregar no botão, o registo atual passa a ser aquele que o utilizador identificou.<br />![posicionar_num_contribuinte](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_posicionar_num_contribuinte.png)|
+| Critério de filtragem| Critério para filtragem da pesquisa. Permite ao utilizador, mediante os critérios de pesquisa disponíveis, efetuar consultas aos dados.<br />![codigo_de_entidade](..\markdown\assets\menus\img_codigo_de_entidade.png)|
+| Critério de posicionamento| Critério a escolher para realçar um resultado da pesquisa. O utilizador pode escolher um NIF e após carregar no botão, o registo atual passa a ser aquele que o utilizador identificou.<br />![posicionar_num_contribuinte](..\markdown\assets\menus\img_posicionar_num_contribuinte.png)|
 | Nº de Contribuinte| Número de identificação fiscal da entidade.|
 | NISS| Número de Identificação de Segurança Social.|
 | Dívida| Valor em dívida à Segurança Social.|
@@ -1181,7 +1181,7 @@ Entidades.
 |+ Novo| Introduzir nova situação contributiva da entidade. Ao carregar neste botão, é perguntado se o utilizador pretende introduzir uma nova situação contributiva da entidade. Caso o utilizador responda que sim, todos os campos são limpos e o utilizador deve preencher com os dados pretendidos. No final, o utilizador, tem de carregar no botão Confirmar de forma a que a informação seja validada e gravada.|
 |- Abater| Eliminar uma situação contributiva da entidade que estiver selecionado. Para registar esta ação, é necessário selecionar o botão "Confirmar".|
 | Cancelar| Cancelar todas as alterações que efetuou desde a abertura o ecrã.|
-| Listar| criar listagens de NIFs (Número de Identificação Fiscal), na totalidade ou em parte, conforme os dados introduzidos nos critérios disponíveis. ![img_62](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_62.png)<br />Os critérios de filtragem definidos são: <br /> - Primeiro NIF; <br /> - Último NIF. <br /A extração dos dados pode ser efetuada de duas formas distintas: <br />- Ficheiro : Neste caso o utilizador deve indicar a pasta onde o ficheiro deve ser guardado, sendo que o nome possui sempre o nome “LIST_SITCONTRIB_” + DATA (no formato, DDMMAAAA). <br /> Imprime: Neste caso, a impressão é feita em documento com o formato PDF.|
+| Listar| criar listagens de NIFs (Número de Identificação Fiscal), na totalidade ou em parte, conforme os dados introduzidos nos critérios disponíveis. ![img_62](..\markdown\assets\menus\img_62.png)<br />Os critérios de filtragem definidos são: <br /> - Primeiro NIF; <br /> - Último NIF. <br /A extração dos dados pode ser efetuada de duas formas distintas: <br />- Ficheiro : Neste caso o utilizador deve indicar a pasta onde o ficheiro deve ser guardado, sendo que o nome possui sempre o nome “LIST_SITCONTRIB_” + DATA (no formato, DDMMAAAA). <br /> Imprime: Neste caso, a impressão é feita em documento com o formato PDF.|
 |? Ajuda| Aceder à ajuda da aplicação. <br />:warning: **Funcionalidade indisponível.**|
 | Sair| Sair do ecrã.|
 
@@ -1192,7 +1192,7 @@ Entidades.
 Este ecrã permite ao utilizador extrair uma listagem das diferentes Entidades, para ficheiro de
 texto com o formato CSV.
 
-![img_63](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_63.png)
+![img_63](..\markdown\assets\menus\img_63.png)
 
 | Campo| Descrição|
 |:---|:---|
@@ -1218,11 +1218,11 @@ texto com o formato CSV.
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Tabela de
 Projectos.
 
-![img_64](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_64.png)
+![img_64](..\markdown\assets\menus\img_64.png)
 
 | Campo| Descrição|
 |:---|:---|
-| Critério de posicionamento| Critério a escolher para realçar um resultado da pesquisa. O utilizador pode escolher um código de projeto e após carregar no botão, o registo atual passa a ser aquele que o utilizador identificou.<br />![posicionar_num_contribuinte](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_posicionar_num_contribuinte.png)|
+| Critério de posicionamento| Critério a escolher para realçar um resultado da pesquisa. O utilizador pode escolher um código de projeto e após carregar no botão, o registo atual passa a ser aquele que o utilizador identificou.<br />![posicionar_num_contribuinte](..\markdown\assets\menus\img_posicionar_num_contribuinte.png)|
 | Nome| Nome do projeto. Este campo é preenchido de forma automática sempre que é escolhido um código na listagem de códigos de projeto. No caso da inserção de um projeto novo ou alteração de um existente este campo passa a editável.|
 | Valor| Valor do projeto. Este campo é preenchido de forma automática sempre que é escolhido um código na listagem de códigos de projeto. No caso da inserção de um projeto novo ou alteração de um existente este campo passa a editável.|
 
@@ -1245,7 +1245,7 @@ Projectos.
 Este ecrã permite ao utilizador extrair uma listagem dos diferentes Projetos, para ficheiro de
 texto com o formato CSV.
 
-![img_65](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_65.png)
+![img_65](..\markdown\assets\menus\img_65.png)
 
 | Campo| Descrição|
 |:---|:---|
@@ -1270,7 +1270,7 @@ texto com o formato CSV.
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Gestão de Entidades *Factoring*.
 
-![img_66](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_66.png)
+![img_66](..\markdown\assets\menus\img_66.png)
 
 | Campo| Descrição|
 |:---|:---|
@@ -1278,14 +1278,14 @@ Este ecrã permite ao utilizador manipular as informações relacionadas com a G
 | Nome| Nome ou descrição da entidade.|
 | Morada| Morada da entidade.|
 | Localidade| Localidade da entidade.|
-| País| País da entidade. Na inserção ou alteração de um registo, o utilizador carregando no círculo ![radio](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_radio.png) entre o campo de código e descritivo pode obter uma listagem de todos os países disponíveis.|
+| País| País da entidade. Na inserção ou alteração de um registo, o utilizador carregando no círculo ![radio](..\markdown\assets\menus\img_radio.png) entre o campo de código e descritivo pode obter uma listagem de todos os países disponíveis.|
 | Código Postal| Código postal da entidade.|
 | Telefone nº 1| Número de telefone da entidade.|
 | Fax| Número de fax da entidade.|
 | Contacto| Responsável de relações publicas da entidade.|
 | Email| Endereço de correio eletrónico da entidade.|
 | Nº de Contribuinte| Número de identificação fiscal da entidade.|
-|(Entidade *Factoring*) – Tipo| Tipo de número de conta bancária:<br />- NIB : Numero de Identificação Bancária;<br />- IBAN : Número Internacional de Conta Bancária.<br />![tipo_nib](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_tipo_nib.png)|
+|(Entidade *Factoring*) – Tipo| Tipo de número de conta bancária:<br />- NIB : Numero de Identificação Bancária;<br />- IBAN : Número Internacional de Conta Bancária.<br />![tipo_nib](..\markdown\assets\menus\img_tipo_nib.png)|
 |(Entidade *Factoring*) – Numero|*Factoring*| Número de conta bancária, no formato indicado no campo anterior.|
 |(Entidade *Factoring*) – Swift| Número de BIC (*Bank Identifier Code*), código que permite identificar bancos internacionais.|
 |(Entidade *Factoring*) – Nome| Identificação da instituição bancária escolhida no campo anterior. Este campo é de preenchimento automático pelo sistema.|
@@ -1306,7 +1306,7 @@ Este ecrã permite ao utilizador manipular as informações relacionadas com a G
 Este ecrã permite ao utilizador extrair uma listagem das diferentes Entidades *Factoring*, para
 ficheiro de texto com o formato CSV.
 
-![img_67](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_67.png)
+![img_67](..\markdown\assets\menus\img_67.png)
 
 | Campo| Descrição|
 |:---|:---|
@@ -1325,20 +1325,20 @@ ficheiro de texto com o formato CSV.
 
 ## Fazer *Logoff*
 
-![img_68](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_68.png)
+![img_68](..\markdown\assets\menus\img_68.png)
 
 Este submenu permite ao utilizador desligar a sua sessão na aplicação, sem contudo sair da
 mesma. Após escolher esta opção será novamente apresentado o ecrã de acesso à aplicação,
 onde poderá efetuar novo acesso (login) com o mesmo utilizador de sistema ou com outro
 diferente.
 
-![img_69](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_69.png)
+![img_69](..\markdown\assets\menus\img_69.png)
 
 <a name="op_sair"></a>
 
 ## Sair
 
-![img_70](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_70.png)
+![img_70](..\markdown\assets\menus\img_70.png)
 
 Este submenu permite ao utilizador desligar a sua sessão e a aplicação, saído da mesma. Após
 escolher esta opção, o utilizador terá de arrancar novamente com a aplicação e efetuar novo
@@ -1350,7 +1350,7 @@ acesso (login) caso pretenda efetuar novas tarefas.
 
 Esta menu permite efetuar a todas as acções relacionadas com a Gestão de Terceiros.
 
-![img_71](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_71.png)
+![img_71](..\markdown\assets\menus\img_71.png)
 
 Acedendo ao mesmo temos as seguintes opções disponíveis:
 
@@ -1371,28 +1371,28 @@ Acedendo ao mesmo temos as seguintes opções disponíveis:
 
 ## Extrato por Entidade
 
-![img_72](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_72.png)
+![img_72](..\markdown\assets\menus\img_72.png)
 
 | Campo| Descrição|
 |:---|:---|
-| Tipo| Este campo permite ao utilizador efetuar a pesquisa de entidades, através do código da mesma ou do respectivo número de contribuinte.<br />![posicionar_num_contribuinte](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_posicionar_num_contribuinte.png)|
+| Tipo| Este campo permite ao utilizador efetuar a pesquisa de entidades, através do código da mesma ou do respectivo número de contribuinte.<br />![posicionar_num_contribuinte](..\markdown\assets\menus\img_posicionar_num_contribuinte.png)|
 | Entidade| Código e descritivo (preenchimento automático) da entidade. O utilizador deve colocar aqui o número da entidade para a qual pretende obter informações. Pode, igualmente, preencher este campo através da listagem de entidades existente no sistema, bastando para tal carregar no círculo à direita do campo.|
 | Ordenação| O utilizador pode escolher como pretende que os dados sejam ordenados no calculo dos mesmos: <br />- Data – Devendo para o efeito selecionar o *checkbox*. <br />- Tipo de Documento – Devendo para o efeito selecionar o *checkbox*.|
 | Data de Referência| Este campo corresponde à data atual de consulta dos dados. Esta data pode contudo ser alterada, caso o utilizador pretenda consultar dados de outro período do exercício.|
-| Exercício| O utilizador tem de obrigatoriamente escolher para qual o exercício que pretende obter a informação, sendo por defeito escolhido o período corrente.<br />![exercicio_2015](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_exercicio_2015.png)|
+| Exercício| O utilizador tem de obrigatoriamente escolher para qual o exercício que pretende obter a informação, sendo por defeito escolhido o período corrente.<br />![exercicio_2015](..\markdown\assets\menus\img_exercicio_2015.png)|
 | Nº Fatura| O utilizador pode ainda escolher pesquisar apenas por uma determinada fatura, pelo que deve para o efeito introduzir o número de fatura neste campo.|
 
 | Botão| Ação|
 |:---|:---|
 | Calcular| Calcular os dados a serem apresentados com base nas condições de pesquisa selecionados (de notar que não é obrigatório preencher todos estes campos para obter resultados): <br />- Tipo; <br />- Entidade; <br />- Data de Referência; <br />- Exercício; <br />- Fatura; <br />- Ordenação;
 | Ficheiro| Extrair a informação pretendida para um ficheiro de texto com o formato CSV.
-| Imprimir| Imprimir uma listagem de entidades com base nos critérios definidos. O resultado final do documento será semelhante ao apresentado:<br />![img_73](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_73.png)|
-| Email|  enviar informação acerca das entidades por email. Ao carregar no mesmo é apresentado o seguinte ecrã:<br />![img_74](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_74.png) <br /><br />Neste ecrã o utilizador deve escolher os critérios de selecção para gerar os dados a enviar por email, nomeadamente:<br /> <br />- Exercício;<br /> <br />- Data de Referência;<br /> <br />- Número da primeira entidade;<br /> <br />- Número da última entidade;<br /> <br />- Tipo de informação pretendida: Conta Corrente, Notas de Encomenda, Autorizações de pagamento ou Faturas em Conferencia/Recepção.<br /><br /> Para calcular a informação a enviar, por email, o utilizador deve carregar no botão Calcular. O resultado dos cálculos aparecerá no ecrã. ![calcular](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_calcular.png)<br />Antes de proceder ao envio do email, o utilizador deve indicar a pasta onde será gravado temporariamente o ficheiro a enviar em anexo à mensagem. ![img_mail_29092015.csv](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_mail_29092015.csv.png). <br />Para confirmar o envio do documento, o utilizador deve carregar no botão Ficheiro de Mails. ![ficheiro_de_mails](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_ficheiro_de_mails.png). <br />Para sair do ecrã o utilizador deve carregar no botão Sair.<br /> ![sair](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_sair.png)|
+| Imprimir| Imprimir uma listagem de entidades com base nos critérios definidos. O resultado final do documento será semelhante ao apresentado:<br />![img_73](..\markdown\assets\menus\img_73.png)|
+| Email|  enviar informação acerca das entidades por email. Ao carregar no mesmo é apresentado o seguinte ecrã:<br />![img_74](..\markdown\assets\menus\img_74.png) <br /><br />Neste ecrã o utilizador deve escolher os critérios de selecção para gerar os dados a enviar por email, nomeadamente:<br /> <br />- Exercício;<br /> <br />- Data de Referência;<br /> <br />- Número da primeira entidade;<br /> <br />- Número da última entidade;<br /> <br />- Tipo de informação pretendida: Conta Corrente, Notas de Encomenda, Autorizações de pagamento ou Faturas em Conferencia/Recepção.<br /><br /> Para calcular a informação a enviar, por email, o utilizador deve carregar no botão Calcular. O resultado dos cálculos aparecerá no ecrã. ![calcular](..\markdown\assets\menus\img_calcular.png)<br />Antes de proceder ao envio do email, o utilizador deve indicar a pasta onde será gravado temporariamente o ficheiro a enviar em anexo à mensagem. ![img_mail_29092015.csv](..\markdown\assets\menus\img_mail_29092015.csv.png). <br />Para confirmar o envio do documento, o utilizador deve carregar no botão Ficheiro de Mails. ![ficheiro_de_mails](..\markdown\assets\menus\img_ficheiro_de_mails.png). <br />Para sair do ecrã o utilizador deve carregar no botão Sair.<br /> ![sair](..\markdown\assets\menus\img_sair.png)|
 | Sair| Sair do ecrã.|
 
 #### Tabulação – Conta Corrente
 
-![img_75](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_75.png)
+![img_75](..\markdown\assets\menus\img_75.png)
 
 | Campo(Grelha)| Descrição|
 |:---|:---|
@@ -1423,7 +1423,7 @@ Acedendo ao mesmo temos as seguintes opções disponíveis:
 
 #### Tabulação – Nota de Encomenda
 
-![img_76](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_76.png)
+![img_76](..\markdown\assets\menus\img_76.png)
 
 | Campo(Grelha)| Descrição|
 |:---|:---|
@@ -1447,7 +1447,7 @@ Acedendo ao mesmo temos as seguintes opções disponíveis:
 
 #### Tabulação – Faturas em Conferência/Receção
 
-![img_77](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_77.png)
+![img_77](..\markdown\assets\menus\img_77.png)
 
 | Campo(Grelha)| Descrição|
 |:---|:---|
@@ -1464,7 +1464,7 @@ Acedendo ao mesmo temos as seguintes opções disponíveis:
 
 #### Tabulação – Autorização de Pagamento
 
-![img_78](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_78.png)
+![img_78](..\markdown\assets\menus\img_78.png)
 
 | Campo(Grelha)| Descrição|
 |:---|:---|
@@ -1484,7 +1484,7 @@ Acedendo ao mesmo temos as seguintes opções disponíveis:
 
 ## Extrato de Processo de Aquisição
 
-![img_79](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_79.png)
+![img_79](..\markdown\assets\menus\img_79.png)
 
 | Campo| Descrição|
 |:---|:---|
@@ -1504,7 +1504,7 @@ Acedendo ao mesmo temos as seguintes opções disponíveis:
 
 #### Tabulação – Processo de Aquisição/Compromisso Assumido
 
-![img_80](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_80.png)
+![img_80](..\markdown\assets\menus\img_80.png)
 
 | Campo(Grelha)| Descrição|
 |:---|:---|
@@ -1526,12 +1526,12 @@ Acedendo ao mesmo temos as seguintes opções disponíveis:
 
 | Botão| Ação|
 |:---|:---|
-| Ficheiro| Extrair a informação pretendida para um ficheiro de texto com o formato CSV. O utilizador deve indicar a localização onde o ficheiro será guardado através do seguinte botão:<br />![...](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_....png)|
+| Ficheiro| Extrair a informação pretendida para um ficheiro de texto com o formato CSV. O utilizador deve indicar a localização onde o ficheiro será guardado através do seguinte botão:<br />![...](..\markdown\assets\menus\img_....png)|
 
 
 #### Tabulação – Compromisso Assumido/Proc. Aquisição
 
-![img_81](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_81.png)
+![img_81](..\markdown\assets\menus\img_81.png)
 
 | Campo(Grelha)| Descrição|
 |:---|:---|
@@ -1553,13 +1553,13 @@ Acedendo ao mesmo temos as seguintes opções disponíveis:
 
 | Botão| Ação|
 |:---|:---|
-| Ficheiro| Extrair a informação pretendida para um ficheiro de texto com o formato CSV. O utilizador deve indicar a localização onde o ficheiro será guardado através do seguinte botão:<br />![...](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_....png)|
+| Ficheiro| Extrair a informação pretendida para um ficheiro de texto com o formato CSV. O utilizador deve indicar a localização onde o ficheiro será guardado através do seguinte botão:<br />![...](..\markdown\assets\menus\img_....png)|
 
 <a name="op_mapas_gestao"></a>
 
 ## Mapas de Gestão
 
-![img_82](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_82.png)
+![img_82](..\markdown\assets\menus\img_82.png)
 
 Este submenu permite o acesso a Mapas de Gestão, tais como Documentos por Datas,
 Documentos por Contas, Contas Correntes de Terceiros e Mapas para o IVA.
@@ -1571,7 +1571,7 @@ Documentos por Contas, Contas Correntes de Terceiros e Mapas para o IVA.
 Este ecrã permite ao utilizador aceder a mapas de gestão, utilizado uma pesquisa de
 documentos por datas.
 
-![img_83](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_83.png)
+![img_83](..\markdown\assets\menus\img_83.png)
 
 | Critérios| Descrição|
 |:---|:---|
@@ -1596,8 +1596,8 @@ documentos por datas.
 | Ficheiro CSV| extrair a informação pretendida para um ficheiro de texto com o formato CSV. O utilizador deve indicar a localização onde o ficheiro será guardado através do seguinte botão: sendo o ficheiro guardado na localização indicada em: O nome do ficheiro será GTFTDATA.|
 | Botão| Ação|
 |:---|:---|
-| Calcular| Obter o mapa de gestão com base nos critérios indicados pelo utilizador. <br />![img_84](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_84.png)|
-| Imprimir| Extrair a informação pretendida para um ficheiro de relatório com o formato PDF.<br />![img_85](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_85.png)|
+| Calcular| Obter o mapa de gestão com base nos critérios indicados pelo utilizador. <br />![img_84](..\markdown\assets\menus\img_84.png)|
+| Imprimir| Extrair a informação pretendida para um ficheiro de relatório com o formato PDF.<br />![img_85](..\markdown\assets\menus\img_85.png)|
 | Sair| Sair do ecrã atual e voltar ao menu principal.|
 
 
@@ -1608,7 +1608,7 @@ documentos por datas.
 Este ecrã permite ao utilizador aceder a mapas de gestão, utilizado uma pesquisa de
 documentos por contas.
 
-![img_86](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_86.png)
+![img_86](..\markdown\assets\menus\img_86.png)
 
 | Critérios| Descrição|
 |:---|:---|
@@ -1631,7 +1631,7 @@ documentos por contas.
 
 | Botão| Ação|
 |:---|:---|
-| Calcular| Obter o mapa de gestão com base nos critérios indicados pelo utilizador.<br />![img_88](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_88.png)|
+| Calcular| Obter o mapa de gestão com base nos critérios indicados pelo utilizador.<br />![img_88](..\markdown\assets\menus\img_88.png)|
 | Ficheiro CSV| Extrair a informação pretendida para um ficheiro de texto com o formato CSV. O utilizador deve indicar a localização onde o ficheiro será guardado através do seguinte botão: sendo o ficheiro guardado na localização indicada em: O nome do ficheiro será GTFTDATA.|
-| Imprimir| Extrair a informação pretendida para um ficheiro de relatório com o formato PDF.<br />![img_89](https://spmssicc.github.io/pages/img/markdown_docs/menus/img_89.png)|
+| Imprimir| Extrair a informação pretendida para um ficheiro de relatório com o formato PDF.<br />![img_89](..\markdown\assets\menus\img_89.png)|
 | Sair| Sair do ecrã atual e voltar ao menu principal.|
