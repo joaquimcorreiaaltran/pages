@@ -60,8 +60,15 @@ function loadCommitHistory() {
       repo = "pages";
 
       container = $('#latest-commits');
-      callback = function(response) {
+      callback = function(response, textStatus, jqXHR) {
                     var index, items, result, ul, _results;
+
+                    var rate_limit = response.meta["X-RateLimit-Limit"];//p/ saber quantas consultas é que o gitHub permite
+                    var rate_limit_remaining = response.meta["X-RateLimit-Remaining"];//p/ saber quantas consultas é que o gitHub ainda permite
+                    var timestamp = Math.abs(new Date() - response.meta["X-RateLimit-Reset"] - new Date());
+                    var time_to_reset = new Date(timestamp*1000);
+                    time_to_reset =  time_to_reset.getHours()+":"+time_to_reset.getMinutes();
+
                     items = response.data;
                     ul = $('#commit-history');
                     ul.empty();
@@ -73,8 +80,9 @@ function loadCommitHistory() {
                           return ul.append("<li>\n\n <div>\n\n </div>\n <div>\n Autor: <a href=\"https://github.com/" + result.author.login + "\"><b>" + result.author.login + "</b></a>\n <br />\n <b>Data: " + ($.timeago(result.commit.committer.date)) + "</b><br /><i>SHA: " + result.sha + "</i>\n <br />\n Descrição: <a href=\"https://github.com/" + username + "/" + repo + "/commit/" + result.sha + "\" target=\"_blank\">" + result.commit.message + "</a>\n  </div>\n</li><br />");
                         }
                         else {
-
-                          return ul.append("<li>rateLimit"+rateLimit +";\n\nGitHub response: "+response+";\n\nGitHub result: "+result+".</li>");
+                          //mostra se o limite de visualizações no github foi atingido
+                          alert("GitHub view limits\n\nrate_limit: "+ rate_limit/hr+"\nrate_limit_remaining: "+rate_limit_remaining+"\ntime_to_reset:"+time_to_reset);
+                          return ul.append("<li>GitHub view limits\n\nrate_limit: "+ rate_limit/hr+"\nrate_limit_remaining: "+rate_limit_remaining+"\ntime_to_reset:"+time_to_reset".</li>");
                         }
                       })(index, result));
                     }/*for*/
@@ -87,8 +95,8 @@ function loadCommitHistory() {
                     { data:{per_page: "10"},
                       dataType: "jsonp",
                       type: "GET",
-                    }).done(function(response) {
-                              return callback(response);
+                    }).done(function(response, textStatus, jqXHR) {
+                              return callback(response, textStatus, jqXHR);
                             });
     }/*if(docName == "changelog")*/
 }/*loadCommitHistory()*/
