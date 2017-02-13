@@ -70,10 +70,11 @@ function loadCommitHistory() {
                       result = items[index];
                       _results.push((function(index, result) {
                         if (result.author != null) {
-                          return ul.append("<li>\n <div>\n\n </div>\n <div>\n Autor: <a href=\"https://github.com/" + result.author.login + "\"><b>" + result.author.login + "</b></a>\n <br />\n <b>Data: " + ($.timeago(result.commit.committer.date)) + "</b><br /><i>SHA: " + result.sha + "</i>\n <br />\n Descrição: <a href=\"https://github.com/" + username + "/" + repo + "/commit/" + result.sha + "\" target=\"_blank\">" + result.commit.message + "</a>\n  </div>\n</li><br />");
+                          return ul.append("<li>\n\n <div>\n\n </div>\n <div>\n Autor: <a href=\"https://github.com/" + result.author.login + "\"><b>" + result.author.login + "</b></a>\n <br />\n <b>Data: " + ($.timeago(result.commit.committer.date)) + "</b><br /><i>SHA: " + result.sha + "</i>\n <br />\n Descrição: <a href=\"https://github.com/" + username + "/" + repo + "/commit/" + result.sha + "\" target=\"_blank\">" + result.commit.message + "</a>\n  </div>\n</li><br />");
                         }
                         else {
-                          return ul.append("<li>GitHub response: "+response+";\n\nGitHub result: "+result+".</li>");
+
+                          return ul.append("<li>rateLimit"+rateLimit +";\n\nGitHub response: "+response+";\n\nGitHub result: "+result+".</li>");
                         }
                       })(index, result));
                     }/*for*/
