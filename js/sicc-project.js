@@ -59,7 +59,9 @@ $(function() {
 
       container = $('#latest-commits');
       callback = function(response) {
-                    var index, items, result, ul, _results;
+                    var index, items, result, ul, _results, username, repo;
+                    username = "SPMSSICC";
+                    repo = "pages";
                     items = response.data;
                     ul = $('#commit-history');
                     ul.empty();
@@ -76,7 +78,7 @@ $(function() {
                   };
 
       //container.find('h4').text("Atualizações");
-      url = "https://api.github.com/repos/SPMSSICC/pages/commits?callback=callback&callback=jQuery171010727564072631068_1487000384850&per_page=10&_=1487000384930";
+      url = "https://api.github.com/repos/"+username+"/"+repo+"/commits?callback=callback&callback=jQuery171010727564072631068_1487000384850&per_page=10&_=1487000384930";
 
       return $.ajax(url,
                     { data:{per_page: "10"},
