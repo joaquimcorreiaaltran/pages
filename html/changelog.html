@@ -32,18 +32,7 @@
 	        </div>
 	        <ul id="commit-history"></ul>
     		</div>
-				<script>
-					//remove script block warning
-					var el = document.getElementById("js_warning");
-					if(el){
-						el.remove();
-					}
-				</script>
-				<!--loaded with js-->
 			</article>
-			<div id="docButtons">
-				<!--loaded with js-->
-			</div>
 			<footer>
 				<!--loaded with js-->
 			</footer>
@@ -57,13 +46,14 @@
 	<script src="../js/sicc-project.js"></script>
 	<script src="../js/libs/accordion-menu.js"></script>
 	<!-- <script src="../js/highslide-with-gallery.js"></script> -->
-	<script src="../js/jquery.zoom.js" async></script>
+	<!-- <script src="../js/jquery.zoom.js" async></script> -->
 	<!-- <script src="../js/github-latest-commits.js" async></script> -->
 	<script src="../js/jquery.timeago.js" async></script>
 
 	<script>
 		$(function(){
-			$("footer").load("footer.html");
+			$("#js_warning").remove();
+			loadFooter();
 			loadCommitHistory();
 		});
 	</script>

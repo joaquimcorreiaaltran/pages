@@ -4,30 +4,55 @@ Author: SPMS, EPE
 Feb-2017
 */
 
+//get the current html document name without extension
+doc_name = window.location.pathname.split("/").pop().replace(/.html|htm/gi,"");
 
-// functions
+//highslide-with-gallery configs
+graphicsDir = '../img/highslide/graphics/';
+fadeInOut = true;
+align = 'center';
+transitions = ['expand', 'crossfade'];
+outlineType = 'rounded-white';//'rounded-white';'rounded-black'
+numberPosition = 'caption';
+dimmingOpacity = 0.5;
+dimmingGeckoFix = true;
+blockRightClick = true;
 
 //load and convert Markdown to Html and show it
-function convertMdToHtml(docName, elementId) {
+function convertMdToHtml (elementId) {
    var request = new XMLHttpRequest();
    //Asynchronous request (true=asynchronous)
-   request.open('GET', '../markdown/'+ docName +'.md',true);
+   request.open('GET', '../markdown/'+ doc_name +'.md',true);
    request.onreadystatechange = function() {
-                                       if(request.readyState == XMLHttpRequest.DONE && request.status === 200) {
-                                          var converter = new showdown.Converter() //instancia
-                                          ,text = request.responseText //guarda o documento em string
-                                          ,htmlDoc = converter.makeHtml(text); //converte a string em HTML
-                                          $(function(){
-                                              document.getElementById(elementId).innerHTML = htmlDoc//carrega html no elementId
-                                              zommClickImagem();
-                                          });
-                                       }
-                                    }
+         if(request.readyState == XMLHttpRequest.DONE && request.status === 200) {
+            var converter = new showdown.Converter() //instancia
+            ,text = request.responseText //guarda o documento em string
+            ,htmlDoc = converter.makeHtml(text); //converte a string em HTML
+            // $(function () {
+                document.getElementById(elementId).innerHTML = htmlDoc;//carrega html no elementId
+                zommClickImagem();
+            // });
+         }
+      }
    request.send();
 }
 
+function loadFooter () {
+  $("footer").load("footer.html");
+}
 
-//Preparar imagem para zoom ou para não zoom (mostra ou não mostra a lupa)
+function loadDocButtons () {
+  $.get("doc_buttons.html", function (data) {
+             $("#content").append(data);
+         });
+  //update doc_buttons links
+  setTimeout(function() {
+      $("#btnEditarDoc").attr("onclick","window.open('https://github.com/SPMSSICC/pages/edit/master/markdown/"+doc_name+".md','_blank')");
+      $("#btnPDF").attr("onclick","window.open('https://gitprint.com/SPMSSICC/pages/blob/master/markdown/"+doc_name+".md','_blank')");
+  }, 2000);//timeout
+}
+
+// Preparar imagem para zoom ou para não zoom (mostra ou não mostra a lupa)
 function zommClickImagem() {
       var show = true;
     $('#documento p img').each(function() {
@@ -37,24 +62,9 @@ function zommClickImagem() {
 });
 }
 
-
-
-
-/*
-  Para
-*/
-
-
+//Carrega o histórico do repo github
 function loadCommitHistory() {
-  //get the current html document name
-  var path = window.location.pathname;
-  var page = path.split("/").pop();
-  //remove .html or .htm extension(s)
-  if(page.search(/.htm/i) != -1){
-    docName = page.replace(/.html|htm/gi,"");
-  }
-
-  if (docName == "changelog"){
+  if (doc_name == "changelog"){
       var branch, callback, container, limit, repo, url, username;
       username = "SPMSSICC";
       repo = "pages";
@@ -98,5 +108,5 @@ function loadCommitHistory() {
                     }).done(function(response, textStatus, jqXHR) {
                               return callback(response, textStatus, jqXHR);
                             });
-    }/*if(docName == "changelog")*/
+    }/*if(doc_name == "changelog")*/
 }/*loadCommitHistory()*/

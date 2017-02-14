@@ -26,22 +26,12 @@
 						<br>Equipa SICC.
 					</p>
 				</noscrip>
-				<script>
-					//remove script block warning
-					var el = document.getElementById("js_warning");
-					if(el){
-						el.remove();
-					}
-				</script>
-				<!--loaded with js-->
 			</article>
-			<div id="docButtons">
-				<!--loaded with js-->
-			</div>
 			<footer>
 				<!--loaded with js-->
 			</footer>
 	</div>
+
 	<!-- libs -->
 	<script src="../js/jquery-3.1.1.js"></script>
 	<script src="../js/skel.min.js"></script>
@@ -54,36 +44,13 @@
 	<script src="../js/jquery.zoom.js" async></script>
 
 	<script>
-		//get the current html document name
-		var path = window.location.pathname;
-		var page = path.split("/").pop();
-		//remove .html or .htm extension(s)
-		if(page.search(/.htm/i) != -1){
-			docName = page.replace(/.html|htm/gi,"");
-		}
-		// convert .md file to html and place it into current page
-		convertMdToHtml(docName,"documento");
-
-		//highslide-with-gallery configs
-		hs.graphicsDir = '../img/highslide/graphics/';
-		hs.fadeInOut = true;
-		hs.align = 'center';
-		hs.transitions = ['expand', 'crossfade'];
-		hs.outlineType = 'rounded-white';//'rounded-white';'rounded-black'
-		hs.fadeInOut = true;
-		hs.numberPosition = 'caption';
-		hs.dimmingOpacity = 0.5;
-		hs.dimmingGeckoFix = true;
-		hs.blockRightClick = true;
 
 		$(function(){
-			$("footer").load("footer.html");
-			$("#docButtons").load("doc_buttons.html");
-			//update doc_buttons links
-			setTimeout(function() {
-					$("#btnEditarDoc").attr("onclick","window.open('https://github.com/SPMSSICC/pages/edit/master/markdown/"+docName+".md','_blank')");
-					$("#btnPDF").attr("onclick","window.open('https://gitprint.com/SPMSSICC/pages/blob/master/markdown/"+docName+".md','_blank')");
-			}, 2000);//timeout
+			$("#js_warning").remove();
+			// convert .md file to html and place it into the html element sent (argument)
+			convertMdToHtml("documento");
+			loadFooter();
+			loadDocButtons();
 		});
 
 		$(window).scroll(function() {
