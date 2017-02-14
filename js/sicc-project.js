@@ -89,13 +89,13 @@ function loadCommitHistory() {
                         result = items[index];
                         _results.push((function(index, result) {
                           if (result.author != null) {
-                            return ul.append("<li>"+rate_limit_remaining+"\n\n <div>\n\n </div>\n <div>\n <b>" + ($.timeago(result.commit.committer.date)) + "</b><br />\n Alteração: <i>\"" + result.commit.message + "\"</i> <a href=\"https://github.com/" + username + "/" + repo + "/commit/" + result.sha + "\" target=\"_blank\">(ver alterações)</a><br />\n  </div>\nAutor: <a href=\"https://github.com/" + result.author.login + "\"><b>" + result.author.login + "</b></a>\n</li><br />");
+                            return ul.append("<li>\n\n <div>\n\n </div>\n <div>\n <b>" + ($.timeago(result.commit.committer.date)) + "</b>: <i>\"" + result.commit.message + "\"</i> <a href=\"https://github.com/" + username + "/" + repo + "/commit/" + result.sha + "\" target=\"_blank\">(ver alterações)</a><br />\n  </div>\nAutor: <a href=\"https://github.com/" + result.author.login + "\"><b>" + result.author.login + "</b></a>\n</li><br />");
                           }
                         })(index, result));
                       }
                     }/*if*/else if (rate_limit_remaining == 0) {
                       //mostra se o limite de visualizações no github foi atingido
-                       return ul.append("<b>Atenção: </b> Não foi possível mostrar as atualizações devido a sobrecarga de pedidos (" + rate_limit + "/hr), realizados pelo seu atual IP. Pode utilizar outro IP ou voltar a tentar às " + time_to_reset + "h de hoje. <br /><br />Mensagem do servidor: \"<i>"+ response.data.message +"</i>\"");
+                       return ul.append("<b>Atenção: </b> Não foi possível mostrar as atualizações devido a sobrecarga de pedidos (>" + rate_limit + "/hr), realizados pelo seu atual IP. Pode utilizar outro IP ou voltar a tentar depois das " + time_to_reset + ":59s de hoje. <br /><br />Mensagem do servidor: \"<i>"+ response.data.message +"</i>\"");
                      }else{
                        return ul.append("Ops! :( <br /><br /> Ocorreu algo inesperado.")
                      }
