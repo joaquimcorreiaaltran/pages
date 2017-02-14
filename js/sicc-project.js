@@ -83,30 +83,32 @@ function loadCommitHistory() {
                     ul = $('#commit-history');
                     ul.empty();
                     _results = [];
-                    for (index in items) {
-                      result = items[index];
-                      _results.push((function(index, result) {
-                        if (result.author != null) {
-                          return ul.append("<li>\n\n <div>\n\n </div>\n <div>\n <b>" + ($.timeago(result.commit.committer.date)) + "</b><br />\n Alteração: <i>\"" + result.commit.message + "\"</i> <a href=\"https://github.com/" + username + "/" + repo + "/commit/" + result.sha + "\" target=\"_blank\">(ver alterações)</a><br />\n  </div>\nAutor: <a href=\"https://github.com/" + result.author.login + "\"><b>" + result.author.login + "</b></a>\n</li><br />");
-                        }
-                        else {
-                          //mostra se o limite de visualizações no github foi atingido
-                         // alert("GitHub view limits\n\nrate_limit/hr: "+ rate_limit +"\nrate_limit_remaining: "+rate_limit_remaining+"\ntime_to_reset:"+time_to_reset);
-                           return ul.append("<li>GitHub view limits\n\nrate_limit: "+ rate_limit/hr+"\nrate_limit_remaining: "+rate_limit_remaining+"\ntime_to_reset:"+time_to_reset+".</li>");
-                       }
-                      })(index, result));
-                    }/*for*/
+
+                    if (rate_limit_remaining > 0) {
+                      for (index in items) {
+                        result = items[index];
+                        _results.push((function(index, result) {
+                          if (result.author != null) {
+                            return ul.append("<li>"+rate_limit_remaining+"\n\n <div>\n\n </div>\n <div>\n <b>" + ($.timeago(result.commit.committer.date)) + "</b><br />\n Alteração: <i>\"" + result.commit.message + "\"</i> <a href=\"https://github.com/" + username + "/" + repo + "/commit/" + result.sha + "\" target=\"_blank\">(ver alterações)</a><br />\n  </div>\nAutor: <a href=\"https://github.com/" + result.author.login + "\"><b>" + result.author.login + "</b></a>\n</li><br />");
+                          }
+                        })(index, result));
+                      }
+                    }/*if*/else if (rate_limit_remaining == 0) {
+                      //mostra se o limite de visualizações no github foi atingido
+                       return ul.append("<b>Atenção: </b> Não foi possível mostrar as atualizações devido a sobrecarga de pedidos (" + rate_limit + "/hr), realizados pelo seu atual IP. Pode utilizar outro IP ou voltar a tentar às " + time_to_reset + "h de hoje. <br /><br />Mensagem do servidor: \"<i>"+ response.data.message +"</i>\"");
+                     }else{
+                       return ul.append("Ops! :( <br /><br /> Ocorreu algo inesperado.")
+                     }
                     return _results;
                   };/*function*/
 
-      url = "https://api.github.com/repos/"+username+"/"+repo+"/commits?callback=callback&callback=jQuery171010727564072631068_1487000384850&per_page=10&_=1487000384930";
-
-      return $.ajax(url,
-                    { data:{per_page: "10"},
+      return $.ajax({ url: "https://api.github.com/repos/"+username+"/"+repo+"/commits?callback=callback&callback=jQuery171010727564072631068_1487000384850&per_page=10&_=1487000384930",
+                      data:{per_page: "20"},
                       dataType: "jsonp",
                       type: "GET",
-                    }).done(function(response, textStatus, jqXHR) {
-                              return callback(response, textStatus, jqXHR);
-                            });
+                    })
+                    .done(function(response, textStatus, jqXHR) {
+                      return callback(response, textStatus, jqXHR);
+                    });
     }/*if(doc_name == "changelog")*/
 }/*loadCommitHistory()*/
