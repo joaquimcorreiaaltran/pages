@@ -87,7 +87,7 @@ function loadCommitHistory() {
                       result = items[index];
                       _results.push((function(index, result) {
                         if (result.author != null) {
-                          return ul.append("<li>\n\n <div>\n\n </div>\n <div>\n Autor: <a href=\"https://github.com/" + result.author.login + "\"><b>" + result.author.login + "</b></a>\n <br />\n <b>Data/Hora: " + ($.timeago(result.commit.committer.date)) + "</b><br /><i>SHA: " + result.sha + "</i>\n <br />\n Descrição: <a href=\"https://github.com/" + username + "/" + repo + "/commit/" + result.sha + "\" target=\"_blank\">" + result.commit.message + "</a>\n  </div>\n</li><br />");
+                          return ul.append("<li>\n\n <div>\n\n </div>\n <div>\n <b>" + ($.timeago(result.commit.committer.date)) + "</b><br />\n Alteração: <i>\"" + result.commit.message + "\"</i> <a href=\"https://github.com/" + username + "/" + repo + "/commit/" + result.sha + "\" target=\"_blank\">(ver alterações)</a><br />\n  </div>\nAutor: <a href=\"https://github.com/" + result.author.login + "\"><b>" + result.author.login + "</b></a>\n</li><br />");
                         }
                         else {
                           //mostra se o limite de visualizações no github foi atingido
