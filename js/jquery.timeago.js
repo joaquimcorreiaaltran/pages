@@ -30,7 +30,7 @@
       refreshMillis: 60000,
       allowFuture: false,
       strings: {
-        prefixAgo: "À",
+        prefixAgo: "Há",
         prefixFromNow: null,
         suffixAgo: "",
         suffixFromNow: "",
