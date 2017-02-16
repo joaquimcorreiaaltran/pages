@@ -37,19 +37,21 @@ function convertMdToHtml (elementId) {
    request.send();
 }
 
+//Carrega footer
 function loadFooter () {
   $("footer").load("footer.html");
 }
 
+//Adiciona botões ao doc e atribui-lhes o link
 function loadDocButtons () {
   $.get("doc_buttons.html", function (data) {
              $("#content").append(data);
+             $("#btnEditarDoc").attr("onclick","window.open('https://github.com/SPMSSICC/pages/edit/master/markdown/"+doc_name+".md','_blank')");
+             //$("#btnPDF").attr("onclick","window.open('https://gitprint.com/SPMSSICC/pages/blob/master/markdown/"+doc_name+".md','_blank')");
+             $("#btnPDF").click(function(){
+               window.open("https://gitprint.com/SPMSSICC/pages/blob/master/markdown/"+doc_name+".md","_blank");
+             });
          });
-  //update doc_buttons links
-  setTimeout(function() {
-      $("#btnEditarDoc").attr("onclick","window.open('https://github.com/SPMSSICC/pages/edit/master/markdown/"+doc_name+".md','_blank')");
-      $("#btnPDF").attr("onclick","window.open('https://gitprint.com/SPMSSICC/pages/blob/master/markdown/"+doc_name+".md','_blank')");
-  }, 2000);//timeout
 }
 
 // Preparar imagem para zoom ou para não zoom (mostra ou não mostra a lupa)
