@@ -28,10 +28,8 @@ function convertMdToHtml (elementId) {
             var converter = new showdown.Converter() //instancia
             ,text = request.responseText //guarda o documento em string
             ,htmlDoc = converter.makeHtml(text); //converte a string em HTML
-            // $(function () {
                 document.getElementById(elementId).innerHTML = htmlDoc;//carrega html no elementId
                 zommClickImagem();
-            // });
          }
       }
    request.send();
@@ -46,10 +44,11 @@ function loadFooter () {
 function loadDocButtons () {
   $.get("doc_buttons.html", function (data) {
              $("#content").append(data);
-             $("#btnEditarDoc").attr("onclick","window.open('https://github.com/SPMSSICC/pages/edit/master/markdown/"+doc_name+".md','_blank')");
-             //$("#btnPDF").attr("onclick","window.open('https://gitprint.com/SPMSSICC/pages/blob/master/markdown/"+doc_name+".md','_blank')");
+             $("#btnEditarDoc").click(function(){
+               window.open("window.open('https://github.com/SPMSSICC/pages/edit/master/markdown/"+doc_name+".md","_blank");
+             });
              $("#btnPDF").click(function(){
-               window.open("https://gitprint.com/SPMSSICC/pages/blob/master/markdown/"+doc_name+".md","_blank");
+               window.open("https://spmssicc.github.io/pages/pdf/"+doc_name+".pdf","_blank");
              });
          });
 }
