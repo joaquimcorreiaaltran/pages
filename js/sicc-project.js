@@ -45,7 +45,7 @@ function loadDocButtons () {
   $.get("doc_buttons.html", function (data) {
              $("#content").append(data);
              $("#btnEditarDoc").click(function(){
-               window.open("window.open('https://github.com/SPMSSICC/pages/edit/master/markdown/"+doc_name+".md","_blank");
+               window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/"+doc_name+".md","_blank");
              });
              $("#btnPDF").click(function(){
                window.open("https://spmssicc.github.io/pages/pdf/"+doc_name+".pdf","_blank");
