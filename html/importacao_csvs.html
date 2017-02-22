@@ -15,80 +15,9 @@
 					<a id="amenuLink" href="amenu-source.html">Menu</a>
 			</div>
 	</header>
-	<div id="content">a<!DOCTYPE html>
-	<html>
-	<head>
-			<title>SICC - Manual de Utilizador</title>
-			<meta charset="utf-8" />
-			<meta name="viewport" content="width=device-width, initial-scale=1" />
-			<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
-			<!--<link rel="stylesheet" href="../../css/main.css">-->
-			<link rel="stylesheet" href="../css/style.css">
-			<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
-	</head>
-	<body>
-		<header>
-				<div id="sidebar">
-						<a id="amenuLink" href="amenu-source.html">Menu</a>
-				</div>
-		</header>
-		<div id="content">
-				<article id="documento" class="modulo">
-					<noscript>
-						<h1>Ops! :(</h1>
-						<p>
-							<br>Para visualizar corretamente esta página, é necessário permitir a execução de scripts no seu browser.</p>
-							<br>Por favor contacte o apoio técnico.
-							<br>Obrigado,
-							<br>Equipa SICC.
-						</p>
-					</noscript>
-				</article>
-				<footer>
-					<!--loaded with js-->
-				</footer>
-		</div>
-
-		<!-- libs -->
-		<script src="../js/jquery-3.1.1.js"></script>
-		<script src="../js/skel.min.js"></script>
-		<script src="../js/util.js"></script>
-		<script src="../js/main.js"></script>
-		<script src="../js/libs/showdown.js"></script>
-		<script src="../js/sicc-project.js"></script>
-		<script src="../js/libs/accordion-menu.js"></script>
-		<script src="../js/highslide-with-gallery.js"></script>
-		<script src="../js/jquery.zoom.js" async></script>
-
-		<script>
-			$(function(){
-				// convert .md file to html and place it into the html element sent (argument)
-			 	convertMdToHtml("documento");
-				loadFooter();
-				loadDocButtons();
-			});
-
-			$(window).scroll(function() {
-			  if ($(this).scrollTop() > 2000) {
-			    //add effect / animation
-			    $('.showWithScroll').stop(true).animate({
-			       opacity: 1
-			    }, 500);
-			  } else {
-			    if ($(this).scrollTop() < 1000) {
-			      $('.showWithScroll').stop(true).animate({
-							 opacity: 0
-			      }, 500);
-			    }
-			  }
-			});
-		</script>
-	</body>
-
-	</html>
-
+	<div id="content">
 			<article id="documento" class="modulo">
-				<noscrip id="js_warning">
+				<noscript>
 					<h1>Ops! :(</h1>
 					<p>
 						<br>Para visualizar corretamente esta página, é necessário permitir a execução de scripts no seu browser.</p>
@@ -96,7 +25,7 @@
 						<br>Obrigado,
 						<br>Equipa SICC.
 					</p>
-				</noscrip>
+				</noscript>
 			</article>
 			<footer>
 				<!--loaded with js-->
@@ -115,11 +44,9 @@
 	<script src="../js/jquery.zoom.js" async></script>
 
 	<script>
-
 		$(function(){
-			$("#js_warning").remove();
 			// convert .md file to html and place it into the html element sent (argument)
-			convertMdToHtml("documento");
+		 	convertMdToHtml("documento");
 			loadFooter();
 			loadDocButtons();
 		});
