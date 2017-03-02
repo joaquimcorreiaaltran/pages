@@ -6,11 +6,11 @@
 # Índice
 
 1. [Introdução](#introducao)
-2. [Criação de novo tipo de documento – Anulação de Faturas (AF)](#AF)
-3. [Criação de novo tipo de documento – Anulação de Receita (AR)](#AR)
+2. [Criação de novo tipo de documento – Anulação de Faturas (AF)](#af)
+3. [Criação de novo tipo de documento – Anulação de Receita (AR)](#ar)
 
 
-<a name="">introducao</a>
+<a name="introducao"></a>
 
 # 1.	Introdução
 
@@ -29,7 +29,7 @@ regularização dos mesmos, de modo a que o seu impacto no final seja 0.
 Assim, pretende-se com o seguinte capítulo mostrar a posição destes novos documentos no
 novo desenho de fluxograma, bem como explicar o respetivo procedimento de regularização.
 
-<a name="">AF</a>
+<a name="af"></a>
 
 # 2. Criação de novo tipo de documento – Anulação de Faturas (AF)
 
@@ -64,7 +64,7 @@ Na impressão, o resultado da Anulação de Faturas deve ser:
 
 ![Image_B.png](https://spmssicc.github.io/pages/markdown/assets/documentos_af_e_ar/Image_B.png)
 
-<a name="">AR</a>
+<a name="ar"></a>
 
 # 3. Criação de novo tipo de documento – Anulação de Receita (AR)
 
