@@ -44,11 +44,11 @@ Esquematizando, entende-se por processo ou requisito uma atividade ou um conjunt
 
 Alguns dos fatores que tornam complexo o processo de identificação das necessidades são:
 
--	 A informação é percebida de maneira diferente pelas pessoas que a consomem, consoante as suas necessidades de informação;
--	 Existe informação que não é sempre necessária mas quando o é, torna-se urgente;
--	 Pessoas diferentes necessitam de tipos de informação diferentes;
--	 O fluxo de informação e os canais de comunicação são muitas vezes complexos.
--   Uma pessoa pode não gostar de revelar a sua necessidade de informação (Redmine).
+	-	 A informação é percebida de maneira diferente pelas pessoas que a consomem, consoante as suas necessidades de informação;
+	-	 Existe informação que não é sempre necessária mas quando o é, torna-se urgente;
+	-	 Pessoas diferentes necessitam de tipos de informação diferentes;
+	-	 O fluxo de informação e os canais de comunicação são muitas vezes complexos.
+	-   Uma pessoa pode não gostar de revelar a sua necessidade de informação (Redmine).
 
 É assim trabalho da equipa SICC identificar as necessidades tentando de certa maneira uniformizar procedimentos comuns a todas as Entidades e fazer chegar a informação de igual maneira para todos os utilizadores e suas Chefias.
 
@@ -134,35 +134,27 @@ Por vezes, podem surgir requisitos novos resultantes do processo inicial, de aco
 ## 6.8	Documentos dos requisitos
 
 Um documento de requisito deve conter os seguintes elementos:
--   1) Introdução
 
-           	1.1 Intenção do documento
-           	1.2 Referências
-            1.3 Discrição do resto do documento
-
--   2) Definição do requisito
-
-            2.1 Perspetiva do produto;
-            2.2 Função do produto;
-            2.3 Características;
-
--   3) Especificação dos requisitos do sistema
-
-            3.1 Definir requisitos (funcional/não funcional) com utilizador
-                3.1.1 Funcionalidade, interface, sistema, etc.;
-                3.1.2 Enquadrar nos menus / menus novos;
-
--	  4) Quadro _forms_
-
-			4.1 Definir campos a serem usados;
-        	4.2 Definir obrigatoriedades ao utilizador;
-        	4.3 Preenchimento de campo de Obrigações (facultativo);
-
--	  5) Conclusão
-
-				5.1 Fazer um breve resumo dos requisitos demostrando a importância deles;
-            5.2 Concretização dos objetivos ou não e dar breve explicação;
-            5.3 Referir a importância de se ter efetuado o requisito;
+1.  Introdução
+		1.  Intenção do documento
+		2.  Referências
+		3.  Descrição do resto do documento
+2.  Definição do requisito
+		1.  Perspetiva do produto
+		2.  Função do produto
+		3.  Características
+3.  Especificação dos requisitos do sistema
+		1.  Definir requisitos (funcional/não funcional) com utilizador
+		2.  Funcionalidade, interface, sistema, etc.
+		3.  Enquadrar nos menus / menus novos
+4.  Quadro _forms_
+		1.  Definir campos a serem usados
+		2.  Definir obrigatoriedades ao utilizador
+		3.  Preenchimento de campo de Obrigações (facultativo)
+5.  Conclusão
+		1.  Fazer um breve resumo dos requisitos demostrando a importância deles
+		2.  Concretização dos objetivos ou não e dar breve explicação
+		3.  Referir a importância de se ter efetuado o requisito
 
 <a name="">processo_manual_utilizador</a>
 
@@ -190,7 +182,7 @@ Com os manuais, pretende-se oferecer uma opção como solução ao problema que 
 
 ## 4.	Manual de utilizador em suporte digital MdCharm (editor de texto) Markdown
 
-A palavra “inovação” nos Manuais de utilizador, é o que consta das Macro Tarefas definidas para este projeto, recorrendo para o efeito a duas ferramentas essenciais. Um editor de texto (MdCharm) e um repositório (GitHub) para disponibilizar esta mesma informação aos utilizadores e utilizando o conceito *Online*.
+A palavra “inovação” nos Manuais de utilizador, é o que consta das Macro Tarefas definidas para este projeto, recorrendo para o efeito a duas ferramentas essenciais. Um editor de texto (MdCharm) e um repositório (GitHub) para disponibilizar esta mesma informação aos utilizadores e utilizando o conceito _online_.
 
 ![Macrotarefas/9.png](https://spmssicc.github.io/pages/markdown/assets/macro_tarefas/9.png)
 
@@ -204,11 +196,11 @@ As imagens podem ilustrar algumas ideias melhor do que os textos, principalmente
 R: O GitHub é um repositório de controlo de versões, isto é, onde se pode trabalhar num mesmo diretório, dando a possibilidade de fazer alterações ao nosso projeto, dando a possibilidade de gravar documentação, imagens e comentários.
 
 Vocabulário básico:
-- Repositório Git: Pasta que contem arquivos de determinado projeto, cujas modificações nesses arquivos são “seguidas” pelo Git;
-- Commit: Salvar uma revisão dos documentos;
--	Merge: Junção de 2 “versões” de código;
--	Pull: Obter código de outro repositório (remoto), fazendo o merge para o repositório atual;
--	Push: Enviar código atual para outro repositório (remoto)
+	- Repositório Git: Pasta que contem arquivos de determinado projeto, cujas modificações nesses arquivos são “seguidas” pelo Git;
+	- Commit: Salvar uma revisão dos documentos;
+	-	Merge: Junção de 2 “versões” de código;
+	-	Pull: Obter código de outro repositório (remoto), fazendo o merge para o repositório atual;
+	-	Push: Enviar código atual para outro repositório (remoto)
 
 O primeiro passo para aceder ao GitHub, versão Web é a criação de uma conta, a qual servirá de base para o nosso repositório. Igualmente será necessário configurar a chave SSH para que se consiga comunicar com o GitHub.
 
@@ -218,14 +210,14 @@ O servidor Git restringe o acesso aos repositórios;
 
 A sua autenticação é feita por:
 
--	meio  de par de chaves (SSH) – Indicado para computadores não públicos (as chaves ficam ligadas a ele);
-- usuário e senha (HTTPS) – Pode ser utilizado em qualquer computador, sem configurações prévias.
+	-	meio  de par de chaves (SSH) – Indicado para computadores não públicos (as chaves ficam ligadas a ele);
+	- usuário e senha (HTTPS) – Pode ser utilizado em qualquer computador, sem configurações prévias.
 
 Os ecrãs do GitHub, aparecem da seguinte forma:
 
 ![Macrotarefas/11.png](https://spmssicc.github.io/pages/markdown/assets/macro_tarefas/11.png)
 
-No nosso repositório aparece por defeito o branch *master*, dessa forma quando falamos em *branch* corrente estamos a referir-nos ao *branch* que estamos a trabalhar no momento. Se nenhum for criado, então por norma trabalhamos sempre no *master*.
+No nosso repositório aparece por defeito o _branch_ _master_, dessa forma quando falamos em _branch_ corrente estamos a referir-nos ao _branch_ que estamos a trabalhar no momento. Se nenhum for criado, então por norma trabalhamos sempre no _master_.
 
 Neste capítulo, será abordada a criação de um novo repositório, bem como os passos de criação dos manuais/ requisitos e as imagens referidas no capítulo anterior.
 
@@ -243,7 +235,7 @@ A opção README.md é o nosso editor de texto no qual iremos colocar o texto re
 
 ![Macrotarefas/14.png](https://spmssicc.github.io/pages/markdown/assets/macro_tarefas/14.png)
 
-Seguidamente, pode o utilizador adicionar imagens que também ficarão guardadas no repositório, podendo juntá-las aos requisitos/manuais. Para o efeito o botão de *upload* deve ser pressionado.
+Seguidamente, pode o utilizador adicionar imagens que também ficarão guardadas no repositório, podendo juntá-las aos requisitos/manuais. Para o efeito o botão de _upload_ deve ser pressionado.
 
 ![Macrotarefas/15.png](https://spmssicc.github.io/pages/markdown/assets/macro_tarefas/15.png)
 
@@ -257,7 +249,7 @@ Ex:
 
 O ficheiro será guardado com: Parametrização_instituição_recolha.png
 
-Efetuado o *commit*, o endereço tem de ser copiado de maneira a integrarmos a imagem no manual/requisito.
+Efetuado o _commit_, o endereço tem de ser copiado de maneira a integrarmos a imagem no manual/requisito.
 
 ![Macrotarefas/19.png](https://spmssicc.github.io/pages/markdown/assets/macro_tarefas/19.png)
 

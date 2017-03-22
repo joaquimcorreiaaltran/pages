@@ -5,9 +5,9 @@
 
 # Índice
 
-1. [Introdução](#introducao)
-2. [Criação de novo tipo de documento – Anulação de Faturas (AF)](#af)
-3. [Criação de novo tipo de documento – Anulação de Receita (AR)](#ar)
+1.  [Introdução](#introducao)
+2.  [Criação de novo tipo de documento – Anulação de Faturas (AF)](#af)
+3.  [Criação de novo tipo de documento – Anulação de Receita (AR)](#ar)
 
 
 <a name="introducao"></a>
@@ -20,8 +20,8 @@ através da emissão de uma nota de crédito.
 
 Desta forma, no sistema SICC houve a necessidade de documentar os seguintes:
 
-- AF - Anulação de faturas (P2 + NC);
-- AR - Anulação de receitas (FD + CC).
+-   AF - Anulação de faturas (P2 + NC);
+-   AR - Anulação de receitas (FD + CC).
 
 Sem reflexo para a contabilidade, o que se pretende com estes dois tipos de documentos é a
 regularização dos mesmos, de modo a que o seu impacto no final seja 0.

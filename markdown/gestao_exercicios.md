@@ -4,10 +4,10 @@
 
 # Índice
 
-1. [Introdução](#introducao)
-2. [Abertura e encerramento de períodos contabilísticos](#abertura_encerramento_periodos_contabilisticos)
-3. [Produção de extrato de contas](#producao_extrato_contas)
-4. [Apuramento de resultados](#apuramento_resultados)
+1.  [Introdução](#introducao)
+2.  [Abertura e encerramento de períodos contabilísticos](#abertura_encerramento_periodos_contabilisticos)
+3.  [Produção de extrato de contas](#producao_extrato_contas)
+4.  [Apuramento de resultados](#apuramento_resultados)
 
 
 <a name="introducao"></a>
@@ -31,9 +31,9 @@ A parametrização dos exercícios serve de elemento agregador de todo o process
 A abertura do período contabilístico é efetuada no início do ano económico, sendo que a sua data de início é a 01-01-20XX e a sua data final a 31-12-20XX.
 Neste menu, são parametrizados os dados a usar no fecho do ano (Identifica e correlaciona o Organismo com o exercício que vai ser encerrado). Os lançamentos de encerramento de exercício na contabilidade deverão ser efetuados nos períodos extraordinários:
 
-- Mês 13 – Registos posteriores aos registos provisórios;
-- Mês 14 – Regularizações;
-- Mês 15 – Apuramento;
+-   Mês 13 – Registos posteriores aos registos provisórios;
+-   Mês 14 – Regularizações;
+-   Mês 15 – Apuramento;
 
 ![img_2.png](https://spmssicc.github.io/pages/markdown/assets/gestao_exercicios/img_2.png)
 
@@ -116,11 +116,11 @@ O RLE é constituído pelos seguintes componentes:
 
 O processo de “abater” qualquer um destes resultados, tem obrigatoriamente que obedecer à ordem inversa da altura da criação, sendo que:
 
-- Abater RL (Resultados Líquidos)
-- Abater RI (Resultados antes de imposto)
-- Abater RE (Resultados Extraordinários)
-- Abater RC (Resultados Correntes)
-- Abater RF (Resultados Financeiros)
-- Abater RO (Resultados Operacionais)
+-   Abater RL (Resultados Líquidos)
+-   Abater RI (Resultados antes de imposto)
+-   Abater RE (Resultados Extraordinários)
+-   Abater RC (Resultados Correntes)
+-   Abater RF (Resultados Financeiros)
+-   Abater RO (Resultados Operacionais)
 
 ![img_24.png](https://spmssicc.github.io/pages/markdown/assets/gestao_exercicios/img_24.png)

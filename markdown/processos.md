@@ -4,47 +4,47 @@
 
 # Índice
 
-1. [Introdução](#introducao)
-2. [Menu Orçamental](#menu_orcamental)
-	1. [Orçamento Anual](#orcamento_anual)
-	    1. [Recolha de Propostas Orçamentais](#recolha_propostas_orcamentais)
-	    2. [Fundos disponíveis (LPCA)](#fundos_disponíveis_plca)
-	    3. [Mapa (LPCA)](#mapas_lpca)
-    2. [Mapas Legais](#mapas_legais)
-	    1. [Mapa 7.7.1 e 7.7.2 – Orçamento de Despesa/Receita](#mapa_orcamento_despesa_receita)
-	    2. [Orçamento de Despesa](#orcamento_despesa)
-	    3. [Mapas de Execução Orçamenta](#mapas_execucao)
-	    4. [Controlo Orçamental - Despesa](#controlo_orcamental_despesa)
-	    5. [Mapa 8.3.1.1 e 8.3.1.2 – Alterações Orçamentais Despesa/Receita](#mapas_alteracoes_orcamentais_despesa_receita)
-3. [Menu Recolhas](#menu_recolhas)
-	1. [Ciclo Despesa](#ciclo_despesa)
-		1. [Cabimento (CB)](#cabimento_cb)
-		2. [Alterações de Cabimentos (AM)](#alteracoes_cabimentos_AM)
-		3. [Compromisso (CM)](#compromisso_cm)
-		4. [Alteração de Compromisso (AB)](#alteracao_compromisso_ab)
-		5. [Lançamentos (CP)](#lancamentos_cp)
-		6. [Alteração de Lançamentos (AL)](#alteracao_lancamentos_al)
-		7. [Credores p/ Execução Orçamental (CE)](#credores_execucao_orcamental_ce)
-		8. [Autorização de Pagamento (AP)](#autorizacao_pagamento_ap)
-			1. [Impressão de Autorizações de Pagamento (AP)](#impressao_autorizacoes_pagamento_ap)
-		9. [Transferências Bancárias](#transferencias_bancarias)
-			1. [Importar Transferências Bancárias](#importar_transferencias_bancarias)
-		10. [Pagamentos (PG)](#pagamentos_pg)
-	2. [Ciclo Receita](#ciclo_receita)
-		1. [Faturas Devedores (FD)](#faturas_devedores_fd)
-		2. [Devedores p/ execução orçamental (DE)](#devedores_execucao_orcamental_de)
-		3. [Guias de Receita (GR)](#guias_receita_gr)
-			1. [Impressão de Guias de Receita](#impressao_guias_receita)
-		5. [Cobranças (CO)](#cobrancas_co_1)
-			1. [Impressão de Listagem de Cobrança](#impressao_listagem_cobranca)
-			2. [Recolha de Produtos](#recolha_produtos)
-		8. [Cobranças (CO)](#cobrancas_co_2)
-		9. [Impressão Documentos OR](#impressao_documentos_or)
-4. [Menu Parametrização](#menu_parametrizacao)
-	1. [Tabelas Genéricas](#tabelas_genericas)
-		1. [Instituições Bancárias - Recolha](#instituicoes_bancarias_recolha)
-	2. [Terceiros](#terceiros)
-		1. [Gestão de Produtos - Recolha](#gestão_produtos_recolha)
+1.  [Introdução](#introducao)
+2.  [Menu Orçamental](#menu_orcamental)
+    1.  [Orçamento Anual](#orcamento_anual)
+	      1.  [Recolha de Propostas Orçamentais](#recolha_propostas_orcamentais)
+	      2.  [Fundos disponíveis (LPCA)](#fundos_disponíveis_plca)
+	      3.  [Mapa (LPCA)](#mapas_lpca)
+	  2.  [Mapas Legais](#mapas_legais)
+	      1.  [Mapa 7.7.1 e 7.7.2 – Orçamento de Despesa/Receita](#mapa_orcamento_despesa_receita)
+	      2.  [Orçamento de Despesa](#orcamento_despesa)
+	      3.  [Mapas de Execução Orçamenta](#mapas_execucao)
+	      4.  [Controlo Orçamental - Despesa](#controlo_orcamental_despesa)
+	      5.  [Mapa 8.3.1.1 e 8.3.1.2 – Alterações Orçamentais Despesa/Receita](#mapas_alteracoes_orcamentais_despesa_receita)
+3.  [Menu Recolhas](#menu_recolhas)
+	  1.   [Ciclo Despesa](#ciclo_despesa)
+        1.  [Cabimento (CB)](#cabimento_cb)
+		    2.  [Alterações de Cabimentos (AM)](#alteracoes_cabimentos_AM)
+		    3.  [Compromisso (CM)](#compromisso_cm)
+		    4.  [Alteração de Compromisso (AB)](#alteracao_compromisso_ab)
+		    5.  [Lançamentos (CP)](#lancamentos_cp)
+		    6.  [Alteração de Lançamentos (AL)](#alteracao_lancamentos_al)
+		    7.  [Credores p/ Execução Orçamental (CE)](#credores_execucao_orcamental_ce)
+		    8.  [Autorização de Pagamento (AP)](#autorizacao_pagamento_ap)
+			      1.  [Impressão de Autorizações de Pagamento (AP)](#impressao_autorizacoes_pagamento_ap)
+		    9.  [Transferências Bancárias](#transferencias_bancarias)
+			      1.  [Importar Transferências Bancárias](#importar_transferencias_bancarias)
+		    10.  [Pagamentos (PG)](#pagamentos_pg)
+	  2.  [Ciclo Receita](#ciclo_receita)
+		    1.  [Faturas Devedores (FD)](#faturas_devedores_fd)
+		    2.  [Devedores p/ execução orçamental (DE)](#devedores_execucao_orcamental_de)
+		    3.  [Guias de Receita (GR)](#guias_receita_gr)
+			     1.   [Impressão de Guias de Receita](#impressao_guias_receita)
+			  4.   [Cobranças (CO)](#cobrancas_co_1)
+			     1.   [Impressão de Listagem de Cobrança](#impressao_listagem_cobranca)
+			     2.   [Recolha de Produtos](#recolha_produtos)
+		    5.   [Cobranças (CO)](#cobrancas_co_2)
+		    6.   [Impressão Documentos OR](#impressao_documentos_or)
+4.  [Menu Parametrização](#menu_parametrizacao)
+		1.   [Tabelas Genéricas](#tabelas_genericas)
+		    1.   [Instituições Bancárias - Recolha](#instituicoes_bancarias_recolha)
+		2.   [Terceiros](#terceiros)
+	      1.   [Gestão de Produtos - Recolha](#gestão_produtos_recolha)
 
 <a name="introducao"></a>
 
@@ -76,16 +76,16 @@ Este submenu permite o acesso às propostas orçamentais e respetivo registo do 
 
 O formulário para recolha de propostas orçamentais é composta por:
 
-|Opção| Descritivo| Utilizadores|
+| Opção | Descritivo | Utilizadores |
 |:----|:----------|:------------|
-|Ano|Exercício a que dizem respeito as informação da instituição.|Todos|
-|Orçamento Ordinário|Seleção apenas se for a introdução de um orçamento ordinário ![img_orç_ordinario.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_orç_ordinario.png) |Todos|
-|Alteração Orçamental|Seleção apenas se for uma alteração orçamental a registar. Ao selecionar, automaticamente aparece o número de lançamento o qual se pretende alterar. ![img_alteracao_orc_num_lancamento.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_alteracao_orc_num_lancamento.png) |Todos|
-|Atividade/Departamento|Identificação do tipo de Atividade/Departamento. Na seleção do botão de ajuda, o utilizador carregando no círculo ![img_radio_unselected.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_radio_unselected.png) pode obter uma listagem de todos os tipos de Atividades/Departamentos.|Todos|
-|Data|---?---|Todos|
-|Observações|Campo de observações onde estão ou devem ser colocadas todas as informações pretendidas pelo utilizador.|Todos|
-|Data aprovação|---?---|Todos|
-|Novo Orçamento|Ao clicar neste botão, abrirá a proposta orçamental a ser carregada com identificação dos classificadores económicos e valores a integrar.|Todos|
+| Ano | Exercício a que dizem respeito as informação da instituição. | Todos |
+| Orçamento Ordinário | Seleção apenas se for a introdução de um orçamento ordinário ![img_orç_ordinario.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_orç_ordinario.png) | Todos |
+| Alteração Orçamental | Seleção apenas se for uma alteração orçamental a registar. Ao selecionar, automaticamente aparece o número de lançamento o qual se pretende alterar. ![img_alteracao_orc_num_lancamento.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_alteracao_orc_num_lancamento.png) | Todos |
+| Atividade/Departamento | Identificação do tipo de Atividade/Departamento. Na seleção do botão de ajuda, o utilizador carregando no círculo ![img_radio_unselected.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_radio_unselected.png) pode obter uma listagem de todos os tipos de Atividades/Departamentos. | Todos |
+| Data | ---?--- | Todos |
+| Observações | Campo de observações onde estão ou devem ser colocadas todas as informações pretendidas pelo utilizador. | Todos |
+| Data aprovação | ---?--- | Todos |
+| Novo Orçamento | Ao clicar neste botão, abrirá a proposta orçamental a ser carregada com identificação dos classificadores económicos e valores a integrar. | Todos |
 
 Neste ecrã, decidir os valores a constarem na proposta do orçamento através da inserção dos montantes de receita ou despesa pelos vários itens de orçamento.
 Nesta etapa, o utilizador que efetua o carregamento em SICC, tem de ter em conta a divisão pelas respetivas rubricas orçamentais. Verificar no entanto nesta fase se o total das receitas igual às despesas.
@@ -157,18 +157,18 @@ Nos próximos passos, vai ser demonstrado o processo de criação dos fundos dis
 
 ![img_9a.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_9a.png)
 
-|Opção| Descritivo| Utilizadores|
+| Opção | Descritivo | Utilizadores |
 |:----|:----------|:------------|
-|Ano|Exercício a que dizem respeito as informação da instituição.||
-|Mês|Seleção do mês para carregamento dos fundos||
-|Alteração|Seleção do número de alteração que se pretende||
-|Data|- - - ? - - -||
-|Observações|Campo de observações onde estão ou devem ser colocadas todas as informações pretendidas pelo utilizador.||
-|Diretório|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido.||
-|Novo Orçamento|Este botão permite a gravar alterações que tenham sido necessárias de ajustar.|
-|Produção de mapa em CSV|Esta opção permite a produção do mapa em ficheiro com extensão CSV|
-|Consulta|Este botão permite ao utilizador consultar os valores carregados dos fundos disponíveis|
-|Sair|Este botão permite ao utilizador sair do ecrã corrente.|
+| Ano | Exercício a que dizem respeito as informação da instituição. ||
+| Mês | Seleção do mês para carregamento dos fundos. ||
+| Alteração | Seleção do número de alteração que se pretende. ||
+| Data | - - - ? - - - ||
+| Observações | Campo de observações onde estão ou devem ser colocadas todas as informações pretendidas pelo utilizador. ||
+| Diretório | Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido. ||
+| Novo Orçamento | Este botão permite a gravar alterações que tenham sido necessárias de ajustar. |
+| Produção de mapa em CSV | Esta opção permite a produção do mapa em ficheiro com extensão CSV. |
+| Consulta | Este botão permite ao utilizador consultar os valores carregados dos fundos disponíveis. |
+| Sair | Este botão permite ao utilizador sair do ecrã corrente. |
 
 Após o preenchimentos dos campos atrás referidos, e sendo que se trata de um Novo Orçamento, o ecrã que surge é a de preenchimento dos valores de orçamento de fundos próprios.
 
@@ -307,15 +307,15 @@ Ao clicar, surge o ecrã abaixo e que permite proceder à escolha do tipo de inf
 
 ![img_38.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_38.png)
 
-|Campo|Obrigatoriedade|Descritivo|
+| Campo | Obrigatoriedade | Descritivo |
 |:----|:---------|:---------|
-|Exercício|Obrigatório|Exercício a que dizem respeito as informação da instituição.|
-|Proposta|Obrigatório|Seleção de um dos campos: ![img_39.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_39.png)|
-|Orçamento|Obrigatório|Seleção de um dos campos: ![img_40.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_40.png) __Ao selecionar a “Alteração Orçamental”, surge automaticamente para preenchimento: ![img_41.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_41.png) |
-|Financiamento|Obrigatório|Seleção de um dos campos: ![img_42.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_42.png)|
-|Atividades/Departamento|Obrigatório|Seleção de um dos campos: ![img_43.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_43.png)|
-|Pri. Data|Obrigatório||
-|Últ. Data|Obrigatório||
+| Exercício | Obrigatório | Exercício a que dizem respeito as informação da instituição. |
+| Proposta | Obrigatório | Seleção de um dos campos: ![img_39.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_39.png) |
+| Orçamento | Obrigatório | Seleção de um dos campos: ![img_40.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_40.png) __Ao selecionar a “Alteração Orçamental”, surge automaticamente para preenchimento: ![img_41.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_41.png) |
+| Financiamento | Obrigatório | Seleção de um dos campos: ![img_42.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_42.png) |
+| Atividades/Departamento | Obrigatório | Seleção de um dos campos: ![img_43.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_43.png) |
+| Pri. Data | Obrigatório ||
+| Últ. Data | Obrigatório ||
 
 |Botão|Descritivo|
 |:----|:---------|
@@ -453,8 +453,8 @@ O novo ecrã surge e associada a ela, aparecem os movimentos de lançamento do c
 
 O Cabimento acaba de ser gerado, no entanto deverá o utilizador confirmar em sistema a criação do mesmo. No primeiro separador, o utilizador tem duas formas de o fazer: de entrar no seguinte ecrã, evidenciando o número de processo de aquisição da criação do CAB:
 
-- Para aceder à informação de cabimento deverá ser pressionado o botão "Informação de CB";
-- Para consulta deverá ser pressionado o botão "Consulta".
+-   Para aceder à informação de cabimento deverá ser pressionado o botão "Informação de CB";
+-   Para consulta deverá ser pressionado o botão "Consulta".
 
 :warning: __A novidade no novo sistema SICC é o aparecimento do botão "Importar", que permite aos utilizadores carregarem a partir de um documento de Excel vários cabimentos de forma muito mais rápida e viável.__
 
@@ -563,7 +563,7 @@ Após validação dos elementos integrados e constatado que os valores estão co
 
 ### Compromisso (CM)
 
-Entende-se por **Compromisso (CM)**, a verificação prévia de fundos disponíveis, as obrigações de efetuar pagamentos a terceiros em contrapartida do fornecimento de bens e serviços ou da satisfação de outras condições. Os compromissos consideram-se assumidos quando é executada uma ação formal pela entidade, como seja a emissão de ordem de compra, nota de encomenda ou documento equivalente, ou a assinatura de um contrato, acordo ou protocolo, podendo também ter um carácter permanente e estarem associados a pagamentos durante um período indeterminado de tempo, nomeadamente, salários, rendas, eletricidade ou pagamentos de prestações diversas.
+Entende-se por _Compromisso (CM)_, a verificação prévia de fundos disponíveis, as obrigações de efetuar pagamentos a terceiros em contrapartida do fornecimento de bens e serviços ou da satisfação de outras condições. Os compromissos consideram-se assumidos quando é executada uma ação formal pela entidade, como seja a emissão de ordem de compra, nota de encomenda ou documento equivalente, ou a assinatura de um contrato, acordo ou protocolo, podendo também ter um carácter permanente e estarem associados a pagamentos durante um período indeterminado de tempo, nomeadamente, salários, rendas, eletricidade ou pagamentos de prestações diversas.
 
 Por parte do utilizador, há necessidade de evidenciar novamente o “número de processo de aquisição”. De forma automática, o preenchimento do “valor disponível de cabimento” aparece por defeito. Posteriormente, deve o utilizador pressionar no botão “Gravar como CM”, bem como atribuir o montante do compromisso.
 
@@ -813,11 +813,11 @@ Ao confirmar, uma nova janela surge com os movimentos contabilísticos associado
 
 #### Impressão de Autorizações de Pagamento (AP)
 
-Nesta etapa, é demonstrado o procedimento para fazer as impressões das AP’s (de forma **individual** ou **global**) geradas no passo anterior. Para isso, deve o utilizador seguir o seguinte caminho no sistema:
+Nesta etapa, é demonstrado o procedimento para fazer as impressões das AP’s (de forma _individual_ ou _global_) geradas no passo anterior. Para isso, deve o utilizador seguir o seguinte caminho no sistema:
 
 ![img_139.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_139.png)
 
-**Individual**
+_Individual_
 
 Deve o utilizador, escolher a entidade da qual pretende extrair a Autorização de Pagamento.
 
@@ -825,7 +825,7 @@ Deve o utilizador, escolher a entidade da qual pretende extrair a Autorização 
 
 :warning:__O utilizador tem de selecionar sempre os documentos que deseja, sejam para consulta ou impressão através da colocação de ![img_checkbox_checked.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_checkbox_checked.png) no ecrã.__
 
-**Global**
+_Global_
 
 O utilizador tem a possibilidade de definir um intervalo, com a possibilidade escolher as entidades das quais pretende extrair as Autorizações de Pagamento.
 
@@ -848,11 +848,11 @@ O utilizador tem a possibilidade de definir um intervalo, com a possibilidade es
 |Imprimir|Este botão permite a geração do documento em PDF|
 |Sair|Este botão permite ao utilizador sair do ecrã corrente.|
 
-De forma **Individual**, ao selecionar “imprimir”, o sistema produz a Autorização de Pagamento em PDF.
+De forma _Individual_, ao selecionar “imprimir”, o sistema produz a Autorização de Pagamento em PDF.
 
 ![img_144.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_144.png)
 
-De forma **Global**, ao selecionar “imprimir”, o sistema produz a Autorização de Pagamento Coletiva em PDF.
+De forma _Global_, ao selecionar “imprimir”, o sistema produz a Autorização de Pagamento Coletiva em PDF.
 
 ![img_145.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_145.png)
 
@@ -880,7 +880,7 @@ Surge um ecrã na qual o utilizador tem de preencher de acordo com o quadro abai
 |Última data|Obrigatório|Definir intervalo última data|
 |Primeiro documento|Obrigatório|Definir intervalo primeiro documento a integrar|
 |Último documento|Obrigatório|Definir intervalo último documento a integrar|
-|Gerar Ficheiro de carregamento|Obrigatório|Geração do ficheiro com número sequencial, sendo que prevalece o número de cálculo maior, ou seja, se o número da ultima transferência efetuada for superior ao ![img_num_de_sequencia_prox.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_num_de_sequencia_prox.png), do caminho: **Parametrização - Tabelas Genéricas - Inst. Bancárias – Recolha**, a numeração atribuída é sempre a mais alta numericamente.|
+|Gerar Ficheiro de carregamento|Obrigatório|Geração do ficheiro com número sequencial, sendo que prevalece o número de cálculo maior, ou seja, se o número da ultima transferência efetuada for superior ao ![img_num_de_sequencia_prox.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_num_de_sequencia_prox.png), do caminho: _Parametrização - Tabelas Genéricas - Inst. Bancárias – Recolha_, a numeração atribuída é sempre a mais alta numericamente.|
 
 Findo o preenchimento dos campos, deve o utilizador dar continuidade ao processo pressionando o botão "Transferência Bancária", originando novo ecrã.
 
@@ -969,7 +969,7 @@ Neste ecrã, o utilizador tem de preencher com a informação de acordo com as i
 
 ![img_166.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_166.png)
 
-:warning:__O utilizador tem de selecionar **sempre** os documentos que deseja, sejam para consulta ou impressão através da colocação do visto ![img_checkbox_checked.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_checkbox_checked.png) no ecrã anterior.__
+:warning:__O utilizador tem de selecionar _sempre_ os documentos que deseja, sejam para consulta ou impressão através da colocação do visto ![img_checkbox_checked.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_checkbox_checked.png) no ecrã anterior.__
 
 
 |Campo|Obrigatoriedade|Descritivo|
@@ -1118,7 +1118,7 @@ De igual modo à impressão das GR, neste processo é demonstrado o procedimento
 
 ![img_188.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_188.png)
 
-:warning:__O utilizador tem de selecionar **sempre** os documentos que deseja, sejam para consulta ou impressão através da colocação de no ecrã.__
+:warning:__O utilizador tem de selecionar _sempre_ os documentos que deseja, sejam para consulta ou impressão através da colocação de no ecrã.__
 
 ![img_189.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_189.png)
 
@@ -1207,7 +1207,7 @@ Neste passo, é demonstrado o procedimento para fazer as impressões das GR gera
 
 ![img_199.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_199.png)
 
-:warning:__O utilizador tem de selecionar **sempre** os documentos que deseja, sejam para consulta ou impressão através da colocação de um visto ![img_checkbox_checked.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_checkbox_checked.png) no ecrã.__
+:warning:__O utilizador tem de selecionar _sempre_ os documentos que deseja, sejam para consulta ou impressão através da colocação de um visto ![img_checkbox_checked.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_checkbox_checked.png) no ecrã.__
 
 ![img_200.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_200.png)
 

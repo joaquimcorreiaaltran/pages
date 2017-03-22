@@ -4,17 +4,17 @@
 
 # Índiceeee
 
-1.    [Introdução](#introducao)
-2.    [Âmbito](#ambito)
-3.    [PO - Propostas Orçamentais](#PO)
-4.    [CB e CM - Cabimentos e Compromissos](#CB_CM)
-5.    [CP - Comprometidos](#CP)
-6.    [P1 e P2 - Processado em conferência e Processado conferido](#P1_P2)
-7.    [AM, AB e AL - Alterações](#AM_AB_AL)
-8.    [CE - Credores p/ execução Orçamental](#CE)
-9.    [AP - Autorização de Pagamento](#AP)
-10.    [PG - Pagamento](#PG)
-11.    [OD - Operações Diversas](#OD)
+1.  [Introdução](#introducao)
+2.  [Âmbito](#ambito)
+3.  [PO - Propostas Orçamentais](#PO)
+4.  [CB e CM - Cabimentos e Compromissos](#CB_CM)
+5.  [CP - Comprometidos](#CP)
+6.  [P1 e P2 - Processado em conferência e Processado conferido](#P1_P2)
+7.  [AM, AB e AL - Alterações](#AM_AB_AL)
+8.  [CE - Credores p/ execução Orçamental](#CE)
+9.  [AP - Autorização de Pagamento](#AP)
+10. [PG - Pagamento](#PG)
+11. [OD - Operações Diversas](#OD)
 
 <a name="introducao"></a>
 
@@ -24,15 +24,15 @@ Este capítulo pretende demonstrar as novas funcionalidades da aplicação SICC,
 
 Cada capítulo irá abordar uma funcionalidade em particular demonstrando ao utilizador o fluxo de trabalho necessário para completar uma determinada tarefa de importação de ficheiros CSV. Desta forma, o documento está estruturado da seguinte forma:
 
-- PO - Propostas Orçamentais;
-- CB e CM - Cabimentos e Compromissos;
-- CP - Comprometidos;
-- P1 e P2 - Processado em conferência e Processado conferido;
-- AM, AB e AL - Alterações;
-- CE - Credores p/ execução Orçamental;
-- AP - Autorização de Pagamento;
-- PG - Pagamento;
-- OD - Operações Diversas.
+-   PO: Propostas Orçamentais;
+-   CB e CM - Cabimentos e Compromissos;
+-   CP - Comprometidos;
+-   P1 e P2 - Processado em conferência e Processado conferido;
+-   AM, AB e AL - Alterações;
+-   CE - Credores p/ execução Orçamental;
+-   AP - Autorização de Pagamento;
+-   PG - Pagamento;
+-   OD - Operações Diversas.
 
 <a name="ambito"></a>
 
@@ -102,23 +102,27 @@ Uma nova mensagem surge e o ficheiro integrado, dando-se assim como encerrado o 
 Conforme mencionado no capítulo anterior, os vários lançamentos no sistema SICC, obedecem a uma determinada estrutura, a qual tem de ser respeitada para a integração dos mesmos ficheiros. Neste segundo capítulo é demonstrada assim a estrutura para os Cabimentos e para os Compromissos.
 
 Cabimentos:
+
 ![imagem11](https://spmssicc.github.io/pages/markdown/assets/importacao_csvs/image11.png)
 
 Compromissos:
+
 ![imagem12](https://spmssicc.github.io/pages/markdown/assets/importacao_csvs/image12.png)
 
 Menu:
+
 ![imagem13](https://spmssicc.github.io/pages/markdown/assets/importacao_csvs/image13.png)
 
 Submenu:
+
 ![imagem14](https://spmssicc.github.io/pages/markdown/assets/importacao_csvs/image14.png)
 
 **Nota:**
 Escolher o separador do Cabimento (CB) ou do Compromisso (CM), sendo que ambos têm a possibilidade de Importação
 
 Como explicado anteriormente, as telas de importação funcionam de igual forma em todos os ecrãs, sendo que podem acontecer duas situações:
-- Erro no ficheiro;
-- Ficheiro testado e pronto para importação;
+-   Erro no ficheiro;
+-   Ficheiro testado e pronto para importação;
 ![imagem15](https://spmssicc.github.io/pages/markdown/assets/importacao_csvs/image15.png)
 
 **Nota:**
@@ -182,9 +186,9 @@ Para efeitos de manual, é demonstrada a tela de importação do P2, onde o util
 
 De forma abrangente, neste capítulo pretende-se demonstrar as telas das posições nas ligações CSV. para as possíveis alterações a serem realizadas no sistema SICC.
 
-- Alterações de CB (AM)
-- Alterações de CM (AB)
-- Alterações de CP (AL)
+-   Alterações de CB (AM);
+-   Alterações de CM (AB);
+-   Alterações de CP (AL).
 
 Os menus para estas alterações encontram-se no seguinte caminho:
 

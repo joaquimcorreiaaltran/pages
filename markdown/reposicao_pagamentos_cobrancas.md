@@ -4,10 +4,10 @@
 
 # Índice
 
-1. [Introdução](#introducao)
-2. [Reposição Abatida aos Pagamentos](#rap)
-3. [Reposição Não Abatida nos Pagamentos](#rnap)
-4. [Resumo](#resumo)
+1.  [Introdução](#introducao)
+2.  [Reposição Abatida aos Pagamentos](#rap)
+3.  [Reposição Não Abatida nos Pagamentos](#rnap)
+4.  [Resumo](#resumo)
 
 <a name="introducao"></a>
 
@@ -16,8 +16,8 @@
 A reposição de pagamentos e cobranças dividem-se em RAP/RNAP, no sistema SICC e surge sempre que é detetado um pagamento/cobrança indevido do organismo, a um fornecedor/ cliente e é finalizada quando efetivado o pagamento/ recebimento.
 Sempre que seja detetado um pagamento / recebimento indevido, deverá proceder à emissão de uma guia de reposição. Esta pode ser:
 
-- Reposição Abatida aos Pagamentos (RAP), quando existe uma alteração a um pagamento já efetuado e são considerados contabilisticamente como Notas de Crédito ( NC);
-- Reposição Não Abatida aos Pagamentos (RNAP) quando existe uma alteração a uma cobrança já efetuada e são consideradas contabilisticamente como CC;
+-   Reposição Abatida aos Pagamentos (RAP), quando existe uma alteração a um pagamento já efetuado e são considerados contabilisticamente como Notas de Crédito ( NC);
+-   Reposição Não Abatida aos Pagamentos (RNAP) quando existe uma alteração a uma cobrança já efetuada e são consideradas contabilisticamente como CC;
 
 <a name="rap"></a>
 
@@ -44,7 +44,7 @@ Estas operações abatem aos pagamentos realizados, libertando as dotações cor
 Desta forma, no menu:
 ![img_3.png](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_3.png)
 
-Este mesmo registo de reposição pagamento poderá ser efetuado por uma das seguintes contas: 3*,4*,6* ou 7*.
+Este mesmo registo de reposição pagamento poderá ser efetuado por uma das seguintes contas: 3\*,4\*,6\* ou 7\*.
 
 ![img_4.png](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_4.png)
 
@@ -54,13 +54,13 @@ Desta forma e para a despesa, o sistema SICC, identifica os documentos quando se
 
 ![img_6.png](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_6.png)
 
-NC – O processo de lançamento de uma Reposição de pagamento, é bastante similar a uma Nota de crédito convencional. Desta forma, todas as contas 2* (exceto a 25*) são movimentadas a débito, por contrapartida das contas 3*, 4*, 5*, 6*, 7*.
+NC – O processo de lançamento de uma Reposição de pagamento, é bastante similar a uma Nota de crédito convencional. Desta forma, todas as contas 2\* (exceto a 25\*) são movimentadas a débito, por contrapartida das contas 3\*, 4\*, 5\*, 6\*, 7\*.
 
 **Movimentação Contabilística: Lançar Nota de Crédito (doc. NC)**
 
 ![img_7.png](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_7.png)
 
-CE – Na altura do lançamento do CE, a informação é proveniente do criado anteriormente na NC, sendo que a conta 2*passa a crédito e a conta 2529* a débito, com o classificador e económico e chave orçamental associado à conta 3*, 4*, 5*, 6*, 7* gerado anteriormente.
+CE – Na altura do lançamento do CE, a informação é proveniente do criado anteriormente na NC, sendo que a conta 2*passa a crédito e a conta 2529* a débito, com o classificador e económico e chave orçamental associado à conta 3\*, 4\*, 5\*, 6\*, 7\* gerado anteriormente.
 
 ![img_8.png](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_8.png)
 
@@ -80,11 +80,11 @@ AP - Neste passo, pode-se efetuar a confirmação sem associar a fatura, pelo fa
 
 ![img_13](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_13.png)
 
-:warning: __Se se tratar de uma transferência bancária, é necessário acrescentar o movimento contabilístico da conta 111 (caixa) a débito por contrapartida da rubrica financeira gerada pelas contas 3; 4; 5; 6; 7.__
+**Se se tratar de uma transferência bancária, é necessário acrescentar o movimento contabilístico da conta 111 (caixa) a débito por contrapartida da rubrica financeira gerada pelas contas 3; 4; 5; 6; 7.**
 
 ![img_14](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_14.png)
 
-:warning:__Se o Documento for transferência Bancária na AP, o sistema irá acrescentar registo da 111* a Crédito pela conta 112* ou 113* de acordo com a seleção efetuada na conta bancária da AP.__
+**Se o Documento for transferência Bancária na AP, o sistema irá acrescentar registo da 111\* a Crédito pela conta 112\* ou 113* de acordo com a seleção efetuada na conta bancária da AP.**
 
 PG – No Pagamento, os movimentos criados na AP são replicados nesta etapa de criação.
 
@@ -117,7 +117,7 @@ As reposições não abatidas nos pagamentos abrangem as receitas provenientes d
 
 **Legenda:**
 1. A contabilidade analisa a cobrança indevida;
-2. Este documento será registado debitando a conta do cliente por contrapartida da conta 3*; 4*; 5*; 6*;7* com introdução da respetiva classificação orçamental. Após registada a CC/RNAP, a mesma é enviada ao cliente;
+2. Este documento será registado debitando a conta do cliente por contrapartida da conta 3\*; 4\*; 5\*; 6\*;7\* com introdução da respetiva classificação orçamental. Após registada a CC/RNAP, a mesma é enviada ao cliente;
 3. Cliente efetua o pagamento para regularizar a cobrança indevida;
 4. O programa de liquidação da receita permitirá selecionar a RNAP em aberto que se pretende transferir para a conta 2519*.
 
@@ -125,7 +125,7 @@ Desta forma, no menu:
 
 ![img_22](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_22.png)
 
-Um novo ecrã surge com uma *checkbox* que permite ao utilizador, definir se trata de um CC ou uma RNAP. Este mesmo registo de reposição pagamento, igualmente à RAP, poderá ser efetuado por uma das seguintes contas: 3*,4*,6* ou 7* a débito, por contrapartida de uma 2* (expeto 25*).
+Um novo ecrã surge com uma *checkbox* que permite ao utilizador, definir se trata de um CC ou uma RNAP. Este mesmo registo de reposição pagamento, igualmente à RAP, poderá ser efetuado por uma das seguintes contas: 3*,4*,6\* ou 7\* a débito, por contrapartida de uma 2\* (expeto 25\*).
 Assim, e para efeitos de manual de  utilizador, demonstramos o processo de contabilização abaixo da RNAP.
 Deve o utilizador escolher a entidade, bem como atribuir um número de documento com o respetivo valor. Tratando-se de uma RNAP, a *checkbox* tem de estar ativa.
 
@@ -137,13 +137,13 @@ Desta forma e para a receita, o sistema SICC, identifica os documentos quando se
 
 ![img_25](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_25.png)
 
-CC – O processo de lançamento de uma Reposição de pagamento, é bastante similar a um crédito a clientes convencional. Desta forma, todas as contas 2* (exceto a 2529*) são movimentadas a débito, por contrapartida das contas 3*, 4*, 5*, 6*, 7*.
+CC – O processo de lançamento de uma Reposição de pagamento, é bastante similar a um crédito a clientes convencional. Desta forma, todas as contas 2\* (exceto a 2529*) são movimentadas a débito, por contrapartida das contas 3*, 4*, 5*, 6*, 7*.
 
 **Movimentação Contabilística: Registar RNAP (doc. CC)**
 
 ![img_26](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_26.png)
 
-DE – Na altura do lançamento do DE, a informação é proveniente do criado anteriormente no CC, sendo que a conta 2* passa a crédito e a conta 2519* a débito, com o classificador económico associado à conta 3*, 4*, 5*, 6*, 7* gerado anteriormente no CC.
+DE – Na altura do lançamento do DE, a informação é proveniente do criado anteriormente no CC, sendo que a conta 2\* passa a crédito e a conta 2519\* a débito, com o classificador económico associado à conta 3*, 4*, 5*, 6*, 7* gerado anteriormente no CC.
 
 ![img_27](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_27.png)
 
@@ -181,18 +181,18 @@ Os seus registos contabilísticos resumem-se a:
 
 ### **RAP:**
 
-|Registo contabilístico|Débito|Crédito|
+| Registo contabilístico | Débito | Crédito |
 |:---------------------|:-----|:------|
-|Lançar Nota de Crédito (NC/RAP)|3*; 4*; 5*; 6*; 7*|22*/26*|
-|Liquidação da RAP (CE)|2529*|22*/26*|
-|Registo da entrada de Pagamento da RAP (AP/PG)|1*|2529*|
-|Movimentação Contabilística no NC (Rap ou NC “normal”) ao gerar contabilidade|02700000|02600000|
-|Movimentação Contabilística no NC (Rap ou NC “normal”) ao gerar contabilidade|02600000|02300000|
+| Lançar Nota de Crédito (NC/RAP) | 3*; 4*; 5*; 6*; 7* | 22*/26* |
+| Liquidação da RAP (CE) | 2529* | 22*/26* |
+| Registo da entrada de Pagamento da RAP (AP/PG) | 1* | 2529* |
+| Movimentação Contabilística no NC (Rap ou NC “normal”) ao gerar contabilidade | 02700000 | 02600000 |
+| Movimentação Contabilística no NC (Rap ou NC “normal”) ao gerar contabilidade | 02600000 | 02300000 |
 
 ### **RNAP:**
 
-|Registo contabilístico|Débito|Crédito|
+| Registo contabilístico | Débito | Crédito |
 |:---------------------|:-----|:------|
-|Registar RNAP (CC)|3*; 4*; 5*; 6*; 7*|22*/26*|
-|Liquidação da Receita (DE)|2519*|22*/26*|
-|Registo da entrada de Pagamento da RNAP (GR/CO)|1*|2519*|
+| Registar RNAP (CC) | 3*; 4*; 5*; 6*; 7* | 22*/26* |
+| Liquidação da Receita (DE) | 2519* | 22*/26* |
+| Registo da entrada de Pagamento da RNAP (GR/CO) | 1* | 2519* |

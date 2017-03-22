@@ -4,11 +4,11 @@
 
 ---
 
-1. [O que é o SICC?](#que_sicc)
-2. [Para que serve?](#para_que_serve)
-3. [Quais os principais serviços e processos suportados?](#quais_principais_servicos_processos_suportados)
-4. [A quem se destina o sistema?](#quem_se_destina_sistema)
-5. [Quais os requisitos mínimos de utilização?](#quais_requisitos_minimos)
+1.  [O que é o SICC?](#que_sicc)
+2.  [Para que serve?](#para_que_serve)
+3.  [Quais os principais serviços e processos suportados?](#quais_principais_servicos_processos_suportados)
+4.  [A quem se destina o sistema?](#quem_se_destina_sistema)
+5.  [Quais os requisitos mínimos de utilização?](#quais_requisitos_minimos)
 
 <a name="o_que_e_o_sicc"></a>
 
@@ -28,16 +28,16 @@ Registo na Contabilidade Orçamental, Patrimonial e Analítica, consagrando os p
 
 #### Quais os principais serviços e processos suportados?
 
-- Recolha de Movimentos;
-- Ligação de outras aplicações;
-- Gestão de Terceiros;
-- Gestão de Tesouraria;
-- Contabilidade Geral;
-- Contabilidade Analítica;
-- Contabilidade Orçamental;
-- Parametrização e passagem de ano;
-- Utilitários diversos;
-- Gestão de perfis e utilizadores.
+-   Recolha de Movimentos;
+-   Ligação de outras aplicações;
+-   Gestão de Terceiros;
+-   Gestão de Tesouraria;
+-   Contabilidade Geral;
+-   Contabilidade Analítica;
+-   Contabilidade Orçamental;
+-   Parametrização e passagem de ano;
+-   Utilitários diversos;
+-   Gestão de perfis e utilizadores.
 
 <a name="quem_se_destina_sistema"></a>
 
@@ -46,16 +46,17 @@ Registo na Contabilidade Orçamental, Patrimonial e Analítica, consagrando os p
 Colaboradores das entidades de saúde clientes da aplicação SICC, cujas responsabilidades exijam registo e/ou leitura de informação contabilística da entidade associada.
 
 <a name="quais_requisitos_minimos"></a>
-- #### Quais os requisitos mínimos de utilização?
+#### Quais os requisitos mínimos de utilização?
 
-- Conta de utilizador ativa ([Como obtenho uma conta?][Como obtenho uma conta?]);
-- Ligação à [RIS][ris];
-- [Java 7][java7], 32-Bit ou superior ([Quais os requisitos?][Quais os requisitos?]);
-- Browser com Java ativado ([Como ativo?]);
-- Leitor de ficheiros PDF;
-- Leitor de ficheiros CSV.
+-   Conta de utilizador ativa ([Como obtenho uma conta?][Como obtenho uma conta?]);
+-   Ligação à [RIS][ris];
+-   [Java 7][java7], 32-Bit ou superior ([Quais os requisitos?][Quais os requisitos?]);
+-   Browser com Java ativado ([Como ativo?][9556bc7c]);
+-   Leitor de ficheiros PDF;
+-   Leitor de ficheiros CSV.
 
 [Como obtenho uma conta?]: https://adicionar_link_para_procedimento_oficial "Como obtenho uma conta?"
 [java7]: https://www.java.com "Java7"
 [Quais os requisitos?]: https://www.java.com/pt_BR/download/help/sysreq.xml "Quais os requisitos?"
-[Como ativo?]: https://java.com/en/download/help/enable_browser.xml "Como ativo?"
+
+  [9556bc7c]: https://java.com/en/download/help/enable_browser.xml "como_ativo_java"

@@ -95,7 +95,7 @@ Posteriormente à criação das chaves orçamentais, o utilizador tem a possibil
 
 ![img_12](https://spmssicc.github.io/pages/markdown/assets/chave_orcamental_por_ano/img_12.png)
 
-:warning:__Todas as manutenções e gestões dos elementos da Chave Orçamental, devem ser parametrizados através do caminho acima supra referenciado. Seja a nível da Fonte de Financiamento; Programa; Medida; Projeto; Regionalização; Atividade ou Natureza.__
+**Todas as manutenções e gestões dos elementos da Chave Orçamental, devem ser parametrizados através do caminho acima supra referenciado. Seja a nível da Fonte de Financiamento; Programa; Medida; Projeto; Regionalização; Atividade ou Natureza.**
 
 ![img_13](https://spmssicc.github.io/pages/markdown/assets/chave_orcamental_por_ano/img_13.png)
 
