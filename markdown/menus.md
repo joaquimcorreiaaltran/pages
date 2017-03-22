@@ -1,6 +1,6 @@
 <a name="menus"></a>
 
-# MENUS DA APLICAÇÃOOO
+# MENUS DA APLICAÇÃO
 
 ---
 
