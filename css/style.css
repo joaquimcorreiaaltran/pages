@@ -357,6 +357,7 @@ h5{
    ========================================================================== */
 
 #documento p img {
+  display: block;
   position: inherit;
   text-align: center;
   margin-left: auto;
