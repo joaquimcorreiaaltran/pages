@@ -40,15 +40,29 @@ Markdown é uma sintaxe para formatação de texto, sobretudo para utilização 
 
 ### Sintaxe Markdown (WIP)
 
--   Negrito: \** negrito \**: **negrito**
--   Itálico \_ texto negrito \_: _itálico_
--   Listas
-    -   Com ordenação
-    -   Sem ordenação;
--   Títulos
--   Tabelas
--   Imagens
--   Ligações
+
+##### Ênfase
+
+```no-highlight
+Realce (itálico) com *asteriscos* ou _underscores_.
+
+Realce reforçado (bold) com **asteriscos** ou __underscores__.
+
+Combinação de realces com *asteriscos e __underscores__*.
+
+Rasurado usa dois tiles ~~tiles~~.
+```
+
+Realce (itálico) com *asteriscos* ou _underscores_.
+
+Realce reforçado (bold) com **asteriscos** ou __underscores__.
+
+Combinação de realces com *asteriscos e __underscores__*.
+
+Rasurado usa dois tiles ~~tiles~~.
+
+
+-   Negrito: \ negrito \: negrito
 
 ### Como crio/edito ficheiros Markdown?
 
