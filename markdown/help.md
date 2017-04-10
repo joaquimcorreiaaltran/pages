@@ -1,5 +1,19 @@
 # AJUDA
 
+<!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:1 -->
+
+- [Como propôr melhorias à documentação?](#como-propr-melhorias-documentao)
+- [Como posso guardar o manual de utilizador (PDF)?](#como-posso-guardar-o-manual-de-utilizador-pdf)
+- [O que é o Github?](#o-que-o-github)
+	- [Como crio uma conta GitHub?](#como-crio-uma-conta-github)
+- [Formato da documentação.](#formato-da-documentao)
+- [O que é Markdown?](#o-que-markdown)
+- [Sintaxe Markdown (WIP)](#sintaxe-markdown-wip)
+		- [Ênfase](#nfase)
+- [Como crio/edito ficheiros Markdown?](#como-crioedito-ficheiros-markdown)
+
+<!-- /TOC -->
+
 ---
 
 ### Como propôr melhorias à documentação?
@@ -14,12 +28,8 @@
 1.  **Selecionar o documento**: aceda ao website spmssicc.github.io/pages, navegue até ao documento pretendido e selecione o botão "Transferir documento".
 2.  Selecione o local onde pretende guardar o manual e valide a transferência.
 
-<a name="github"></a>
-
 ### O que é o Github?
 É o local onde os documentos de suporte à utilização do SICC são armazenados e disponibilizados com segurança publicamente, permitindo, entre outras, que as entidades proponham melhorias à documentação, através desta plataforma GitHub, sem recurso a outras ferramentas e sem necessitar de conhecimentos de programação.
-
-<a name="criar_conta"></a>
 
 #### Como crio uma conta GitHub?
 
@@ -38,8 +48,9 @@ A documentação encontra-se no formato Markdown, com o objetivo de i) reduzir o
 
 Markdown é uma sintaxe para formatação de texto, sobretudo para utilização web, com regras simples e de fácil utilização. Permite formatar palavras em negrito ou itálico, adicionar imagens e links, criar listas, entre outros, explicados abaixo.
 
-### Sintaxe Markdown (WIP)
+<hr />
 
+### Sintaxe Markdown (WIP)
 
 ##### Ênfase
 
@@ -62,7 +73,7 @@ Combinação de realces com *asteriscos e __underscores__*.
 Rasurado usa dois tiles ~~tiles~~.
 
 
--   Negrito: \ negrito \: negrito
+<hr />
 
 ### Como crio/edito ficheiros Markdown?
 
