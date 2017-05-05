@@ -22,7 +22,7 @@ As atividades dos organismos públicos são objetos de controlo, nomeadamente no
 
 As macros tarefas foram definidas durante a realização de reunião de _kickoff_, com a presença dos intervenientes diretos do projeto SICC e selecionadas de acordo com as necessidades do projeto. Surgiu assim a sugestão de criar toda a documentação associada ao projeto com a utilização de duas ferramentas utilitárias: Markdown e GitHub.
 
-<a name="">estrutura</a>
+<a name="estrutura"></a>
 
 # 2.	Estrutura
 
@@ -38,7 +38,7 @@ Esquematizando, entende-se por processo ou requisito uma atividade ou um conjunt
 
 ![Macrotarefas/2.png](https://spmssicc.github.io/pages/markdown/assets/macro_tarefas/2.png)
 
-<a name="">processo_identificacao_necessidades</a>
+<a name="processo_identificacao_necessidades"></a>
 
 # 3.	Processo de Identificação das Necessidades
 
@@ -54,7 +54,7 @@ Alguns dos fatores que tornam complexo o processo de identificação das necessi
 
 ![Macrotarefas/3.png](https://spmssicc.github.io/pages/markdown/assets/macro_tarefas/3.png)
 
-<a name="">circuito_informacao</a>
+<a name="circuito_informacao"></a>
 
 # 4.	Circuito da Informação
 
@@ -66,7 +66,7 @@ O desempenho, prossupõe a existência de um repositório de conhecimento acumul
 
 ![Macrotarefas/5.png](https://spmssicc.github.io/pages/markdown/assets/macro_tarefas/5.png)
 
-<a name="">revisao_distribuicao</a>
+<a name="revisao_distribuicao"></a>
 
 # 5. Revisão e Distribuição
 
@@ -80,7 +80,7 @@ Após parecer de qualquer dos elementos referenciados anteriormente para a imple
 
 ![Macrotarefas/7.png](https://spmssicc.github.io/pages/markdown/assets/macro_tarefas/7.png)
 
-<a name="">processo_requisito</a>
+<a name="processo_requisito"></a>
 
 # 6.	Processo de Requisito
 
@@ -156,7 +156,7 @@ Um documento de requisito deve conter os seguintes elementos:
 		2.  Concretização dos objetivos ou não e dar breve explicação
 		3.  Referir a importância de se ter efetuado o requisito
 
-<a name="">processo_manual_utilizador</a>
+<a name="processo_manual_utilizador"></a>
 
 # 7.	Processo de Manual do utilizador
 
@@ -188,7 +188,7 @@ A palavra “inovação” nos Manuais de utilizador, é o que consta das Macro 
 
 As imagens podem ilustrar algumas ideias melhor do que os textos, principalmente ao descrever procedimentos complexos onde o utilizador precisa de informações visuais para se certificar de que está a realizar corretamente os passos. As imagens podem ser produzidas com softwares de desenho, softwares de edição de imagem (que também podem ser utilizados nos casos de captura de tela).
 
-<a name="">repositorio_github</a>
+<a name="repositorio_github"></a>
 # 8.	Repositório em GitHub
 
 ## O que é o GitHub?
@@ -263,7 +263,7 @@ O resultado final deve ser o evidenciado abaixo:
 
 Este pequeno capítulo visa somente esclarecer os conceitos básicos do GitHub, sendo que existem inúmeros conceitos que podem ser aprofundados
 
-<a name="">conclusao</a>
+<a name="conclusao"></a>
 
 # 9. Conclusão
 
