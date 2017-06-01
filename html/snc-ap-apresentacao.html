@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>SICC - Manual de Utilizador</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
+		<!--<link rel="stylesheet" href="../../css/main.css">-->
+		<link rel="stylesheet" href="../css/style.css">
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+</head>
+<body>
+	<header>
+			<div id="sidebar">
+					<a id="amenuLink" href="amenu-source.html">Menu</a>
+			</div>
+	</header>
+	<div id="content">
+			<article id="documento" class="modulo">
+				<h1 style="text-align: center;padding: 0 1em 0em 1em">Solução SNC-AP para entidades de saúde (06/06/2017)</h1>
+				<iframe src="http://docs.google.com/gview?url=https://spmssicc.github.io/pages/pdf/SPMS_SICC_SNC_AP_20160606_02.pdf&embedded=true" style="width:100%; height:120%;" frameborder="1"></iframe>
+				<noscript>
+					<h1>Ops! :(</h1>
+					<p>
+						<br>Para visualizar corretamente esta página, é necessário permitir a execução de scripts no seu browser.</p>
+						<br>Por favor contacte o apoio técnico.
+						<br>Obrigado,
+						<br>Equipa SICC.
+					</p>
+				</noscript>
+			</article>
+			<footer>
+				<!--loaded with js-->
+			</footer>
+	</div>
+
+	<!-- libs -->
+	<script src="../js/jquery-3.1.1.js"></script>
+	<script src="../js/skel.min.js"></script>
+	<script src="../js/util.js"></script>
+	<script src="../js/main.js"></script>
+	<script src="../js/libs/showdown.js"></script>
+	<script src="../js/sicc-project.js"></script>
+	<script src="../js/libs/accordion-menu.js"></script>
+	<script src="../js/highslide-with-gallery.js"></script>
+	<script src="../js/jquery.zoom.js" async></script>
+
+	<script>
+		$(function(){
+			// convert .md file to html and place it into the html element sent (argument)
+		 	//convertMdToHtml("documento");
+			loadFooter();
+			//loadDocButtons();
+		});
+
+
+	</script>
+</body>
+
+</html>
