@@ -537,7 +537,7 @@ p.caption{
 }
 
 #docButtons button{
-  background-color: white; /* blue */
+  background-color: white;
   text-align: center;
   float: right;
   height: 35px;
@@ -758,7 +758,7 @@ footer img {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #0b4add;
+			background-color: #fff;
 		}
 
 		input[type="button"]:active,
