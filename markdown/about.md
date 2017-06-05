@@ -76,6 +76,7 @@ Registo na Contabilidade Orçamental, Patrimonial e Analítica, consagrando os p
 Colaboradores das entidades de saúde clientes da aplicação SICC, cujas responsabilidades exijam registo e/ou leitura de informação contabilística da entidade associada.
 
 <a name="quais_requisitos_minimos"></a>
+
 #### Quais os requisitos mínimos de utilização?
 
 -   Conta de utilizador ativa ([Como obtenho uma conta?][Como obtenho uma conta?]);
