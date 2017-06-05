@@ -1,4 +1,4 @@
-# Macro Tarefas
+# MACRO-TAREFAS
 
 ---
 
@@ -20,7 +20,7 @@
 
 As atividades dos organismos públicos são objetos de controlo, nomeadamente nos aspetos relacionados com a gestão documental de procedimentos. Com a aprovação do projeto SICC para o Sector da Saúde, pretendeu-se inovar na existência de documentação de maneira a que englobe “um plano de métodos, técnicas e procedimentos” que permitam observar os procedimentos e princípios básicos, previstos no POCMS e Normativo Contabilístico.
 
-As macros tarefas foram definidas durante a realização de reunião de _kickoff_, com a presença dos intervenientes diretos do projeto SICC e selecionadas de acordo com as necessidades do projeto. Surgiu assim a sugestão de criar toda a documentação associada ao projeto com a utilização de duas ferramentas utilitárias: Markdown e GitHub.
+As macro-tarefas foram definidas durante a realização de reunião de _kickoff_, com a presença dos intervenientes diretos do projeto SICC e selecionadas de acordo com as necessidades do projeto. Surgiu assim a sugestão de criar toda a documentação associada ao projeto com a utilização de duas ferramentas utilitárias: Markdown e GitHub.
 
 <a name="estrutura"></a>
 

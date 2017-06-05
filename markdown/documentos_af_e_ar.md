@@ -1,7 +1,4 @@
-# Documentos de Anulação de Faturas e Anulação de Receitas
-
----
-
+# DOCUMENTOS DE ANULAÇÃO DE FATURAS E ANULAÇÃO DE RECEITAS
 
 # Índice
 
@@ -32,6 +29,8 @@ novo desenho de fluxograma, bem como explicar o respetivo procedimento de regula
 <a name="af"></a>
 
 # 2. Criação de novo tipo de documento – Anulação de Faturas (AF)
+
+# Índice
 
 No fluxograma do ciclo da despesa, irá surgir um novo tipo de documento designado de AF (anulação de faturas).
 

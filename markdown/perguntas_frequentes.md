@@ -1,6 +1,6 @@
 <a name="perguntas_frequentes"></a>
 
-## 1. Perguntas frequentes
+## 1. PERGUNTAS FREQUENTES
 
 ---
 

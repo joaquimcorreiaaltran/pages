@@ -1,18 +1,33 @@
-# Sobre
+# SOBRE ESTE WEBSITE e FAQs
 
----
+## Índice
 
-### Quais os objetivos deste website?
+- [Quais os objetivos?](#qobj)
+- [Como?](#como)
+- [Quem gere este website?](#qgere)
+- [O que é o SICC?](#que_sicc)
+- [Para que serve?](#para_que_serve)
+- [Quais os principais serviços e processos suportados?](#quais_principais_servicos_processos_suportados)
+- [A quem se destina o sistema?](#quem_se_destina_sistema)
+- [Quais os requisitos mínimos de utilização?](#quais_requisitos_minimos)
+
+<a name="qobj"></a>
+
+### Quais os objetivos?
 
 -   **Aumentar a disponibilidade e a portabilidade** da documentação de suporte aos utilizadores do Sistema de Informação Centralizado de Contabilidade - SICC;
 -   **Reduzir o tempo** entre a identificação de uma oportunidade de melhoria na documentação e a sua implementação;
 -   **Aumentar a rastreabilidade** das alterações da documentação.
+
+<a name="como"></a>
 
 ### Como?
 
 -   Adaptação do website a diferentes plataformas (_PC/Tablet/Smartphone_);
 -   Alojamento dos conteúdos numa plataforma com alta disponibilidade e sistema de versionamento incluído, que regista automaticamente todos os detalhes das alterações efetuadas em cada publicação da documentação;
 -   Inclusão voluntária das entidades de saúde no processo de documentação, através das proposta de melhorias à documentação disponibilizada.
+
+<a name="qgere"></a>
 
 ### Quem gere este website?
 
@@ -23,15 +38,7 @@
 
 <a name="perguntas_frequentes"></a>
 
-## 1. Perguntas frequentes
-
----
-
-1.  [O que é o SICC?](#que_sicc)
-2.  [Para que serve?](#para_que_serve)
-3.  [Quais os principais serviços e processos suportados?](#quais_principais_servicos_processos_suportados)
-4.  [A quem se destina o sistema?](#quem_se_destina_sistema)
-5.  [Quais os requisitos mínimos de utilização?](#quais_requisitos_minimos)
+## Perguntas frequentes - FAQs
 
 <a name="o_que_e_o_sicc"></a>
 
