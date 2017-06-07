@@ -62,10 +62,6 @@ Desta forma, e para criação do referido relatório, existe a necessidade de co
 
 Com base no exposto, o relatório tem o seguinte layout:
 
-_Mapa Listagem de projectos.xlsx_
-
-![](assets/gestao_projetos-4e018e45.png)
-
 ![img_4.png](https://spmssicc.github.io/pages/markdown/assets/gestao_projetos/img_4.png)
 
 Sendo que a execução funcionará da seguinte maneira:
