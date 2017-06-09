@@ -1,5 +1,4 @@
-
-# Perguntas Frequentes
+# Perguntas Frequentes - SNC-AP
 
 #### 1. Se uma instituição não fizer uma compra associada a um cabimento, é possível abatê-lo?
 R: Sim. A mesma situação pode acontecer no final do ano económico, onde pode listar os cabimentos que não forem utilizados e anulá-los de acordo com os normativos contabilísticos em vigor.
