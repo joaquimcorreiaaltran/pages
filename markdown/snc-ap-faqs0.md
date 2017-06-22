@@ -21,7 +21,7 @@ R: Sim. A mesma situação pode acontecer no final do ano económico, onde pode 
 R: Sim. O sistema associa os compromissos ao cabimento do respetivo processo de aquisição.
 
 #### 3. É possível associar um número de compromisso a várias notas de encomenda?
-R: Sim, de acordo com o definido na [Circular Normativa nº. 29 de 21/05/2012][79669214], na página 2 e no ponto 3 da página 5.
+R: Sim, de acordo com o definido na [Circular Normativa nº. 29 de 21/05/2012][79669214], na pág. 2 e no ponto 3 da pág. 5.
 
   [79669214]: http://www2.acss.min-saude.pt/Portals/0/Circular%20Normativa%20N29%202012.pdf "Circular Normativa nº. 29 de 21/05/2012"
 
