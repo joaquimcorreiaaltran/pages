@@ -45,7 +45,7 @@ R:
 	1. Compatibilidade entre Os processos SNC-AP e os processos internos da Instituição.
 	2. Interoperabilidade entre sistemas informáticos que ainda não possuam semântica SNC-AP
 	3. Atualização do controlo interno
-	4Formação dos colaboradores da Instituição sobre os processos SNC-AP
+	4. Formação dos colaboradores da Instituição sobre os processos SNC-AP
 
 #### 7. Existe compatibilidade e comunicação entre a Glintt, departamento de compras e a direção financeira?
 R: Sim existe, através de processos de integração e exportação de ficheiros. No âmbito do projeto SICC, a interoperabilidade por serviços, está considerada no Road Map do projeto, que tem como inicio os desenvolvimentos durante este ano
