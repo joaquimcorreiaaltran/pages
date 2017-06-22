@@ -41,7 +41,8 @@ R: Enumeram-se as seguintes:
 
 
 #### 6. Quais os riscos que podemos correr com a adesão ao sistema SNC-AP?
-R: 	1. Compatibilidade entre Os processos SNC-AP e os processos internos da Instituição.
+R: 	
+  1. Compatibilidade entre Os processos SNC-AP e os processos internos da Instituição.
 	2. Interoperabilidade entre sistemas informáticos que ainda não possuam semântica SNC-AP
 	3. Atualização do controlo interno
 	4Formação dos colaboradores da Instituição sobre os processos SNC-AP
