@@ -22,17 +22,47 @@ R: Enumeramos as seguintes vantagens:
 	6. Serviço de suporte direto com a equipa, aberto e partilhado com todos os Organismos que fazem parte do Sistema Centralizado
 	7. Acesso á documentação: Autoaprendizagem do sistema via manuais de utilizador; Alojamento de documentação legal; Listagem do histórico de atualizações semanais do sistema; Disponibilização de informações-chave acerca do sistema.
 
+
 #### 6. Quais os riscos que podemos correr com a adesão ao sistema SNC-AP?
 R: 	1. Compatibilidade entre Os processos SNC-AP e os processos internos da Instituição.
 	2. Interoperabilidade entre sistemas informáticos que ainda não possuam semântica SNC-AP.
 	3. Atualização do controlo interno.
 	4. Formação dos colaboradores da Instituição sobre os processos SNC-AP.
 
+
 #### 7. Existe compatibilidade e comunicação entre a Glintt, departamento de compras e a direção financeira?
 R: Sim existe, através de processos de integração e exportação de ficheiros. No âmbito do projeto SICC, a interoperabilidade por serviços, está considerada no Road Map do projeto, que tem como inicio os desenvolvimentos durante este ano.
+
 
 #### 8. Como funciona a aplicação, por Webservice ou servidor? Quais as quebras que podem ocorrer?
 R: O sistema é centralizado e permite aos Utilizadores aceder à aplicação através de endereço URL. O SICC está implementado nos Organismos do Serviço Nacional de Saúde (SNS) desde 10 de Julho de 2014. Desde essa data as ocorrências de quebra de serviço, limitam-se a cerca de 1 hora (todas as quintas feiras, das 19H às 20H) para atualizações.
 
+
 #### 9. O plano de contas é o oficial para a saúde?
 R: Neste momento é o plano de contas parametrizado no Sistema é o fornecido pela DGO. A ACSS está a efetuar análise a este mesmo plano, no sentido de criação das especificidades para o ministério da saúde.
+
+#### 10. O RHV vai fazer alterações para se fazerem as integrações em Junho?
+
+R: Não serão efetuadas quaisquer alterações para o sistema do RHV para o mês de Julho dado que o plano de contas SNC-AP para a saúde ainda não está disponível. Quando existir o plano de contas SNC-AP orientado para o Ministério da Saúde, serão efetuadas as alterações.
+
+
+#### 11. O Utilizador vai poder alterar a informação dos classificadores na conta patrimonial?
+
+R: Sim, estamos neste momento a analisar a forma para que estas alterações sejam efetuadas pelo próprio Organismo sem comprometer a integridade dos dados. Neste momento e até indicação em contrário, deverão contactar o suporte.
+
+
+#### 12. Como vai ser o procedimento da migração dos atuais dados em SICC para o novo SNC-AP, existirá mapeamentos? Quem vai decidir?
+R: As regras de transição são definidas pela DGO e não irá existir um mapeamento linear entre POCMS e SNC-AP. Essa funcionalidade será disponibilizada no SICC quando existirem informações concretas no âmbito do Ministério da Saúde.
+
+
+#### 13. Vai existir o SAFT neste novo sistema?
+R: Sim, está consagrado no ROAD MAP do projeto SICC
+
+
+#### 14. No enquadramento do SNC-AP, qual a lógica e onde existe a informação da DGO entre o classificador económico e as respetivas contas?
+
+R: A associação entre as contas da contabilidade financeira e classificadores económicos estão consagradas no sistema unicamente para otimizar o processo de registo. Isto não significa que esta associação seja oficial, dado que poderá ser parametrizável pela Instituição, o que faz com que exista sempre uma independência entre contabilidade orçamental e financeira.
+
+
+#### 15. É possível alterar datas dos cabimentos? As mesmas não deviam ser controladas pelos Diretores ou chefes de Serviço?
+R: As datas dos cabimentos são alteradas por anulação e/ou estorno, funcionalidade consagradas no sistema. Isto é, qualquer alteração ao cabimento deve ser refletida contabilisticamente para que haja consistência e integridade na execução orçamental
