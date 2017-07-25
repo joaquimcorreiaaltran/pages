@@ -30,7 +30,7 @@ function convertMdToHtml (elementId) {
             ,htmlDoc = converter.makeHtml(text); //converte a string em HTML
             //add ids to paragraphs to make them linkable
 
-            console.log(converter.getOption('noHeaderId'));
+            //console.log(htmlDoc);
 
             //var i = 0;
             //for(i=0;i<header.lenght;i++){
@@ -42,6 +42,7 @@ function convertMdToHtml (elementId) {
 
                 document.getElementById(elementId).innerHTML = htmlDoc;//carrega html no elementId
                 zommClickImagem();
+                toc();
          }
       }
    request.send();
@@ -118,6 +119,7 @@ function zommClickImagem() {
 });
 }
 
+
 //Carrega o histórico do repo github
 function loadCommitHistory() {
   if (doc_name == "changelog"){
@@ -168,3 +170,59 @@ function loadCommitHistory() {
                     });
     }/*if(doc_name == "changelog")*/
 }/*loadCommitHistory()*/
+
+
+
+
+
+
+
+
+
+/*
+TOC - Builds the table of contents after the conversion of markdown to HTML
+*/
+function toc(){
+
+  var ToC =
+		  "<nav role='navigation' class='table-of-contents'>" +
+		    "<h4>Nesta página:</h4>" +
+		    "<ul>";
+
+		var newLine, el, title, link;
+
+		$("article h2,h3,h4").each(function() {
+
+		  el = $(this);
+		  link = "#" + el.attr("id");
+      space = "&nbsp;&nbsp;&nbsp;";
+
+      if(document.getElementById(el.attr("id")).nodeName=="H1"){
+          title = el.text();
+      }
+      if(document.getElementById(el.attr("id")).nodeName=="H2"){
+          title = el.text();
+      }
+      if(document.getElementById(el.attr("id")).nodeName=="H3"){
+          title = space+el.text();
+      }
+      if(document.getElementById(el.attr("id")).nodeName=="H4"){
+          title = space+space+el.text();
+      }
+      if(document.getElementById(el.attr("id")).nodeName=="H5"){
+          title = space+space+space+el.text();
+      }
+
+      newLine = "<li>" + "<a href='" + link + "'>" + title + "</a>" + "</li>";
+      ToC += newLine;
+
+		});
+
+		ToC +=
+		   "</ul>" +
+		  "</nav>";
+
+		$(".modulo").prepend(ToC);
+
+
+}
