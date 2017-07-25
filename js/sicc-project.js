@@ -28,6 +28,18 @@ function convertMdToHtml (elementId) {
             var converter = new showdown.Converter() //instancia
             ,text = request.responseText //guarda o documento em string
             ,htmlDoc = converter.makeHtml(text); //converte a string em HTML
+            //add ids to paragraphs to make them linkable
+
+            console.log(converter.getOption('noHeaderId'));
+
+            //var i = 0;
+            //for(i=0;i<header.lenght;i++){
+            //  header[i].setAttribute('id',header[i].innerText);
+            //  window.alert(header[i].innerText);
+            //}
+
+            //window.alert(htmlDoc);
+
                 document.getElementById(elementId).innerHTML = htmlDoc;//carrega html no elementId
                 zommClickImagem();
          }
@@ -50,6 +62,49 @@ function loadDocButtons () {
              $("#btnPDF").click(function(){
                window.open("https://spmssicc.github.io/pages/pdf/"+doc_name+".pdf","_blank");
              });
+             //Mostra ou oculta o botão para voltar ao topo da página
+             $(window).scroll(function() {
+               if ($(this).scrollTop() > 2000) {
+                 //add effect / animation
+                 $('.showWithScroll').stop(true).animate({
+                    opacity: 1
+                 }, 500);
+               } else {
+                 if ($(this).scrollTop() < 1000) {
+                   $('.showWithScroll').stop(true).animate({
+                      opacity: 0
+                   }, 500);
+                 }
+               }
+             });
+         });
+}
+//TESTE: Adiciona botões ao doc e atribui-lhes o link
+function loadDocButtonsTest () {
+  $.get("doc_buttons_test.html", function (data) {
+             $("#content").append(data);
+             $("#btnEditarDoc").click(function(){
+               window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/"+doc_name+".md","_blank");
+             });
+             $("#btnPDF").click(function(){
+               window.open("https://spmssicc.github.io/pages/pdf/"+doc_name+".pdf","_blank");
+             });
+
+              //Mostra ou oculta o botão para voltar ao topo da página
+              $(window).scroll(function() {
+                if ($(this).scrollTop() > 2000) {
+                  //add effect / animation
+                  $('.showWithScroll').stop(true).animate({
+                     opacity: 1
+                  }, 500);
+                } else {
+                  if ($(this).scrollTop() < 1000) {
+                    $('.showWithScroll').stop(true).animate({
+                       opacity: 0
+                    }, 500);
+                  }
+                }
+              });
          });
 }
 

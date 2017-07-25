@@ -37,7 +37,7 @@
 	<script src="../js/skel.min.js"></script>
 	<script src="../js/util.js"></script>
 	<script src="../js/main.js"></script>
-	<script src="../js/libs/showdown.js"></script>
+	<script src="../js/libs/showdown_test.js"></script>
 	<script src="../js/sicc-project.js"></script>
 	<script src="../js/libs/accordion-menu.js"></script>
 	<script src="../js/highslide-with-gallery.js"></script>
@@ -48,23 +48,11 @@
 			// convert .md file to html and place it into the html element sent (argument)
 		 	convertMdToHtml("documento");
 			loadFooter();
-			loadDocButtons();
+			//loadDocButtons();
+			loadDocButtonsTest();
 		});
 
-		$(window).scroll(function() {
-		  if ($(this).scrollTop() > 2000) {
-		    //add effect / animation
-		    $('.showWithScroll').stop(true).animate({
-		       opacity: 1
-		    }, 500);
-		  } else {
-		    if ($(this).scrollTop() < 1000) {
-		      $('.showWithScroll').stop(true).animate({
-						 opacity: 0
-		      }, 500);
-		    }
-		  }
-		});
+
 	</script>
 </body>
 

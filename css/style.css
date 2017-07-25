@@ -357,7 +357,7 @@ h5{
    ========================================================================== */
 
 #documento p img {
-  display: block;
+  display: inline;
   position: inherit;
   text-align: center;
   margin-left: auto;
@@ -366,14 +366,6 @@ h5{
   margin-bottom: 1em;
   cursor: url(../img/highslide/graphics/zoomin.cur), pointer;
 }
-
-#documento img {
-   /*position: inherit;*/
-   display:inline;
-   /*margin-top: 1em;
-   margin-bottom: 1em;*/
-}
-
 
 
 .imagem {
@@ -1274,23 +1266,6 @@ footer img {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Reset */
 
 /* Global values for mobile devices*/
@@ -1371,7 +1346,7 @@ text-size-adjust: unset;
 
 	}
 
-	@media screen and (min-width: 1201px) {
+	@media screen and (min-width: 1301px) {
 
 		.container.\31 25\25 {
 			width: 100%;
@@ -1397,7 +1372,7 @@ text-size-adjust: unset;
 
 	}
 
-	@media screen and (min-width: 737px) and (max-width: 1200px) {
+	@media screen and (min-width: 737px) and (max-width: 1300px) {
 
 		.container.\31 25\25 {
 			width: 100%;
