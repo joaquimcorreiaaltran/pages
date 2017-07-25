@@ -1,65 +1,45 @@
 # PROCESSOS
 
----
-
 # Índice
 
 
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+<!-- TOC depthFrom:2 depthTo:4 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [PROCESSOS](#processos)
-- [Índice](#ndice)
-	- [1. Introdução](#1-introduo)
-	- [2. Menu Orçamental](#2-menu-oramental)
-		- [2.1. Orçamento Anual](#21-oramento-anual)
-			- [2.1.1. Recolha de Propostas Orçamentais](#211-recolha-de-propostas-oramentais)
-				- [2.1.1.1. Orçamento Ordinário](#2111-oramento-ordinrio)
-				- [2.1.1.2. Consulta de Contabilidade](#2112-consulta-de-contabilidade)
-			- [2.1.2 Fundos disponíveis(LPCA)](#212-fundos-disponveislpca)
-				- [Criação de Cabimento](#criao-de-cabimento)
-				- [Verificação prévia de fundos disponíveis](#verificao-prvia-de-fundos-disponveis)
-				- [Criação com fundos disponíveis](#criao-com-fundos-disponveis)
-				- [Geração de movimentos contabilísticos e confirmação](#gerao-de-movimentos-contabilsticos-e-confirmao)
-			- [2.1.3 Mapas (LPCA)](#213-mapas-lpca)
-				- [Tabela 1 – Fundos disponíveis](#tabela-1-fundos-disponveis)
-				- [Tabela 4 - (SPA’s): Passivos/ Contas a pagar](#tabela-4-spas-passivos-contas-a-pagar)
-		- [2.2. Mapas Legais](#22-mapas-legais)
-			- [2.2.1. Mapas 7.7.1 e 7.7.2 - Orçamento de Despesa/Receita](#221-mapas-771-e-772-oramento-de-despesareceita)
-			- [2.2.2. Orçamento de Despesa](#222-oramento-de-despesa)
-			- [2.2.3. Mapas de Execução Orçamental](#223-mapas-de-execuo-oramental)
-			- [2.2.4. Controlo Orçamental - Despesa](#224-controlo-oramental-despesa)
-			- [2.2.5. Mapa 8.3.1.1 e 8.3.1.2 - Alterações Orçamentais Despesa/Receita](#225-mapa-8311-e-8312-alteraes-oramentais-despesareceita)
-	- [3. Menu Recolhas](#3-menu-recolhas)
-		- [3.1. Ciclo Despesa](#31-ciclo-despesa)
-			- [3.1.1. Cabimento (CB)](#311-cabimento-cb)
-				- [Informação de CB](#informao-de-cb)
-				- [Listagens de CB](#listagens-de-cb)
-			- [3.1.2. Alterações de Cabimentos (AM)](#312-alteraes-de-cabimentos-am)
-			- [3.1.3. Compromisso (CM)](#313-compromisso-cm)
-			- [3.1.4. Alteração de Compromisso (AB)](#314-alterao-de-compromisso-ab)
-			- [3.1.5. Lançamentos (CP)](#315-lanamentos-cp)
-			- [3.1.6. Alteração de Lançamentos (AL)](#316-alterao-de-lanamentos-al)
-			- [3.1.7. Credores p/ Execução Orçamental (CE)](#317-credores-p-execuo-oramental-ce)
-			- [3.1.8. Autorização de Pagamento (AP)](#318-autorizao-de-pagamento-ap)
-				- [Impressão de Autorizações de Pagamento (AP)](#impresso-de-autorizaes-de-pagamento-ap)
-			- [3.1.9. Transferências Bancárias](#319-transferncias-bancrias)
-				- [Importar Transferências Bancárias](#importar-transferncias-bancrias)
-			- [3.1.10 Pagamentos (PG)](#3110-pagamentos-pg)
-		- [3.2. Ciclo Receita](#32-ciclo-receita)
-			- [3.2.1. Faturas Devedores (FD)](#321-faturas-devedores-fd)
-			- [3.2.2. Devedores p/ execução orçamental (DE)](#322-devedores-p-execuo-oramental-de)
-			- [3.2.3. Guias de Receita (GR)](#323-guias-de-receita-gr)
-				- [Impressão de Guias de Receita](#impresso-de-guias-de-receita)
-			- [3.2.4. Cobranças (CO)](#324-cobranas-co)
-				- [Impressão de Listagem de Cobrança](#impresso-de-listagem-de-cobrana)
-				- [Recolha de Produtos](#recolha-de-produtos)
-			- [3.2.5. Cobranças (CO)](#325-cobranas-co)
-				- [Impressão Documentos OR](#impresso-documentos-or)
-	- [4. Menu Parametrização](#4-menu-parametrizao)
-		- [4.1. Tabelas Genéricas](#41-tabelas-genricas)
-			- [4.1.2. Tabelas Genéricas](#412-tabelas-genricas)
-		- [4.2. Terceiros](#42-terceiros)
-			- [4.2.1 Gestão de Produtos - Recolha](#421-gesto-de-produtos-recolha)
+- [1. Introdução](#1-introduo)
+- [2. Menu Orçamental](#2-menu-oramental)
+	- [2.1. Orçamento Anual](#21-oramento-anual)
+		- [2.1.1. Recolha de Propostas Orçamentais](#211-recolha-de-propostas-oramentais)
+		- [2.1.2 Fundos disponíveis(LPCA)](#212-fundos-disponveislpca)
+		- [2.1.3 Mapas (LPCA)](#213-mapas-lpca)
+	- [2.2. Mapas Legais](#22-mapas-legais)
+		- [2.2.1. Mapas 7.7.1 e 7.7.2 - Orçamento de Despesa/Receita](#221-mapas-771-e-772-oramento-de-despesareceita)
+		- [2.2.2. Orçamento de Despesa](#222-oramento-de-despesa)
+		- [2.2.3. Mapas de Execução Orçamental](#223-mapas-de-execuo-oramental)
+		- [2.2.4. Controlo Orçamental - Despesa](#224-controlo-oramental-despesa)
+		- [2.2.5. Mapa 8.3.1.1 e 8.3.1.2 - Alterações Orçamentais Despesa/Receita](#225-mapa-8311-e-8312-alteraes-oramentais-despesareceita)
+- [3. Menu Recolhas](#3-menu-recolhas)
+	- [3.1. Ciclo Despesa](#31-ciclo-despesa)
+		- [3.1.1. Cabimento (CB)](#311-cabimento-cb)
+		- [3.1.2. Alterações de Cabimentos (AM)](#312-alteraes-de-cabimentos-am)
+		- [3.1.3. Compromisso (CM)](#313-compromisso-cm)
+		- [3.1.4. Alteração de Compromisso (AB)](#314-alterao-de-compromisso-ab)
+		- [3.1.5. Lançamentos (CP)](#315-lanamentos-cp)
+		- [3.1.6. Alteração de Lançamentos (AL)](#316-alterao-de-lanamentos-al)
+		- [3.1.7. Credores p/ Execução Orçamental (CE)](#317-credores-p-execuo-oramental-ce)
+		- [3.1.8. Autorização de Pagamento (AP)](#318-autorizao-de-pagamento-ap)
+		- [3.1.9. Transferências Bancárias](#319-transferncias-bancrias)
+		- [3.1.10 Pagamentos (PG)](#3110-pagamentos-pg)
+	- [3.2. Ciclo Receita](#32-ciclo-receita)
+		- [3.2.1. Faturas Devedores (FD)](#321-faturas-devedores-fd)
+		- [3.2.2. Devedores p/ execução orçamental (DE)](#322-devedores-p-execuo-oramental-de)
+		- [3.2.3. Guias de Receita (GR)](#323-guias-de-receita-gr)
+		- [3.2.4. Cobranças (CO)](#324-cobranas-co)
+		- [3.2.5. Cobranças (CO)](#325-cobranas-co)
+- [4. Menu Parametrização](#4-menu-parametrizao)
+	- [4.1. Tabelas Genéricas](#41-tabelas-genricas)
+		- [4.1.1. Instituições bancárias - Recolha](#411-instituies-bancrias-recolha)
+	- [4.2. Terceiros](#42-terceiros)
+		- [4.2.1 Gestão de Produtos - Recolha](#421-gesto-de-produtos-recolha)
 
 <!-- /TOC -->
 
@@ -67,8 +47,7 @@
 
 ## 1. Introdução
 
-A necessidade do manual de processos, surgiu da necessidade de apresentação do novo sistema SICC.
-Desta forma, o presente manual visa especificar o funcionamento do novo sistema SICC de certa forma muito parecido com o anterior (SIDC), evidenciando no novo sistema, as novas funcionalidades e ajustes na ótica do utilizador, bem como permitir respeitar o conjunto de requisitos a cumprir na Contabilidade.
+O presente documento visa especificar o funcionamento do novo sistema SICC, evidenciando as novas funcionalidades e ajustes na ótica do utilizador, bem como o satisfação dos requistos específicos da Contabilidade.
 
 <a name="2-menu-oramental"></a>
 
@@ -322,7 +301,7 @@ Nos mapas 7.7.1 e mapas 7.7.2, os ecrãs são idênticos na construção dos rel
 
 Ao clicar, surge o ecrã abaixo e que permite proceder à escolha do tipo de informação que pretende analisar, podendo para o efeito fazer várias combinações possíveis.
 
-<a name="oramento-de-despesa"></a>
+<a name="222-oramento-de-despesa"></a>
 
 #### 2.2.2. Orçamento de Despesa
 
@@ -348,7 +327,7 @@ O exemplo seguinte, demonstra um relatório de alteração orçamental gerada em
 
 ![img_46.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_46.png)
 
-<a name="mapas-de-execuo-oramental"></a>
+<a name="223-mapas-de-execuo-oramental"></a>
 
 #### 2.2.3. Mapas de Execução Orçamental
 
@@ -358,7 +337,7 @@ Relativamente a este processo, os mapas 7.1 (Mapa de Execução Orçamental da D
 
 Para tal, as opções no ecrã permite imprimir os formulários (gerando PDF), bem como, a extração para formato Excel, tendo o utilizador de definir o caminho para gravação do ficheiro.
 
-<a name="controlo-oramental-despesa"></a>
+<a name="224-controlo-oramental-despesa"></a>
 
 #### 2.2.4. Controlo Orçamental - Despesa
 
@@ -384,7 +363,7 @@ O procedimento do mapa 7.2 é idêntico ao explicado anteriormente, sendo apenas
 |:--------|
 |Irá ser incluída a chave orçamental neste mapa|
 
-<a name="mapa-8311-e-8312-alteraes-oramentais-despesareceita"></a>
+<a name="225-mapa-8311-e-8312-alteraes-oramentais-despesareceita"></a>
 
 #### 2.2.5. Mapa 8.3.1.1 e 8.3.1.2 - Alterações Orçamentais Despesa/Receita
 
@@ -424,11 +403,11 @@ O procedimento do mapa 8.3.1.2 é idêntico ao explicado anteriormente, sendo ap
 
 ## 3. Menu Recolhas
 
-<a name="ciclo-despesa"></a>
+<a name="31-ciclo-despesa"></a>
 
 ### 3.1. Ciclo Despesa
 
-<a name="cabimento-cb"></a>
+<a name="311-cabimento-cb"></a>
 
 #### 3.1.1. Cabimento (CB)
 
@@ -531,7 +510,7 @@ O formato na opção "Imprimir", é o seguinte:
 
 ![img_77.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_77.png)
 
-<a name="alteraes-de-cabimentos-am"></a>
+<a name="312-alteraes-de-cabimentos-am"></a>
 
 #### 3.1.2. Alterações de Cabimentos (AM)
 
@@ -580,7 +559,7 @@ Após validação dos elementos integrados e constatado que os valores estão co
 
 ![img_importacao_concluida_sucesso.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_importacao_concluida_sucesso.png)
 
-<a name="compromisso-cm"></a>
+<a name="313-compromisso-cm"></a>
 
 #### 3.1.3. Compromisso (CM)
 
@@ -651,7 +630,7 @@ O sistema deve apresentar a seguinte mensagem, sempre que ao “Número de Proce
 
 ![img_99.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_99.png)
 
-<a name="alterao-de-compromisso-ab"></a>
+<a name="314-alterao-de-compromisso-ab"></a>
 
 #### 3.1.4. Alteração de Compromisso (AB)
 
@@ -677,7 +656,7 @@ Após validação dos elementos integrados e constatado que os valores estão co
 
 ![img_105.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_105.png)
 
-<a name="lanamentos-cp"></a>
+<a name="315-lanamentos-cp"></a>
 
 #### 3.1.5. Lançamentos (CP)
 
@@ -748,7 +727,7 @@ Após validação dos elementos integrados e constatado que os valores estão co
 
 ![img_importacao_concluida_sucesso.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_importacao_concluida_sucesso.png)
 
-<a name="alterao-de-lanamentos-al"></a>
+<a name="316-alterao-de-lanamentos-al"></a>
 
 #### 3.1.6. Alteração de Lançamentos (AL)
 
@@ -777,7 +756,7 @@ Após validação dos elementos integrados e constatado que os valores estão co
 
 ![img_importacao_concluida_sucesso.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_importacao_concluida_sucesso.png)
 
-<a name="credores-p-execuo-oramental-ce"></a>
+<a name="317-credores-p-execuo-oramental-ce"></a>
 
 #### 3.1.7. Credores p/ Execução Orçamental (CE)
 
@@ -801,7 +780,7 @@ Após a confirmação, o sistema regressa á página inicial e demostra que a CE
 
 ![img_130.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_130.png)
 
-<a name="autorizao-de-pagamento-ap"></a>
+<a name="318-autorizao-de-pagamento-ap"></a>
 
 #### 3.1.8. Autorização de Pagamento (AP)
 
@@ -877,7 +856,7 @@ De forma _Global_, ao selecionar “imprimir”, o sistema produz a Autorizaçã
 
 ![img_145.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_145.png)
 
-<a name="transferncias-bancrias"></a>
+<a name="319-transferncias-bancrias"></a>
 
 #### 3.1.9. Transferências Bancárias
 
@@ -950,7 +929,7 @@ Nesta etapa, um novo ecrã surge, em que o utilizador tem possibilidade de reali
 
 :warning:__Na importação de TXT. ou na Conversão para XML, o sistema ao carregar o ficheiro, vai determinar o ultimo "Número de sequência", sendo que o vai atribuir de forma automática e sequencial para cada um dos casos referidos.__
 
-<a name="pagamentos-pg"></a>
+<a name="3110-pagamentos-pg"></a>
 
 #### 3.1.10 Pagamentos (PG)
 
@@ -1008,11 +987,11 @@ Ao selecionar “imprimir”, o sistema produz o documento em PDF
 
 ![img_168.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_168.png)
 
-<a name="ciclo_receita"></a>
+<a name="32-ciclo-receita"></a>
 
 ### 3.2. Ciclo Receita
 
-<a name="faturas_devedores_fd"></a>
+<a name="321-faturas-devedores-fd"></a>
 
 #### 3.2.1. Faturas Devedores (FD)
 
@@ -1037,7 +1016,7 @@ Neste ecrã, há necessidade do preenchimento dos campos obrigatórios, sendo qu
 
 :warning:__Igualmente ao efetuado no anterior, os botões: "Consulta", "Abater" e "Sair", apresentam as mesmas funcionalidades.__
 
-<a name="devedores_execucao_orcamental_de"></a>
+<a name="322-devedores-p-execuo-oramental-de"></a>
 
 #### 3.2.2. Devedores p/ execução orçamental (DE)
 
@@ -1061,7 +1040,7 @@ No ecrã, surgem assim os movimentos contabilísticos associados de forma autom�
 
 ![img_176.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_176.png)
 
-<a name="guias_receita_gr"></a>
+<a name="323-guias-de-receita-gr"></a>
 
 #### 3.2.3. Guias de Receita (GR)
 
@@ -1085,7 +1064,7 @@ Nova mensagem surgirá com a Guia de receita criada, sendo que este processo est
 
 ![img_181.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_181.png)
 
-<a name="impressao_guias_receita"></a>
+<a name=""></a>
 
 ##### Impressão de Guias de Receita
 
@@ -1115,7 +1094,7 @@ Ao selecionar “imprimir”, o sistema produz a Guia de receita em PDF
 
 ![img_184.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_184.png)
 
-<a name="cobrancas_co_1"></a>
+<a name="324-cobranas-co"></a>
 
 #### 3.2.4. Cobranças (CO)
 
@@ -1131,7 +1110,7 @@ Os movimentos contabilísticos surgem de forma automática, pelo que o utilizado
 
 ![img_187.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_187.png)
 
-<a name="impressao_listagem_cobranca"></a>
+<a name=""></a>
 
 ##### Impressão de Listagem de Cobrança
 
@@ -1163,7 +1142,7 @@ Ao selecionar “imprimir”, o sistema produz a Listagem de Cobranças em PDF
 
 ![img_190.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_190.png)
 
-<a name="recolha_produtos"></a>
+<a name=""></a>
 
 ##### Recolha de Produtos
 
@@ -1202,7 +1181,7 @@ Ao pressionar o botão "Consulta", o utilizador pode verificar as contabilizaç�
 
 ![img_194.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_194.png)
 
-<a name="cobrancas_co_2"></a>
+<a name="325-cobranas-co"></a>
 
 #### 3.2.5. Cobranças (CO)
 
@@ -1220,7 +1199,7 @@ Os movimentos contabilísticos surgem de forma automática, pelo que o utilizado
 
 ![img_198.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_198.png)
 
-<a name="impressao_documentos_or"></a>
+<a name=""></a>
 
 ##### Impressão Documentos OR
 
@@ -1252,17 +1231,17 @@ Ao selecionar “imprimir”, o sistema produz a Guia de Receita em PDF
 
 :warning:__O utilizador pode verificar na impressão o novo campo de “Observações” criado no ponto 3.2.7. .__
 
-<a name="menu_parametrizacao"></a>
+<a name="4-menu-parametrizao"></a>
 
 ## 4. Menu Parametrização
 
-<a name="tabelas_genericas"></a>
+<a name="41-tabelas-genricas"></a>
 
 ### 4.1. Tabelas Genéricas
 
-<a name="instituicoes_bancarias_recolha"></a>
+	<a name="411-instituies-bancrias-recolha"></a>
 
-#### 4.1.2. Tabelas Genéricas
+#### 4.1.1. Instituições bancárias - Recolha
 
 Neste menu, o utilizador pode fazer as configurações referente às instituições bancárias através da seguinte ecrã.
 
@@ -1274,7 +1253,7 @@ O novo ecrã tem o aspeto abaixo mostrado:
 
 Neste ecrã, de acordo com o explicado no ponto 3.1.10 do manual, a ACSS apresenta 2 Departamentos, sendo que o utilizador neste campo define o Identificador do IGCP, o Num. de Sequência e o Departamento a que diz respeito. Todas as restantes informações já existiam, pelo que o procedimento de preenchimento continua a ser o mesmo utilizado até à data.
 
-<a name="terceiros"></a>
+<a name="42-terceiros"></a>
 
 ### 4.2. Terceiros
 
