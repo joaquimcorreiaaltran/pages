@@ -28,21 +28,12 @@ function convertMdToHtml (elementId) {
             var converter = new showdown.Converter() //instancia
             ,text = request.responseText //guarda o documento em string
             ,htmlDoc = converter.makeHtml(text); //converte a string em HTML
-            //add ids to paragraphs to make them linkable
-
-            //console.log(htmlDoc);
-
-            //var i = 0;
-            //for(i=0;i<header.lenght;i++){
-            //  header[i].setAttribute('id',header[i].innerText);
-            //  window.alert(header[i].innerText);
-            //}
-
-            //window.alert(htmlDoc);
-
                 document.getElementById(elementId).innerHTML = htmlDoc;//carrega html no elementId
                 zommClickImagem();
-                toc();
+                if(doc_name=="processos_snc_ap"){
+                  toc(); //add table of contents to the html page
+                }
+
          }
       }
    request.send();
