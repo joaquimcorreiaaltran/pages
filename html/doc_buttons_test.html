@@ -1,6 +1,13 @@
 <div id="docButtons">
+<!--<  <div class="dropdown">-->
+  <button title="Ver índice" id="showToc" type="button" alt="showIndex" onclick="showToc()" class="dropbtn"><i class="fa fa-list-alt fa-fw"></i></button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+<!--</div>-->
   <button title="Transferir documento" id="btnPDF" type="button" alt="btnPDF"><i class="fa fa-file-pdf-o fa-fw"></i></button>
   <button title="Sugerir alterações ao documento" id="btnEditarDoc" type="button" alt="btnEditarDoc"><i class="fa fa-pencil fa-fw"></i></button>
-  <button title="Ver índice" id="showIndex" type="button" alt="showIndex"><i class="fa fa-list-alt fa-fw"></i></button>
   <button title="Voltar ao início do documento" id="backToTopBtn" class="showWithScroll" type="button" alt="backToTopBtn" onclick="$('html, body').animate({ scrollTop: 0 }, 'slow');"><i class="fa  fa-arrow-circle-up fa-fw"></i></button>
 </div>
