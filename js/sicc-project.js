@@ -211,7 +211,7 @@ function toc(){
 		ToC +=
 		   "</ul>" +
 		  "</nav>";
-		$(".modulo").prepend(ToC);
+		//$(".modulo").prepend(ToC);
     $(".dropdown-content").prepend(ToC);
 
 }
