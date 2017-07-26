@@ -334,6 +334,10 @@ O procedimento do mapa 8.3.1.2 é idêntico ao explicado anteriormente, sendo ap
 
 Esta opção permite, consultar ou criar um novo documento de Cabimento e com base em critérios selecionados pelo utilizador.
 
+
+![teste.gif](assets/processos_snc_ap/teste.gif)
+
+
 ![img_56.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_56.png)
 
 Ao selecionar Cabimentos/Compromissos, irá surgir o seguinte ecrã:
