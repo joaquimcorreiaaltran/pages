@@ -31,7 +31,7 @@ function convertMdToHtml (elementId) {
                 document.getElementById(elementId).innerHTML = htmlDoc;//carrega html no elementId
                 zommClickImagem();
                 if(doc_name=="processos_snc_ap"){
-                  toc(); //add table of contents to the html page
+                  toc(); //TEST: add table of contents to the html page
                 }
 
          }
@@ -211,7 +211,6 @@ function toc(){
 		ToC +=
 		   "</ul>" +
 		  "</nav>";
-
 		$(".modulo").prepend(ToC);
     $(".dropdown-content").prepend(ToC);
 
@@ -222,7 +221,7 @@ function toc(){
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function showToc() {
-    document.getElementById("myDropdown").classList.toggle("show");
+    document.getElementById("tocDropdown").classList.toggle("show");
 }
 
 // Close the dropdown menu if the user clicks outside of it
