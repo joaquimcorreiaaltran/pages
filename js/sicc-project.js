@@ -155,7 +155,7 @@ TOC - Builds the table of contents after the conversion of markdown to HTML
 */
 function toc(elementToPopulate){
 
-  console.log("Entrou na toc()");
+  console.log("Entrou na toc(). elementToPopulate = "+elementToPopulate);
 
   var toc_html =
       "<nav role='navigation' class='table-of-contents'>" +
