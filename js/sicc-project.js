@@ -30,11 +30,6 @@ function convertMdToHtml (elementId) {
             ,htmlDoc = converter.makeHtml(text); //converte a string em HTML
                 document.getElementById(elementId).innerHTML = htmlDoc;//carrega html no elementId
                 zommClickImagem();
-
-                if(doc_name=="processos_snc_ap"){
-                  //toc(); //TEST: add table of contents to the html page
-                }
-
          }
       }
    request.send();
@@ -46,43 +41,8 @@ function loadFooter () {
 }
 
 //Adiciona botões ao doc e atribui-lhes o link
-function loadDocButtons_OLD () {
-  $.get("doc_buttons.html", function (data) {
-
-             $("#content").append(data);
-
-             $("#btnEditarDoc").click(function(){
-               window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/"+doc_name+".md","_blank");
-             });
-
-             $("#btnPDF").click(function(){
-               window.open("https://spmssicc.github.io/pages/pdf/"+doc_name+".pdf","_blank");
-             });
-
-             $("#btnBackToTop").click(function(){
-               $('html, body').animate({ scrollTop: 0 }, 'slow');
-             });
-
-             //Mostra ou oculta o botão para voltar ao topo da página
-             $(window).scroll(function() {
-               if ($(this).scrollTop() > 2000) {
-                 //add effect / animation
-                 $('.showWithScroll').stop(true).animate({
-                    opacity: 1
-                 }, 500);
-               } else {
-                 if ($(this).scrollTop() < 1000) {
-                   $('.showWithScroll').stop(true).animate({
-                      opacity: 0
-                   }, 500);
-                 }
-               }
-             });
-         });
-}
-//TESTE: Adiciona botões ao doc e atribui-lhes o link
 function loadDocButtons () {
-  $.get("doc_buttons_test.html", function (data) {
+  $.get("doc_buttons.html", function (data) {
 
              $("#content").append(data);
 
@@ -123,7 +83,7 @@ function loadDocButtons () {
                 }
               });
          });
-}//fecha loadDocButtonsTest()
+}//fecha loadDocButtons()
 
 // Preparar imagem para zoom ou para não zoom (mostra ou não mostra a lupa)
 function zommClickImagem() {
@@ -190,11 +150,6 @@ function loadCommitHistory() {
 
 
 
-
-
-
-
-
 /*
 TOC - Builds the table of contents after the conversion of markdown to HTML
 */
@@ -228,7 +183,7 @@ function toc(elementToPopulate){
 		  "</nav>";
 
     //$(".dropdown-content").prepend(toc_html);
-
+    console.log(toc_html);
     document.getElementById(elementToPopulate).innerHTML = toc_html;
 
 }
