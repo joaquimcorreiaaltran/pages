@@ -1,28 +1,15 @@
 # GESTÃO DE PROJETOS
 
-
-- [1. Introdução](#1-introduo)
-- [2.	Menu Balancete de Terceiros/Gestão de projeto](#2-menu-balancete-de-terceirosgesto-de-projeto)
-	- [2.1.	Forms](#21-forms)
-	- [2.2.	Relatório Gestão de Projeto](#22-relatório-gesto-de-projeto)
-
-
-<a name="1-introduo"></a>
-
-# 1. Introdução
+## 1. Introdução
 
 Neste documento está definido o ciclo da despesa de um projeto, desde a criação do seu CB (cabimento) até à ocorrência do PG (pagamento), com o objetivo de facilitar as validações para as quais seja preciso relacionar vários documentos. Assim, os projetos correspondem a unidades básicas de realização, com orçamento e calendarização rigorosamente definidos, sendo que um projeto é utilizado quando estamos perante o orçamento de investimento.
 
-<a name="2-menu-balancete-de-terceirosgesto-de-projeto"></a>
-
-# 2.	Menu Balancete de Terceiros/Gestão de projeto
+## 2.	Menu Balancete de Terceiros/Gestão de projeto
 
 Para satisfazer necessidades identificadas, foi criado um relatório para acompanhamento do ciclo da despesa, referente a um ou vários projetos. O relatório está disponível no meno Balancete de Terceiros>Gestão de Projeto.
 Este novo desenvolvimento permite também verificar os momentos em que ocorrem os registos dos documentos (seja por data de documento ou por data contabilística). Assim, é possível acompanhar o fluxo, desde o seu Cabimento (CB) até ao Pagamento (PG) e para uma ou mesmo várias entidades (conforme critérios de análise). Permite ainda selecionar um conjunto de projetos específico ou selecionar todos os projetos, sendo que para este caso, o campo 1º projeto/Último projeto tem de ser deixado em branco, não permitindo assim que se crie intervalos entre projetos.
 
-<a name="21-forms"></a>
-
-## 2.1.	Forms
+### 2.1.	Forms
 
 |Recolha |	Gestão de Projetos|
 |--|---|
@@ -46,9 +33,7 @@ Campo   |Descrição |Tipo de dados | Nº Carateres | Editável | Obrigatório |
 |  |Ficheiro .CSV         |Botão        |   | S | S | |
 |  |Sair                  |Botão        |   | S | N |  Sair do menu |
 
-<a name="22-relatório-gesto-de-projeto"></a>
-
-## 2.2.	Relatório Gestão de Projeto
+### 2.2.	Relatório Gestão de Projeto
 
 O relatório da gestão de projetos apresenta os valores contemplados no menu de parametrização ou seja, a informação de valor do relatório de gestão de projetos, tem de estar em consonância com a informação constante no seguinte menu:
 

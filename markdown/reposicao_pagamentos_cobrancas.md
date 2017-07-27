@@ -1,17 +1,6 @@
 # REPOSIÇÃO DE PAGAMENTOS E COBRANÇAS
 
----
-
-# Índice
-
-1.  [Introdução](#introducao)
-2.  [Reposição Abatida aos Pagamentos](#rap)
-3.  [Reposição Não Abatida nos Pagamentos](#rnap)
-4.  [Resumo](#resumo)
-
-<a name="introducao"></a>
-
-# 1. Introdução
+## 1. Introdução
 
 A reposição de pagamentos e cobranças dividem-se em RAP/RNAP, no sistema SICC e surge sempre que é detetado um pagamento/cobrança indevido do organismo, a um fornecedor/ cliente e é finalizada quando efetivado o pagamento/ recebimento.
 Sempre que seja detetado um pagamento / recebimento indevido, deverá proceder à emissão de uma guia de reposição. Esta pode ser:
@@ -19,9 +8,7 @@ Sempre que seja detetado um pagamento / recebimento indevido, deverá proceder �
 -   Reposição Abatida aos Pagamentos (RAP), quando existe uma alteração a um pagamento já efetuado e são considerados contabilisticamente como Notas de Crédito ( NC);
 -   Reposição Não Abatida aos Pagamentos (RNAP) quando existe uma alteração a uma cobrança já efetuada e são consideradas contabilisticamente como CC;
 
-<a name="rap"></a>
-
-# 2. Reposição Abatida aos Pagamentos
+## 2. Reposição Abatida aos Pagamentos
 
 ![img_1.png](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_1.png)
 
@@ -106,9 +93,7 @@ Na mesma altura e no AP, ao gerar contabilidade, o sistema, associado ao número
 
 ![img_19](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_19.png)
 
-<a name="rnap"></a>
-
-# 3. Reposição Não Abatida nos Pagamentos
+## 3. Reposição Não Abatida nos Pagamentos
 
 ![img_20](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_20.png)
 As reposições não abatidas nos pagamentos abrangem as receitas provenientes das entradas de fundos em resultado de cobranças orçamentais indevidos.
@@ -171,15 +156,13 @@ GR - Neste passo, pode-se efetuar a confirmação sem associar a fatura, pelo fa
 No valor de caixa (folha de caixa) estes valores serão positivos, dado que as contas 1 são registadas a crédito e não a débito.
 ![img_35](https://spmssicc.github.io/pages/markdown/assets/reposicao_pagamentos_cobrancas/img_35.png)
 
-<a name="resumo"></a>
-
-# 4. Resumo
+## 4. Resumo
 
 As RAP e RNAP são reposições de pagamentos e cobranças respetivamente. São tratadas contabilisticamente de forma diferente das notas de crédito (NC e CC) antes do Pagamento e da Cobrança.
 
 Os seus registos contabilísticos resumem-se a:
 
-### **RAP:**
+###### **RAP:**
 
 | Registo contabilístico | Débito | Crédito |
 |:---------------------|:-----|:------|
@@ -189,7 +172,7 @@ Os seus registos contabilísticos resumem-se a:
 | Movimentação Contabilística no NC (Rap ou NC “normal”) ao gerar contabilidade | 02700000 | 02600000 |
 | Movimentação Contabilística no NC (Rap ou NC “normal”) ao gerar contabilidade | 02600000 | 02300000 |
 
-### **RNAP:**
+###### **RNAP:**
 
 | Registo contabilístico | Débito | Crédito |
 |:---------------------|:-----|:------|

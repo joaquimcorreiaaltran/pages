@@ -46,7 +46,7 @@ function loadFooter () {
 }
 
 //Adiciona botões ao doc e atribui-lhes o link
-function loadDocButtons () {
+function loadDocButtons_OLD () {
   $.get("doc_buttons.html", function (data) {
 
              $("#content").append(data);
@@ -81,7 +81,7 @@ function loadDocButtons () {
          });
 }
 //TESTE: Adiciona botões ao doc e atribui-lhes o link
-function loadDocButtonsTest () {
+function loadDocButtons () {
   $.get("doc_buttons_test.html", function (data) {
 
              $("#content").append(data);

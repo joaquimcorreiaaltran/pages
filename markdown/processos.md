@@ -1,61 +1,11 @@
 # PROCESSOS
 
----
-
-# Índice
-
-1.  [Introdução](#introducao)
-2.  [Menu Orçamental](#menu_orcamental)
-    1.  [Orçamento Anual](#orcamento_anual)
-	      1.  [Recolha de Propostas Orçamentais](#recolha_propostas_orcamentais)
-	      2.  [Fundos disponíveis (LPCA)](#fundos_disponíveis_plca)
-	      3.  [Mapa (LPCA)](#mapas_lpca)
-	  2.  [Mapas Legais](#mapas_legais)
-	      1.  [Mapa 7.7.1 e 7.7.2 – Orçamento de Despesa/Receita](#mapa_orcamento_despesa_receita)
-	      2.  [Orçamento de Despesa](#orcamento_despesa)
-	      3.  [Mapas de Execução Orçamenta](#mapas_execucao)
-	      4.  [Controlo Orçamental - Despesa](#controlo_orcamental_despesa)
-	      5.  [Mapa 8.3.1.1 e 8.3.1.2 – Alterações Orçamentais Despesa/Receita](#mapas_alteracoes_orcamentais_despesa_receita)
-3.  [Menu Recolhas](#menu_recolhas)
-	  1.   [Ciclo Despesa](#ciclo_despesa)
-        1.  [Cabimento (CB)](#cabimento_cb)
-		    2.  [Alterações de Cabimentos (AM)](#alteracoes_cabimentos_AM)
-		    3.  [Compromisso (CM)](#compromisso_cm)
-		    4.  [Alteração de Compromisso (AB)](#alteracao_compromisso_ab)
-		    5.  [Lançamentos (CP)](#lancamentos_cp)
-		    6.  [Alteração de Lançamentos (AL)](#alteracao_lancamentos_al)
-		    7.  [Credores p/ Execução Orçamental (CE)](#credores_execucao_orcamental_ce)
-		    8.  [Autorização de Pagamento (AP)](#autorizacao_pagamento_ap)
-			      1.  [Impressão de Autorizações de Pagamento (AP)](#impressao_autorizacoes_pagamento_ap)
-		    9.  [Transferências Bancárias](#transferencias_bancarias)
-			      1.  [Importar Transferências Bancárias](#importar_transferencias_bancarias)
-		    10.  [Pagamentos (PG)](#pagamentos_pg)
-	  2.  [Ciclo Receita](#ciclo_receita)
-		    1.  [Faturas Devedores (FD)](#faturas_devedores_fd)
-		    2.  [Devedores p/ execução orçamental (DE)](#devedores_execucao_orcamental_de)
-		    3.  [Guias de Receita (GR)](#guias_receita_gr)
-			     1.   [Impressão de Guias de Receita](#impressao_guias_receita)
-			  4.   [Cobranças (CO)](#cobrancas_co_1)
-			     1.   [Impressão de Listagem de Cobrança](#impressao_listagem_cobranca)
-			     2.   [Recolha de Produtos](#recolha_produtos)
-		    5.   [Cobranças (CO)](#cobrancas_co_2)
-		    6.   [Impressão Documentos OR](#impressao_documentos_or)
-4.  [Menu Parametrização](#menu_parametrizacao)
-		1.   [Tabelas Genéricas](#tabelas_genericas)
-		    1.   [Instituições Bancárias - Recolha](#instituicoes_bancarias_recolha)
-		2.   [Terceiros](#terceiros)
-	      1.   [Gestão de Produtos - Recolha](#gestão_produtos_recolha)
-
-<a name="introducao"></a>
-
-# 1. Introdução
+## 1. Introdução
 
 A necessidade do manual de processos, surgiu da necessidade de apresentação do novo sistema SICC.
 Desta forma, o presente manual visa especificar o funcionamento do novo sistema SICC de certa forma muito parecido com o anterior (SIDC), evidenciando no novo sistema, as novas funcionalidades e ajustes na ótica do utilizador, bem como permitir respeitar o conjunto de requisitos a cumprir na Contabilidade.
 
-<a name="menu_orcamental"></a>
-
-# 2. Menu Orçamental
+## 2. Menu Orçamental
 
 Neste menu, o utilizador poderá fazer o registo das dotações através do carregamento do Orçamento anual:
 
@@ -63,14 +13,9 @@ Neste menu, o utilizador poderá fazer o registo das dotações através do carr
 
 Este submenu permite o acesso às propostas orçamentais e respetivo registo do Orçamento anual.
 
+#### Orçamento Anual
 
-<a name="orcamento_anual"></a>
-
-## Orçamento Anual
-
-<a name="recolha_propostas_orcamentais"></a>
-
-### Recolha de Propostas Orçamentais
+###### Recolha de Propostas Orçamentais
 
 ![img_2.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_2.png)
 
@@ -90,7 +35,7 @@ O formulário para recolha de propostas orçamentais é composta por:
 Neste ecrã, decidir os valores a constarem na proposta do orçamento através da inserção dos montantes de receita ou despesa pelos vários itens de orçamento.
 Nesta etapa, o utilizador que efetua o carregamento em SICC, tem de ter em conta a divisão pelas respetivas rubricas orçamentais. Verificar no entanto nesta fase se o total das receitas igual às despesas.
 
-### Orçamento Ordinário
+###### Orçamento Ordinário
 
 ![img_3.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_3.png)
 
@@ -131,13 +76,11 @@ Se as alterações estão validadas, o próximo passo é de “Aprovar” para q
 
 Desta forma, o utilizador pode agora proceder à “Consulta” e verificar o resultado das alterações geradas nos passos anteriores.
 
-### Consulta de Contabilidade
+###### Consulta de Contabilidade
 
 ![img_10.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_10.png)
 
-<a name="fundos_disponíveis_plca"></a>
-
-### Fundos disponíveis(LPCA)
+###### Fundos disponíveis(LPCA)
 
 Neste processo, e através do caminho abaixo indicado, será demonstrado o processo de registo dos Fundos disponíveis (LCPA).
 
@@ -206,11 +149,11 @@ Para validar, que o sistema efetua um controle dos fundos criados, não permitin
 
 :warning:__O Processo de criação de cabimentos e compromissos encontra-se detalhado no ponto 3.1 do documento.__
 
-#### Criação de Cabimento
+######## Criação de Cabimento
 
 ![img_25.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_25.png)
 
-#### Verificação prévia de fundos disponíveis
+######## Verificação prévia de fundos disponíveis
 
 :warning:__O sistema efetua no processo de despesa, uma verificação de fundos que atribui o número sequencial e valida a realização de compromisso assumido por parte da gestão de compras.__
 
@@ -224,19 +167,17 @@ Desta forma, o compromisso irá ser criado por uma importância de valor mais ba
 
 ![img_28.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_28.png)
 
-#### Criação com fundos disponíveis
+######## Criação com fundos disponíveis
 
 ![img_29.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_29.png)
 
-#### Geração de movimentos contabilísticos e confirmação
+######## Geração de movimentos contabilísticos e confirmação
 
 ![img_30.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_30.png)
 
-<a name="mapas_lpca"></a>
+###### Mapa(LPCA)
 
-### Mapa(LPCA)
-
-#### Tabela 1 – Fundos Disponíveis
+######## Tabela 1 – Fundos Disponíveis
 
 O utilizador neste processo, tem a possibilidade de extrair relatórios do sistema com base nas informações e valores introduzidas nos passos anteriores.
 
@@ -249,7 +190,6 @@ O utilizador neste processo, tem a possibilidade de extrair relatórios do siste
 |Mapa|Este botão permite ao utilizador consultar diretamente o mapa no ecrã. ![img_32.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_32.png)|
 |Sair|Este botão permite ao utilizador sair do ecrã corrente.|
 
-
 |__|
 |:----|
 |Qualquer uma das extrações permite ao utilizador ter o controlo dos Fundos disponíveis através de relatórios que espelham a atividade e fundos utilizados.|
@@ -260,7 +200,7 @@ O utilizador neste processo, tem a possibilidade de extrair relatórios do siste
 |Mês|Seleção do mês para carregamento dos fundos. ![img_mes_janeiro.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_mes_janeiro.png)|Todos|
 |Diretório|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido. ![img_33.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_33.png)|Todos|
 
-#### Tabela 4 - (SPA’s): Passivos/ Contas a Pagar
+######## Tabela 4 - (SPA’s): Passivos/ Contas a Pagar
 
 De igual modo à extração dos mapas anteriores, o utilizador nesta Tabela, usa o mesmo procedimento.
 
@@ -287,13 +227,9 @@ De igual modo à extração dos mapas anteriores, o utilizador nesta Tabela, usa
 |Mês|Seleção do mês para carregamento dos fundos. ![img_mes_janeiro.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_mes_janeiro.png)|Todos|
 |Diretório|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido. ![img_36.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_36.png)|Todos|
 
-<a name="mapas_legais"></a>
+#### Mapas Legais
 
-## Mapas Legais
-
-<a name="mapas_orcamento_despesa_receita"></a>
-
-### Mapas 7.7.1 e 7.7.2 - Orçamento de Despesa/Receita
+###### Mapas 7.7.1 e 7.7.2 - Orçamento de Despesa/Receita
 
 Nos mapas 7.7.1 e mapas 7.7.2, os ecrãs são idênticos na construção dos relatórios. Desta forma, o seguinte menu e respetivos submenus, permitem ao utilizador fazer uma análise ao Orçamento da despesa.
 
@@ -301,9 +237,7 @@ Nos mapas 7.7.1 e mapas 7.7.2, os ecrãs são idênticos na construção dos rel
 
 Ao clicar, surge o ecrã abaixo e que permite proceder à escolha do tipo de informação que pretende analisar, podendo para o efeito fazer várias combinações possíveis.
 
-<a name="orcamento_despesa"></a>
-
-### Orçamento de Despesa
+###### Orçamento de Despesa
 
 ![img_38.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_38.png)
 
@@ -327,9 +261,7 @@ O exemplo seguinte, demonstra um relatório de alteração orçamental gerada em
 
 ![img_46.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_46.png)
 
-<a name="mapas_execucao_orcamental"></a>
-
-### Mapas de Execução Orçamental
+###### Mapas de Execução Orçamental
 
 Relativamente a este processo, os mapas 7.1 (Mapa de Execução Orçamental da Despesa) e 7.2 (Mapa de Execução Orçamental da Receita), têm como finalidade permitir o controlo da execução orçamental da despesa e receita durante o exercício:
 
@@ -337,9 +269,7 @@ Relativamente a este processo, os mapas 7.1 (Mapa de Execução Orçamental da D
 
 Para tal, as opções no ecrã permite imprimir os formulários (gerando PDF), bem como, a extração para formato Excel, tendo o utilizador de definir o caminho para gravação do ficheiro.
 
-<a name="controlo_orcamental_despesa"></a>
-
-### Controlo Orçamental - Despesa
+###### Controlo Orçamental - Despesa
 
 ![img_48.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_48.png)
 
@@ -363,9 +293,8 @@ O procedimento do mapa 7.2 é idêntico ao explicado anteriormente, sendo apenas
 |:--------|
 |Irá ser incluída a chave orçamental neste mapa|
 
-<a name="mapas_alteracoes_orcamentais_despesa_receita"></a>
 
-### Mapa 8.3.1.1 e 8.3.1.2 - Alterações Orçamentais Despesa/Receita
+###### Mapa 8.3.1.1 e 8.3.1.2 - Alterações Orçamentais Despesa/Receita
 
 Os Mapas 8.3.1.1 (Alterações orçamentais da Despesa) e 8.3.1.2 (Alterações orçamentais da Receita) têm por finalidade evidenciar as alterações orçamentais existentes durante o exercício depois da dotação e previsão iniciais:
 
@@ -399,17 +328,11 @@ O procedimento do mapa 8.3.1.2 é idêntico ao explicado anteriormente, sendo ap
 
 ![img_55.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_55.png)
 
-<a name="menu_recolhas"></a>
+## 3. Menu Recolhas
 
-# 3. Menu Recolhas
+#### Ciclo Despesa
 
-<a name="ciclo_despesa"></a>
-
-## Ciclo Despesa
-
-<a name="cabimento_cb"></a>
-
-### Cabimento (CB)
+###### Cabimento (CB)
 
 Esta opção permite, consultar ou criar um novo documento de Cabimento e com base em critérios selecionados pelo utilizador.
 
@@ -485,7 +408,7 @@ Desta forma, nos passos seguintes, é demonstrado o funcionamento dos outros bot
 
 O utilizador ao escolher um dos seguintes botões obtém os ecrãs:
 
-#### Informação de CB
+######## Informação de CB
 
 ![img_70.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_70.png)
 
@@ -493,7 +416,7 @@ O utilizador ao pressionar o botão "Imprimir", gera no ecrã o resultado da cri
 
 ![img_72.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_72.png)
 
-#### Listagens de CB
+######## Listagens de CB
 
 ![img_74.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_74.png)
 
@@ -510,9 +433,7 @@ O formato na opção "Imprimir", é o seguinte:
 
 ![img_77.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_77.png)
 
-<a name="alteracoes_cabimentos_AM"></a>
-
-### Alterações de Cabimentos (AM)
+###### Alterações de Cabimentos (AM)
 
 Neste processo o que se pretende demonstrar é uma alteração a um CB já existente. Desta forma, iremos contemplar mais uma linha de item financeiro ao CB criado anteriormente.
 
@@ -559,9 +480,7 @@ Após validação dos elementos integrados e constatado que os valores estão co
 
 ![img_importacao_concluida_sucesso.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_importacao_concluida_sucesso.png)
 
-<a name="compromisso_cm"></a>
-
-### Compromisso (CM)
+###### Compromisso (CM)
 
 Entende-se por _Compromisso (CM)_, a verificação prévia de fundos disponíveis, as obrigações de efetuar pagamentos a terceiros em contrapartida do fornecimento de bens e serviços ou da satisfação de outras condições. Os compromissos consideram-se assumidos quando é executada uma ação formal pela entidade, como seja a emissão de ordem de compra, nota de encomenda ou documento equivalente, ou a assinatura de um contrato, acordo ou protocolo, podendo também ter um carácter permanente e estarem associados a pagamentos durante um período indeterminado de tempo, nomeadamente, salários, rendas, eletricidade ou pagamentos de prestações diversas.
 
@@ -630,9 +549,7 @@ O sistema deve apresentar a seguinte mensagem, sempre que ao “Número de Proce
 
 ![img_99.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_99.png)
 
-<a name="alteracao_compromisso_ab"></a>
-
-### Alteração de Compromisso (AB)
+###### Alteração de Compromisso (AB)
 
 :warning:__Existe igualmente a possibilidade de proceder à alteração no Compromisso, pelo que o utilizador terá de ter em atenção que as alterações efetuadas também têm de estar alinhadas com o valor do Cabimento. O sistema deteta e envia mensagem de erro caso se verifique que o valor do compromisso seja superior ao cabimento ou mesmo quando não existe cabimento para determinado item financeiro produzido posteriormente no compromisso. O Processo em si é semelhante ao explicado anteriormente nas alterações dos cabimentos (AM).__
 
@@ -656,9 +573,7 @@ Após validação dos elementos integrados e constatado que os valores estão co
 
 ![img_105.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_105.png)
 
-<a name="lancamentos_cp"></a>
-
-### Lançamentos (CP)
+###### Lançamentos (CP)
 
 Antes de realizar o registo de fatura FI, existe a necessidade de o utilizador verificar a disponibilidade do compromisso. Esta validação pode ser efetuada através utilizando para efeito o botão "Consulta", explicado em passos anteriores.
 
@@ -727,9 +642,7 @@ Após validação dos elementos integrados e constatado que os valores estão co
 
 ![img_importacao_concluida_sucesso.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_importacao_concluida_sucesso.png)
 
-<a name="alteracao_lancamentos_al"></a>
-
-### Alteração de Lançamentos (AL)
+###### Alteração de Lançamentos (AL)
 
 Neste processo o que se pretende demonstrar é uma alteração a um CP existente. O caminho que o utilizador deve seguir é:
 
@@ -756,9 +669,7 @@ Após validação dos elementos integrados e constatado que os valores estão co
 
 ![img_importacao_concluida_sucesso.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_importacao_concluida_sucesso.png)
 
-<a name="credores_execucao_orcamental_ce"></a>
-
-### Credores p/ Execução Orçamental (CE)
+###### Credores p/ Execução Orçamental (CE)
 
 ![img_126.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_126.png)
 
@@ -780,9 +691,7 @@ Após a confirmação, o sistema regressa á página inicial e demostra que a CE
 
 ![img_130.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_130.png)
 
-<a name="autorizacao_pagamento_ap"></a>
-
-### Autorização de Pagamento (AP)
+###### Autorização de Pagamento (AP)
 
 A autorização de pagamento das despesas, são autorizadas pelos dirigentes dos serviços ou outros que detenham autorização, mediante operações de tesouraria ou ainda através de transferência bancária, quando esta forma se revelar a mais conveniente.
 
@@ -809,9 +718,7 @@ Ao confirmar, uma nova janela surge com os movimentos contabilísticos associado
 
 ![img_135.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_135.png)
 
-<a name="impressao_autorizacoes_pagamento_ap"></a>
-
-#### Impressão de Autorizações de Pagamento (AP)
+######## Impressão de Autorizações de Pagamento (AP)
 
 Nesta etapa, é demonstrado o procedimento para fazer as impressões das AP’s (de forma _individual_ ou _global_) geradas no passo anterior. Para isso, deve o utilizador seguir o seguinte caminho no sistema:
 
@@ -856,9 +763,7 @@ De forma _Global_, ao selecionar “imprimir”, o sistema produz a Autorizaçã
 
 ![img_145.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_145.png)
 
-<a name="transferencias_bancarias"></a>
-
-### Transferências Bancárias
+###### Transferências Bancárias
 
 Nesta etapa, o utilizador vai criar os ficheiros para enviar aos respetivos órgãos com indicação das entidades e montantes associados. Deve assim seguir o seguinte caminho no sistema:
 
@@ -869,7 +774,6 @@ Surge um ecrã na qual o utilizador tem de preencher de acordo com o quadro abai
 ![img_147.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_147.png)
 
 :warning:__No caso da ACSS, o utilizador na altura da criação dos vários tipos de documentos (notas de crédito, notas de débito, etc), pode associar os mesmos ao referido Departamento a que dizem respeito, evidenciando posteriormente no ecrã e no respetivo campo![img_actividade_departamento.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_actividade_departamento.png).__
-
 
 |Campo|Obrigatoriedade|Descritivo|
 |:---|:---|:---|
@@ -905,9 +809,7 @@ O ficheiro, após gerado, fica guardado na extensão definida pelo utilizador pa
 
 :warning:__No caso específico da ACSS e por se tratar de uma instituição com 2 departamentos distintos, deve o utilizador ver o ponto 4 deste manual.__
 
-<a name="importar_transferencias_bancarias"></a>
-
-#### Importar Transferências Bancárias
+######## Importar Transferências Bancárias
 
 O  sistema SICC, permite ao utilizador a importação de ficheiros TXT. e a conversão de ficheiros TXT. em XML.
 
@@ -929,9 +831,7 @@ Nesta etapa, um novo ecrã surge, em que o utilizador tem possibilidade de reali
 
 :warning:__Na importação de TXT. ou na Conversão para XML, o sistema ao carregar o ficheiro, vai determinar o ultimo "Número de sequência", sendo que o vai atribuir de forma automática e sequencial para cada um dos casos referidos.__
 
-<a name="pagamentos_pg"></a>
-
-### Pagamentos (PG)
+###### Pagamentos (PG)
 
 De forma automática, uma conta de disponibilidades deve ser lançada a crédito por contrapartida da compensação da partida de autorização de pagamento com código de razão especial (252*).
 
@@ -971,7 +871,6 @@ Neste ecrã, o utilizador tem de preencher com a informação de acordo com as i
 
 :warning:__O utilizador tem de selecionar _sempre_ os documentos que deseja, sejam para consulta ou impressão através da colocação do visto ![img_checkbox_checked.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_checkbox_checked.png) no ecrã anterior.__
 
-
 |Campo|Obrigatoriedade|Descritivo|
 |:---|:---|:---|
 |Ano|Obrigatório|Exercício a que dizem respeito as informação da instituição.|
@@ -987,13 +886,9 @@ Ao selecionar “imprimir”, o sistema produz o documento em PDF
 
 ![img_168.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_168.png)
 
-<a name="ciclo_receita"></a>
+#### Ciclo Receita
 
-## Ciclo Receita
-
-<a name="faturas_devedores_fd"></a>
-
-### Faturas Devedores (FD)
+###### Faturas Devedores (FD)
 
 Neste processo, o objetivo é o utilizador fazer as contabilizações de faturas de devedores. Desta forma, o caminho no sistema a seguir é:
 
@@ -1013,12 +908,9 @@ Neste ecrã, há necessidade do preenchimento dos campos obrigatórios, sendo qu
 
 ![img_172.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_172.png)
 
-
 :warning:__Igualmente ao efetuado no anterior, os botões: "Consulta", "Abater" e "Sair", apresentam as mesmas funcionalidades.__
 
-<a name="devedores_execucao_orcamental_de"></a>
-
-### Devedores p/ execução orçamental (DE)
+###### Devedores p/ execução orçamental (DE)
 
 A conta “25 – Devedores e Credores pela Execução do Orçamento”, regista os movimentos correspondentes a ”n” recebimentos, incluindo os referentes a adiantamentos, reembolsos e restituições.”, indicando que a leitura da execução orçamental da receita pode ser obtida através das contas “251 – Devedores pela Execução do Orçamento”.
 
@@ -1040,9 +932,7 @@ No ecrã, surgem assim os movimentos contabilísticos associados de forma autom�
 
 ![img_176.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_176.png)
 
-<a name="guias_receita_gr"></a>
-
-### Guias de Receita (GR)
+###### Guias de Receita (GR)
 
 O Serviço Financeiro procede ao registo emitindo a Guia de Receita através de aplicação e que consiste na classificação económica e patrimonial das receitas. Posteriormente, os documentos são enviados para a Tesouraria para registo da cobrança.
 
@@ -1064,9 +954,7 @@ Nova mensagem surgirá com a Guia de receita criada, sendo que este processo est
 
 ![img_181.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_181.png)
 
-<a name="impressao_guias_receita"></a>
-
-#### Impressão de Guias de Receita
+######## Impressão de Guias de Receita
 
 Neste passo, é demonstrado o procedimento para fazer as impressões das GR geradas no passo anterior. Para isso, deve o utilizador seguir o seguinte caminho no sistema:
 
@@ -1094,9 +982,7 @@ Ao selecionar “imprimir”, o sistema produz a Guia de receita em PDF
 
 ![img_184.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_184.png)
 
-<a name="cobrancas_co_1"></a>
-
-### Cobranças (CO)
+###### Cobranças (CO)
 
 No processo de Cobrança, deve o utilizador lançar as várias contas de disponibilidades a débito por contrapartida de compensação da partida de liquidação da receita-cliente com código de razão especial (251*).
 
@@ -1110,9 +996,7 @@ Os movimentos contabilísticos surgem de forma automática, pelo que o utilizado
 
 ![img_187.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_187.png)
 
-<a name="impressao_listagem_cobranca"></a>
-
-#### Impressão de Listagem de Cobrança
+######## Impressão de Listagem de Cobrança
 
 De igual modo à impressão das GR, neste processo é demonstrado o procedimento para fazer as impressões das cobranças geradas no passo anterior. Para isso, deve o utilizador seguir o seguinte caminho no sistema:
 
@@ -1142,9 +1026,7 @@ Ao selecionar “imprimir”, o sistema produz a Listagem de Cobranças em PDF
 
 ![img_190.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_190.png)
 
-<a name="recolha_produtos"></a>
-
-#### Recolha de Produtos
+######## Recolha de Produtos
 
 Neste processo, será abordada a questão das OR’s, referentes à faturação. Neste caso, terá o utilizador de ter em atenção que as contas 7 (a crédito), tem de ser lançadas por contrapartida de uma conta 2.
 
@@ -1181,9 +1063,7 @@ Ao pressionar o botão "Consulta", o utilizador pode verificar as contabilizaç�
 
 ![img_194.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_194.png)
 
-<a name="cobrancas_co_2"></a>
-
-### Cobranças (CO)
+###### Cobranças (CO)
 
 ![img_195.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_195.png)
 
@@ -1199,9 +1079,7 @@ Os movimentos contabilísticos surgem de forma automática, pelo que o utilizado
 
 ![img_198.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_198.png)
 
-<a name="impressao_documentos_or"></a>
-
-#### Impressão Documentos OR
+######## Impressão Documentos OR
 
 Neste passo, é demonstrado o procedimento para fazer as impressões das GR geradas no passo anterior. Para isso, deve o utilizador seguir o seguinte caminho no sistema:
 
@@ -1231,17 +1109,11 @@ Ao selecionar “imprimir”, o sistema produz a Guia de Receita em PDF
 
 :warning:__O utilizador pode verificar na impressão o novo campo de “Observações” criado no ponto 3.2.7. .__
 
-<a name="menu_parametrizacao"></a>
+## 4. Menu Parametrização
 
-# 4. Menu Parametrização
+#### Tabelas Genéricas
 
-<a name="tabelas_genericas"></a>
-
-## Tabelas Genéricas
-
-<a name="instituicoes_bancarias_recolha"></a>
-
-### Tabelas Genéricas
+###### Tabelas Genéricas
 
 Neste menu, o utilizador pode fazer as configurações referente às instituições bancárias através da seguinte ecrã.
 
@@ -1253,13 +1125,9 @@ O novo ecrã tem o aspeto abaixo mostrado:
 
 Neste ecrã, de acordo com o explicado no ponto 3.1.10 do manual, a ACSS apresenta 2 Departamentos, sendo que o utilizador neste campo define o Identificador do IGCP, o Num. de Sequência e o Departamento a que diz respeito. Todas as restantes informações já existiam, pelo que o procedimento de preenchimento continua a ser o mesmo utilizado até à data.
 
-<a name="terceiros"></a>
+#### Terceiros
 
-## Terceiros
-
-<a name="gestão_produtos_recolha"></a>
-
-### Gestão de Produtos - Recolha
+###### Gestão de Produtos - Recolha
 
 Em aditamento ao manual da aplicação também já disponibilizado, no sistema SICC, surge agora um novo submenu:
 

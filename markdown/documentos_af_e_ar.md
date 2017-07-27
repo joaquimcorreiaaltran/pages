@@ -1,15 +1,6 @@
 # DOCUMENTOS DE ANULAÇÃO DE FATURAS E ANULAÇÃO DE RECEITAS
 
-# Índice
-
-1.  [Introdução](#introducao)
-2.  [Criação de novo tipo de documento – Anulação de Faturas (AF)](#af)
-3.  [Criação de novo tipo de documento – Anulação de Receita (AR)](#ar)
-
-
-<a name="introducao"></a>
-
-# 1.	Introdução
+## 1.	Introdução
 
 Em conformidade com as recomendações da Autoridade Tributária e Aduaneira (AT), não é
 possível anular diretamente uma fatura. A anulação do movimento de uma fatura é feita
@@ -26,11 +17,7 @@ regularização dos mesmos, de modo a que o seu impacto no final seja 0.
 Assim, pretende-se com o seguinte capítulo mostrar a posição destes novos documentos no
 novo desenho de fluxograma, bem como explicar o respetivo procedimento de regularização.
 
-<a name="af"></a>
-
-# 2. Criação de novo tipo de documento – Anulação de Faturas (AF)
-
-# Índice
+## 2. Criação de novo tipo de documento – Anulação de Faturas (AF)
 
 No fluxograma do ciclo da despesa, irá surgir um novo tipo de documento designado de AF (anulação de faturas).
 
@@ -39,7 +26,6 @@ Este novo tipo de documento surgirá assim no fluxograma:
 ![fluxograma despesa.png](https://spmssicc.github.io/pages/markdown/assets/documentos_af_e_ar/fluxograma_despesa.png)
 
 Proveniente exclusivamente do P2 ou da NC (exceto RAP), este novo tipo de documento obriga o utilizador a selecionar pelo menos uma fatura e uma NC com o objetivo do resultado final ter valor “0” para proceder ao registo de anulação.
-
 
 Desta forma, no menu:
 
@@ -63,9 +49,7 @@ Na impressão, o resultado da Anulação de Faturas deve ser:
 
 ![Image_B.png](https://spmssicc.github.io/pages/markdown/assets/documentos_af_e_ar/Image_B.png)
 
-<a name="ar"></a>
-
-# 3. Criação de novo tipo de documento – Anulação de Receita (AR)
+## 3. Criação de novo tipo de documento – Anulação de Receita (AR)
 
 No fluxograma do ciclo da receita, irá surgir um novo tipo de documento designado de AR (anulação de Receitas).
 

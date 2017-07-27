@@ -1,30 +1,12 @@
 # MACRO-TAREFAS
 
----
-
-# Índice
-
-1.  [Introdução](#introducao)
-2.  [Estrutura](#estrutura)
-3.  [Processo de Identificação das Necessidades](#processo_identificacao_necessidades)
-4.  [Circuito da Informação](#circuito_informacao)
-5.  [Revisão de Distribuição](#revisao_distribuicao)
-6.  [Processo de Requisito](#processo_requisito)
-7.  [Processo de Manual do utilizador](#processo_manual_utilizador)
-8.  [Repositório em GitHub](#repositorio_github)
-9.  [Conclusão](#conclusao)
-
-<a name="introducao"></a>
-
-# 1.	Introdução
+## 1.	Introdução
 
 As atividades dos organismos públicos são objetos de controlo, nomeadamente nos aspetos relacionados com a gestão documental de procedimentos. Com a aprovação do projeto SICC para o Sector da Saúde, pretendeu-se inovar na existência de documentação de maneira a que englobe “um plano de métodos, técnicas e procedimentos” que permitam observar os procedimentos e princípios básicos, previstos no POCMS e Normativo Contabilístico.
 
 As macro-tarefas foram definidas durante a realização de reunião de _kickoff_, com a presença dos intervenientes diretos do projeto SICC e selecionadas de acordo com as necessidades do projeto. Surgiu assim a sugestão de criar toda a documentação associada ao projeto com a utilização de duas ferramentas utilitárias: Markdown e GitHub.
 
-<a name="estrutura"></a>
-
-# 2.	Estrutura
+## 2.	Estrutura
 
 Este manual descreve os procedimentos que as entidades hospitalares devem adotar com o sistema SICC, constituindo portanto, o documento de referência para a implementação e melhoria de desempenho desses serviços.
 
@@ -38,9 +20,7 @@ Esquematizando, entende-se por processo ou requisito uma atividade ou um conjunt
 
 ![Macrotarefas/2.png](https://spmssicc.github.io/pages/markdown/assets/macro_tarefas/2.png)
 
-<a name="processo_identificacao_necessidades"></a>
-
-# 3.	Processo de Identificação das Necessidades
+## 3.	Processo de Identificação das Necessidades
 
 Alguns dos fatores que tornam complexo o processo de identificação das necessidades são:
 
@@ -54,9 +34,7 @@ Alguns dos fatores que tornam complexo o processo de identificação das necessi
 
 ![Macrotarefas/3.png](https://spmssicc.github.io/pages/markdown/assets/macro_tarefas/3.png)
 
-<a name="circuito_informacao"></a>
-
-# 4.	Circuito da Informação
+## 4.	Circuito da Informação
 
 Os diferentes tipos de informação necessária e as diferentes formas com que ela chega tornam a sua divulgação e processo de armazenamento distinto. A utilização da ferramenta Markdown é um dos principais meios de criação da informação e o seu armazenamento. Esta ferramenta converte assim o texto em HTML válido através de código.
 
@@ -66,9 +44,7 @@ O desempenho, prossupõe a existência de um repositório de conhecimento acumul
 
 ![Macrotarefas/5.png](https://spmssicc.github.io/pages/markdown/assets/macro_tarefas/5.png)
 
-<a name="revisao_distribuicao"></a>
-
-# 5. Revisão e Distribuição
+## 5. Revisão e Distribuição
 
 Todos os pedidos de revisões ou novas versões de Manuais de procedimentos / Requisitos devem ser efetuadas de novas aplicações ou mesmo já existentes no SICC, podendo existir a necessidade de se proceder a uma atualização dos procedimentos constantes neste manual.
 
@@ -80,9 +56,7 @@ Após parecer de qualquer dos elementos referenciados anteriormente para a imple
 
 ![Macrotarefas/7.png](https://spmssicc.github.io/pages/markdown/assets/macro_tarefas/7.png)
 
-<a name="processo_requisito"></a>
-
-# 6.	Processo de Requisito
+## 6.	Processo de Requisito
 
 O que se entende por requisito?
 
@@ -90,15 +64,15 @@ R: Um requisito não é mais que uma condição necessária para a obtenção de
 
 ![Macrotarefas/8.png](https://spmssicc.github.io/pages/markdown/assets/macro_tarefas/8.png)
 
-## 6.1	Perceção e domínio
+### 6.1	Perceção e domínio
 
 Para entender, é necessário ter a perceção do assunto e bem como saber desenvolver sistemas, ou seja, é necessário compreender inicialmente para posteriormente se conseguir executar.
 
-## 6.2	Recolha de Requisitos
+### 6.2	Recolha de Requisitos
 
 Como já referido, a recolha de requisitos é feita através de técnicas e de compreensão do tema. Igualmente nesta etapa, os requisitos são documentados à medida da recolha pretendida. É nesta altura que começa a existir um desenho ou _draft_ do que se pretende fazer e contemplar no requisito.
 
-## 6.3	Classificação
+### 6.3	Classificação
 
 A Classificação dos requisitos é 	uma etapa que permite agrupar os vários requisitos por categorias, sendo os mesmos bem definidos.
 		Exemplo:
@@ -106,11 +80,11 @@ A Classificação dos requisitos é 	uma etapa que permite agrupar os vários re
 o	A consulta a esse compromisso deve retornar uma resposta por parte do sistema em “X” segundos.
 
 
-## 6.4	Resolução de Conflitos
+### 6.4	Resolução de Conflitos
 
 Este ponto, está explicito no Capítulo 3 deste manual, no entanto e resumindo, são pessoas em geral que não sabem quais os requisitos que necessitam, que expressam os requisitos em função das suas necessidades e ao faze-lo podem inclusivamente gerar requisitos contraditórios entre organizações. Podem ainda existir casos em que os requisitos mudam durante o processo de análise, sendo que para o efeito o Cliente ou utilizador devem ser consultados.
 
-## 6.5	Atribuição de prioridade
+### 6.5	Atribuição de prioridade
 
 Alguns dos requisitos carecem de mais urgência que outros. É assim necessário perante o Cliente compreender as prioridades e considera-las sempre em primeiro lugar. Podemos assim analisar a prioridade de um requisito em 3 fases:
 
@@ -118,20 +92,20 @@ Alguns dos requisitos carecem de mais urgência que outros. É assim necessário
 2.  Importantes;
 3.  Desejáveis.
 
-## 6.6	Validação de requisitos
+### 6.6	Validação de requisitos
 
 A validação de requisitos encaixa na certeza e compreensão do requisito solicitado por parte do Cliente. É importante certificar de que não houve mal entendimentos na comunicação e que a mensagem do requisito foi compreendida. Um erro num requisito pode implicar custos para uma das partes (Cliente ou Empresa consultora).
 Posteriormente à criação do requisito, poderão surgir outros tipos de validação, sendo uma delas: revisão ao requisito; originar casos de teste, com a finalidade de avaliar se corresponde ao que foi inicialmente arquitetado.
 
 
-## 6.7	Definição e especificação dos requisitos
+### 6.7	Definição e especificação dos requisitos
 
 Nesta etapa, podem existir mudanças aos requisitos, tanto a nível do:
 -   Processo de requisito;
 -   Desenvolvimento no sistema;
 Por vezes, podem surgir requisitos novos resultantes do processo inicial, de acordo com mudança nas necessidades do negócio, sendo que essas alterações a especificidades podem ou não ser incluídas. Dependerá assim se as alterações ao objeto levam a grandes mudanças no previsto inicialmente
 
-## 6.8	Documentos dos requisitos
+### 6.8	Documentos dos requisitos
 
 Um documento de requisito deve conter os seguintes elementos:
 
@@ -156,14 +130,12 @@ Um documento de requisito deve conter os seguintes elementos:
 		2.  Concretização dos objetivos ou não e dar breve explicação
 		3.  Referir a importância de se ter efetuado o requisito
 
-<a name="processo_manual_utilizador"></a>
-
-# 7.	Processo de Manual do utilizador
+## 7.	Processo de Manual do utilizador
 
 Os manuais do utilizador são documentos escritos, que podem ser disponibilizados impressos ou digitalmente (Markdown). Fornecem instruções sobre como fazer algo ou utilizar neste caso um sistema.
 Um bom manual explica passo a passo aos utilizadores as funções do “produto” ao mesmo tempo, ensina a utilizá-las de modo eficiente, sendo toda a informação explicada de modo acessível. A seguir iremos demonstrar o que deve um manual de utilizador conter e quais as informações que se consideram relevantes:
 
-## 1.	Definir quem é o utilizador
+### 1.	Definir quem é o utilizador
 
 Para escrever um bom manual, é preciso identificar os utilizadores alvo. Esta identificação é útil para ajudar levar o produto do conceito à fase final. Ao identificar um perfil de utilizador, convém ter presente:
 
@@ -171,16 +143,16 @@ Para escrever um bom manual, é preciso identificar os utilizadores alvo. Esta i
 -   Se vai ser um documento que seja consultado com frequência ou se será só de pesquisa periódica;
 -   Saber qual recetividade e resistência do utilizador a manuais que sejam diferentes ou extensos do âmbito habitual;
 
-## 2.	Quais as necessidades do utilizador e linguagem a utilizar
+### 2.	Quais as necessidades do utilizador e linguagem a utilizar
 
 A menos que o utilizador possua um conhecimento técnico, é melhor evitar a linguagem técnica, sempre optando por explicações simples e claras. O texto deve ser organizado de modo a que ao ler pela primeira vez, mesmo não entendendo, seja de fácil compreensão.
 -   Neste caso, é útil definir os termos e disponibilizar algum tipo de _background_, como imagens dos ecrãs do sistema, explicando-os e enquadrando para a execução de tarefas/análises financeiras definidas em requisitos.
 
-## 3.	Solução para o utilizador – _Ticket’s_ Redmine
+### 3.	Solução para o utilizador – _Ticket’s_ Redmine
 
 Com os manuais, pretende-se oferecer uma opção como solução ao problema que possa surgir. É necessário identificar problemas específicos que as pessoas enfrentam no seu dia-a-dia. Cumpre a esta equipa SICC criar manuais e informações, disponibilizando-as e que sejam passiveis de solução ao apresentado.
 
-## 4.	Manual de utilizador em suporte digital MdCharm (editor de texto) Markdown
+### 4.	Manual de utilizador em suporte digital MdCharm (editor de texto) Markdown
 
 A palavra “inovação” nos Manuais de utilizador, é o que consta das Macro Tarefas definidas para este projeto, recorrendo para o efeito a duas ferramentas essenciais. Um editor de texto (MdCharm) e um repositório (GitHub) para disponibilizar esta mesma informação aos utilizadores e utilizando o conceito _online_.
 
@@ -188,10 +160,10 @@ A palavra “inovação” nos Manuais de utilizador, é o que consta das Macro 
 
 As imagens podem ilustrar algumas ideias melhor do que os textos, principalmente ao descrever procedimentos complexos onde o utilizador precisa de informações visuais para se certificar de que está a realizar corretamente os passos. As imagens podem ser produzidas com softwares de desenho, softwares de edição de imagem (que também podem ser utilizados nos casos de captura de tela).
 
-<a name="repositorio_github"></a>
-# 8.	Repositório em GitHub
 
-## O que é o GitHub?
+## 8.	Repositório em GitHub
+
+### O que é o GitHub?
 
 R: O GitHub é um repositório de controlo de versões, isto é, onde se pode trabalhar num mesmo diretório, dando a possibilidade de fazer alterações ao nosso projeto, dando a possibilidade de gravar documentação, imagens e comentários.
 
@@ -263,9 +235,7 @@ O resultado final deve ser o evidenciado abaixo:
 
 Este pequeno capítulo visa somente esclarecer os conceitos básicos do GitHub, sendo que existem inúmeros conceitos que podem ser aprofundados
 
-<a name="conclusao"></a>
-
-# 9. Conclusão
+## 9. Conclusão
 
 Muitas necessidades de informação são pontuais e urgentes para os utilizadores SICC.
 Desta forma, o armazenamento da informação é cada vez mais importante em ser centralizada. Com os canais necessários e a prática comum da utilização da Web, esta informação consegue ser rápida e eficaz na consulta.

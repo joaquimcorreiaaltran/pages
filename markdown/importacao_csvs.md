@@ -1,24 +1,6 @@
 # IMPORTAÇÃO DE CSVs
 
----
-
-# Índiceeee
-
-1.  [Introdução](#introducao)
-2.  [Âmbito](#ambito)
-3.  [PO - Propostas Orçamentais](#PO)
-4.  [CB e CM - Cabimentos e Compromissos](#CB_CM)
-5.  [CP - Comprometidos](#CP)
-6.  [P1 e P2 - Processado em conferência e Processado conferido](#P1_P2)
-7.  [AM, AB e AL - Alterações](#AM_AB_AL)
-8.  [CE - Credores p/ execução Orçamental](#CE)
-9.  [AP - Autorização de Pagamento](#AP)
-10. [PG - Pagamento](#PG)
-11. [OD - Operações Diversas](#OD)
-
-<a name="introducao"></a>
-
-# 1. Introdução
+## 1. Introdução
 
 Este capítulo pretende demonstrar as novas funcionalidades da aplicação SICC, bem como especificar a funcionalidade do botão “importar” por vários submenus do sistema, demonstrando ao utilizador o seu modo de utilização. O procedimento de importação é exatamente igual em todos os processos, sendo que o resultado esperado difere com os tipos de documentos criados.
 
@@ -34,15 +16,11 @@ Cada capítulo irá abordar uma funcionalidade em particular demonstrando ao uti
 -   PG - Pagamento;
 -   OD - Operações Diversas.
 
-<a name="ambito"></a>
-
-# 2.    Âmbito
+## 2. Âmbito
 
 Este manual descreve a forma de importação de ficheiros CSV. em várias telas do Sistema SICC, bem como demonstra as respetivas posições nas ligações para esta extensão de ficheiro, aplicadas a cada submenu concretamente. O documento será revisto e atualizado à medida que novas funcionalidades sejam adicionadas à aplicação ou caso as funcionalidades existentes sejam alteradas e essa alteração implique a atualização do manual. O procedimento é efetuado nas mesmas telas onde se fazem registos manuais, no entanto com a nova ferramenta de “importar”.
 
-<a name="PO"></a>
-
-# 3. PO
+## 3. PO
 
 Ao utilizador que fica responsável pelas importações dos ficheiros CSV. tem de obedecer ao instituído nas posições das ligações (*Layout’s*).
 No caso deste primeiro capítulo, vamos assim demonstrar as etapas que o utilizador terá de percorrer até à conclusão da importação.
@@ -51,7 +29,6 @@ Os formatos de arquivo de texto usados com frequência:
 Arquivos de texto com valores separados por vírgulas (.CSV), nos quais o caracter vírgula (,) geralmente separa cada campo de texto.
 
 ![imagem3](https://spmssicc.github.io/pages/markdown/assets/importacao_csvs/image3.png)
-
 
 Findo o preenchimento do respetivo ficheiro de integração, o utilizador deve guardar o caminho do documento com a respetiva extensão anteriormente referida.
 ![imagem4](https://spmssicc.github.io/pages/markdown/assets/importacao_csvs/image4.png)
@@ -72,7 +49,6 @@ Nova tela surge, sendo que o utilizador tem de escolher o caminho para chegar ao
 ![imagem7](https://spmssicc.github.io/pages/markdown/assets/importacao_csvs/image7.png)
 
 O utilizador para verificar a integração do ficheiro, terá para o efeito de pressionar “ver/testar Ficheiro”. Ao carregar, o ficheiro CSV. corre em background podendo dar um de dois resultados:
-
 
 Erro no ficheiro:
 
@@ -95,9 +71,7 @@ Uma nova mensagem surge e o ficheiro integrado, dando-se assim como encerrado o 
 
 ![imagem10](https://spmssicc.github.io/pages/markdown/assets/importacao_csvs/image10.png)
 
-<a name="CB_CM"></a>
-
-# 4.    CB e CM
+## 4. CB e CM
 
 Conforme mencionado no capítulo anterior, os vários lançamentos no sistema SICC, obedecem a uma determinada estrutura, a qual tem de ser respeitada para a integração dos mesmos ficheiros. Neste segundo capítulo é demonstrada assim a estrutura para os Cabimentos e para os Compromissos.
 
@@ -128,9 +102,7 @@ Como explicado anteriormente, as telas de importação funcionam de igual forma 
 **Nota:**
 O Processo de importação é em todo igual ao explicado no capítulo anterior. Realçando no entanto que qualquer erro que aconteça durante o processo terá de ser revisto, salvo e sujeito a novo teste de verificação de documento. Enquanto existirem mensagens de erro não resolvidas o sistema não completa a importação.
 
-<a name="CP"></a>
-
-# 5.    CP
+## 5. CP
 
 ![imagem16](https://spmssicc.github.io/pages/markdown/assets/importacao_csvs/image16.png)
 
@@ -146,9 +118,7 @@ Submenu:
 **Nota:**
 O Processo de importação é em todo igual ao explicado no capítulo anterior. Realçando no entanto que qualquer erro que aconteça durante o processo terá de ser revisto, salvo e sujeito a novo teste de verificação de documento. Enquanto existirem mensagens de erro não resolvidas o sistema não completa a importação.
 
-<a name="P1_P2"></a>
-
-# 6. P1 e P2
+## 6. P1 e P2
 
 Neste capítulo pretende-se demonstrar a criação dos ficheiros de importação relativos ao P1 e P2. Desta forma, abaixo demonstrado, encontram-se as estruturas dos ficheiros CSV. com as respetivas obrigatoriedades de preenchimento assinaladas a Bold/Negrito.
 
@@ -163,26 +133,20 @@ Para integração dos ficheiros criados no passo anterior, deve o utilizador usa
 Menu:
 ![imagem22](https://spmssicc.github.io/pages/markdown/assets/importacao_csvs/image22.png)
 
-
-
 Abaixo, encontram-se as telas relativas à importação dos ficheiros CSV. Conforme mencionado anteriormente, os procedimentos de importação são idênticos em todos os tipos de documento, pelo que a nível de efeitos de manual, são somente demonstradas as telas que o utilizador tem de usar.
 Submenu:
 
 **P1**
 ![imagem23](https://spmssicc.github.io/pages/markdown/assets/importacao_csvs/image23.png)
 
-
 **P2**
 ![imagem24](https://spmssicc.github.io/pages/markdown/assets/importacao_csvs/image24.png)
-
 
 Para efeitos de manual, é demonstrada a tela de importação do P2, onde o utilizador faz a importação do ficheiro CSV. As recomendações e notas evidenciadas anteriormente servem de igual forma para este capítulo.
 
 ![imagem25](https://spmssicc.github.io/pages/markdown/assets/importacao_csvs/image25.png)
 
-<a name="AM_AB_AL"></a>
-
-# 7.    AM, AB e AL
+## 7. AM, AB e AL
 
 De forma abrangente, neste capítulo pretende-se demonstrar as telas das posições nas ligações CSV. para as possíveis alterações a serem realizadas no sistema SICC.
 
@@ -211,9 +175,7 @@ Os ficheiros de integração são os seguintes:
 **Nota:**
 O Processo de importação é em todo igual ao explicado no capítulo anterior. Realçando no entanto que qualquer erro que aconteça durante o processo terá de ser revisto, salvo e sujeito a novo teste de verificação de documento. Enquanto existirem mensagens de erro não resolvidas o sistema não completa a importação.
 
-<a name="CE"></a>
-
-# 8.    CE
+## 8. CE
 
 De igual forma aos capítulos anteriores, o procedimento de importação é idêntico, no entanto e na elaboração do ficheiro CSV. No entanto e neste caso específico, constatamos que para o carregamento do CE (conforme imagem abaixo), o ficheiro pode conter vários tipos de documentos gerados em passos anteriores e que entrarão todos em conjunto na integração (ao contrário da individualidade de tipos de documentos demonstrados anteriormente).
 
@@ -250,14 +212,11 @@ Se o ficheiro apresentar o aspeto acima demonstrado, quer dizer que não foram d
 
 Uma nova mensagem surge e o ficheiro integrado, dando-se assim como encerrado o carregamento dos CE's.
 
-<a name="AP"></a>
-
-# 9.    AP
+## 9. AP
 
 Neste capítulo e de igual maneira ao procedimento de importação do CE (conforme imagem abaixo), o ficheiro pode conter vários tipos de documentos gerados no passo anterior (CE), sendo que neste caso em concreto e para realização da AP, necessitamos de dados como a conta bancária e o IBAN. A atribuição do Nº da AP é também definida pelo utilizador.
 
 ![imagem37](https://spmssicc.github.io/pages/markdown/assets/importacao_csvs/image37.png)
-
 
 **Nota:**
 A categoria de motivo é de preenchimento obrigatório quando existam contas bancárias e IBAN associados. Desta forma, a numeração da categoria deve ser preenchida pelo utilizador, conforme a tabela abaixo demonstrada:
@@ -289,9 +248,7 @@ Se o ficheiro apresentar o aspeto acima demonstrado, quer dizer que não foram d
 
 Uma nova mensagem surge e o ficheiro integrado, dando-se assim como encerrado o carregamento das AP’s.
 
-<a name="PG"></a>
-
-# 10. PG
+## 10. PG
 
 Este é o último capítulo referente ao processo da despesa, pelo que a ultima fase é a correspondente ao Pagamento. Desta forma, depois de escolhidas as entidades na AP, neste processo efetiva-se o pagamento. Para o efeito, novo ficheiro CSV. é criado com a estrutura abaixo demonstrada.
 
@@ -300,7 +257,6 @@ Este é o último capítulo referente ao processo da despesa, pelo que a ultima 
 Menu:
 
 ![imagem45](https://spmssicc.github.io/pages/markdown/assets/importacao_csvs/image45.png)
-
 
 Submenu:
 
@@ -320,9 +276,7 @@ Nova mensagem é despoletada pelo Sistema, dando-se assim como findo o carregame
 
 ![imagem49](https://spmssicc.github.io/pages/markdown/assets/importacao_csvs/image49.png)
 
-<a name="OD"></a>
-
-# 11. OD
+## 11. OD
 
 A importação das operações diversas (OD), em nada difere dos procedimentos de importação demonstrados anteriormente.
 Desta forma, o utilizador terá somente de proceder ao preenchimento não esquecendo que para uma conta 6*, 7* ou 3* é obrigatória a atribuição de um centro de custo.
