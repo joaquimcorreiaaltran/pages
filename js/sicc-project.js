@@ -30,8 +30,9 @@ function convertMdToHtml (elementId) {
             ,htmlDoc = converter.makeHtml(text); //converte a string em HTML
                 document.getElementById(elementId).innerHTML = htmlDoc;//carrega html no elementId
                 zommClickImagem();
+
                 if(doc_name=="processos_snc_ap"){
-                  toc(); //TEST: add table of contents to the html page
+                  //toc(); //TEST: add table of contents to the html page
                 }
 
          }
@@ -47,13 +48,21 @@ function loadFooter () {
 //Adiciona botões ao doc e atribui-lhes o link
 function loadDocButtons () {
   $.get("doc_buttons.html", function (data) {
+
              $("#content").append(data);
+
              $("#btnEditarDoc").click(function(){
                window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/"+doc_name+".md","_blank");
              });
+
              $("#btnPDF").click(function(){
                window.open("https://spmssicc.github.io/pages/pdf/"+doc_name+".pdf","_blank");
              });
+
+             $("#btnBackToTop").click(function(){
+               $('html, body').animate({ scrollTop: 0 }, 'slow');
+             });
+
              //Mostra ou oculta o botão para voltar ao topo da página
              $(window).scroll(function() {
                if ($(this).scrollTop() > 2000) {
@@ -74,13 +83,29 @@ function loadDocButtons () {
 //TESTE: Adiciona botões ao doc e atribui-lhes o link
 function loadDocButtonsTest () {
   $.get("doc_buttons_test.html", function (data) {
+
              $("#content").append(data);
+
              $("#btnEditarDoc").click(function(){
                window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/"+doc_name+".md","_blank");
              });
+
              $("#btnPDF").click(function(){
                window.open("https://spmssicc.github.io/pages/pdf/"+doc_name+".pdf","_blank");
              });
+
+             $("#btnBackToTop").click(function(){
+               $('html, body').animate({ scrollTop: 0 }, 'slow');
+             });
+
+             $("#btnShowToc").click(function(){
+               showToc();
+             });
+             $("#btnShowToc i").click(function(){
+               showToc();
+             });
+             toc("tocDropdown");
+
 
               //Mostra ou oculta o botão para voltar ao topo da página
               $(window).scroll(function() {
@@ -98,7 +123,7 @@ function loadDocButtonsTest () {
                 }
               });
          });
-}
+}//fecha loadDocButtonsTest()
 
 // Preparar imagem para zoom ou para não zoom (mostra ou não mostra a lupa)
 function zommClickImagem() {
@@ -173,46 +198,38 @@ function loadCommitHistory() {
 /*
 TOC - Builds the table of contents after the conversion of markdown to HTML
 */
-function toc(){
+function toc(elementToPopulate){
 
-  var ToC =
-		  "<nav role='navigation' class='table-of-contents'>" +
-		    "<h4>Nesta página:</h4>" +
+  console.log("Entrou na toc()");
+
+  var toc_html =
+      "<nav role='navigation' class='table-of-contents'>" +
+		    "<h1>Índice:</h1>" +
 		    "<ul>";
 
 		var newLine, el, title, link;
 
+    //insert here the HTML elements to include in the Table of Content
 		$("article h2,h3,h4").each(function() {
 
 		  el = $(this);
 		  link = "#" + el.attr("id");
-      space = "&nbsp;&nbsp;&nbsp;";
+      title = el.text();
+      nodeName = el.get(0).nodeName.toLowerCase();
 
-      if(document.getElementById(el.attr("id")).nodeName=="H1"){
-          title = el.text();
-      }
-      if(document.getElementById(el.attr("id")).nodeName=="H2"){
-          title = el.text();
-      }
-      if(document.getElementById(el.attr("id")).nodeName=="H3"){
-          title = space+el.text();
-      }
-      if(document.getElementById(el.attr("id")).nodeName=="H4"){
-          title = space+space+el.text();
-      }
-      if(document.getElementById(el.attr("id")).nodeName=="H5"){
-          title = space+space+space+el.text();
-      }
+      newLine = "<li>" + "<" + nodeName + ">" + "<a href='" + link + "'>"  + title + "</a>" + "</" + nodeName + ">" + "</li>";
+      //console.log(newLine);
 
-      newLine = "<li>" + "<a href='" + link + "'>" + title + "</a>" + "</li>";
-      ToC += newLine;
+      toc_html += newLine;
 		});
 
-		ToC +=
+		toc_html +=
 		   "</ul>" +
 		  "</nav>";
-		//$(".modulo").prepend(ToC);
-    $(".dropdown-content").prepend(ToC);
+
+    //$(".dropdown-content").prepend(toc_html);
+
+    document.getElementById(elementToPopulate).innerHTML = toc_html;
 
 }
 
@@ -222,12 +239,11 @@ function toc(){
 toggle between hiding and showing the dropdown content */
 function showToc() {
     document.getElementById("tocDropdown").classList.toggle("show");
-}
+};
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
-
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
