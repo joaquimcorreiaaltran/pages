@@ -695,17 +695,11 @@ h4:target {
 }
 
 /* hovers */
-#accordion a:hover, #accordion div:hover {
+#accordion a:hover, #accordion div.top:hover {
   color: #40A293;
   font-size: 1em;
   font-weight: bold;
 }
-
-/*#accordion li.top:hover {
-  color: #40A293;
-  font-size: 1em;
-  font-weight: bold;
-}*/
 
 #accordion a > i:hover {
   font-size: 1.5em;
