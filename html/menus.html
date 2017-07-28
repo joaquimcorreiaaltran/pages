@@ -42,13 +42,16 @@
 	<script src="../js/libs/accordion-menu.js"></script>
 	<script src="../js/highslide-with-gallery.js"></script>
 	<script src="../js/jquery.zoom.js" async></script>
-
 	<script>
 		$(function(){
 			// convert .md file to html and place it into the html element sent (argument)
-		 	convertMdToHtml("documento");
-			loadFooter();
-			loadDocButtons();
+		 	convertMdToHtml("documento", function() {
+				loadFooter();
+				loadDocButtons(function() {
+					//build the table of content
+					toc("tocDropdown");
+				});+
+			});
 		});
 	</script>
 </body>

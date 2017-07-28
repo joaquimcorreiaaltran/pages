@@ -42,28 +42,16 @@
 	<script src="../js/libs/accordion-menu.js"></script>
 	<script src="../js/highslide-with-gallery.js"></script>
 	<script src="../js/jquery.zoom.js" async></script>
-
 	<script>
 		$(function(){
 			// convert .md file to html and place it into the html element sent (argument)
-		 	convertMdToHtml("documento");
-			loadFooter();
-			loadDocButtons();
-		});
-
-		$(window).scroll(function() {
-		  if ($(this).scrollTop() > 2000) {
-		    //add effect / animation
-		    $('.showWithScroll').stop(true).animate({
-		       opacity: 1
-		    }, 500);
-		  } else {
-		    if ($(this).scrollTop() < 1000) {
-		      $('.showWithScroll').stop(true).animate({
-						 opacity: 0
-		      }, 500);
-		    }
-		  }
+		 	convertMdToHtml("documento", function() {
+				loadFooter();
+				loadDocButtons(function() {
+					//build the table of content
+					toc("tocDropdown");
+				});+
+			});
 		});
 	</script>
 </body>
