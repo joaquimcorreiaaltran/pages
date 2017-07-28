@@ -159,7 +159,7 @@ function toc(elementToPopulate){
 
   var toc_html =
       "<nav role='navigation' class='table-of-contents'>" +
-		    "<h1>Índice:</h1>" +
+		    "<h1>Índice</h1>" +
 		    "<ul>";
 
 		var newLine, el, title, link;
@@ -172,7 +172,9 @@ function toc(elementToPopulate){
       title = el.text();
       nodeName = el.get(0).nodeName.toLowerCase();
 
-      newLine = "<li>" + "<" + nodeName + ">" + "<a href='" + link + "'>"  + title + "</a>" + "</" + nodeName + ">" + "</li>";
+      newLine = "<li>" +
+                  "<a class='toc_"+nodeName+"' href='" + link + "'>"  + title + "</a>" +
+                "</li>";
       //console.log(newLine);
 
       toc_html += newLine;
