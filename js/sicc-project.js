@@ -159,7 +159,7 @@ function toc(elementToPopulate){
 
   var toc_html =
       "<nav role='navigation' class='table-of-contents'>" +
-		    "<h1>Índice</h1>" +
+		    "<h2>Índice</h2>" +
 		    "<ul>";
 
 		var newLine, el, title, link;
