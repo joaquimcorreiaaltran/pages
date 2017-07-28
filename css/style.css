@@ -485,6 +485,7 @@ a.toc_h6 {
   width: 100%;
   background: #eee;
   font-size: 1em;
+  padding: : 2em 2em 2em 2em;
   margin: 0em;
   height: inherit;
 }
@@ -504,7 +505,7 @@ a.toc_h6 {
   text-decoration: underline;
 }
 
-.table-of-contents h1{
+.table-of-contents h1,h2{
   margin: 0.5em 0.5em 0.5em 0.5em;
 }
 
