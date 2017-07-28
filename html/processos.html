@@ -45,9 +45,12 @@
 	<script>
 		$(function(){
 			// convert .md file to html and place it into the html element sent (argument)
-		 	convertMdToHtml("documento");
-			loadFooter();
-			loadDocButtons();
+		 	convertMdToHtml("documento", function() {
+				loadFooter();
+				loadDocButtons(function() {
+					toc("tocDropdown");
+				});
+			});
 		});
 
 	</script>

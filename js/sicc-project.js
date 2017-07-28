@@ -19,7 +19,7 @@ dimmingGeckoFix = true;
 blockRightClick = true;
 
 //load and convert Markdown to Html and show it
-function convertMdToHtml (elementId) {
+function convertMdToHtml (elementId, funcao) {
    var request = new XMLHttpRequest();
    //Asynchronous request (true=asynchronous)
    request.open('GET', '../markdown/'+ doc_name +'.md',true);
@@ -30,6 +30,10 @@ function convertMdToHtml (elementId) {
             ,htmlDoc = converter.makeHtml(text); //converte a string em HTML
                 document.getElementById(elementId).innerHTML = htmlDoc;//carrega html no elementId
                 zommClickImagem();
+
+                if(funcao != undefined && typeof funcao == "function"){
+                  funcao();
+                }
          }
       }
    request.send();
@@ -41,7 +45,7 @@ function loadFooter () {
 }
 
 //Adiciona botões ao doc e atribui-lhes o link
-function loadDocButtons () {
+function loadDocButtons (funcao) {
   $.get("doc_buttons.html", function (data) {
 
              $("#content").append(data);
@@ -64,8 +68,6 @@ function loadDocButtons () {
              $("#btnShowToc i").click(function(){
                showToc();
              });
-             toc("tocDropdown");
-
 
               //Mostra ou oculta o botão para voltar ao topo da página
               $(window).scroll(function() {
@@ -82,7 +84,12 @@ function loadDocButtons () {
                   }
                 }
               });
+              if(funcao != undefined && typeof funcao == "function"){
+                funcao();
+              }
          });
+
+
 }//fecha loadDocButtons()
 
 // Preparar imagem para zoom ou para não zoom (mostra ou não mostra a lupa)
@@ -155,7 +162,7 @@ TOC - Builds the table of contents after the conversion of markdown to HTML
 */
 function toc(elementToPopulate){
 
-  console.log("Entrou na toc(). elementToPopulate = "+elementToPopulate);
+  console.log("Entrou na toc().\n document.getElementById(elementToPopulate) = "+document.getElementById(elementToPopulate));
 
   var toc_html =
       "<nav role='navigation' class='table-of-contents'>" +
@@ -185,7 +192,8 @@ function toc(elementToPopulate){
 		  "</nav>";
 
     //$(".dropdown-content").prepend(toc_html);
-    console.log(toc_html);
+    console.log("HTML do Índice:\n"+toc_html);
+
     document.getElementById(elementToPopulate).innerHTML = toc_html;
 
 }
