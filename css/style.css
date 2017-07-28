@@ -431,6 +431,33 @@ p.caption{
     border: #40A293;
     border-width: medium;
     border-style: solid;
+    animation: dropdown;
+    animation-duration: 0.1s;
+}
+
+@-ms-keyframes dropdown {
+  from {bottom: -200px;}
+  to {bottom: 40px;}
+}
+
+@-moz-keyframes dropdown {
+  from {bottom: -200px;}
+  to {bottom: 40px;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes dropdown {
+  from {bottom: -200px;}
+  to {bottom: 40px;}
+}
+
+@keyframes dropdown {
+  from {
+    bottom: -200px;
+  }
+  to {
+    bottom: 40px;
+  }
 }
 
 /* Links inside the dropdown */
@@ -450,6 +477,7 @@ p.caption{
 .dropdown-content nav > h5,
 .dropdown-content nav > h6 {
     margin: 0;
+    background-color: #dbdbdb;
 }
 
 a.toc_h1 {
@@ -492,7 +520,9 @@ a.toc_h6 {
 .dropdown-content a:hover {background-color: rgb(255, 255, 255)}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
+.show {
+  display:block;
+}
 
 /*************************************************************/
 /* Teste TOC*/
@@ -555,7 +585,6 @@ h4:target {
 /*************************************************************/
 #accordion {
     visibility:hidden;
-    /*background: white;/*original color: 2e4453; SNS color: 40A293*/*/
     overflow-y:none;
     overflow-x:auto;
     height:100vh;
@@ -1259,6 +1288,8 @@ footer img {
 
 	}
 
+
+
 /* Wide */
 
 	@media screen and (min-width: 1201px) {
@@ -1417,10 +1448,10 @@ footer img {
 				-webkit-backface-visibility: hidden;
 				-ms-backface-visibility: hidden;
 				backface-visibility: hidden;
-				-moz-transition: -moz-transform 1s ease;
-				-webkit-transition: -webkit-transform 1s ease;
-				-ms-transition: -ms-transform 1s ease;
-				transition: transform 1s ease;
+				-moz-transition: -moz-transform 0.5s ease;
+				-webkit-transition: -webkit-transform 0.5s ease;
+				-ms-transition: -ms-transform 0.5s ease;
+				transition: transform 0.5s ease;
 				display: block;
 				height: 100vh;
 				min-height: 0;
