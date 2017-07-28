@@ -94,12 +94,14 @@ function loadDocButtons (funcao) {
 
 // Preparar imagem para zoom ou para não zoom (mostra ou não mostra a lupa)
 function zommClickImagem() {
-      var show = true;
-    $('#documento p img').each(function() {
+  
+    var show = true;
+
+    $('#documento img').each(function() {
       var alt = $(this).attr("alt")
-      //if(alt != "figAlteracaoSenha" && alt != "figLogin" && alt !="figLoginRecuperacao")
       $(this).wrap("<a class='imagem' href='"+$(this).attr( "src" ) + "' onclick='return hs.expand(this)'></a>");
 });
+
 }
 
 

@@ -422,7 +422,7 @@ p.caption{
     min-height: 10%;
     /*height: 80%;*/
     max-height: 80%;
-    box-shadow: 0 0 3em #444444;
+    box-shadow: 0 0 2em #444444;
     z-index: 1;
     border: 1em 0.5em 1em 1em;
     overflow-x: auto;
@@ -436,28 +436,24 @@ p.caption{
 }
 
 @-ms-keyframes dropdown {
-  from {bottom: -200px;}
-  to {bottom: 40px;}
+  from {bottom: -100%;right: -100%;}
+  to {bottom: 40px;right: 2%;}
 }
 
 @-moz-keyframes dropdown {
-  from {bottom: -200px;}
-  to {bottom: 40px;}
+  from {bottom: -100%;right: -100%;}
+  to {bottom: 40px;right: 2%;}
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes dropdown {
-  from {bottom: -200px;}
-  to {bottom: 40px;}
+  from {bottom: -100%;right: -100%;}
+  to {bottom: 40px;right: 2%;}
 }
 
 @keyframes dropdown {
-  from {
-    bottom: -200px;
-  }
-  to {
-    bottom: 40px;
-  }
+  from {bottom: -100%;right: -100%;}
+  to {bottom: 40px;right: 2%;}
 }
 
 /* Links inside the dropdown */
@@ -553,7 +549,8 @@ a.toc_h6 {
 
 .table-of-contents a:hover,
 .table-of-contents a:active {
-  text-decoration: underline;
+  font-weight: bold;
+  color: #40A293;
 }
 
 .table-of-contents > h1,
@@ -870,24 +867,19 @@ h4:target {
 	header .imagem img {
 			display: block;
 			width: 100%;
-			max-width: 500px;
+			max-width: 100%;
 		}
 
 		.image.fit {
 			display: block;
 			width: 100%;
-			max-width: 500px;
+			max-width: 100%;
 		}
 
 		.image.featured {
 			display: block;
 			width: 100%;
 			margin: 0 0 2em 0;
-		}
-
-		.image.left {
-			float: left;
-			margin: 0 2em 2em 0;
 		}
 
 /* Footer */
@@ -1279,8 +1271,8 @@ footer img {
 					padding-bottom: 6em;
 				}
 
-    #documento img{max-width:600px; max-height:450px}
-    #documento table img{max-width:400px;max-height:300px}
+    #documento img{max-width:100%; max-height:450px}
+    #documento table img{max-width:100%; max-height:300px}
 
     #accordion {
       margin-top: 45px;
@@ -1307,8 +1299,8 @@ footer img {
 
       #titleBar {height: 0px;}
 
-      #documento img{max-width:700px; max-height:525px}
-      #documento table img{max-width:500px;max-height:375px}
+      #documento img{max-width:100%; max-height:525px}
+      #documento table img{max-width:100%;max-height:375px}
 
       #accordion {margin-top: 0px;}
 
@@ -1333,8 +1325,8 @@ footer img {
 				padding: 2em 3em 6em 3em;
 				margin-left: 14em;
 			}
-      #documento img{max-width:700px; max-height:400px}
-      #documento table img{max-width:500px;max-height:300px}
+      #documento img{max-width:100%; max-height:400px}
+      #documento table img{max-width:100%;max-height:300px}
 
       /* Table of Content */
       .dropdown-content {
@@ -1358,7 +1350,7 @@ footer img {
 				font-size: 1em;
 			}
 
-      #documento img{max-width:700px; max-height:400px}
+      #documento img{max-width:100%; max-height:400px}
       #documento table img{max-width:500px;max-height:300px}
 	}
 
@@ -1396,8 +1388,8 @@ footer img {
 			padding: 3em 20px 2em 20px;
 		}
 
-    #documento img{max-width:300px;max-height:400px;}
-    #documento table img{max-width:200px;max-height:300px;}
+    #documento img{max-width:100%;max-height:400px;}
+    #documento table img{max-width:100%;max-height:300px;}
 
     #accordion {
       margin-top: 45px;
