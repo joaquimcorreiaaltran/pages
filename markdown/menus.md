@@ -3,9 +3,8 @@
 ## 1.	Introdução
 
 O presente documento destina-se aos utilizadores da aplicação SICC e encontra-se estruturado de acordo com os menus da aplicação.
--->
 
-## Menu Parametrização
+## 2. Menu Parametrização
 
 Este menu permite efetuar a parametrização de informação necessária ao correto
 funcionamento da aplicação.
@@ -24,14 +23,14 @@ Acedendo ao mesmo temos as seguintes opções disponíveis:
 | Sair | Sair da aplicação. | Todos |
 | Fazer *Logoff* | Terminar sessão de utilização. | Todos |
 
-### Opção Instituição
+### 2.1. Opção Instituição
 
 ![img_2](https://spmssicc.github.io/pages/markdown/assets/menus/img_2.png)
 
 Este submenu permite o acesso ao tratamento de informação relacionada com a instituição,
 exercícios e configurações.
 
-#### Recolha
+#### 2.1.1. Recolha
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com a instituição. Por .ex, o
 Centro Hospitalar Psiquiátrico de Lisboa.
@@ -73,7 +72,7 @@ instituição, nomeadamente:
 | X Cancelar | Gravar as alterações efetuadas e voltar ao estado anterior. :warning: **Funcionalidade indisponível** |
 | Sair | Sair do ecrã. |
 
-#### Exercícios
+#### 2.1.2. Exercícios
 
 Este ecrã permite ao utilizador introduzir novos períodos de exercício ou somente atualizar os
 actuais.
@@ -97,7 +96,7 @@ Os campos disponíveis para utilizador são os seguintes:
 | Continuar | Gravar as alterações efetuadas ao dados. |
 | Sair | Sair do ecrã corrente. |
 
-#### Configurações
+#### 2.1.3. Configurações
 
 Este ecrã permite ao utilizador atualizar as informações de sistema e do SICC, em diferentes
 tabulações.
@@ -147,7 +146,7 @@ tabulações.
 | Continuar | Gravar as alterações efetuadas ao dados. |
 | Sair | Sair do ecrã. |
 
-### Tabelas Genéricas
+### 2.2. Tabelas Genéricas
 
 ![img_17](https://spmssicc.github.io/pages/markdown/assets/menus/img_17.png)
 
@@ -155,7 +154,7 @@ Este submenu permite o acesso ao tratamento de informação genérica do sistema
 Códigos Postais, bancos, Fatores de Aglutinação, Tipos de Entidades, instituições bancárias,
 Responsáveis e R.O.C.
 
-#### Códigos Postais
+#### 2.2.1. Códigos Postais
 
 ##### Recolha
 
@@ -199,7 +198,7 @@ o formato CSV.
 | Imprimir | Imprimir uma listagem de códigos postal com base nos critérios definidos. O resultado será semelhante ao apresentado:![img_20](https://spmssicc.github.io/pages/markdown/assets/menus/img_20.png) |
 | Sair | Sair do ecrã. |
 
-#### Bancos
+#### 2.2.2. Bancos
 
 ##### Recolha
 
@@ -253,7 +252,7 @@ texto com o formato CSV.
 | Imprimir | Imprimir uma listagem de instituições bancárias com base nos critérios definidos. O resultado será semelhante ao apresentado:![img_23](https://spmssicc.github.io/pages/markdown/assets/menus/img_23.png) |
 | Sair | Sair do ecrã. |
 
-#### Fatores de Aglutinação
+#### 2.2.3. Fatores de Aglutinação
 
 ##### Recolha
 
@@ -297,7 +296,7 @@ com o formato CSV.
 | Imprimir | Imprimir uma listagem de fatores de aglutinação com base nos critérios definidos. O resultado será semelhante ao apresentado: ![img_26](https://spmssicc.github.io/pages/markdown/assets/menus/img_26.png) |
 | Sair | Sair do ecrã. |
 
-#### Tipos de Entidades
+#### 2.2.4. Tipos de Entidades
 
 ##### Recolha
 
@@ -398,7 +397,7 @@ texto com o formato CSV.
 | Imprimir | Imprimir uma listagem de instituições bancárias com base nos critérios definidos. O resultado final será semelhante ao apresentado: ![img_32](https://spmssicc.github.io/pages/markdown/assets/menus/img_32.png) |
 | Sair | Sair do ecrã. |
 
-#### Responsáveis
+#### 2.2.5. Responsáveis
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com os Responsáveis.
 
@@ -429,7 +428,7 @@ Este ecrã permite ao utilizador manipular as informações relacionadas com os 
 | >> Último | Posicionar-se no último responsável apresentado com base nos critérios de pesquisa introduzidos ou, caso não tenha sido efetuada nenhuma pesquisa, no último registo existente no sistema. |
 | Sair | Sair do ecrã. |
 
-#### R.O.C. - Revisor Oficial de Contas
+#### 2.2.6. R.O.C. - Revisor Oficial de Contas
 
 Este ecrã permite ao utilizador manipular as informações relativas aos diferentes Revisores
 Oficiais de Contas.
@@ -464,7 +463,7 @@ Oficiais de Contas.
 | >> Último | Posicionar-se no último revisor oficial de contas apresentado com base nos critérios de pesquisa introduzidos ou, caso não tenha sido efetuada nenhuma pesquisa, no último registo existente no sistema. |
 | Sair | Sair do ecrã. |
 
-### Opção Contabilidade
+### 2.3. Opção Contabilidade
 
 ![img_35](https://spmssicc.github.io/pages/markdown/assets/menus/img_35.png)
 
@@ -472,7 +471,7 @@ Este submenu permite o acesso à parametrização de informação contabilístic
 como Planos de Contas, Contabilidade Pública, Tipos de Diário, Centros de Custo,
 CRI/Departamentos e Associações LCPA.
 
-#### Plano de Contas
+#### 2.3.1. Plano de Contas
 
 ##### Recolha
 
@@ -533,7 +532,7 @@ para ficheiro de texto com o formato CSV.
 | Imprimir | Imprimir uma listagem de contas com base nos critérios definidos. O resultado final será semelhante ao apresentado:![img_38](https://spmssicc.github.io/pages/markdown/assets/menus/img_38.png) |
 | Sair | Sair do ecrã. |
 
-#### Contabilidade Pública
+#### 2.3.2. Contabilidade Pública
 
 ##### Classificadores Económicos (Recolha)
 
@@ -581,7 +580,7 @@ da Contabilidade Pública, para ficheiro de texto com o formato CSV.
 | Imprimir | Imprimir uma listagem de contas com base nos critérios definidos. O resultado final será semelhante ao apresentado:![img_43](https://spmssicc.github.io/pages/markdown/assets/menus/img_43.png) |
 | Sair | Sair do ecrã. |
 
-#### Gestão Fonte de Financiamento
+#### 2.3.3. Gestão Fonte de Financiamento
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Gestão das Fontes
 de Financiamento.
@@ -601,7 +600,7 @@ de Financiamento.
 | - Abater |  Eliminar a fonte de financiamento que estiver selecionado. Para registar esta ação, é necessário selecionar o botão "Confirmar". |
 | Sair | Sair do ecrã. |
 
-#### Gestão Programa
+#### 2.3.4. Gestão Programa
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Gestão de
 Programas.
@@ -621,7 +620,7 @@ Programas.
 | - Abater | Eliminar o programa que estiver selecionado. Para registar esta ação, é necessário selecionar o botão "Confirmar". |
 | Sair | Sair do ecrã. |
 
-#### Gestão Medida
+#### 2.3.5. Gestão Medida
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Gestão de
 Medidas.
@@ -645,7 +644,7 @@ Medidas.
 | - Abater | Eliminar o programa que estiver selecionado. Para registar esta ação, é necessário selecionar o botão "Confirmar". |
 | Sair | Sair do ecrã. |
 
-#### Gestão Projeto
+#### 2.3.6. Gestão Projeto
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Gestão de
 Projectos.
@@ -665,7 +664,7 @@ Projectos.
 | - Abater | Eliminar o projeto que estiver selecionado. Para registar esta ação, é necessário selecionar o botão "Confirmar". |
 | Sair | Sair do ecrã. |
 
-#### Gestão Regionalização
+#### 2.3.7. Gestão Regionalização
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Gestão de
 Regionalização.
@@ -685,7 +684,7 @@ Regionalização.
 | - Abater | Eliminar a regionalização que estiver selecionado. Para registar esta ação, é necessário selecionar o botão "Confirmar". |
 | Sair | Sair do ecrã. |
 
-#### Gestão Atividade
+#### 2.3.8. Gestão Atividade
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Gestão de
 Atividade.
@@ -705,7 +704,7 @@ Atividade.
 | - Abater | Eliminar a atividade que estiver selecionado. Para registar esta ação, é necessário selecionar o botão "Confirmar". |
 | Sair | Sair do ecrã. |
 
-#### Gestão Natureza
+#### 2.3.9. Gestão Natureza
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Gestão de
 Natureza.
@@ -725,7 +724,7 @@ Natureza.
 | - Abater | Eliminar a natureza que estiver selecionado. Para registar esta ação, é necessário selecionar o botão "Confirmar". |
 | Sair | Sair do ecrã. |
 
-#### Gestão Departamento
+#### 2.3.10. Gestão Departamento
 
 Este ecrã permite ao utilizador manipular as informações relacionadas com a Gestão de
 Departamento.
@@ -745,7 +744,7 @@ Departamento.
 | - Abater | Eliminar o departamento que estiver selecionado. Para registar esta ação, é necessário selecionar o botão "Confirmar". |
 | Sair | Sair do ecrã. |
 
-#### Tipos de Diário
+#### 2.3.11. Tipos de Diário
 
 ##### Recolha
 Este ecrã permite ao utilizador manipular as informações relacionadas com Tipos de Diário.
@@ -792,7 +791,7 @@ de texto com o formato CSV.
 | Imprimir | Imprimir uma listagem de tipos de diário com base nos critérios definidos. O resultado final será semelhante ao apresentado:![img_53](https://spmssicc.github.io/pages/markdown/assets/menus/img_53.png) |
 | Sair | Sair do ecrã. |
 
-#### Centros de Custos
+#### 2.3.12. Centros de Custos
 
 ##### Recolha
 
@@ -847,7 +846,7 @@ ficheiro de texto com o formato CSV.
 | Imprimir | Imprimir uma listagem de centros de custos com base nos critérios definidos. O resultado final será semelhante ao apresentado:![img_56](https://spmssicc.github.io/pages/markdown/assets/menus/img_56.png) |
 | Sair | Sair do ecrã. |
 
-#### CRI\Departamentos
+#### 2.3.13. CRI\Departamentos
 
 ##### Recolha
 
@@ -899,14 +898,14 @@ integrados, para ficheiro de texto com o formato CSV.
 | Imprimir | Imprimir uma listagem de centros de responsabilidade integrados com base nos critérios definidos. O resultado final será semelhante ao apresentado. |
 | Sair | Sair do ecrã. |
 
-### Terceiros
+### 2.4.  Terceiros
 
 ![img_59](https://spmssicc.github.io/pages/markdown/assets/menus/img_59.png)
 
 Este submenu permite o acesso à parametrização de informação de terceiros, tais como a
 Gestão de Entidades, Tabelas de Projetos e Gestão de Entidades *Factoring*.
 
-#### Gestão de Entidades
+#### 2.4.1. Gestão de Entidades
 
 ##### Recolha
 
@@ -1009,7 +1008,7 @@ texto com o formato CSV.
 | Imprimir | Imprimir uma listagem de entidades com base nos critérios definidos. O resultado final será semelhante ao apresentado: |
 | Sair | Sair do ecrã. |
 
-#### Tabela de Projetos
+#### 2.4.2. Tabela de Projetos
 
 ##### Recolha
 
@@ -1056,7 +1055,7 @@ texto com o formato CSV.
 | Imprimir | Imprimir uma listagem de projetos com base nos critérios definidos. O resultado final será semelhante ao apresentado:
 | Sair | Sair do ecrã. |
 
-#### Gestão de Entidades *Factoring*
+####  2.4.3. Gestão de Entidades *Factoring*
 
 ##### Recolha
 
@@ -1111,7 +1110,7 @@ ficheiro de texto com o formato CSV.
 | Imprimir | Imprimir uma listagem de entidades com base nos critérios definidos. O resultado final será semelhante ao apresentado: |
 | Sair | Sair do ecrã. |
 
-### Fazer *Logoff*
+### 2.5. Fazer *Logoff*
 
 ![img_68](https://spmssicc.github.io/pages/markdown/assets/menus/img_68.png)
 
@@ -1122,7 +1121,7 @@ diferente.
 
 ![img_69](https://spmssicc.github.io/pages/markdown/assets/menus/img_69.png)
 
-### Sair
+### 2.6. Sair
 
 ![img_70](https://spmssicc.github.io/pages/markdown/assets/menus/img_70.png)
 
@@ -1151,7 +1150,7 @@ Acedendo ao mesmo temos as seguintes opções disponíveis:
 | Antiguidade de Saldos | Extrair informação relacionada com dívidas/créditos a terceiros e dívidas/créditos por conta. | Todos |
 | Procura de Documentos | Visualizar toda a informação respeitante a documentos, tais como a sua contabilidade geral, orçamental, analítica, POCMS, regularizações, encontros de contas, processos, contabilidade geral (inicial) e outras informações relevantes. | Todos |
 
-### Extrato por Entidade
+### 3.1. Extrato por Entidade
 
 ![img_72](https://spmssicc.github.io/pages/markdown/assets/menus/img_72.png)
 
@@ -1262,7 +1261,7 @@ Acedendo ao mesmo temos as seguintes opções disponíveis:
 | Autorização de Pagamentos | Valor total de pagamentos autorizados. |
 | Total de Faturas | Valor total das faturas. |
 
-### Extrato de Processo de Aquisição
+### 3.2. Extrato de Processo de Aquisição
 
 ![img_79](https://spmssicc.github.io/pages/markdown/assets/menus/img_79.png)
 
@@ -1334,14 +1333,14 @@ Acedendo ao mesmo temos as seguintes opções disponíveis:
 |:---|:---|
 | Ficheiro | Extrair a informação pretendida para um ficheiro de texto com o formato CSV. O utilizador deve indicar a localização onde o ficheiro será guardado através do seguinte botão:![...](https://spmssicc.github.io/pages/markdown/assets/menus/img_....png) |
 
-### Mapas de Gestão
+### 3.3. Mapas de Gestão
 
 ![img_82](https://spmssicc.github.io/pages/markdown/assets/menus/img_82.png)
 
 Este submenu permite o acesso a Mapas de Gestão, tais como Documentos por Datas,
 Documentos por Contas, Contas Correntes de Terceiros e Mapas para o IVA.
 
-#### Documentos por Datas
+#### 3.3.1.  Documentos por Datas
 
 Este ecrã permite ao utilizador aceder a mapas de gestão, utilizado uma pesquisa de
 documentos por datas.
@@ -1375,7 +1374,7 @@ documentos por datas.
 | Imprimir | Extrair a informação pretendida para um ficheiro de relatório com o formato PDF.![img_85](https://spmssicc.github.io/pages/markdown/assets/menus/img_85.png) |
 | Sair | Sair do ecrã atual e voltar ao menu principal. |
 
-#### Documentos por Contas
+#### 3.3.2. Documentos por Contas
 
 Este ecrã permite ao utilizador aceder a mapas de gestão, utilizado uma pesquisa de
 documentos por contas.
