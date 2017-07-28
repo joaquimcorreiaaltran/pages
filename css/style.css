@@ -426,7 +426,7 @@ p.caption{
     z-index: 1;
     border: 1em 0.5em 1em 1em;
     overflow-x: auto;
-    overflow-y: hidden;
+    overflow-y: auto;
     border-radius: 20px;
     border: #40A293;
     border-width: medium;
@@ -443,7 +443,12 @@ p.caption{
     padding: 0.2em 0 0.1em 0;
 }
 
-.dropdown-content h1, h2, h3, h4, h5, h6 {
+.dropdown-content nav > h1,
+.dropdown-content nav > h2,
+.dropdown-content nav > h3,
+.dropdown-content nav > h4,
+.dropdown-content nav > h5,
+.dropdown-content nav > h6 {
     margin: 0;
 }
 
@@ -506,8 +511,6 @@ a.toc_h6 {
 .table-of-contents ul {
   padding-right: : 0.2em;
   padding-bottom:  0.1em;
-  height: 900px;
-  overflow: auto;
 }
 
 .table-of-contents li {
@@ -523,8 +526,10 @@ a.toc_h6 {
   text-decoration: underline;
 }
 
-.table-of-contents h1,h2,h3{
-  margin: 0.5em 0.5em 0.2em 0.5em;
+.table-of-contents > h1,
+.table-of-contents > h2,
+.table-of-contents > h3{
+  padding: 0.3em 0.2em 0.2em 0.3em;
 }
 
 h1:target {
