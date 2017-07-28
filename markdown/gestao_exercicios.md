@@ -62,32 +62,32 @@ No Sistema SICC, a execução do apuramento é efetuada através de um submenu d
 
 O RLE é constituído pelos seguintes componentes:
 
-#### Resultados Operacionais
+### 4.1. Resultados Operacionais
 
 ![img_11.png](https://spmssicc.github.io/pages/markdown/assets/gestao_exercicios/img_11.png)
 ![img_12.png](https://spmssicc.github.io/pages/markdown/assets/gestao_exercicios/img_12.png)
 
-#### Resultados Financeiros
+### 4.2. Resultados Financeiros
 
 ![img_13.png](https://spmssicc.github.io/pages/markdown/assets/gestao_exercicios/img_13.png)
 ![img_14.png](https://spmssicc.github.io/pages/markdown/assets/gestao_exercicios/img_14.png)
 
-#### Resultados Correntes
+### 4.3. Resultados Correntes
 
 ![img_15.png](https://spmssicc.github.io/pages/markdown/assets/gestao_exercicios/img_15.png)
 ![img_16.png](https://spmssicc.github.io/pages/markdown/assets/gestao_exercicios/img_16.png)
 
-#### Resultados Extraordinários
+### 4.4. Resultados Extraordinários
 
 ![img_17.png](https://spmssicc.github.io/pages/markdown/assets/gestao_exercicios/img_17.png)
 ![img_18.png](https://spmssicc.github.io/pages/markdown/assets/gestao_exercicios/img_18.png)
 
-#### Imposto sobre o rendimento do exercício
+### 4.5. Imposto sobre o rendimento do exercício
 
 ![img_19.png](https://spmssicc.github.io/pages/markdown/assets/gestao_exercicios/img_19.png)
 ![img_20.png](https://spmssicc.github.io/pages/markdown/assets/gestao_exercicios/img_20.png)
 
-#### Resultados Líquidos
+### 4.6. Resultados Líquidos
 
 ![img_21.png](https://spmssicc.github.io/pages/markdown/assets/gestao_exercicios/img_21.png)
 ![img_22.png](https://spmssicc.github.io/pages/markdown/assets/gestao_exercicios/img_22.png)
