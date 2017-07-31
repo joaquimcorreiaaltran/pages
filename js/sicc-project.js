@@ -30,6 +30,7 @@ function convertMdToHtml (elementId, funcao) {
             ,htmlDoc = converter.makeHtml(text); //converte a string em HTML
                 document.getElementById(elementId).innerHTML = htmlDoc;//carrega html no elementId
                 zommClickImagem();
+                responsiveTable();
 
                 if(funcao != undefined && typeof funcao == "function"){
                   funcao();
@@ -94,16 +95,20 @@ function loadDocButtons (funcao) {
 
 // Preparar imagem para zoom ou para não zoom (mostra ou não mostra a lupa)
 function zommClickImagem() {
-  
+
     var show = true;
 
     $('#documento img').each(function() {
       var alt = $(this).attr("alt")
       $(this).wrap("<a class='imagem' href='"+$(this).attr( "src" ) + "' onclick='return hs.expand(this)'></a>");
-});
-
+    });
 }
 
+function responsiveTable(){
+    $('#documento table').each(function() {
+        $(this).wrap("<div style='overflow-x:auto;'></div>");
+      });
+}
 
 //Carrega o histórico do repo github
 function loadCommitHistory() {
