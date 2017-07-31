@@ -1,7 +1,8 @@
 /*
 Functions to use in SICC project (https://spmssicc.github.io/pages)
 Author: SPMS, EPE
-Feb-2017
+Project: SICC
+Date: Aug-2017
 */
 
 //get the current html document name without extension
@@ -25,27 +26,28 @@ function convertMdToHtml (elementId, funcao) {
    request.open('GET', '../markdown/'+ doc_name +'.md',true);
    request.onreadystatechange = function() {
          if(request.readyState == XMLHttpRequest.DONE && request.status === 200) {
-            var converter = new showdown.Converter() //instancia
-            ,text = request.responseText //guarda o documento em string
-            ,htmlDoc = converter.makeHtml(text); //converte a string em HTML
-                document.getElementById(elementId).innerHTML = htmlDoc;//carrega html no elementId
+            var converter = new showdown.Converter()
+            ,text = request.responseText
+            ,htmlDoc = converter.makeHtml(text);
+                document.getElementById(elementId).innerHTML = htmlDoc;//load HTML into the elementId
                 zommClickImagem();
                 responsiveTable();
 
+                // runs a function received by parameter
                 if(funcao != undefined && typeof funcao == "function"){
                   funcao();
                 }
          }
-      }
+    }
    request.send();
-}
+}/*close convertMdToHtml()*/
 
-//Carrega footer
+//Load html to the end of the document
 function loadFooter () {
   $("footer").load("footer.html");
 }
 
-//Adiciona botões ao doc e atribui-lhes o link
+//Adds auxilary buttons to the interface
 function loadDocButtons (funcao) {
   $.get("doc_buttons.html", function (data) {
 
@@ -70,7 +72,7 @@ function loadDocButtons (funcao) {
                showToc();
              });
 
-              //Mostra ou oculta o botão para voltar ao topo da página
+              //show or hide button to scroll to the top of the page
               $(window).scroll(function() {
                 if ($(this).scrollTop() > 2000) {
                   //add effect / animation
@@ -90,10 +92,9 @@ function loadDocButtons (funcao) {
               }
          });
 
+}//close loadDocButtons()
 
-}//fecha loadDocButtons()
-
-// Preparar imagem para zoom ou para não zoom (mostra ou não mostra a lupa)
+// Add zoom functionality to images in the HTML
 function zommClickImagem() {
 
     var show = true;
@@ -102,15 +103,16 @@ function zommClickImagem() {
       var alt = $(this).attr("alt")
       $(this).wrap("<a class='imagem' href='"+$(this).attr( "src" ) + "' onclick='return hs.expand(this)'></a>");
     });
-}
+}/*close zommClickImagem*/
 
+/* Add auto scroll to document tables */
 function responsiveTable(){
     $('#documento table').each(function() {
         $(this).wrap("<div style='overflow-x:auto;'></div>");
       });
-}
+}/*close responsiveTable()*/
 
-//Carrega o histórico do repo github
+//Loads the gitHub repository and insert insert into the HTML
 function loadCommitHistory() {
   if (doc_name == "changelog"){
       var branch, callback, container, limit, repo, url, username;
@@ -120,9 +122,10 @@ function loadCommitHistory() {
       container = $('#latest-commits');
       callback = function(response, textStatus, jqXHR) {
                     var index, items, result, ul, _results;
-
-                    var rate_limit = response.meta["X-RateLimit-Limit"];//p/ saber quantas consultas é que o gitHub permite
-                    var rate_limit_remaining = response.meta["X-RateLimit-Remaining"];//p/ saber quantas consultas é que o gitHub ainda permite
+                    // Request limit to the gitHub API per hour
+                    var rate_limit = response.meta["X-RateLimit-Limit"];
+                    // Requests left to the gitHub API in the current hour
+                    var rate_limit_remaining = response.meta["X-RateLimit-Remaining"];
                     var timestamp = Math.abs(new Date() - response.meta["X-RateLimit-Reset"] - new Date());
                     var time_to_reset = new Date(timestamp*1000);
                     time_to_reset =  time_to_reset.getHours()+":"+time_to_reset.getMinutes();
@@ -141,14 +144,14 @@ function loadCommitHistory() {
                           }
                         })(index, result));
                       }
-                    }/*if*/else if (rate_limit_remaining == 0) {
-                      //mostra se o limite de visualizações no github foi atingido
+                      //Show an UI message if the request limit to the API was reached
+                    }else if (rate_limit_remaining == 0) {
                        return ul.append("<b>Atenção: </b> Não foi possível mostrar as atualizações devido a sobrecarga de pedidos (>" + rate_limit + "/hr), realizados pelo seu atual IP. Pode utilizar outro IP ou voltar a tentar depois das " + time_to_reset + ":59s de hoje. <br /><br />Mensagem do servidor: \"<i>"+ response.data.message +"</i>\"");
                      }else{
                        return ul.append("Ops! :( <br /><br /> Ocorreu algo inesperado.")
                      }
                     return _results;
-                  };/*function*/
+                  };/*callback function*/
 
       return $.ajax({ url: "https://api.github.com/repos/"+username+"/"+repo+"/commits?callback=callback&callback=jQuery171010727564072631068_1487000384850&per_page=10&_=1487000384930",
                       data:{per_page: "20"},
@@ -162,10 +165,8 @@ function loadCommitHistory() {
 }/*loadCommitHistory()*/
 
 
-
-
 /*
-TOC - Builds the table of contents after the conversion of markdown to HTML
+TOC - Builds the table of contents based on HTML elements choosen and insert the TOC in th "elementToPopulate"
 */
 function toc(elementToPopulate){
 
@@ -178,7 +179,7 @@ function toc(elementToPopulate){
 
 		var newLine, el, title, link;
 
-    //insert here the HTML elements to include in the Table of Content
+    //chose the HTML elements to include in the Table of Content
 		$("article h2,h3,h4").each(function() {
 
 		  el = $(this);
@@ -202,8 +203,7 @@ function toc(elementToPopulate){
     console.log("HTML do Índice:\n"+toc_html);
 
     document.getElementById(elementToPopulate).innerHTML = toc_html;
-
-}
+}/*builds toc*/
 
 
 /* toc dropdown:*/
@@ -225,10 +225,7 @@ window.onclick = function(event) {
       }
     }
   }
-};
-
-
-
+} /*close showToc()*/
 
 /*********************************************************************
 override standard href-id navigation on page without change HTML markup
