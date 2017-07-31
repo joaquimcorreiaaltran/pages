@@ -679,16 +679,6 @@ h4:target {
     text-color:#000000;
 }
 
-#accordion div.caret.active {
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-    color:#40A293;
-    font-weight: bold;
-}
-
 #accordion a.active s{
   color:#40A293;
   font-weight: bold;
