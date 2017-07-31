@@ -334,15 +334,13 @@ O procedimento do mapa 8.3.1.2 é idêntico ao explicado anteriormente, sendo ap
 
 Esta opção permite, consultar ou criar um novo documento de Cabimento e com base em critérios selecionados pelo utilizador.
 
-
-![teste.gif](assets/processos_snc_ap/teste.gif)
-
-
 ![img_56.png](https://spmssicc.github.io/pages/markdown/assets/processos_snc_ap/img_56.png)
 
 Ao selecionar Cabimentos/Compromissos, irá surgir o seguinte ecrã:
 
-![img_57.png](https://spmssicc.github.io/pages/markdown/assets/processos_snc_ap/img_57.png)
+![img_57.png](https://spmssicc.github.io/pages/markdown/assets/processos_snc_ap/img_57.gif)
+
+C:\Users\Consultor\Dropbox\Altran\2. Projetos\201611-SPMS-SICC\Git\pages\markdown\assets
 
 O seu registo, o processo de cabimentação não sofre qualquer alteração, continuando a ter por referência o orçamento anual da entidade líquido de cativos devendo ser cabimentadas todas as despesas prováveis.
 
