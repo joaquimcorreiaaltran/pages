@@ -1079,17 +1079,13 @@ footer img {
       z-index:100;
 		}
 
-
-    #titleBar a:hover {
-      font-size: 1em;
-    }
-
 			#titleBar .toggle:before {
         position: absolute;
         padding: 0px 7px 0px 7px;
         font-family: FontAwesome;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        -webkit-transition: font-size 0.3s;
         content: '\f0c9';
         display: block;
         top: 5px;
@@ -1106,8 +1102,8 @@ footer img {
         border-radius: 5px;
 			}
 
-      #titleBar a:hover {
-          font-size: 1.1em;
+      #titleBar :hover {
+          font-size: 1.2em;
       }
 
     	#sidebar {
@@ -1121,16 +1117,15 @@ footer img {
         background-color: white;
         z-index:99;
         height: 100vh;
-        -moz-animation: sideBarLeft 0.01s;
-  			-webkit-animation: sideBarLeft 0.01s;
-  			-ms-animation: sideBarLeft 0.01s;
-  			animation: sideBarLeft 0.01s;
+        -moz-animation: sideBarLeft 0.3s;
+  			-webkit-animation: sideBarLeft 0.3s;
+  			-ms-animation: sideBarLeft 0.3s;
+  			animation: sideBarLeft 0.3s;
         -moz-animation-timing-function: ease-out;
         -webkit-animation-timing-function: ease-out;
         -ms-animation-timing-function: ease-out;
         animation-timing-function: ease-out;
     	}
-
 
       @-ms-keyframes sideBarLeft {
         from {left: 0em;}
@@ -1397,7 +1392,7 @@ footer img {
 	@media screen and (max-width: 1200px) {
 
 		/* Basic */
-			html, body {overflow-x: visible;}
+			html, body {overflow-x: auto;}
 
 		/* Content */
 
@@ -1444,11 +1439,11 @@ footer img {
 				transform: translateX(-21em);
 			}
 
-			body.sidebar-visible #content, body.sidebar-visible #titleBar {
-				/*-moz-transform: translateX(1em);
-				-webkit-transform: translateX(1em);
-				-ms-transform: translateX(1em);
-				transform: translateX(1em);*/
+			body.sidebar-visible #content/*, body.sidebar-visible #titleBar*/ {
+				-webkit-transform: translateX(22em);
+				-ms-transform: translateX(22em);
+        -moz-transform: translateX(22em);
+        transform: translateX(22em);
 			}
 
 			body.sidebar-visible #sidebar {
@@ -1459,11 +1454,6 @@ footer img {
 			}
 
 	}/*max-width: 1200px*/
-
-
-
-
-
 
 /* Reset */
 
