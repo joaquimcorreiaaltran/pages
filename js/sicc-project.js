@@ -21,6 +21,9 @@ blockRightClick = true;
 
 //load and convert Markdown to Html and show it
 function convertMdToHtml (elementId, funcao) {
+
+  console.log("Nome do documento a converter para html:\"" + doc_name + "\"");
+
    var request = new XMLHttpRequest();
    //Asynchronous request (true=asynchronous)
    request.open('GET', '../markdown/'+ doc_name +'.md',true);
@@ -51,46 +54,51 @@ function loadFooter () {
 function loadDocButtons (funcao) {
   $.get("doc_buttons.html", function (data) {
 
-             $("#content").append(data);
+         $("#content").append(data);
 
-             $("#btnEditarDoc").click(function(){
-               window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/"+doc_name+".md","_blank");
-             });
-
-             $("#btnPDF").click(function(){
-               window.open("https://spmssicc.github.io/pages/pdf/"+doc_name+".pdf","_blank");
-             });
-
-             $("#btnBackToTop").click(function(){
-               $('html, body').animate({ scrollTop: 0 }, 'slow');
-             });
-
-             $("#btnShowToc").click(function(){
-               showToc();
-             });
-             $("#btnShowToc i").click(function(){
-               showToc();
-             });
-
-              //show or hide button to scroll to the top of the page
-              $(window).scroll(function() {
-                if ($(this).scrollTop() > 2000) {
-                  //add effect / animation
-                  $('.showWithScroll').stop(true).animate({
-                     opacity: 1
-                  }, 500);
-                } else {
-                  if ($(this).scrollTop() < 1000) {
-                    $('.showWithScroll').stop(true).animate({
-                       opacity: 0
-                    }, 500);
-                  }
-                }
-              });
-              if(funcao != undefined && typeof funcao == "function"){
-                funcao();
-              }
+         $("#btnEditarDoc").click(function(){
+           window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/"+doc_name+".md","_blank");
          });
+
+         if(doc_name != "mu_snc_ap"){ //the document mu_snc_ap has gifs
+           $("#btnPDF").click(function(){
+             window.open("https://spmssicc.github.io/pages/pdf/"+doc_name+".pdf","_blank");
+           });
+         }
+         else {
+           $("#btnPDF").remove();
+         }
+
+         $("#btnBackToTop").click(function(){
+           $('html, body').animate({ scrollTop: 0 }, 'slow');
+         });
+
+         $("#btnShowToc").click(function(){
+           showToc();
+         });
+         $("#btnShowToc i").click(function(){
+           showToc();
+         });
+
+          //show or hide button to scroll to the top of the page
+          $(window).scroll(function() {
+            if ($(this).scrollTop() > 2000) {
+              //add effect / animation
+              $('.showWithScroll').stop(true).animate({
+                 opacity: 1
+              }, 500);
+            } else {
+              if ($(this).scrollTop() < 1000) {
+                $('.showWithScroll').stop(true).animate({
+                   opacity: 0
+                }, 500);
+              }
+            }
+          });
+          if(funcao != undefined && typeof funcao == "function"){
+            funcao();
+          }
+     });
 
 }//close loadDocButtons()
 
@@ -153,7 +161,7 @@ function loadCommitHistory() {
                     return _results;
                   };/*callback function*/
 
-      return $.ajax({ url: "https://api.github.com/repos/"+username+"/"+repo+"/commits?callback=callback&callback=jQuery171010727564072631068_1487000384850&per_page=10&_=1487000384930",
+      return $.ajax({ url: "https://api.github.com/repos/" + username + "/" + repo + "/commits?callback=callback&callback=jQuery171010727564072631068_1487000384850&per_page=10&_=1487000384930",
                       data:{per_page: "20"},
                       dataType: "jsonp",
                       type: "GET",
@@ -170,39 +178,47 @@ TOC - Builds the table of contents based on HTML elements choosen and insert the
 */
 function toc(elementToPopulate){
 
-  console.log("Entrou na toc().\n document.getElementById(elementToPopulate) = "+document.getElementById(elementToPopulate));
+  console.log("Entrou na toc()");
 
-  var toc_html =
-      "<nav role='navigation' class='table-of-contents'>" +
-		    "<h2>Índice</h2>" +
-		    "<ul>";
+  htmlToPopulate = document.getElementById(elementToPopulate);
 
-		var newLine, el, title, link;
+  if (document.body.contains(htmlToPopulate)==true){
 
-    //chose the HTML elements to include in the Table of Content
-		$("article h2,h3,h4").each(function() {
+    var toc_html =
+        "<nav role='navigation' class='table-of-contents'>" +
+  		    "<h2>Índice</h2>" +
+  		    "<ul>";
 
-		  el = $(this);
-		  link = "#" + el.attr("id");
-      title = el.text();
-      nodeName = el.get(0).nodeName.toLowerCase();
+  		var newLine, el, title, link;
 
-      newLine = "<li>" +
-                  "<a class='toc_"+nodeName+"' href='" + link + "'>"  + title + "</a>" +
-                "</li>";
-      //console.log(newLine);
+      //chose the HTML elements to include in the Table of Content
+  		$("article h2,h3,h4").each(function() {
 
-      toc_html += newLine;
-		});
+  		  el = $(this);
+  		  link = "#" + el.attr("id");
+        title = el.text();
+        nodeName = el.get(0).nodeName.toLowerCase();
 
-		toc_html +=
-		   "</ul>" +
-		  "</nav>";
+        newLine = "<li>" +
+                    "<a class='toc_"+nodeName+"' href='" + link + "'>"  + title + "</a>" +
+                  "</li>";
+        //console.log(newLine);
 
-    //$(".dropdown-content").prepend(toc_html);
-    console.log("HTML do Índice:\n"+toc_html);
+        toc_html += newLine;
+  		});
 
-    document.getElementById(elementToPopulate).innerHTML = toc_html;
+  		toc_html +=
+  		   "</ul>" +
+  		  "</nav>";
+
+      //$(".dropdown-content").prepend(toc_html);
+      console.log("HTML do Índice a colocar no elemento \"" + elementToPopulate + "\":\n" + toc_html);
+
+      htmlToPopulate.innerHTML = toc_html;
+  }/*if*/
+  else {
+    console.log("Não foi possível criar o índice porque o elemento \"" + elementToPopulate + "\" não existe no HTML!");
+  }
 }/*builds toc*/
 
 
