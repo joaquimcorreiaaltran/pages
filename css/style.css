@@ -383,12 +383,6 @@ h5{
     Imagens
    ========================================================================== */
 
-
-highslide-dimming {
-  background-color: red;
-}
-
-
 #documento p a img {
   display: block;
   position: inherit;
@@ -422,7 +416,6 @@ td img{
  text-decoration: none;
 }
 
-
 p.caption{
   color: #333;
   /*font-family: "Roboto", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
@@ -430,7 +423,6 @@ p.caption{
   text-align: center;
   margin-bottom:50px;
 }
-
 
 /*************************************************************/
 /* toc dropbown */
@@ -601,8 +593,6 @@ h3:target {
 h4:target {
   animation: highlight 2s ease;
 }
-
-
 
 /*************************************************************/
 /* Accordion Menu by www.menucool.com/vertical/accordion-menu*/
