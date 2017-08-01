@@ -10,17 +10,22 @@ O presente documento visa especificar o funcionamento do novo sistema SNC-AP, ev
 
 Neste menu estão contempladas as funcionalidades necessárias para parametrização do Plano Multidimensional.
 
-#### 1.1.1. Plano de Contas - SNC-AP - Recolha
+#### 1.1.1. Plano de Contas SNC-AP
 
 Menu de acesso:
 
-![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-18400d08.png)
+![](mu_snc_ap.assets/processos_snc_ap-18400d08.gif)
+
+##### 1.1.1.1. Recolha
+
+<!--![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-18400d08.png)-->
 
 Formulário de parametrização:
 
-![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-0c719d37.png)
+<!--![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-0c719d37.png)-->
+![](mu_snc_ap.assets/processos_snc_ap-0c719d37.gif)
 
-#### 1.1.2. Plano de Contas - SNC-AP - Listagens
+##### 1.1.1.2. Listagens
 
 Menu de acesso:
 
@@ -34,7 +39,9 @@ Formulário de parametrização:
 
 ![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-9858d2cb.png)
 
-#### 1.1.3. Classificadores económicos - Recolha
+#### 1.1.2. Classificadores económicos
+
+##### 1.1.2.1 Recolha
 
 Menu de acesso:
 
@@ -42,9 +49,10 @@ Menu de acesso:
 
 Formulário de parametrização:
 
-![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-687d0684.png)
+<!--![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-687d0684.png)-->
+![](mu_snc_ap.assets/processos_snc_ap-687d0684.gif)
 
-#### 1.1.4. Classificadores económicos - Listagens
+##### 1.1.2.2 Listagens
 
 ![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-b2ca1649.png)
 
@@ -53,48 +61,28 @@ Formulário de parametrização:
 ![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-64b730c9.png)
 
 
-#### 1.1.5 Chave Orçamental
+#### 1.1.3. Chave Orçamental
+
+Componentes parametrizáveis da chave orçamental:
+
+- Fonte Financiamento;
+- Grupos de Fonte Financiamentos;
+- Programa;
+- Medida;
+- Projeto;
+- Regionalização;
+- Atividade;
+- Natureza;
+- Class. Orgânica.
 
 Menu de acesso:
 
-![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-03e850e8.png)
+<!--![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-03e850e8.png)-->
+![](mu_snc_ap.assets/processos_snc_ap-03e850e8.gif)
 
-- Gestão Fonte Financiamento
+Cada componente da chave orçamental é gerido através do seguinte tipo de formulário:
 
-![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-12d9cafa.png)
-
-#### 1.1.6 Chave Orçamental - Gestão Grupos de Fonte Financiamentos
-
-![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-2ecd9080.png)
-
-#### 1.1.7 Chave Orçamental - Gestão Programa
-
-![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-1121bef0.png)
-
-#### 1.1.8 Chave Orçamental - Gestão Medida
-
-![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-2e0aaf99.png)
-
-#### 1.1.9 Chave Orçamental - Gestão Projeto
-
-![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-3476fa35.png)
-
-#### 1.1.10 Chave Orçamental - Gestão Regionalização
-
-![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-07dbf299.png)
-
-#### 1.1.11 Chave Orçamental - Gestão Atividade
-
-![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-847f0c91.png)
-
-#### 1.1.12 Chave Orçamental - Gestão Natureza
-
-![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-087fc5a9.png)
-
-#### 1.1.13 Chave Orçamental - Gestão Class. Orgânica
-
-![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-604fb2ae.png)
-
+![](mu_snc_ap.assets/chave_orcamental_a.gif)
 
 ### 1.2. Gestão de Tabelas
 
