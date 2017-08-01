@@ -14,7 +14,7 @@ Neste menu estão contempladas as funcionalidades necessárias para parametriza�
 
 Menu de acesso:
 
-![](mu_snc_ap.assets/processos_snc_ap-18400d08.gif)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/processos_snc_ap-18400d08.gif)
 
 ##### 1.1.1.1. Recolha
 
@@ -23,7 +23,7 @@ Menu de acesso:
 Formulário de parametrização:
 
 <!--![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-0c719d37.png)-->
-![](mu_snc_ap.assets/processos_snc_ap-0c719d37.gif)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/processos_snc_ap-0c719d37.gif)
 
 ##### 1.1.1.2. Listagens
 
@@ -50,7 +50,7 @@ Menu de acesso:
 Formulário de parametrização:
 
 <!--![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-687d0684.png)-->
-![](mu_snc_ap.assets/processos_snc_ap-687d0684.gif)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/processos_snc_ap-687d0684.gif)
 
 ##### 1.1.2.2 Listagens
 
@@ -78,11 +78,11 @@ Componentes parametrizáveis da chave orçamental:
 Menu de acesso:
 
 <!--![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-03e850e8.png)-->
-![](mu_snc_ap.assets/processos_snc_ap-03e850e8.gif)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/processos_snc_ap-03e850e8.gif)
 
 Cada componente da chave orçamental é gerido através do seguinte tipo de formulário:
 
-![](mu_snc_ap.assets/chave_orcamental_a.gif)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/chave_orcamental_a.gif)
 
 ### 1.2. Gestão de Tabelas
 
