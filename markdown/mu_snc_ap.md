@@ -99,7 +99,7 @@ Menu de acesso:
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap-9cb33e69.png)
 
-#### 1.2.1.1 Recolha
+##### 1.2.1.1. Recolha
 
 As configurações referentes às instituições bancárias, são configuradas através desta funcionalidade.
 
@@ -109,7 +109,7 @@ O novo ecrã tem o aspeto abaixo mostrado:
 
 Neste formulário de configuração, a ACSS tem acesso a 2 Departamentos, sendo que o utilizador neste campo define o Identificador do IGCP, o Num. de Sequência e o Departamento a que diz respeito. Todas as restantes informações já existiam, pelo que o procedimento de preenchimento continua a ser o mesmo utilizado até à data.
 
-#### 1.2.1.2. Listagem
+##### 1.2.1.2. Listagem
 
 - Filtros disponíveis para listagem:
 
