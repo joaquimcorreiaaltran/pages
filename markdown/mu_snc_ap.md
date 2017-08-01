@@ -14,7 +14,7 @@ Neste menu estão contempladas as funcionalidades necessárias para parametriza�
 
 Menu de acesso:
 
-![](mu_snc_ap.assets/mu_snc_ap-442ebe35.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap\.assets/mu_snc_ap-442ebe35.png)
 
 ##### 1.1.1.1. Recolha
 
@@ -29,12 +29,12 @@ Formulário de parametrização:
 
 ![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-0eab8be0.png)
 
-- Aspeto da exportação para ficheiro (CSV):
+- Aspeto da exportação para "Ficheiro" (CSV):
 
 ![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-82e39c0d.png)
 
 
-- Aspeto da exportação para impressão (PDF):
+- Aspeto da Impressão (PDF):
 
 ![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-9858d2cb.png)
 
@@ -42,13 +42,9 @@ Formulário de parametrização:
 
 Menu de acesso:
 
-![](mu_snc_ap.assets/processos_snc_ap-b36d31eb.gif)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-8740631f.png)
 
 ##### 1.1.2.1 Recolha
-
-<!--Menu de acesso:
-
-![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-b36d31eb.png)-->
 
 - Formulário de parametrização:
 
@@ -63,11 +59,11 @@ Menu de acesso:
 
 ![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-8a5edfa7.png)
 
-- Aspeto da exportação para ficheiro (CSV):
+- Aspeto da exportação para "Ficheiro" (CSV):
 
-![](mu_snc_ap.assets/mu_snc_ap-39a5341f.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap\.assets/mu_snc_ap-39a5341f.png)
 
-- Aspeto da exportação para impressão (PDF):
+- Aspeto da Impressão (PDF):
 
 ![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-64b730c9.png)
 
@@ -97,17 +93,35 @@ Cada componente da chave orçamental é gerido através do seguinte tipo de form
 
 ### 1.2. Gestão de Tabelas
 
-#### 1.2.1. Instituições bancárias - Recolha
+#### 1.2.1. Instituições bancárias
 
-Neste menu, o utilizador pode fazer as configurações referente às instituições bancárias através da seguinte ecrã.
+Menu de acesso:
 
-![img_202.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_202.png)
+![](mu_snc_ap.assets/mu_snc_ap-9cb33e69.png)
 
+#### 1.2.1.1 Recolha
+
+As configurações referentes às instituições bancárias, são configuradas através desta funcionalidade.
 
 O novo ecrã tem o aspeto abaixo mostrado:
 
 ![img_203.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_203.png)
-Neste ecrã, de acordo com o explicado no ponto 3.1.10 do manual, a ACSS apresenta 2 Departamentos, sendo que o utilizador neste campo define o Identificador do IGCP, o Num. de Sequência e o Departamento a que diz respeito. Todas as restantes informações já existiam, pelo que o procedimento de preenchimento continua a ser o mesmo utilizado até à data.
+
+Neste formulário de configuração, a ACSS tem acesso a 2 Departamentos, sendo que o utilizador neste campo define o Identificador do IGCP, o Num. de Sequência e o Departamento a que diz respeito. Todas as restantes informações já existiam, pelo que o procedimento de preenchimento continua a ser o mesmo utilizado até à data.
+
+#### 1.2.1.2 Listagem
+
+- Filtros disponíveis para listagem:
+
+![](mu_snc_ap.assets/mu_snc_ap-042b8d1c.png)
+
+- Aspeto da exportação para "Ficheiro" (CSV):
+
+![](mu_snc_ap.assets/mu_snc_ap-82f51aa1.png)
+
+- Aspeto da Impressão (PDF):
+
+_(Imagem em atualização)_
 
 ## 2. Menu Orçamental - Registo do Orçamento
 
