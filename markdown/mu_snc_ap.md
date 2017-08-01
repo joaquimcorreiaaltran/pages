@@ -97,7 +97,7 @@ Cada componente da chave orçamental é gerido através do seguinte tipo de form
 
 Menu de acesso:
 
-![](mu_snc_ap.assets/mu_snc_ap-9cb33e69.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap-9cb33e69.png)
 
 #### 1.2.1.1 Recolha
 
@@ -109,15 +109,15 @@ O novo ecrã tem o aspeto abaixo mostrado:
 
 Neste formulário de configuração, a ACSS tem acesso a 2 Departamentos, sendo que o utilizador neste campo define o Identificador do IGCP, o Num. de Sequência e o Departamento a que diz respeito. Todas as restantes informações já existiam, pelo que o procedimento de preenchimento continua a ser o mesmo utilizado até à data.
 
-#### 1.2.1.2 Listagem
+#### 1.2.1.2. Listagem
 
 - Filtros disponíveis para listagem:
 
-![](mu_snc_ap.assets/mu_snc_ap-042b8d1c.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap-042b8d1c.png)
 
 - Aspeto da exportação para "Ficheiro" (CSV):
 
-![](mu_snc_ap.assets/mu_snc_ap-82f51aa1.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap-82f51aa1.png)
 
 - Aspeto da Impressão (PDF):
 
