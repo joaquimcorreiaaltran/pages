@@ -38,9 +38,9 @@ Nesta etapa, o utilizador que efetua o carregamento em SICC, tem de ter em conta
 
 ![img_3.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_3.png)
 
-Importante referir que o botão ![desdobrar_conta.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_desdobrar_conta.png), permite desdobrar os classificadores económicos e permite o registo de diferentes chaves orçamentais.
-Ao clicar no ![confirme.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_confirme.png), o sistema criará assim de forma automática um novo ecrã, com a criação da PO.
-O utilizador tem de proceder à aprovação, através do botão ![aprovar.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_aprovar.png). Assim dá indicação ao sistema que os valores anteriormente carregados, fazem parte do orçamento ordinário.
+Importante referir que o botão "Desdobrar conta", permite desdobrar os classificadores económicos e permite o registo de diferentes chaves orçamentais.
+Ao clicar no "Confirme", o sistema criará assim de forma automática um novo ecrã, com a criação da PO.
+O utilizador tem de proceder à aprovação, através do botão "Aprovar". Assim dá indicação ao sistema que os valores anteriormente carregados, fazem parte do orçamento ordinário.
 
 ![img_4.png](https://spmssicc.github.io/pages/markdown/assets/processos/img_4.png)
 

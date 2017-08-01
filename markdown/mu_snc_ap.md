@@ -14,49 +14,60 @@ Neste menu estão contempladas as funcionalidades necessárias para parametriza�
 
 Menu de acesso:
 
-![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/processos_snc_ap-18400d08.gif)
+![](mu_snc_ap.assets/mu_snc_ap-442ebe35.png)
 
 ##### 1.1.1.1. Recolha
 
-<!--![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-18400d08.png)-->
-
 Formulário de parametrização:
 
-<!--![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-0c719d37.png)-->
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/processos_snc_ap-0c719d37.gif)
 
 ##### 1.1.1.2. Listagens
-
-Menu de acesso:
-
-![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-194462ef.png)
-
-Formulário de parametrização:
+<!--Menu de acesso:
+![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-194462ef.png)-->
+- Filtros disponíveis para a listagem:
 
 ![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-0eab8be0.png)
 
+- Aspeto da exportação para ficheiro (CSV):
+
 ![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-82e39c0d.png)
+
+
+- Aspeto da exportação para impressão (PDF):
 
 ![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-9858d2cb.png)
 
 #### 1.1.2. Classificadores económicos
 
-##### 1.1.2.1 Recolha
-
 Menu de acesso:
 
-![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-b36d31eb.png)
+![](mu_snc_ap.assets/processos_snc_ap-b36d31eb.gif)
 
-Formulário de parametrização:
+##### 1.1.2.1 Recolha
+
+<!--Menu de acesso:
+
+![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-b36d31eb.png)-->
+
+- Formulário de parametrização:
 
 <!--![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-687d0684.png)-->
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/processos_snc_ap-687d0684.gif)
 
 ##### 1.1.2.2 Listagens
 
-![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-b2ca1649.png)
+<!--![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-b2ca1649.png)-->
+
+- Filtros disponíveis para a listagem:
 
 ![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-8a5edfa7.png)
+
+- Aspeto da exportação para ficheiro (CSV):
+
+![](mu_snc_ap.assets/mu_snc_ap-39a5341f.png)
+
+- Aspeto da exportação para impressão (PDF):
 
 ![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-64b730c9.png)
 
@@ -132,9 +143,9 @@ Nesta etapa, o utilizador que efetua o carregamento em SICC, tem de ter em conta
 
 ![img_3.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_3.png)
 
-Importante referir que o botão ![desdobrar_conta.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_desdobrar_conta.png), permite desdobrar os classificadores económicos e permite o registo de diferentes chaves orçamentais.
-Ao clicar no ![confirme.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_confirme.png), o sistema criará assim de forma automática um novo ecrã, com a criação da PO.
-O utilizador tem de proceder à aprovação, através do botão ![aprovar.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_aprovar.png). Assim dá indicação ao sistema que os valores anteriormente carregados, fazem parte do orçamento ordinário.
+Importante referir que o botão "Desdobrar conta", permite desdobrar os classificadores económicos e permite o registo de diferentes chaves orçamentais.
+Ao clicar no "Confirme", o sistema criará assim de forma automática um novo ecrã, com a criação da PO.
+O utilizador tem de proceder à aprovação, através do botão "Aprovar". Assim dá indicação ao sistema que os valores anteriormente carregados, fazem parte do orçamento ordinário.
 
 ![img_4.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_4.png)
 
@@ -244,7 +255,7 @@ __O Processo de criação de cabimentos e compromissos encontra-se detalhado no 
 
 ##### Criação de Cabimento
 
-_Em atualização:_
+_(Imagem em atualização)_
 
 ![img_25.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_25.png)
 
@@ -252,27 +263,27 @@ _Em atualização:_
 
 __O sistema efetua no processo de despesa, uma verificação de fundos que atribui o número sequencial e valida a realização de compromisso assumido por parte da gestão de compras.__
 
-_Em atualização:_
+_(Imagem em atualização)_
 ![img_26.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_26.png)
 
 Mensagem do sistema com indicação que as importâncias inseridas não correspondem aos valores dos Fundos criados
 
-_Em atualização:_
+_(Imagem em atualização)_
 ![img_27.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_27.png)
 
 Desta forma, o compromisso irá ser criado por uma importância de valor mais baixo a título de exemplo, conforme ecrã abaixo.
 
-_Em atualização:_
+_(Imagem em atualização)_
 ![img_28.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_28.png)
 
 ##### Criação com fundos disponíveis
 
-_Em atualização:_
+_(Imagem em atualização)_
 ![img_29.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_29.png)
 
 ##### Geração de movimentos contabilísticos e confirmação
 
-_Em atualização:_
+_(Imagem em atualização)_
 ![img_30.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_30.png)
 
 #### 2.1.3 Mapas (LPCA)
@@ -333,7 +344,7 @@ De igual modo à extração dos mapas anteriores, o utilizador nesta Tabela, usa
 
 Nos mapas, os ecrãs são idênticos na construção dos relatórios. Desta forma, o seguinte menu e respetivos submenus, permitem ao utilizador fazer uma análise ao Orçamento da despesa.
 
-_Em atualização:_
+_(Imagem em atualização)_
 ![img_37.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_37.png)
 
 Ao clicar, surge o ecrã abaixo e que permite proceder à escolha do tipo de informação que pretende analisar, podendo para o efeito fazer várias combinações possíveis.
@@ -354,7 +365,7 @@ Ao clicar, surge o ecrã abaixo e que permite proceder à escolha do tipo de inf
 
 |Botão|Descritivo|
 |:----|:---------|
-|Ficheiro|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido. ![img_44.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_44.png) ![img_45.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_45.png)|
+|Ficheiro|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido.</br>_(Imagem em atualização)_![img_44.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_44.png)![img_45.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_45.png)|
 |Imprimir|Este botão permite que o utilizador gere relatório diretamente no ecrã.|
 |Sair|Este botão permite que o utilizador saia da ecrã e regresse ao menu inicial.|
 
@@ -366,7 +377,7 @@ O exemplo seguinte, demonstra um relatório de alteração orçamental gerada em
 
 Relativamente a este processo, o Mapa de Execução Orçamental da Despesa e Mapa de Execução Orçamental da Receita, têm como finalidade permitir o controlo da execução orçamental da despesa e receita durante o exercício:
 
-_Em atualização:_
+_(Imagem em atualização)_
 ![img_47.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_47.png)
 
 Para tal, as opções no ecrã permite imprimir os formulários (gerando PDF), bem como, a extração para formato Excel, tendo o utilizador de definir o caminho para gravação do ficheiro.
@@ -399,7 +410,7 @@ O procedimento do mapa 7.2 é idêntico ao explicado anteriormente, sendo apenas
 
 Os Mapas das Alterações Orçamentais da Despesa e Alterações orçamentais da Receita têm por finalidade evidenciar as alterações orçamentais existentes durante o exercício depois da dotação e previsão iniciais:
 
-_Em atualização:_
+_(Imagem em atualização)_
 ![img_51.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_51.png)
 
 Ao clicar, é mostrado o ecrã abaixo e que permite proceder à escolha do tipo de informação que pretende analisar, podendo para o efeito fazer várias combinações possíveis.
@@ -438,12 +449,12 @@ O procedimento destes mapas é idêntico ao explicado anteriormente, sendo apena
 
 Esta opção permite, consultar ou criar um novo documento de Cabimento e com base em critérios selecionados pelo utilizador.
 
-_Em atualização:_
+_(Imagem em atualização)_
 ![img_56.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_56.png)
 
 Ao selecionar Cabimentos/Compromissos, irá surgir o seguinte ecrã, cujo objetivo é a criação de um Cabimento (CB), conforme imagem abaixo:
 
-_Em atualização:_
+_(Imagem em atualização)_
 ![img_57.gif](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_57.gif)
 
 O seu registo, o processo de cabimentação não sofre qualquer alteração, continuando a ter registar a referência o orçamento anual da entidade líquido de cativos devendo ser cabimentadas todas as despesas prováveis.
@@ -504,7 +515,7 @@ Após validação dos elementos integrados e constatado que os valores estão co
 Caso se trate de uma importação ou de valores introduzidos manualmente, no ecrã principal o utilizador tem outros botões que permitem assim uma análise mais cuidada.
 Desta forma, nos passos seguintes, é demonstrado o funcionamento dos outros botões constantes do ecrã.
 
-_Em atualização:_
+_(Imagem em atualização)_
 ![img_69.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_69.png)
 
 O utilizador ao escolher um dos seguintes botões obtém os ecrãs:
@@ -515,7 +526,7 @@ O utilizador ao escolher um dos seguintes botões obtém os ecrãs:
 
 O utilizador ao pressionar o botão "Imprimir", gera no ecrã o resultado da criação do CB.
 
-_Em atualização:_
+_(Imagem em atualização)_
 
 ![img_72.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_72.png)
 
@@ -552,12 +563,12 @@ Uma vez a linha subir um nível acima, deverá o utilizador definir porque monta
 
 Novo ecrã surge, no qual o utilizador definirá o novo item financeiro, conta e importância a registar na alteração do Cab. Finda a alteração, deverá gerar os documentos contabilísticos de forma automática pressionando para o efeito o botão "Gerar Contabilidade".
 
-_Em atualização:_
+_(Imagem em atualização)_
 ![img_81.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_81.png)
 
 O novo ecrã surge e associada a ela, aparecem os movimentos de lançamento do cabimento. Se os lançamentos estiverem corretos, deve o utilizador confirmar, pressionado o botão de confirmação.
 
-_Em atualização:_
+_(Imagem em atualização)_
 ![img_82.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_82.png)
 
 A alteração ao Cabimento acaba de ser efetuada, sendo que o sistema gera uma mensagem de confirmação.
@@ -591,18 +602,18 @@ Entende-se por _Verificação Prévia (CM)_, a verificação prévia de fundos d
 
 Por parte do utilizador, há necessidade de evidenciar novamente o “número de processo de aquisição”. De forma automática, o preenchimento do “valor disponível de cabimento” aparece por defeito. Posteriormente, deve o utilizador pressionar no botão “Gravar como CM”, bem como atribuir o montante do compromisso.
 
-_Em atualização_
+_(Imagem em atualização)_
 ![img_88.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_88.png)
 
 Neste ecrã, o utilizador terá de introduzir o valor manualmente e após confirmação dos elementos constituintes do CM, deve gerar os movimentos na contabilidade, utilizando o botão "Gerar Contabilidade".
 
 
-_Em atualização_
+_(Imagem em atualização)_
 ![img_91.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_91.png)
 
 Os movimentos contabilísticos aparecem no ecrã, sendo que se estiverem corretos, deverá o utilizador pressionar o botão "Confirme".
 
-_Em atualização_
+_(Imagem em atualização)_
 ![img_92.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_92.png)
 
 Uma nova mensagem surgirá com a classificação do compromisso criado, sendo que este processo está concluído:
@@ -611,7 +622,7 @@ Uma nova mensagem surgirá com a classificação do compromisso criado, sendo qu
 
 Após a criação do compromisso, o utilizador terá assim a possibilidade de ter “informação do CM” criado, para o efeito tem de pressionar no botão "Informação de CM".
 
-_Em atualização_
+_(Imagem em atualização)_
 ![img_94.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_94.png)
 
 Neste ecrã, surge o resumo da criação efetuada no passo anterior
@@ -657,7 +668,7 @@ Após validação dos elementos integrados e constatado que os valores estão co
 
 O sistema deve apresentar a seguinte mensagem, sempre que ao “Número de Processo de Aquisição”, já tenha Compromissos integrados.
 
-_Em atualização_
+_(Imagem em atualização)_
 ![img_99.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_99.png)
 
 #### 3.1.4. Alteração de Compromisso (AB)
@@ -688,7 +699,7 @@ Após validação dos elementos integrados e constatado que os valores estão co
 
 Antes de realizar o registo de fatura FI, existe a necessidade de o utilizador verificar a disponibilidade do compromisso. Esta validação pode ser efetuada através utilizando para efeito o botão "Consulta", explicado em passos anteriores.
 
-_Em atualização_
+_(Imagem em atualização)_
 ![img_106.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_106.png)
 
 O utilizador neste ecrã e no primeiro separador, deve indicar o nº do compromisso. De forma automática, o sistema gera a data de criação do documento, a conta financeira associada e o respetivo montante. A fase seguinte é a de definir a entidade. Para o efeito deve pressionar sobre o botão "![img_radio_unselected.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_radio_unselected.png)" para chamada de todas as entidades registadas na base de dados.
@@ -718,12 +729,12 @@ O próximo passo, no último separador, é definir o número da fatura e referid
 
 A conta de custos por defeito aparece, tendo somente o utilizador que introduzir a conta de contrapartida e respetivos valores da fatura.
 
-_Em atualização_
+_(Imagem em atualização)_
 ![img_113.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_113.png)
 
 Ao gerar os documentos na contabilidade, não esquecer que na analítica terá de ser atribuído um centro de custo para as contas classe 6. Através do botão "![img_radio_unselected.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_radio_unselected.png)", o utilizador tem acesso a todos os centros de custo inseridos em sistema.
 
-_Em atualização_
+_(Imagem em atualização)_
 ![img_114.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_114.png)
 
 __O botão "Desdobrar Conta", permite ao utilizador, para a mesma conta (separador ca Cont. Analítica) , a possibilidade de escolher o número de linhas para desdobrar, no sentido de integrar vários Centros de Custo.__
@@ -760,7 +771,7 @@ Após validação dos elementos integrados e constatado que os valores estão co
 
 Neste processo o que se pretende demonstrar é uma alteração a um CP existente. O caminho que o utilizador deve seguir é:
 
-_Em atualização_
+_(Imagem em atualização)_
 ![img_121.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_121.png)
 
 Neste processo, demostramos a título de exemplo o este processo de Alteração de lançamentos efetuada por carregamento de ficheiro através do botão "Importar".
@@ -788,17 +799,17 @@ Após validação dos elementos integrados e constatado que os valores estão co
 
 A autorização de pagamento das despesas, são autorizadas pelos dirigentes dos serviços ou outros que detenham autorização, mediante operações de tesouraria ou ainda através de transferência bancária, quando esta forma se revelar a mais conveniente.
 
-_Em atualização_
+_(Imagem em atualização)_
 ![img_131.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_131.png)
 
 Neste processo, o utilizador terá de identificar a entidade e os documentos que dela fazem parte, bem como atribuir um nº de autorização. O não preenchimento deste ultimo, determina que a numeração seja automática. Ao exemplo do anterior, terá de dar duplo clique na linha que contem os elementos para a mesma subir ao nível seguinte.
 
-_Em atualização_
+_(Imagem em atualização)_
 ![img_132.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_132.png)
 
 O utilizador define também se a pagamento é efetuado por tesouraria ou por Transf. Bancária, sendo que para este ultimo caso tem de selecionar qual a Instituição bancária.
 
-_Em atualização_
+_(Imagem em atualização)_
 ![img_133.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_133.png)
 
 |Campo|Descritivo|
@@ -808,12 +819,12 @@ _Em atualização_
 
 Para o exemplo, escolhemos um IBAN, sendo que para este caso é sempre obrigatório colocar um motivo. Deve o utilizador confirmar para dar continuidade à AP.
 
-_Em atualização_
+_(Imagem em atualização)_
 ![img_134.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_134.png)
 
 Ao confirmar, uma nova janela surge com os movimentos contabilísticos associados. Caso estejam corretos, novamente o utilizador terá de confirmar para finalizar o processo.
 
-_Em atualização_
+_(Imagem em atualização)_
 ![img_135.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_135.png)
 
 ##### Impressão de Autorizações de Pagamento (AP)
@@ -914,7 +925,7 @@ O  sistema SICC, permite ao utilizador a importação de ficheiros TXT. e a conv
 
 Para o efeito, o passo para este processo é o abaixo demonstrado.
 
-_Em atualização_
+_(Imagem em atualização)_
 ![img_155.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_155.png)
 
 Nesta etapa, um novo ecrã surge, em que o utilizador tem possibilidade de realizar as seguintes tarefas:
@@ -935,7 +946,7 @@ __Na importação de TXT. ou na Conversão para XML, o sistema ao carregar o fic
 
 De forma automática, uma conta de disponibilidades deve ser lançada a crédito por contrapartida da compensação da partida de autorização de pagamento com código de razão especial (252*).
 
-_Em atualização_
+_(Imagem em atualização)_
 ![img_160.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_160.png)
 
 Ao entrar neste submenu, é onde o utilizador deve fazer o registo do pagamento. A informação referente à entidade é obrigatória, bem como a visualização dos documentos. O utilizador ainda no presente ecrã, terá de definir o número de tesouraria para registo do pagamento. Desta forma e a título de exemplo foi escolhido o número 12.
@@ -946,7 +957,7 @@ Ao fazer duplo clique sobre a linha resumo, a informação é preenchida automat
 
 Surge nova janela na qual apresenta as movimentações contabilísticas, para o utilizador ver os registos efetuados pelo sistema. Para concluir, deve pressionar confirmar.
 
-_Em atualização_
+_(Imagem em atualização)_
 ![img_162.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_162.png)
 
 Ao confirmar surge de novo o ecrã inicial e pode constatar que a AP não aparece. Este principio tem como finalidade evitar que possam vir a existir pagamentos em duplicado.
@@ -965,7 +976,7 @@ Como o sistema dá indicação da situação do documento, deve o utilizador faz
 
 Para o efeito, tem de seguir o caminho:
 
-_Em atualização_
+_(Imagem em atualização)_
 ![img_165.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_165.png)
 
 Neste ecrã, o utilizador tem de preencher com a informação de acordo com as instruções do quadro abaixo:
@@ -1004,7 +1015,7 @@ No ecrã, o utilizador terá de preencher a entidade, bem como atribuir um núme
 
 Ao pressionar o botão, o utilizador terá de fazer o preenchimento das contabilizações necessárias, sendo que no final deve confirmar.
 
-_Em atualização_
+_(Imagem em atualização)_
 ![img_171.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_171.png)
 
 A partir desse momento a fatura foi gerada e registada em sistema. Pode no entanto ser feita uma consulta aos dados registados anteriormente.
@@ -1024,17 +1035,17 @@ O Serviço Financeiro procede ao registo emitindo a Guia de Receita através de 
 
 Cumprindo com o realizado em processos anteriores, deve o utilizador preencher: “Nº de entidade”, respetivo “Nº de GR” e dar duplo clique na linha resumo, para a mesma subir de nível.
 
-_Em atualização_
+_(Imagem em atualização)_
 ![img_178.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_178.png)
 
 Após a fatura ficar no nível superior, deve assim o utilizador pressionar sobre o botão "Gravar novo GR".
 
-_Em atualização_
+_(Imagem em atualização)_
 ![img_179.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_179.png)
 
 Os movimentos contabilísticos surgem de forma automática, pelo que o utilizador tem de validar e confirmar.
 
-_Em atualização_
+_(Imagem em atualização)_
 ![img_180.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_180.png)
 
 Nova mensagem surgirá com a Guia de receita criada, sendo que este processo está concluído:
@@ -1045,7 +1056,7 @@ Nova mensagem surgirá com a Guia de receita criada, sendo que este processo est
 
 Neste passo, é demonstrado o procedimento para fazer as impressões das GR geradas no passo anterior. Para isso, deve o utilizador seguir o seguinte caminho no sistema:
 
-_Em atualização_
+_(Imagem em atualização)_
 ![img_182.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_182.png)
 
 __O utilizador tem de selecionar sempre os documentos que deseja, sejam para consulta ou impressão através da colocação de "visto" no ecrã.__
@@ -1074,7 +1085,7 @@ Ao selecionar “imprimir”, o sistema produz a Guia de receita em PDF
 
 No processo de Cobrança, deve o utilizador lançar as várias contas de disponibilidades a débito por contrapartida de compensação da partida de liquidação da receita-cliente com código de razão especial (251*).
 
-_Em atualização_
+_(Imagem em atualização)_
 ![img_185.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_185.png)
 
 Deve o utilizador para dar continuidade ao processo, preencher: “Nº de entidade”, respetivo “Nº de tesouraria” e dar duplo clique na linha resumo para preenchimento automático dos restantes campos. Identificar igualmente qual o “Tipo de pagamento” e proceder à escolha da entidade bancária. Deve por fim pressionar sobre o botão "Gravar novo CO".
@@ -1083,14 +1094,14 @@ Deve o utilizador para dar continuidade ao processo, preencher: “Nº de entida
 
 Os movimentos contabilísticos surgem de forma automática, pelo que o utilizador tem de validar e confirmar.
 
-_Em atualização_
+_(Imagem em atualização)_
 ![img_187.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_187.png)
 
 ##### Impressão de Listagem de Cobrança
 
 De igual modo à impressão das GR, neste processo é demonstrado o procedimento para fazer as impressões das cobranças geradas no passo anterior. Para isso, deve o utilizador seguir o seguinte caminho no sistema:
 
-_Em atualização_
+_(Imagem em atualização)_
 ![img_188.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_188.png)
 
 __O utilizador tem de selecionar _sempre_ os documentos que deseja, sejam para consulta ou impressão através da colocação de no ecrã.__
@@ -1132,14 +1143,14 @@ Deve igualmente o utilizador atribuir “Nº de tesouraria” e dar duplo clique
 
 Os movimentos contabilísticos surgem de forma automática, pelo que o utilizador tem de validar e confirmar.
 
-_Em atualização_
+_(Imagem em atualização)_
 ![img_198.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_198.png)
 
 ##### Impressão Documentos OR
 
 Neste passo, é demonstrado o procedimento para fazer as impressões das GR geradas no passo anterior. Para isso, deve o utilizador seguir o seguinte caminho no sistema:
 
-_Em atualização:_
+_(Imagem em atualização)_
 ![img_199.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_199.png)
 
 __O utilizador tem de selecionar _sempre_ os documentos que deseja, sejam para consulta ou impressão através da colocação de um visto ![img_checkbox_checked.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_checkbox_checked.png) no ecrã.__
