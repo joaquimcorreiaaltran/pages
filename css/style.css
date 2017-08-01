@@ -137,7 +137,11 @@ nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0
  * 2. Remove the gap between images and borders on image containers: h5bp.com/i/440
  */
 
-img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
 
 /*
  * Correct overflow not hidden in IE9
@@ -379,15 +383,38 @@ h5{
     Imagens
    ========================================================================== */
 
-#documento p img {
-  display: inline;
+
+highslide-dimming {
+  background-color: red;
+}
+
+
+#documento p a img {
+  display: block;
   position: inherit;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  /*margin-top: 1em;
+  margin-bottom: 1em;*/
   cursor: url(../img/highslide/graphics/zoomin.cur), pointer;
+}
+
+#documento p img{
+  max-width:100%;
+  max-height:200px;
+  /*o "transform" reduz a imagem em x%, embora ela ocupe o equivalente
+  ao definido em max-width ou max-height*/
+  transform: scale(0.8, 0.8);
+  -ms-transform: scale(0.8, 0.8);
+  -webkit-transform: scale(0.8, 0.8);
+}
+
+td img{
+  max-width:100%;
+  max-height:100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .imagem {
@@ -1255,9 +1282,6 @@ footer img {
 					padding-bottom: 6em;
 				}
 
-    #documento img{max-width:100%; max-height:450px}
-    #documento table img{max-width:100%; max-height:300px}
-
     #accordion {
       margin-top: 45px;
     }
@@ -1283,9 +1307,6 @@ footer img {
 
       #titleBar {height: 0px;}
 
-      #documento img{max-width:100%; max-height:525px}
-      #documento table img{max-width:100%;max-height:375px}
-
       #accordion {margin-top: 0px;}
 
       /* Table of Content */
@@ -1309,8 +1330,6 @@ footer img {
 				padding: 2em 3em 6em 3em;
 				margin-left: 14em;
 			}
-      #documento img{max-width:100%; max-height:400px}
-      #documento table img{max-width:100%;max-height:300px}
 
       /* Table of Content */
       .dropdown-content {
@@ -1334,8 +1353,6 @@ footer img {
 				font-size: 1em;
 			}
 
-      #documento img{max-width:100%; max-height:400px}
-      #documento table img{max-width:500px;max-height:300px}
 	}
 
 /* Mobile */
@@ -1371,9 +1388,6 @@ footer img {
 		#content {
 			padding: 3em 20px 2em 20px;
 		}
-
-    #documento img{max-width:100%;max-height:400px;}
-    #documento table img{max-width:100%;max-height:300px;}
 
     #accordion {
       margin-top: 45px;

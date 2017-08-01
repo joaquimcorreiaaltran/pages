@@ -36,10 +36,10 @@ lang : {
 graphicsDir : '../../pages/img/highslide/graphics/',
 expandCursor : 'zoomin.cur', // null disables
 restoreCursor : 'zoomout.cur', // null disables
-expandDuration : 250, // milliseconds
-restoreDuration : 250,
-marginLeft : 15,
-marginRight : 15,
+expandDuration : 200, // milliseconds
+restoreDuration : 150,
+marginLeft : 5,
+marginRight : 5,
 marginTop : 15,
 marginBottom : 15,
 zIndexCounter : 1001, // adjust to other absolutely positioned elements
@@ -58,8 +58,8 @@ enableKeyListener : true,
 openerTagNames : ['a'], // Add more to allow slideshow indexing
 transitions : ['expand', 'crossfade'],
 transitionDuration: 250,
-dimmingOpacity: 50, // Lightbox style dimming background
-dimmingDuration: 50, // 0 for instant dimming
+dimmingOpacity: 0.60, // Lightbox style dimming background
+dimmingDuration: 250, // 0 for instant dimming
 
 anchor : 'auto', // where the image expands from
 align : 'center', // position in the client (overrides anchor)
@@ -367,8 +367,9 @@ dim : function(exp) {
 						hs.close();
 				}
 			}, {
-                visibility: 'visible',
-				opacity: 0
+                'visibility': 'visible',
+								'opacity': 0.5,
+								'background-color': '#dadada'
 			}, hs.container, true);
 
 		if (/(Android|iPad|iPhone|iPod)/.test(navigator.userAgent)) {

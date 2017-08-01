@@ -119,7 +119,7 @@
 					$target.css('overflow', overflow);
 					$img.remove();
 				});
-				
+
 			}());
 
 			img.onload = function () {
@@ -228,7 +228,7 @@
 							}
 						});
 				}
-				
+
 				if ($.isFunction(settings.callback)) {
 					settings.callback.call(img);
 				}
