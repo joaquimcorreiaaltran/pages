@@ -8,6 +8,9 @@
 		<!--<link rel="stylesheet" href="../../css/main.css">-->
 		<link rel="stylesheet" href="../css/style.css">
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+		<script>
+			document.body.style.cursor = 'progress';
+		</script>
 </head>
 <body>
 	<header>
@@ -49,11 +52,13 @@
 	<script src="../js/jquery.zoom.js" async></script>
 	<script>
 		$(function(){
+
 			loadFooter();
 		});
 		function DownloadPdf(){
 			window.open("http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1381.pdf","_blank")
 		}
+		document.body.style.cursor = 'auto';
 	</script>
 </body>
 

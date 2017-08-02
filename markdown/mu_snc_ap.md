@@ -97,7 +97,7 @@ Cada componente da chave orçamental é gerido através do seguinte tipo de form
 
 Menu de acesso:
 
-![](https://spmssicc.github.io/pages/markdown/mu_snc_ap-9cb33e69.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-9cb33e69.png)
 
 ##### 1.2.1.1. Recolha
 
@@ -113,11 +113,11 @@ Neste formulário de configuração, a ACSS tem acesso a 2 Departamentos, sendo 
 
 - Filtros disponíveis para listagem:
 
-![](https://spmssicc.github.io/pages/markdown/mu_snc_ap-042b8d1c.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets//mu_snc_ap-042b8d1c.png)
 
 - Aspeto da exportação para "Ficheiro" (CSV):
 
-![](https://spmssicc.github.io/pages/markdown/mu_snc_ap-82f51aa1.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-82f51aa1.png)
 
 - Aspeto da Impressão (PDF):
 
@@ -135,33 +135,33 @@ Este submenu permite o acesso às propostas orçamentais e respetivo registo do 
 
 #### 2.1.1. Recolha de Propostas Orçamentais
 
-![img_2.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_2.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-ab7ac365.png)
 
 O formulário para recolha de propostas orçamentais é composta por:
 
-| Opção | Descritivo | Utilizadores |
-|:----|:----------|:------------|
-| Ano | Exercício a que dizem respeito as informação da instituição. | Todos |
-| Orçamento Ordinário | Seleção apenas se for a introdução de um orçamento ordinário ![img_orç_ordinario.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_orç_ordinario.png) | Todos |
-| Alteração Orçamental | Seleção apenas se for uma alteração orçamental a registar. Ao selecionar, automaticamente aparece o número de lançamento o qual se pretende alterar. ![img_alteracao_orc_num_lancamento.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_alteracao_orc_num_lancamento.png) | Todos |
-| Atividade/Departamento | Identificação do tipo de Atividade/Departamento. Na seleção do botão de ajuda, o utilizador carregando no círculo ![img_radio_unselected.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_radio_unselected.png) pode obter uma listagem de todos os tipos de Atividades/Departamentos. | Todos |
-| Data | ---?--- | Todos |
-| Observações | Campo de observações onde estão ou devem ser colocadas todas as informações pretendidas pelo utilizador. | Todos |
-| Data aprovação | ---?--- | Todos |
-| Novo Orçamento | Ao clicar neste botão, abrirá a proposta orçamental a ser carregada com identificação dos classificadores económicos e valores a integrar. | Todos |
+| Opção | Descrição |
+|:----|:----------|
+| Ano | Exercício a que dizem respeito as informação da instituição. |
+| Orçamento Ordinário | Seleção apenas se for a introdução de um orçamento ordinário ![img_orç_ordinario.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_orç_ordinario.png) |
+| Alteração Orçamental | Seleção apenas se for uma alteração orçamental a registar. Ao selecionar, automaticamente aparece o número de lançamento o qual se pretende alterar. ![img_alteracao_orc_num_lancamento.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_alteracao_orc_num_lancamento.png) |
+| Atividade/Departamento | Identificação do tipo de Atividade/Departamento. Na seleção do botão de ajuda, o utilizador carregando no círculo ![img_radio_unselected.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_radio_unselected.png) pode obter uma listagem de todos os tipos de Atividades/Departamentos. |
+| Data | ---?--- |
+| Observações | Campo de observações onde estão ou devem ser colocadas todas as informações pretendidas pelo utilizador. |
+| Data aprovação | ---?--- |
+| Novo Orçamento | Ao clicar neste botão, abrirá a proposta orçamental a ser carregada com identificação dos classificadores económicos e valores a integrar. |
 
 Neste ecrã, decidir os valores a constarem na proposta do orçamento através da inserção dos montantes de receita ou despesa pelos vários itens de orçamento.
 Nesta etapa, o utilizador que efetua o carregamento em SICC, tem de ter em conta a divisão pelas respetivas rubricas orçamentais. Verificar no entanto nesta fase se o total das receitas igual às despesas.
 
 ##### 2.1.1.1. Orçamento Ordinário
 
-![img_3.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_3.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/Criacao_orcamento.gif)
 
 Importante referir que o botão "Desdobrar conta", permite desdobrar os classificadores económicos e permite o registo de diferentes chaves orçamentais.
 Ao clicar no "Confirme", o sistema criará assim de forma automática um novo ecrã, com a criação da PO.
 O utilizador tem de proceder à aprovação, através do botão "Aprovar". Assim dá indicação ao sistema que os valores anteriormente carregados, fazem parte do orçamento ordinário.
 
-![img_4.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_4.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-a4492ed6.png)
 
 |Botão| Descritivo|
 |:----|:----------|
@@ -172,92 +172,74 @@ O utilizador tem de proceder à aprovação, através do botão "Aprovar". Assim
 
 Após o processo de aprovação, novo ecrã surge, sendo que agora só existe a possibilidade de “Anular aprovação”; “Consulta” ou “Sair”
 
-![img_5.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_5.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-75e35e94.png)
 
 É imperativo, por parte do Departamento responsável, analisar a necessidade da modificação e os motivos que originam as alterações orçamentais que possam ocorrer, tendo em conta o enquadramento legal para a alteração orçamental pretendida.
 Posteriormente, esta informação (Alteração orçamental) será carregada em SIGO para decisão (aprovação/rejeição) da DGO (Direção-Geral do Orçamento). Aquando o recebimento da deliberação da DGO, estão reunidas as condições para o carregamento do Orçamento no SICC.
 No ecrã e para efeitos de registo, ao selecionar "Alteração Orç", de forma automática surge o “número de lançamento” que se pretende para proceder ao registo da nova alteração.
 
-![img_6png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_6.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-b590bbcf.png)
 
-Selecionando a “Nova alteração”, o sistema de forma automática gera novo ecrã, no qual mostra todos os classificadores económicos com valores a 0, onde se pode registar a alteração orçamental com os montantes pretendidos. No seguinte exemplo, foi retirado valor parcial do carregado inicialmente na rúbrica de Material de consumo clínico para a rúbrica de Ferramentas e utensílios. Findas as alterações, deverá confirmar.
+Selecionando a “Nova alteração”, o sistema de forma automática gera novo ecrã, no qual mostra todos os classificadores económicos com valores a 0, onde se pode registar a alteração orçamental com os montantes pretendidos. No seguinte exemplo, foi retirado valor parcial do carregado inicialmente na rúbrica de "Representação" para a rúbrica de "Ajudas de custo"". Findas as alterações, deverá confirmar.
 
-![img_7.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_7.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-a00e2e44.png)
 
 Após a confirmação surge novo ecrã com a informação que a alteração orçamental com o número de lançamento “1” é existente em sistema. Poderá assim o utilizador fazer a “consulta” ou “abater” o registo da alteração orçamental.
 
-![img_8.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_8.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-f229ceb3.png)
 
 Se as alterações estão validadas, o próximo passo é de “Aprovar” para que o sistema assuma os novos valores propostos.
 
-![img_9.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_9.png)
-
-Desta forma, o utilizador pode agora proceder à “Consulta” e verificar o resultado das alterações geradas nos passos anteriores.
-
 ##### 2.1.1.2. Consulta de Contabilidade
 
-![img_10.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_10.png)
+É possível proceder à “Consulta” e verificar o resultado das alterações geradas nos passos anteriores.
 
-#### 2.1.2 Fundos disponíveis(LPCA)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-453ceda9.png)
+
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-c362c238.png)
+
+#### 2.1.2. Fundos disponíveis(LPCA)
 
 Neste processo, e através do caminho abaixo indicado, será demonstrado o processo de registo dos Fundos disponíveis (LCPA).
 
-![img_7a.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_7a.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-4582f3fc.png)
 
-Entende-se por Fundos Disponiveis as verbas disponíveis a curto prazo. Incluem, quando aplicável e desde que tenha sido comprometido ou gasto:
+Entende-se por Fundos Disponíveis, as verbas disponíveis a curto prazo. Incluem, quando aplicável e desde que tenha sido comprometido ou gasto:
 1) A dotação corrigida líquida de cativos, relativa aos três meses seguintes;
 2) As transferências ou subsídios com origem no Orçamento do Estado, relativos aos três meses seguintes;
 3) A receita efetiva própria que tenha sido cobrada, ou recebida como adiantamento;
 4) A previsão da receita efetiva própria a cobrar nos três meses seguintes;
-5) O produto de empréstimos contraídos nos termos da lei (As transferências ainda não efetuadas decorrentes de programas e projetos do QREN e de outros programas estruturais, cujas faturas se encontrem liquidadas e devidamente certificadas ou validadas.)
+5) O produto de empréstimos contraídos nos termos da lei (as transferências ainda não efetuadas decorrentes de programas e projetos do QREN e de outros programas estruturais, cujas faturas se encontrem liquidadas e devidamente certificadas ou validadas);
 6) Outros montantes autorizados nos termos do artigo 4.º da LCPA.
 
 ![img_8a.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_8a.png)
 
 Nos próximos passos, vai ser demonstrado o processo de criação dos fundos disponíveis. Neste ecrã, o utilizador deve escolher:
 
-![img_9a.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_9a.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-dd2a0181.png)
 
-| Opção | Descritivo | Utilizadores |
-|:----|:----------|:------------|
-| Ano | Exercício a que dizem respeito as informação da instituição. ||
-| Mês | Seleção do mês para carregamento dos fundos. ||
-| Alteração | Seleção do número de alteração que se pretende. ||
-| Data | - - - ? - - - ||
-| Observações | Campo de observações onde estão ou devem ser colocadas todas as informações pretendidas pelo utilizador. ||
-| Diretório | Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido. ||
+| Opção | Descrição |
+|:----|:----------|
+| Ano | Exercício a que dizem respeito as informação da instituição. |
+| Mês | Seleção do mês para carregamento dos fundos. |
+| Alteração | Seleção do número de alteração que se pretende. |
+| Data | - - - ? - - - |
+| Observações | Campo de observações onde estão ou devem ser colocadas todas as informações pretendidas pelo utilizador. |
+| Diretório (...) | Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido. </br> ![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_11.png) |
 | Novo Orçamento | Este botão permite a gravar alterações que tenham sido necessárias de ajustar. |
 | Produção de mapa em CSV | Esta opção permite a produção do mapa em ficheiro com extensão CSV. |
 | Consulta | Este botão permite ao utilizador consultar os valores carregados dos fundos disponíveis. |
 | Sair | Este botão permite ao utilizador sair do ecrã corrente. |
 
-Após o preenchimentos dos campos atrás referidos, e sendo que se trata de um Novo Orçamento, o ecrã que surge é a de preenchimento dos valores de orçamento de fundos próprios.
-
-![img_12.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_12.png)
+Após o preenchimentos dos campos atrás referidos, e sendo que se trata de um Novo Orçamento, o ecrã que surge é o de preenchimento dos valores de orçamento de fundos próprios.
 
 ![img_13.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_13.png)
 
-__A previsão de receitas próprias é corrigida do desvio negativo apurado entre as previsões efetuadas nos meses anteriores e as receitas efetivamente cobradas.__
+A previsão de receitas próprias é corrigida do desvio negativo apurado entre as previsões efetuadas nos meses anteriores e as receitas efetivamente cobradas.
 
 ![img_14.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_14.png)
 
-![img_15.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_15.png)
 
-![img_16.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_16.png)
-
-![img_17.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_17.png)
-
-![img_18.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_18.png)
-
-![img_19.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_19.png)
-
-![img_20.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_20.png)
-
-![img_21.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_21.png)
-
-![img_22.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_22.png)
-
-![img_23.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_23.png)
 
 No final de cada mês, o utilizador ao Confirmar, surge no ecrã a indicação de:
 
@@ -265,50 +247,49 @@ No final de cada mês, o utilizador ao Confirmar, surge no ecrã a indicação d
 
 Para validar, que o sistema efetua um controle dos fundos criados, não permitindo a criação de Compromissos com valor superior aos Fundos Disponiveis, fica o exemplo abaixo:
 
-__O Processo de criação de cabimentos e compromissos encontra-se detalhado no ponto 3.1 do documento.__
 
-##### Criação de Cabimento
 
-_(Imagem em atualização)_
+##### 2.1.2.1. Criação de Cabimento
 
-![img_25.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_25.png)
+O Processo de criação de cabimentos e compromissos encontra-se detalhado no ponto 3.1 do documento.
 
-##### Verificação prévia de fundos disponíveis
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-3243dd2d.png)
 
-__O sistema efetua no processo de despesa, uma verificação de fundos que atribui o número sequencial e valida a realização de compromisso assumido por parte da gestão de compras.__
+##### 2.1.2.2. Verificação prévia de fundos disponíveis
 
-_(Imagem em atualização)_
-![img_26.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_26.png)
+O sistema efetua no processo de despesa, uma verificação de fundos que atribui o número sequencial e valida a realização de compromisso assumido por parte da gestão de compras.
+
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-909cca06.png)
 
 Mensagem do sistema com indicação que as importâncias inseridas não correspondem aos valores dos Fundos criados
 
-_(Imagem em atualização)_
-![img_27.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_27.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-fc10784d.png)
 
-Desta forma, o compromisso irá ser criado por uma importância de valor mais baixo a título de exemplo, conforme ecrã abaixo.
+Desta forma, a verificação prévia irá ser criada, conforme demonstrado no ecrã abaixo.
 
-_(Imagem em atualização)_
-![img_28.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_28.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-59e05a32.png)
 
-##### Criação com fundos disponíveis
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-f7f5e5fb.png)
+
+##### 2.1.2.3. Criação com fundos disponíveis
 
 _(Imagem em atualização)_
 ![img_29.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_29.png)
 
-##### Geração de movimentos contabilísticos e confirmação
+##### 2.1.2.4. Geração de movimentos contabilísticos e confirmação
 
 _(Imagem em atualização)_
 ![img_30.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_30.png)
 
-#### 2.1.3 Mapas (LPCA)
+#### 2.1.3. Mapas (LPCA)
 
-##### Tabela 1 – Fundos disponíveis
+##### 2.1.3.1. Tabela 1 – Fundos disponíveis
 
 O utilizador neste processo, tem a possibilidade de extrair relatórios do sistema com base nas informações e valores introduzidas nos passos anteriores.
 
 ![img_31.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_31.png)
 
-|Botão|Descritivo|
+|Botão|Descrição|
 |:----|:---------|
 |Extrato|Este botão permite a gravar alterações que no diretório escolhido pelo utilizador.|
 |XML|Esta opção permite a produção do mapa em ficheiro com extensão XML.|
@@ -319,13 +300,13 @@ O utilizador neste processo, tem a possibilidade de extrair relatórios do siste
 |:----|
 |Qualquer uma das extrações permite ao utilizador ter o controlo dos Fundos disponíveis através de relatórios que espelham a atividade e fundos utilizados.|
 
-|Opção|Descritivo|Utilizador|
-|:----|:---------|:---------|
-|Ano|Exercício a que dizem respeito as informação da instituição.|Todos|
-|Mês|Seleção do mês para carregamento dos fundos. ![img_mes_janeiro.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_mes_janeiro.png)|Todos|
-|Diretório|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido. ![img_33.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_33.png)|Todos|
+|Opção|Descrição|
+|:----|:---------|
+|Ano|Exercício a que dizem respeito as informação da instituição.|
+|Mês|Seleção do mês para carregamento dos fundos. ![img_mes_janeiro.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_mes_janeiro.png)|
+|Diretório|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido. ![img_33.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_33.png)|
 
-##### Tabela 4 - (SPA’s): Passivos/ Contas a pagar
+##### 2.1.3.2. Tabela 4 - (SPA’s): Passivos/ Contas a pagar
 
 De igual modo à extração dos mapas anteriores, o utilizador nesta Tabela, usa o mesmo procedimento.
 
@@ -335,7 +316,7 @@ De igual modo à extração dos mapas anteriores, o utilizador nesta Tabela, usa
 |:----|
 |Os mapas da ACSS e DGO, estavam calculados de maneira diferente. Este botão será brevemente retirado deste ecrã, pelo facto de já estarem alinhados.|
 
-|Botão|Descritivo|
+|Botão|Descrição|
 |:----|:---------|
 |Extrato|Este botão permite a gravar alterações que no diretório escolhido pelo utilizador.|
 |XML|Esta opção permite a produção do mapa em ficheiro com extensão XML.|
@@ -346,13 +327,19 @@ De igual modo à extração dos mapas anteriores, o utilizador nesta Tabela, usa
 |:----|
 |Qualquer uma das extrações permite ao utilizador ter o controlo dos Fundos disponíveis através de relatórios que espelham a atividade e fundos utilizados.|
 
-|Opção|Descritivo|Utilizador|
-|:----|:---------|:---------|
-|Ano|Exercício a que dizem respeito as informação da instituição.|Todos|
-|Mês|Seleção do mês para carregamento dos fundos. ![img_mes_janeiro.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_mes_janeiro.png)|Todos|
-|Diretório|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido. ![img_36.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_36.png)|Todos|
+|Opção|Descrição|
+|:----|:---------|
+|Ano|Exercício a que dizem respeito as informação da instituição.|
+|Mês|Seleção do mês para carregamento dos fundos. ![img_mes_janeiro.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_mes_janeiro.png)|
+|Diretório|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido. ![img_36.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_36.png)|
 
 ### 2.2. Mapas Legais
+
+De modo a analisar os orçamentos da despesa/receita
+
+Nos mapas, os ecrãs são idênticos na construção dos relatórios e de modo a analisar ao Orçamento da despesa.
+
+![](mu_snc_ap.assets/mu_snc_ap-7a5287c2.png)
 
 #### 2.2.1. Mapas - Orçamento de Despesa/Receita
 
@@ -367,7 +354,7 @@ Ao clicar, surge o ecrã abaixo e que permite proceder à escolha do tipo de inf
 
 ![img_38.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_38.png)
 
-| Campo | Obrigatoriedade | Descritivo |
+| Campo | Obrigatoriedade | Descrição |
 |:----|:---------|:---------|
 | Exercício | Obrigatório | Exercício a que dizem respeito as informação da instituição. |
 | Proposta | Obrigatório | Seleção de um dos campos: ![img_39.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_39.png) |
@@ -377,7 +364,7 @@ Ao clicar, surge o ecrã abaixo e que permite proceder à escolha do tipo de inf
 | Pri. Data | Obrigatório ||
 | Últ. Data | Obrigatório ||
 
-|Botão|Descritivo|
+|Botão|Descrição|
 |:----|:---------|
 |Ficheiro|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido.</br>_(Imagem em atualização)_![img_44.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_44.png)![img_45.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_45.png)|
 |Imprimir|Este botão permite que o utilizador gere relatório diretamente no ecrã.|
@@ -400,7 +387,7 @@ Para tal, as opções no ecrã permite imprimir os formulários (gerando PDF), b
 
 ![img_48.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_48.png)
 
-|Campo|Obrigatoriedade|Descritivo|
+|Campo|Obrigatoriedade|Descrição|
 |:----|:--------------|:---------|
 |Exercício|Obrigatório|O utilizador deverá introduzir o ano do exercício pretendido, no formato AAAA. Por exemplo “2015”. Por defeito, é atribuído ao campo o ano corrente.|
 |Primeira Conta|Obrigatório|O utilizador deve indicar a primeira conta a partir da qual (inclusive) pretende obter as informações. Por defeito, o sistema utiliza a primeira conta existente.|
@@ -431,7 +418,7 @@ Ao clicar, é mostrado o ecrã abaixo e que permite proceder à escolha do tipo 
 
 ![img_52.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_52.png)
 
-|Campo|Obrigatoriedade|Descritivo|
+|Campo|Obrigatoriedade|Descrição|
 |:---|:---|:---|
 |Exercício|Obrigatório|Exercício a que dizem respeito as informação da instituição.|
 |Proposta|Obrigatório|Seleção de um dos campos: ![img_valores_proposta_orcamental.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_valores_proposta_orcamental.png)|
@@ -441,7 +428,7 @@ Ao clicar, é mostrado o ecrã abaixo e que permite proceder à escolha do tipo 
 |Pri. Data|Obrigatório|Definir a data de início da pesquisa.|
 |Últ. Data|Obrigatório|Definir a data final da pesquisa.|
 
-|Botão|Descritivo|
+|Botão|Descrição|
 |:---|:---|
 |Ficheiro|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido.![img_57a.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_57a.png) ![img_57b.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_57b.png)|
 |Imprimir|Este botão permite que o utilizador gere relatório diretamente no ecrã.|
@@ -479,7 +466,7 @@ A gravação do CB abre novo ecrã, onde teremos um botão de ajuda no preenchim
 
 ![img_60.gif](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_60.gif)
 
-|Campo|Obrigatoriedade|Descritivo|
+|Campo|Obrigatoriedade|Descrição|
 |:----|:--------------|:---------|
 |Classificador Económico|Obrigatório| No método de registo de contas patrimoniais, disponível a partir do menu de Parametrização>Instituição>Configuações ![9561c58b](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/processos_snc_ap-9561c58b.png), o classificador económico é mostrado automaticamente através da conta patrimonial, de acordo com a associação feita no menu do Plano de Contas. ![img_61.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_61.png) No método de registo de Classificador económico, é necessáiro registar primeiro o classificador económico e a conta patrimonial é mostrada automaticamente|
 |Conta|Obrigatório|Seleção da conta ao classificador. ![img_62.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_62.png)|
@@ -550,7 +537,7 @@ _(Imagem em atualização)_
 
 Nos ecrãs atrás referidos, o procedimento é similar:
 
-|Botão|Descritivo|
+|Botão|Descrição|
 |:---|:---|
 |Calcular|Este botão permite o resumo do que foi criado no cabimento. ![img_75.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_75.png)|
 |Imprimir|Este botão permite que o utilizador gere relatório diretamente no ecrã.|
@@ -645,7 +632,7 @@ Neste ecrã, surge o resumo da criação efetuada no passo anterior
 
 Igualmente e da mesma forma que no ecrã dos cabimentos, o utilizador tem assim disponíveis as seguintes possibilidades:
 
-|Botão|Descritivo|
+|Botão|Descrição|
 |:---|:---|
 |Calcular|Este botão permite o resumo do que foi criado no cabimento|
 |Imprimir|Este botão permite que o utilizador gere relatório diretamente no ecrã.|
@@ -826,7 +813,7 @@ O utilizador define também se a pagamento é efetuado por tesouraria ou por Tra
 _(Imagem em atualização)_
 ![img_133.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_133.png)
 
-|Campo|Descritivo|
+|Campo|Descrição|
 |:---|:---|
 |NIB/IBAN|Este campo dá a hipótese do utilizador escolher se é um NIB ou um IBAN, aparecendo as seguintes opções: ![img_nib_credor.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_nib_credor.png)|
 |Motivo|O motivo deverá igualmente ser escolhido dentro das parametrizações inseridas em sistema: ![img_secu_pag_igcp.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_secu_pag_igcp.png)|
@@ -863,7 +850,7 @@ O utilizador tem a possibilidade de definir um intervalo, com a possibilidade es
 
 __O utilizador tem de selecionar sempre os documentos que deseja, sejam para consulta ou impressão através da colocação de ![img_checkbox_checked.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_checkbox_checked.png) no ecrã.__
 
-|Campo|Obrigatoriedade|Descritivo|
+|Campo|Obrigatoriedade|Descrição|
 |:---|:---|:---|
 |Primeira Entidade|Obrigatório|Definir primeira entidade a filtrar|
 |Última Entidade|Obrigatório|Definir última entidade a filtrar|
@@ -872,7 +859,7 @@ __O utilizador tem de selecionar sempre os documentos que deseja, sejam para con
 |“Pôr autorizações regularizadas”|Opcional|Permite ao utilizador quando o estiver ativo imprimir guias com histórico e em que já tenha ocorrido o recebimento.![img_checkbox_checked_2.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_checkbox_checked_2.png)|
 |Autorização de Pagamento / Autorização Global de Pagamento|Obrigatório|O utilizador escolhe: ![img_autorizacao_pagamento.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_autorizacao_pagamento.png), sendo que, para mais que um registo existe a possibilidade de "Selecionar Todos" ![img_selecionar_todos.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_selecionar_todos.png)|
 
-|Botão|Descritivo|
+|Botão|Descrição|
 |:---|:---|
 |Calcular|Este botão permite ao utilizador consultar os valores carregados de orçamento, bem como os respetivos classificadores económicos|
 |Imprimir|Este botão permite a geração do documento em PDF|
@@ -899,7 +886,7 @@ Surge um ecrã na qual o utilizador tem de preencher de acordo com o quadro abai
 __No caso da ACSS, o utilizador na altura da criação dos vários tipos de documentos (notas de crédito, notas de débito, etc), pode associar os mesmos ao referido Departamento a que dizem respeito, evidenciando posteriormente no ecrã e no respetivo campo![img_actividade_departamento.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_actividade_departamento.png).__
 
 
-|Campo|Obrigatoriedade|Descritivo|
+|Campo|Obrigatoriedade|Descrição|
 |:---|:---|:---|
 |Instituição bancária|Obrigatório|Definir a instituição bancária|
 |Primeira Entidade|Obrigatório|Definir primeira entidade a filtrar|
@@ -916,7 +903,7 @@ __O utilizador tem de ter escolher o tipo de documento que quer gerar, dependend
 
 ![img_150.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_150.png)
 
-|Botão|Descritivo|
+|Botão|Descrição|
 |:---|:---|
 |Ficheiro|Este botão permite ao utilizador escolher o diretório de gravação do ficheiroTXT. (IGCP) ou XML. (IGCP – Novo) que será gerado. ![img_151.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_151.png) ![img_152.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_152.png)|
 |Imprimir 2ª Via|Este botão permite que o utilizador gere relatório diretamente no ecrã.|
@@ -946,7 +933,7 @@ Nesta etapa, um novo ecrã surge, em que o utilizador tem possibilidade de reali
 
 ![img_156.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_156.png)
 
-|Botão|Descritivo|
+|Botão|Descrição|
 |:---|:---|
 |Importar Ficheiro|Este botão permite ao utilizador escolher o diretório onde está o ficheiro para importação com formato TXT. Após determinar o caminho deve pressionar sobre o botão de importação.
 ![img_157.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_157.png) ![img_158.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_158.png)||
@@ -1000,7 +987,7 @@ Neste ecrã, o utilizador tem de preencher com a informação de acordo com as i
 __O utilizador tem de selecionar _sempre_ os documentos que deseja, sejam para consulta ou impressão através da colocação do visto ![img_checkbox_checked.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_checkbox_checked.png) no ecrã anterior.__
 
 
-|Campo|Obrigatoriedade|Descritivo|
+|Campo|Obrigatoriedade|Descrição|
 |:---|:---|:---|
 |Ano|Obrigatório|Exercício a que dizem respeito as informação da instituição.|
 |Primeira Entidade|Obrigatório|Definir primeira entidade a filtrar|
@@ -1077,7 +1064,7 @@ __O utilizador tem de selecionar sempre os documentos que deseja, sejam para con
 
 ![img_183.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_183.png)
 
-|Campo|Obrigatoriedade|Descritivo|
+|Campo|Obrigatoriedade|Descrição|
 |:---|:---|:----|
 |Primeira Entidade|Obrigatório|Definir primeira entidade a filtrar|
 |Última Entidade|Obrigatório|Definir última entidade a filtrar|
@@ -1085,7 +1072,7 @@ __O utilizador tem de selecionar sempre os documentos que deseja, sejam para con
 |Última data|Obrigatório|Definir intervalo última data|
 |Pôr Guias já regularizadas|Opcional|Permite ao utilizador quando o "![img_checkbox_checked_2.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_checkbox_checked_2.png)" estiver ativo imprimir guias com histórico e em que já tenha ocorrido o recebimento.|
 
-|Botão|Descritivo|
+|Botão|Descrição|
 |:---|:---|
 |Calcular|Este botão permite ao utilizador consultar os valores carregados de orçamento, bem como os respetivos classificadores económicos.|
 |Imprimir|Este botão permite a geração do documento em PDF.|
@@ -1122,7 +1109,7 @@ __O utilizador tem de selecionar _sempre_ os documentos que deseja, sejam para c
 
 ![img_189.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_189.png)
 
-|Campo|Obrigatoriedade|Descritivo|
+|Campo|Obrigatoriedade|Descrição|
 |:---|:---|:---|
 |Primeira Entidade|Obrigatório|Definir primeira entidade a filtrar|
 |Última Entidade|Obrigatório|Definir última entidade a filtrar|
@@ -1131,7 +1118,7 @@ __O utilizador tem de selecionar _sempre_ os documentos que deseja, sejam para c
 |Primeiro Documento|Opcional|Definir primeiro Doc. a integrar|
 |Último Documento|Opcional|Definir último Doc. a integrar|
 
-|Botão|Descritivo|
+|Botão|Descrição|
 |:---|:---|
 |Calcular|Este botão permite ao utilizador consultar os valores carregados de orçamento, bem como os respetivos classificadores económicos|
 |Imprimir|Este botão permite a geração do documento em PDF|
@@ -1171,7 +1158,7 @@ __O utilizador tem de selecionar _sempre_ os documentos que deseja, sejam para c
 
 ![img_200.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_200.png)
 
-|Campo|Obrigatoriedade|Descritivo|
+|Campo|Obrigatoriedade|Descrição|
 |:---|:---|:---|
 |Primeira Entidade|Obrigatório|Definir primeira entidade a filtrar|
 |Última Entidade|Obrigatório|Definir última entidade a filtrar|
@@ -1179,7 +1166,7 @@ __O utilizador tem de selecionar _sempre_ os documentos que deseja, sejam para c
 |Última data|Obrigatório|Definir intervalo última data|
 |Outras receitas regularizadas|Opcional|Permite ao utilizador quando o ![img_checkbox_checked_2.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_checkbox_checked_2.png) estiver ativo imprimir guias com histórico e em que já tenha ocorrido o recebimento.|
 
-|Botão|Descritivo|
+|Botão|Descrição|
 |:---|:---|
 |Calcular|Este botão permite ao utilizador consultar os valores carregados de orçamento, bem como os respetivos classificadores económicos.|
 |Imprimir|Este botão permite a geração do documento em PDF.|

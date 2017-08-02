@@ -50,8 +50,24 @@ body { margin: 0; font-size: 1em; line-height: 1.4;  width: 96%;margin: auto;}
 div.content{  width: 70%;  margin: auto;  margin-left: 20%;}
 
 p, li, div{
+<<<<<<< HEAD
   margin-top:.0001pt;margin-bottom: .0001pt;font-size:  1em;
   font-family:"Roboto";line-height:  150%;text-align:  justify;
+=======
+  margin-top:.0001pt;
+  margin-bottom: .0001pt;
+  font-size:  1em;
+  font-family:"Roboto", sans-serif;
+  line-height:  150%;
+  text-align:  justify;
+  /*Prevent user from select text:
+  none	Prevent text selection
+  text	The text can be selected by the user*/
+  -webkit-user-select: text; /* Chrome, Opera, Safari */
+  -moz-user-select: text; /* Firefox 2+ */
+  -ms-user-select: text; /* IE 10+ */
+  user-select: text; /* Standard syntax */
+>>>>>>> origin/master
 }
 
 
@@ -392,6 +408,9 @@ h5{
   /*margin-top: 1em;
   margin-bottom: 1em;*/
   cursor: url(../img/highslide/graphics/zoomin.cur), pointer;
+  border: 1px solid #656565;
+  border-radius: 8px;
+  border-spacing: 10px;
 }
 
 #documento p img{
@@ -409,6 +428,7 @@ td img{
   max-height:100px;
   margin-left: auto;
   margin-right: auto;
+  cursor: url(../img/highslide/graphics/zoomin.cur), pointer;
 }
 
 .imagem {
@@ -440,7 +460,7 @@ p.caption{
     max-width: 80%;
     min-height: 10%;
     /*height: 80%;*/
-    max-height: 80%;
+    max-height: calc(100% - 100px); /*80%;*/
     box-shadow: 0 0 2em #444444;
     z-index: 1;
     border: 1em 0.5em 1em 1em;
@@ -1102,7 +1122,7 @@ footer img {
         border-radius: 5px;
 			}
 
-      #titleBar :hover {
+      #titleBar a:hover {
           font-size: 1.2em;
       }
 
@@ -1117,14 +1137,14 @@ footer img {
         background-color: white;
         z-index:99;
         height: 100vh;
-        -moz-animation: sideBarLeft 0.3s;
+        /*-moz-animation: sideBarLeft 0.3s;
   			-webkit-animation: sideBarLeft 0.3s;
   			-ms-animation: sideBarLeft 0.3s;
   			animation: sideBarLeft 0.3s;
         -moz-animation-timing-function: ease-out;
         -webkit-animation-timing-function: ease-out;
         -ms-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
+        animation-timing-function: ease-out;*/
     	}
 
       @-ms-keyframes sideBarLeft {

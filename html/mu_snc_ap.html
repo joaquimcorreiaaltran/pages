@@ -8,8 +8,13 @@
 		<!--<link rel="stylesheet" href="../../css/main.css">-->
 		<link rel="stylesheet" href="../css/style.css">
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+		<script>
+			document.body.style.cursor = 'progress';
+		</script>
 </head>
-<body>
+<!--disable copy while te document is being produced by SICC team
+Remove this function when the document is finalized -->
+<body oncopy="return false" oncut="return false" onpaste="return false">
 	<header>
 			<div id="sidebar">
 					<a id="amenuLink" href="amenu-source.html">Menu</a>
@@ -44,16 +49,37 @@
 	<script src="../js/jquery.zoom.js" async></script>
 	<script>
 		$(function(){
+
 			// convert .md file to html and place it into the html element sent (argument)
-		 	convertMdToHtml("documento", function() {
+			convertMdToHtml("documento", function() {
 				loadFooter();
 				loadDocButtons(function() {
 					//build the table of content
 					toc("tocDropdown");
+
+					document.body.style.cursor = 'auto';
+
 				});
 			});
 		});
 	</script>
+	<!-- Disable Copy and Paste-->
+<script language='JavaScript1.2'>
+			function disableselect(e) {
+			    return false
+			}
+
+			function reEnable() {
+			    return true
+			}
+
+			document.onselectstart = new Function (&quot;return false&quot;)
+
+			if (window.sidebar) {
+			    document.onmousedown = disableselect
+			    document.onClick = reEnable
+			}
+</script>
 </body>
 
 </html>

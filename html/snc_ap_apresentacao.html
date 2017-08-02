@@ -8,6 +8,9 @@
 		<!--<link rel="stylesheet" href="../../css/main.css">-->
 		<link rel="stylesheet" href="../css/style.css">
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+		<script>
+			document.body.style.cursor = 'progress';
+		</script>
 </head>
 <body>
 	<header>
@@ -23,7 +26,7 @@
 					<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://spmssicc.github.io/pages/pptx/SPMS_SICC_SNC_AP_20160606_04-pics.pptx' style='position: absolute; left: 0px; top: 0px; width: 100%; height: 100%'></iframe>
 				</div>
 				<div id="docButtons">
-				  <button title="Transferir documento" id="btnPDF" type="button" alt="btnPDF" onclick="DownloadPdf()"><i class="fa fa-file-pdf-o fa-fw"></i></button>
+				  <button title="Transferir documento" id="btnPDF" type="button" alt="btnPDF" onclick="Download()"><i class="fa fa-file-pdf-o fa-fw"></i></button>
 				</div>
 				<noscript>
 					<h1>Ops! :(</h1>
@@ -52,11 +55,14 @@
 	<script src="../js/jquery.zoom.js" async></script>
 	<script>
 		$(function(){
-			loadFooter();
+
+			function Download(){
+			 -			window.open("https://spmssicc.github.io/pages/pptx/SPMS_SICC_SNC_AP_20160606_04-pics.pptx","_blank")
+			 -		}
 		});
-		function DownloadPdf(){
-			window.open("https://spmssicc.github.io/pages/pptx/SPMS_SICC_SNC_AP_20160606_04-pics.pptx","_blank")
-		}
+
+		document.body.style.cursor = 'auto';
+
 	</script>
 </body>
 
