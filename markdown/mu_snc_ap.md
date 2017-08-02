@@ -281,12 +281,13 @@ O sistema efetua no processo de despesa, uma verificação de fundos que atribui
 
 Mensagem do sistema com indicação que as importâncias inseridas não correspondem aos valores dos Fundos criados
 
-_(Imagem em atualização)_
-![img_27.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_27.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-fc10784d.png)
 
 Desta forma, o compromisso irá ser criado por uma importância de valor mais baixo a título de exemplo, conforme ecrã abaixo.
 
 _(Imagem em atualização)_
+
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-59e05a32.png)
 ![img_28.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_28.png)
 
 ##### 2.1.2.3. Criação com fundos disponíveis
@@ -352,6 +353,12 @@ De igual modo à extração dos mapas anteriores, o utilizador nesta Tabela, usa
 |Diretório|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido. ![img_36.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_36.png)|Todos|
 
 ### 2.2. Mapas Legais
+
+De modo a analisar os orçamentos da despesa/receita
+
+Nos mapas, os ecrãs são idênticos na construção dos relatórios e de modo a analisar ao Orçamento da despesa.
+
+![](mu_snc_ap.assets/mu_snc_ap-7a5287c2.png)
 
 #### 2.2.1. Mapas - Orçamento de Despesa/Receita
 
