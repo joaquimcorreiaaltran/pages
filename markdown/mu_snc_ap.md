@@ -198,7 +198,7 @@ Se as alterações estão validadas, o próximo passo é de “Aprovar” para q
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-c362c238.png)
 
-#### 2.1.2 Fundos disponíveis(LPCA)
+#### 2.1.2. Fundos disponíveis(LPCA)
 
 Neste processo, e através do caminho abaixo indicado, será demonstrado o processo de registo dos Fundos disponíveis (LCPA).
 
@@ -225,39 +225,21 @@ Nos próximos passos, vai ser demonstrado o processo de criação dos fundos dis
 | Alteração | Seleção do número de alteração que se pretende. |
 | Data | - - - ? - - - |
 | Observações | Campo de observações onde estão ou devem ser colocadas todas as informações pretendidas pelo utilizador. |
-| Diretório | Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido. </br> ![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_11.png) |
+| Diretório (...) | Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido. </br> ![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_11.png) |
 | Novo Orçamento | Este botão permite a gravar alterações que tenham sido necessárias de ajustar. |
 | Produção de mapa em CSV | Esta opção permite a produção do mapa em ficheiro com extensão CSV. |
 | Consulta | Este botão permite ao utilizador consultar os valores carregados dos fundos disponíveis. |
 | Sair | Este botão permite ao utilizador sair do ecrã corrente. |
 
-Após o preenchimentos dos campos atrás referidos, e sendo que se trata de um Novo Orçamento, o ecrã que surge é a de preenchimento dos valores de orçamento de fundos próprios.
-
-![img_12.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_12.png)
+Após o preenchimentos dos campos atrás referidos, e sendo que se trata de um Novo Orçamento, o ecrã que surge é o de preenchimento dos valores de orçamento de fundos próprios.
 
 ![img_13.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_13.png)
 
-__A previsão de receitas próprias é corrigida do desvio negativo apurado entre as previsões efetuadas nos meses anteriores e as receitas efetivamente cobradas.__
+A previsão de receitas próprias é corrigida do desvio negativo apurado entre as previsões efetuadas nos meses anteriores e as receitas efetivamente cobradas.
 
 ![img_14.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_14.png)
 
-![img_15.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_15.png)
 
-![img_16.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_16.png)
-
-![img_17.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_17.png)
-
-![img_18.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_18.png)
-
-![img_19.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_19.png)
-
-![img_20.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_20.png)
-
-![img_21.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_21.png)
-
-![img_22.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_22.png)
-
-![img_23.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_23.png)
 
 No final de cada mês, o utilizador ao Confirmar, surge no ecrã a indicação de:
 
