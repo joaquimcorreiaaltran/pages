@@ -50,8 +50,19 @@ body { margin: 0; font-size: 1em; line-height: 1.4;  width: 96%;margin: auto;}
 div.content{  width: 70%;  margin: auto;  margin-left: 20%;}
 
 p, li, div{
-  margin-top:.0001pt;margin-bottom: .0001pt;font-size:  1em;
-  font-family:"Roboto", sans-serif;line-height:  150%;text-align:  justify;
+  margin-top:.0001pt;
+  margin-bottom: .0001pt;
+  font-size:  1em;
+  font-family:"Roboto", sans-serif;
+  line-height:  150%;
+  text-align:  justify;
+  /*Prevent user from select text:
+  none	Prevent text selection
+  text	The text can be selected by the user*/
+  -webkit-user-select: text; /* Chrome, Opera, Safari */
+  -moz-user-select: text; /* Firefox 2+ */
+  -ms-user-select: text; /* IE 10+ */
+  user-select: text; /* Standard syntax */
 }
 
 
@@ -392,6 +403,9 @@ h5{
   /*margin-top: 1em;
   margin-bottom: 1em;*/
   cursor: url(../img/highslide/graphics/zoomin.cur), pointer;
+  border: 1px solid #656565;
+  border-radius: 8px;
+  border-spacing: 10px;
 }
 
 #documento p img{
@@ -409,6 +423,7 @@ td img{
   max-height:100px;
   margin-left: auto;
   margin-right: auto;
+  cursor: url(../img/highslide/graphics/zoomin.cur), pointer;
 }
 
 .imagem {
