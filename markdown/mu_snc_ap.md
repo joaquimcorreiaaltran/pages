@@ -97,7 +97,7 @@ Cada componente da chave orçamental é gerido através do seguinte tipo de form
 
 Menu de acesso:
 
-![](https://spmssicc.github.io/pages/markdown/mu_snc_ap-9cb33e69.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-9cb33e69.png)
 
 ##### 1.2.1.1. Recolha
 
@@ -113,11 +113,11 @@ Neste formulário de configuração, a ACSS tem acesso a 2 Departamentos, sendo 
 
 - Filtros disponíveis para listagem:
 
-![](https://spmssicc.github.io/pages/markdown/mu_snc_ap-042b8d1c.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets//mu_snc_ap-042b8d1c.png)
 
 - Aspeto da exportação para "Ficheiro" (CSV):
 
-![](https://spmssicc.github.io/pages/markdown/mu_snc_ap-82f51aa1.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-82f51aa1.png)
 
 - Aspeto da Impressão (PDF):
 
@@ -135,33 +135,33 @@ Este submenu permite o acesso às propostas orçamentais e respetivo registo do 
 
 #### 2.1.1. Recolha de Propostas Orçamentais
 
-![img_2.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_2.png)
+![](mu_snc_ap.assets/mu_snc_ap-ab7ac365.png)
 
 O formulário para recolha de propostas orçamentais é composta por:
 
-| Opção | Descritivo | Utilizadores |
-|:----|:----------|:------------|
-| Ano | Exercício a que dizem respeito as informação da instituição. | Todos |
-| Orçamento Ordinário | Seleção apenas se for a introdução de um orçamento ordinário ![img_orç_ordinario.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_orç_ordinario.png) | Todos |
-| Alteração Orçamental | Seleção apenas se for uma alteração orçamental a registar. Ao selecionar, automaticamente aparece o número de lançamento o qual se pretende alterar. ![img_alteracao_orc_num_lancamento.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_alteracao_orc_num_lancamento.png) | Todos |
-| Atividade/Departamento | Identificação do tipo de Atividade/Departamento. Na seleção do botão de ajuda, o utilizador carregando no círculo ![img_radio_unselected.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_radio_unselected.png) pode obter uma listagem de todos os tipos de Atividades/Departamentos. | Todos |
-| Data | ---?--- | Todos |
-| Observações | Campo de observações onde estão ou devem ser colocadas todas as informações pretendidas pelo utilizador. | Todos |
-| Data aprovação | ---?--- | Todos |
-| Novo Orçamento | Ao clicar neste botão, abrirá a proposta orçamental a ser carregada com identificação dos classificadores económicos e valores a integrar. | Todos |
+| Opção | Descrição |
+|:----|:----------|
+| Ano | Exercício a que dizem respeito as informação da instituição. |
+| Orçamento Ordinário | Seleção apenas se for a introdução de um orçamento ordinário ![img_orç_ordinario.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_orç_ordinario.png) |
+| Alteração Orçamental | Seleção apenas se for uma alteração orçamental a registar. Ao selecionar, automaticamente aparece o número de lançamento o qual se pretende alterar. ![img_alteracao_orc_num_lancamento.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_alteracao_orc_num_lancamento.png) |
+| Atividade/Departamento | Identificação do tipo de Atividade/Departamento. Na seleção do botão de ajuda, o utilizador carregando no círculo ![img_radio_unselected.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_radio_unselected.png) pode obter uma listagem de todos os tipos de Atividades/Departamentos. |
+| Data | ---?--- |
+| Observações | Campo de observações onde estão ou devem ser colocadas todas as informações pretendidas pelo utilizador. |
+| Data aprovação | ---?--- |
+| Novo Orçamento | Ao clicar neste botão, abrirá a proposta orçamental a ser carregada com identificação dos classificadores económicos e valores a integrar. |
 
 Neste ecrã, decidir os valores a constarem na proposta do orçamento através da inserção dos montantes de receita ou despesa pelos vários itens de orçamento.
 Nesta etapa, o utilizador que efetua o carregamento em SICC, tem de ter em conta a divisão pelas respetivas rubricas orçamentais. Verificar no entanto nesta fase se o total das receitas igual às despesas.
 
 ##### 2.1.1.1. Orçamento Ordinário
 
-![img_3.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_3.png)
+![](mu_snc_ap.assets/Criacao_orcamento.gif)
 
 Importante referir que o botão "Desdobrar conta", permite desdobrar os classificadores económicos e permite o registo de diferentes chaves orçamentais.
 Ao clicar no "Confirme", o sistema criará assim de forma automática um novo ecrã, com a criação da PO.
 O utilizador tem de proceder à aprovação, através do botão "Aprovar". Assim dá indicação ao sistema que os valores anteriormente carregados, fazem parte do orçamento ordinário.
 
-![img_4.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_4.png)
+![](mu_snc_ap.assets/mu_snc_ap-a4492ed6.png)
 
 |Botão| Descritivo|
 |:----|:----------|
@@ -172,51 +172,51 @@ O utilizador tem de proceder à aprovação, através do botão "Aprovar". Assim
 
 Após o processo de aprovação, novo ecrã surge, sendo que agora só existe a possibilidade de “Anular aprovação”; “Consulta” ou “Sair”
 
-![img_5.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_5.png)
+![](mu_snc_ap.assets/mu_snc_ap-75e35e94.png)
 
 É imperativo, por parte do Departamento responsável, analisar a necessidade da modificação e os motivos que originam as alterações orçamentais que possam ocorrer, tendo em conta o enquadramento legal para a alteração orçamental pretendida.
 Posteriormente, esta informação (Alteração orçamental) será carregada em SIGO para decisão (aprovação/rejeição) da DGO (Direção-Geral do Orçamento). Aquando o recebimento da deliberação da DGO, estão reunidas as condições para o carregamento do Orçamento no SICC.
 No ecrã e para efeitos de registo, ao selecionar "Alteração Orç", de forma automática surge o “número de lançamento” que se pretende para proceder ao registo da nova alteração.
 
-![img_6png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_6.png)
+![](mu_snc_ap.assets/mu_snc_ap-b590bbcf.png)
 
-Selecionando a “Nova alteração”, o sistema de forma automática gera novo ecrã, no qual mostra todos os classificadores económicos com valores a 0, onde se pode registar a alteração orçamental com os montantes pretendidos. No seguinte exemplo, foi retirado valor parcial do carregado inicialmente na rúbrica de Material de consumo clínico para a rúbrica de Ferramentas e utensílios. Findas as alterações, deverá confirmar.
+Selecionando a “Nova alteração”, o sistema de forma automática gera novo ecrã, no qual mostra todos os classificadores económicos com valores a 0, onde se pode registar a alteração orçamental com os montantes pretendidos. No seguinte exemplo, foi retirado valor parcial do carregado inicialmente na rúbrica de "Representação" para a rúbrica de "Ajudas de custo"". Findas as alterações, deverá confirmar.
 
-![img_7.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_7.png)
+![](mu_snc_ap.assets/mu_snc_ap-a00e2e44.png)
 
 Após a confirmação surge novo ecrã com a informação que a alteração orçamental com o número de lançamento “1” é existente em sistema. Poderá assim o utilizador fazer a “consulta” ou “abater” o registo da alteração orçamental.
 
-![img_8.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_8.png)
+![](mu_snc_ap.assets/mu_snc_ap-f229ceb3.png)
 
 Se as alterações estão validadas, o próximo passo é de “Aprovar” para que o sistema assuma os novos valores propostos.
 
-![img_9.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_9.png)
-
-Desta forma, o utilizador pode agora proceder à “Consulta” e verificar o resultado das alterações geradas nos passos anteriores.
-
 ##### 2.1.1.2. Consulta de Contabilidade
 
-![img_10.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_10.png)
+É possível proceder à “Consulta” e verificar o resultado das alterações geradas nos passos anteriores.
+
+![](mu_snc_ap.assets/mu_snc_ap-453ceda9.png)
+
+![](mu_snc_ap.assets/mu_snc_ap-c362c238.png)
 
 #### 2.1.2 Fundos disponíveis(LPCA)
 
 Neste processo, e através do caminho abaixo indicado, será demonstrado o processo de registo dos Fundos disponíveis (LCPA).
 
-![img_7a.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_7a.png)
+![](mu_snc_ap.assets/mu_snc_ap-4582f3fc.png)
 
-Entende-se por Fundos Disponiveis as verbas disponíveis a curto prazo. Incluem, quando aplicável e desde que tenha sido comprometido ou gasto:
+Entende-se por Fundos Disponíveis, as verbas disponíveis a curto prazo. Incluem, quando aplicável e desde que tenha sido comprometido ou gasto:
 1) A dotação corrigida líquida de cativos, relativa aos três meses seguintes;
 2) As transferências ou subsídios com origem no Orçamento do Estado, relativos aos três meses seguintes;
 3) A receita efetiva própria que tenha sido cobrada, ou recebida como adiantamento;
 4) A previsão da receita efetiva própria a cobrar nos três meses seguintes;
-5) O produto de empréstimos contraídos nos termos da lei (As transferências ainda não efetuadas decorrentes de programas e projetos do QREN e de outros programas estruturais, cujas faturas se encontrem liquidadas e devidamente certificadas ou validadas.)
+5) O produto de empréstimos contraídos nos termos da lei (as transferências ainda não efetuadas decorrentes de programas e projetos do QREN e de outros programas estruturais, cujas faturas se encontrem liquidadas e devidamente certificadas ou validadas);
 6) Outros montantes autorizados nos termos do artigo 4.º da LCPA.
 
 ![img_8a.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_8a.png)
 
 Nos próximos passos, vai ser demonstrado o processo de criação dos fundos disponíveis. Neste ecrã, o utilizador deve escolher:
 
-![img_9a.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_9a.png)
+![](mu_snc_ap.assets/mu_snc_ap-bdb02253.png)
 
 | Opção | Descritivo | Utilizadores |
 |:----|:----------|:------------|
@@ -233,7 +233,7 @@ Nos próximos passos, vai ser demonstrado o processo de criação dos fundos dis
 
 Após o preenchimentos dos campos atrás referidos, e sendo que se trata de um Novo Orçamento, o ecrã que surge é a de preenchimento dos valores de orçamento de fundos próprios.
 
-![img_12.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_12.png)
+![](mu_snc_ap.assets/mu_snc_ap-7ec5547c.png)
 
 ![img_13.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_13.png)
 
@@ -267,17 +267,18 @@ Para validar, que o sistema efetua um controle dos fundos criados, não permitin
 
 __O Processo de criação de cabimentos e compromissos encontra-se detalhado no ponto 3.1 do documento.__
 
-##### Criação de Cabimento
+##### 2.1.2.1 Criação de Cabimento
 
 _(Imagem em atualização)_
 
 ![img_25.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_25.png)
 
-##### Verificação prévia de fundos disponíveis
+##### 2.1.2.2 Verificação prévia de fundos disponíveis
 
 __O sistema efetua no processo de despesa, uma verificação de fundos que atribui o número sequencial e valida a realização de compromisso assumido por parte da gestão de compras.__
 
 _(Imagem em atualização)_
+
 ![img_26.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_26.png)
 
 Mensagem do sistema com indicação que as importâncias inseridas não correspondem aos valores dos Fundos criados
@@ -290,12 +291,12 @@ Desta forma, o compromisso irá ser criado por uma importância de valor mais ba
 _(Imagem em atualização)_
 ![img_28.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_28.png)
 
-##### Criação com fundos disponíveis
+##### 2.1.2.3 Criação com fundos disponíveis
 
 _(Imagem em atualização)_
 ![img_29.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_29.png)
 
-##### Geração de movimentos contabilísticos e confirmação
+##### 2.1.2.4 Geração de movimentos contabilísticos e confirmação
 
 _(Imagem em atualização)_
 ![img_30.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_30.png)
