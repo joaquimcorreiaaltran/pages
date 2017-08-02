@@ -219,13 +219,13 @@ Nos próximos passos, vai ser demonstrado o processo de criação dos fundos dis
 ![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_9a.png)
 
 | Opção | Descrição |
-|:----|:----------|:------------|
+|:----|:----------|
 | Ano | Exercício a que dizem respeito as informação da instituição. |
 | Mês | Seleção do mês para carregamento dos fundos. |
 | Alteração | Seleção do número de alteração que se pretende. |
 | Data | - - - ? - - - |
 | Observações | Campo de observações onde estão ou devem ser colocadas todas as informações pretendidas pelo utilizador. |
-| Diretório | Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido. ![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_11.png) |
+| Diretório | Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido. </br> ![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_11.png) |
 | Novo Orçamento | Este botão permite a gravar alterações que tenham sido necessárias de ajustar. |
 | Produção de mapa em CSV | Esta opção permite a produção do mapa em ficheiro com extensão CSV. |
 | Consulta | Este botão permite ao utilizador consultar os valores carregados dos fundos disponíveis. |
