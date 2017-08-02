@@ -216,7 +216,7 @@ Entende-se por Fundos Disponíveis, as verbas disponíveis a curto prazo. Inclue
 
 Nos próximos passos, vai ser demonstrado o processo de criação dos fundos disponíveis. Neste ecrã, o utilizador deve escolher:
 
-![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_9a.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-dd2a0181.png)
 
 | Opção | Descrição |
 |:----|:----------|
@@ -283,12 +283,11 @@ Mensagem do sistema com indicação que as importâncias inseridas não correspo
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-fc10784d.png)
 
-Desta forma, o compromisso irá ser criado por uma importância de valor mais baixo a título de exemplo, conforme ecrã abaixo.
-
-_(Imagem em atualização)_
+Desta forma, a verificação prévia irá ser criada, conforme demonstrado no ecrã abaixo.
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-59e05a32.png)
-![img_28.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_28.png)
+
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-f7f5e5fb.png)
 
 ##### 2.1.2.3. Criação com fundos disponíveis
 
@@ -319,11 +318,11 @@ O utilizador neste processo, tem a possibilidade de extrair relatórios do siste
 |:----|
 |Qualquer uma das extrações permite ao utilizador ter o controlo dos Fundos disponíveis através de relatórios que espelham a atividade e fundos utilizados.|
 
-|Opção|Descrição|Utilizador|
-|:----|:---------|:---------|
-|Ano|Exercício a que dizem respeito as informação da instituição.|Todos|
-|Mês|Seleção do mês para carregamento dos fundos. ![img_mes_janeiro.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_mes_janeiro.png)|Todos|
-|Diretório|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido. ![img_33.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_33.png)|Todos|
+|Opção|Descrição|
+|:----|:---------|
+|Ano|Exercício a que dizem respeito as informação da instituição.|
+|Mês|Seleção do mês para carregamento dos fundos. ![img_mes_janeiro.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_mes_janeiro.png)|
+|Diretório|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido. ![img_33.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_33.png)|
 
 ##### 2.1.3.2. Tabela 4 - (SPA’s): Passivos/ Contas a pagar
 
@@ -346,11 +345,11 @@ De igual modo à extração dos mapas anteriores, o utilizador nesta Tabela, usa
 |:----|
 |Qualquer uma das extrações permite ao utilizador ter o controlo dos Fundos disponíveis através de relatórios que espelham a atividade e fundos utilizados.|
 
-|Opção|Descrição|Utilizador|
-|:----|:---------|:---------|
-|Ano|Exercício a que dizem respeito as informação da instituição.|Todos|
-|Mês|Seleção do mês para carregamento dos fundos. ![img_mes_janeiro.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_mes_janeiro.png)|Todos|
-|Diretório|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido. ![img_36.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_36.png)|Todos|
+|Opção|Descrição|
+|:----|:---------|
+|Ano|Exercício a que dizem respeito as informação da instituição.|
+|Mês|Seleção do mês para carregamento dos fundos. ![img_mes_janeiro.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_mes_janeiro.png)|
+|Diretório|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido. ![img_36.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_36.png)|
 
 ### 2.2. Mapas Legais
 
