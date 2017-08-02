@@ -50,10 +50,6 @@ body { margin: 0; font-size: 1em; line-height: 1.4;  width: 96%;margin: auto;}
 div.content{  width: 70%;  margin: auto;  margin-left: 20%;}
 
 p, li, div{
-<<<<<<< HEAD
-  margin-top:.0001pt;margin-bottom: .0001pt;font-size:  1em;
-  font-family:"Roboto";line-height:  150%;text-align:  justify;
-=======
   margin-top:.0001pt;
   margin-bottom: .0001pt;
   font-size:  1em;
@@ -67,7 +63,6 @@ p, li, div{
   -moz-user-select: text; /* Firefox 2+ */
   -ms-user-select: text; /* IE 10+ */
   user-select: text; /* Standard syntax */
->>>>>>> origin/master
 }
 
 
