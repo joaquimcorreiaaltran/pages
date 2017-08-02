@@ -1100,7 +1100,7 @@ footer img {
         border-radius: 5px;
 			}
 
-      #titleBar :hover {
+      #titleBar a:hover {
           font-size: 1.2em;
       }
 
@@ -1115,14 +1115,14 @@ footer img {
         background-color: white;
         z-index:99;
         height: 100vh;
-        -moz-animation: sideBarLeft 0.3s;
+        /*-moz-animation: sideBarLeft 0.3s;
   			-webkit-animation: sideBarLeft 0.3s;
   			-ms-animation: sideBarLeft 0.3s;
   			animation: sideBarLeft 0.3s;
         -moz-animation-timing-function: ease-out;
         -webkit-animation-timing-function: ease-out;
         -ms-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
+        animation-timing-function: ease-out;*/
     	}
 
       @-ms-keyframes sideBarLeft {
