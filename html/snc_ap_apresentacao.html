@@ -52,11 +52,21 @@
 	<script src="../js/jquery.zoom.js" async></script>
 	<script>
 		$(function(){
-			loadFooter();
+
+			document.body.style.cursor = 'progress';
+
+			// convert .md file to html and place it into the html element sent (argument)
+		 	convertMdToHtml("documento", function() {
+				loadFooter();
+				loadDocButtons(function() {
+					//build the table of content
+					toc("tocDropdown");
+
+					document.body.style.cursor = 'auto';
+
+				});
+			});
 		});
-		function DownloadPdf(){
-			window.open("https://spmssicc.github.io/pages/pptx/SPMS_SICC_SNC_AP_20160606_04-pics.pptx","_blank")
-		}
 	</script>
 </body>
 

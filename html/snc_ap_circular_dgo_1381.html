@@ -49,11 +49,13 @@
 	<script src="../js/jquery.zoom.js" async></script>
 	<script>
 		$(function(){
+			document.body.style.cursor = 'progress';
 			loadFooter();
 		});
 		function DownloadPdf(){
 			window.open("http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1381.pdf","_blank")
 		}
+		document.body.style.cursor = 'auto';
 	</script>
 </body>
 
