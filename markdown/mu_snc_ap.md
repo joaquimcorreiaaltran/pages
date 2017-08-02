@@ -265,21 +265,19 @@ No final de cada mês, o utilizador ao Confirmar, surge no ecrã a indicação d
 
 Para validar, que o sistema efetua um controle dos fundos criados, não permitindo a criação de Compromissos com valor superior aos Fundos Disponiveis, fica o exemplo abaixo:
 
-__O Processo de criação de cabimentos e compromissos encontra-se detalhado no ponto 3.1 do documento.__
 
-##### 2.1.2.1 Criação de Cabimento
 
-_(Imagem em atualização)_
+##### 2.1.2.1. Criação de Cabimento
 
-![img_25.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_25.png)
+O Processo de criação de cabimentos e compromissos encontra-se detalhado no ponto 3.1 do documento.
 
-##### 2.1.2.2 Verificação prévia de fundos disponíveis
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-3243dd2d.png)
 
-__O sistema efetua no processo de despesa, uma verificação de fundos que atribui o número sequencial e valida a realização de compromisso assumido por parte da gestão de compras.__
+##### 2.1.2.2. Verificação prévia de fundos disponíveis
 
-_(Imagem em atualização)_
+O sistema efetua no processo de despesa, uma verificação de fundos que atribui o número sequencial e valida a realização de compromisso assumido por parte da gestão de compras.
 
-![img_26.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_26.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-909cca06.png)
 
 Mensagem do sistema com indicação que as importâncias inseridas não correspondem aos valores dos Fundos criados
 
@@ -291,19 +289,19 @@ Desta forma, o compromisso irá ser criado por uma importância de valor mais ba
 _(Imagem em atualização)_
 ![img_28.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_28.png)
 
-##### 2.1.2.3 Criação com fundos disponíveis
+##### 2.1.2.3. Criação com fundos disponíveis
 
 _(Imagem em atualização)_
 ![img_29.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_29.png)
 
-##### 2.1.2.4 Geração de movimentos contabilísticos e confirmação
+##### 2.1.2.4. Geração de movimentos contabilísticos e confirmação
 
 _(Imagem em atualização)_
 ![img_30.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_30.png)
 
-#### 2.1.3 Mapas (LPCA)
+#### 2.1.3. Mapas (LPCA)
 
-##### Tabela 1 – Fundos disponíveis
+##### 2.1.3.1. Tabela 1 – Fundos disponíveis
 
 O utilizador neste processo, tem a possibilidade de extrair relatórios do sistema com base nas informações e valores introduzidas nos passos anteriores.
 
@@ -326,7 +324,7 @@ O utilizador neste processo, tem a possibilidade de extrair relatórios do siste
 |Mês|Seleção do mês para carregamento dos fundos. ![img_mes_janeiro.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_mes_janeiro.png)|Todos|
 |Diretório|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido. ![img_33.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_33.png)|Todos|
 
-##### Tabela 4 - (SPA’s): Passivos/ Contas a pagar
+##### 2.1.3.2. Tabela 4 - (SPA’s): Passivos/ Contas a pagar
 
 De igual modo à extração dos mapas anteriores, o utilizador nesta Tabela, usa o mesmo procedimento.
 
