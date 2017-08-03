@@ -215,6 +215,7 @@ function toc(elementToPopulate){
       console.log("HTML do Índice a colocar no elemento \"" + elementToPopulate + "\":\n" + toc_html);
 
       htmlToPopulate.innerHTML = toc_html;
+      $('#btnShowToc').click();
   }/*if*/
   else {
     console.log("Não foi possível criar o índice porque o elemento \"" + elementToPopulate + "\" não existe no HTML!");
