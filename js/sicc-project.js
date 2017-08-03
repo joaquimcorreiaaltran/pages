@@ -93,32 +93,19 @@ function loadDocButtons (funcao) {
            showToc();
          });
 
-          //show or hide button to scroll to the top of the page
-          $(window).scroll(function() {
-            if ($(this).scrollTop() > 1000) {
-              //add effect / animation
-              $('.showWithScroll').stop(true).animate({opacity: 1}, 500);
-            } else {
-                if ($(this).scrollTop() < 1000) {
-                  $('.showWithScroll').stop(true).animate({opacity: 0}, 500);
-                }
-            }/*else*/
-          });
-
-
-          			var mywindow = $(window);
-          			var mypos = mywindow.scrollTop();
-          			mywindow.scroll(function() {
-          					if(mywindow.scrollTop() > mypos)
-          					{
-          							$('#titleBar').fadeOut();
-          					}
-          					else
-          					{
-          							$('#titleBar').fadeIn();
-          					}
-          					mypos = mywindow.scrollTop();
-          			 });
+			var mywindow = $(window);
+			var mypos = mywindow.scrollTop();
+			mywindow.scroll(function() {
+					if(mywindow.scrollTop() > mypos)
+					{
+							$('#titleBar').fadeOut();
+					}
+					else
+					{
+							$('#titleBar').fadeIn();
+					}
+					mypos = mywindow.scrollTop();
+			 });
 
           if(funcao != undefined && typeof funcao == "function"){
             funcao();
