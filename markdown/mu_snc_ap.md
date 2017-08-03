@@ -233,7 +233,6 @@ Nos próximos passos, vai ser demonstrado o processo de criação dos fundos dis
 
 Após o preenchimentos dos campos atrás referidos, e sendo que se trata de um Novo Orçamento, o ecrã que surge é o de preenchimento dos valores de orçamento de fundos próprios.
 
-_Imagem em atualização_
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-51e69794.png)
 
 A previsão de receitas próprias é corrigida do desvio negativo apurado entre as previsões efetuadas nos meses anteriores e as receitas efetivamente cobradas.
@@ -264,9 +263,9 @@ Mensagem do sistema com indicação que as importâncias inseridas não correspo
 
 Desta forma, a verificação prévia irá ser criada, conforme demonstrado no ecrã abaixo.
 
-![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-59e05a32.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-e73da692.png)
 
-![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-f7f5e5fb.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-2343a163.png)
 
 ##### 2.1.2.3. Criação com fundos disponíveis
 
