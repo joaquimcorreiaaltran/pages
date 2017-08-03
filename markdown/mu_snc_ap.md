@@ -165,10 +165,10 @@ O utilizador tem de proceder à aprovação, através do botão "Aprovar". Assim
 
 |Botão| Descritivo|
 |:----|:----------|
-|Gravar Alterações|Este botão permite a gravar alterações que tenham sido necessárias de ajustar.|
+|Gravar Alterações|Este botão permite a gravar alterações que tenham sido necessárias de ajustar|
 |Consulta|Este botão permite ao utilizador consultar os valores carregados de orçamento, bem como os respetivos classificadores económicos|
-|Abater|Este botão permite eliminar uma entidade. Após carregar neste botão, o utilizador, tem de carregar no botão Confirmar de forma a que a informação seja validada e gravada.|
-|Sair|Este botão permite ao utilizador sair do ecrã corrente.|
+|Abater|Este botão permite eliminar uma entidade. Após carregar neste botão, o utilizador, tem de carregar no botão Confirmar de forma a que a informação seja validada e gravada|
+|Sair|Este botão permite ao utilizador sair do ecrã corrente|
 
 Após o processo de aprovação, novo ecrã surge, sendo que agora só existe a possibilidade de “Anular aprovação”; “Consulta” ou “Sair”
 
@@ -282,17 +282,17 @@ O utilizador neste processo, tem a possibilidade de extrair relatórios do siste
 
 |Botão|Descrição|
 |:----|:---------|
-|Extrato|Este botão permite a gravar alterações que no diretório escolhido pelo utilizador.|
-|XML|Esta opção permite a produção do mapa em ficheiro com extensão XML.|
+|Extrato|Este botão permite a gravar alterações que no diretório escolhido pelo utilizador|
+|XML|Esta opção permite a produção do mapa em ficheiro com extensão XML|
 |Mapa|Este botão permite ao utilizador consultar diretamente o mapa no ecrã. ![img_32.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_32.png)|
-|Sair|Este botão permite ao utilizador sair do ecrã corrente.|
+|Sair|Este botão permite ao utilizador sair do ecrã corrente|
 
 
 - Qualquer uma das extrações permite ao utilizador ter o controlo dos Fundos disponíveis através de relatórios que espelham a atividade e fundos utilizados.
 
 |Opção|Descrição|
 |:----|:---------|
-|Ano|Exercício a que dizem respeito as informação da instituição.|
+|Ano|Exercício a que dizem respeito as informação da instituição|
 |Mês|Seleção do mês para carregamento dos fundos. ![img_mes_janeiro.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_mes_janeiro.png)|
 |Diretório|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido.</br> ![img_33.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_33.png)|
 
@@ -300,27 +300,26 @@ O utilizador neste processo, tem a possibilidade de extrair relatórios do siste
 
 De igual modo à extração dos mapas anteriores, o utilizador nesta Tabela, usa o mesmo procedimento.
 
-![img_34.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_34.png)
+![](mu_snc_ap.assets/mu_snc_ap-d5e13e58.png)
 
-
-- Os mapas da ACSS e DGO, estavam calculados de maneira diferente. O botão de seleção será brevemente retirado deste ecrã, pelo facto de já estarem alinhados.
-- - ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-c6c20972.png)
+- O botão de seleção ACSS/DGO será oportunamente removido, pelo facto de já não haver diferenças entre os mapas.
+  - ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-c6c20972.png)
 
 |Botão|Descrição|
 |:----|:---------|
-|Extrato|Este botão permite a gravar alterações que no diretório escolhido pelo utilizador.|
-|XML|Esta opção permite a produção do mapa em ficheiro com extensão XML.|
+|Extrato|Esta opção permite a produção do mapa em ficheiro CSV|
+|XML|Esta opção permite a produção do mapa em ficheiro XML|
 |Mapa|Este botão permite ao utilizador consultar diretamente o mapa no ecrã. ![img_35.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_35.png)|
-|Sair|Este botão permite ao utilizador sair do ecrã corrente.|
+|Sair|Este botão permite ao utilizador sair do ecrã corrente|
 
 
 - Qualquer uma das extrações permite ao utilizador ter o controlo dos Fundos disponíveis através de relatórios que espelham a atividade e fundos utilizados.
 
 |Opção|Descrição|
 |:----|:---------|
-|Ano|Exercício a que dizem respeito as informação da instituição.|
+|Ano|Exercício a que dizem respeito as informação da instituição|
 |Mês|Seleção do mês para carregamento dos fundos. ![img_mes_janeiro.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_mes_janeiro.png)|
-|Diretório|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido. ![img_36.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_36.png)|
+|Diretório|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido.</br> ![img_36.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_36.png)|
 
 ### 2.2. Mapas Legais
 
@@ -356,8 +355,8 @@ Ao clicar, surge o ecrã abaixo e que permite proceder à escolha do tipo de inf
 |Botão|Descrição|
 |:----|:---------|
 |Ficheiro|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido.</br>_(Imagem em atualização)_![img_44.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_44.png)![img_45.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_45.png)|
-|Imprimir|Este botão permite que o utilizador gere relatório diretamente no ecrã.|
-|Sair|Este botão permite que o utilizador saia da ecrã e regresse ao menu inicial.|
+|Imprimir|Este botão permite que o utilizador gere relatório diretamente no ecrã|
+|Sair|Este botão permite que o utilizador saia da ecrã e regresse ao menu inicial|
 
 O exemplo seguinte, demonstra um relatório de alteração orçamental gerada em passos anteriores, evidenciando os respetivos itens financeiros e respetivos valores.
 
@@ -378,10 +377,10 @@ Para tal, as opções no ecrã permite imprimir os formulários (gerando PDF), b
 
 |Campo|Obrigatoriedade|Descrição|
 |:----|:--------------|:---------|
-|Exercício|Obrigatório|O utilizador deverá introduzir o ano do exercício pretendido, no formato AAAA. Por exemplo “2015”. Por defeito, é atribuído ao campo o ano corrente.|
-|Primeira Conta|Obrigatório|O utilizador deve indicar a primeira conta a partir da qual (inclusive) pretende obter as informações. Por defeito, o sistema utiliza a primeira conta existente.|
-|Última Conta|Obrigatório|O utilizador deve indicar a última conta até à qual (inclusive) pretende obter as informações. Por defeito, o sistema utiliza a última conta existente.|
-|Data|Obrigatório|O utilizador deve colocar a Data de Contabilização até à qual pretende incluir os dados (por defeito, o sistema coloca a data atual).|
+|Exercício|Obrigatório|O utilizador deverá introduzir o ano do exercício pretendido, no formato AAAA. Por exemplo “2015”. Por defeito, é atribuído ao campo o ano corrente|
+|Primeira Conta|Obrigatório|O utilizador deve indicar a primeira conta a partir da qual (inclusive) pretende obter as informações. Por defeito, o sistema utiliza a primeira conta existente|
+|Última Conta|Obrigatório|O utilizador deve indicar a última conta até à qual (inclusive) pretende obter as informações. Por defeito, o sistema utiliza a última conta existente|
+|Data|Obrigatório|O utilizador deve colocar a Data de Contabilização até à qual pretende incluir os dados (por defeito, o sistema coloca a data atual)|
 
 Carregando no botão "Imprimir" o sistema irá gerar um PDF com o seguinte formato:
 
@@ -407,19 +406,19 @@ Ao clicar, é mostrado o ecrã abaixo e que permite proceder à escolha do tipo 
 
 |Campo|Obrigatoriedade|Descrição|
 |:---|:---|:---|
-|Exercício|Obrigatório|Exercício a que dizem respeito as informação da instituição.|
+|Exercício|Obrigatório|Exercício a que dizem respeito as informação da instituição|
 |Proposta|Obrigatório|Seleção de um dos campos: ![img_valores_proposta_orcamental.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_valores_proposta_orcamental.png)|
 |Orçamento|Obrigatório|Seleção de um dos campos: ![img_alteracao_orcamental.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_alteracao_orcamental.png) __Ao selecionar a “Alteração Orçamental”, surge automaticamente para preenchimento: ![img_num_alt_orcamental.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_num_alt_orcamental.png)|
 |Financiamento|Obrigatório|Seleção de um dos campos: ![img_56.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_56.png)|
 |Atividades/Departamento|Obrigatório|Seleção de um dos campos: ![img_57.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_57.png)|
-|Pri. Data|Obrigatório|Definir a data de início da pesquisa.|
-|Últ. Data|Obrigatório|Definir a data final da pesquisa.|
+|Pri. Data|Obrigatório|Definir a data de início da pesquisa|
+|Últ. Data|Obrigatório|Definir a data final da pesquisa|
 
 |Botão|Descrição|
 |:---|:---|
 |Ficheiro|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido.![img_57a.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_57a.png) ![img_57b.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_57b.png)|
-|Imprimir|Este botão permite que o utilizador gere relatório diretamente no ecrã.|
-|Sair|Este botão permite que o utilizador saia do ecrã e regresse ao menu inicial.|
+|Imprimir|Este botão permite que o utilizador gere relatório diretamente no ecrã|
+|Sair|Este botão permite que o utilizador saia do ecrã e regresse ao menu inicial|
 
 O exemplo seguinte, demonstra um relatório de alteração orçamental gerada em passos anteriores, evidenciando os respetivos itens financeiros e respetivos valores.
 
@@ -527,9 +526,9 @@ Nos ecrãs atrás referidos, o procedimento é similar:
 |Botão|Descrição|
 |:---|:---|
 |Calcular|Este botão permite o resumo do que foi criado no cabimento. ![img_75.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_75.png)|
-|Imprimir|Este botão permite que o utilizador gere relatório diretamente no ecrã.|
+|Imprimir|Este botão permite que o utilizador gere relatório diretamente no ecrã|
 |Ficheiro|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido. ![img_76.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_76.png)|
-|Sair|Este botão permite que o utilizador saia do ecrã e regresse ao menu inicial.|
+|Sair|Este botão permite que o utilizador saia do ecrã e regresse ao menu inicial|
 
 O formato na opção "Imprimir", é o seguinte:
 
@@ -622,9 +621,9 @@ Igualmente e da mesma forma que no ecrã dos cabimentos, o utilizador tem assim 
 |Botão|Descrição|
 |:---|:---|
 |Calcular|Este botão permite o resumo do que foi criado no cabimento|
-|Imprimir|Este botão permite que o utilizador gere relatório diretamente no ecrã.|
-|Ficheiro|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido.|
-|Sair|Este botão permite que o utilizador saia do ecrã e regresse ao menu inicial.|
+|Imprimir|Este botão permite que o utilizador gere relatório diretamente no ecrã|
+|Ficheiro|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido|
+|Sair|Este botão permite que o utilizador saia do ecrã e regresse ao menu inicial|
 
 ![img_95a.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_95a.png)
 
@@ -850,7 +849,7 @@ __O utilizador tem de selecionar sempre os documentos que deseja, sejam para con
 |:---|:---|
 |Calcular|Este botão permite ao utilizador consultar os valores carregados de orçamento, bem como os respetivos classificadores económicos|
 |Imprimir|Este botão permite a geração do documento em PDF|
-|Sair|Este botão permite ao utilizador sair do ecrã corrente.|
+|Sair|Este botão permite ao utilizador sair do ecrã corrente|
 
 De forma _Individual_, ao selecionar “imprimir”, o sistema produz a Autorização de Pagamento em PDF.
 
@@ -882,7 +881,7 @@ __No caso da ACSS, o utilizador na altura da criação dos vários tipos de docu
 |Última data|Obrigatório|Definir intervalo última data|
 |Primeiro documento|Obrigatório|Definir intervalo primeiro documento a integrar|
 |Último documento|Obrigatório|Definir intervalo último documento a integrar|
-|Gerar Ficheiro de carregamento|Obrigatório|Geração do ficheiro com número sequencial, sendo que prevalece o número de cálculo maior, ou seja, se o número da ultima transferência efetuada for superior ao ![img_num_de_sequencia_prox.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_num_de_sequencia_prox.png), do caminho: _Parametrização - Tabelas Genéricas - Inst. Bancárias – Recolha_, a numeração atribuída é sempre a mais alta numericamente.|
+|Gerar Ficheiro de carregamento|Obrigatório|Geração do ficheiro com número sequencial, sendo que prevalece o número de cálculo maior, ou seja, se o número da ultima transferência efetuada for superior ao ![img_num_de_sequencia_prox.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_num_de_sequencia_prox.png), do caminho: _Parametrização - Tabelas Genéricas - Inst. Bancárias – Recolha_, a numeração atribuída é sempre a mais alta numericamente|
 
 Findo o preenchimento dos campos, deve o utilizador dar continuidade ao processo pressionando o botão "Transferência Bancária", originando novo ecrã.
 
@@ -893,9 +892,9 @@ __O utilizador tem de ter escolher o tipo de documento que quer gerar, dependend
 |Botão|Descrição|
 |:---|:---|
 |Ficheiro|Este botão permite ao utilizador escolher o diretório de gravação do ficheiroTXT. (IGCP) ou XML. (IGCP – Novo) que será gerado. ![img_151.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_151.png) ![img_152.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_152.png)|
-|Imprimir 2ª Via|Este botão permite que o utilizador gere relatório diretamente no ecrã.|
-|Ficheiro 2ª Via|Este botão permite ao utilizador escolher o novo diretório de gravação do ficheiro TXT ou XML a ser produzido em caso de alteração ou engano.|
-|Sair|Este botão permite que o utilizador saia do ecrã e regresse ao menu inicial.|
+|Imprimir 2ª Via|Este botão permite que o utilizador gere relatório diretamente no ecrã|
+|Ficheiro 2ª Via|Este botão permite ao utilizador escolher o novo diretório de gravação do ficheiro TXT ou XML a ser produzido em caso de alteração ou engano|
+|Sair|Este botão permite que o utilizador saia do ecrã e regresse ao menu inicial|
 
 ![img_153.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_153.png)
 
@@ -924,9 +923,9 @@ Nesta etapa, um novo ecrã surge, em que o utilizador tem possibilidade de reali
 |:---|:---|
 |Importar Ficheiro|Este botão permite ao utilizador escolher o diretório onde está o ficheiro para importação com formato TXT. Após determinar o caminho deve pressionar sobre o botão de importação.
 ![img_157.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_157.png) ![img_158.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_158.png)||
-|Converter em XML|Através deste botão, o utilizador escolhe o diretório onde está o ficheiro para importação. A aplicação permite ao utilizador através do botão de conversão, transformar um formato TXT. para um formato XML.|
-|Ficheiro 2ª Via|Este botão permite ao utilizador gerar uma segunda via do ficheiro TXT ou XML.|
-|Sair|Este botão permite que o utilizador saia do ecrã e regresse ao menu inicial.|
+|Converter em XML|Através deste botão, o utilizador escolhe o diretório onde está o ficheiro para importação. A aplicação permite ao utilizador através do botão de conversão, transformar um formato TXT. para um formato XML|
+|Ficheiro 2ª Via|Este botão permite ao utilizador gerar uma segunda via do ficheiro TXT ou XML|
+|Sair|Este botão permite que o utilizador saia do ecrã e regresse ao menu inicial|
 
 __Na importação de TXT. ou na Conversão para XML, o sistema ao carregar o ficheiro, vai determinar o ultimo "Número de sequência", sendo que o vai atribuir de forma automática e sequencial para cada um dos casos referidos.__
 
@@ -976,7 +975,7 @@ __O utilizador tem de selecionar _sempre_ os documentos que deseja, sejam para c
 
 |Campo|Obrigatoriedade|Descrição|
 |:---|:---|:---|
-|Ano|Obrigatório|Exercício a que dizem respeito as informação da instituição.|
+|Ano|Obrigatório|Exercício a que dizem respeito as informação da instituição|
 |Primeira Entidade|Obrigatório|Definir primeira entidade a filtrar|
 |Última Entidade|Obrigatório|Definir última entidade a filtrar|
 |Primeira data|Obrigatório|Definir intervalo primeira data|
@@ -1057,13 +1056,13 @@ __O utilizador tem de selecionar sempre os documentos que deseja, sejam para con
 |Última Entidade|Obrigatório|Definir última entidade a filtrar|
 |Primeira data|Obrigatório|Definir intervalo primeira data|
 |Última data|Obrigatório|Definir intervalo última data|
-|Pôr Guias já regularizadas|Opcional|Permite ao utilizador quando o "![img_checkbox_checked_2.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_checkbox_checked_2.png)" estiver ativo imprimir guias com histórico e em que já tenha ocorrido o recebimento.|
+|Pôr Guias já regularizadas|Opcional|Permite ao utilizador quando o "![img_checkbox_checked_2.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_checkbox_checked_2.png)" estiver ativo imprimir guias com histórico e em que já tenha ocorrido o recebimento|
 
 |Botão|Descrição|
 |:---|:---|
-|Calcular|Este botão permite ao utilizador consultar os valores carregados de orçamento, bem como os respetivos classificadores económicos.|
-|Imprimir|Este botão permite a geração do documento em PDF.|
-|Sair|Este botão permite ao utilizador sair do ecrã corrente.|
+|Calcular|Este botão permite ao utilizador consultar os valores carregados de orçamento, bem como os respetivos classificadores económicos|
+|Imprimir|Este botão permite a geração do documento em PDF|
+|Sair|Este botão permite ao utilizador sair do ecrã corrente|
 
 Ao selecionar “imprimir”, o sistema produz a Guia de receita em PDF
 
@@ -1109,8 +1108,8 @@ __O utilizador tem de selecionar _sempre_ os documentos que deseja, sejam para c
 |:---|:---|
 |Calcular|Este botão permite ao utilizador consultar os valores carregados de orçamento, bem como os respetivos classificadores económicos|
 |Imprimir|Este botão permite a geração do documento em PDF|
-|Ficheiro|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido.|
-|Sair|Este botão permite ao utilizador sair do ecrã corrente.|
+|Ficheiro|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido|
+|Sair|Este botão permite ao utilizador sair do ecrã corrente|
 
 Ao selecionar “imprimir”, o sistema produz a Listagem de Cobranças em PDF
 
@@ -1151,13 +1150,13 @@ __O utilizador tem de selecionar _sempre_ os documentos que deseja, sejam para c
 |Última Entidade|Obrigatório|Definir última entidade a filtrar|
 |Primeira data|Obrigatório|Definir intervalo primeira data|
 |Última data|Obrigatório|Definir intervalo última data|
-|Outras receitas regularizadas|Opcional|Permite ao utilizador quando o ![img_checkbox_checked_2.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_checkbox_checked_2.png) estiver ativo imprimir guias com histórico e em que já tenha ocorrido o recebimento.|
+|Outras receitas regularizadas|Opcional|Permite ao utilizador quando o ![img_checkbox_checked_2.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_checkbox_checked_2.png) estiver ativo imprimir guias com histórico e em que já tenha ocorrido o recebimento|
 
 |Botão|Descrição|
 |:---|:---|
-|Calcular|Este botão permite ao utilizador consultar os valores carregados de orçamento, bem como os respetivos classificadores económicos.|
-|Imprimir|Este botão permite a geração do documento em PDF.|
-|Sair|Este botão permite ao utilizador sair do ecrã corrente.|
+|Calcular|Este botão permite ao utilizador consultar os valores carregados de orçamento, bem como os respetivos classificadores económicos|
+|Imprimir|Este botão permite a geração do documento em PDF|
+|Sair|Este botão permite ao utilizador sair do ecrã corrente|
 
 Ao selecionar “imprimir”, o sistema produz a Guia de Receita em PDF
 
