@@ -205,12 +205,13 @@ Neste processo, e através do caminho abaixo indicado, será demonstrado o proce
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-4582f3fc.png)
 
 Entende-se por Fundos Disponíveis, as verbas disponíveis a curto prazo. Incluem, quando aplicável e desde que tenha sido comprometido ou gasto:
-1) A dotação corrigida líquida de cativos, relativa aos três meses seguintes;
-2) As transferências ou subsídios com origem no Orçamento do Estado, relativos aos três meses seguintes;
-3) A receita efetiva própria que tenha sido cobrada, ou recebida como adiantamento;
-4) A previsão da receita efetiva própria a cobrar nos três meses seguintes;
-5) O produto de empréstimos contraídos nos termos da lei (as transferências ainda não efetuadas decorrentes de programas e projetos do QREN e de outros programas estruturais, cujas faturas se encontrem liquidadas e devidamente certificadas ou validadas);
-6) Outros montantes autorizados nos termos do artigo 4.º da LCPA.
+
+1. A dotação corrigida líquida de cativos, relativa aos três meses seguintes;
+2. As transferências ou subsídios com origem no Orçamento do Estado, relativos aos três meses seguintes;
+3. A receita efetiva própria que tenha sido cobrada, ou recebida como adiantamento;
+4. A previsão da receita efetiva própria a cobrar nos três meses seguintes;
+5. O produto de empréstimos contraídos nos termos da lei (as transferências ainda não efetuadas decorrentes de programas e projetos do QREN e de outros programas estruturais, cujas faturas se encontrem liquidadas e devidamente certificadas ou validadas);
+6. Outros montantes autorizados nos termos do artigo 4.º da LCPA.
 
 ![img_8a.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_8a.png)
 
@@ -263,19 +264,14 @@ Mensagem do sistema com indicação que as importâncias inseridas não correspo
 
 Desta forma, a verificação prévia irá ser criada, conforme demonstrado no ecrã abaixo.
 
+##### 2.1.2.3. Criação de Verificação Prévia (CM) com fundos disponíveis
+
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-e73da692.png)
-
-![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-2343a163.png)
-
-##### 2.1.2.3. Criação com fundos disponíveis
-
-_(Imagem em atualização)_
-![img_29.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_29.png)
 
 ##### 2.1.2.4. Geração de movimentos contabilísticos e confirmação
 
-_(Imagem em atualização)_
-![img_30.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_30.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-2343a163.png)
+
 
 #### 2.1.3. Mapas (LPCA)
 
@@ -292,9 +288,8 @@ O utilizador neste processo, tem a possibilidade de extrair relatórios do siste
 |Mapa|Este botão permite ao utilizador consultar diretamente o mapa no ecrã. ![img_32.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_32.png)|
 |Sair|Este botão permite ao utilizador sair do ecrã corrente.|
 
-|__|
-|:----|
-|Qualquer uma das extrações permite ao utilizador ter o controlo dos Fundos disponíveis através de relatórios que espelham a atividade e fundos utilizados.|
+
+- Qualquer uma das extrações permite ao utilizador ter o controlo dos Fundos disponíveis através de relatórios que espelham a atividade e fundos utilizados.
 
 |Opção|Descrição|
 |:----|:---------|
@@ -308,9 +303,7 @@ De igual modo à extração dos mapas anteriores, o utilizador nesta Tabela, usa
 
 ![img_34.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_34.png)
 
-|__|
-|:----|
-|Os mapas da ACSS e DGO, estavam calculados de maneira diferente. Este botão será brevemente retirado deste ecrã, pelo facto de já estarem alinhados.|
+- Os mapas da ACSS e DGO, estavam calculados de maneira diferente. Este botão será brevemente retirado deste ecrã, pelo facto de já estarem alinhados.
 
 |Botão|Descrição|
 |:----|:---------|
@@ -319,9 +312,8 @@ De igual modo à extração dos mapas anteriores, o utilizador nesta Tabela, usa
 |Mapa|Este botão permite ao utilizador consultar diretamente o mapa no ecrã. ![img_35.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_35.png)|
 |Sair|Este botão permite ao utilizador sair do ecrã corrente.|
 
-|__|
-|:----|
-|Qualquer uma das extrações permite ao utilizador ter o controlo dos Fundos disponíveis através de relatórios que espelham a atividade e fundos utilizados.|
+
+- Qualquer uma das extrações permite ao utilizador ter o controlo dos Fundos disponíveis através de relatórios que espelham a atividade e fundos utilizados.
 
 |Opção|Descrição|
 |:----|:---------|
@@ -399,9 +391,7 @@ O procedimento do mapa 7.2 é idêntico ao explicado anteriormente, sendo apenas
 
 ![img_50.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_50.png)
 
-|__|
-|:--------|
-|Irá ser incluída a chave orçamental neste mapa|
+- Irá ser incluída a chave orçamental neste mapa
 
 #### 2.2.5. Mapa - Alterações Orçamentais Despesa/Receita
 
