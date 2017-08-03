@@ -278,7 +278,7 @@ Desta forma, a verificação prévia irá ser criada, conforme demonstrado no ec
 
 O utilizador neste processo, tem a possibilidade de extrair relatórios do sistema com base nas informações e valores introduzidas nos passos anteriores.
 
-![](mu_snc_ap.assets/mu_snc_ap-e49b6f4a.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-e49b6f4a.png)
 
 |Botão|Descrição|
 |:----|:---------|
@@ -304,7 +304,7 @@ De igual modo à extração dos mapas anteriores, o utilizador nesta Tabela, usa
 
 
 - Os mapas da ACSS e DGO, estavam calculados de maneira diferente. O botão de seleção será brevemente retirado deste ecrã, pelo facto de já estarem alinhados.
-- - ![](mu_snc_ap.assets/mu_snc_ap-c6c20972.png)
+- - ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-c6c20972.png)
 
 |Botão|Descrição|
 |:----|:---------|
