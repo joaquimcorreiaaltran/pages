@@ -233,17 +233,14 @@ Nos próximos passos, vai ser demonstrado o processo de criação dos fundos dis
 
 Após o preenchimentos dos campos atrás referidos, e sendo que se trata de um Novo Orçamento, o ecrã que surge é o de preenchimento dos valores de orçamento de fundos próprios.
 
-![img_13.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_13.png)
+_Imagem em atualização_
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-51e69794.png)
 
 A previsão de receitas próprias é corrigida do desvio negativo apurado entre as previsões efetuadas nos meses anteriores e as receitas efetivamente cobradas.
 
-![img_14.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_14.png)
-
-
-
 No final de cada mês, o utilizador ao Confirmar, surge no ecrã a indicação de:
 
-![img_24.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_24.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-4840cf40.png)
 
 Para validar, que o sistema efetua um controle dos fundos criados, não permitindo a criação de Compromissos com valor superior aos Fundos Disponiveis, fica o exemplo abaixo:
 
@@ -339,7 +336,7 @@ De modo a analisar os orçamentos da despesa/receita
 
 Nos mapas, os ecrãs são idênticos na construção dos relatórios e de modo a analisar ao Orçamento da despesa.
 
-![](mu_snc_ap.assets/mu_snc_ap-7a5287c2.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-7a5287c2.png)
 
 #### 2.2.1. Mapas - Orçamento de Despesa/Receita
 
