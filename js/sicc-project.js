@@ -93,26 +93,28 @@ function loadDocButtons (funcao) {
            showToc();
          });
 
-			var mywindow = $(window);
-			var mypos = mywindow.scrollTop();
-			mywindow.scroll(function() {
-					if(mywindow.scrollTop() > mypos)
-					{
-							$('#titleBar').fadeOut();
-					}
-					else
-					{
-							$('#titleBar').fadeIn();
-					}
-					mypos = mywindow.scrollTop();
-			 });
-
-          if(funcao != undefined && typeof funcao == "function"){
-            funcao();
-          }
+        if(funcao != undefined && typeof funcao == "function"){
+          funcao();
+        }
      });
 
 }//close loadDocButtons()
+
+function showHideTitleBar(){
+    var mywindow = $(window);
+    var mypos = mywindow.scrollTop();
+    mywindow.scroll(function() {
+        if(mywindow.scrollTop() > mypos)
+        {
+            $('#titleBar').fadeOut();
+        }
+        else
+        {
+            $('#titleBar').fadeIn();
+        }
+        mypos = mywindow.scrollTop();
+     });
+}
 
 // Add zoom functionality to images in the HTML
 function zommClickImagem() {
