@@ -9,14 +9,14 @@
 		<link rel="stylesheet" href="css/style.css">
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 </head>
-<body>
+<body style="margin:0 0 0 0;  width:100%">
 	  <header id="header">
 			<!-- Sidebar -->
 			<div id="sidebar">
 				<a id="amenuLink" href="html/amenu-source.html">Menu</a>
 			</div> <!-- SideBar-->
 		</header>
-		<div id="content" style="min-height: 90vh;">
+		<div id="content" style="min-height: 90vh; margin: 0 0 0 0; padding:3em; widht: 100%; max-width:5000px;">
 			<h1 style="text-align: center;padding: 0 1em 1em 0em">Bem-vindo à página de documentação do SICC</h1>
 			<div id="indexComeceExplorar"></div>
 			<div id="novidadeSncAP">
@@ -48,22 +48,25 @@
 		<!-- libs -->
 		<script src="js/libs/accordion-menu.js"></script>
 		<script src="js/jquery-3.1.1.js"></script>
-		<!--<script src="js/jquery.zoom.js"></script>-->
 		<script src="js/skel.min.js"></script>
 		<script src="js/util.js"></script>
 		<script src="js/main.js"></script>
-		<!--<script src="js/highslide-with-gallery.js"></script>-->
-		<!--<script src="js/libs/showdown.js"></script>-->
-		<!--<script src="js/sicc-project.js"></script>-->
 		<script type="text/javascript">
 			$(function(){
 				$("footer").load("html/footer.html");
-				tip = document.getElementById('indexComeceExplorar');
-
-				if ( $(window).width() < 1200) {
-					tip.innerHTML = '<hr/><p style="padding: 0em 0em 0em 0em">Começe a explorar através do menu no topo esquerdo da página <img style="width:25" src="img\\btn-menu.png"></p><hr/>';
-				}
 			});
+
+		$(window).on("load, resize", function() {
+		    var viewportWidth = $(window).width();
+		    if (viewportWidth > 1400) {
+		            $("body").addClass("sidebar-visible");
+								document.getElementById("indexComeceExplorar").innerHTML = "";
+		    }
+		    else{
+		      $("body").removeClass("sidebar-visible");
+					document.getElementById("indexComeceExplorar").innerHTML = '<hr/><p style="padding: 0em 0em 0em 0em">Começe a explorar através do menu no topo esquerdo da página <img style="width:25" src="img\\btn-menu.png"></p><hr/>';
+		    }
+		});
 		</script>
 </body>
 </html>
