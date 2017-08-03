@@ -254,11 +254,11 @@ O Processo de criação de cabimentos e compromissos encontra-se detalhado no po
 
 ##### 2.1.2.2. Verificação prévia de fundos disponíveis
 
-O sistema efetua no processo de despesa, uma verificação de fundos que atribui o número sequencial e valida a realização de compromisso assumido por parte da gestão de compras.
+O sistema efetua no processo de despesa, uma verificação de fundos que atribui um número sequencial e valida a realização de compromisso assumido por parte da gestão de compras.
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-909cca06.png)
 
-Mensagem do sistema com indicação que as importâncias inseridas não correspondem aos valores dos Fundos criados
+Mensagem do sistema indicando que as importâncias inseridas não correspondem aos valores dos fundos criados.
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-fc10784d.png)
 
@@ -272,14 +272,13 @@ Desta forma, a verificação prévia irá ser criada, conforme demonstrado no ec
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-2343a163.png)
 
-
 #### 2.1.3. Mapas (LPCA)
 
 ##### 2.1.3.1. Tabela 1 – Fundos disponíveis
 
 O utilizador neste processo, tem a possibilidade de extrair relatórios do sistema com base nas informações e valores introduzidas nos passos anteriores.
 
-![img_31.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_31.png)
+![](mu_snc_ap.assets/mu_snc_ap-e49b6f4a.png)
 
 |Botão|Descrição|
 |:----|:---------|
@@ -295,7 +294,7 @@ O utilizador neste processo, tem a possibilidade de extrair relatórios do siste
 |:----|:---------|
 |Ano|Exercício a que dizem respeito as informação da instituição.|
 |Mês|Seleção do mês para carregamento dos fundos. ![img_mes_janeiro.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_mes_janeiro.png)|
-|Diretório|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido. ![img_33.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_33.png)|
+|Diretório|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido.</br> ![img_33.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_33.png)|
 
 ##### 2.1.3.2. Tabela 4 - (SPA’s): Passivos/ Contas a pagar
 
@@ -303,7 +302,9 @@ De igual modo à extração dos mapas anteriores, o utilizador nesta Tabela, usa
 
 ![img_34.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_34.png)
 
-- Os mapas da ACSS e DGO, estavam calculados de maneira diferente. Este botão será brevemente retirado deste ecrã, pelo facto de já estarem alinhados.
+
+- Os mapas da ACSS e DGO, estavam calculados de maneira diferente. O botão de seleção será brevemente retirado deste ecrã, pelo facto de já estarem alinhados.
+- - ![](mu_snc_ap.assets/mu_snc_ap-c6c20972.png)
 
 |Botão|Descrição|
 |:----|:---------|
