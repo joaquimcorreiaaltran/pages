@@ -1,4 +1,4 @@
-# Manual de Utilizador SICC SNC-AP
+# Manual de Utilizador SICC SNC-AP (em atualização)
 
 ## Introdução
 
