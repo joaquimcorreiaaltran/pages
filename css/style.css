@@ -505,17 +505,19 @@ p.caption{
 .dropdown-content nav > h5,
 .dropdown-content nav > h6 {
     margin: 0;
-    background-color: #dbdbdb;
+    background-color: #40A293;
+    color: white;
 }
 
 a.toc_h1 {
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: bold;
 }
 
 a.toc_h2 {
   font-size: 1em;
-  font-weight: bold;
+  font-weight:normal;
+  margin-left: 0em;
   animation: highlight 2s ease;
 }
 
@@ -545,7 +547,9 @@ a.toc_h6 {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: rgb(255, 255, 255)}
+.dropdown-content a:hover,
+.dropdown-content li:hover
+ {background-color: white; font-weight: normal;font-size: 1em;}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
@@ -580,7 +584,7 @@ a.toc_h6 {
 
 .table-of-contents a:hover,
 .table-of-contents a:active {
-  font-weight: bold;
+  font-weight: normal;
   color: #40A293;
 }
 
