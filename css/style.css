@@ -759,6 +759,13 @@ h4:target {
   transition: width 0.2s ease;
 }
 
+
+#docButtons>#btnShowToc {
+  width: 65px;
+  font-weight: normal;
+}
+
+
 #docButtons i {
   color: white;
   text-align: center;
@@ -766,9 +773,16 @@ h4:target {
 
 #docButtons button:hover {
   background-color: #40a293;
-  width: 50px;
+  width: calc(50px);
   font-size: 1.1em;
   font-weight: bold;
+  border-width: 3px;
+}
+
+#docButtons>#btnShowToc:hover {
+  width: 80px;
+  font-weight: normal;
+  border-width: 3px;
 }
 
 #docButtons button:hover>i {
@@ -1089,7 +1103,7 @@ footer img {
         font-family: FontAwesome;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        -webkit-transition: font-size 0.3s;
+        -webkit-transition: font-size 0.2s;
         content: '\f0c9';
         display: block;
         top: 5px;
@@ -1106,8 +1120,10 @@ footer img {
         border-radius: 5px;
 			}
 
+
+
       #titleBar a:hover {
-          font-size: 1.2em;
+          font-size: 1.4em;
       }
 
     	#sidebar {

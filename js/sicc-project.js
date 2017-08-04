@@ -107,6 +107,7 @@ function showHideTitleBar(){
      });
 }
 
+
 // Add zoom functionality to images in the HTML
 function zommClickImagem() {
 
