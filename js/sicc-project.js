@@ -101,18 +101,29 @@ function loadDocButtons (funcao) {
 }//close loadDocButtons()
 
 function showHideTitleBar(){
+
+  console.log("entrou na showHideTitleBar()");
+
     var mywindow = $(window);
     var mypos = mywindow.scrollTop();
+
     mywindow.scroll(function() {
-        if(mywindow.scrollTop() > mypos)
+
+        if((mywindow.scrollTop() > mypos) && ($('#titleBar').css('opacity') != 0))
         {
-            $('#titleBar').fadeOut();
+            if((mywindow.scrollTop() - mypos)>50){
+              $('#titleBar').fadeOut();
+              console.log("Reduz a opacidade da titleBar!");
+            }
         }
         else
         {
             $('#titleBar').fadeIn();
+            console.log("Aumenta a opacidade! da titleBar!");
         }
+
         mypos = mywindow.scrollTop();
+
      });
 }
 
