@@ -102,7 +102,7 @@ function showHideTitleBar(){
 
     mywindow.scroll(function() {
 
-        if((mywindow.scrollTop() > mypos) && ($('#titleBar').css('opacity') != 0))
+        if((mywindow.scrollTop() > mypos) && ($('#titleBar').css('opacity') != 0) && (openDropdown.classList.contains('show')==false))
         {
             if((mywindow.scrollTop() - mypos)>50){
               $('#titleBar').fadeOut();
@@ -249,11 +249,12 @@ function showToc() {
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+  if (!event.target.matches('.dropbtn') && !event.target.matches('#tocDropdown *')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
+      //Oculta índice depois de clicar num link
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show');
       }
