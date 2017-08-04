@@ -82,14 +82,7 @@ function loadDocButtons (funcao) {
            $("#btnPDF").remove();
          }
 
-         $("#btnBackToTop").click(function(){
-           $('html, body').animate({ scrollTop: 0 }, 'slow');
-         });
-
          $("#btnShowToc").click(function(){
-           showToc();
-         });
-         $("#btnShowToc i").click(function(){
            showToc();
          });
 
@@ -123,7 +116,6 @@ function showHideTitleBar(){
         }
 
         mypos = mywindow.scrollTop();
-
      });
 }
 

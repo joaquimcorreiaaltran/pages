@@ -444,7 +444,7 @@ p.caption{
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
-    bottom: 40px;
+    top: 70px;
     right: 2%;
     position: fixed; /*fixed é em relação à janela. absolute é em relação ao elemento pai*/
     background-color: #f9f9f9;
@@ -458,39 +458,39 @@ p.caption{
     border: 1em 0.5em 1em 1em;
     overflow-x: auto;
     overflow-y: auto;
-    border-radius: 20px;
+    border-radius: 15px;
     border: #40A293;
     border-width: medium;
     border-style: solid;
     animation: dropdown;
-    animation-duration: 0.3s;
+    animation-duration: 0.4s;
 }
 
 
 @-ms-keyframes dropdown {
-  from {top: -100%;left: -100%;}
-  to {bottom: 40px;right: 2%;}
+  from {top: -100%;right: -100%;}
+  to {top: 40px;right: 2%;}
 }
 
 @-moz-keyframes dropdown {
-  from {top: -100%;left: -100%;}
-  to {bottom: 40px;right: 2%;}
+  from {top: -100%;right: -100%;}
+  to {top: 40px;right: 2%;}
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes dropdown {
-  from {top: -100%;left: -100%;}
-  to {bottom: 40px;right: 2%;}
+  from {top: -100%;right: -200%;width: 0;}
+  to {top: 40px;right: 2%;width: auto;}
 }
 
 @keyframes dropdown {
-  from {top: -100%;left: -100%;}
-  to {bottom: 40px;right: 2%;}
+  from {top: -100%;right: -200%;width: 0;}
+  to {top: 40px;right: 2%;width: auto;}
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-    color: #666666;
+    color: #656565;
     text-decoration: none;
     display: block;
     margin: 0;
@@ -705,10 +705,9 @@ h4:target {
     border-right: none;
     border-left-color:initial;
     border-top-color: transparent;
-    text-color:#000000;
 }
 
-#accordion a.active s{
+#accordion a.active {
   color:#40A293;
   font-weight: bold;
 }
@@ -732,7 +731,7 @@ h4:target {
   display: inline-block;
   position: absolute;
   top: 3px;
-  left: 50px;
+  right: 3px;
   background-color: #40A293;
 }
 
@@ -744,7 +743,7 @@ h4:target {
   height: 34px;
   width: 35px;
   padding: 0;
-  margin: 2px;
+  margin: 1px;
   border-width: 2px;
   border-style: solid;
   border-color: white;
@@ -763,7 +762,7 @@ h4:target {
 
 #docButtons button:hover {
   background-color: #40a293;
-  width: 45px;
+  width: 50px;
   font-size: 1.1em;
   font-weight: bold;
 }
@@ -772,11 +771,11 @@ h4:target {
   color: white;
 }
 
-#docButtons .showWithScroll {
-    opacity: 0;
+#docButtons button:active {
+  color: #40a293;
+  background-color: white;
+
 }
-
-
 
 /* ==|== media queries ======================================================
    EXAMPLE Media Query for Responsive Design.
@@ -1151,7 +1150,7 @@ footer img {
 /* Content */
 	#content {
 		position: relative;
-    padding: 2em 3em 6em 3em;
+    padding: 1.4em 3em 6em 3em;
 		background-color: white;
     overflow: auto;
     -moz-transition: -moz-transform 0.5s ease;
@@ -1284,7 +1283,7 @@ footer img {
     /* Content */
 
       #content {
-        margin-top: 12vh;
+        margin-top: 55px;
         margin-bottom: 20vh;
         margin-left: 0;
         margin-right: 0;
@@ -1379,7 +1378,6 @@ footer img {
       -ms-transform: translateX(0em);
       -moz-transform: translateX(0em);
       transform: translateX(0em);
-
     }
 
   }
@@ -1432,8 +1430,12 @@ footer img {
 
 @media screen and (max-width: 560px) {
   #titleBar .title {
-    text-align: right;
-    font-size: 1.1em;
+    font-size: 1em;
+  }
+
+  #content {
+    padding: 0.8em;
+    margin-top: 55px;
   }
 
 	@media screen and (max-width: 736px) {
@@ -1442,10 +1444,16 @@ footer img {
 			body, input, textarea, select {
 				line-height: 1.75em;
 				letter-spacing: 0;
+        body { font-size: 90%; }
 			}
 
 		/* Section/Article */
 			section, article {clear: both;}
+
+      #content {
+        padding: 0.8em;
+        margin-top: 55px;
+      }
 
 		/* Button */
 		input[type="button"],
