@@ -1360,10 +1360,10 @@ footer img {
       }
 
       body.sidebar-visible #content/*, body.sidebar-visible #titleBar*/ {
-        -webkit-transform: translateX(12em);
-        -ms-transform: translateX(12em);
-        -moz-transform: translateX(12em);
-        transform: translateX(12em);
+        -webkit-transform: translateX(20em);
+        -ms-transform: translateX(20em);
+        -moz-transform: translateX(20em);
+        transform: translateX(20em);
       }
 
       body.sidebar-visible #sidebar {
@@ -1373,19 +1373,6 @@ footer img {
         transform: translateX(0);
       }
 	}
-
-/* Super-wide */
-	@media screen and (min-width: 1650px) {
-
-    body.sidebar-visible #content/*, body.sidebar-visible #titleBar*/ {
-      -webkit-transform: translateX(0em);
-      -ms-transform: translateX(0em);
-      -moz-transform: translateX(0em);
-      transform: translateX(0em);
-    }
-
-  }
-
 
 /* Narrow */
 	@media screen and (min-width: 737px) and (max-width: 1200px) {

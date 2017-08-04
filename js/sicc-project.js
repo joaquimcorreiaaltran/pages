@@ -50,18 +50,6 @@ function loadFooter () {
   $("footer").load("footer.html");
 }
 
-
-$(window).on("load, resize", function() {
-    var viewportWidth = $(window).width();
-    if (viewportWidth > 1400) {
-            $("body").addClass("sidebar-visible");
-    }
-    else{
-      $("body").removeClass("sidebar-visible");
-    }
-});
-
-
 //Adds auxilary buttons to the interface
 function loadDocButtons (funcao) {
   $.get("doc_buttons.html", function (data) {
