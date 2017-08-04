@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>SICC - Manual de Utilizador</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
+		<!--<link rel="stylesheet" href="../../css/main.css">-->
+		<link rel="stylesheet" href="../css/style.css">
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+</head>
+<!--disable copy while te document is being produced by SICC team
+Remove this function when the document is finalized -->
+<body oncopy="return false" oncut="return false" onpaste="return false">
+	<header>
+			<div id="sidebar">
+					<a id="amenuLink" href="amenu-source.html">Menu</a>
+			</div>
+	</header>
+	<div id="content">
+			<article id="documento" class="modulo">
+				<noscript>
+					<h1>Ops! :(</h1>
+					<p>
+						<br>Para visualizar corretamente esta página, é necessário permitir a execução de scripts no seu browser.</p>
+						<br>Por favor contacte o apoio técnico.
+						<br>Obrigado,
+						<br>Equipa SICC.
+					</p>
+				</noscript>
+			</article>
+			<footer>
+				<!--loaded with js-->
+			</footer>
+	</div>
+
+	<!-- libs -->
+	<script src="../js/jquery-3.1.1.js"></script>
+	<script src="../js/skel.min.js"></script>
+	<script src="../js/util.js"></script>
+	<script src="../js/main.js"></script>
+	<script src="../js/libs/showdown.js"></script>
+	<script src="../js/sicc-project.js"></script>
+	<script src="../js/libs/accordion-menu.js"></script>
+	<script src="../js/highslide-with-gallery.js"></script>
+	<script src="../js/jquery.zoom.js" async></script>
+	<script>
+		$(function(){
+
+						document.body.style.cursor = 'progress';
+
+			// convert .md file to html and place it into the html element sent (argument)
+			convertMdToHtml("documento", function() {
+				loadFooter();
+				loadDocButtons(function() {
+					//build the table of content
+					toc("tocDropdown");
+					showHideTitleBar();
+					document.body.style.cursor = 'auto';
+
+				});
+			});
+		});
+	</script>
+</body>
+</html>
