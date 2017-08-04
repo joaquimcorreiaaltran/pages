@@ -1,18 +1,19 @@
-# CER - Migração de dados para SICC
+# CER - Migração de dados para SICC (em atualização)
 
 ## 1. Enquadramento e Âmbito
 
-Este documento pretende …
+O presente documento insere-se no âmbito do desenvolvimento do sistema de informação financeira para entidades do Ministério da Saúde, com informação normalizada de acordo com o SNC-AP e em linha com as práticas de referência na gestão e na contabilidade pública.
 
--   Contextualizar a implementação do sicc no âmbito do plano de projeto
-    (após análise funcional,
+Este documento visa essencialmente:
+- Estabelecer um base de entendimento atualizada e comum a todas as partes interessadas;
+- Acelerar o processo de migração;
 
-Glossário
-
-| Termo | Descrição        |
-|---|---|
-| MS | Ministério da Saúde |
-|    |                  |
+Desta forma, este documento estabelece:
+- As principais fases e tarefas do processo de transição para o SICC-SNC-AP (Beta) e respetivos responsáveis;
+- Os fluxos financeiros  respetivas regras relevantes;
+- Os registos contabilísticos suportados e as respetivas regras associadas;
+- Os conjuntos mínimos de dados para o funcionamento do sistema, em ambiente de teste;
+- As estruturas completas de dados a carregar, de modo a simular um ambiente real de produção.
 
 
 ## 2. Fluxo do processo de migração SICC
