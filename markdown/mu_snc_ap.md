@@ -121,7 +121,7 @@ Neste formulário de configuração, a ACSS tem acesso a 2 Departamentos, sendo 
 
 - Aspeto da Impressão (PDF):
 
-![](mu_snc_ap.assets/mu_snc_ap-339711be.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-339711be.png)
 
 ## 2. Menu Orçamental - Registo do Orçamento
 
@@ -300,7 +300,7 @@ O utilizador neste processo, tem a possibilidade de extrair relatórios do siste
 
 De igual modo à extração dos mapas anteriores, o utilizador nesta Tabela, usa o mesmo procedimento.
 
-![](mu_snc_ap.assets/mu_snc_ap-d5e13e58.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-d5e13e58.png)
 
 - O botão de seleção ACSS/DGO será oportunamente removido, pelo facto de já não haver diferenças entre os mapas.
   - ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-c6c20972.png)
@@ -333,7 +333,7 @@ Nos mapas, os ecrãs são idênticos na construção dos relatórios e de modo a
 
 Nos mapas, os ecrãs são idênticos na construção dos relatórios. Desta forma, o seguinte menu e respetivos submenus, permitem ao utilizador fazer uma análise ao Orçamento da despesa.
 
-![](mu_snc_ap.assets/mu_snc_ap-65cce466.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-65cce466.png)
 
 Ao clicar, surge o ecrã abaixo e que permite proceder à escolha do tipo de informação que pretende analisar, podendo para o efeito fazer várias combinações possíveis.
 
@@ -353,7 +353,7 @@ Ao clicar, surge o ecrã abaixo e que permite proceder à escolha do tipo de inf
 
 |Botão|Descrição|
 |:----|:---------|
-|Ficheiro|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido.</br>![](mu_snc_ap.assets/mu_snc_ap-aed34711.png)|
+|Ficheiro|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido.</br>![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-aed34711.png)|
 |Imprimir|Este botão permite que o utilizador gere relatório diretamente no ecrã|
 |Sair|Este botão permite que o utilizador saia da ecrã e regresse ao menu inicial|
 
@@ -365,7 +365,7 @@ O exemplo seguinte, demonstra um relatório de alteração orçamental gerada em
 
 Relativamente a este processo, o Mapa de Execução Orçamental da Despesa e Mapa de Execução Orçamental da Receita, têm como finalidade permitir o controlo da execução orçamental da despesa e receita durante o exercício:
 
-![](mu_snc_ap.assets/mu_snc_ap-871fecbd.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-871fecbd.png)
 
 Para tal, as opções no ecrã permite imprimir os formulários (gerando PDF), bem como, a extração para formato Excel, tendo o utilizador de definir o caminho para gravação do ficheiro.
 
@@ -395,7 +395,7 @@ O procedimento do mapa 7.2 é idêntico ao explicado anteriormente, sendo apenas
 
 Os Mapas das Alterações Orçamentais da Despesa e Alterações orçamentais da Receita têm por finalidade evidenciar as alterações orçamentais existentes durante o exercício depois da dotação e previsão iniciais:
 
-![](mu_snc_ap.assets/mu_snc_ap-6f71eb5c.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-6f71eb5c.png)
 
 Ao clicar, é mostrado o ecrã abaixo e que permite proceder à escolha do tipo de informação que pretende analisar, podendo para o efeito fazer várias combinações possíveis.
 
@@ -433,7 +433,7 @@ O procedimento destes mapas é idêntico ao explicado anteriormente, sendo apena
 
 Esta opção permite, consultar ou criar um novo documento de Cabimento e com base em critérios selecionados pelo utilizador.
 
-![](mu_snc_ap.assets/mu_snc_ap-4ab45932.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-4ab45932.png)
 
 Ao selecionar Cabimentos/Compromissos, irá surgir o seguinte ecrã, cujo objetivo é a criação de um Cabimento (CB), conforme imagem abaixo:
 
@@ -474,14 +474,14 @@ O Cabimento acaba de ser gerado, no entanto deverá o utilizador confirmar em si
 
 __A novidade no novo sistema SICC é o aparecimento do botão "Importar", que permite aos utilizadores carregarem a partir de um documento de Excel vários cabimentos de forma muito mais rápida e fiável.__
 
-O utilizador ao pressionar o botão ![](mu_snc_ap.assets/mu_snc_ap-e77f6488.png), vai fazer com que o novo ecrã surja para importação do ficheiro.
+O utilizador ao pressionar o botão ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-e77f6488.png), vai fazer com que o novo ecrã surja para importação do ficheiro.
 
-![](mu_snc_ap.assets/mu_snc_ap-baff3e42.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-baff3e42.png)
 
 
 Ao pressionar, o utilizador vai deparar-se com o seguinte ecrã, sendo que para carregamento do ficheiro, tem de escolher o diretório de origem.
 
-![](mu_snc_ap.assets/mu_snc_ap-a996bb37.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-a996bb37.png)
 
 O aspeto do ficheiro CSV é o abaixo demonstrado, sendo que o mesmo deve obedecer ao critério das colunas estipuladas, para efeito de carregamento.
 
@@ -498,40 +498,40 @@ Após validação dos elementos integrados e constatado que os valores estão co
 Caso se trate de uma importação ou de valores introduzidos manualmente, no ecrã principal o utilizador tem outros botões que permitem assim uma análise mais cuidada.
 Desta forma, nos passos seguintes, é demonstrado o funcionamento dos outros botões constantes do ecrã.
 
-![](mu_snc_ap.assets/mu_snc_ap-0ccf1c91.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-0ccf1c91.png)
 
 O utilizador ao escolher um dos seguintes botões obtém os ecrãs:
 
 ##### Informação de CB
 
-![](mu_snc_ap.assets/mu_snc_ap-d414c285.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-d414c285.png)
 
 O utilizador ao pressionar o botão "Imprimir", gera no ecrã o resultado da criação do CB.
 
-![](mu_snc_ap.assets/mu_snc_ap-c0eb122c.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-c0eb122c.png)
 
 ##### Listagens de CB
 
-![](mu_snc_ap.assets/mu_snc_ap-776977c3.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-776977c3.png)
 
 Nos ecrãs atrás referidos, o procedimento é similar:
 
 |Botão|Descrição|
 |:---|:---|
-|Calcular|Este botão permite apresentar os cabimentos no espaço "Documentos para imprimir". ![](mu_snc_ap.assets/mu_snc_ap-594b7d1e.png)|
+|Calcular|Este botão permite apresentar os cabimentos no espaço "Documentos para imprimir". ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-594b7d1e.png)|
 |Imprimir|Este botão permite que o utilizador gere relatório diretamente no ecrã|
-|Ficheiro|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido. ![](mu_snc_ap.assets/mu_snc_ap-aea0e214.png)|
+|Ficheiro|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido. ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-aea0e214.png)|
 |Sair|Este botão permite que o utilizador saia do ecrã e regresse ao menu inicial|
 
 O formato na opção "Imprimir", é o seguinte:
 
-![](mu_snc_ap.assets/mu_snc_ap-c393e3d6.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-c393e3d6.png)
 
 #### 3.1.2. Alterações de Cabimentos (AM)
 
 Neste processo o que se pretende demonstrar é uma alteração a um CB já existente. Desta forma, iremos contemplar mais uma linha de item financeiro ao CB criado anteriormente.
 
-![](mu_snc_ap.assets/mu_snc_ap-19410ace.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-19410ace.png)
 
 Ao entrar no ecrã de Alteração de CB, deve o utilizador associar o “nº de CB” criado anteriormente para proceder á alteração. Terá igualmente de dar duplo clique na linha assinalada abaixo, para proceder à AM.
 
@@ -539,26 +539,26 @@ Ao entrar no ecrã de Alteração de CB, deve o utilizador associar o “nº de 
 
 Uma vez a linha subir um nível acima, deverá o utilizador definir por que montante pretende fazer a nova AM, pressionando posteriormente o botão "Gravar nova AM".
 
-![](mu_snc_ap.assets/mu_snc_ap-fbd35096.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-fbd35096.png)
 
 
 
 Novo ecrã surge, no qual o utilizador definirá o novo item financeiro, conta e importância a registar na alteração do Cab. Finda a alteração, deverá gerar os documentos contabilísticos de forma automática pressionando para o efeito o botão "Gerar Contabilidade".
 
-![](mu_snc_ap.assets/mu_snc_ap-513a1d48.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-513a1d48.png)
 
 O novo ecrã surge e associada a ela, aparecem os movimentos de lançamento do cabimento. Se os lançamentos estiverem corretos, deve o utilizador confirmar, pressionado o botão de confirmação.
 
-![](mu_snc_ap.assets/mu_snc_ap-5f18c1ab.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-5f18c1ab.png)
 
 A alteração ao Cabimento acaba de ser efetuada, sendo que o sistema gera uma mensagem de confirmação.
 
-![](mu_snc_ap.assets/mu_snc_ap-03702c8f.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-03702c8f.png)
 
 De realçar que qualquer movimento de estorno que seja efetuado no CB, não existe a necessidade de alterar o registo inicial, sendo que assim impede que haja alterações a nível dos mapas de execução orçamental.
 Da mesma maneira que na importação de cabimentos, este processo de Alteração também pode ser feita por carregamento de ficheiro através do botão "Importar".
 
-![](mu_snc_ap.assets/mu_snc_ap-74dc29f8.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-74dc29f8.png)
 
 Ao pressionar, o utilizador vai deparar-se com o seguinte ecrã, sendo que para carregamento do ficheiro, tem de escolher o Diretório de Origem.
 
@@ -582,11 +582,11 @@ Entende-se por _Verificação Prévia (CM)_, a verificação prévia de fundos d
 
 Por parte do utilizador, há necessidade de evidenciar novamente o “número de processo de aquisição”. De forma automática, o preenchimento do “valor disponível de cabimento” aparece por defeito. Posteriormente, deve o utilizador pressionar no botão “Gravar como CM”, bem como atribuir o montante do compromisso.
 
-![](mu_snc_ap.assets/mu_snc_ap-7e27de3f.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-7e27de3f.png)
 
 Neste ecrã, o utilizador terá de introduzir o valor manualmente e após confirmação dos elementos constituintes do CM, deve gerar os movimentos na contabilidade, utilizando o botão "Gerar Contabilidade".
 
-![](mu_snc_ap.assets/mu_snc_ap-ef0da4bc.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-ef0da4bc.png)
 
 Os movimentos contabilísticos aparecem no ecrã, sendo que se estiverem corretos, deverá o utilizador pressionar o botão "Confirme".
 
