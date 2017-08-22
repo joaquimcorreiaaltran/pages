@@ -437,7 +437,7 @@ Esta opção permite, consultar ou criar um novo documento de Cabimento e com ba
 
 Ao selecionar Cabimentos/Compromissos, irá surgir o seguinte ecrã, cujo objetivo é a criação de um Cabimento (CB), conforme imagem abaixo:
 
-![img_57.gif](/markdown/mu_snc_ap.assets/img_57a.gif)
+![img_57a.gif](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_57a.gif)
 
 O seu registo, o processo de cabimentação não sofre qualquer alteração, continuando a ter registar a referência o orçamento anual da entidade líquido de cativos devendo ser cabimentadas todas as despesas prováveis.
 
@@ -445,7 +445,7 @@ O seu registo, o processo de cabimentação não sofre qualquer alteração, con
 
 A gravação do CB abre novo ecrã, onde teremos um botão de ajuda no preenchimento dos seguintes campos obrigatórios:
 
-![img_60.gif](/markdown/mu_snc_ap.assets/img_60.gif)
+![img_60.gif](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_60.gif)
 
 |Campo|Obrigatoriedade|Descrição|
 |:----|:--------------|:---------|
@@ -535,7 +535,7 @@ Neste processo o que se pretende demonstrar é uma alteração a um CB já exist
 
 Ao entrar no ecrã de Alteração de CB, deve o utilizador associar o “nº de CB” criado anteriormente para proceder á alteração. Terá igualmente de dar duplo clique na linha assinalada abaixo, para proceder à AM.
 
-![img_79.png](/markdown/mu_snc_ap.assets/img_79.gif)
+![img_79.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_79.gif)
 
 Uma vez a linha subir um nível acima, deverá o utilizador definir por que montante pretende fazer a nova AM, pressionando posteriormente o botão "Gravar nova AM".
 
