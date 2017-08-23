@@ -687,28 +687,28 @@ O utilizador neste ecrã e no primeiro separador, deve indicar o nº do compromi
 
 Para o exemplo em questão, foi criado mais um compromisso para demonstração do processo, no separador "Compromisso Assumido(CP)".
 
-![](mu_snc_ap.assets/mu_snc_ap-b1042c44.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-b1042c44.png)
 
 Este compromisso para a entidade “2 – Sindicato dos trabalhadores Função Publica Zona Norte” foi criada pelo montante abaixo indicado.
 
-![](mu_snc_ap.assets/mu_snc_ap-87ac079d.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-87ac079d.png)
 
 Selecionando a opção "Confirme", ss movimentos contabilísticos são guardados de acordo com o apresentado no quadro "Razão Geral" e o formulário "Recolha de Contabilidade" é fechado.
 
-![](mu_snc_ap.assets/mu_snc_ap-18efe6fa.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-18efe6fa.png)
 
 No separador "Processado - F.Confer. (P2)", o utilizador deve selecionar "Compromisso Assumido" e a entidade a que diz respeito para que o sistema indique o montante do compromisso que tem disponível.
-De seguida, define-se, pelo menos, o "Nº de fatura" bem como a "Data da Contabilização" e respetiva "Importância" da fatura, que neste exemplo será de 200€. Para gravar, deve selecionar sobre o botão "Gravar novo P2".
+De seguida, define-se, pelo menos, o "Nº de fatura" bem como a "Data da Contabilização" e respetiva "Importância" da fatura, que neste exemplo será de 200€. Para gravar, deve selecionar sobre o botão "Gravar novo P2".``
 
-![](mu_snc_ap.assets/mu_snc_ap-2ebaaaa2.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-2ebaaaa2.png)
 
 A conta de custos por defeito aparece, tendo somente o utilizador que introduzir a conta de contrapartida e respetivos valores da fatura.
 
-![](mu_snc_ap.assets/mu_snc_ap-228379fe.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-228379fe.png)
 
 Ao gerar os documentos na contabilidade, é necessário que na analítica seja atribuído um centro de custo para as contas classe 6. Através do botão "![img_radio_unselected.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_radio_unselected.png)", o utilizador tem acesso a todos os centros de custo inseridos em sistema.
 
-![](mu_snc_ap.assets/mu_snc_ap-7cd014f9.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-7cd014f9.png)
 
 __O botão "Desdobrar Conta", permite ao utilizador, para a mesma conta (separador ca Cont. Analítica) , a possibilidade de escolher o número de linhas para desdobrar, no sentido de integrar vários Centros de Custo.__
 
@@ -718,15 +718,15 @@ Posteriormente á confirmação, o sistema gera uma mensagem com a seguinte info
 
 Após confirmação, o sistema assume assim que para o compromisso e para a entidade já é existente o registo de fatura.
 
-![](mu_snc_ap.assets/mu_snc_ap-40dd47b7.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-40dd47b7.png)
 
 Nesta fase, ao exemplo das anteriores, demostramos este processo lançamento feito por importação de ficheiro através do botão "Importar".
 
-![](mu_snc_ap.assets/mu_snc_ap-cce29a3b.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-cce29a3b.png)
 
 Ao pressionar, o utilizador vai deparar-se com o seguinte ecrã, sendo que para carregamento do ficheiro, tem de escolher o Diretório de Origem.
 
-![](mu_snc_ap.assets/mu_snc_ap-0c593329.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-0c593329.png)
 
 O aspeto do ficheiro CSV. é o abaixo demonstrado, sendo que o mesmo deve obedecer ao critério das colunas estipuladas, para efeito de carregamento.
 

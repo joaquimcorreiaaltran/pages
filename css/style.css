@@ -479,13 +479,13 @@ p.caption{
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes dropdown {
-  from {top: -100%;right: -200%;width: 0;}
-  to {top: 40px;right: 2%;width: auto;}
+  from {top: -100%;right: -100%;}
+  to {top: 40px;right: 1%;}
 }
 
 @keyframes dropdown {
-  from {top: -100%;right: -200%;width: 0;}
-  to {top: 40px;right: 2%;width: auto;}
+  from {top: -100%;right: -100%;}
+  to {top: 50px;right: 1%;}
 }
 
 /* Links inside the dropdown */
@@ -584,7 +584,7 @@ a.toc_h6 {
 
 .table-of-contents a:hover,
 .table-of-contents a:active {
-  font-weight: normal;
+  font-weight: bold;
   color: #40A293;
 }
 
@@ -782,6 +782,14 @@ h4:target {
 #docButtons>#btnShowToc:hover {
   width: 80px;
   font-weight: normal;
+  border-width: 3px;
+}
+
+#docButtons>#btnShowToc.show {
+  color: #40a293;
+  background-color: white;
+  font-weight: bold;
+  border-color: #656565;
   border-width: 3px;
 }
 
@@ -1120,10 +1128,21 @@ footer img {
         border-radius: 5px;
 			}
 
+      body.sidebar-visible #titleBar .toggle:before{
+        background-color: white;
+        color: #40A293;
+        border-color: #656565;
+        border-width: 3px;
+      }
 
 
-      #titleBar a:hover {
-          font-size: 1.4em;
+
+      #titleBar>a:hover {
+          font-style: italic;
+      }
+
+      #titleBar>a:hover {
+          font-style: italic;
       }
 
     	#sidebar {
@@ -1388,6 +1407,7 @@ footer img {
         -ms-transform: translateX(0);
         transform: translateX(0);
       }
+
 	}
 
 /* Narrow */

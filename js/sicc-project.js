@@ -234,6 +234,7 @@ function toc(elementToPopulate){
 toggle between hiding and showing the dropdown content */
 function showToc() {
     document.getElementById("tocDropdown").classList.toggle("show");
+    document.getElementById("btnShowToc").classList.toggle("show");
 };
 
 // Close the dropdown menu if the user clicks outside of it
