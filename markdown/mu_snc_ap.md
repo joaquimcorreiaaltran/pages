@@ -141,14 +141,14 @@ O formulário para recolha de propostas orçamentais é composta por:
 
 | Opção | Descrição |
 |:----|:----------|
-| Ano | Exercício a que dizem respeito as informação da instituição. |
+| Ano | Exercício a que dizem respeito as informação da instituição|
 | Orçamento Ordinário | Seleção apenas se for a introdução de um orçamento ordinário ![img_orç_ordinario.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_orç_ordinario.png) |
 | Alteração Orçamental | Seleção apenas se for uma alteração orçamental a registar. Ao selecionar, automaticamente aparece o número de lançamento o qual se pretende alterar. ![img_alteracao_orc_num_lancamento.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_alteracao_orc_num_lancamento.png) |
-| Atividade/Departamento | Identificação do tipo de Atividade/Departamento. Na seleção do botão de ajuda, o utilizador carregando no círculo ![img_radio_unselected.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_radio_unselected.png) pode obter uma listagem de todos os tipos de Atividades/Departamentos. |
+| Atividade/Departamento | Identificação do tipo de Atividade/Departamento. Na seleção do botão de ajuda, o utilizador carregando no círculo ![img_radio_unselected.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_radio_unselected.png) pode obter uma listagem de todos os tipos de Atividades/Departamentos|
 | Data | ---?--- |
-| Observações | Campo de observações onde estão ou devem ser colocadas todas as informações pretendidas pelo utilizador. |
+| Observações | Campo de observações onde estão ou devem ser colocadas todas as informações pretendidas pelo utilizador|
 | Data aprovação | ---?--- |
-| Novo Orçamento | Ao clicar neste botão, abrirá a proposta orçamental a ser carregada com identificação dos classificadores económicos e valores a integrar. |
+| Novo Orçamento | Ao clicar neste botão, abrirá a proposta orçamental a ser carregada com identificação dos classificadores económicos e valores a integrar|
 
 Neste ecrã, decidir os valores a constarem na proposta do orçamento através da inserção dos montantes de receita ou despesa pelos vários itens de orçamento.
 Nesta etapa, o utilizador que efetua o carregamento em SICC, tem de ter em conta a divisão pelas respetivas rubricas orçamentais. Verificar no entanto nesta fase se o total das receitas igual às despesas.
@@ -221,16 +221,16 @@ Nos próximos passos, vai ser demonstrado o processo de criação dos fundos dis
 
 | Opção | Descrição |
 |:----|:----------|
-| Ano | Exercício a que dizem respeito as informação da instituição. |
-| Mês | Seleção do mês para carregamento dos fundos. |
-| Alteração | Seleção do número de alteração que se pretende. |
+| Ano | Exercício a que dizem respeito as informação da instituição|
+| Mês | Seleção do mês para carregamento dos fundos|
+| Alteração | Seleção do número de alteração que se pretende|
 | Data | - - - ? - - - |
-| Observações | Campo de observações onde estão ou devem ser colocadas todas as informações pretendidas pelo utilizador. |
+| Observações | Campo de observações onde estão ou devem ser colocadas todas as informações pretendidas pelo utilizador|
 | Diretório (...) | Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido. </br> ![](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_11.png) |
-| Novo Orçamento | Este botão permite a gravar alterações que tenham sido necessárias de ajustar. |
-| Produção de mapa em CSV | Esta opção permite a produção do mapa em ficheiro com extensão CSV. |
-| Consulta | Este botão permite ao utilizador consultar os valores carregados dos fundos disponíveis. |
-| Sair | Este botão permite ao utilizador sair do ecrã corrente. |
+| Novo Orçamento | Este botão permite a gravar alterações que tenham sido necessárias de ajustar|
+| Produção de mapa em CSV | Esta opção permite a produção do mapa em ficheiro com extensão CSV|
+| Consulta | Este botão permite ao utilizador consultar os valores carregados dos fundos disponíveis|
+| Sair | Este botão permite ao utilizador sair do ecrã corrente|
 
 Após o preenchimentos dos campos atrás referidos, e sendo que se trata de um Novo Orçamento, o ecrã que surge é o de preenchimento dos valores de orçamento de fundos próprios.
 
@@ -343,7 +343,7 @@ Ao clicar, surge o ecrã abaixo e que permite proceder à escolha do tipo de inf
 
 | Campo | Obrigatoriedade | Descrição |
 |:----|:---------|:---------|
-| Exercício | Obrigatório | Exercício a que dizem respeito as informação da instituição. |
+| Exercício | Obrigatório | Exercício a que dizem respeito as informação da instituição|
 | Proposta | Obrigatório | Seleção de um dos campos: ![img_39.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_39.png) |
 | Orçamento | Obrigatório | Seleção de um dos campos: ![img_40.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_40.png) __Ao selecionar a “Alteração Orçamental”, surge automaticamente para preenchimento: ![img_41.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_41.png) |
 | Financiamento | Obrigatório | Seleção de um dos campos: ![img_42.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_42.png) |
@@ -590,21 +590,19 @@ Neste ecrã, o utilizador terá de introduzir o valor manualmente e após confir
 
 Os movimentos contabilísticos aparecem no ecrã, sendo que se estiverem corretos, deverá o utilizador pressionar o botão "Confirme".
 
-_(Imagem em atualização)_
-![img_92.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_92.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-50c88c43.png)
 
 Uma nova mensagem surgirá com a classificação do compromisso criado, sendo que este processo está concluído:
 
-![img_93.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_93.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-aa19db1f.png)
 
 Após a criação do compromisso, o utilizador terá assim a possibilidade de ter “informação do CM” criado, para o efeito tem de pressionar no botão "Informação de CM".
 
-_(Imagem em atualização)_
-![img_94.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_94.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-b000b868.png)
 
 Neste ecrã, surge o resumo da criação efetuada no passo anterior
 
-![img_95.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_95.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-299ce3c5.png)
 
 Igualmente e da mesma forma que no ecrã dos cabimentos, o utilizador tem assim disponíveis as seguintes possibilidades:
 
@@ -619,17 +617,17 @@ Igualmente e da mesma forma que no ecrã dos cabimentos, o utilizador tem assim 
 
 O utilizador ao pressionar o botão "Imprimir", gera no ecrã o resultado da criação do CM.
 
-![img_95b.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_95b.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-1b010f55.png)
 
 __A novidade no novo sistema SICC-SNC-AP é o aparecimento do botão , que permite aos utilizadores carregarem a partir de um documento de Excel vários compromissos de forma muito mais rápida e viável.__
 
 No ecrã inicial, o utilizador o utilizador ao pressionar este novo botão, vai fazer com quer novo ecrã surja para importação do ficheiro.
 
-![img_96.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_96.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-532c3768.png)
 
 Ao pressionar, o utilizador vai deparar-se com o seguinte ecrã, sendo que para carregamento do ficheiro, tem de escolher o Diretório de Origem.
 
-![img_96a.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_96a.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-c0a092cc.png)
 
 O aspeto do ficheiro CSV. é o abaixo demonstrado, sendo que o mesmo deve obedecer ao critério das colunas estipuladas, para efeito de carregamento.
 
@@ -646,19 +644,24 @@ Após validação dos elementos integrados e constatado que os valores estão co
 O sistema deve apresentar a seguinte mensagem, sempre que ao “Número de Processo de Aquisição”, já tenha Compromissos integrados.
 
 _(Imagem em atualização)_
+<!-- Para atualizar esta imagem é necessário criar ficheiro com Verificações prévias-->
 ![img_99.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_99.png)
 
 #### 3.1.4. Alteração de Compromisso (AB)
 
-__Existe igualmente a possibilidade de proceder à alteração no Compromisso, pelo que o utilizador terá de ter em atenção que as alterações efetuadas também têm de estar alinhadas com o valor do Cabimento. O sistema deteta e envia mensagem de erro caso se verifique que o valor do compromisso seja superior ao cabimento ou mesmo quando não existe cabimento para determinado item financeiro produzido posteriormente no compromisso. O Processo em si é semelhante ao explicado anteriormente nas alterações dos cabimentos (AM).__
+__Existe igualmente a possibilidade de proceder à alteração no Compromisso, pelo que o utilizador terá de ter em atenção que as alterações efetuadas também têm de estar alinhadas com o valor do Cabimento. O sistema deteta e envia mensagem de erro caso se verifique que o valor do compromisso seja superior ao cabimento, ou mesmo quando não existe cabimento para determinado item financeiro produzido posteriormente no compromisso. O Processo em si é semelhante ao explicado anteriormente nas alterações dos cabimentos (AM).__
 
-Nesta etapa, demostramos a título de exemplo o este processo de Alteração de Compromisso feita por carregamento de ficheiro através do botão "Importar".
+Menu de acesso:
 
-![img_100.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_100.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-c02d02d9.png)
 
-Ao pressionar, o utilizador vai deparar-se com o seguinte ecrã, sendo que para carregamento do ficheiro, tem de escolher o Diretório de Origem.
+Nesta etapa, demostramos, a título de exemplo, este processo de Alteração de Compromisso feita por carregamento de ficheiro através do botão "Importar".
 
-![img_101.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_101.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-24fb53e0.png)
+
+Ao selecionar o botão "Importar", o utilizador vai deparar-se com o seguinte ecrã, sendo que para carregamento do ficheiro, tem de escolher o Diretório de Origem.
+
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-06629cf0.png)
 
 O aspeto do ficheiro CSV. é o abaixo demonstrado, sendo que o mesmo deve obedecer ao critério das colunas estipuladas, para efeito de carregamento.
 
@@ -676,16 +679,11 @@ Após validação dos elementos integrados e constatado que os valores estão co
 
 Antes de realizar o registo de fatura FI, existe a necessidade de o utilizador verificar a disponibilidade do compromisso. Esta validação pode ser efetuada através utilizando para efeito o botão "Consulta", explicado em passos anteriores.
 
-_(Imagem em atualização)_
-![img_106.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_106.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-27cda4ab.png)
 
 O utilizador neste ecrã e no primeiro separador, deve indicar o nº do compromisso. De forma automática, o sistema gera a data de criação do documento, a conta financeira associada e o respetivo montante. A fase seguinte é a de definir a entidade. Para o efeito deve pressionar sobre o botão "![img_radio_unselected.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_radio_unselected.png)" para chamada de todas as entidades registadas na base de dados.
 
-![img_107.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_107.png)
-
-O resultado esperado, corresponde de igual forma à imagem abaixo indicada. Deve assim ser escolhida a entidade para dar continuidade a este processo.
-
-![img_108.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_108.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-66afd507.png)
 
 Para o exemplo em questão, foi criado mais um compromisso para demonstração do processo, no primeiro separador.
 
