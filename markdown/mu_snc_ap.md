@@ -474,7 +474,7 @@ O Cabimento acaba de ser gerado, no entanto deverá o utilizador confirmar em si
 
 __A novidade no novo sistema SICC é o aparecimento do botão "Importar", que permite aos utilizadores carregarem a partir de um documento de Excel vários cabimentos de forma muito mais rápida e fiável.__
 
-O utilizador ao pressionar o botão ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-e77f6488.png), vai fazer com que o novo ecrã surja para importação do ficheiro.
+O utilizador ao selecionar o botão ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-e77f6488.png), vai fazer com que o novo ecrã surja para importação do ficheiro.
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-baff3e42.png)
 
@@ -487,11 +487,11 @@ O aspeto do ficheiro CSV é o abaixo demonstrado, sendo que o mesmo deve obedece
 
 ![img_67.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_67.png)
 
-Antes da importação,o utilizador, tem de usar o botão "Ver/Testar Ficheiro". Ao pressionar este mesmo botão, o utilizador constata que os elementos do ficheiro CSV estão visíveis e que o ficheiro integrado está testado. Caso ocorram erros, os mesmos produzem um relatório no ecrã, na caixa criada para o efeito, no canto inferior direito do ecrã.
+Antes da importação,o utilizador, tem de usar o botão "Ver/Testar Ficheiro". Ao selecionar este mesmo botão, o utilizador constata que os elementos do ficheiro CSV estão visíveis e que o ficheiro integrado está testado. Caso ocorram erros, os mesmos produzem um relatório no ecrã, na caixa criada para o efeito, no canto inferior direito do ecrã.
 
 ![img_68.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_68.png)
 
-Após validação dos elementos integrados e constatado que os valores estão coerentes com o ficheiro integrado, o utilizador deve assim usar o botão  "Importa Ligação". Depois de pressionar e de forma automática, o sistema gera uma mensagem de confirmação, com a indicação abaixo discrita.
+Após validação dos elementos integrados e constatado que os valores estão coerentes com o ficheiro integrado, o utilizador deve assim usar o botão  "Importa Ligação". Depois de selecionar e de forma automática, o sistema gera uma mensagem de confirmação, com a indicação abaixo discrita.
 
 ![img_importacao_concluida_sucesso.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_importacao_concluida_sucesso.png)
 
@@ -506,7 +506,7 @@ O utilizador ao escolher um dos seguintes botões obtém os ecrãs:
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-d414c285.png)
 
-O utilizador ao pressionar o botão "Imprimir", gera no ecrã o resultado da criação do CB.
+O utilizador ao selecionar o botão "Imprimir", gera no ecrã o resultado da criação do CB.
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-c0eb122c.png)
 
@@ -568,11 +568,11 @@ O aspeto do ficheiro CSV. é o abaixo demonstrado, sendo que o mesmo deve obedec
 
 ![img_86.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_86.png)
 
-Antes da importação, o utilizador, tem de usar o botão "Verificar Ficheiro". Ao pressionar este mesmo botão, o utilizador constata que os elementos do ficheiro CSV estão visíveis e que o ficheiro integrado está testado. Caso ocorram erros, os mesmos produzem um relatório no ecrã, na caixa criada para o efeito, no canto inferior direito do ecrã.
+Antes da importação, o utilizador, tem de usar o botão "Verificar Ficheiro". Ao selecionar este mesmo botão, o utilizador constata que os elementos do ficheiro CSV estão visíveis e que o ficheiro integrado está testado. Caso ocorram erros, os mesmos produzem um relatório no ecrã, na caixa criada para o efeito, no canto inferior direito do ecrã.
 
 ![img_87.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_87.png)
 
-Após validação dos elementos integrados e constatado que os valores estão coerentes com o ficheiro integrado, o utilizador deve assim usar o botão. Depois de pressionar e de forma automática, o sistema gera uma mensagem de confirmação, com a indicação abaixo descrita.
+Após validação dos elementos integrados e constatado que os valores estão coerentes com o ficheiro integrado, o utilizador deve assim usar o botão. Depois de selecionar e de forma automática, o sistema gera uma mensagem de confirmação, com a indicação abaixo descrita.
 
 ![img_importacao_concluida_sucesso.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_importacao_concluida_sucesso.png)
 
@@ -580,7 +580,7 @@ Após validação dos elementos integrados e constatado que os valores estão co
 
 Entende-se por _Verificação Prévia (CM)_, a verificação prévia de fundos disponíveis, as obrigações de efetuar pagamentos a terceiros em contrapartida do fornecimento de bens e serviços ou da satisfação de outras condições. Os compromissos consideram-se assumidos quando é executada uma ação formal pela entidade, como seja a emissão de ordem de compra, nota de encomenda ou documento equivalente, ou a assinatura de um contrato, acordo ou protocolo, podendo também ter um carácter permanente e estarem associados a pagamentos durante um período indeterminado de tempo, nomeadamente, salários, rendas, eletricidade ou pagamentos de prestações diversas.
 
-Por parte do utilizador, há necessidade de evidenciar novamente o “número de processo de aquisição”. De forma automática, o preenchimento do “valor disponível de cabimento” aparece por defeito. Posteriormente, deve o utilizador pressionar no botão “Gravar como CM”, bem como atribuir o montante do compromisso.
+Por parte do utilizador, há necessidade de evidenciar novamente o “número de processo de aquisição”. De forma automática, o preenchimento do “valor disponível de cabimento” aparece por defeito. Posteriormente, deve o utilizador selecionar no botão “Gravar como CM”, bem como atribuir o montante do compromisso.
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-7e27de3f.png)
 
@@ -588,7 +588,7 @@ Neste ecrã, o utilizador terá de introduzir o valor manualmente e após confir
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-ef0da4bc.png)
 
-Os movimentos contabilísticos aparecem no ecrã, sendo que se estiverem corretos, deverá o utilizador pressionar o botão "Confirme".
+Os movimentos contabilísticos aparecem no ecrã, sendo que se estiverem corretos, deverá o utilizador selecionar o botão "Confirme".
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-50c88c43.png)
 
@@ -596,7 +596,7 @@ Uma nova mensagem surgirá com a classificação do compromisso criado, sendo qu
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-aa19db1f.png)
 
-Após a criação do compromisso, o utilizador terá assim a possibilidade de ter “informação do CM” criado, para o efeito tem de pressionar no botão "Informação de CM".
+Após a criação do compromisso, o utilizador terá assim a possibilidade de ter “informação do CM” criado, para o efeito tem de selecionar no botão "Informação de CM".
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-b000b868.png)
 
@@ -615,13 +615,13 @@ Igualmente e da mesma forma que no ecrã dos cabimentos, o utilizador tem assim 
 
 ![img_95a.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_95a.png)
 
-O utilizador ao pressionar o botão "Imprimir", gera no ecrã o resultado da criação do CM.
+O utilizador ao selecionar o botão "Imprimir", gera no ecrã o resultado da criação do CM.
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-1b010f55.png)
 
 __A novidade no novo sistema SICC-SNC-AP é o aparecimento do botão , que permite aos utilizadores carregarem a partir de um documento de Excel vários compromissos de forma muito mais rápida e viável.__
 
-No ecrã inicial, o utilizador o utilizador ao pressionar este novo botão, vai fazer com quer novo ecrã surja para importação do ficheiro.
+No ecrã inicial, o utilizador o utilizador ao selecionar este novo botão, vai fazer com quer novo ecrã surja para importação do ficheiro.
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-532c3768.png)
 
@@ -633,11 +633,11 @@ O aspeto do ficheiro CSV. é o abaixo demonstrado, sendo que o mesmo deve obedec
 
 ![img_97.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_97.png)
 
-Antes da importação,o utilizador, tem de usar o botão "Ver/Testar Ficheiro". Ao pressionar este mesmo botão, o utilizador constata que os elementos do ficheiro CSV estão visíveis e que o ficheiro integrado está testado. Caso ocorram erros, os mesmos produzem um relatório no ecrã, na caixa criada para o efeito, no canto inferior direito do ecrã.
+Antes da importação,o utilizador, tem de usar o botão "Ver/Testar Ficheiro". Ao selecionar este mesmo botão, o utilizador constata que os elementos do ficheiro CSV estão visíveis e que o ficheiro integrado está testado. Caso ocorram erros, os mesmos produzem um relatório no ecrã, na caixa criada para o efeito, no canto inferior direito do ecrã.
 
 ![img_98.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_98.png)
 
-Após validação dos elementos integrados e constatado que os valores estão coerentes com o ficheiro integrado, o utilizador deve assim usar o botão "Importa Ligação". Depois de pressionar e de forma automática, o sistema gera uma mensagem de confirmação, com a indicação abaixo discrita.
+Após validação dos elementos integrados e constatado que os valores estão coerentes com o ficheiro integrado, o utilizador deve assim usar o botão "Importa Ligação". Depois de selecionar e de forma automática, o sistema gera uma mensagem de confirmação, com a indicação abaixo discrita.
 
 ![img_98a.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_98a.png)
 
@@ -667,11 +667,11 @@ O aspeto do ficheiro CSV. é o abaixo demonstrado, sendo que o mesmo deve obedec
 
 ![img_102.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_102.png)
 
-Antes da importação,o utilizador, tem de usar o botão "Ver/Testar Ficheiro". Ao pressionar este mesmo botão, o utilizador constata que os elementos do ficheiro CSV estão visíveis e que o ficheiro integrado está testado. Caso ocorram erros, os mesmos produzem um relatório no ecrã, na caixa criada para o efeito, no canto inferior direito do ecrã.
+Antes da importação,o utilizador, tem de usar o botão "Ver/Testar Ficheiro". Ao selecionar este mesmo botão, o utilizador constata que os elementos do ficheiro CSV estão visíveis e que o ficheiro integrado está testado. Caso ocorram erros, os mesmos produzem um relatório no ecrã, na caixa criada para o efeito, no canto inferior direito do ecrã.
 
 ![img_104.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_104.png)
 
-Após validação dos elementos integrados e constatado que os valores estão coerentes com o ficheiro integrado, o utilizador deve assim usar o botão. Depois de pressionar e de forma automática, o sistema gera uma mensagem de confirmação, com a indicação abaixo discrita.
+Após validação dos elementos integrados e constatado que os valores estão coerentes com o ficheiro integrado, o utilizador deve assim usar o botão. Depois de selecionar e de forma automática, o sistema gera uma mensagem de confirmação, com a indicação abaixo discrita.
 
 ![img_105.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_105.png)
 
@@ -681,36 +681,34 @@ Antes de realizar o registo de fatura FI, existe a necessidade de o utilizador v
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-27cda4ab.png)
 
-O utilizador neste ecrã e no primeiro separador, deve indicar o nº do compromisso. De forma automática, o sistema gera a data de criação do documento, a conta financeira associada e o respetivo montante. A fase seguinte é a de definir a entidade. Para o efeito deve pressionar sobre o botão "![img_radio_unselected.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_radio_unselected.png)" para chamada de todas as entidades registadas na base de dados.
+O utilizador neste ecrã e no primeiro separador, deve indicar o nº do compromisso. De forma automática, o sistema gera a data de criação do documento, a conta financeira associada e o respetivo montante. A fase seguinte é a de definir a entidade. Para o efeito deve selecionar sobre o botão "![img_radio_unselected.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_radio_unselected.png)" para chamada de todas as entidades registadas na base de dados.
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-66afd507.png)
 
-Para o exemplo em questão, foi criado mais um compromisso para demonstração do processo, no primeiro separador.
+Para o exemplo em questão, foi criado mais um compromisso para demonstração do processo, no separador "Compromisso Assumido(CP)".
 
-![img_109.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_109.png)
+![](mu_snc_ap.assets/mu_snc_ap-b1042c44.png)
 
-Este compromisso para a entidade “912003 – IASFA – ADM FORÇA AÉREA” foi criada pelo montante abaixo indicado.
+Este compromisso para a entidade “2 – Sindicato dos trabalhadores Função Publica Zona Norte” foi criada pelo montante abaixo indicado.
 
-![img_110.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_110.png)
+![](mu_snc_ap.assets/mu_snc_ap-87ac079d.png)
 
-O resultado da geração dos movimentos contabilísticos, mostra assim no ecrã as contas que foram movimentadas. Confirmando, o ecrã regressa à página original.
+Selecionando a opção "Confirme", ss movimentos contabilísticos são guardados de acordo com o apresentado no quadro "Razão Geral" e o formulário "Recolha de Contabilidade" é fechado.
 
-![img_111.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_111.png)
+![](mu_snc_ap.assets/mu_snc_ap-18efe6fa.png)
 
-Dentro do novo separador, o utilizador deve selecionar que se trata de um compromisso assumido e colocar a entidade a que diz respeito. De forma automática o sistema dá indicação do montante do compromisso que tem disponível.
-O próximo passo, no último separador, é definir o número da fatura e referida série (facultativo), bem como a data da contabilização e respetivo montante da fatura. Neste caso e no exemplo, o valor desta fatura será de 1.300€. Para continuar, deve pressionar sobre o botão "Gravar novo P2".
+No separador "Processado - F.Confer. (P2)", o utilizador deve selecionar "Compromisso Assumido" e a entidade a que diz respeito para que o sistema indique o montante do compromisso que tem disponível.
+De seguida, define-se, pelo menos, o "Nº de fatura" bem como a "Data da Contabilização" e respetiva "Importância" da fatura, que neste exemplo será de 200€. Para gravar, deve selecionar sobre o botão "Gravar novo P2".
 
-![img_112.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_112.png)
+![](mu_snc_ap.assets/mu_snc_ap-2ebaaaa2.png)
 
 A conta de custos por defeito aparece, tendo somente o utilizador que introduzir a conta de contrapartida e respetivos valores da fatura.
 
-_(Imagem em atualização)_
-![img_113.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_113.png)
+![](mu_snc_ap.assets/mu_snc_ap-228379fe.png)
 
-Ao gerar os documentos na contabilidade, não esquecer que na analítica terá de ser atribuído um centro de custo para as contas classe 6. Através do botão "![img_radio_unselected.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_radio_unselected.png)", o utilizador tem acesso a todos os centros de custo inseridos em sistema.
+Ao gerar os documentos na contabilidade, é necessário que na analítica seja atribuído um centro de custo para as contas classe 6. Através do botão "![img_radio_unselected.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_radio_unselected.png)", o utilizador tem acesso a todos os centros de custo inseridos em sistema.
 
-_(Imagem em atualização)_
-![img_114.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_114.png)
+![](mu_snc_ap.assets/mu_snc_ap-7cd014f9.png)
 
 __O botão "Desdobrar Conta", permite ao utilizador, para a mesma conta (separador ca Cont. Analítica) , a possibilidade de escolher o número de linhas para desdobrar, no sentido de integrar vários Centros de Custo.__
 
@@ -720,25 +718,25 @@ Posteriormente á confirmação, o sistema gera uma mensagem com a seguinte info
 
 Após confirmação, o sistema assume assim que para o compromisso e para a entidade já é existente o registo de fatura.
 
-![img_116.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_116.png)
+![](mu_snc_ap.assets/mu_snc_ap-40dd47b7.png)
 
-Nesta etapa, ao exemplo dos anteriores, demostramos o este processo Lançamento feito por carregamento de ficheiro através do botão "Importar".
+Nesta fase, ao exemplo das anteriores, demostramos este processo lançamento feito por importação de ficheiro através do botão "Importar".
 
-![img_117.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_117.png)
+![](mu_snc_ap.assets/mu_snc_ap-cce29a3b.png)
 
 Ao pressionar, o utilizador vai deparar-se com o seguinte ecrã, sendo que para carregamento do ficheiro, tem de escolher o Diretório de Origem.
 
-![img_118.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_118.png)
+![](mu_snc_ap.assets/mu_snc_ap-0c593329.png)
 
 O aspeto do ficheiro CSV. é o abaixo demonstrado, sendo que o mesmo deve obedecer ao critério das colunas estipuladas, para efeito de carregamento.
 
 ![img_119.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_119.png)
 
-Antes da importação,o utilizador, tem de usar o botão "Ver/Testar Ficheiro". Ao pressionar este mesmo botão, o utilizador constata que os elementos do ficheiro CSV estão visíveis e que o ficheiro integrado está testado. Caso ocorram erros, os mesmos produzem um relatório no ecrã, na caixa criada para o efeito, no canto inferior direito do ecrã.
+Antes da importação,o utilizador, tem de usar o botão "Ver/Testar Ficheiro". Ao selecionar este mesmo botão, o utilizador constata que os elementos do ficheiro CSV estão visíveis e que o ficheiro integrado está testado. Caso ocorram erros, os mesmos produzem um relatório no ecrã, na caixa criada para o efeito, no canto inferior direito do ecrã.
 
 ![img_120.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_120.png)
 
-Após validação dos elementos integrados e constatado que os valores estão coerentes com o ficheiro integrado, o utilizador deve assim usar o botão "Importa Ligação". Depois de pressionar e de forma automática, o sistema gera uma mensagem de confirmação, com a indicação abaixo discrita.
+Após validação dos elementos integrados e constatado que os valores estão coerentes com o ficheiro integrado, o utilizador deve assim usar o botão "Importa Ligação". Depois de selecionar e de forma automática, o sistema gera uma mensagem de confirmação, com a indicação abaixo discrita.
 
 ![img_importacao_concluida_sucesso.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_importacao_concluida_sucesso.png)
 
@@ -761,12 +759,12 @@ O aspeto do ficheiro CSV. é o abaixo demonstrado, sendo que o mesmo deve obedec
 
 ![img_124.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_124.png)
 
-Antes da importação,o utilizador, tem de usar o botão "Verificar Ficheiro". Ao pressionar este mesmo botão, o utilizador constata que os elementos do ficheiro CSV estão visíveis e que o ficheiro integrado está testado. Caso ocorram erros, os mesmos produzem um relatório no ecrã, na caixa criada para o efeito, no canto inferior direito do ecrã.
+Antes da importação,o utilizador, tem de usar o botão "Verificar Ficheiro". Ao selecionar este mesmo botão, o utilizador constata que os elementos do ficheiro CSV estão visíveis e que o ficheiro integrado está testado. Caso ocorram erros, os mesmos produzem um relatório no ecrã, na caixa criada para o efeito, no canto inferior direito do ecrã.
 
 
 ![img_125.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_125.png)
 
-Após validação dos elementos integrados e constatado que os valores estão coerentes com o ficheiro integrado, o utilizador deve assim usar o botão "Importa Ligação". Depois de pressionar e de forma automática, o sistema gera uma mensagem de confirmação, com a indicação abaixo discrita.
+Após validação dos elementos integrados e constatado que os valores estão coerentes com o ficheiro integrado, o utilizador deve assim usar o botão "Importa Ligação". Depois de selecionar e de forma automática, o sistema gera uma mensagem de confirmação, com a indicação abaixo discrita.
 
 ![img_importacao_concluida_sucesso.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_importacao_concluida_sucesso.png)
 
@@ -909,7 +907,7 @@ Nesta etapa, um novo ecrã surge, em que o utilizador tem possibilidade de reali
 
 |Botão|Descrição|
 |:---|:---|
-|Importar Ficheiro|Este botão permite ao utilizador escolher o diretório onde está o ficheiro para importação com formato TXT. Após determinar o caminho deve pressionar sobre o botão de importação.
+|Importar Ficheiro|Este botão permite ao utilizador escolher o diretório onde está o ficheiro para importação com formato TXT. Após determinar o caminho deve selecionar sobre o botão de importação.
 ![img_157.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_157.png) ![img_158.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_158.png)||
 |Converter em XML|Através deste botão, o utilizador escolhe o diretório onde está o ficheiro para importação. A aplicação permite ao utilizador através do botão de conversão, transformar um formato TXT. para um formato XML|
 |Ficheiro 2ª Via|Este botão permite ao utilizador gerar uma segunda via do ficheiro TXT ou XML|
@@ -930,7 +928,7 @@ Ao fazer duplo clique sobre a linha resumo, a informação é preenchida automat
 
 ![img_161.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_161.png)
 
-Surge nova janela na qual apresenta as movimentações contabilísticas, para o utilizador ver os registos efetuados pelo sistema. Para concluir, deve pressionar confirmar.
+Surge nova janela na qual apresenta as movimentações contabilísticas, para o utilizador ver os registos efetuados pelo sistema. Para concluir, deve selecionar confirmar.
 
 _(Imagem em atualização)_
 ![img_162.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_162.png)
@@ -988,7 +986,7 @@ No ecrã, o utilizador terá de preencher a entidade, bem como atribuir um núme
 
 ![img_170.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_170.png)
 
-Ao pressionar o botão, o utilizador terá de fazer o preenchimento das contabilizações necessárias, sendo que no final deve confirmar.
+Ao selecionar o botão, o utilizador terá de fazer o preenchimento das contabilizações necessárias, sendo que no final deve confirmar.
 
 _(Imagem em atualização)_
 ![img_171.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_171.png)
@@ -1013,7 +1011,7 @@ Cumprindo com o realizado em processos anteriores, deve o utilizador preencher: 
 _(Imagem em atualização)_
 ![img_178.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_178.png)
 
-Após a fatura ficar no nível superior, deve assim o utilizador pressionar sobre o botão "Gravar novo GR".
+Após a fatura ficar no nível superior, deve assim o utilizador selecionar sobre o botão "Gravar novo GR".
 
 _(Imagem em atualização)_
 ![img_179.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_179.png)
@@ -1063,7 +1061,7 @@ No processo de Cobrança, deve o utilizador lançar as várias contas de disponi
 _(Imagem em atualização)_
 ![img_185.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_185.png)
 
-Deve o utilizador para dar continuidade ao processo, preencher: “Nº de entidade”, respetivo “Nº de tesouraria” e dar duplo clique na linha resumo para preenchimento automático dos restantes campos. Identificar igualmente qual o “Tipo de pagamento” e proceder à escolha da entidade bancária. Deve por fim pressionar sobre o botão "Gravar novo CO".
+Deve o utilizador para dar continuidade ao processo, preencher: “Nº de entidade”, respetivo “Nº de tesouraria” e dar duplo clique na linha resumo para preenchimento automático dos restantes campos. Identificar igualmente qual o “Tipo de pagamento” e proceder à escolha da entidade bancária. Deve por fim selecionar sobre o botão "Gravar novo CO".
 
 ![img_186.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_186.png)
 
@@ -1112,7 +1110,7 @@ No segundo separador, deve o utilizador para dar continuidade ao processo, preen
 
 ![img_196.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_196.png)
 
-Deve igualmente o utilizador atribuir “Nº de tesouraria” e dar duplo clique na linha resumo. Desta forma, o preenchimento dos restantes campos são automaticamente preenchidos. Deve por fim pressionar sobre o botão "Gravar novo CO".
+Deve igualmente o utilizador atribuir “Nº de tesouraria” e dar duplo clique na linha resumo. Desta forma, o preenchimento dos restantes campos são automaticamente preenchidos. Deve por fim selecionar sobre o botão "Gravar novo CO".
 
 ![img_197.png](https://spmssicc.github.io/pages/markdown/assets/mu_snc_ap/img_197.png)
 
