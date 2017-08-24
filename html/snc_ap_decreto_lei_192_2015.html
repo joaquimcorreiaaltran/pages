@@ -11,17 +11,12 @@
 </head>
 <body>
 	<header>
-			<div id="sidebar">
-					<a id="amenuLink" href="amenu-source.html">Menu</a>
-			</div>
+			<a id="amenuLink" href="amenu-source.html">Menu</a>
 	</header>
 	<div id="content">
 			<article id="documento" class="modulo">
 				<h1 style="text-align: center;padding: 0 1em 0em 1em">Decreto-Lei n.º 192/2015 (11/09/2015)</h1>
 				<iframe src="https://docs.google.com/gview?url=https://dre.pt/application/conteudo/70262478&embedded=true" style="width:100%; height:700px" frameborder="1"></iframe>
-				<div id="docButtons">
-				  <button title="Transferir documento" id="btnPDF" type="button" alt="btnPDF" onclick="DownloadPdf()"><i class="fa fa-file-pdf-o fa-fw"></i></button>
-				</div>
 				<noscript>
 					<h1>Ops! :(</h1>
 					<p>
@@ -39,9 +34,7 @@
 
 	<!-- libs -->
 	<script src="../js/jquery-3.1.1.js"></script>
-	<script src="../js/skel.min.js"></script>
 	<script src="../js/util.js"></script>
-	<script src="../js/main.js"></script>
 	<script src="../js/libs/showdown.js"></script>
 	<script src="../js/sicc-project.js"></script>
 	<script src="../js/libs/accordion-menu.js"></script>
@@ -49,11 +42,12 @@
 	<script src="../js/jquery.zoom.js" async></script>
 	<script>
 		$(function(){
+			//buttons to hide
+			var Btns = ["btnEditarDoc","btnShowToc","tocDropdown"];//["btnMenu","btnPDF","btnEditarDoc","btnShowToc","tocDropdown"]
+
+			loadDocButtons("",Btns);
 			loadFooter();
 		});
-		function DownloadPdf(){
-			window.open("https://dre.pt/application/conteudo/70262478","_blank")
-		}
 	</script>
 </body>
 

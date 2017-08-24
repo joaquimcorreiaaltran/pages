@@ -9,11 +9,11 @@
 		<link rel="stylesheet" href="../css/style.css">
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 </head>
-<body>
+<!--disable copy while te document is being produced by SICC team
+Remove this function when the document is finalized -->
+<body oncopy="return false" oncut="return false" onpaste="return false">
 	<header>
-			<div id="sidebar">
-					<a id="amenuLink" href="amenu-source.html">Menu</a>
-			</div>
+			<a id="amenuLink" href="amenu-source.html">Menu</a>
 	</header>
 	<div id="content">
 			<article id="documento" class="modulo">
@@ -31,12 +31,9 @@
 				<!--loaded with js-->
 			</footer>
 	</div>
-
 	<!-- libs -->
 	<script src="../js/jquery-3.1.1.js"></script>
-	<script src="../js/skel.min.js"></script>
 	<script src="../js/util.js"></script>
-	<script src="../js/main.js"></script>
 	<script src="../js/libs/showdown.js"></script>
 	<script src="../js/sicc-project.js"></script>
 	<script src="../js/libs/accordion-menu.js"></script>
@@ -45,19 +42,20 @@
 	<script>
 		$(function(){
 
-						document.body.style.cursor = 'progress';
+			document.body.style.cursor = 'progress';
+
+			//Buttons to hide in this page
+			var Btns = [""];//["btnMenu","btnPDF","btnEditarDoc","btnShowToc","tocDropdown"]
 
 			// convert .md file to html and place it into the html element sent (argument)
-		 	convertMdToHtml("documento", function() {
-				loadFooter();
+			convertMdToHtml("documento", function() {
 				loadDocButtons(function() {
 					//build the table of content
 					toc("tocDropdown");
-					showHideTitleBar();
-					document.body.style.cursor = 'auto';
-
-				});
+				},Btns);
+				loadFooter();
 			});
+			document.body.style.cursor = 'auto';
 		});
 	</script>
 </body>

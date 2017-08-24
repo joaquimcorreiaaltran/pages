@@ -47,27 +47,58 @@ function convertMdToHtml (elementId, funcao) {
 
 //Load html to the end of the document
 function loadFooter () {
-  $("footer").load("footer.html");
+  
+  var fileDirectory = "footer.html";
+
+  if(doc_name=="index"){
+    fileDirectory = "html/footer.html"
+  }
+
+  $("footer").load(fileDirectory);
+
 }
 
 //Adds auxilary buttons to the interface
-function loadDocButtons (funcao) {
-  $.get("doc_buttons.html", function (data) {
+function loadDocButtons (funcao, btnsToHide) {
 
-         /*$("#content").append(data);*/
-        $("#titleBar").append(data);
+  var fileDirectory = "doc_buttons.html";
+
+  if(doc_name=="index"){
+    fileDirectory = "html/doc_buttons.html"
+  }
+
+  $.get(fileDirectory, function (data) {
+
+        $("header").append(data);
+
+        $("#btnMenu").click(function(){
+          if(document.getElementById("accordion").classList.contains("showMenu")){
+            document.getElementById("accordion").classList.remove("showMenu");
+          }
+          else{
+            document.getElementById("accordion").classList.add("showMenu");
+          }
+        });
 
          $("#btnEditarDoc").click(function(){
            window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/"+doc_name+".md","_blank");
          });
 
-         if(doc_name != "mu_snc_ap"){ //the document mu_snc_ap has gifs
-           $("#btnPDF").click(function(){
-             window.open("https://spmssicc.github.io/pages/pdf/"+doc_name+".pdf","_blank");
-           });
+         /*btnPDF*/
+         if(doc_name == "snc_ap_circular_dgo_1381"){
+           $("#btnPDF").click(function(){window.open("http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1381.pdf","_blank")});
          }
-         else {
-           $("#btnPDF").remove();
+         else if(doc_name == "snc_ap_circular_dgo_1382"){
+           $("#btnPDF").click(function(){window.open("http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1382.pdf","_blank")});
+         }
+         else if(doc_name == "snc_ap_decreto_lei_85_2016"){
+           $("#btnPDF").click(function(){window.open("https://dre.pt/application/conteudo/105583346","_blank")});
+         }
+         else if(doc_name == "snc_ap_decreto_lei_192_2015"){
+           $("#btnPDF").click(function(){window.open("https://dre.pt/application/conteudo/70262478","_blank")});
+         }
+         else{
+           $("#btnPDF").click(function(){window.open("https://spmssicc.github.io/pages/pdf/"+doc_name+".pdf","_blank");});
          }
 
          $("#btnShowToc").click(function(){
@@ -77,35 +108,19 @@ function loadDocButtons (funcao) {
         if(funcao != undefined && typeof funcao == "function"){
           funcao();
         }
+
+        removeElements(btnsToHide);
+
      });
 
 }//close loadDocButtons()
 
-function showHideTitleBar(){
-
-  console.log("entrou na showHideTitleBar()");
-
-    var mywindow = $(window);
-    var mypos = mywindow.scrollTop();
-
-    mywindow.scroll(function() {
-
-        if((mywindow.scrollTop() > mypos) && ($('#titleBar').css('opacity') != 0) && (openDropdown.classList.contains('show')==false))
-        {
-            if((mywindow.scrollTop() - mypos)>50){
-              $('#titleBar').fadeOut();
-              console.log("Reduz a opacidade da titleBar!");
-            }
-        }
-        else
-        {
-            $('#titleBar').fadeIn();
-            console.log("Aumenta a opacidade! da titleBar!");
-        }
-
-        mypos = mywindow.scrollTop();
-     });
+function removeElements(elements){
+    for(i=0; i < elements.length; i++){
+      $("#"+elements[i]).remove();
+    }
 }
+
 
 
 // Add zoom functionality to images in the HTML
@@ -233,8 +248,15 @@ function toc(elementToPopulate){
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function showToc() {
+
     document.getElementById("tocDropdown").classList.toggle("show");
-    document.getElementById("btnShowToc").classList.toggle("show");
+
+    var tocClass = document.getElementById("tocDropdown").classList.contains("show");
+    var btnClass = document.getElementById("btnShowToc").classList.contains("show");
+
+    if(tocClass != btnClass){
+      document.getElementById("btnShowToc").classList.toggle("show");
+    }
 };
 
 // Close the dropdown menu if the user clicks outside of it
