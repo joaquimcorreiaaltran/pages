@@ -19,6 +19,22 @@ dimmingOpacity = 0.5;
 dimmingGeckoFix = true;
 blockRightClick = true;
 
+
+theObject.is(window).on("load, resize", function() {
+//$(window).on("load, resize", function() {
+
+  if (doc_name == "index") {
+
+    var viewportWidth = $(window).width();
+    if (viewportWidth > 1400) {
+      document.getElementById("accordion").classList.add("showMenu");
+    }
+    else{
+      document.getElementById("indexComeceExplorar").innerHTML = '<hr/><p style="padding: 0em 0em 0em 0em">Começe a explorar através do menu no topo esquerdo da página <img style="width:25" src="img\\btn-menu.png"></p><hr/>';
+    }
+    }
+});
+
 //load and convert Markdown to Html and show it
 function convertMdToHtml (elementId, funcao) {
 

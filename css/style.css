@@ -622,7 +622,7 @@ h4:target {
     left: -100%;
     box-shadow:4px 0 18px rgba(0,0,0,0.2);
     background: url(../img/logos/imagem_background.png) no-repeat;
-    background-color: #f7fffe;
+    background-color: white;
     z-index:99;
     height: 95vh;
     transition: left 0.4s ease-out;
