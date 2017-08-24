@@ -47,7 +47,7 @@ function convertMdToHtml (elementId, funcao) {
 
 //Load html to the end of the document
 function loadFooter () {
-  
+
   var fileDirectory = "footer.html";
 
   if(doc_name=="index"){
@@ -96,6 +96,9 @@ function loadDocButtons (funcao, btnsToHide) {
          }
          else if(doc_name == "snc_ap_decreto_lei_192_2015"){
            $("#btnPDF").click(function(){window.open("https://dre.pt/application/conteudo/70262478","_blank")});
+         }
+         else if(doc_name == "snc_ap_apresentacao"){
+           $("#btnPDF").click(function(){window.open("https://view.officeapps.live.com/op/embed.aspx?src=https://spmssicc.github.io/pages/pptx/SPMS_SICC_SNC_AP_20160606_04-pics.pptx","_blank")});
          }
          else{
            $("#btnPDF").click(function(){window.open("https://spmssicc.github.io/pages/pdf/"+doc_name+".pdf","_blank");});

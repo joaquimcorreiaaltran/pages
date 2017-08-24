@@ -18,7 +18,6 @@
 	<div id="content">
 			<article id="documento" class="modulo">
 				<h1 style="text-align: center;padding: 0 1em 0em 1em">SNC-AP para entidades de saúde</h1>
-				<!--<iframe src="https://docs.google.com/gview?url=https://spmssicc.github.io/pages/pdf/SPMS_SICC_SNC_AP_20160606_04.pdf&embedded=true" style="width:100%; height:90vh" frameborder="1"></iframe>-->
 				<div style='position: relative; width: 100%; height: 0px; padding-bottom: 79%;'>
 					<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://spmssicc.github.io/pages/pptx/SPMS_SICC_SNC_AP_20160606_04-pics.pptx' style='position: absolute; left: 0px; top: 0px; width: 100%; height: 100%'></iframe>
 				</div>
@@ -39,13 +38,22 @@
 
 	<!-- libs -->
 	<script src="../js/jquery-3.1.1.js"></script>
-	<script src="../js/skel.min.js"></script>
-	<script src="../js/util.js"></script>
-	<script src="../js/main.js"></script>
-	<script src="../js/libs/showdown.js"></script>
 	<script src="../js/sicc-project.js"></script>
 	<script src="../js/libs/accordion-menu.js"></script>
-	<script src="../js/highslide-with-gallery.js"></script>
-	<script src="../js/jquery.zoom.js" async></script>
+	<script>
+		$(function(){
+
+			document.body.style.cursor = 'progress';
+
+			//Buttons to hide in this page
+			var Btns = ["btnEditarDoc","btnShowToc","tocDropdown"];//["btnMenu","btnPDF","btnEditarDoc","btnShowToc","tocDropdown"]
+
+			// convert .md file to html and place it into the html element sent (argument)
+				loadDocButtons("",Btns);
+				loadFooter();
+
+			document.body.style.cursor = 'auto';
+		});
+	</script>
 </body>
 </html>
