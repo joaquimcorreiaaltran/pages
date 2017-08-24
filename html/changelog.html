@@ -48,8 +48,13 @@
 	<!-- <script src="../js/jquery.zoom.js" async></script> -->
 	<script>
 		$(function(){
-			loadFooter();
+
+			//Buttons to hide in this page
+			var Btns = ["btnPDF","btnEditarDoc","btnShowToc","tocDropdown"];//["btnMenu","btnPDF","btnEditarDoc","btnShowToc","tocDropdown"]
+
 			loadCommitHistory();
+			loadDocButtons("",Btns);
+			loadFooter();
 		});
 	</script>
 </body>
