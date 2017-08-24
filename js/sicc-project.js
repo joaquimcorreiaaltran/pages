@@ -74,9 +74,11 @@ function loadDocButtons (funcao, btnsToHide) {
         $("#btnMenu").click(function(){
           if(document.getElementById("accordion").classList.contains("showMenu")){
             document.getElementById("accordion").classList.remove("showMenu");
+            document.getElementById("btnMenu").classList.remove("showMenu")
           }
           else{
             document.getElementById("accordion").classList.add("showMenu");
+            document.getElementById("btnMenu").classList.add("showMenu")
           }
         });
 
