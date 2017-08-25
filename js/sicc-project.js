@@ -67,7 +67,7 @@ function loadDocButtons (funcao, btnsToHide) {
     fileDirectory = "html/doc_buttons.html";
   }
 
-  console.log("Inside loadDocButtons(). doc_name: \"" + doc_name + "\". fileDirectory: \"" + "\"");
+  console.log("Inside loadDocButtons(). doc_name: \"" + doc_name + "\". fileDirectory: \"" + fileDirectory +"\"");
 
   $.get(fileDirectory, function (data) {
 
