@@ -32,7 +32,7 @@ self.addEventListener('install', e => {
         './img/',
         './img/logos/',
         './img/highslide/',
-        './html/'
+        './html/',
         './markdown/'
       ])
       .then(() => self.skipWaiting());
