@@ -13,11 +13,22 @@ self.addEventListener('install', e => {
     caches.open('airhorner').then(cache => {
       return cache.addAll([
         './',
-        './teste.doc',
         './index.html',
+        './js/libs/accordion-menu.js',
+        './js/libs/jquery.zoom.js',
+        './js/libs/jquery.zoom.min.js',
+        './js/libs/showdown.js',
+        './js/cache-polyfill.js',
+        './js/highslide-with-gallery.js',
         './js/jquery-3.1.1.js',
+        './js/jquery.timeago.js',
+        './js/jquery.zoom.js',
         './js/sicc-project.js',
-        './js/libs/accordion-menu.js'
+        './css/style.css',
+        './css/font-awesome.css',
+        './css/font-awesome.min.css',
+        '.html/about.html',
+        './markdown/about.md'
       ])
       .then(() => self.skipWaiting());
     })
