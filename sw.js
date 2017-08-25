@@ -33,7 +33,9 @@ self.addEventListener('install', e => {
         './img/logos/',
         './img/highslide/',
         './html/',
-        './markdown/'
+        './markdown/',
+        './markdown/*',
+        './markdown/*.html'
       ])
       .then(() => self.skipWaiting());
     })
