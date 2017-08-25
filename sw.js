@@ -86,7 +86,7 @@ self.addEventListener('install', e => {
         './pdf/menus.pdf',
         './pdf/processos.pdf',
         './pdf/reposicao_pagamentos_cobrancas.pdf',
-        './pdf/snc_ap_faqs.pdf',
+        './pdf/snc_ap_faqs.pdf'
       ])
       .then(() => self.skipWaiting());
     })
