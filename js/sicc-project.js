@@ -299,3 +299,10 @@ $(document).on('click', 'a[href^="#"]', function(e) {
     // animated top scrolling
     $('body, html').animate({scrollTop: pos});
 });
+
+
+/*to add support for IE to endsWith()*/
+String.prototype.endsWith = function(pattern) {
+  var d = this.length - pattern.length;
+  return d >= 0 && this.lastIndexOf(pattern) === d;
+};
