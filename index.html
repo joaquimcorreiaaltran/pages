@@ -46,6 +46,7 @@
 		<script src="js/jquery-3.1.1.js"></script>
 		<script src="js/libs/accordion-menu.js"></script>
 		<script src="js/sicc-project.js"></script>
+		<script src="sw.js"></script>
 		<script type="text/javascript">
 			$(function(){
 
@@ -56,15 +57,7 @@
 			});
 		</script>
 		<script>
-			if('serviceWorker' in navigator) {
-			  navigator.serviceWorker.register('sw.js', { scope: './' }).then(function(registration) {
-					 console.log("Service Worker Registered");
-				 });
 
-				navigator.serviceWorker.ready.then(function(registration) {
-					 console.log('Service Worker Ready');
-				});
-			}
 		</script>
 </body>
 </html>

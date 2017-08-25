@@ -47,12 +47,15 @@ function convertMdToHtml (elementId, funcao) {
 function loadFooter() {
 
   var fileDirectory = "footer.html";
-
   var path = window.location.pathname;
 
-  if(path.endsWith("pages") || path.endsWith("pages/") || path.endsWith("pages/index.html") ){
+  console.log("[path]", path);
+
+  if(path.endsWith("pages") || path.endsWith("pages/") || path.endsWith("pages/index.html") || path.endsWith("pages/index.html.html") ){
     fileDirectory = "html/footer.html";
   }
+
+  console.log("[fileDirectory]", fileDirectory);
 
   $("footer").load(fileDirectory);
 
@@ -64,7 +67,7 @@ function loadDocButtons (funcao, btnsToHide) {
   var fileDirectory = "doc_buttons.html";
   var path = window.location.pathname;
 
-  if(path.endsWith("pages") || path.endsWith("pages/") || path.endsWith("pages/index.html") ){
+  if(path.endsWith("pages") || path.endsWith("pages/") || path.endsWith("pages/index.html") || path.endsWith("pages/index.html.html") ){
     fileDirectory = "html/doc_buttons.html";
   }
 
