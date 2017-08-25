@@ -51,7 +51,7 @@ function loadFooter () {
   var fileDirectory = "footer.html";
 
   if(doc_name=="index"){
-    fileDirectory = "html/footer.html"
+    fileDirectory = "html/footer.html";
   }
 
   $("footer").load(fileDirectory);
@@ -63,9 +63,11 @@ function loadDocButtons (funcao, btnsToHide) {
 
   var fileDirectory = "doc_buttons.html";
 
-  if(doc_name=="index"){
-    fileDirectory = "html/doc_buttons.html"
+  if(doc_name == "index"){
+    fileDirectory = "html/doc_buttons.html";
   }
+
+  console.log("Inside loadDocButtons(). doc_name: \"" + doc_name + "\". fileDirectory: \"" + "\"");
 
   $.get(fileDirectory, function (data) {
 
