@@ -46,15 +46,13 @@ function convertMdToHtml (elementId, funcao) {
 }/*close convertMdToHtml()*/
 
 //Load html to the end of the document
-function loadFooter () {
+function loadFooter() {
 
   var fileDirectory = "footer.html";
 
   var path = window.location.pathname;
 
-  console.log("Inside loadDocButtons(). Window path: " + path);
-
-  if(path.endsWidth("pages") || path.endsWidth("pages/") || path.endsWidth("pages/index.html") ){
+  if(path.endsWith("pages") || path.endsWith("pages/") || path.endsWith("pages/index.html") ){
     fileDirectory = "html/footer.html";
   }
 
