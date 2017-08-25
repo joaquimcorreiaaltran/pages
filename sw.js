@@ -7,22 +7,37 @@ it will only be able to interact with pages in the scripts directory or below.*/
 
 importScripts('js/cache-polyfill.js');
 
-self.addEventListener('install', function(e) {
+self.addEventListener('install', e => {
+  let timeStamp = Date.now();
   e.waitUntil(
-    caches.open('spmssicc').then(function(cache) {
+    caches.open('airhorner').then(cache => {
       return cache.addAll([
         '/',
+        '/index.html?timestamp=${timeStamp}',
+        '/styles/main.css?timestamp=${timeStamp}',
+        '/scripts/main.min.js?timestamp=${timeStamp}',
+        '/sounds/airhorn.mp3?timestamp=${timeStamp}',
         '/index.html',
         '/js/jquery-3.1.1.js',
         '/js/sicc-project.js',
         '/js/libs/accordion-menu.js',
         '/sounds/airhorn.mp3'
-      ]);
+      ])
+      .then(() => self.skipWaiting());
     })
-  );
+  )
 });
 
 
-self.addEventListener('fetch', function(event) {
-  console.log(event.request.url);
+self.addEventListener('activate',  event => {
+  event.waitUntil(self.clients.claim());
+});
+
+
+self.addEventListener('fetch', event => {
+  event.respondWith(
+    caches.match(event.request, {ignoreSearch:true}).then(response => {
+      return response || fetch(event.request);
+    })
+  );
 });
