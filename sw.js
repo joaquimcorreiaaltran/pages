@@ -32,7 +32,7 @@ self.addEventListener('install', e => {
         './img/logos/SICC_logo_300x148.png',
         './img/logos/SPMS2016B_300x148.png',
         './img/logos/republica_portuguesa_300x148.png',
-        './img/logos/imagem_background.png'
+        './img/logos/imagem_background.png',
         './js/libs/accordion-menu.js',
         './js/libs/jquery.zoom.js',
         './js/libs/jquery.zoom.min.js',
@@ -48,7 +48,7 @@ self.addEventListener('install', e => {
         './markdown/chave_orcamental_por_ano.md)',
         './markdown/documentos_af_e_ar.md)',
         './markdown/gestao_exercicios.md)',
-        './markdown/gestao_projetos.md)',
+        './markdown/gestao_projetos.md)'
       ])
       .then(() => self.skipWaiting());
     })
