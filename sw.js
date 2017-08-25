@@ -10,7 +10,7 @@ importScripts('js/cache-polyfill.js');
 self.addEventListener('install', e => {
   let timeStamp = Date.now();
   e.waitUntil(
-    caches.open('airhorner').then(cache => {
+    caches.open('spmssicc').then(cache => {
       return cache.addAll([
         '/',
         '/index.html',
