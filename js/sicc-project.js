@@ -50,7 +50,11 @@ function loadFooter () {
 
   var fileDirectory = "footer.html";
 
-  if(doc_name=="index"){
+  var path = window.location.pathname;
+
+  console.log("Inside loadDocButtons(). Window path: " + path);
+
+  if(path.endsWidth("pages") || path.endsWidth("pages/") || path.endsWidth("pages/index.html") ){
     fileDirectory = "html/footer.html";
   }
 
@@ -62,8 +66,11 @@ function loadFooter () {
 function loadDocButtons (funcao, btnsToHide) {
 
   var fileDirectory = "doc_buttons.html";
+  var path = window.location.pathname;
 
-  if(doc_name == "index"){
+  console.log("Inside loadDocButtons(). Window path: " + path);
+
+  if(path.endsWidth("pages") || path.endsWidth("pages/") || path.endsWidth("pages/index.html") ){
     fileDirectory = "html/doc_buttons.html";
   }
 
