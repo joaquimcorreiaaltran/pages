@@ -13,7 +13,7 @@ self.addEventListener('install', e => {
     caches.open('airhorner').then(cache => {
       return cache.addAll([
         './',
-        './index.html?timestamp=${timeStamp}',
+        './teste.doc',
         './index.html',
         './js/jquery-3.1.1.js',
         './js/sicc-project.js',

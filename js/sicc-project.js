@@ -22,8 +22,6 @@ blockRightClick = true;
 //load and convert Markdown to Html and show it
 function convertMdToHtml (elementId, funcao) {
 
-  console.log("Nome do documento a converter para html:\"" + doc_name + "\"");
-
    var request = new XMLHttpRequest();
    //Asynchronous request (true=asynchronous)
    request.open('GET', '../markdown/'+ doc_name +'.md',true);
@@ -66,13 +64,9 @@ function loadDocButtons (funcao, btnsToHide) {
   var fileDirectory = "doc_buttons.html";
   var path = window.location.pathname;
 
-  console.log("Inside loadDocButtons(). Window path: " + path);
-
   if(path.endsWith("pages") || path.endsWith("pages/") || path.endsWith("pages/index.html") ){
     fileDirectory = "html/doc_buttons.html";
   }
-
-  console.log("Inside loadDocButtons(). doc_name: \"" + doc_name + "\". fileDirectory: \"" + fileDirectory +"\"");
 
   $.get(fileDirectory, function (data) {
 
@@ -211,8 +205,6 @@ TOC - Builds the table of contents based on HTML elements choosen and insert the
 */
 function toc(elementToPopulate){
 
-  console.log("Entrou na toc()");
-
   htmlToPopulate = document.getElementById(elementToPopulate);
 
   if (document.body.contains(htmlToPopulate)==true){
@@ -235,7 +227,6 @@ function toc(elementToPopulate){
         newLine = "<li>" +
                     "<a class='toc_"+nodeName+"' href='" + link + "'>"  + title + "</a>" +
                   "</li>";
-        //console.log(newLine);
 
         toc_html += newLine;
   		});
@@ -243,9 +234,6 @@ function toc(elementToPopulate){
   		toc_html +=
   		   "</ul>" +
   		  "</nav>";
-
-      //$(".dropdown-content").prepend(toc_html);
-      console.log("HTML do Índice a colocar no elemento \"" + elementToPopulate + "\":\n" + toc_html);
 
       htmlToPopulate.innerHTML = toc_html;
       $('#btnShowToc').click();
