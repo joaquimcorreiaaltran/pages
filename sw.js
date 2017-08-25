@@ -12,16 +12,12 @@ self.addEventListener('install', e => {
   e.waitUntil(
     caches.open('airhorner').then(cache => {
       return cache.addAll([
-        '/',
-        '/index.html?timestamp=${timeStamp}',
-        '/styles/main.css?timestamp=${timeStamp}',
-        '/scripts/main.min.js?timestamp=${timeStamp}',
-        '/sounds/airhorn.mp3?timestamp=${timeStamp}',
-        '/index.html',
-        '/js/jquery-3.1.1.js',
-        '/js/sicc-project.js',
-        '/js/libs/accordion-menu.js',
-        '/sounds/airhorn.mp3'
+        './',
+        './index.html?timestamp=${timeStamp}',
+        './index.html',
+        './js/jquery-3.1.1.js',
+        './js/sicc-project.js',
+        './js/libs/accordion-menu.js'
       ])
       .then(() => self.skipWaiting());
     })
