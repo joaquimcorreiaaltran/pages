@@ -70,7 +70,7 @@ function loadDocButtons (funcao, btnsToHide) {
 
   console.log("Inside loadDocButtons(). Window path: " + path);
 
-  if(path.endsWidth("pages") || path.endsWidth("pages/") || path.endsWidth("pages/index.html") ){
+  if(path.endsWith("pages") || path.endsWith("pages/") || path.endsWith("pages/index.html") ){
     fileDirectory = "html/doc_buttons.html";
   }
 
