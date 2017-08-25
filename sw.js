@@ -100,15 +100,15 @@ if('serviceWorker' in navigator) {
 self.addEventListener('install', e => {
   console.log("[ServiceWorker] Installed");
 
-  e.waitUntil(updateStaticCache()
+  e.waitUntil(
 
-    /*caches.open(cacheName).then(cache => {
+    caches.open(cacheName).then(cache => {
 
       console.log("[ServiceWorker] Caching cacheFiles");
       return cache.addAll(cacheFiles)
       .then(() => self.skipWaiting());
 
-  })*/
+    })
   )
 });
 
@@ -119,35 +119,11 @@ self.addEventListener('activate',  event => {
 
 
 self.addEventListener('fetch', event => {
-  var request = event.request;
-  console.log("[ServiceWorker] Fetching", request.url);
+  console.log("[ServiceWorker] Fetching", event.request.url);
   event.respondWith(
-    caches.match(request, {ignoreSearch:true}).then(response => {
-      // return from cache, otherwise fetch from network
-      return response || fetch(request);
+    caches.match(event.request, {ignoreSearch:true}).then(response => {
+      console.log("[ServiceWorker] Found in cache ", event.request.url);
+      return response || fetch(event.request);
     })
   );
 });
-
-
-
-var updateStaticCache = function() {
-    return caches.open(cacheName).then(function(cache) {
-        return Promise.all(cacheFiles.map(function(value) {
-
-            var request = new Request(value);
-            var url = new URL(request.url);
-
-            if (url.origin != location.origin) {
-                request = new Request(value, {mode: 'no-cors'});
-            }
-            return fetch(request).then(function(response) {
-
-                var cachedCopy = response.clone();
-                
-                return cache.put(request, cachedCopy);
-
-            });
-        }))
-    })
-};
