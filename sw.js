@@ -27,15 +27,15 @@ self.addEventListener('install', e => {
         './css/style.css',
         './css/font-awesome.css',
         './css/font-awesome.min.css',
+        './html/doc_buttons.html',
+        './html/footer.html',
+        './html/amenu-source.html',
         './html/about.html',
         './markdown/about.md',
-        './img/',
         './img/logos/',
         './img/highslide/',
-        './html/',
-        './markdown/',
-        './markdown/*',
-        './markdown/*.html'
+        './html/about.html',
+        './markdown/about.md'
       ])
       .then(() => self.skipWaiting());
     })
