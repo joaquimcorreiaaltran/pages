@@ -26,9 +26,9 @@ self.addEventListener('install', e => {
         './html/changelog.html',
         './html/chave_orcamental_por_ano.html',
         './html/doc_buttons.html',
-        './html/documentos_af_e_ar.html)',
-        './html/gestao_exercicios.html)',
-        './html/gestao_projetos.html)',
+        './html/documentos_af_e_ar.html',
+        './html/gestao_exercicios.html',
+        './html/gestao_projetos.html',
         './img/logos/SICC_logo_300x148.png',
         './img/logos/SPMS2016B_300x148.png',
         './img/logos/republica_portuguesa_300x148.png',
@@ -44,11 +44,11 @@ self.addEventListener('install', e => {
         './js/jquery.zoom.js',
         './js/sicc-project.js',
         './markdown/about.md',
-        './markdown/cer_migracao_sicc.md)',
-        './markdown/chave_orcamental_por_ano.md)',
-        './markdown/documentos_af_e_ar.md)',
-        './markdown/gestao_exercicios.md)',
-        './markdown/gestao_projetos.md)'
+        './markdown/cer_migracao_sicc.md',
+        './markdown/chave_orcamental_por_ano.md',
+        './markdown/documentos_af_e_ar.md',
+        './markdown/gestao_exercicios.md',
+        './markdown/gestao_projetos.md'
       ])
       .then(() => self.skipWaiting());
     })
