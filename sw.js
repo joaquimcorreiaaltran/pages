@@ -32,8 +32,6 @@ self.addEventListener('install', e => {
         './html/amenu-source.html',
         './html/about.html',
         './markdown/about.md',
-        './img/logos/',
-        './img/highslide/',
         './html/about.html',
         './markdown/about.md'
       ])
