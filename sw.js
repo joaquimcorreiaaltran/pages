@@ -113,7 +113,6 @@ self.addEventListener('fetch', event => {
   console.log("[ServiceWorker] Fetching", event.request.url);
   event.respondWith(
     caches.match(event.request, {ignoreSearch:true}).then(response => {
-      console.log("[ServiceWorker] Found in cache ", event.request.url);
       return response || fetch(event.request);
     })
   );

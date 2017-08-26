@@ -15,12 +15,17 @@
       "sizes": "96x96"
     },
     {
+      "src": "img/logos/logo_sicc_144x144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
       "src": "img/logos/logo_sicc_192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     }
   ],
-  "scope": "./",
+  "scope": ".",
   "start_url": "index.html?launcher=true",
   "display": "standalone",
   "theme_color": "#58a281",
