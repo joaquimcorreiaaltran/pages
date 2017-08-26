@@ -1169,8 +1169,10 @@ footer img {
 @media screen and (max-width: 560px) {
 
   #docButtons p{
-    opacity: 0;
+    opacity: 1;
     transition: all 3s ease;
+    font-size: 0.6em;
+    content: "SICC";
   }
 
   #content {
