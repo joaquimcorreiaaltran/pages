@@ -88,17 +88,6 @@ var cacheFiles = [
 ];
 
 
-if('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('./sw.js', { scope: './' }).then(function(registration) {
-     console.log("[ServiceWorker] Registered");
-   });
-
-  navigator.serviceWorker.ready.then(function(registration) {
-     console.log('[ServiceWorker] Ready');
-  });
-}
-
-
 self.addEventListener('install', e => {
   console.log("[ServiceWorker] Installed");
 
