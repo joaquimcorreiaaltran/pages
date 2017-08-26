@@ -14,7 +14,7 @@ var cacheFiles = [
     '/pages/fonts/fontawesome-webfont.eot',
     '/pages/fonts/fontawesome-webfont.woff2?v=4.7.0',
 
-    '/pages/html/about.html',
+/*    '/pages/html/about.html',
     '/pages/html/amenu-source.html',
     '/pages/html/footer.html',
     '/pages/html/cer_migracao_sicc.html',
@@ -42,7 +42,8 @@ var cacheFiles = [
     '/pages/img/logos/SICC_logo_300x148.png',
     '/pages/img/logos/SPMS2016B_300x148.png',
     '/pages/img/logos/republica_portuguesa_300x148.png',
-    '/pages/img/logos/imagem_background.png',
+    '/pages/img/logos/imagem_background.png',*/
+
     '/pages/js/libs/accordion-menu.js',
     '/pages/js/libs/jquery.zoom.js',
     '/pages/js/libs/jquery.zoom.min.js',
@@ -69,7 +70,7 @@ var cacheFiles = [
     '/pages/markdown/reposicao_pagamentos_cobrancas.md',
     '/pages/markdown/snc_ap_faqs.md',
 
-    '/pages/pdf/about.pdf',
+/*    '/pages/pdf/about.pdf',
     '/pages/pdf/chave_orcamental_por_ano.pdf',
     '/pages/pdf/documentos_af_e_ar.pdf',
     '/pages/pdf/gestao_exercicios.pdf',
@@ -80,9 +81,10 @@ var cacheFiles = [
     '/pages/pdf/menus.pdf',
     '/pages/pdf/processos.pdf',
     '/pages/pdf/reposicao_pagamentos_cobrancas.pdf',
-    '/pages/pdf/snc_ap_faqs.pdf',
+    '/pages/pdf/snc_ap_faqs.pdf',*/
 
-    '/pages/pptx/SPMS_SICC_SNC_AP_20160606_04-pics.pptx'
+/*    '/pages/pptx/SPMS_SICC_SNC_AP_20160606_04-pics.pptx'
+*/
 ];
 
 
@@ -92,11 +94,7 @@ self.addEventListener('install', e => {
   e.waitUntil(
 
     caches.open(cacheName).then(cache => {
-
       console.log("[ServiceWorker] Caching cacheFiles");
-
-      importScripts('/pages/js/cache-polyfill.js');
-      
       return cache.addAll(cacheFiles)
       .then(() => self.skipWaiting());
 
