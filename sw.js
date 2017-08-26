@@ -4,7 +4,7 @@
 or its subdirectories. This means that if you place the service worker file in a scripts directory
 it will only be able to interact with pages in the scripts directory or below.*/
 
-importScripts('../pages/sjs/cache-polyfill.js');
+importScripts('../pages/js/cache-polyfill.js');
 
 var cacheName = 'spmssicc_' + Date.now();
 var cacheFiles = [
