@@ -14,7 +14,7 @@ var cacheFiles = [
     '/pages/fonts/fontawesome-webfont.eot',
     '/pages/fonts/fontawesome-webfont.woff2?v=4.7.0',
 
-/*    '/pages/html/about.html',
+    '/pages/html/about.html',
     '/pages/html/amenu-source.html',
     '/pages/html/footer.html',
     '/pages/html/cer_migracao_sicc.html',
@@ -42,7 +42,7 @@ var cacheFiles = [
     '/pages/img/logos/SICC_logo_300x148.png',
     '/pages/img/logos/SPMS2016B_300x148.png',
     '/pages/img/logos/republica_portuguesa_300x148.png',
-    '/pages/img/logos/imagem_background.png',*/
+    '/pages/img/logos/imagem_background.png',
 
     '/pages/js/libs/accordion-menu.js',
     '/pages/js/libs/jquery.zoom.js',
