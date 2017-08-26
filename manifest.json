@@ -26,7 +26,7 @@
     }
   ],
   "scope": "index.html",
-  "start_url": "index.html/?utm_source=homescreen",
+  "start_url": "https://spmssicc.github.io/pages/index.html/?utm_source=homescreen",
   "display": "standalone",
   "theme_color": "#58a281",
   "background_color": "#58a281",
