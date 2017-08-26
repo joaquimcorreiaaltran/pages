@@ -1170,9 +1170,8 @@ footer img {
 
   #docButtons p{
     opacity: 1;
+    font-size: 0.8em;
     transition: all 3s ease;
-    font-size: 0.6em;
-    content: "SICC";
   }
 
   #content {
