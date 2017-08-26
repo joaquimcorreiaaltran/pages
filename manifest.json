@@ -22,9 +22,9 @@
   ],
   "scope": "./",
   "start_url": "index.html?launcher=true",
-  "display": "fullscreen",
-  "theme_color": "aliceblue",
-  "background_color": "orange",
+  "display": "standalone",
+  "theme_color": "#58a281",
+  "background_color": "#58a281",
   "serviceworker": {
     "src": "sw.js",
     "scope": "./",
