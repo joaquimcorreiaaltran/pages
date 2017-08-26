@@ -31,7 +31,7 @@
     }
   ],
   "scope": "index.html",
-  "start_url": "https://spmssicc.github.io/pages/index.html/?utm_source=homescreen",
+  "start_url": "index.html",
   "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#58a281",
