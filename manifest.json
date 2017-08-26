@@ -1,0 +1,44 @@
+{
+  "lang": "pt",
+  "short_name": "SICC Manuais",
+  "name": "SICC - Documentação para utilizadores",
+  "description": "Esta aplicação disponibiliza documentação acerca do sistema de gestão financeira SICC",
+  "icons": [
+    {
+      "src": "img/logos/logo_sicc_48x48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "img/logos/logo_sicc_96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "img/logos/logo_sicc_192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "scope": "./",
+  "start_url": "index.html?launcher=true",
+  "display": "fullscreen",
+  "theme_color": "aliceblue",
+  "background_color": "orange",
+  "serviceworker": {
+    "src": "sw.js",
+    "scope": "./",
+    "use_cache": true
+  },
+  "screenshots": [{
+      "src": "img/screenshots/iphone001.png",
+      "sizes": "749x1213",
+      "type": "image/png"
+    },
+    {
+      "src": "img/screenshots/iphone001.png",
+      "sizes": "750x1216",
+      "type": "image/png"
+  }]
+
+}

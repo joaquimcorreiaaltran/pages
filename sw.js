@@ -82,7 +82,9 @@ var cacheFiles = [
     './pdf/menus.pdf',
     './pdf/processos.pdf',
     './pdf/reposicao_pagamentos_cobrancas.pdf',
-    './pdf/snc_ap_faqs.pdf'
+    './pdf/snc_ap_faqs.pdf',
+
+    './pptx/SPMS_SICC_SNC_AP_20160606_04-pics.pptx'
 ];
 
 
