@@ -1,13 +1,14 @@
-<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-		<title>SICC - Manual de Utilizador</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
-		<!--<link rel="stylesheet" href="../../css/main.css">-->
-		<link rel="stylesheet" href="../css/style.css">
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+	<title>SICC - Documentação</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="manifest" href="../manifest.json">
+	<link rel="icon" href="../img/icons/sicc.ico" type="image/vnd.microsoft.icon">
+	<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="../css/style.css">
+	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 </head>
 <body>
 	<header>
@@ -50,6 +51,17 @@
 			loadDocButtons("",Btns);
 			loadFooter();
 		});
+	</script>
+	<script>
+		if('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('../sw.js', { scope: './' }).then(function(registration) {
+				 console.log("[ServiceWorker] Registered");
+			 });
+
+			navigator.serviceWorker.ready.then(function(registration) {
+				 console.log('[ServiceWorker] Ready');
+			});
+		}
 	</script>
 </body>
 
