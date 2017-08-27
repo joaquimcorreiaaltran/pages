@@ -632,9 +632,6 @@ a.toc_h6 {
 
 /*---------- Indents ------*/
 
-/*top-level*/
-#accordion .top > div, #accordion li.top { padding-left:0px; padding-top:0px;padding-bottom:0px; }
-
 #accordion .top > a {width: auto;}
 
 /*2nd-level*/
@@ -677,6 +674,13 @@ a.toc_h6 {
   transition: color 0.3s, background-color 1s;
 }
 
+#accordion li {
+  line-height: 3em;
+  vertical-align: middle;
+  text-indent: 1em;
+  transition: color 0.3s, background-color 1s;
+}
+
 #accordion a i{
   text-indent: 0em;
 }
@@ -684,16 +688,6 @@ a.toc_h6 {
 /* Add borders to the top LIs */
 #accordion li.top {
   border-top: 1px solid #aaa;
-}
-
-#accordion li {
-    line-height: 3em;
-    vertical-align: middle;
-    -ms-user-select:none;
-    -mos-user-select:none;
-    -webkit-user-select:none;
-    -o-user-select:none;
-    user-select:none;
 }
 
 #accordion i { margin-right: 0.5em;}
