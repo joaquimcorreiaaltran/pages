@@ -687,19 +687,13 @@ a.toc_h6 {
 }
 
 #accordion li {
+    line-height: 3em;
+    vertical-align: middle;
     -ms-user-select:none;
     -mos-user-select:none;
     -webkit-user-select:none;
     -o-user-select:none;
     user-select:none;
-}
-
-#accordion li.has-sub ul{
-  margin-top: 0.8em;
-}
-
-#accordion li.top.has-sub{
-  line-height: 3em;
 }
 
 #accordion i { margin-right: 0.5em;}
