@@ -643,6 +643,7 @@ a.toc_h6 {
 #accordion > ul > li > div{
   color: #666666;
   cursor: pointer;
+  line-height: 3em;
 }
 
 #accordion .active > div{
@@ -661,7 +662,7 @@ a.toc_h6 {
   color: #666666;
   text-decoration: none;
   text-indent: 1em;
-  transition: color 0.3s, background-color 1s;
+  transition: color 0.3s, background-color 0.3s;
 }
 
 #accordion a i{
@@ -705,7 +706,7 @@ a.toc_h6 {
   font-size: 1em;
   font-weight: bold;
   background-color: rgba(236,249,238,.54);
-  transition: color 0.3s, background-color 1s;
+  transition: color 0.3s, background-color 0.3s;
 }
 
 #accordion > ul li.has-sub>div:hover{
@@ -713,7 +714,7 @@ a.toc_h6 {
   font-weight: bold;
   cursor: pointer;
   background-color: rgba(236,249,238,.54);
-  transition: color 0.3s, background-color 1s;
+  transition: color 0.3s, background-color 0.3s;
 }
 
 
