@@ -66,8 +66,6 @@ p, li, div{
 }
 
 
-
-
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection declarations have to be separate
@@ -667,14 +665,14 @@ a.toc_h6 {
 /* links */
 #accordion a {
   color: #666666;
-  text-decoration:none;
+  text-decoration: none;
   line-height: 3em;
   vertical-align: middle;
   text-indent: 1em;
   transition: color 0.3s, background-color 1s;
 }
 
-#accordion li {
+#accordion div, #accordion li {
   line-height: 3em;
   vertical-align: middle;
   text-indent: 1em;
