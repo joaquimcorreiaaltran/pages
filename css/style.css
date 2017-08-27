@@ -656,6 +656,8 @@ a.toc_h6 {
 
 /* links */
 #accordion a {
+  display: block;
+  line-height: 3em;
   color: #666666;
   text-decoration: none;
   text-indent: 1em;
