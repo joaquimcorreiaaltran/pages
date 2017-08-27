@@ -75,7 +75,7 @@ p, li, div{
  */
 
 ::-moz-selection { background: #0218dd; color: #fff; text-shadow: none; }
-::selection { background: #40A293; color: #fff; text-shadow: none;  }
+::selection { background: #29615D; color: #fff; text-shadow: none;  }
 
 
 
@@ -85,7 +85,7 @@ p, li, div{
 
 a { color: blue; }
 a:visited { color: #3d596d; }
-a:hover { color: #40A293; }
+a:hover { color: #29615D; }
 a:focus { outline: thin dotted; }
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
 a:hover, a:active { outline: 0; }
@@ -319,7 +319,7 @@ h1{
   font-weight: bold;
   line-height: 1em;
   text-align:left;
-  color: #40A293;
+  color: #29615D;
 }
 
 h1 a span:nth-child(2)::before {
@@ -335,7 +335,7 @@ h2{
   font-weight: bold;
   line-height: 1em;
   text-align:left;
-  color: #40A293;
+  color: #29615D;
 }
 
 h2 a span:nth-child(2)::before {
@@ -351,7 +351,7 @@ h3{
   font-weight: bold;
   line-height: 1em;
   text-align:left;
-  color: #40A293;
+  color: #29615D;
 }
 
 h4{
@@ -363,7 +363,7 @@ h4{
   font-weight: bold;
   line-height: 1em;
   text-align:left;
-  color: #40A293;
+  color: #29615D;
 }
 
 h5{
@@ -375,7 +375,7 @@ h5{
   font-weight: bold;
   line-height: 1em;
   text-align:left;
-  color: #40A293;
+  color: #29615D;
 }
 
 h5{
@@ -387,7 +387,7 @@ h5{
   font-weight: bold;
   line-height: 1em;
   text-align:left;
-  color: #40A293;
+  color: #29615D;
 }
 
 /* ==|== primary styles =====================================================
@@ -459,7 +459,7 @@ p.caption{
     overflow-x: auto;
     overflow-y: auto;
     border-radius: 15px;
-    border: #40A293;
+    border: #29615D;
     border-width: medium;
     border-style: solid;
     animation: dropdown;
@@ -505,7 +505,7 @@ p.caption{
 .dropdown-content nav > h5,
 .dropdown-content nav > h6 {
     margin: 0;
-    background-color: #40A293;
+    background-color: #29615D;
     color: white;
 }
 
@@ -585,7 +585,7 @@ a.toc_h6 {
 .table-of-contents a:hover,
 .table-of-contents a:active {
   font-weight: bold;
-  color: #40A293;
+  color: #29615D;
 }
 
 .table-of-contents > h1,
@@ -626,7 +626,7 @@ a.toc_h6 {
 
 #accordion>ul>li>div:hover{
     font-weight: bold;
-    color: #40a293;
+    color: #29615D;
     transition: color 0.3s;
 }
 
@@ -659,7 +659,7 @@ a.toc_h6 {
 }
 
 #accordion .active > div{
-  color: #40A293;
+  color: #29615D;
   transition: color 0.3s;
 }
 
@@ -721,14 +721,14 @@ a.toc_h6 {
 }
 
 #accordion a.active {
-  color:#40A293;
+  color:#29615D;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 /* hovers */
 #accordion a:hover {
-  color: #40A293;
+  color: #29615D;
   font-size: 1em;
   font-weight: bold;
   background-color: rgba(236,249,238,.22);
@@ -736,7 +736,7 @@ a.toc_h6 {
 }
 
 #accordion > ul li.has-sub>div:hover{
-  color:#40A293;
+  color:#29615D;
   font-weight: bold;
   cursor: pointer;
   background-color: rgba(236,249,238,.22);
@@ -747,7 +747,7 @@ a.toc_h6 {
 /* #docButtons */
 
 #docButtons {
-  background-color: #40A293;
+  background-color: #29615D;
   display: inline-block;
   position: fixed;
   width: 100%;
@@ -781,17 +781,17 @@ a.toc_h6 {
 }
 
 #btnMenu.showMenu{
-  color: #40a293;
+  color: #29615D;
   background-color: white;
   font-weight: bold;
-  border-color: #40A293;
+  border-color: #29615D;
   border-width: 3px;
   box-shadow: 0px 0px 5px 0px white;
   transition: all 0.2s ease;
 }
 
 #btnMenu.showMenu i{
-  color: #40a293;
+  color: #29615D;
   transition: color 4s;
 }
 
@@ -848,17 +848,17 @@ a.toc_h6 {
 }
 
 #docButtons>#btnShowToc.show {
-  color: #40a293;
+  color: #29615D;
   background-color: white;
   font-weight: bold;
-  border-color: #40A293;
+  border-color: #29615D;
   border-width: 3px;
   box-shadow: 0px 0px 5px 0px white;
   transition: all 0.2s ease;
 }
 
 #docButtons button:active {
-  color: #40a293;
+  color: #29615D;
   background-color: white;
 
 }
@@ -997,7 +997,7 @@ footer img {
 	button,
 	.button {
 		cursor: pointer;
-		background-color: #40A293;
+		background-color: #29615D;
 		border-radius: 0.4em;
 		text-align: center;
 		box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.15);

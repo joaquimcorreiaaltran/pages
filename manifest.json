@@ -34,8 +34,8 @@
   "start_url": "index.html",
   "display": "standalone",
   "orientation": "portrait",
-  "theme_color": "#58a281",
-  "background_color": "#58a281",
+  "theme_color": "#29615D",
+  "background_color": "#29615D",
   "serviceworker": {
     "src": "sw.js",
     "scope": "./",
