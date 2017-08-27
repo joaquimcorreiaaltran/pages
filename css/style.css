@@ -666,6 +666,7 @@ a.toc_h6 {
 #accordion a {
   color: #666666;
   text-decoration: none;
+  width: auto;
   line-height: 3em;
   vertical-align: middle;
   text-indent: 1em;
@@ -712,16 +713,16 @@ a.toc_h6 {
   color: #29615D;
   font-size: 1em;
   font-weight: bold;
-  background-color: rgba(236,249,238,.22);
-  transition: color 0.3s, background-color 2s;
+  background-color: rgba(236,249,238,.54);
+  transition: color 0.3s, background-color 1s;
 }
 
 #accordion > ul li.has-sub>div:hover{
   color:#29615D;
   font-weight: bold;
   cursor: pointer;
-  background-color: rgba(236,249,238,.22);
-  transition: color 0.3s, background-color 2s;
+  background-color: rgba(236,249,238,.54);
+  transition: color 0.3s, background-color 1s;
 }
 
 
