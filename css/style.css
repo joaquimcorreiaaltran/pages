@@ -672,13 +672,6 @@ a.toc_h6 {
   transition: color 0.3s, background-color 1s;
 }
 
-#accordion div.top {
-  line-height: 3em;
-  vertical-align: middle;
-  text-indent: 1em;
-  transition: color 0.3s, background-color 1s;
-}
-
 #accordion a i{
   text-indent: 0em;
 }
