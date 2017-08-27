@@ -622,15 +622,7 @@ a.toc_h6 {
     list-style: none;/*none;decimal*/
 }
 
-#accordion>ul>li>div:hover{
-    font-weight: bold;
-    color: #29615D;
-    transition: color 0.3s;
-}
-
 /*---------- Indents ------*/
-
-#accordion .top > a {width: auto;}
 
 /*2nd-level*/
 #accordion li li > a { padding-left:20px; padding-top:5px;padding-bottom:8px; }
@@ -666,9 +658,6 @@ a.toc_h6 {
 #accordion a {
   color: #666666;
   text-decoration: none;
-  width: auto;
-  line-height: 3em;
-  vertical-align: middle;
   text-indent: 1em;
   transition: color 0.3s, background-color 1s;
 }
