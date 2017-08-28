@@ -384,48 +384,33 @@ p.caption{
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
-    top: 70px;
-    right: 2%;
+    top: 44px;
+    right: -100%;
     position: fixed; /*fixed é em relação à janela. absolute é em relação ao elemento pai*/
     background-color: #f9f9f9;
-    min-width: 30%;
     width: auto;
     max-width: 80%;
-    min-height: 10%;
-    max-height: calc(100% - 100px); /*80%;*/
-    box-shadow: 0 0 1em #656565;
-    z-index: 1;
-    border: 1em 0.5em 1em 1em;
+    max-height: 100vh; /* calc(100% - 100px); /*80%;*/
+    /*box-shadow:8px 0 60px rgba(0,0,0,0.5);*/
+    z-index: -9999999999;
     overflow-x: auto;
     overflow-y: auto;
-    border-radius: 15px;
-    border: #29615D;
-    border-width: medium;
+    /*border: #29615D;*/
+    border-width: thin;
     border-style: solid;
-    animation: dropdown;
-    animation-duration: 0.4s;
+    text-indent: 1em;
+    transition: right 0.3s ease-out;
+}
+
+div.dropdown-content.show{
+  top:44px;
+  right:0%;
+  transition: right 0.3s ease-out;
 }
 
 
-@-ms-keyframes dropdown {
-  from {top: -100%;right: -100%;}
-  to {top: 40px;right: 2%;}
-}
-
-@-moz-keyframes dropdown {
-  from {top: -100%;right: -100%;}
-  to {top: 40px;right: 2%;}
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes dropdown {
-  from {top: -100%;right: -100%;}
-  to {top: 40px;right: 1%;}
-}
-
-@keyframes dropdown {
-  from {top: -100%;right: -100%;}
-  to {top: 50px;right: 1%;}
+.dropdown-content.show > .table-of-contents > h2{
+  line-height: 30px;
 }
 
 /* Links inside the dropdown */
@@ -595,7 +580,7 @@ a.toc_h6 {
 #accordion i {
   text-indent: 0;
   margin-right: 8px;
-  font-size: 1.6em;
+  font-size: 1.5em;
   vertical-align: middle;
   font-weight: normal;
 }
@@ -626,7 +611,6 @@ a.toc_h6 {
     transform: rotate(90deg);
     transition: all 0.4s;
 }
-
 
 #accordion a.active, #accordion div.active {
   color: #29615D;
@@ -680,9 +664,9 @@ border-left: 5px solid #29615D;
   border-color: white;
   text-align: center;
   display: block;
-  -moz-transition: width 0.2s ease;
-  -webkit-transition: width 0.2s ease;
-  -ms-transition: width 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
@@ -995,8 +979,8 @@ footer img {
 
       /* Table of Content */
       .dropdown-content {
-          width: 40%;
-          max-width: 0%;
+          width: 25%;
+          max-width: 25%;
           transition: all 2s ease;
       }
 	}
