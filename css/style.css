@@ -546,7 +546,7 @@ a.toc_h6 {
     left: -200%;
     box-shadow:8px 0 60px rgba(0,0,0,0.5);
     background: url(../img/logos/imagem_background.png) no-repeat;
-    background-color: rgb(237, 237, 237);
+    background-color: white;
     z-index:99;
     height: 100vh;
     transition: left 0.4s ease-out;
@@ -616,19 +616,31 @@ a.toc_h6 {
     border-right: none;
     border-left-color: initial;
     border-top-color: transparent;
+    transition: all 0.4s;
 }
 
-#accordion a.active {
-  color:#29615D;
+#accordion div.caret.active {
+    color: #29615D;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    transition: all 0.4s;
+}
+
+
+#accordion a.active, #accordion div.active {
+  color: #29615D;
   font-weight: bold;
   transition: color 0.3s;
 }
 
+#accordion li.active {
+border-left: 5px solid #29615D;
+}
+
 /* hovers */
 #accordion a:hover {
-  color: #29615D;
   font-size: 1em;
-  font-weight: bold;
   background-color: rgba(236,249,238,.54);
   transition: color 0.3s, background-color 0.3s;
 }
