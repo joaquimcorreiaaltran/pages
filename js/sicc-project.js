@@ -264,6 +264,8 @@ function showToc() {
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
+  console.log($(event.target));
+  //if (!$(event.target).hasClass('dropbtn') && !$(event.target).hasClass('#tocDropdown *')) {
   if (!event.target.matches('.dropbtn') && !event.target.matches('#tocDropdown *')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;

@@ -5,10 +5,10 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="theme-color" content="#29615D" />
-	<link rel="manifest" href="/pages/manifest.json">
-	<link rel="icon" href="/pages/img/icons/sicc.ico" type="image/vnd.microsoft.icon">
+	<link rel="manifest" href="../manifest.json">
+	<link rel="icon" href="../img/icons/sicc.ico" type="image/vnd.microsoft.icon">
 	<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
-	<link rel="stylesheet" href="/pages/css/style.css">
+	<link rel="stylesheet" href="../css/style.css">
 	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 </head>
 <body>
@@ -35,10 +35,10 @@
 	</div>
 
 	<!-- libs -->
-	<script src="/pages/js/jquery-3.1.1.js"></script>
-	<script src="/pages/js/sicc-project.js"></script>
-	<script src="/pages/js/libs/accordion-menu.js"></script>
-	<script src="/pages/js/jquery.zoom.js" async></script>
+	<script src="../js/jquery-3.1.1.js"></script>
+	<script src="../js/sicc-project.js"></script>
+	<script src="../js/libs/accordion-menu.js"></script>
+	<script src="../js/jquery.zoom.js" async></script>
 	<script>
 		$(function(){
 			loadFooter();
@@ -50,7 +50,7 @@
 	</script>
 	<script>
 		if('serviceWorker' in navigator) {
-			navigator.serviceWorker.register('/pages/sw.js', { scope: './' }).then(function(registration) {
+			navigator.serviceWorker.register('../sw.js', { scope: './' }).then(function(registration) {
 				 console.log("[ServiceWorker] Registered");
 			 });
 
