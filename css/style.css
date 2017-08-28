@@ -43,7 +43,7 @@ audio:not([controls]) { display: none; }
 
 html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-html, button, input, select, textarea { font-family: "Roboto", sans-serif; color: #656565; }
+html, button, input, select, textarea, p { font-family: "Roboto", sans-serif; color: #656565;  font-size:  1em;}
 
 body { margin: 0; font-size: 1em; line-height: 1.4;  width: 96%;margin: auto;}
 
@@ -52,8 +52,6 @@ div.content{  width: 70%;  margin: auto;  margin-left: 20%;}
 p, li, div{
   margin-top:.0001pt;
   margin-bottom: .0001pt;
-  font-size:  1em;
-  font-family:"Roboto", sans-serif;
   line-height:  150%;
   text-align:  justify;
   /*Prevent user from select text:
@@ -72,25 +70,8 @@ p, li, div{
  * Also: hot pink! (or customize the background color to match your design)
  */
 
-::-moz-selection { background: #0218dd; color: #fff; text-shadow: none; }
+::-moz-selection { background: #29615D; color: #fff; text-shadow: none; }
 ::selection { background: #29615D; color: #fff; text-shadow: none;  }
-
-
-
-/* =============================================================================
-   Links
-   ========================================================================== */
-
-a { color: blue; }
-a:visited { color: #3d596d; }
-a:hover { color: #29615D; }
-a:focus { outline: thin dotted; }
-/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
-a:hover, a:active { outline: 0; }
-=======
-
-
-
 
 /* =============================================================================
    Typography
@@ -100,20 +81,6 @@ abbr[title] { border-bottom: 1px dotted; }
 
 b, strong { font-weight: bold; }
 
-blockquote { margin: 1em 40px; }
-
-dfn { font-style: italic; }
-
-hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
-
-ins { background: #ff9; color: #000; text-decoration: none; }
-
-mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
-
-/* Redeclare monospace font family: h5bp.com/j */
-pre, code, kbd, samp { font-family:"Roboto", sans-serif; _font-family: 'courier new', monospace; font-size: 1em; }
-
-/* Improve readability of pre-formatted text in all browsers */
 pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
 
 q { quotes: none; }
@@ -133,9 +100,7 @@ sub { bottom: -0.25em; }
 
 ul, ol { margin: 1em 0; padding: 0 0 0 10px; }
 dd { margin: 0 0 0 10px; }
-nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
-
-
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }*/
 
 /* =============================================================================
    Embedded content
@@ -162,28 +127,6 @@ img {
 
 figure { margin: 0; }
 p.imagem { margin: auto; padding-top: 20px}
-
-/* =============================================================================
-   Forms
-   ========================================================================== */
-
-form { margin: 0; }
-fieldset { border: 0; margin: 0; padding: 0; }
-
-/* Indicate that 'label' will shift focus to the associated form element */
-label { cursor: pointer; }
-
-/*
- * 1. Correct color not inheriting in IE6/7/8/9
- * 2. Correct alignment displayed oddly in IE6/7
- */
-
-legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
-p.imagem +p.MsoCaption {margin-top: 0cm;margin-right: 0cm;margin-bottom: 12.0pt;margin-left: 36.0pt;
-text-align: center;text-indent: -36.0pt;font-size: 0.7em;
-letter-spacing: -.25pt;line-height: 150%;
-}
-
 
 /*
  * 1. Correct font-size not inheriting in all browsers
@@ -429,7 +372,6 @@ td img{
 
 p.caption{
   color: #333;
-  /*font-family: "Roboto", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
   font-size: 0.8em;
   text-align: center;
   margin-bottom:50px;
@@ -601,12 +543,12 @@ a.toc_h6 {
     overflow: auto;
     position: fixed;
     top: 44px;
-    left: -100%;
-    box-shadow:4px 0 18px rgba(0,0,0,0.2);
+    left: -200%;
+    box-shadow:8px 0 60px rgba(0,0,0,0.5);
     background: url(../img/logos/imagem_background.png) no-repeat;
-    background-color: white;
+    background-color: rgb(237, 237, 237);
     z-index:99;
-    height: 95vh;
+    height: 100vh;
     transition: left 0.4s ease-out;
 }
 
@@ -618,31 +560,11 @@ a.toc_h6 {
 /* root UL */
 #accordion ul {
     padding:0;
-    margin: 0 0.1em 0.3em 0.1em;
-    list-style: none;/*none;decimal*/
+    margin:0;
+    list-style: none;
 }
 
-/*---------- Indents ------*/
-
-/*2nd-level*/
-#accordion li li > a { padding-left:20px; padding-top:5px;padding-bottom:8px; }
-
-/*3rd-level*/
-#accordion li li li > a { padding-left:35px;}
-
-/*4th-level*/
-#accordion li li li li > a { padding-left:50px; }
-
-/*5th-level*/
-#accordion li li li li li > a { padding-left:65px; }
-
-
-/*---------- Other styles ------*/
-
-/* headings */
-#accordion > ul > li > div{
-  color: #666666;
-  cursor: pointer;
+#accordion div{
   line-height: 3em;
 }
 
@@ -661,12 +583,8 @@ a.toc_h6 {
   line-height: 3em;
   color: #666666;
   text-decoration: none;
-  text-indent: 1em;
+  text-indent: 1.2em;
   transition: color 0.3s, background-color 0.3s;
-}
-
-#accordion a i{
-  text-indent: 0em;
 }
 
 /* Add borders to the top LIs */
@@ -674,14 +592,20 @@ a.toc_h6 {
   border-top: 1px solid #aaa;
 }
 
-#accordion i { margin-right: 0.5em;}
+#accordion i {
+  text-indent: 0;
+  margin-right: 8px;
+  font-size: 1.6em;
+  vertical-align: middle;
+  font-weight: normal;
+}
 
 /* carets */
 #accordion div.caret {
     color: inherit;
     display: inline-block;
     margin-bottom: 0px;
-    margin-right: 12px;
+    margin: 0 8px 0 8px;
     width: 0;
     height: 0;
     overflow: hidden;/*for IE6*/
@@ -856,12 +780,6 @@ a.toc_h6 {
 ==================================================================================
 ==================================================================================
 ==================================================================================
-==================================================================================
-==================================================================================
-==================================================================================
-==================================================================================
-==================================================================================
-==================================================================================
    ========================================================================== */
 
 /*
@@ -984,30 +902,6 @@ footer img {
 		transition: background-color .25s ease-in-out, color .25s ease-in-out;
 		text-shadow: none;
 	}
-
-/* List */
-
-	ul {
-		list-style: disc;
-		padding-left: 1em;
-	}
-	/* 2nivel */
-	ul li ul {
-			list-style: circle;
-	}
-
-	ul li {
-			padding-left: 0.5em;
-		}
-
-	ol {
-		list-style: decimal;
-		padding-left: 1.25em;
-	}
-
-	ol li {
-			padding-left: 0.25em;
-		}
 
 /* Content */
 	#content {
