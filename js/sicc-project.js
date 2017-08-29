@@ -44,30 +44,38 @@ function convertMdToHtml (elementId, funcao) {
 }/*close convertMdToHtml()*/
 
 //Load html to the end of the document
-function loadFooter() {
+function loadFooter(page) {
 
   var fileDirectory = "footer.html";
-  var path = window.location.pathname;
 
-  console.log("[path]", path);
+  if(page == "index"){
 
-  if(path.endsWith("pages") || path.endsWith("pages/") || path.endsWith("pages/index.html") || path.endsWith("pages/index.html.html") ){
     fileDirectory = "html/footer.html";
+
+    $.get(fileDirectory, function (data) {
+        while (data.indexOf("../img") != -1) {
+            data = data.replace("../img","../pages/img");
+        }
+        $("footer").append(data);
+    });
+  }
+  else{
+    console.log("aqui!");
+    $.get(fileDirectory, function (data) {
+      $("footer").append(data);
+    });
   }
 
-  console.log("[fileDirectory]", fileDirectory);
-
-  $("footer").load(fileDirectory);
 
 }
 
 //Adds auxilary buttons to the interface
-function loadDocButtons (funcao, btnsToHide) {
+function loadDocButtons (funcao, btnsToHide, page) {
 
   var fileDirectory = "doc_buttons.html";
   var path = window.location.pathname;
 
-  if(path.endsWith("pages") || path.endsWith("pages/") || path.endsWith("pages/index.html") || path.endsWith("pages/index.html.html") ){
+  if( page == "index" ){
     fileDirectory = "html/doc_buttons.html";
   }
 
