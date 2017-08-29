@@ -72,13 +72,13 @@ function loadDocButtons (funcao, btnsToHide, page) {
         $("header").append(data);
 
         $("#btnMenu").click(function(){
-          if(document.getElementById("accordion").classList.contains("showMenu")){
-            document.getElementById("accordion").classList.remove("showMenu");
-            document.getElementById("btnMenu").classList.remove("showMenu")
+          if( $("#accordion").hasClass("showMenu") ){
+            $("#accordion").removeClass("showMenu");
+            $("#btnMenu").removeClass("showMenu");
           }
           else{
-            document.getElementById("accordion").classList.add("showMenu");
-            document.getElementById("btnMenu").classList.add("showMenu")
+            $("#accordion").addClass("showMenu");
+            $("#btnMenu").addClass("showMenu");
           }
         });
 
@@ -204,9 +204,9 @@ TOC - Builds the table of contents based on HTML elements choosen and insert the
 */
 function toc(elementToPopulate){
 
-  htmlToPopulate = document.getElementById(elementToPopulate);
+  elementToPopulate = "#"+elementToPopulate;
 
-  if (document.body.contains(htmlToPopulate)==true){
+  if ($(elementToPopulate)){
 
     var toc_html =
         "<nav role='navigation' class='table-of-contents'>" +
@@ -230,47 +230,28 @@ function toc(elementToPopulate){
         toc_html += newLine;
   		});
 
-  		toc_html +=
-  		   "</ul>" +
-  		  "</nav>";
+  		toc_html +=  "</ul>" + "</nav>";
 
-      htmlToPopulate.innerHTML = toc_html;
-      $('#btnShowToc').click();
+      $(elementToPopulate).html(toc_html);
+      showToc();
   }/*if*/
   else {
     console.log("Não foi possível criar o índice porque o elemento \"" + elementToPopulate + "\" não existe no HTML!");
   }
 }/*builds toc*/
 
-
-/* toc dropdown:*/
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
 function showToc() {
-
-    document.getElementById("tocDropdown").classList.toggle("show");
-
-    var tocClass = document.getElementById("tocDropdown").classList.contains("show");
-    var btnClass = document.getElementById("btnShowToc").classList.contains("show");
-
-    if(tocClass != btnClass){
-      document.getElementById("btnShowToc").classList.toggle("show");
-    }
+    $(".dropdown-content").toggleClass("show");
+    $("#btnShowToc").toggleClass("show");
 };
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
   console.log($(event.target));
-  //if (!$(event.target).hasClass('dropbtn') && !$(event.target).hasClass('#tocDropdown *')) {
-  if (!event.target.matches('.dropbtn') && !event.target.matches('#tocDropdown *')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      //Oculta índice depois de clicar num link
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
+  if (!event.target.matches('.dropbtn') && !event.target.matches('#tocDropdown *') && !!event.target.matches('#btnMenu') ) {
+    if($(".dropdown-content").hasClass("show")){
+      $(".dropdown-content").removeClass("show");
+      $("#btnShowToc").removeClass("show");
     }
   }
 } /*close showToc()*/

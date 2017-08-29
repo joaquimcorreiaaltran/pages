@@ -220,7 +220,7 @@ table th {
   letter-spacing: 0.1em;
   padding: 0.3em 0.3em 0.3em 0.3em;
   text-align: center;
-  background:#3d596d;
+  background: #3d596d;
   color:white;
 }
 
@@ -386,17 +386,14 @@ p.caption{
     right: -100%;
     position: fixed; /*fixed é em relação à janela. absolute é em relação ao elemento pai*/
     background: url(../img/logos/imagem_background.png) no-repeat;
-    background-color: #f9f9f9;
+    background-color: white;
     width: auto;
     max-width: 80%;
     max-height: calc(100% - 46px); /*80%;*/
-    /*box-shadow:8px 0 60px rgba(0,0,0,0.5);*/
+    box-shadow:8px 0 60px rgba(0,0,0,0.6);
     z-index: -9999999999;
     overflow-x: auto;
     overflow-y: auto;
-    /*border: #29615D;*/
-    border-width: thin;
-    border-style: solid;
     text-indent: 1em;
     transition: right 0.3s ease-out;
 }
@@ -506,7 +503,10 @@ a.toc_h6 {
   text-decoration: none;
 }
 
-.table-of-contents a:hover,
+.table-of-contents a:hover {
+  background-color: rgba(236,249,238,.54);
+}
+
 .table-of-contents a:active {
   font-weight: bold;
   color: #29615D;
@@ -568,7 +568,7 @@ a.toc_h6 {
   color: #666666;
   text-decoration: none;
   text-indent: 1.2em;
-  transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s ease-in;
 }
 
 /* Add borders to the top LIs */
@@ -600,7 +600,7 @@ a.toc_h6 {
     border-right: none;
     border-left-color: initial;
     border-top-color: transparent;
-    transition: all 0.4s;
+    transition: all 0.3 ease-out;
 }
 
 #accordion div.caret.active {
@@ -614,7 +614,7 @@ a.toc_h6 {
 #accordion a.active, #accordion div.active {
   color: #29615D;
   font-weight: bold;
-  transition: color 0.3s;
+  transition: color 0.3s ease-out;
 }
 
 #accordion li.active {
@@ -625,7 +625,7 @@ border-left: 5px solid #29615D;
 #accordion a:hover {
   font-size: 1em;
   background-color: rgba(236,249,238,.54);
-  transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.1s;
 }
 
 #accordion > ul li.has-sub>div:hover{
