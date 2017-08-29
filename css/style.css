@@ -7,8 +7,6 @@
 */
 
 
-
-
 /*
  * HTML5 Boilerplate
  *
@@ -387,10 +385,11 @@ p.caption{
     top: 44px;
     right: -100%;
     position: fixed; /*fixed é em relação à janela. absolute é em relação ao elemento pai*/
+    background: url(../img/logos/imagem_background.png) no-repeat;
     background-color: #f9f9f9;
     width: auto;
     max-width: 80%;
-    max-height: 100vh; /* calc(100% - 100px); /*80%;*/
+    max-height: calc(100% - 46px); /*80%;*/
     /*box-shadow:8px 0 60px rgba(0,0,0,0.5);*/
     z-index: -9999999999;
     overflow-x: auto;
@@ -978,11 +977,7 @@ footer img {
 			}
 
       /* Table of Content */
-      .dropdown-content {
-          width: 25%;
-          max-width: 25%;
-          transition: all 2s ease;
-      }
+      .dropdown-content {width: 20%;max-width: 20%;transition: all 2s ease;}
 	}
 
 /* Narrow */
@@ -1003,11 +998,7 @@ footer img {
 			}
 
       /* Table of Content */
-      .dropdown-content {
-          width: 40%;
-          max-width: 40%;
-          transition: all 2s ease;
-      }
+      .dropdown-content {width: 35%;max-width: 35%;transition: all 2s ease;}
 	}
 
 /* Narrower */
@@ -1078,12 +1069,7 @@ footer img {
 		}
 
     /* Table of Content */
-    .dropdown-content {
-        width: 75%;
-        max-width: 80%;
-        transition: all 2s ease;
-    }
-
+    .dropdown-content {width: 75%;max-width: 60%;transition: all 2s ease;}
 	}
 
 /* Reset */
