@@ -22,25 +22,17 @@ blockRightClick = true;
 //load and convert Markdown to Html and show it
 function convertMdToHtml (elementId, funcao) {
 
-   var request = new XMLHttpRequest();
-   //Asynchronous request (true=asynchronous)
-   request.open('GET', '../markdown/'+ doc_name +'.md',true);
-   request.onreadystatechange = function() {
-         if(request.readyState == XMLHttpRequest.DONE && request.status === 200) {
-            var converter = new showdown.Converter()
-            ,text = request.responseText
-            ,htmlDoc = converter.makeHtml(text);
-                document.getElementById(elementId).innerHTML = htmlDoc;//load HTML into the elementId
-                zommClickImagem();
-                responsiveTable();
-
-                // runs a function received by parameter
-                if(funcao != undefined && typeof funcao == "function"){
-                  funcao();
-                }
-         }
-    }
-   request.send();
+    $.get('../markdown/'+ doc_name +'.md', function (data) {
+        var converter = new showdown.Converter()
+          ,data
+          ,htmlDoc = converter.makeHtml(data);
+        document.getElementById(elementId).innerHTML = htmlDoc;//load HTML into the elementId
+        zommClickImagem();
+        responsiveTable();
+        if(funcao != undefined && typeof funcao == "function"){
+          funcao();
+        }
+    });
 }/*close convertMdToHtml()*/
 
 //Load html to the end of the document
@@ -60,7 +52,6 @@ function loadFooter(page) {
     });
   }
   else{
-    console.log("aqui!");
     $.get(fileDirectory, function (data) {
       $("footer").append(data);
     });
