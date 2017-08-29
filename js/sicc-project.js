@@ -21,12 +21,9 @@ blockRightClick = true;
 
 //load and convert Markdown to Html and show it
 function convertMdToHtml (elementId, funcao) {
-
     $.get('../markdown/'+ doc_name +'.md', function (data) {
-        var converter = new showdown.Converter()
-          ,data
-          ,htmlDoc = converter.makeHtml(data);
-        document.getElementById(elementId).innerHTML = htmlDoc;//load HTML into the elementId
+        var converter = new showdown.Converter(),  data, html = converter.makeHtml(data);
+        $("#"+elementId).html(html);
         zommClickImagem();
         responsiveTable();
         if(funcao != undefined && typeof funcao == "function"){
