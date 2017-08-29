@@ -391,7 +391,7 @@ p.caption{
     max-width: 80%;
     max-height: calc(100% - 46px); /*80%;*/
     box-shadow:8px 0 60px rgba(0,0,0,0.6);
-    z-index: -9999999999;
+    z-index: 98;
     overflow-x: auto;
     overflow-y: auto;
     text-indent: 1em;
