@@ -15,6 +15,7 @@
 Remove this function when the document is finalized -->
 <body oncopy="return false" oncut="return false" onpaste="return false">
 	<header>
+			<div id="docButtons"></div>
 			<a id="amenuLink" href="amenu-source.html">Menu</a>
 			<div id="tocDropdown" class="dropdown-content"></div>
 	</header>
@@ -53,7 +54,7 @@ Remove this function when the document is finalized -->
 			convertMdToHtml("documento", function() {
 				loadDocButtons(function() {
 					//build the table of content
-					toc("tocDropdown");
+					loadToc("tocDropdown");
 				},Btns);
 				loadFooter();
 			});

@@ -69,7 +69,7 @@ function loadDocButtons (funcao, btnsToHide, page) {
 
   $.get(fileDirectory, function (data) {
 
-        $("header").append(data);
+        $("#docButtons").html(data);
 
         $("#btnMenu").click(function(){
           if( $("#accordion").hasClass("showMenu") ){
@@ -202,7 +202,7 @@ function loadCommitHistory() {
 /*
 TOC - Builds the table of contents based on HTML elements choosen and insert the TOC in th "elementToPopulate"
 */
-function toc(elementToPopulate){
+function loadToc(elementToPopulate){
 
   elementToPopulate = "#"+elementToPopulate;
 
