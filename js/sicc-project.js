@@ -72,48 +72,42 @@ function loadDocButtons (funcao, btnsToHide, page) {
         $("#docButtons").html(data);
 
         $("#btnMenu").click(function(){
-          if( $("#accordion").hasClass("showMenu") ){
-            $("#accordion").removeClass("showMenu");
-            $("#btnMenu").removeClass("showMenu");
-          }
-          else{
-            $("#accordion").addClass("showMenu");
-            $("#btnMenu").addClass("showMenu");
-          }
+            showMenu();
         });
-          if( page != "index" ){
 
-             $("#btnEditarDoc").click(function(){
-               window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/"+doc_name+".md","_blank");
-             });
+        if( page != "index" ){
 
-             /*btnPDF*/
-             if(doc_name == "snc_ap_circular_dgo_1381"){
-               $("#btnPDF").click(function(){window.open("http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1381.pdf","_blank")});
-             }
-             else if(doc_name == "snc_ap_circular_dgo_1382"){
-               $("#btnPDF").click(function(){window.open("http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1382.pdf","_blank")});
-             }
-             else if(doc_name == "snc_ap_decreto_lei_85_2016"){
-               $("#btnPDF").click(function(){window.open("https://dre.pt/application/conteudo/105583346","_blank")});
-             }
-             else if(doc_name == "snc_ap_decreto_lei_192_2015"){
-               $("#btnPDF").click(function(){window.open("https://dre.pt/application/conteudo/70262478","_blank")});
-             }
-             else if(doc_name == "snc_ap_apresentacao"){
-               $("#btnPDF").click(function(){window.open("https://view.officeapps.live.com/op/embed.aspx?src=https://spmssicc.github.io/pages/pptx/SPMS_SICC_SNC_AP_20160606_04-pics.pptx","_blank")});
-             }
-             else{
-               $("#btnPDF").click(function(){window.open("https://spmssicc.github.io/pages/pdf/"+doc_name+".pdf","_blank");});
-             }
+           $("#btnEditarDoc").click(function(){
+             window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/"+doc_name+".md","_blank");
+           });
 
-             $("#btnShowToc").click(function(){
-               showToc();
-             });
+           /*btnPDF*/
+           if(doc_name == "snc_ap_circular_dgo_1381"){
+             $("#btnPDF").click(function(){window.open("http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1381.pdf","_blank")});
+           }
+           else if(doc_name == "snc_ap_circular_dgo_1382"){
+             $("#btnPDF").click(function(){window.open("http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1382.pdf","_blank")});
+           }
+           else if(doc_name == "snc_ap_decreto_lei_85_2016"){
+             $("#btnPDF").click(function(){window.open("https://dre.pt/application/conteudo/105583346","_blank")});
+           }
+           else if(doc_name == "snc_ap_decreto_lei_192_2015"){
+             $("#btnPDF").click(function(){window.open("https://dre.pt/application/conteudo/70262478","_blank")});
+           }
+           else if(doc_name == "snc_ap_apresentacao"){
+             $("#btnPDF").click(function(){window.open("https://view.officeapps.live.com/op/embed.aspx?src=https://spmssicc.github.io/pages/pptx/SPMS_SICC_SNC_AP_20160606_04-pics.pptx","_blank")});
+           }
+           else{
+             $("#btnPDF").click(function(){window.open("https://spmssicc.github.io/pages/pdf/"+doc_name+".pdf","_blank");});
+           }
 
-            if(funcao != undefined && typeof funcao == "function"){
-              funcao();
-            }
+           $("#btnShowToc").click(function(){
+             showToc();
+           });
+
+          if(funcao != undefined && typeof funcao == "function"){
+            funcao();
+          }
         }/*if != index*/
 
         removeElements(btnsToHide);
@@ -247,10 +241,16 @@ function showToc() {
     $("#btnShowToc").toggleClass("show");
 };
 
+function showMenu(){
+  $("#accordion").toggleClass("showMenu");
+  $("#btnMenu").toggleClass("showMenu");
+}
+
+
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
   console.log($(event.target));
-  if (!event.target.matches('.dropbtn') && !event.target.matches('#tocDropdown *') && !!event.target.matches('#btnMenu') ) {
+  if (!event.target.matches('.dropbtn') && !event.target.matches('#tocDropdown *') && !event.target.matches('#btnMenu') ) {
     showToc();
   }
 } /*close showToc()*/
