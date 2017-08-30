@@ -246,11 +246,9 @@ function showMenu(){
   $("#btnMenu").toggleClass("showMenu");
 }
 
-
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
-  console.log($(event.target));
-  if (!event.target.matches('.dropbtn') && !event.target.matches('#tocDropdown *') && !event.target.matches('#btnMenu') ) {
+  if (!event.target.matches('.dropbtn, #tocDropdown *, #btnMenu, #btnMenu i, #btnMenu a')) {
     showToc();
   }
 } /*close showToc()*/
@@ -262,6 +260,7 @@ for smooth scrolling
 
 // handle links with @href started with '#' only
 $(document).on('click', 'a[href^="#"]', function(e) {
+
     // target element id
     var id = $(this).attr('href');
 
