@@ -536,12 +536,12 @@ a.toc_h6 {
     background-color: white;
     z-index:99;
     height: 100vh;
-    transition: left 0.4s ease-out;
+    transition: left 0.3s ease-out;
 }
 
 #accordion.showMenu{
   left: 0;
-  transition: left 0.4s ease-out;
+  transition: left 0.3s ease-out;
 }
 
 /* root UL */
@@ -611,13 +611,13 @@ a.toc_h6 {
     -ms-transform: rotate(90deg); /* IE 9 */
     -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
     transform: rotate(90deg);
-    transition: all 0.4s;
+    transition: all 0.5s;
 }
 
 #accordion a.active, #accordion div.active {
   color: #29615D;
   font-weight: bold;
-  transition: color 0.3s ease-out;
+  transition: color 0.5s ease-out;
 }
 
 #accordion li.active {
@@ -683,6 +683,7 @@ border-left: 5px solid #29615D;
   border-color: #29615D;
   border-width: 3px;
   transition: all 0.2s ease;
+  width: 50px;
 }
 
 #btnMenu.showMenu i{
@@ -695,7 +696,6 @@ border-left: 5px solid #29615D;
   position: fixed;
   width: 100%;
   float: left;
-  font-size: 1.25em;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-align: center;
@@ -704,10 +704,11 @@ border-left: 5px solid #29615D;
   height: 44px;
 }
 
-#docButtons>#btnShowToc {
+#docButtons #btnShowToc {
   width: 65px;
   font-weight: normal;
   transition: all 0.2s ease;
+  font-size: 1em;
 }
 
 #docButtons i {
@@ -718,14 +719,11 @@ border-left: 5px solid #29615D;
 #docButtons button:hover {
   width: calc(50px);
   font-size: 1.1em;
-  font-weight: bold;
-  border-width: 3px;
   transition: all 0.2s ease;
 }
 
-#docButtons>#btnShowToc:hover {
+#docButtons #btnShowToc:hover {
   width: 80px;
-  border-width: 3px;
   transition: all 0.2s ease;
 }
 
@@ -741,6 +739,12 @@ border-left: 5px solid #29615D;
   transition: all 0.2s ease;
 }
 
+#docButtons #btnMenu.show:hover{
+  font-size: 1em;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
 #docButtons>#btnShowToc.show {
   color: #29615D;
   background-color: white;
@@ -748,12 +752,13 @@ border-left: 5px solid #29615D;
   border-color: #29615D;
   border-width: 3px;
   transition: all 0.2s ease;
+  width: 80px;
 }
 
 #docButtons button:active {
   color: #29615D;
   background-color: white;
-
+  font-weight: bold;
 }
 
 /* ==|== media queries ======================================================
