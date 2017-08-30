@@ -379,12 +379,20 @@ p.caption{
 /* toc dropbown */
 /*************************************************************/
 
+#tocDropdown.dropdown-content{
+  top: 44px;
+  right: -100%;
+  transition: left 0.3s ease-out;
+}
+
+#tocDropdown.dropdown-content.show{
+  position: fixed; /*fixed é em relação à janela. absolute é em relação ao elemento pai*/
+  right:0%;
+  transition: all 0.3s ease-out;
+}
+
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-    display: none;
-    top: 44px;
-    right: -100%;
-    position: fixed; /*fixed é em relação à janela. absolute é em relação ao elemento pai*/
     background: url(../img/logos/imagem_background.png) no-repeat;
     background-color: white;
     width: auto;
@@ -398,8 +406,6 @@ p.caption{
 }
 
 div.dropdown-content.show{
-  top:44px;
-  right:0%;
   height: calc(100% - 45px);
   transition: all 0.3s ease-out;
   padding-left: 0.5em;

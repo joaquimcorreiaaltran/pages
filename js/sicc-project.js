@@ -251,10 +251,7 @@ function showToc() {
 window.onclick = function(event) {
   console.log($(event.target));
   if (!event.target.matches('.dropbtn') && !event.target.matches('#tocDropdown *') && !!event.target.matches('#btnMenu') ) {
-    if($(".dropdown-content").hasClass("show")){
-      $(".dropdown-content").removeClass("show");
-      $("#btnShowToc").removeClass("show");
-    }
+    showToc();
   }
 } /*close showToc()*/
 
@@ -279,8 +276,6 @@ $(document).on('click', 'a[href^="#"]', function(e) {
 
     // top position relative to the document
     var pos = $id.offset().top - 55;
-
-    console.log(pos);
 
     // animated top scrolling
     $('body, html').animate({scrollTop: pos});
