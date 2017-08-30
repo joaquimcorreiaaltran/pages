@@ -394,14 +394,15 @@ p.caption{
     z-index: 98;
     overflow-x: auto;
     overflow-y: auto;
-    text-indent: 1em;
     transition: right 0.3s ease-out;
 }
 
 div.dropdown-content.show{
   top:44px;
   right:0%;
-  transition: right 0.3s ease-out;
+  height: calc(100% - 45px);
+  transition: all 0.3s ease-out;
+  padding-left: 0.5em;
 }
 
 
@@ -426,6 +427,7 @@ div.dropdown-content.show{
 .dropdown-content nav > h5,
 .dropdown-content nav > h6 {
     margin: 0;
+    padding-left: 0.5em;
     background-color: #29615D;
     color: white;
 }
@@ -467,11 +469,6 @@ a.toc_h6 {
   margin-left: 2.5em;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover,
-.dropdown-content li:hover
- {background-color: white; font-weight: normal;font-size: 1em;}
-
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
   display:block;
@@ -503,7 +500,7 @@ a.toc_h6 {
   text-decoration: none;
 }
 
-.table-of-contents a:hover {
+.table-of-contents li:hover {
   background-color: rgba(236,249,238,.54);
 }
 
@@ -679,13 +676,12 @@ border-left: 5px solid #29615D;
   font-weight: bold;
   border-color: #29615D;
   border-width: 3px;
-  box-shadow: 0px 0px 5px 0px white;
   transition: all 0.2s ease;
 }
 
 #btnMenu.showMenu i{
   color: #29615D;
-  transition: color 4s;
+  transition: color 0.3s;
 }
 
 #docButtons p{
@@ -745,7 +741,6 @@ border-left: 5px solid #29615D;
   font-weight: bold;
   border-color: #29615D;
   border-width: 3px;
-  box-shadow: 0px 0px 5px 0px white;
   transition: all 0.2s ease;
 }
 
