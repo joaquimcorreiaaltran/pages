@@ -680,7 +680,7 @@ border-left: 5px solid #29615D;
   color: #29615D;
   background-color: white;
   font-weight: bold;
-  border-color: #29615D;
+  border-color: white;
   border-width: 3px;
   transition: all 0.2s ease;
   width: 50px;
@@ -688,7 +688,6 @@ border-left: 5px solid #29615D;
 
 #btnMenu.showMenu i{
   color: #29615D;
-  transition: color 0.3s;
 }
 
 #docButtons p{
@@ -749,8 +748,7 @@ border-left: 5px solid #29615D;
   color: #29615D;
   background-color: white;
   font-weight: bold;
-  border-color: #29615D;
-  border-width: 3px;
+  border-color: white;
   transition: all 0.2s ease;
   width: 80px;
 }
@@ -759,6 +757,7 @@ border-left: 5px solid #29615D;
   color: #29615D;
   background-color: white;
   font-weight: bold;
+  border-color: white;
 }
 
 /* ==|== media queries ======================================================
@@ -949,7 +948,7 @@ footer img {
   @media screen and (max-width: 1200px) {
 
     /* Basic */
-      html, body {overflow-x: auto;transition: all 2s ease;}
+      html, body {overflow-x: auto;}
 
     /* Content */
 
@@ -1081,7 +1080,7 @@ footer img {
 		}
 
     /* Table of Content */
-    .dropdown-content {width: 75%;max-width: 60%;transition: all 2s ease;}
+    .dropdown-content {width: 40%;max-width: 40%;transition: all 2s ease;}
 	}
 
 /* Reset */
