@@ -248,7 +248,7 @@ function showMenu(){
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn, #tocDropdown *, #btnMenu, #btnMenu i, #btnMenu a')) {
+  if (!event.target.matches('.dropbtn, #tocDropdown *, #btnMenu, #btnMenu i, #btnMenu a') && $("#btnMenu.show").hasClass("show")) {
     showToc();
   }
 } /*close showToc()*/
