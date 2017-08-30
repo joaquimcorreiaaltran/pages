@@ -382,22 +382,22 @@ p.caption{
 #tocDropdown.dropdown-content{
   top: 44px;
   right: -100%;
+  opacity: 0;
   transition: left 0.3s ease-out;
 }
 
 #tocDropdown.dropdown-content.show{
   position: fixed; /*fixed é em relação à janela. absolute é em relação ao elemento pai*/
   right:0%;
+  opacity: 1;
   transition: all 0.3s ease-out;
 }
-
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     background: url(../img/logos/imagem_background.png) no-repeat;
     background-color: white;
     width: auto;
-    max-width: 80%;
-    max-height: calc(100% - 46px); /*80%;*/
+    height: 100%; /*80%;*/
     box-shadow:8px 0 60px rgba(0,0,0,0.6);
     z-index: 98;
     overflow-x: auto;
@@ -412,8 +412,10 @@ div.dropdown-content.show{
 }
 
 
-.dropdown-content.show > .table-of-contents > h2{
+#tocDropdown h2{
   line-height: 30px;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
 }
 
 /* Links inside the dropdown */
@@ -638,7 +640,6 @@ border-left: 5px solid #29615D;
   background-color: rgba(236,249,238,.54);
   transition: color 0.3s, background-color 0.3s;
 }
-
 
 /* #docButtons */
 
