@@ -421,11 +421,13 @@ div.dropdown-content.show{
 /* Links inside the dropdown */
 .dropdown-content a {
     color: #656565;
+    font-size: 1em;
+    line-height: normal;
     text-decoration: none;
     display: block;
     margin: 0;
     border: 0;
-    padding: 0.2em 0 0.1em 0;
+    padding: 0;
 }
 
 .dropdown-content nav > h1,
@@ -441,40 +443,27 @@ div.dropdown-content.show{
 }
 
 a.toc_h1 {
-  font-size: 1em;
-  font-weight: bold;
+  margin-left: 0em;
 }
 
 a.toc_h2 {
-  font-size: 1em;
-  font-weight:normal;
   margin-left: 0em;
-  animation: highlight 2s ease;
 }
 
 a.toc_h3 {
-  font-size: 0.9em;
-  font-weight: normal;
-  margin-left: 0.9em;
-  animation: highlight 2s ease;
+  margin-left: 1.2em;
 }
 
 a.toc_h4 {
-  font-size: 0.9em;
-  font-weight: normal;
-  margin-left: 2.1em;
+  margin-left: 3.1em;
 }
 
 a.toc_h5 {
-  font-size: 0.9em;
-  font-weight: normal;
-  margin-left: 2.3em;
+  margin-left: 3.5em;
 }
 
 a.toc_h6 {
-  font-size: 0.9em;
-  font-weight: normal;
-  margin-left: 2.5em;
+  margin-left: 4em;
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
@@ -942,7 +931,7 @@ footer img {
 					*/
 					max-width: 1038px;
 					padding-bottom: 6em;
-          transition: all 2s ease;
+          transition: max-width 2s ease, padding-bottom 2s ease;
 				}
 	}
 
@@ -959,7 +948,11 @@ footer img {
         margin-left: 0;
         margin-right: 0;
         min-height: 0;
-        transition: all 2s ease;
+        transition: margin-top 2s ease,
+                    margin-bottom 2s ease,
+                    margin-left 2s ease,
+                    margin-right 2s ease,
+                    min-height 2s ease;
       }
 
   }/*max-width: 1200px*/
@@ -978,7 +971,11 @@ footer img {
         max-width: 900px;
         margin-top: 70px;
         margin-bottom: 20vh;
-        transition: all 2s ease;
+        transition: margin-top 2s ease,
+                    margin-bottom 2s ease,
+                    margin-left 2s ease,
+                    margin-right 2s ease,
+                    max-width 2s ease;
 			}
 
       /* Table of Content */
@@ -999,11 +996,13 @@ footer img {
 			#content {
 				margin-left: auto;
         margin-right: auto;
-        transition: all 2s ease;
+        transition: margin-left 2s ease,
+                    margin-right 2s ease;
+			}
 			}
 
       /* Table of Content */
-      .dropdown-content {width: 35%;max-width: 35%;transition: all 2s ease;}
+      .dropdown-content {width: 25%;max-width: 25%;transition: all 2s ease;}
 	}
 
 /* Narrower */
@@ -1044,7 +1043,8 @@ footer img {
   #content {
     padding: 0.8em;
     margin-top: 55px;
-    transition: all 2s ease;
+    transition: padding 2s ease,
+                margin-top 2s ease
   }
 }
 
@@ -1064,7 +1064,7 @@ footer img {
       #content {
         padding: 0.8em;
         margin-top: 55px;
-        transition: all 2s ease;
+        transition: padding 2s ease, margin-top 2s ease;
       }
 
 		/* Button */

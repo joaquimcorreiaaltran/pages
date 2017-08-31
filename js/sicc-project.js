@@ -205,8 +205,8 @@ function loadToc(elementToPopulate){
   if ($(elementToPopulate)){
 
     var toc_html =
-        "<div><h2>Índice</h2></div><nav role='navigation' class='table-of-contents'>" +
-  		    /*"<h2>Índice</h2>" +*/
+        "<div><h2><i class='fa fa-arrows fa-fw'></i>Índice</h2></div>"+
+        "<nav role='navigation' class='table-of-contents'>" +
   		    "<ul>";
 
   		var newLine, el, title, link;
@@ -231,10 +231,9 @@ function loadToc(elementToPopulate){
       $(elementToPopulate).html(toc_html);
       showToc();
       /*Dependency: jquery-ui.js*/
-      $("#tocDropdown").draggable({ /*containment: "body",*/snap: "#docButtons, #content", cursor: "move", cursorAt: { top: 30, left: 30 } });
-      /*$("#tocDropdown").resizable();
-      $(".dropdown-content").resizable();
-      $("#table-of-contents").resizable();*/
+      $("#tocDropdown").draggable({ /*containment: "body",*/snap: "#docButtons, #content", cursor: "move", cursorAt: { top: 5, left: 5 } });
+      $("#content").draggable({ /*containment: "body",*/snap: "#docButtons", cursor: "move", cursorAt: { top: 5, left: 5 } });
+      $("#content").resizable();
   }/*if*/
   else {
     console.log("Não foi possível criar o índice porque o elemento \"" + elementToPopulate + "\" não existe no HTML!");
