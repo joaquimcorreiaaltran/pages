@@ -205,7 +205,7 @@ function loadToc(elementToPopulate){
   if ($(elementToPopulate)){
 
     var toc_html =
-        "<div><h2><i class='fa fa-arrows fa-fw'></i>Índice</h2></div>"+
+        "<i id='drag1' title='Arraste-me...' class='fa fa-arrows fa-fw' style='cursor: move;'></i>" +
         "<nav role='navigation' class='table-of-contents'>" +
   		    "<ul>";
 
@@ -226,14 +226,14 @@ function loadToc(elementToPopulate){
         toc_html += newLine;
   		});
 
-  		toc_html +=  "</ul>" + "</nav>";
+  		toc_html +=  "</ul>" + "</nav>" + "<div><i id='drag2' title='Arraste-me...' class='fa fa-arrows fa-fw' style='cursor: move;'></i></div>";
 
-      $(elementToPopulate).html(toc_html);
+
+      $(elementToPopulate).append(toc_html);
       showToc();
       /*Dependency: jquery-ui.js*/
-      $("#tocDropdown").draggable({ /*containment: "body",*/snap: "#docButtons, #content", cursor: "move", cursorAt: { top: 5, left: 5 } });
-      $("#content").draggable({ /*containment: "body",*/snap: "#docButtons", cursor: "move", cursorAt: { top: 5, left: 5 } });
-      $("#content").resizable();
+      $("#tocDropdown").draggable({ containment: "window", handle: "i", snap: "#docButtons, #content", cursor: "move", cursorAt: { top: 5, left: 5 } });
+      $("#tocDropdown").resizable();
   }/*if*/
   else {
     console.log("Não foi possível criar o índice porque o elemento \"" + elementToPopulate + "\" não existe no HTML!");
