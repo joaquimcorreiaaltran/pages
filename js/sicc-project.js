@@ -19,10 +19,99 @@ dimmingOpacity = 0.5;
 dimmingGeckoFix = true;
 blockRightClick = true;
 
+
+function loadIndexContent (btnsToHide) {
+
+  removeElements(btnsToHide);
+
+  $.get("../index.html", function (data) {
+    $("#content").append(data);
+  });
+
+}
+
+function loadIframe (option, btnsToHide){
+
+  var htmlcontent;
+
+  removeElements(btnsToHide);
+
+  if (option == "apresSncAp") {
+    htmlcontent = "<h1 style='text-align: center;margin-top: 1em;adding: 0 1em 0em 1em'>SNC-AP para entidades de saúde</h1>" +
+                  "<div style='position: relative; width: 100%; height: 0px; padding-bottom: 79%;'>" +
+                  "<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://spmssicc.github.io/pages/pptx/SPMS_SICC_SNC_AP_20160606_04-pics.pptx' style='position: absolute; border-top:0; width: 99.5%; height: 100%; margin: 0 auto 0 auto; alignment: middle;' title='Apresentação Powerpoint SICC SNC-AP'></iframe>" +
+                  "</div>";
+  }
+  else if (option == "circ1381") {
+    htmlcontent = "<h1 style='text-align: center;padding: 0 1em 0em 1em'>Circular DGO n.º 1381 (05/04/2016)</h1>" +
+                  "<iframe src='https://docs.google.com/gview?url=http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1381.pdf&embedded=true&rm=minimal' style='width:100%; height:700px' frameborder='1'></iframe>";
+  }
+  else if(option == "decLei192"){
+    htmlcontent = "<h1 style='text-align: center;padding: 0 1em 0em 1em'>Decreto-Lei n.º 192/2015 (11/09/2015)</h1>" +
+                  "<iframe src='https://docs.google.com/gview?url=https://dre.pt/application/conteudo/70262478&embedded=true' style='width:100%; height:700px' frameborder='1'></iframe>";
+  }
+  else if(option == "decLei85"){
+    htmlcontent = "<h1 style='text-align: center;padding: 0 1em 0em 1em'>Decreto-Lei n.º 85/2016 (21/12/2016)</h1>" +
+                  "<iframe src='https://docs.google.com/gview?url=https://dre.pt/application/conteudo/105583346&embedded=true' style='width:100%; height:700px' frameborder='1'></iframe>";
+  }
+  else if(option == "circ1382"){
+    htmlcontent = "<h1 style='text-align: center;padding: 0 1em 0em 1em'>Circular DGO n.º 1382 (05/04/2016)</h1>" +
+                  "<iframe src='https://docs.google.com/gview?url=http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1382.pdf&embedded=true' style='width:100%; height:700px' frameborder='1'></iframe>";
+  }
+  else{
+    htmlcontent = "<h1>Não foi possível apresentar o conteúdo escolhido</h1>";
+  }
+
+  $("#documento").html(htmlcontent);
+
+}
+
+function loadMdDoc (mdFile, btnsToHide){
+
+  /*getScript("../js/jquery-3.1.1.js");
+  getScript("../js/libs/showdown.js");
+  getScript("../js/sicc-project.js");
+  getScript("../js/libs/accordion-menu-v2.js");
+  getScript("../js/highslide-with-gallery.js");
+  getScript("../js/jquery.zoom.js");
+  getScript("../js/jquery-ui.js");*/
+
+  showToc();
+
+  convertMdToHtml("documento", function() {
+    loadDocButtons(function() {
+      loadToc("tocDropdown");
+    }, btnsToHide);
+  }, mdFile);
+}
+
+
+function getScript(path) {
+  $.getScript(path)
+      .done(function( script, textStatus ) {console.log("[Carregamento de Script]:"+ textStatus);})
+      .fail(function( jqxhr, settings, exception ) {$( "div.log" ).text( "Triggered ajaxError handler.");});
+}
+
 //load and convert Markdown to Html and show it
-function convertMdToHtml (elementId, funcao) {
-    $.get('../markdown/'+ doc_name +'.md', function (data) {
+function convertMdToHtml (elementId, funcao, mdFile) {
+
+  var file = doc_name;
+
+    if (elementId == undefined || mdFile.length < 1) {
+      elementId = "documento";
+      console.log("[convertMdToHtml] elementId = \"documento\";");
+    }
+
+    if (mdFile == undefined || mdFile.length > 1) {
+      file = mdFile;
+      console.log("[convertMdToHtml] file: " + file);
+    }
+
+    console.log("[convertMdToHtml] elementId: " + elementId + ",\nmdFile" + mdFile + ", \nfuncao: " + funcao);
+
+    $.get('../markdown/'+ file +'.md', function (data) {
         var converter = new showdown.Converter(),  data, html = converter.makeHtml(data);
+        console.log("[convertMdToHtml] file converted!");
         $("#"+elementId).html(html);
         zommClickImagem();
         responsiveTable();
@@ -59,6 +148,8 @@ function loadFooter(page) {
 
 //Adds auxilary buttons to the interface
 function loadDocButtons (funcao, btnsToHide, page) {
+
+  console.log("[loadDocButtons] btns to hide: " + btnsToHide);
 
   var fileDirectory = "doc_buttons.html";
   var path = window.location.pathname;
@@ -120,6 +211,7 @@ function removeElements(elements){
     for(i=0; i < elements.length; i++){
       $("#"+elements[i]).remove();
     }
+    console.log("[removeElements] elements removed");
 }
 
 
@@ -127,12 +219,13 @@ function removeElements(elements){
 // Add zoom functionality to images in the HTML
 function zommClickImagem() {
 
-    var show = true;
-
     $('#documento img').each(function() {
       var alt = $(this).attr("alt")
       $(this).wrap("<a class='imagem' href='"+$(this).attr( "src" ) + "' onclick='return hs.expand(this)'></a>");
     });
+
+    console.log("[zommClickImagem] image zoom ready!");
+
 }/*close zommClickImagem*/
 
 /* Add auto scroll to document tables */
@@ -143,66 +236,84 @@ function responsiveTable(){
 }/*close responsiveTable()*/
 
 //Loads the gitHub repository and insert insert into the HTML
-function loadCommitHistory() {
-  if (doc_name == "changelog"){
-      var branch, callback, container, limit, repo, url, username;
-      username = "SPMSSICC";
-      repo = "pages";
+function loadCommitHistory(btnsToHide) {
 
-      container = $('#latest-commits');
-      callback = function(response, textStatus, jqXHR) {
-                    var index, items, result, ul, _results;
-                    // Request limit to the gitHub API per hour
-                    var rate_limit = response.meta["X-RateLimit-Limit"];
-                    // Requests left to the gitHub API in the current hour
-                    var rate_limit_remaining = response.meta["X-RateLimit-Remaining"];
-                    var timestamp = Math.abs(new Date() - response.meta["X-RateLimit-Reset"] - new Date());
-                    var time_to_reset = new Date(timestamp*1000);
-                    time_to_reset =  time_to_reset.getHours()+":"+time_to_reset.getMinutes();
+  getScript("../js/jquery.timeago.js");
 
-                    items = response.data;
-                    ul = $('#commit-history');
-                    ul.empty();
-                    _results = [];
+  removeElements(btnsToHide);
 
-                    if (rate_limit_remaining > 0) {
-                      for (index in items) {
-                        result = items[index];
-                        _results.push((function(index, result) {
-                          if (result.author != null) {
-                            return ul.append("<li>\n\n <div>\n\n </div>\n <div>\n <b>" + ($.timeago(result.commit.committer.date)) + "</b>: <i>\"" + result.commit.message + "\" </i>(<a href=\"https://github.com/" + username + "/" + repo + "/commit/" + result.sha + "\" target=\"_blank\">ver alterações</a>).<br />\n  </div>\nAutor: <a href=\"https://github.com/" + result.author.login + "\"><b>" + result.author.login + "</b></a>.</li><br />");
-                          }
-                        })(index, result));
-                      }
-                      //Show an UI message if the request limit to the API was reached
-                    }else if (rate_limit_remaining == 0) {
-                       return ul.append("<b>Atenção: </b> Não foi possível mostrar as atualizações devido a sobrecarga de pedidos (>" + rate_limit + "/hr), realizados pelo seu atual IP. Pode utilizar outro IP ou voltar a tentar depois das " + time_to_reset + ":59s de hoje. <br /><br />Mensagem do servidor: \"<i>"+ response.data.message +"</i>\"");
-                     }else{
-                       return ul.append("Ops! :( <br /><br /> Ocorreu algo inesperado.")
-                     }
-                    return _results;
-                  };/*callback function*/
 
-      return $.ajax({ url: "https://api.github.com/repos/" + username + "/" + repo + "/commits?callback=callback&callback=jQuery171010727564072631068_1487000384850&per_page=10&_=1487000384930",
-                      data:{per_page: "20"},
-                      dataType: "jsonp",
-                      type: "GET",
-                    })
-                    .done(function(response, textStatus, jqXHR) {
-                      return callback(response, textStatus, jqXHR);
-                    });
-    }/*if(doc_name == "changelog")*/
+
+  var htmlcontent = "<div id='latest-commits'>"+
+            	        "<div id='latest-commits-header'>"+
+            	          "<h1>Atualizações  <i class='fa fa-github gh-icon'></i></h1>"+
+            	        "</div>"+
+            	        "<ul id='commit-history'></ul>"+
+                		"</div>";
+
+  $("#documento").html(htmlcontent);
+
+    var branch, callback, container, limit, repo, url, username;
+    var username = "SPMSSICC";
+    var repo = "pages";
+
+    container = $('#latest-commits');
+    callback = function(response, textStatus, jqXHR) {
+                  var index, items, result, ul, _results;
+                  // Request limit to the gitHub API per hour
+                  var rate_limit = response.meta["X-RateLimit-Limit"];
+                  // Requests left to the gitHub API in the current hour
+                  var rate_limit_remaining = response.meta["X-RateLimit-Remaining"];
+                  var timestamp = Math.abs(new Date() - response.meta["X-RateLimit-Reset"] - new Date());
+                  var time_to_reset = new Date(timestamp*1000);
+                  time_to_reset =  time_to_reset.getHours()+":"+time_to_reset.getMinutes();
+
+                  items = response.data;
+                  ul = $('#commit-history');
+                  ul.empty();
+                  _results = [];
+
+                  if (rate_limit_remaining > 0) {
+                    for (index in items) {
+                      result = items[index];
+                      _results.push((function(index, result) {
+                        if (result.author != null) {
+                          return ul.append("<li>\n\n <div>\n\n </div>\n <div>\n <b>" + ($.timeago(result.commit.committer.date)) + "</b>: <i>\"" + result.commit.message + "\" </i>(<a href=\"https://github.com/" + username + "/" + repo + "/commit/" + result.sha + "\" target=\"_blank\">ver alterações</a>).<br />\n  </div>\nAutor: <a href=\"https://github.com/" + result.author.login + "\"><b>" + result.author.login + "</b></a>.</li><br />");
+                        }
+                      })(index, result));
+                    }
+                    //Show an UI message if the request limit to the API was reached
+                  }else if (rate_limit_remaining == 0) {
+                     return ul.append("<b>Atenção: </b> Não foi possível mostrar as atualizações devido a sobrecarga de pedidos (>" + rate_limit + "/hr), realizados pelo seu atual IP. Pode utilizar outro IP ou voltar a tentar depois das " + time_to_reset + ":59s de hoje. <br /><br />Mensagem do servidor: \"<i>"+ response.data.message +"</i>\"");
+                   }else{
+                     return ul.append("Ops! :( <br /><br /> Ocorreu algo inesperado.")
+                   }
+                  return _results;
+                };/*callback function*/
+
+    return $.ajax({ url: "https://api.github.com/repos/" + username + "/" + repo + "/commits?callback=callback&callback=jQuery171010727564072631068_1487000384850&per_page=10&_=1487000384930",
+                    data:{per_page: "20"},
+                    dataType: "jsonp",
+                    type: "GET",
+                  })
+                  .done(function(response, textStatus, jqXHR) {
+                    return callback(response, textStatus, jqXHR);
+                  });
 }/*loadCommitHistory()*/
 
 
 /*
-TOC - Builds the table of contents based on HTML elements choosen and insert the TOC in th "elementToPopulate"
+TOC - Builds the table of contents based on HTML elements choosen and insert the TOC in th "elementId"
 */
-function loadToc(elementToPopulate){
+function loadToc(elementId){
 
-  elementToPopulate = "#"+elementToPopulate;
+  $(elementId).html("");
 
-  if ($(elementToPopulate)){
+  console.log("[loadToc] Inside loadToc. element: " + elementId);
+
+  elementId = "#" + elementId;
+
+  if ($(elementId)){
 
     var toc_html =
         "<i id='drag1' title='Arraste-me...' class='fa fa-arrows fa-fw' style='cursor: move;'></i>" +
@@ -228,15 +339,18 @@ function loadToc(elementToPopulate){
 
   		toc_html +=  "</ul>" + "</nav>" + "<div><i id='drag2' title='Arraste-me...' class='fa fa-arrows fa-fw' style='cursor: move;'></i></div>";
 
+      $(elementId).html(toc_html);
 
-      $(elementToPopulate).append(toc_html);
+    if(!$(elementId).hasClass("show")){
       showToc();
+    }
+
       /*Dependency: jquery-ui.js*/
       $("#tocDropdown").draggable({ containment: "window", handle: "i", snap: "#docButtons, #content", cursor: "move", cursorAt: { top: 5, left: 5 } });
       $("#tocDropdown").resizable();
   }/*if*/
   else {
-    console.log("Não foi possível criar o índice porque o elemento \"" + elementToPopulate + "\" não existe no HTML!");
+    console.log("Não foi possível criar o índice porque o elemento \"" + elementId + "\" não existe no HTML!");
   }
 }/*builds toc*/
 

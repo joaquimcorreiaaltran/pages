@@ -21,7 +21,7 @@
 <body oncopy="return false" oncut="return false" onpaste="return false">
 	<header>
 		<div id="docButtons"></div>
-		<a id="amenuLink" href="amenu-source.html"></a>
+		<a id="amenuLink-v2" href="amenu-source-v2.html"></a>
 		<div id="tocDropdown" class="dropdown-content"></div>
 	</header>
 	<div id="content">
@@ -44,7 +44,7 @@
 	<script src="../js/jquery-3.1.1.js"></script>
 	<script src="../js/libs/showdown.js"></script>
 	<script src="../js/sicc-project.js"></script>
-	<script src="../js/libs/accordion-menu.js"></script>
+	<script src="../js/libs/accordion-menu-v2.js"></script>
 	<script src="../js/highslide-with-gallery.js"></script>
 	<script src="../js/jquery.zoom.js" async></script>
 	<script src="../js/jquery-ui.js"></script>
@@ -63,7 +63,7 @@
 					loadToc("tocDropdown");
 				},Btns);
 				loadFooter();
-			});
+			},"");
 			document.body.style.cursor = 'auto';
 		});
 	</script>

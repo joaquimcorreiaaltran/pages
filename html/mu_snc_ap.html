@@ -59,13 +59,15 @@ Remove this function when the document is finalized -->
 			var Btns = ["btnPDF"];//["btnMenu","btnPDF","btnEditarDoc","btnShowToc","tocDropdown"]
 
 			// convert .md file to html and place it into the html element sent (argument)
-			convertMdToHtml("documento", function() {
-				loadDocButtons(function() {
-					//build the table of content
-					loadToc("tocDropdown");
-				},Btns);
-				loadFooter();
-			});
+			convertMdToHtml("", function() {
+																			loadDocButtons(function() {
+																																	//build the table of content
+																																	loadToc('tocDropdown');
+																																	console.log("saiu da loadToc");
+																																},Btns);
+																			//loadFooter();
+																		},"");
+			loadFooter();
 			document.body.style.cursor = 'auto';
 		});
 	</script>
