@@ -25,7 +25,7 @@ function loadIndexContent (btnsToHide) {
   removeElements(btnsToHide);
 
   $.get("../index.html", function (data) {
-    $("#content").append(data);
+    $("#content").html(data);
   });
 
 }
@@ -76,7 +76,7 @@ function loadMdDoc (mdFile, btnsToHide){
   getScript("../js/jquery.zoom.js");
   getScript("../js/jquery-ui.js");*/
 
-  showToc();
+    showToc();
 
   convertMdToHtml("documento", function() {
     loadDocButtons(function() {
@@ -210,8 +210,10 @@ function loadDocButtons (funcao, btnsToHide, page) {
 function removeElements(elements){
     for(i=0; i < elements.length; i++){
       $("#"+elements[i]).remove();
+      var arrVal = elements[i];
+      console.log("[removeElements] element removed: ", arrVal);
     }
-    console.log("[removeElements] elements removed");
+
 }
 
 
@@ -241,8 +243,6 @@ function loadCommitHistory(btnsToHide) {
   getScript("../js/jquery.timeago.js");
 
   removeElements(btnsToHide);
-
-
 
   var htmlcontent = "<div id='latest-commits'>"+
             	        "<div id='latest-commits-header'>"+
@@ -305,15 +305,29 @@ function loadCommitHistory(btnsToHide) {
 /*
 TOC - Builds the table of contents based on HTML elements choosen and insert the TOC in th "elementId"
 */
+
+/*detect if a selector returns null
+Used like:
+$("#notAnElement").exists();*/
+$.fn.exists = function () {
+    return this.length !== 0;
+}
+
+
 function loadToc(elementId){
-
-  $(elementId).html("");
-
-  console.log("[loadToc] Inside loadToc. element: " + elementId);
 
   elementId = "#" + elementId;
 
-  if ($(elementId)){
+  if ($(elementId).exists() == false){
+    var newEl ="<div id='tocDropdown' class='dropdown-content'></div>";
+    $("#docButtons").after(newEl);
+  }/*if*/
+  else {
+    console.log("Não foi possível criar o índice porque o elemento \"" + elementId + "\" não existe no HTML!");
+  }
+
+  if ($(elementId).exists()){
+    $(elementId).html("");
 
     var toc_html =
         "<i id='drag1' title='Arraste-me...' class='fa fa-arrows fa-fw' style='cursor: move;'></i>" +
@@ -341,6 +355,8 @@ function loadToc(elementId){
 
       $(elementId).html(toc_html);
 
+      console.log("[loadToc] $(" + elementId + ").html:\n\n" + $(elementId).html());
+
     if(!$(elementId).hasClass("show")){
       showToc();
     }
@@ -348,15 +364,14 @@ function loadToc(elementId){
       /*Dependency: jquery-ui.js*/
       $("#tocDropdown").draggable({ containment: "window", handle: "i", snap: "#docButtons, #content", cursor: "move", cursorAt: { top: 5, left: 5 } });
       $("#tocDropdown").resizable();
-  }/*if*/
-  else {
-    console.log("Não foi possível criar o índice porque o elemento \"" + elementId + "\" não existe no HTML!");
-  }
+    }
 }/*builds toc*/
 
 function showToc() {
     $(".dropdown-content").toggleClass("show");
     $("#btnShowToc").toggleClass("show");
+
+    console.log("[showToc] visibility:" + $(".dropdown-content").hasClass("show"));
 };
 
 function showMenu(){

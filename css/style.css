@@ -384,8 +384,7 @@ p.caption{
   right: -100%;
   opacity: 0;
   transition: left 0.3s ease-out;
-
-
+  max-width: 400px;
 }
 
 #tocDropdown.dropdown-content.show{
@@ -558,7 +557,7 @@ a.toc_h6 {
 }
 
 #accordion li ul > li > div,
-#accordion li ul > li > div div, 
+#accordion li ul > li > div div,
 #accordion ul > li > div > a{
   line-height: 3em;
   text-indent: 2.9em;
@@ -985,9 +984,6 @@ footer img {
                     margin-right 2s ease,
                     max-width 2s ease;
 			}
-
-      /* Table of Content */
-      .dropdown-content {width: 20%;max-width: 20%;transition: all 2s ease;}
 	}
 
 /* Narrow */
@@ -1008,9 +1004,6 @@ footer img {
                     margin-right 2s ease;
 			}
 			}
-
-      /* Table of Content */
-      .dropdown-content {width: 25%;max-width: 25%;transition: all 2s ease;}
 	}
 
 /* Narrower */
@@ -1092,9 +1085,6 @@ footer img {
 			padding: 0.75em 0 0.75em 0;
 			margin: 0.5em 0 0.5em 0;
 		}
-
-    /* Table of Content */
-    .dropdown-content {width: 40%;max-width: 40%;transition: all 2s ease;}
 	}
 
 /* Reset */
