@@ -22,6 +22,8 @@ blockRightClick = true;
 
 function loadIndexContent (btnsToHide) {
 
+  console.log("[loadIndexContent] btnsToHide" ,btnsToHide);
+
   removeElements(btnsToHide);
 
 
