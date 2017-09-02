@@ -22,18 +22,16 @@ blockRightClick = true;
 
 function loadIndexContent (btnsToHide) {
 
-  console.log("[loadIndexContent] btnsToHide" ,btnsToHide);
-
-  removeElements(btnsToHide);
-
+  console.log("\n\n\n\n\n[loadIndexContent] btnsToHide" ,btnsToHide);
 
   $("body").attr("style","margin:0 0 0 0;  width:100%");
   $("#content").attr("style","min-height: 90vh; margin: 0 0 0 0; padding:1em 1em 1em 1em; widht: 100%; max-width:5000px");
 
-  $.get("./index.html", function (data) {
+  $.get("./html/index_content.html", function (data) {
     $("#content").html(data);
-    loadDocButtons("",btnsToHide,"index");
+
   });
+  loadDocButtons("",btnsToHide,"");
   loadFooter();
 
 }
