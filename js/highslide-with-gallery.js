@@ -33,7 +33,7 @@ lang : {
 
 },
 // See http://highslide.com/ref for examples of settings
-graphicsDir : '../../pages/img/highslide/graphics/',
+graphicsDir : './img/highslide/graphics/',
 expandCursor : 'zoomin.cur', // null disables
 restoreCursor : 'zoomout.cur', // null disables
 expandDuration : 250, // milliseconds

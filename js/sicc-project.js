@@ -9,7 +9,7 @@ Date: Aug-2017
 doc_name = window.location.pathname.split("/").pop().replace(/.html|htm/gi,"");
 
 //highslide-with-gallery configs
-graphicsDir = '../img/highslide/graphics/';
+graphicsDir = './img/highslide/graphics/';
 fadeInOut = true;
 align = 'center';
 transitions = ['expand', 'crossfade'];
@@ -24,65 +24,90 @@ function loadIndexContent (btnsToHide) {
 
   removeElements(btnsToHide);
 
-  $.get("../index.html", function (data) {
+  $("body").attr("style","margin:0 0 0 0;  width:100%");
+  $("#content").attr("style","min-height: 90vh; margin: 0 0 0 0; padding:1em 1em 1em 1em; widht: 100%; max-width:5000px");
+
+  $.get("./index.html", function (data) {
     $("#content").html(data);
   });
-
+  loadFooter();
 }
 
 function loadIframe (option, btnsToHide){
 
-  var htmlcontent;
+  showToc();
 
-  removeElements(btnsToHide);
+  $("body, #content").removeAttr("style");
 
-  if (option == "apresSncAp") {
-    htmlcontent = "<h1 style='text-align: center;margin-top: 1em;adding: 0 1em 0em 1em'>SNC-AP para entidades de saúde</h1>" +
-                  "<div style='position: relative; width: 100%; height: 0px; padding-bottom: 79%;'>" +
-                  "<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://spmssicc.github.io/pages/pptx/SPMS_SICC_SNC_AP_20160606_04-pics.pptx' style='position: absolute; border-top:0; width: 99.5%; height: 100%; margin: 0 auto 0 auto; alignment: middle;' title='Apresentação Powerpoint SICC SNC-AP'></iframe>" +
-                  "</div>";
-  }
-  else if (option == "circ1381") {
-    htmlcontent = "<h1 style='text-align: center;padding: 0 1em 0em 1em'>Circular DGO n.º 1381 (05/04/2016)</h1>" +
-                  "<iframe src='https://docs.google.com/gview?url=http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1381.pdf&embedded=true&rm=minimal' style='width:100%; height:700px' frameborder='1'></iframe>";
-  }
-  else if(option == "decLei192"){
-    htmlcontent = "<h1 style='text-align: center;padding: 0 1em 0em 1em'>Decreto-Lei n.º 192/2015 (11/09/2015)</h1>" +
-                  "<iframe src='https://docs.google.com/gview?url=https://dre.pt/application/conteudo/70262478&embedded=true' style='width:100%; height:700px' frameborder='1'></iframe>";
-  }
-  else if(option == "decLei85"){
-    htmlcontent = "<h1 style='text-align: center;padding: 0 1em 0em 1em'>Decreto-Lei n.º 85/2016 (21/12/2016)</h1>" +
-                  "<iframe src='https://docs.google.com/gview?url=https://dre.pt/application/conteudo/105583346&embedded=true' style='width:100%; height:700px' frameborder='1'></iframe>";
-  }
-  else if(option == "circ1382"){
-    htmlcontent = "<h1 style='text-align: center;padding: 0 1em 0em 1em'>Circular DGO n.º 1382 (05/04/2016)</h1>" +
-                  "<iframe src='https://docs.google.com/gview?url=http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1382.pdf&embedded=true' style='width:100%; height:700px' frameborder='1'></iframe>";
-  }
-  else{
-    htmlcontent = "<h1>Não foi possível apresentar o conteúdo escolhido</h1>";
-  }
+  $.get('./html/div_content.html', function (data) {
 
-  $("#documento").html(htmlcontent);
+    $("#content").html(data);
+    console.log("[loadMdDoc] div '#content' replaced");
+
+    var htmlcontent;
+
+    removeElements(btnsToHide);
+
+    if (option == "apresSncAp") {
+      htmlcontent = "<h1 style='text-align: center;margin-top: 1em;adding: 0 1em 0em 1em'>SNC-AP para entidades de saúde</h1>" +
+                    "<div style='position: relative; width: 100%; height: 0px; padding-bottom: 79%;'>" +
+                    "<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://spmssicc.github.io/pages/pptx/SPMS_SICC_SNC_AP_20160606_04-pics.pptx' style='position: absolute; border-top:0; width: 99.5%; height: 100%; margin: 0 auto 0 auto; alignment: middle;' title='Apresentação Powerpoint SICC SNC-AP'></iframe>" +
+                    "</div>";
+    }
+    else if (option == "circ1381") {
+      htmlcontent = "<h1 style='text-align: center;padding: 0 1em 0em 1em'>Circular DGO n.º 1381 (05/04/2016)</h1>" +
+                    "<iframe src='https://docs.google.com/gview?url=http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1381.pdf&embedded=true&rm=minimal' style='width:100%; height:700px' frameborder='1'></iframe>";
+    }
+    else if(option == "decLei192"){
+      htmlcontent = "<h1 style='text-align: center;padding: 0 1em 0em 1em'>Decreto-Lei n.º 192/2015 (11/09/2015)</h1>" +
+                    "<iframe src='https://docs.google.com/gview?url=https://dre.pt/application/conteudo/70262478&embedded=true' style='width:100%; height:700px' frameborder='1'></iframe>";
+    }
+    else if(option == "decLei85"){
+      htmlcontent = "<h1 style='text-align: center;padding: 0 1em 0em 1em'>Decreto-Lei n.º 85/2016 (21/12/2016)</h1>" +
+                    "<iframe src='https://docs.google.com/gview?url=https://dre.pt/application/conteudo/105583346&embedded=true' style='width:100%; height:700px' frameborder='1'></iframe>";
+    }
+    else if(option == "circ1382"){
+      htmlcontent = "<h1 style='text-align: center;padding: 0 1em 0em 1em'>Circular DGO n.º 1382 (05/04/2016)</h1>" +
+                    "<iframe src='https://docs.google.com/gview?url=http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1382.pdf&embedded=true' style='width:100%; height:700px' frameborder='1'></iframe>";
+    }
+    else{
+      htmlcontent = "<h1>Não foi possível apresentar o conteúdo escolhido</h1>";
+    }
+
+    $("#documento").html(htmlcontent);
+    loadFooter();
+  });
+
 
 }
 
 function loadMdDoc (mdFile, btnsToHide){
 
-  /*getScript("../js/jquery-3.1.1.js");
-  getScript("../js/libs/showdown.js");
-  getScript("../js/sicc-project.js");
-  getScript("../js/libs/accordion-menu-v2.js");
-  getScript("../js/highslide-with-gallery.js");
-  getScript("../js/jquery.zoom.js");
-  getScript("../js/jquery-ui.js");*/
-
     showToc();
 
-  convertMdToHtml("documento", function() {
-    loadDocButtons(function() {
-      loadToc("tocDropdown");
-    }, btnsToHide);
-  }, mdFile);
+    $("body, #content").removeAttr("style");
+
+    $.get('./html/div_content.html', function (data) {
+
+    $("#content").html(data);
+    console.log("[loadMdDoc] div '#content' replaced");
+
+      convertMdToHtml("documento", function() {
+        loadDocButtons(function() {
+          loadToc("tocDropdown");
+        }, btnsToHide);
+      }, mdFile);
+      loadFooter();
+    });
+
+  /*getScript("./js/jquery-3.1.1.js");
+  getScript("./js/libs/showdown.js");
+  getScript("./js/sicc-project.js");
+  getScript("./js/libs/accordion-menu-v2.js");
+  getScript("./js/highslide-with-gallery.js");
+  getScript("./js/jquery.zoom.js");
+  getScript("./js/jquery-ui.js");*/
+
 }
 
 
@@ -109,7 +134,7 @@ function convertMdToHtml (elementId, funcao, mdFile) {
 
     console.log("[convertMdToHtml] elementId: " + elementId + ",\nmdFile" + mdFile + ", \nfuncao: " + funcao);
 
-    $.get('../markdown/'+ file +'.md', function (data) {
+    $.get('./markdown/'+ file +'.md', function (data) {
         var converter = new showdown.Converter(),  data, html = converter.makeHtml(data);
         console.log("[convertMdToHtml] file converted!");
         $("#"+elementId).html(html);
@@ -119,20 +144,21 @@ function convertMdToHtml (elementId, funcao, mdFile) {
           funcao();
         }
     });
+
 }/*close convertMdToHtml()*/
 
 //Load html to the end of the document
 function loadFooter(page) {
 
-  var fileDirectory = "footer.html";
+  var fileDirectory = "./html/footer.html";
 
   if(page == "index"){
 
     fileDirectory = "html/footer.html";
 
     $.get(fileDirectory, function (data) {
-        while (data.indexOf("../img") != -1) {
-            data = data.replace("../img","../pages/img");
+        while (data.indexOf("./img") != -1) {
+            data = data.replace("./img","./pages/img");
         }
         $("footer").append(data);
     });
@@ -151,11 +177,11 @@ function loadDocButtons (funcao, btnsToHide, page) {
 
   console.log("[loadDocButtons] btns to hide: " + btnsToHide);
 
-  var fileDirectory = "doc_buttons.html";
+  var fileDirectory = "./html/doc_buttons.html";
   var path = window.location.pathname;
 
   if( page == "index" ){
-    fileDirectory = "html/doc_buttons.html";
+    fileDirectory = "./html/doc_buttons.html";
   }
 
   $.get(fileDirectory, function (data) {
@@ -240,7 +266,7 @@ function responsiveTable(){
 //Loads the gitHub repository and insert insert into the HTML
 function loadCommitHistory(btnsToHide) {
 
-  getScript("../js/jquery.timeago.js");
+  getScript("./js/jquery.timeago.js");
 
   removeElements(btnsToHide);
 
