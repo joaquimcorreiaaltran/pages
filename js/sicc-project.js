@@ -164,7 +164,7 @@ function loadDocButtons (funcao, btnsToHide, file) {
         console.log("[loadDocButtons] ANTES do #btnMenu.click() #accordion visibility: " + $("#accordion").hasClass("showMenu"));
 
        $("#btnEditarDoc").click(function(){
-         window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/"+doc_name+".md","_blank");
+         window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/" + file + ".md","_blank");
        });
 
        /*btnPDF*/
