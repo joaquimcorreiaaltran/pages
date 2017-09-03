@@ -926,13 +926,14 @@ footer img {
 
     #accordion div{
       line-height: 3em;
-      text-indent: 0.1em;
+      text-indent: 0.4em;
     }
 
     #accordion li ul > li,
     #accordion li ul > li > div,
     #accordion li ul > li > div div,
-    #accordion ul > li > div > a{
+    #accordion ul > li > div > a,
+    #accordion a {
       line-height: 3em;
       text-indent: 0.4em;
     }

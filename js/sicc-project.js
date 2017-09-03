@@ -160,9 +160,6 @@ function loadDocButtons (funcao, btnsToHide, file) {
 
         $("#docButtons").html(data);
 
-        console.log("[loadDocButtons] ANTES do #btnMenu.click() #btnMenu visibility: " + $("#btnMenu").hasClass("showMenu"));
-        console.log("[loadDocButtons] ANTES do #btnMenu.click() #accordion visibility: " + $("#accordion").hasClass("showMenu"));
-
        $("#btnEditarDoc").click(function(){
          window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/" + file + ".md","_blank");
        });
@@ -200,8 +197,6 @@ function loadDocButtons (funcao, btnsToHide, file) {
             $("#btnMenu").click(function(){
                 showMenu();
             });
-
-            console.log("[loadDocButtons] FORA do #btnMenu.click() #btnMenu visibility: " + $("#btnMenu").hasClass("showMenu"));
  });
 
 }//close loadDocButtons()
