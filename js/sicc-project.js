@@ -22,16 +22,16 @@ blockRightClick = true;
 
 function loadIndexContent (btnsToHide) {
 
-  console.log("\n\n\n\n\n[loadIndexContent] btnsToHide" ,btnsToHide);
+  console.log("\n[loadIndexContent] btnsToHide: " ,btnsToHide);
 
   $("body").attr("style","margin:0 0 0 0;  width:100%");
   $("#content").attr("style","min-height: 90vh; margin: 0 0 0 0; padding:1em 1em 1em 1em; widht: 100%; max-width:5000px");
 
   $.get("./html/index_content.html", function (data) {
     $("#content").html(data);
-
   });
-  loadDocButtons("",btnsToHide,"");
+
+  loadDocButtons("", btnsToHide);
   loadFooter();
 
 }
@@ -86,33 +86,24 @@ function loadIframe (option, btnsToHide){
 
 function loadMdDoc (mdFile, btnsToHide){
 
-    showToc();
-
     $("body, #content").removeAttr("style");
 
     $.get('./html/div_content.html', function (data) {
 
-    $("#content").html(data);
-    console.log("[loadMdDoc] div '#content' replaced");
+      $("#content").html(data);
 
-      convertMdToHtml("documento", function() {
-        loadDocButtons(function() {
-          loadToc("tocDropdown");
-        }, btnsToHide);
-      }, mdFile);
-      loadFooter();
+        convertMdToHtml("documento", function() {
+          loadDocButtons(function() {
+            loadToc("tocDropdown");
+              if ( $("#accordion").hasClass("showMenu") ){
+                $("#btnMenu").toggleClass("showMenu");
+              }
+          }, btnsToHide);
+        }, mdFile);
+        loadFooter();
     });
 
-  /*getScript("./js/jquery-3.1.1.js");
-  getScript("./js/libs/showdown.js");
-  getScript("./js/sicc-project.js");
-  getScript("./js/libs/accordion-menu-v2.js");
-  getScript("./js/highslide-with-gallery.js");
-  getScript("./js/jquery.zoom.js");
-  getScript("./js/jquery-ui.js");*/
-
 }
-
 
 function getScript(path) {
   $.getScript(path)
@@ -151,88 +142,69 @@ function convertMdToHtml (elementId, funcao, mdFile) {
 }/*close convertMdToHtml()*/
 
 //Load html to the end of the document
-function loadFooter(page) {
+function loadFooter() {
 
   var fileDirectory = "./html/footer.html";
 
-  if(page == "index"){
-
-    fileDirectory = "html/footer.html";
-
-    $.get(fileDirectory, function (data) {
-        while (data.indexOf("./img") != -1) {
-            data = data.replace("./img","./pages/img");
-        }
-        $("footer").append(data);
-    });
-  }
-  else{
     $.get(fileDirectory, function (data) {
       $("footer").append(data);
     });
-  }
-
-
 }
 
 //Adds auxilary buttons to the interface
-function loadDocButtons (funcao, btnsToHide, page) {
+function loadDocButtons (funcao, btnsToHide) {
 
   console.log("[loadDocButtons] btns to hide: " + btnsToHide);
 
   var fileDirectory = "./html/doc_buttons.html";
-  var path = window.location.pathname;
-
-  if( page == "index" ){
-    fileDirectory = "./html/doc_buttons.html";
-  }
 
   $.get(fileDirectory, function (data) {
 
         $("#docButtons").html(data);
 
-        $("#btnMenu").click(function(){
-            showMenu();
-        });
+        console.log("[loadDocButtons] ANTES do #btnMenu.click() #btnMenu visibility: " + $("#btnMenu").hasClass("showMenu"));
+        console.log("[loadDocButtons] ANTES do #btnMenu.click() #accordion visibility: " + $("#accordion").hasClass("showMenu"));
 
-        if( page != "index" ){
+       $("#btnEditarDoc").click(function(){
+         window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/"+doc_name+".md","_blank");
+       });
 
-           $("#btnEditarDoc").click(function(){
-             window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/"+doc_name+".md","_blank");
-           });
+       /*btnPDF*/
+       if(doc_name == "snc_ap_circular_dgo_1381"){
+         $("#btnPDF").click(function(){window.open("http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1381.pdf","_blank")});
+       }
+       else if(doc_name == "snc_ap_circular_dgo_1382"){
+         $("#btnPDF").click(function(){window.open("http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1382.pdf","_blank")});
+       }
+       else if(doc_name == "snc_ap_decreto_lei_85_2016"){
+         $("#btnPDF").click(function(){window.open("https://dre.pt/application/conteudo/105583346","_blank")});
+       }
+       else if(doc_name == "snc_ap_decreto_lei_192_2015"){
+         $("#btnPDF").click(function(){window.open("https://dre.pt/application/conteudo/70262478","_blank")});
+       }
+       else if(doc_name == "snc_ap_apresentacao"){
+         $("#btnPDF").click(function(){window.open("https://view.officeapps.live.com/op/embed.aspx?src=https://spmssicc.github.io/pages/pptx/SPMS_SICC_SNC_AP_20160606_04-pics.pptx","_blank")});
+       }
+       else{
+         $("#btnPDF").click(function(){window.open("https://spmssicc.github.io/pages/pdf/"+doc_name+".pdf","_blank");});
+       }
 
-           /*btnPDF*/
-           if(doc_name == "snc_ap_circular_dgo_1381"){
-             $("#btnPDF").click(function(){window.open("http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1381.pdf","_blank")});
-           }
-           else if(doc_name == "snc_ap_circular_dgo_1382"){
-             $("#btnPDF").click(function(){window.open("http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1382.pdf","_blank")});
-           }
-           else if(doc_name == "snc_ap_decreto_lei_85_2016"){
-             $("#btnPDF").click(function(){window.open("https://dre.pt/application/conteudo/105583346","_blank")});
-           }
-           else if(doc_name == "snc_ap_decreto_lei_192_2015"){
-             $("#btnPDF").click(function(){window.open("https://dre.pt/application/conteudo/70262478","_blank")});
-           }
-           else if(doc_name == "snc_ap_apresentacao"){
-             $("#btnPDF").click(function(){window.open("https://view.officeapps.live.com/op/embed.aspx?src=https://spmssicc.github.io/pages/pptx/SPMS_SICC_SNC_AP_20160606_04-pics.pptx","_blank")});
-           }
-           else{
-             $("#btnPDF").click(function(){window.open("https://spmssicc.github.io/pages/pdf/"+doc_name+".pdf","_blank");});
-           }
+       $("#btnShowToc").click(function(){
+         showToc();
+       });
 
-           $("#btnShowToc").click(function(){
-             showToc();
-           });
+      if(funcao != undefined && typeof funcao == "function"){
+        funcao();
+      }
 
-          if(funcao != undefined && typeof funcao == "function"){
-            funcao();
-          }
-        }/*if != index*/
+    removeElements(btnsToHide);
 
-        removeElements(btnsToHide);
+            $("#btnMenu").click(function(){
+                showMenu();
+            });
 
-     });
+            console.log("[loadDocButtons] FORA do #btnMenu.click() #btnMenu visibility: " + $("#btnMenu").hasClass("showMenu"));
+ });
 
 }//close loadDocButtons()
 
@@ -244,8 +216,6 @@ function removeElements(elements){
     }
 
 }
-
-
 
 // Add zoom functionality to images in the HTML
 function zommClickImagem() {
@@ -330,18 +300,12 @@ function loadCommitHistory(btnsToHide) {
                   });
 }/*loadCommitHistory()*/
 
-
-/*
-TOC - Builds the table of contents based on HTML elements choosen and insert the TOC in th "elementId"
-*/
-
 /*detect if a selector returns null
 Used like:
 $("#notAnElement").exists();*/
 $.fn.exists = function () {
     return this.length !== 0;
 }
-
 
 function loadToc(elementId){
 
@@ -393,6 +357,10 @@ function loadToc(elementId){
       /*Dependency: jquery-ui.js*/
       $("#tocDropdown").draggable({ containment: "window", handle: "i", snap: "#docButtons, #content", cursor: "move", cursorAt: { top: 5, left: 5 } });
       $("#tocDropdown").resizable();
+
+      if ( $("#tocDropdown").hasClass("show") && ($("#tocDropdown").hasClass("show") == false)){
+        $("#btnShowToc").addClass("show");
+      }
     }
 }/*builds toc*/
 
@@ -406,6 +374,9 @@ function showToc() {
 function showMenu(){
   $("#accordion").toggleClass("showMenu");
   $("#btnMenu").toggleClass("showMenu");
+
+  console.log("[showMenu] #accordion visibility:" + $("#accordion").hasClass("showMenu"));
+  console.log("[showMenu] #btnMenu visibility:" + $("#accordion").hasClass("showMenu"));
 }
 
 // Close the dropdown menu if the user clicks outside of it
