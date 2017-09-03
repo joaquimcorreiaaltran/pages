@@ -358,7 +358,7 @@ function loadToc(elementId){
       $("#tocDropdown").draggable({ containment: "window", handle: "i", snap: "#docButtons, #content", cursor: "move", cursorAt: { top: 5, left: 5 } });
       $("#tocDropdown").resizable();
 
-      if ( $("#tocDropdown").hasClass("show") && ($("#tocDropdown").hasClass("show") == false)){
+      if ( $("#tocDropdown").hasClass("show") ){
         $("#btnShowToc").addClass("show");
       }
     }

@@ -915,6 +915,30 @@ footer img {
 			z-index: 1;
 		}
 
+@media screen and (min-width: 200px) and (max-width: 800px) {
+    #tocDropdown.dropdown-content.show{
+      width: 150px;
+    }
+
+    #accordion {
+      width: 270px;
+    }
+
+    #accordion div{
+      line-height: 3em;
+      text-indent: 0.1em;
+    }
+
+    #accordion li ul > li,
+    #accordion li ul > li > div,
+    #accordion li ul > li > div div,
+    #accordion ul > li > div > a{
+      line-height: 3em;
+      text-indent: 0.4em;
+    }
+
+}
+
 	@media screen and (min-width: 737px) {
 
 		/* Basic */
@@ -935,6 +959,7 @@ footer img {
 					padding-bottom: 6em;
           transition: max-width 2s ease, padding-bottom 2s ease;
 				}
+
 	}
 
   @media screen and (max-width: 1200px) {
