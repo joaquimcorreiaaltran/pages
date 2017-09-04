@@ -25,9 +25,9 @@
       "sizes": "192x192"
     },
      {
-      "src": "img/screenshots/iPhone6_splashscreen_750x1294.png",
+      "src": "img/screenshots/logo_sicc_512x512.png",
       "type": "image/png",
-      "sizes": "750x1294"
+      "sizes": "512x512"
     }
   ],
   "scope": "./",
