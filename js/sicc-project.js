@@ -33,6 +33,7 @@ function loadIndexContent (btnsToHide) {
 
   loadDocButtons("", btnsToHide, "index");
   loadFooter();
+  showMenu();
 
 }
 
@@ -78,6 +79,7 @@ function loadIframe (option, btnsToHide){
     }
 
     $("#documento").html(htmlcontent);
+    showMenu();
     loadFooter();
   });
 
@@ -101,6 +103,7 @@ function loadMdDoc (mdFile, btnsToHide){
           }, btnsToHide, mdFile);
         }, mdFile);
         loadFooter();
+        showMenu();
     });
 
 }
