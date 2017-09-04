@@ -23,6 +23,11 @@
       "src": "img/logos/logo_sicc_192x192.png",
       "type": "image/png",
       "sizes": "192x192"
+    },
+     {
+      "src": "img/screenshots/iPhone6_splashscreen_750x1294.png",
+      "type": "image/png",
+      "sizes": "750x1294"
     }
   ],
   "scope": "./",
