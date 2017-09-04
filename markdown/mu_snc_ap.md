@@ -2,6 +2,10 @@
 
 ## Introdução
 
+
+
+
+
 O presente documento visa especificar o funcionamento do novo sistema SNC-AP, evidenciando as novas funcionalidades e ajustes na ótica do utilizador, bem como o satisfação dos requistos específicos da Contabilidade.
 
 ## 1. Menu Parametrização
