@@ -8,7 +8,7 @@ var cacheName = 'spmssicc_v05/09/2017' + Date.now();
 var cacheFiles = [
     '/pages/',
     '/pages/index.html',
-    '/pages/css/style.css',
+    '/pages/css/main.css',
     '/pages/css/font-awesome.css',
     '/pages/css/font-awesome.min.css',
     '/pages/fonts/fontawesome-webfont.eot',
@@ -32,7 +32,7 @@ var cacheFiles = [
     '/pages/js/jquery-3.1.1.js',
     '/pages/js/jquery.timeago.js',
     '/pages/js/jquery.zoom.js',
-    '/pages/js/sicc-project.js',
+    '/pages/js/main.js',
 
     '/pages/markdown/about.md',
     '/pages/markdown/cer_migracao_sicc.md',
