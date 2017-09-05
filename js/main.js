@@ -171,19 +171,19 @@ function loadDocButtons (funcao, btnsToHide, file) {
 
            /*btnPDF*/
            if(file == "snc_ap_circular_dgo_1381"){
-             $("#btnPDF").click(function(){window.open("http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1381.pdf","_blank")});
+             $("#btnPDF").click(function(){window.open("http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1381.pdf","_blank");});
            }
            else if(file == "snc_ap_circular_dgo_1382"){
-             $("#btnPDF").click(function(){window.open("http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1382.pdf","_blank")});
+             $("#btnPDF").click(function(){window.open("http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1382.pdf","_blank");});
            }
            else if(file == "snc_ap_decreto_lei_85_2016"){
-             $("#btnPDF").click(function(){window.open("https://dre.pt/application/conteudo/105583346","_blank")});
+             $("#btnPDF").click(function(){window.open("https://dre.pt/application/conteudo/105583346","_blank");});
            }
            else if(file == "snc_ap_decreto_lei_192_2015"){
-             $("#btnPDF").click(function(){window.open("https://dre.pt/application/conteudo/70262478","_blank")});
+             $("#btnPDF").click(function(){window.open("https://dre.pt/application/conteudo/70262478","_blank");});
            }
            else if(file == "snc_ap_apresentacao"){
-             $("#btnPDF").click(function(){window.open("https://view.officeapps.live.com/op/embed.aspx?src=https://spmssicc.github.io/pages/pptx/SPMS_SICC_SNC_AP_20160606_04-pics.pptx","_blank")});
+             $("#btnPDF").click(function(){window.open("https://view.officeapps.live.com/op/embed.aspx?src=https://spmssicc.github.io/pages/pptx/SPMS_SICC_SNC_AP_20160606_04-pics.pptx","_blank");});
            }
            else{
              $("#btnPDF").click(function(){window.open("https://spmssicc.github.io/pages/pdf/"+ file +".pdf","_blank");});
@@ -220,7 +220,7 @@ function removeElements(elements){
 function zommClickImagem() {
 
     $('#documento img').each(function() {
-      var alt = $(this).attr("alt")
+      var alt = $(this).attr("alt");
       $(this).wrap("<a class='imagem' href='"+$(this).attr( "src" ) + "' onclick='return hs.expand(this)'></a>");
     });
 
@@ -252,8 +252,8 @@ function loadCommitHistory(btnsToHide) {
   $("#documento").html(htmlcontent);
 
     var branch, callback, container, limit, repo, url, username;
-    var username = "SPMSSICC";
-    var repo = "pages";
+    username = "SPMSSICC";
+    repo = "pages";
 
     container = $('#latest-commits');
     callback = function(response, textStatus, jqXHR) {
@@ -276,7 +276,7 @@ function loadCommitHistory(btnsToHide) {
                       result = items[index];
                       _results.push((function(index, result) {
                         if (result.author != null) {
-                          return ul.append("<li>\n\n <div>\n\n </div>\n <div>\n <b>" + ($.timeago(result.commit.committer.date)) + "</b>: <i>\"" + result.commit.message + "\" </i>(<a href=\"https://github.com/" + username + "/" + repo + "/commit/" + result.sha + "\" target=\"_blank\">ver alterações</a>).<br />\n  </div>\nAutor: <a href=\"https://github.com/" + result.author.login + "\"><b>" + result.author.login + "</b></a>.</li><br />");
+                          return ul.append("<li>\n\n <div>\n\n </div>\n <div>\n <b>" + ($.timeago(result.commit.committer.date)) + "</b>: <i>\"" + result.commit.message + "\" </i>(<a href=\"https://github.com/" + username + "/" + repo + "/commit/" + result.sha + "\" target=\"_blank\">ver alterações</a>).<br />\n  </div>\nAutor: <a href=\"https://github.com/" + result.author.login + "\"><b>" + result.author.login + "</b></a>.</li><br />");
                         }
                       })(index, result));
                     }
@@ -284,7 +284,7 @@ function loadCommitHistory(btnsToHide) {
                   }else if (rate_limit_remaining == 0) {
                      return ul.append("<b>Atenção: </b> Não foi possível mostrar as atualizações devido a sobrecarga de pedidos (>" + rate_limit + "/hr), realizados pelo seu atual IP. Pode utilizar outro IP ou voltar a tentar depois das " + time_to_reset + ":59s de hoje. <br /><br />Mensagem do servidor: \"<i>"+ response.data.message +"</i>\"");
                    }else{
-                     return ul.append("Ops! :( <br /><br /> Ocorreu algo inesperado.")
+                     return ul.append("Ops! :( <br /><br /> Ocorreu algo inesperado.");
                    }
                   return _results;
                 };/*callback function*/
@@ -304,7 +304,7 @@ Used like:
 $("#notAnElement").exists();*/
 $.fn.exists = function () {
     return this.length !== 0;
-}
+};
 
 function loadToc(elementId){
 
@@ -368,7 +368,7 @@ function showToc() {
     $("#btnShowToc").toggleClass("show");
 
     console.log("[showToc] visibility:" + $(".dropdown-content").hasClass("show"));
-};
+}
 
 function showMenu(){
   $("#accordion").toggleClass("showMenu");
@@ -383,7 +383,7 @@ window.onclick = function(event) {
   if (!event.target.matches('.dropbtn, #tocDropdown *, #btnMenu, #btnMenu i, #btnMenu a') && $("#btnMenu.show").hasClass("show")) {
     showToc();
   }
-} /*close showToc()*/
+}; /*close showToc()*/
 
 /*********************************************************************
 override standard href-id navigation on page without change HTML markup
