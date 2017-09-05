@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
+
+	<head>
 		<title>SICC - Documentação</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -14,19 +15,17 @@
 		<link rel="apple-touch-icon" sizes="144x144" href="./img/logos/logo_sicc_192x192.png">
 		<link rel="apple-touch-icon" sizes="144x144" href="./img/logos/logo_sicc_512x512.png">
 		<!-- iPhone SPLASHSCREEN-->
-    <link href="./img/screenshots/iphone_splashscreen_320x460.png"
-					media="(device-width: 320px)" rel="apple-touch-startup-image">
+		<link href="./img/screenshots/iphone_splashscreen_320x460.png" media="(device-width: 320px)" rel="apple-touch-startup-image">
 		<!-- iPhone 6 startup image -->
-		<link href="./img/screenshots/iphone6_splashscreen_750x1294.png"
-					media="(device-width: 375px) and (device-height: 667px) and
-									(orientation: portrait) and (-webkit-device-pixel-ratio: 2)"
-					rel="apple-touch-startup-image">
+		<link href="./img/screenshots/iphone6_splashscreen_750x1294.png" media="(device-width: 375px) and (device-height: 667px) and
+									(orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
 		<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="./css/font-awesome.min.css">
 		<link rel="stylesheet" href="./css/main.css">
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
-</head>
-<body style="margin:0 0 0 0;  width:100%">
+	</head>
+
+	<body style="margin:0 0 0 0;  width:100%">
 		<noscript>
 			<h1>Ops! :(</h1>
 			<p>
@@ -36,44 +35,51 @@
 				<br>Equipa SICC.
 			</p>
 		</noscript>
-	  <header id="header">
+		<header id="header">
 			<div id="docButtons"></div>
 			<a id="amenuLink" href="./html/amenu-source.html"></a>
 			<div id="tocDropdown" class="dropdown-content"></div>
 		</header>
 		<div id="content" style="min-height: 90vh; margin: 0 0 0 0; padding:1em 1em 1em 1em; widht: 100%; max-width:5000px;">
-		<footer id="footer">
-		</footer>
-		</div> <!-- Content -->
+			<footer id="footer">
+			</footer>
+		</div>
+		<!-- Content -->
 		<!-- libs -->
 		<script src="./js/jquery-3.1.1.js"></script>
 		<script src="./js/main.js"></script>
 		<script src="./js/libs/accordion-menu.js"></script>
 		<script type="text/javascript">
-			$(function(){
+			$(function () {
 
-				var Btns = ["btnPDF","btnEditarDoc","btnShowToc","tocDropdown"];//["btnMenu","btnPDF","btnEditarDoc","btnShowToc","tocDropdown"]
+				var Btns = ["btnPDF", "btnEditarDoc", "btnShowToc", "tocDropdown"]; //["btnMenu","btnPDF","btnEditarDoc","btnShowToc","tocDropdown"]
 
 				loadIndexContent(Btns);
 
 			});
+
 		</script>
 		<script src="./sw.js" async></script>
 		<script>
-			if('serviceWorker' in navigator) {
-			  navigator.serviceWorker.register('./sw.js', { scope: './' }).then(function(registration) {
-			    // console.log("[ServiceWorker] Registered");
-			   });
+			if ('serviceWorker' in navigator) {
+				navigator.serviceWorker.register('./sw.js', {
+						scope: './'
+					})
+					.then(function (registration) {
+						// console.log("[ServiceWorker] Registered");
+					});
 
-			  navigator.serviceWorker.ready.then(function(registration) {
-			    //console.log('[ServiceWorker] Ready');
-			  });
+				navigator.serviceWorker.ready.then(function (registration) {
+					//console.log('[ServiceWorker] Ready');
+				});
 			}
+
 		</script>
 		<script src="./js/libs/showdown.js" async></script>
 		<script src="./js/highslide-with-gallery.js" async></script>
 		<script src="./js/jquery.zoom.js" async></script>
 		<script src="./js/jquery-ui.js" async></script>
 		<script src="./js/jquery.timeago.js" async></script>
-</body>
+	</body>
+
 </html>
