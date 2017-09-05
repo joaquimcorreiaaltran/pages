@@ -33,7 +33,10 @@ function loadIndexContent (btnsToHide) {
 
   loadDocButtons("", btnsToHide, "index");
   loadFooter();
-  showMenu();
+
+  if( $("#accordion").hasClass("showMenu")){
+    showMenu();
+  }
 
 }
 
