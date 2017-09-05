@@ -1,5 +1,3 @@
-@import url("font-awesome.min.css");
-/*@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700|Open+Sans+Condensed:300,700");*/
 /*
 	Striped by HTML5 UP
 	html5up.net | @ajlkn
@@ -27,7 +25,7 @@
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
 audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 audio:not([controls]) { display: none; }
-[hidden] { display: none; }
+/*[hidden] { display: none; }*/
 
 
 /* =============================================================================
@@ -41,24 +39,22 @@ audio:not([controls]) { display: none; }
 
 html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-html, button, input, select, textarea, p { font-family: "Roboto", sans-serif; color: #656565;  font-size:  1em;}
+html, button, input, select, textarea, p { color: #656565; font-family: "Roboto", sans-serif; font-size:  1em;}
 
-body { margin: 0; font-size: 1em; line-height: 1.4;  width: 96%;margin: auto;}
-
-div.content{  width: 70%;  margin: auto;  margin-left: 20%;}
+body { font-size: 1em; line-height: 1.4; margin: auto; width: 96%; }
 
 p, li, div{
-  margin-top:.0001pt;
-  margin-bottom: .0001pt;
   line-height:  150%;
+  margin-bottom: .0001pt;
+  margin-top:.0001pt;
   text-align:  justify;
+  user-select: text; /* Standard syntax */
   /*Prevent user from select text:
   none	Prevent text selection
   text	The text can be selected by the user*/
   -webkit-user-select: text; /* Chrome, Opera, Safari */
   -moz-user-select: text; /* Firefox 2+ */
   -ms-user-select: text; /* IE 10+ */
-  user-select: text; /* Standard syntax */
 }
 
 
@@ -98,7 +94,7 @@ sub { bottom: -0.25em; }
 
 ul, ol { margin: 1em 0; padding: 0 0 0 10px; }
 dd { margin: 0 0 0 10px; }
-nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }*/
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
 
 /* =============================================================================
    Embedded content
@@ -146,7 +142,12 @@ button, input { line-height: normal; }
  * 3. Correct inner spacing displayed oddly in IE7 (doesn't effect IE6)
  */
 
-button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  *overflow: visible;
+  cursor: pointer;
+  -moz-appearance: button;
+  -webkit-appearance: button;
+}
 
 /*
  * Re-set default cursor for disabled elements
@@ -158,14 +159,14 @@ button[disabled], input[disabled] { cursor: default; }
  * Consistent box sizing and appearance
  */
 
-input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *height: 13px; *width: 13px;}
 input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
 input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
 
-//hide scrollbar
+/*hide scrollbar*/
 ::-webkit-scrollbar {
-    width: 0px;  /* remove scrollbar space */
     background: transparent;  /* optional: just make scrollbar invisible */
+    width: 0;  /* remove scrollbar space */
 }
 /* show position indicator in #3d596d color */
 ::-webkit-scrollbar-thumb {
@@ -183,10 +184,9 @@ button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
  * 2. Allow only vertical resizing
  */
 
-textarea { overflow: auto; vertical-align: top; resize: vertical; }
+textarea { overflow: auto; resize: vertical; vertical-align: top; }
 
 /* Colors for form validity */
-input:valid, textarea:valid {  }
 input:invalid, textarea:invalid { background-color: #f0dddd; }
 
 
@@ -197,10 +197,7 @@ input:invalid, textarea:invalid { background-color: #f0dddd; }
 table {
   border-collapse: collapse;
   border-spacing: 5px;
-  margin-top: 1em;
-  margin-bottom: 0.2em;
-  margin-left:auto;
-  margin-right:auto;
+  margin: 1em auto 0.2em auto;
   width: 100%;
 }
 
@@ -254,7 +251,7 @@ h1{
   margin-top: 2.2em;
   margin-bottom: 1.5em;
   font-size:  2em;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   font-weight: bold;
   line-height: 1em;
   text-align:left;
@@ -268,9 +265,9 @@ content:'  ';
 h2{
   margin-top:2em;
   margin-bottom:1em;
-  margin-left:0pt;
+  margin-left:0;
   font-size:1.5em;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   font-weight: bold;
   line-height: 1em;
   text-align:left;
@@ -284,9 +281,9 @@ content:'  ' ;
 h3{
   margin-top:1.5em;
   margin-bottom:1em;
-  margin-left:0em;
+  margin-left:0;
   font-size:1.3em;
-  letter-spacing: 0pt;
+  letter-spacing: 0;
   font-weight: bold;
   line-height: 1em;
   text-align:left;
@@ -296,21 +293,9 @@ h3{
 h4{
   margin-top:1.3em;
   margin-bottom:1em;
-  margin-left:0em;
+  margin-left:0;
   font-size:1.2em;
-  letter-spacing: 0pt;
-  font-weight: bold;
-  line-height: 1em;
-  text-align:left;
-  color: #29615D;
-}
-
-h5{
-  margin-top:1.2em;
-  margin-bottom:1em;
-  margin-left:0em;
-  font-size:1.1em;
-  letter-spacing: 0pt;
+  letter-spacing: 0;
   font-weight: bold;
   line-height: 1em;
   text-align:left;
@@ -320,9 +305,9 @@ h5{
 h5{
   margin-top:1.1em;
   margin-bottom:1em;
-  margin-left:0em;
+  margin-left:0;
   font-size:1.1em;
-  letter-spacing: 0pt;
+  letter-spacing: 0;
   font-weight: bold;
   line-height: 1em;
   text-align:left;
@@ -444,11 +429,11 @@ div.dropdown-content.show{
 }
 
 a.toc_h1 {
-  margin-left: 0em;
+  margin-left: 0;
 }
 
 a.toc_h2 {
-  margin-left: 0em;
+  margin-left: 0;
 }
 
 a.toc_h3 {
@@ -485,7 +470,7 @@ a.toc_h6 {
 }
 
 .table-of-contents ul {
-  padding-right: : 0.2em;
+  padding-right: 0.2em;
   padding-bottom:  0.1em;
 }
 
@@ -517,7 +502,7 @@ a.toc_h6 {
 /*************************************************************/
 #accordion {
     width: 22.5em;
-    padding: 0em 0em 0em 0em;
+    padding: 0 0 0 0;
     overflow: auto;
     position: fixed;
     top: 44px;
@@ -1024,7 +1009,6 @@ footer img {
         transition: margin-left 2s ease,
                     margin-right 2s ease;
 			}
-			}
 	}
 
 /* Narrower */
@@ -1077,7 +1061,7 @@ footer img {
 				line-height: 1.75em;
 				letter-spacing: 0;
         transition: all 2s ease;
-        body { font-size: 90%; transition: all 2s ease;}
+        body {font-size: 90%; transition: all 2s ease;}
 			}
 
     #drag1::before, #drag2::before{
@@ -1106,6 +1090,5 @@ footer img {
 			padding: 0.75em 0 0.75em 0;
 			margin: 0.5em 0 0.5em 0;
 		}
-	}
 
 /* Reset */
