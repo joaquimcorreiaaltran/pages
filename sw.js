@@ -5,46 +5,46 @@ it will only be able to interact with pages in the scripts directory or below.*/
 
 var cacheName = 'spmssicc_v05/09/2017' + Date.now();
 var cacheFiles = [
-    '/pages/'
-    , '/pages/index.html'
-    , '/pages/css/main.css'
-    , '/pages/css/font-awesome.css'
-    , '/pages/css/font-awesome.min.css'
-    , '/pages/fonts/fontawesome-webfont.eot'
-    , '/pages/fonts/fontawesome-webfont.woff2?v=4.7.0',
+    '/pages/',
+    '/pages/index.html',
+    '/pages/css/main.css',
+    '/pages/css/font-awesome.css',
+    '/pages/css/font-awesome.min.css',
+    '/pages/fonts/fontawesome-webfont.eot',
+    '/pages/fonts/fontawesome-webfont.woff2?v=4.7.0',
 
-    '/pages/html/amenu-source.html'
+    '/pages/html/amenu-source.html',
 
-    '/pages/img/logos/SICC_logo_300x148.png'
-    , '/pages/img/logos/SPMS2016B_300x148.png'
-    , '/pages/img/logos/republica_portuguesa_300x148.png'
-    , '/pages/img/logos/imagem_background.png',
+    '/pages/img/logos/SICC_logo_300x148.png',
+    '/pages/img/logos/SPMS2016B_300x148.png',
+    '/pages/img/logos/republica_portuguesa_300x148.png',
+    '/pages/img/logos/imagem_background.png',
 
-    '/pages/js/libs/accordion-menu.js'
-    , '/pages/js/libs/jquery.zoom.js'
-    , '/pages/js/libs/jquery.zoom.min.js'
-    , '/pages/js/libs/showdown.js'
-    , '/pages/js/cache-polyfill.js'
-    , '/pages/js/highslide-with-gallery.js'
-    , '/pages/js/jquery-3.1.1.js'
-    , '/pages/js/jquery.timeago.js'
-    , '/pages/js/jquery.zoom.js'
-    , '/pages/js/main.js',
+    '/pages/js/libs/accordion-menu.js',
+    '/pages/js/libs/jquery.zoom.js',
+    '/pages/js/libs/jquery.zoom.min.js',
+    '/pages/js/libs/showdown.js',
+    '/pages/js/cache-polyfill.js',
+    '/pages/js/highslide-with-gallery.js',
+    '/pages/js/jquery-3.1.1.js',
+    '/pages/js/jquery.timeago.js',
+    '/pages/js/jquery.zoom.js',
+    '/pages/js/main.js',
 
-    '/pages/markdown/about.md'
-    , '/pages/markdown/cer_migracao_sicc.md'
-    , '/pages/markdown/chave_orcamental_por_ano.md'
-    , '/pages/markdown/documentos_af_e_ar.md'
-    , '/pages/markdown/gestao_exercicios.md'
-    , '/pages/markdown/gestao_projetos.md'
-    , '/pages/markdown/help.md'
-    , '/pages/markdown/importacao_csvs.md'
-    , '/pages/markdown/macro_tarefas.md'
-    , '/pages/markdown/menus.md'
-    , '/pages/markdown/mu_snc_ap.md'
-    , '/pages/markdown/processos.md'
-    , '/pages/markdown/reposicao_pagamentos_cobrancas.md'
-    , '/pages/markdown/snc_ap_faqs.md',
+    '/pages/markdown/about.md',
+    '/pages/markdown/cer_migracao_sicc.md',
+    '/pages/markdown/chave_orcamental_por_ano.md',
+    '/pages/markdown/documentos_af_e_ar.md',
+    '/pages/markdown/gestao_exercicios.md',
+    '/pages/markdown/gestao_projetos.md',
+    '/pages/markdown/help.md',
+    '/pages/markdown/importacao_csvs.md',
+    '/pages/markdown/macro_tarefas.md',
+    '/pages/markdown/menus.md',
+    '/pages/markdown/mu_snc_ap.md',
+    '/pages/markdown/processos.md',
+    '/pages/markdown/reposicao_pagamentos_cobrancas.md',
+    '/pages/markdown/snc_ap_faqs.md'
 
 /*    '/pages/pdf/about.pdf',
     '/pages/pdf/chave_orcamental_por_ano.pdf',
