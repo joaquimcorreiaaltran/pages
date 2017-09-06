@@ -21,9 +21,9 @@ dimmingGeckoFix = true;
 blockRightClick = true;
 
 
-function loadIndexContent(btnsToHide) {
+function loadIndexContent(btnsToShow) {
 
-	console.log("\n[loadIndexContent] btnsToHide: ", btnsToHide);
+	console.log("\n[loadIndexContent] btnsToShow: ", btnsToShow);
 
 	$("body")
 		.attr("style", "margin:0 0 0 0;  width:100%");
@@ -35,22 +35,15 @@ function loadIndexContent(btnsToHide) {
 			.html(data);
 	});
 
-	loadDocButtons("", btnsToHide, "index");
+	loadDocButtons("", "", "index");
 	loadFooter();
-
-	if ($("#accordion")
-		.hasClass("showMenu")) {
-		showMenu();
-	}
+	showElements(btnsToShow);
 
 }
 
-function loadIframe(option, btnsToHide) {
+function loadIframe(option, btnsToShow) {
 
-	showToc();
-
-	$("body, #content")
-		.removeAttr("style");
+	$("body, #content").removeAttr("style");
 
 	$.get('./html/div_content.html', function(data) {
 
@@ -59,8 +52,6 @@ function loadIframe(option, btnsToHide) {
 		console.log("[loadMdDoc] div '#content' replaced");
 
 		var htmlcontent;
-
-		removeElements(btnsToHide);
 
 		if (option == "apresSncAp") {
 			htmlcontent = "<h1 style='text-align: center;margin-top: 1em;adding: 0 1em 0em 1em'>SNC-AP para entidades de saúde</h1>" +
@@ -83,36 +74,28 @@ function loadIframe(option, btnsToHide) {
 			htmlcontent = "<h1>Não foi possível apresentar o conteúdo escolhido</h1>";
 		}
 
-		$("#documento")
-			.html(htmlcontent);
-		showMenu();
+		$("#documento").html(htmlcontent);
 		loadFooter();
+		showElements(btnsToShow);
 	});
 
 }
 
-function loadMdDoc(mdFile, btnsToHide) {
+function loadMdDoc(mdFile, btnsToShow) {
 
-	$("body, #content")
-		.removeAttr("style");
+	$("body, #content").removeAttr("style");
 
 	$.get('./html/div_content.html', function(data) {
 
-		$("#content")
-			.html(data);
+		$("#content").html(data);
 
 		convertMdToHtml("documento", function() {
 			loadDocButtons(function() {
 				loadToc("tocDropdown");
-				if ($("#accordion")
-					.hasClass("showMenu")) {
-					$("#btnMenu")
-						.toggleClass("showMenu");
-				}
-			}, btnsToHide, mdFile);
+			}, btnsToShow, mdFile);
 		}, mdFile);
 		loadFooter();
-		showMenu();
+		showElements(btnsToShow);
 	});
 
 }
@@ -172,14 +155,7 @@ function loadFooter() {
 }
 
 //Adds auxilary buttons to the interface
-function loadDocButtons(funcao, btnsToHide, file) {
-
-	var fileDirectory = "./html/doc_buttons.html";
-
-	$.get(fileDirectory, function(data) {
-
-		$("#docButtons")
-			.html(data);
+function loadDocButtons(funcao, btnsToShow, file) {
 
 		if (file != "index") {
 
@@ -221,35 +197,37 @@ function loadDocButtons(funcao, btnsToHide, file) {
 					});
 			}
 
-			$("#btnShowToc")
-				.click(function() {
-					showToc();
-				});
-
 			if (funcao != undefined && typeof funcao == "function") {
 				funcao();
 			}
 		}
 
-		removeElements(btnsToHide);
-
-		$("#btnMenu")
-			.click(function() {
-				showMenu();
-			});
-	});
-
 } //close loadDocButtons()
 
-function removeElements(elements) {
-	for (i = 0; i < elements.length; i++) {
-		$("#" + elements[i])
-			.remove();
-		var arrVal = elements[i];
-		console.log("[removeElements] element removed: ", arrVal);
-	}
+function showElements(elements) {
 
+	hideElements();
+
+	for (i = 0; i < elements.length; i++) {
+		$("#" + elements[i]).addClass("show");
+			//.remove();
+		var arrVal = elements[i];
+		console.log("[showElements] show: ", arrVal);
+	}
 }
+
+function hideElements() {
+
+	var elements = ["btnMenu","btnPDF","btnEditarDoc","btnShowToc","tocDropdown"];
+
+	for (i = 0; i < elements.length; i++) {
+		$("#" + elements[i]).removeClass("show");
+			//.remove();
+		var arrVal = elements[i];
+		console.log("[hideElements] hide: ", arrVal);
+	}
+}
+
 
 // Add zoom functionality to images in the HTML
 function zommClickImagem() {
@@ -277,11 +255,11 @@ function responsiveTable() {
 } /*close responsiveTable()*/
 
 //Loads the gitHub repository and insert insert into the HTML
-function loadCommitHistory(btnsToHide) {
+function loadCommitHistory(btnsToShow) {
 
 	getScript("./js/jquery.timeago.js");
 
-	removeElements(btnsToHide);
+	showElements(btnsToShow);
 
 	var htmlcontent = "<div id='latest-commits'>" +
 		"<div id='latest-commits-header'>" +
@@ -355,20 +333,15 @@ function loadToc(elementId) {
 
 	elementId = "#" + elementId;
 
-	if ($(elementId)
-		.exists() == false) {
-		var newEl = "<div id='tocDropdown' class='dropdown-content'></div>";
-		$("#docButtons")
-			.after(newEl);
+	if ($(elementId).exists() == false) {
+		$("#docButtons").after("<div id='tocDropdown' class='dropdown-content'></div>");
 	} /*if*/
 	else {
-		console.log("Não foi possível criar o índice porque o elemento \"" + elementId + "\" não existe no HTML!");
+		console.log("Não foi possível criar o índice porque o elemento \"" + elementId + "\" não existe no HTML.");
 	}
 
-	if ($(elementId)
-		.exists()) {
-		$(elementId)
-			.html("");
+	if ($(elementId).exists()) {
+		$(elementId).html("");
 
 		var toc_html =
 			"<i id='drag1' title='Arraste-me...' class='fa fa-arrows fa-fw' style='cursor: move;'></i>" +
@@ -396,20 +369,16 @@ function loadToc(elementId) {
 
 		toc_html += "</ul>" + "</nav>" + "<div><i id='drag2' title='Arraste-me...' class='fa fa-arrows fa-fw' style='cursor: move;'></i></div>";
 
-		$(elementId)
-			.html(toc_html);
+		$(elementId).html(toc_html);
 
-		console.log("[loadToc] $(" + elementId + ").html:\n\n" + $(elementId)
-			.html());
+		console.log("[loadToc] $(" + elementId + ").html:\n\n" + $(elementId).html());
 
-		if (!$(elementId)
-			.hasClass("show")) {
+		if (!$(elementId).hasClass("show")) {
 			showToc();
 		}
 
 		/*Dependency: jquery-ui.js*/
-		$("#tocDropdown")
-			.draggable({
+		$("#tocDropdown").draggable({
 				containment: "window",
 				handle: "i",
 				snap: "#docButtons, #content",
@@ -419,43 +388,33 @@ function loadToc(elementId) {
 					left: 5
 				}
 			});
-		$("#tocDropdown")
-			.resizable();
+		$("#tocDropdown").resizable();
 
-		if ($("#tocDropdown")
-			.hasClass("show")) {
-			$("#btnShowToc")
-				.addClass("show");
+		if ($("#tocDropdown").hasClass("show")) {
+			$("#btnShowToc").addClass("enabled");
 		}
 	}
 } /*builds toc*/
 
 function showToc() {
-	$(".dropdown-content")
-		.toggleClass("show");
-	$("#btnShowToc")
-		.toggleClass("show");
+	$(".dropdown-content").toggleClass("show");
+	$("#btnShowToc").toggleClass("enabled");
 
-	console.log("[showToc] visibility:" + $(".dropdown-content")
-		.hasClass("show"));
+	console.log("[showToc] visibility:" + $(".dropdown-content").hasClass("show"));
+	console.log("[showToc] #btnShowToc visibility:" + $("#btnShowToc").hasClass("show"));
 }
 
 function showMenu() {
-	$("#accordion")
-		.toggleClass("showMenu");
-	$("#btnMenu")
-		.toggleClass("showMenu");
+	$("#accordion").toggleClass("showMenu");
+	$("#btnMenu").toggleClass("showMenu");
 
-	console.log("[showMenu] #accordion visibility:" + $("#accordion")
-		.hasClass("showMenu"));
-	console.log("[showMenu] #btnMenu visibility:" + $("#accordion")
-		.hasClass("showMenu"));
+	console.log("[showMenu] #accordion visibility:" + $("#accordion").hasClass("showMenu"));
+	console.log("[showMenu] #btnMenu visibility:" + $("#accordion").hasClass("showMenu"));
 }
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
-	if (!event.target.matches('.dropbtn, #tocDropdown *, #btnMenu, #btnMenu i, #btnMenu a') && $("#btnMenu.show")
-		.hasClass("show")) {
+	if (!event.target.matches('.dropbtn, #tocDropdown *, #btnMenu i, #btnMenu a, #docButtons p') && $("#tocDropdown").hasClass("show")) {
 		showToc();
 	}
 }; /*close showToc()*/

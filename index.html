@@ -36,7 +36,13 @@
 			</p>
 		</noscript>
 		<header id="header">
-			<div id="docButtons"></div>
+			<div id="docButtons">
+				<button title="Ver Menu" id="btnMenu" type="button" alt="btnMenu" onclick="showMenu()" class="show"><i class="fa fa-bars fa-fw"></i></button>
+				<p id="barTitle" style="cursor:pointer;" onclick="loadIndexContent(['btnMenu'])">SICC</p>
+				<button title="Transferir documento" id="btnPDF" type="button" alt="btnPDF"><i class="fa fa-file-pdf-o fa-fw"></i></button>
+				<button title="Sugerir alterações ao documento" id="btnEditarDoc" type="button" alt="btnEditarDoc"><i class="fa fa-pencil fa-fw"></i></button>
+				<button title="Ver índice" id="btnShowToc" type="button" alt="showToc" onclick="showToc()" class="dropbtn">Índice</button>
+			</div>
 			<a id="amenuLink" href="./html/amenu-source.html"></a>
 			<div id="tocDropdown" class="dropdown-content"></div>
 		</header>
@@ -52,7 +58,7 @@
 		<script type="text/javascript">
 			$(function () {
 
-				var Btns = ["btnPDF", "btnEditarDoc", "btnShowToc", "tocDropdown"]; //["btnMenu","btnPDF","btnEditarDoc","btnShowToc","tocDropdown"]
+				var Btns = ["btnMenu"]; //["btnMenu","btnPDF","btnEditarDoc","btnShowToc","tocDropdown"]
 
 				loadIndexContent(Btns);
 
