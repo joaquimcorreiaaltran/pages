@@ -280,10 +280,10 @@ text-align:center
 
 .dropdown-content {
 box-shadow:8px 0 60px rgba(0,0,0,0.6);
+height: calc(100vh - 44px);
 max-width:400px;
 opacity:0;
-overflow-x:auto;
-overflow-y:auto;
+overflow:auto;
 right:-100%;
 top:44px;
 transition:right .3s ease-out;
@@ -708,7 +708,7 @@ width:100%
 }
 
 @media screen and (min-width: 200px) and (max-width: 800px){
-#tocDropdown.dropdown-content.show {
+.dropdown-content.show {
 width:150px
 }
 
@@ -738,7 +738,7 @@ transition:max-width 2s ease, padding-bottom 2s ease
 
 @media screen and (max-width: 1200px){
 html,body {
-overflow-x:auto
+overflow:auto
 }
 
 #content {
