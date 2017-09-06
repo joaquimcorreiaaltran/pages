@@ -86,7 +86,7 @@ function loadMdDoc(mdFile, btnsToShow) {
 			}, btnsToShow, mdFile);
 		}, mdFile);
 		showElements(btnsToShow);
-	
+
 }
 
 function getScript(path) {
@@ -136,6 +136,8 @@ function convertMdToHtml(elementId, funcao, mdFile) {
 function loadDocButtons(funcao, btnsToShow, file) {
 
 		if (file != "index") {
+
+			$("footer").addClass("documentMode");
 
 			$("#btnEditarDoc")
 				.click(function() {

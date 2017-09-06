@@ -638,7 +638,9 @@ width:100%
 footer {
 background-color:#FFF;
 padding-bottom: 2em;
-margin-bottom: 5em
+margin-bottom: 1em auto 5em;
+margin-left: auto;
+margin-right: auto
 }
 
 footer > div,footer p {
@@ -757,13 +759,19 @@ transition:margin-top 2s ease, margin-bottom 2s ease, margin-left 2s ease, margi
   }
 
   #content {
-  margin:70px auto 20vh;
+  margin:70px auto 0;
   max-width:900px;
   transition: margin-top 2s ease,
               margin-bottom 2s ease,
               margin-left 2s ease,
               margin-right 2s ease,
               max-width 2s ease;
+  }
+
+  .documentMode {
+    max-width: 900px;
+    margin:0 auto 0;
+    padding:0em 3em 6em
   }
 }
 
