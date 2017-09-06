@@ -36,20 +36,15 @@ function loadIndexContent(btnsToShow) {
 	});
 
 	loadDocButtons("", "", "index");
-	loadFooter();
 	showElements(btnsToShow);
 
 }
 
 function loadIframe(option, btnsToShow) {
 
-	$("body, #content").removeAttr("style");
+		$("body, #content").removeAttr("style");
 
-	$.get('./html/div_content.html', function(data) {
-
-		$("#content")
-			.html(data);
-		console.log("[loadMdDoc] div '#content' replaced");
+		$("#content").html("<div id='content'><article id='documento' class='modulo'></article></div>");
 
 		var htmlcontent;
 
@@ -75,9 +70,7 @@ function loadIframe(option, btnsToShow) {
 		}
 
 		$("#documento").html(htmlcontent);
-		loadFooter();
 		showElements(btnsToShow);
-	});
 
 }
 
@@ -85,19 +78,15 @@ function loadMdDoc(mdFile, btnsToShow) {
 
 	$("body, #content").removeAttr("style");
 
-	$.get('./html/div_content.html', function(data) {
-
-		$("#content").html(data);
+		$("#content").html("<div id='content'><article id='documento' class='modulo'></article></div>");
 
 		convertMdToHtml("documento", function() {
 			loadDocButtons(function() {
 				loadToc("tocDropdown");
 			}, btnsToShow, mdFile);
 		}, mdFile);
-		loadFooter();
 		showElements(btnsToShow);
-	});
-
+	
 }
 
 function getScript(path) {
@@ -142,17 +131,6 @@ function convertMdToHtml(elementId, funcao, mdFile) {
 	});
 
 } /*close convertMdToHtml()*/
-
-//Load html to the end of the document
-function loadFooter() {
-
-	var fileDirectory = "./html/footer.html";
-
-	$.get(fileDirectory, function(data) {
-		$("footer")
-			.append(data);
-	});
-}
 
 //Adds auxilary buttons to the interface
 function loadDocButtons(funcao, btnsToShow, file) {
