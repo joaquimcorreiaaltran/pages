@@ -397,7 +397,10 @@ window.onclick = function(event) {
 	if (!event.target.matches('.dropbtn, #tocDropdown *, #btnMenu i, #btnMenu a, #docButtons p') && $("#tocDropdown").hasClass("show")) {
 		showToc();
 	}
-}; /*close showToc()*/
+	if (!event.target.matches('.dropdown, #tocDropdown *, #btnMenu i, #btnMenu a, #docButtons p, #accordion *, #btnShowToc') && $("#btnMenu").hasClass("showMenu")) {
+		showMenu();
+	}
+}; /*close showToc() and close showMenu()*/
 
 /*********************************************************************
 override standard href-id navigation on page without change HTML markup
