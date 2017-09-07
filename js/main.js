@@ -392,7 +392,7 @@ function showMenu() {
 	console.log("[showMenu] #btnMenu visibility:" + $("#accordion").hasClass("showMenu"));
 }
 
-// Close the dropdown menu if the user clicks outside of it
+// Close the dropdown menu and the menu if the user clicks outside of it
 window.onclick = function(event) {
 	if (!event.target.matches('.dropbtn, #tocDropdown *, #btnMenu i, #btnMenu a, #docButtons p') && $("#tocDropdown").hasClass("show")) {
 		showToc();
