@@ -51,21 +51,46 @@ function loadIframe(option, btnsToShow) {
 				"<div style='position: relative; width: 100%; height: 0px; padding-bottom: 79%;'>" +
 				"<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=https://spmssicc.github.io/pages/pptx/SPMS_SICC_SNC_AP_20160606_04-pics.pptx' style='position: absolute; border-top:0; width: 99.5%; height: 100%; margin: 0 auto 0 auto; alignment: middle;' title='Apresentação Powerpoint SICC SNC-AP'></iframe>" +
 				"</div>";
+
+				$("#btnPDF").click(function() {
+						window.open("https://view.officeapps.live.com/op/embed.aspx?src=https://spmssicc.github.io/pages/pptx/SPMS_SICC_SNC_AP_20160606_04-pics.pptx", "_blank");
+					});
+
 		} else if (option == "circ1381") {
 			htmlcontent = "<h1 style='text-align: center;padding: 0 1em 0em 1em'>Circular DGO n.º 1381 (05/04/2016)</h1>" +
 				"<iframe src='https://docs.google.com/gview?url=http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1381.pdf&embedded=true&rm=minimal' style='width:100%; height:700px' frameborder='1'></iframe>";
+
+				$("#btnPDF").click(function() {
+						window.open("http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1381.pdf", "_blank");
+					});
+
 		} else if (option == "decLei192") {
 			htmlcontent = "<h1 style='text-align: center;padding: 0 1em 0em 1em'>Decreto-Lei n.º 192/2015 (11/09/2015)</h1>" +
 				"<iframe src='https://docs.google.com/gview?url=https://dre.pt/application/conteudo/70262478&embedded=true' style='width:100%; height:700px' frameborder='1'></iframe>";
+
+				$("#btnPDF").click(function() {
+						window.open("https://dre.pt/application/conteudo/70262478", "_blank");
+					});
+
 		} else if (option == "decLei85") {
 			htmlcontent = "<h1 style='text-align: center;padding: 0 1em 0em 1em'>Decreto-Lei n.º 85/2016 (21/12/2016)</h1>" +
 				"<iframe src='https://docs.google.com/gview?url=https://dre.pt/application/conteudo/105583346&embedded=true' style='width:100%; height:700px' frameborder='1'></iframe>";
+
+				$("#btnPDF").click(function() {
+						window.open("https://dre.pt/application/conteudo/105583346", "_blank");
+					});
 		} else if (option == "circ1382") {
 			htmlcontent = "<h1 style='text-align: center;padding: 0 1em 0em 1em'>Circular DGO n.º 1382 (05/04/2016)</h1>" +
 				"<iframe src='https://docs.google.com/gview?url=http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1382.pdf&embedded=true' style='width:100%; height:700px' frameborder='1'></iframe>";
+
+				$("#btnPDF").click(function() {
+						window.open("http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1382.pdf", "_blank");
+					});
+
 		} else {
 			htmlcontent = "<h1>Não foi possível apresentar o conteúdo escolhido</h1>";
 		}
+
 
 		$("#documento").html(htmlcontent);
 		showElements(btnsToShow);
@@ -141,21 +166,15 @@ function loadDocButtons(funcao, btnsToShow, file) {
 
 		console.log("\n\n\n[loadDocButtons] file: " + file + "\n\n\n");
 
-
-
-		if (file != "index") {
-
 			$("footer").addClass("documentMode");
 
-			$("#btnEditarDoc")
-				.click(function() {
+			$("#btnEditarDoc").click(function() {
 					window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/" + file + ".md", "_blank");
 				});
 
 			/*btnPDF*/
-			if (file == "snc_ap_circular_dgo_1381") {
-				$("#btnPDF")
-					.click(function() {
+			/*if (file == "snc_ap_circular_dgo_1381") {
+				$("#btnPDF").click(function() {
 						window.open("http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1381.pdf", "_blank");
 					});
 			} else if (file == "snc_ap_circular_dgo_1382") {
@@ -183,15 +202,12 @@ function loadDocButtons(funcao, btnsToShow, file) {
 						window.open("https://spmssicc.github.io/pages/pdf/" + file + ".pdf", "_blank");
 					});*/
 
-				$("#btnPDF").attr({"onclick":"window.location.href('https://spmssicc.github.io/pages/pdf/" + file + "'.pdf')"});
-
-
-			}
+				$("#btnPDF").attr({"onclick":"window.location.href('https://spmssicc.github.io/pages/pdf/" + file + ".pdf')"});
 
 			if (funcao != undefined && typeof funcao == "function") {
 				funcao();
 			}
-		}
+		//}
 
 } //close loadDocButtons()
 
