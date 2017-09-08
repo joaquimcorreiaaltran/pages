@@ -41,6 +41,8 @@ function stopLoader(){
 
 function loadIndexContent(btnsToShow) {
 
+	startLoader();
+
 	console.log("\n[loadIndexContent] btnsToShow: ", btnsToShow);
 
 	$("body")
@@ -185,7 +187,6 @@ function convertMdToHtml(elementId, funcao, mdFile) {
 //Adds auxilary buttons to the interface
 function loadDocButtons(funcao, btnsToShow, file) {
 
-
 		console.log("[loadDocButtons] file: " + file);
 
 			$("footer").addClass("documentMode");
@@ -262,6 +263,8 @@ function responsiveTable() {
 //Loads the gitHub repository and insert insert into the HTML
 function loadCommitHistory(btnsToShow) {
 
+	startLoader();
+
 	showElements(btnsToShow);
 
 	var htmlcontent = "<div id='latest-commits'>" +
@@ -303,10 +306,13 @@ function loadCommitHistory(btnsToShow) {
 					}
 				})(index, result));
 			}
+			stopLoader();
 			//Show an UI message if the request limit to the API was reached
 		} else if (rate_limit_remaining == 0) {
+			stopLoader();
 			return ul.append("<b>Atenção: </b> Não foi possível mostrar as atualizações devido a sobrecarga de pedidos (>" + rate_limit + "/hr), realizados pelo seu atual IP. Pode utilizar outro IP ou voltar a tentar depois das " + time_to_reset + ":59s de hoje. <br /><br />Mensagem do servidor: \"<i>" + response.data.message + "</i>\"");
 		} else {
+			stopLoader();
 			return ul.append("Ops! :( <br /><br /> Ocorreu algo inesperado.");
 		}
 		return _results;
