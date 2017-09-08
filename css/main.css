@@ -10,6 +10,21 @@ font-family:Roboto, sans-serif;
 font-size:1em
 }
 
+
+.loader {
+  display: block;
+    animation: spin 1.2s linear infinite;
+    margin: auto;
+    width: 5em;
+    height: 5em;
+    padding: 8em
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 body {
 background-color:#e8e8e8;
 color:#656565;

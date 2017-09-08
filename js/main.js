@@ -19,12 +19,24 @@ dimmingGeckoFix = true;
 blockRightClick = true;
 
 
-function startSpinner(){
-	$("<div id='spinner' style='text-align:center; height:50em;'><i style='height:50em; top 50%; left: 50%;' class='fa fa-spinner fa-pulse fa-3x fa-fw'></i></div>").insertAfter("#header");
+function startLoader(){
+
+		if( $("#loader").length ){
+				console.log("[startLoader] Loader já tinha sido carregado anteriormente");
+		}
+		else{
+				var spinnerHtml = "<div id ='loader'> <img  class='loader' src='./img/icons/sicc.ico' alt='Loader'></img></div>";
+
+				$(spinnerHtml).insertAfter("#header");
+				console.log("[startLoader] Novo spinner adicionado");
+		}
 }
 
-function stopSpinner(){
-	$("#spinner").remove();
+function stopLoader(){
+		while($("#loader").length){
+				$("#loader").remove();
+				console.log("[startLoader] Loader removido");
+		}
 }
 
 function loadIndexContent(btnsToShow) {
@@ -46,7 +58,7 @@ function loadIndexContent(btnsToShow) {
 
 function loadIframe(option, btnsToShow) {
 
-		startSpinner();
+		startLoader();
 
 		$("body, #content").removeAttr("style");
 
@@ -102,13 +114,13 @@ function loadIframe(option, btnsToShow) {
 
 		$("#documento").html(htmlcontent);
 		showElements(btnsToShow);
-		stopSpinner();
+		stopLoader();
 
 }
 
 function loadMdDoc(mdFile, btnsToShow) {
 
-	startSpinner();
+	startLoader();
 
 	$("body, #content").removeAttr("style");
 
@@ -369,20 +381,20 @@ function loadToc(elementId) {
 		}
 
 		/*Dependency: jquery-ui.js*/
-		if ($("#tocDropdown").lenght) {
+		if ($("#tocDropdown").length) {
 
 			$("#tocDropdown").draggable({
 					containment: "window",handle: "i",snap: "#docButtons, #content",cursor: "move",cursorAt: {top: 5,left: 5}
 				});
 				//$("#tocDropdown").resizable();
-				
+
 		}
 
 		if ($("#tocDropdown").hasClass("show")) {
 			$("#btnShowToc").addClass("enabled");
 		}
 
-		stopSpinner();
+		stopLoader();
 	}
 } /*builds toc*/
 
