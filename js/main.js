@@ -138,6 +138,11 @@ function convertMdToHtml(elementId, funcao, mdFile) {
 //Adds auxilary buttons to the interface
 function loadDocButtons(funcao, btnsToShow, file) {
 
+
+		console.log("\n\n\n[loadDocButtons] file: " + file + "\n\n\n");
+
+
+
 		if (file != "index") {
 
 			$("footer").addClass("documentMode");
@@ -174,10 +179,13 @@ function loadDocButtons(funcao, btnsToShow, file) {
 						window.open("https://view.officeapps.live.com/op/embed.aspx?src=https://spmssicc.github.io/pages/pptx/SPMS_SICC_SNC_AP_20160606_04-pics.pptx", "_blank");
 					});
 			} else {
-				$("#btnPDF")
-					.click(function() {
+				/*$("#btnPDF").click(function() {
 						window.open("https://spmssicc.github.io/pages/pdf/" + file + ".pdf", "_blank");
-					});
+					});*/
+
+				$("#btnPDF").attr("onclick","window.open('https://spmssicc.github.io/pages/pdf/" + file + "'.pdf', '_blank')");
+
+
 			}
 
 			if (funcao != undefined && typeof funcao == "function") {
