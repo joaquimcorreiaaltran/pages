@@ -5,9 +5,7 @@ Project: SICC
 Date: Aug-2017
 */
 //get the current html document name without extension
-doc_name = window.location.pathname.split("/")
-	.pop()
-	.replace(/.html|htm/gi, "");
+doc_name = window.location.pathname.split("/").pop().replace(/.html|htm/gi, "");
 
 //highslide-with-gallery configs
 graphicsDir = './img/highslide/graphics/';
@@ -78,7 +76,7 @@ function loadMdDoc(mdFile, btnsToShow) {
 
 	$("body, #content").removeAttr("style");
 
-		$("#content").html("<div id='content'><article id='documento' class='modulo'></article></div>");
+		$("#content").html("<article id='documento' class='modulo'></article>");
 
 		convertMdToHtml("documento", function() {
 			loadDocButtons(function() {
@@ -110,19 +108,24 @@ function convertMdToHtml(elementId, funcao, mdFile) {
 		console.log("[convertMdToHtml] elementId = \"documento\";");
 	}
 
-	if (mdFile == undefined || mdFile.length > 1) {
+	if (mdFile !== undefined || mdFile.length > 1) {
 		file = mdFile;
 		console.log("[convertMdToHtml] file: " + file);
 	}
 
 	console.log("[convertMdToHtml] elementId: " + elementId + ",\nmdFile" + mdFile + ", \nfuncao: " + funcao);
 
+	//Vai buscar o ficheiro markdown ao diretório ./markdown/
 	$.get('./markdown/' + file + '.md', function(data) {
-		var converter = new showdown.Converter(),
-			data, html = converter.makeHtml(data);
+
+		//declara 3 variáveis: converter, data e a html. A variável html irá conter o ficheiro markdown convertido em HTML.
+		var converter = new showdown.Converter(),	data, html = converter.makeHtml(data);
+
 		console.log("[convertMdToHtml] file converted!");
-		$("#" + elementId)
-			.html(html);
+
+		//seleciona o elemento "elementId" e coloca o documento markdown convertido dentro desse "elementId"
+		$("#" + elementId).html(html);
+
 		zommClickImagem();
 		responsiveTable();
 		if (funcao != undefined && typeof funcao == "function") {
@@ -400,7 +403,7 @@ window.onclick = function(event) {
 	if (!event.target.matches('.dropdown, #tocDropdown *, #btnMenu i, #btnMenu a, #docButtons p, #accordion *, #btnShowToc') && $("#btnMenu").hasClass("showMenu")) {
 		showMenu();
 	}
-}; /*close showToc() and close showMenu()*/
+};
 
 /*********************************************************************
 override standard href-id navigation on page without change HTML markup
