@@ -183,7 +183,7 @@ function loadDocButtons(funcao, btnsToShow, file) {
 						window.open("https://spmssicc.github.io/pages/pdf/" + file + ".pdf", "_blank");
 					});*/
 
-				$("#btnPDF").attr({"onclick":"function() {window.open('https://spmssicc.github.io/pages/pdf/" + file + "'.pdf', '_blank') })"});
+				$("#btnPDF").attr({"onclick":"window.location.href('https://spmssicc.github.io/pages/pdf/" + file + "'.pdf')"});
 
 
 			}
