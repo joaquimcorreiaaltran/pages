@@ -19,18 +19,24 @@ dimmingGeckoFix = true;
 blockRightClick = true;
 
 
+function startSpinner(){
+	$("<div id='spinner' style='text-align:center; height:50em;'><i style='height:50em; top 50%; left: 50%;' class='fa fa-spinner fa-pulse fa-3x fa-fw'></i></div>").insertAfter("#header");
+}
+
+function stopSpinner(){
+	$("#spinner").remove();
+}
+
 function loadIndexContent(btnsToShow) {
 
 	console.log("\n[loadIndexContent] btnsToShow: ", btnsToShow);
 
 	$("body")
 		.attr("style", "margin:0 0 0 0;  width:100%");
-	$("#content")
-		.attr("style", "min-height: 90vh; margin: 0 0 0 0; padding:1em 1em 1em 1em; widht: 100%; max-width:5000px");
+	$("#content").attr("style", "min-height: 90vh; margin: 0 0 0 0; padding:1em 1em 1em 1em; widht: 100%; max-width:5000px");
 
 	$.get("./html/index_content.html", function(data) {
-		$("#content")
-			.html(data);
+		$("#content").html(data);
 	});
 
 	loadDocButtons("", "", "index");
@@ -39,6 +45,8 @@ function loadIndexContent(btnsToShow) {
 }
 
 function loadIframe(option, btnsToShow) {
+
+		startSpinner();
 
 		$("body, #content").removeAttr("style");
 
@@ -94,10 +102,13 @@ function loadIframe(option, btnsToShow) {
 
 		$("#documento").html(htmlcontent);
 		showElements(btnsToShow);
+		stopSpinner();
 
 }
 
 function loadMdDoc(mdFile, btnsToShow) {
+
+	startSpinner();
 
 	$("body, #content").removeAttr("style");
 
@@ -109,7 +120,6 @@ function loadMdDoc(mdFile, btnsToShow) {
 			}, btnsToShow, mdFile);
 		}, mdFile);
 		showElements(btnsToShow);
-
 }
 
 function getScript(path) {
@@ -359,21 +369,20 @@ function loadToc(elementId) {
 		}
 
 		/*Dependency: jquery-ui.js*/
-		$("#tocDropdown").draggable({
-				containment: "window",
-				handle: "i",
-				snap: "#docButtons, #content",
-				cursor: "move",
-				cursorAt: {
-					top: 5,
-					left: 5
-				}
-			});
-		$("#tocDropdown").resizable();
+		if ($("#tocDropdown").lenght) {
+
+			$("#tocDropdown").draggable({
+					containment: "window",handle: "i",snap: "#docButtons, #content",cursor: "move",cursorAt: {top: 5,left: 5}
+				});
+				//$("#tocDropdown").resizable();
+				
+		}
 
 		if ($("#tocDropdown").hasClass("show")) {
 			$("#btnShowToc").addClass("enabled");
 		}
+
+		stopSpinner();
 	}
 } /*builds toc*/
 
