@@ -164,7 +164,7 @@ function convertMdToHtml(elementId, funcao, mdFile) {
 function loadDocButtons(funcao, btnsToShow, file) {
 
 
-		console.log("\n\n\n[loadDocButtons] file: " + file + "\n\n\n");
+		console.log("[loadDocButtons] file: " + file);
 
 			$("footer").addClass("documentMode");
 
@@ -172,37 +172,11 @@ function loadDocButtons(funcao, btnsToShow, file) {
 					window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/" + file + ".md", "_blank");
 				});
 
-			/*btnPDF*/
-			/*if (file == "snc_ap_circular_dgo_1381") {
-				$("#btnPDF").click(function() {
-						window.open("http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1381.pdf", "_blank");
-					});
-			} else if (file == "snc_ap_circular_dgo_1382") {
-				$("#btnPDF")
-					.click(function() {
-						window.open("http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1382.pdf", "_blank");
-					});
-			} else if (file == "snc_ap_decreto_lei_85_2016") {
-				$("#btnPDF")
-					.click(function() {
-						window.open("https://dre.pt/application/conteudo/105583346", "_blank");
-					});
-			} else if (file == "snc_ap_decreto_lei_192_2015") {
-				$("#btnPDF")
-					.click(function() {
-						window.open("https://dre.pt/application/conteudo/70262478", "_blank");
-					});
-			} else if (file == "snc_ap_apresentacao") {
-				$("#btnPDF")
-					.click(function() {
-						window.open("https://view.officeapps.live.com/op/embed.aspx?src=https://spmssicc.github.io/pages/pptx/SPMS_SICC_SNC_AP_20160606_04-pics.pptx", "_blank");
-					});
-			} else {
-				/*$("#btnPDF").click(function() {
-						window.open("https://spmssicc.github.io/pages/pdf/" + file + ".pdf", "_blank");
-					});*/
+			$("#btnPDF").attr({"onclick":"window.open('https://spmssicc.github.io/pages/pdf/" + file + ".pdf', '_blank')"});
 
-				$("#btnPDF").attr({"onclick":"window.location.href('https://spmssicc.github.io/pages/pdf/" + file + ".pdf')"});
+
+
+			console.log("[loadDocButtons] $('#btnPDF').attr(onclick): " + $("#btnPDF").attr("onclick"));
 
 			if (funcao != undefined && typeof funcao == "function") {
 				funcao();
