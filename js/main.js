@@ -168,12 +168,14 @@ function loadDocButtons(funcao, btnsToShow, file) {
 
 			$("footer").addClass("documentMode");
 
-			$("#btnEditarDoc").click(function() {
-					window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/" + file + ".md", "_blank");
-				});
+			if (file != "index"){
 
-			$("#btnPDF").attr({"onclick":"window.open('https://spmssicc.github.io/pages/pdf/" + file + ".pdf', '_blank')"});
+				$("#btnEditarDoc").click(function() {
+						window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/" + file + ".md", "_blank");
+					});
 
+				$("#btnPDF").attr({"onclick":"window.open('https://spmssicc.github.io/pages/pdf/" + file + ".pdf', '_blank')"});
+			}
 
 
 			console.log("[loadDocButtons] $('#btnPDF').attr(onclick): " + $("#btnPDF").attr("onclick"));
