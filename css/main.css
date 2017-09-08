@@ -571,7 +571,9 @@ text-align:center
 }
 
 #docButtons i.fa {
-font-size:1.2em
+font-size:1.7em;
+padding: 0.1em;
+margin: -0.1em
 }
 
 #docButtons button:hover {
