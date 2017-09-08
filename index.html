@@ -77,18 +77,20 @@
 				/************************/
 				/*********TESTE*********/
 
-				var url,queryString,variables
+				var url = {fullURL:"",queryString:"", variables:"", doc, anchor:""};
 
-				url = window.location.href;     // Returns full URL
+				url.fullURL = window.location.href;     // Returns full URL
 
-				queryString = url.split("?",2); // Returns query string of URL. 2 is the limit of splits
+				url.queryString = url.split("?",2); // Returns query string of URL. 2 is the limit of splits
 
-				variables = queryString.split("&",3); // Returns variables passed of the query string. splits until the max of 3 variables
+				url.variables = queryString.split("&",3); // Returns variables passed of the query string. splits until the max of 3 variables
 
-				console.log("\n\n\n\n url: " + url + ".\nqueryString[0]:" + queryString[0] + ".\nqueryString[1]:" + queryString[1] + "\n\n\n\n");
 
-				for(i = 0; i < variables.length; i++){
-					console.log("\nvariables[" + i + "]:" + variables[i] + ".\n");
+
+				console.log("\n\n\n\n url: " + url + ".\nurl.queryString[0]:" + url.queryString[0] + ".\nurl.queryString[1]:" + url.queryString[1] + "\n\n\n\n");
+
+				for(i = 0; i < url.variables.length; i++){
+					console.log("\nvariables[" + i + "]:" + url.variables[i] + ".\n");
 				}
 
 				/************************/
