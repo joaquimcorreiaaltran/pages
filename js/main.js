@@ -55,6 +55,7 @@ function loadIndexContent(btnsToShow) {
 
 	loadDocButtons("", "", "index");
 	showElements(btnsToShow);
+	startLoader();
 
 }
 
