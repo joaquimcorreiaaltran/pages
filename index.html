@@ -77,11 +77,13 @@
 				/************************/
 				/*********TESTE*********/
 
-				var url = window.location.href;     // Returns full URL
+				var url,queryString,variables
 
-				var queryString = url.split("?",2); // Returns query string of URL. 2 is the limit of splits
+				url = window.location.href;     // Returns full URL
 
-				var variables = queryString.split("&",3) // Returns variables passed of the query string. splits until the max of 3 variables
+				queryString = url.split("?",2); // Returns query string of URL. 2 is the limit of splits
+
+				variables = queryString.split("&",3); // Returns variables passed of the query string. splits until the max of 3 variables
 
 				console.log("\n\n\n\n url: " + url + ".\nqueryString[0]:" + queryString[0] + ".\nqueryString[1]:" + queryString[1] + "\n\n\n\n");
 
