@@ -240,8 +240,6 @@ function responsiveTable() {
 //Loads the gitHub repository and insert insert into the HTML
 function loadCommitHistory(btnsToShow) {
 
-	getScript("./js/jquery.timeago.js");
-
 	showElements(btnsToShow);
 
 	var htmlcontent = "<div id='latest-commits'>" +
