@@ -65,10 +65,12 @@ function loadIframe(option, btnsToShow) {
 
 		startLoader();
 
-		//adjust html style and structure
-		$("body, #content").removeAttr("style");
-		$("footer").addClass("documentMode");
-		$("#content").html("<div id='content'><article id='documento' class='modulo'></article></div>");
+		if($("#documento").length < 1){
+			//adjust html style and structure
+				$("body, #content").removeAttr("style");
+				$("#content").html("<article id='documento' class='modulo'></article>");
+				$("footer").addClass("documentMode");
+		}
 
 		var htmlcontent;
 
@@ -126,12 +128,14 @@ function loadIframe(option, btnsToShow) {
 
 function loadMdDoc(mdFile, btnsToShow) {
 
-	startLoader();
+		startLoader();
 
-	//adjust html style and structure
-		$("body, #content").removeAttr("style");
-		$("#content").html("<article id='documento' class='modulo'></article>");
-		$("footer").addClass("documentMode");
+		if($("#documento").length < 1){
+			//adjust html style and structure
+				$("body, #content").removeAttr("style");
+				$("#content").html("<article id='documento' class='modulo'></article>");
+				$("footer").addClass("documentMode");
+		}
 
 		convertMdToHtml("documento", function() {
 			loadDocButtons(function() {
@@ -265,7 +269,10 @@ function loadCommitHistory(btnsToShow) {
 		console.log("[loadCommitHistory] started");
 
 		if($("#documento").length < 1){
-			$("#content").html("<article id='documento' class='modulo'></article>");
+			//adjust html style and structure
+				$("body, #content").removeAttr("style");
+				$("#content").html("<article id='documento' class='modulo'></article>");
+				$("footer").addClass("documentMode");
 		}
 
 		var htmlcontent = "<div id='latest-commits'>" +
