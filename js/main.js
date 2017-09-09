@@ -240,13 +240,10 @@ function hideElements() {
 // Add zoom functionality to images in the HTML
 function zommClickImagem() {
 
-	$('#documento img')
-		.each(function() {
-			var alt = $(this)
-				.attr("alt");
-			$(this)
-				.wrap("<a class='imagem' href='" + $(this)
-					.attr("src") + "' onclick='return hs.expand(this)'></a>");
+	$('#documento img').each(function() {
+			var alt = $(this).attr("alt");
+			$(this).wrap("<a class='imagem' href='" +
+			$(this).attr("src") + "' onclick='return hs.expand(this)'></a>");
 		});
 
 	console.log("[zommClickImagem] image zoom ready!");
@@ -255,31 +252,36 @@ function zommClickImagem() {
 
 /* Add auto scroll to document tables */
 function responsiveTable() {
-	$('#documento table')
-		.each(function() {
-			$(this)
-				.wrap("<div style='overflow-x:auto;'></div>");
+	$('#documento table').each(function() {
+			$(this).wrap("<div style='overflow-x:auto;'></div>");
 		});
 } /*close responsiveTable()*/
 
 //Loads the gitHub repository and insert insert into the HTML
 function loadCommitHistory(btnsToShow) {
 
-	startLoader();
+		startLoader();
 
-	showElements(btnsToShow);
+		console.log("[loadCommitHistory] started");
 
-	$("footer").addClass("documentMode");
+		if($("#documento").length < 1){
+			$("#content").html("<article id='documento' class='modulo'></article>");
+		}
 
-	var htmlcontent = "<div id='latest-commits'>" +
-		"<div id='latest-commits-header'>" +
-		"<h1>Atualizações  <i class='fa fa-github gh-icon'></i></h1>" +
-		"</div>" +
-		"<ul id='commit-history'></ul>" +
-		"</div>";
+		var htmlcontent = "<div id='latest-commits'>" +
+											"<div id='latest-commits-header'>" +
+											"<h1>Atualizações  <i class='fa fa-github gh-icon'></i></h1>" +
+											"</div>" +
+											"<ul id='commit-history'></ul>" +
+											"</div>";
 
-	$("#documento")
-		.html(htmlcontent);
+		$("#documento").html(htmlcontent);
+
+		showElements(btnsToShow);
+
+		$("footer").addClass("documentMode");
+
+
 
 	var branch, callback, container, limit, repo, url, username;
 	username = "SPMSSICC";
