@@ -138,11 +138,18 @@ function loadMdDoc(mdFile, btnsToShow) {
 		}
 
 		convertMdToHtml("documento", function() {
-			loadDocButtons(function() {
-				loadToc("tocDropdown");
-			}, btnsToShow, mdFile);
-		}, mdFile);
+					loadDocButtons(function() {
+							loadToc("tocDropdown");
+					}, btnsToShow, mdFile);
+			}, mdFile);
+
 		showElements(btnsToShow);
+
+		$("#btnEditarDoc").click(function() {
+				window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/" + file + ".md", "_blank");
+			});
+
+		$("#btnPDF").attr({"onclick":"window.open('https://spmssicc.github.io/pages/pdf/" + file + ".pdf', '_blank')"});
 }
 
 function getScript(path) {
@@ -198,22 +205,9 @@ function loadDocButtons(funcao, btnsToShow, file) {
 
 		console.log("[loadDocButtons] file: " + file);
 
-			if (file != "index"){
-
-				$("#btnEditarDoc").click(function() {
-						window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/" + file + ".md", "_blank");
-					});
-
-				$("#btnPDF").attr({"onclick":"window.open('https://spmssicc.github.io/pages/pdf/" + file + ".pdf', '_blank')"});
-			}
-
-
-			console.log("[loadDocButtons] $('#btnPDF').attr(onclick): " + $("#btnPDF").attr("onclick"));
-
-			if (funcao != undefined && typeof funcao == "function") {
-				funcao();
-			}
-		//}
+		if (funcao != undefined && typeof funcao == "function") {
+			funcao();
+		}
 
 } //close loadDocButtons()
 
