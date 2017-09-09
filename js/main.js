@@ -43,6 +43,8 @@ function loadIndexContent(btnsToShow) {
 
 	startLoader();
 
+	$("footer").removeClass("documentMode");
+
 	console.log("\n[loadIndexContent] btnsToShow: ", btnsToShow);
 
 	$("body")
@@ -63,8 +65,9 @@ function loadIframe(option, btnsToShow) {
 
 		startLoader();
 
+		//adjust html style and structure
 		$("body, #content").removeAttr("style");
-
+		$("footer").addClass("documentMode");
 		$("#content").html("<div id='content'><article id='documento' class='modulo'></article></div>");
 
 		var htmlcontent;
@@ -125,9 +128,10 @@ function loadMdDoc(mdFile, btnsToShow) {
 
 	startLoader();
 
-	$("body, #content").removeAttr("style");
-
+	//adjust html style and structure
+		$("body, #content").removeAttr("style");
 		$("#content").html("<article id='documento' class='modulo'></article>");
+		$("footer").addClass("documentMode");
 
 		convertMdToHtml("documento", function() {
 			loadDocButtons(function() {
@@ -190,8 +194,6 @@ function loadDocButtons(funcao, btnsToShow, file) {
 
 		console.log("[loadDocButtons] file: " + file);
 
-			$("footer").addClass("documentMode");
-
 			if (file != "index"){
 
 				$("#btnEditarDoc").click(function() {
@@ -217,7 +219,6 @@ function showElements(elements) {
 
 	for (i = 0; i < elements.length; i++) {
 		$("#" + elements[i]).addClass("show");
-			//.remove();
 		var arrVal = elements[i];
 		console.log("[showElements] show: ", arrVal);
 	}
@@ -267,6 +268,8 @@ function loadCommitHistory(btnsToShow) {
 	startLoader();
 
 	showElements(btnsToShow);
+
+	$("footer").addClass("documentMode");
 
 	var htmlcontent = "<div id='latest-commits'>" +
 		"<div id='latest-commits-header'>" +
