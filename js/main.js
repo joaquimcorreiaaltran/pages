@@ -35,7 +35,7 @@ function startLoader(){
 function stopLoader(){
 		while($("#loader").length){
 				$("#loader").remove();
-				console.log("[startLoader] Loader removido");
+				console.log("[stopLoader] Loader removido");
 		}
 }
 
@@ -55,7 +55,7 @@ function loadIndexContent(btnsToShow) {
 
 	loadDocButtons("", "", "index");
 	showElements(btnsToShow);
-	startLoader();
+	stopLoader();
 
 }
 
