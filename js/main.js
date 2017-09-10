@@ -19,36 +19,98 @@ dimmingGeckoFix = true;
 blockRightClick = true;
 
 
+/*Carregar documento através de parametros no URL (queryString)*****/
+/*falta adicionar suporte para as anchor de documentos e suporte para carregar iframes e  o load commit history*/
+function loadContent(){
+
+	var fullURL = window.location.href; // Returns full URL
+
+	//var fullURL = "https://spmssicc.github.io/pages/index.html?doc=processos&anchor=titulo";
+
+	var index = fullURL.indexOf("?");
+
+	console.log("fullURL: " + fullURL);
+	console.log("INDEX OF: " + fullURL.indexOf("?"));
+
+	if ( index != -1 )
+	{
+			console.log("Tem query String!");
+
+			var queryString = fullURL.split("?"); // Returns query string of  2 is the limit of splits
+
+			console.log("Tem query String! Nº de parâmetros = " + queryString.length);
+
+			var variables = queryString[1].split("&",2); // Returns variables passed of the query string. splits until the max of 2 variables
+			var doc = variables[0].substring(variables[0].indexOf("=") + 1, 99); // Returns doc name
+			var anchor = variables[1].substring(variables[1].indexOf("=") + 1, 99); // Returns anchor of the document
+
+			if (doc.length > 1 && anchor.length > 1) {
+
+					console.log("doc.length: " + doc.length);
+					console.log("doc: " + doc);
+					console.log("anchor: " + anchor);
+
+					//automatizar a listagem de documentos markdown, dentro da diretoria;
+					var arrDocs = ["about","mu_snc_ap","macro_tarefas","cer_migracao_sicc","help","menus","processos"];
+
+					if($.inArray(doc, arrDocs) != -1 ){
+							console.log("Doc existe no arrDocs!! : " + doc);
+							loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnShowToc','tocDropdown'])
+
+						//colocar/scroll o documento na anchor
+					}
+
+					//chamar loadIframe se for um PDF ou pptx
+
+					//chamar loadICommitHistory se for um PDF ou pptx
+					}
+	}/*close if*/
+	else if ( index == -1 ) {
+
+				console.log("CARREGA INDEX");
+
+				var Btns = ["btnMenu"]; //["btnMenu","btnPDF","btnEditarDoc","btnShowToc","tocDropdown"]
+
+				loadIndexContent(Btns);
+
+	}/*close else if*/
+	else{
+		window.alert("Erro. fullURL.indexOf('?'): " + fullURL.indexOf("?") +"\nfullURL: " + fullURL);
+	}
+
+
+	/**************************************************/
+	/**************************************************/
+
+	stopLoader();
+}
+
 function startLoader(){
 
-		if( $("#loader").length ){
+		if( $("#loader .loader").length ){
 				console.log("[startLoader] Loader já tinha sido carregado anteriormente");
 		}
 		else{
 				var spinnerHtml = "<div id ='loader'> <img  class='loader' src='./img/icons/sicc.ico' alt='Loader'></img></div>";
-
 				$(spinnerHtml).insertAfter("#header");
-				console.log("[startLoader] Novo spinner adicionado");
+				console.log("[startLoader] Adicionado");
 		}
 }
 
 function stopLoader(){
 		while($("#loader").length){
 				$("#loader").remove();
-				console.log("[stopLoader] Loader removido");
+				console.log("[stopLoader] Removido");
 		}
 }
 
 function loadIndexContent(btnsToShow) {
 
-	startLoader();
-
-	$("footer").removeClass("documentMode");
-
 	console.log("\n[loadIndexContent] btnsToShow: ", btnsToShow);
 
-	$("body")
-		.attr("style", "margin:0 0 0 0;  width:100%");
+	startLoader();
+
+	$("body").attr("style", "margin:0 0 0 0;  width:100%");
 	$("#content").attr("style", "min-height: 90vh; margin: 0 0 0 0; padding:1em 1em 1em 1em; widht: 100%; max-width:5000px");
 
 	$.get("./html/index_content.html", function(data) {
@@ -56,6 +118,7 @@ function loadIndexContent(btnsToShow) {
 	});
 
 	showElements(btnsToShow);
+	$("footer").removeClass("documentMode");
 	stopLoader();
 
 }
