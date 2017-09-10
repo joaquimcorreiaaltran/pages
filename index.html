@@ -74,73 +74,7 @@
 
 				startLoader();
 
-				/*********************************************************************/
-				/************************************TESTE***************************/
-				/*Carregar documento através de parametros no URL (queryString)*****/
-				/******************************************************************/
-
-				var fullURL = window.location.href; // Returns full URL
-
-				//var fullURL = "https://spmssicc.github.io/pages/index.html?doc=processos&anchor=titulo";
-
-				var index = fullURL.indexOf("?");
-
-				console.log("fullURL: " + fullURL);
-				console.log("INDEX OF: " + fullURL.indexOf("?"));
-
-				if ( index != -1 )
-				{
-						console.log("Tem query String!");
-
-						var queryString = fullURL.split("?"); // Returns query string of  2 is the limit of splits
-
-						console.log("Tem query String! Nº de parâmetros = " + queryString.length);
-
-						var variables = queryString[1].split("&",2); // Returns variables passed of the query string. splits until the max of 2 variables
-
-						var doc = variables[0].substring(variables[0].indexOf("=") + 1, 99); // Returns doc name
-
-						var anchor = variables[1].substring(variables[1].indexOf("=") + 1, 99); // Returns anchor of the document
-
-						if (doc.length > 1 && anchor.length > 1) {
-
-								console.log("doc.length: " + doc.length);
-								console.log("doc: " + doc);
-								console.log("anchor: " + anchor);
-
-								//automatizar a listagem de documentos markdown, dentro da diretoria;
-								var arrDocs = ["about","mu_snc_ap","macro_tarefas","cer_migracao_sicc","help","menus","processos"];
-
-								if($.inArray(doc, arrDocs) != -1 ){
-										console.log("Doc existe no arrDocs!! : " + doc);
-										loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnShowToc','tocDropdown'])
-
-									//colocar/scroll o documento na anchor
-								}
-
-								//chamar loadIframe se for um PDF ou pptx
-
-								//chamar loadICommitHistory se for um PDF ou pptx
-								}
-				}/*close if*/
-				else if ( index == -1 ) {
-
-							console.log("CARREGA INDEX");
-
-							var Btns = ["btnMenu"]; //["btnMenu","btnPDF","btnEditarDoc","btnShowToc","tocDropdown"]
-
-							loadIndexContent(Btns);
-
-				}/*close else if*/
-				else{
-					window.alert("Erro. fullURL.indexOf('?'): " + fullURL.indexOf("?") +"\nfullURL: " + fullURL);
-				}
-
-
-				/**************************************************/
-				/**************************************************/
-
-				stopLoader();
+				loadContent(); //carrega a página consoante o querylink introduzido
 
 			});
 
