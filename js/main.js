@@ -55,7 +55,6 @@ function loadIndexContent(btnsToShow) {
 		$("#content").html(data);
 	});
 
-	loadDocButtons("", "", "index");
 	showElements(btnsToShow);
 	stopLoader();
 
@@ -138,9 +137,7 @@ function loadMdDoc(mdFile, btnsToShow) {
 		}
 
 		convertMdToHtml("documento", function() {
-					loadDocButtons(function() {
 							loadToc("tocDropdown");
-					}, btnsToShow, mdFile);
 			}, mdFile);
 
 		showElements(btnsToShow);
@@ -199,17 +196,6 @@ function convertMdToHtml(elementId, funcao, mdFile) {
 	});
 
 } /*close convertMdToHtml()*/
-
-//Adds auxilary buttons to the interface
-function loadDocButtons(funcao, btnsToShow, file) {
-
-		console.log("[loadDocButtons] file: " + file);
-
-		if (funcao != undefined && typeof funcao == "function") {
-			funcao();
-		}
-
-} //close loadDocButtons()
 
 function showElements(elements) {
 
