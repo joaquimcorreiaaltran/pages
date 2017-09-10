@@ -146,10 +146,10 @@ function loadMdDoc(mdFile, btnsToShow) {
 		showElements(btnsToShow);
 
 		$("#btnEditarDoc").click(function() {
-				window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/" + file + ".md", "_blank");
+				window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/" + mdFile + ".md", "_blank");
 			});
 
-		$("#btnPDF").attr({"onclick":"window.open('https://spmssicc.github.io/pages/pdf/" + file + ".pdf', '_blank')"});
+		$("#btnPDF").attr({"onclick":"window.open('https://spmssicc.github.io/pages/pdf/" + mdFile + ".pdf', '_blank')"});
 }
 
 function getScript(path) {
