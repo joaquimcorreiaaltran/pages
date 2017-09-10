@@ -140,24 +140,18 @@ function loadMdDoc(mdFile, btnsToShow) {
 							loadToc("tocDropdown");
 			}, mdFile);
 
+
+
 		showElements(btnsToShow);
+
+		// top scrolling
+		window.scrollTo(0,0);
 
 		$("#btnEditarDoc").click(function() {
 				window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/" + mdFile + ".md", "_blank");
 			});
 
 		$("#btnPDF").attr({"onclick":"window.open('https://spmssicc.github.io/pages/pdf/" + mdFile + ".pdf', '_blank')"});
-}
-
-function getScript(path) {
-	$.getScript(path)
-		.done(function(script, textStatus) {
-			console.log("[Carregamento de Script]:" + textStatus);
-		})
-		.fail(function(jqxhr, settings, exception) {
-			$("div.log")
-				.text("Triggered ajaxError handler.");
-		});
 }
 
 //load and convert Markdown to Html and show it
@@ -219,7 +213,6 @@ function hideElements() {
 		console.log("[hideElements] hide: ", arrVal);
 	}
 }
-
 
 // Add zoom functionality to images in the HTML
 function zommClickImagem() {
@@ -429,12 +422,10 @@ for smooth scrolling
 *********************************************************************/
 
 // handle links with @href started with '#' only
-$(document)
-	.on('click', 'a[href^="#"]', function(e) {
+$(document).on('click', 'a[href^="#"]', function(e) {
 
 		// target element id
-		var id = $(this)
-			.attr('href');
+		var id = $(this).attr('href');
 
 		// target element
 		var $id = $(id);
@@ -446,12 +437,12 @@ $(document)
 		e.preventDefault();
 
 		// top position relative to the document
-		var pos = $id.offset()
-			.top - 55;
+		var pos = $id.offset().top - 55;
+
+		console.log(" [Click!!] pos= " + pos);
 
 		// animated top scrolling
-		$('body, html')
-			.animate({
+		$('body, html').animate({
 				scrollTop: pos
 			});
 	});
