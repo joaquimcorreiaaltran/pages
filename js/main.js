@@ -5,7 +5,7 @@ Project: SICC
 Date: Aug-2017
 */
 //get the current html document name without extension
-doc_name = window.location.pathname.split("/").pop().replace(/.html|htm/gi, "");
+//doc_name = window.location.pathname.split("/").pop().replace(/.html|htm/gi, "");
 
 //highslide-with-gallery configs
 graphicsDir = './img/highslide/graphics/';
@@ -23,9 +23,9 @@ blockRightClick = true;
 /*falta adicionar suporte para as anchor de documentos e suporte para carregar iframes e  o load commit history*/
 function loadContent(){
 
-	var fullURL = window.location.href; // Returns full URL
+	//var fullURL = window.location.href; // Returns full URL
 
-	//var fullURL = "https://spmssicc.github.io/pages/index.html?doc=processos&anchor=titulo";
+	var fullURL = "https://spmssicc.github.io/pages/index.html?doc=processdos&anchor=titulo";
 
 	var index = fullURL.indexOf("?");
 
@@ -34,11 +34,10 @@ function loadContent(){
 
 	if ( index != -1 )
 	{
-			console.log("Tem query String!");
 
 			var queryString = fullURL.split("?"); // Returns query string of  2 is the limit of splits
 
-			console.log("Tem query String! Nº de parâmetros = " + queryString.length);
+			console.log("[loadContent] Has query string! Parameters = " + queryString.length);
 
 			var variables = queryString[1].split("&",2); // Returns variables passed of the query string. splits until the max of 2 variables
 			var doc = variables[0].substring(variables[0].indexOf("=") + 1, 99); // Returns doc name
@@ -46,19 +45,15 @@ function loadContent(){
 
 			if (doc.length > 1 && anchor.length > 1) {
 
-					console.log("doc.length: " + doc.length);
-					console.log("doc: " + doc);
-					console.log("anchor: " + anchor);
+					console.log("[loadContent] doc.length: " + doc.length);
+					console.log("[loadContent] doc: " + doc);
+					console.log("[loadContent] anchor: " + anchor);
 
-					//automatizar a listagem de documentos markdown, dentro da diretoria;
-					var arrDocs = ["about","mu_snc_ap","macro_tarefas","cer_migracao_sicc","help","menus","processos"];
 
-					if($.inArray(doc, arrDocs) != -1 ){
-							console.log("Doc existe no arrDocs!! : " + doc);
-							loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnShowToc','tocDropdown'])
+					loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnShowToc','tocDropdown'])
 
-						//colocar/scroll o documento na anchor
-					}
+						//colocar scroll o documento na anchor
+
 
 					//chamar loadIframe se for um PDF ou pptx
 
@@ -106,15 +101,21 @@ function stopLoader(){
 
 function loadIndexContent(btnsToShow) {
 
-	console.log("\n[loadIndexContent] btnsToShow: ", btnsToShow);
+	console.log("[loadIndexContent] btnsToShow: ", btnsToShow);
 
 	startLoader();
 
 	$("body").attr("style", "margin:0 0 0 0;  width:100%");
 	$("#content").attr("style", "min-height: 90vh; margin: 0 0 0 0; padding:1em 1em 1em 1em; widht: 100%; max-width:5000px");
 
-	$.get("./html/index_content.html", function(data) {
-		$("#content").html(data);
+	$.get("./html/index_content.html", function() {
+		//console.log("[loadIndexContent] Loaded requested file");
+	})
+	.done(function(data){
+			$("#content").html(data);
+	})
+	.fail(function(){
+			console.log("[loadIndexContent] Error on loading requested file");
 	});
 
 	showElements(btnsToShow);
@@ -203,8 +204,6 @@ function loadMdDoc(mdFile, btnsToShow) {
 							loadToc("tocDropdown");
 			}, mdFile);
 
-
-
 		showElements(btnsToShow);
 
 		// top scrolling
@@ -220,36 +219,39 @@ function loadMdDoc(mdFile, btnsToShow) {
 //load and convert Markdown to Html and show it
 function convertMdToHtml(elementId, funcao, mdFile) {
 
-	var file = doc_name;
-
 	if (elementId == undefined || mdFile.length < 1) {
 		elementId = "documento";
 		console.log("[convertMdToHtml] elementId = \"documento\";");
 	}
 
-	if (mdFile !== undefined || mdFile.length > 1) {
-		file = mdFile;
-		console.log("[convertMdToHtml] file: " + file);
-	}
-
 	console.log("[convertMdToHtml] elementId: " + elementId + ",\nmdFile" + mdFile + ", \nfuncao: " + funcao);
 
 	//Vai buscar o ficheiro markdown ao diretório ./markdown/
-	$.get('./markdown/' + file + '.md', function(data) {
+	$.get('./markdown/' + mdFile + '.md', function() {
+				//console.log("[convertMdToHtml] sucess");
+	})
+		.done(function(data) {
+		    console.log("[convertMdToHtml] mdFile loaded");
 
-		//declara 3 variáveis: converter, data e a html. A variável html irá conter o ficheiro markdown convertido em HTML.
-		var converter = new showdown.Converter(),	data, html = converter.makeHtml(data);
+				//declara 3 variáveis: converter, data e a html. A variável html irá conter o ficheiro markdown convertido em HTML.
+				var converter = new showdown.Converter(),	data, html = converter.makeHtml(data);
 
-		console.log("[convertMdToHtml] file converted!");
+				console.log("[convertMdToHtml] mdFile converted!");
 
-		//seleciona o elemento "elementId" e coloca o documento markdown convertido dentro desse "elementId"
-		$("#" + elementId).html(html);
+				//seleciona o elemento "elementId" e coloca o documento markdown convertido dentro desse "elementId"
+				$("#" + elementId).html(html);
 
-		zommClickImagem();
-		responsiveTable();
-		if (funcao != undefined && typeof funcao == "function") {
-			funcao();
-		}
+				zommClickImagem();
+				responsiveTable();
+
+				//Execute the function received by parameter
+				if (funcao != undefined && typeof funcao == "function") {
+					funcao();
+				}
+  })
+		.fail(function() {
+				console.log();("[convertMdToHtml] Error on document loading. The document exists?");
+				loadIndexContent(['btnMenu']);
 	});
 
 } /*close convertMdToHtml()*/
@@ -260,9 +262,8 @@ function showElements(elements) {
 
 	for (i = 0; i < elements.length; i++) {
 		$("#" + elements[i]).addClass("show");
-		var arrVal = elements[i];
-		console.log("[showElements] show: ", arrVal);
 	}
+	console.log("[showElements] show: ", elements);
 }
 
 function hideElements() {
@@ -271,10 +272,8 @@ function hideElements() {
 
 	for (i = 0; i < elements.length; i++) {
 		$("#" + elements[i]).removeClass("show");
-			//.remove();
-		var arrVal = elements[i];
-		console.log("[hideElements] hide: ", arrVal);
 	}
+	console.log("[hideElements] hide: ", elements);
 }
 
 // Add zoom functionality to images in the HTML
@@ -457,7 +456,7 @@ function showToc() {
 	$(".dropdown-content").toggleClass("show");
 	$("#btnShowToc").toggleClass("enabled");
 
-	console.log("[showToc] visibility:" + $(".dropdown-content").hasClass("show"));
+	console.log("[showToc] TOC visibility:" + $(".dropdown-content").hasClass("show"));
 	console.log("[showToc] #btnShowToc visibility:" + $("#btnShowToc").hasClass("show"));
 }
 
@@ -471,10 +470,10 @@ function showMenu() {
 
 // Close the dropdown menu and the menu if the user clicks outside of it
 window.onclick = function(event) {
-	if (!event.target.matches('.dropbtn, #tocDropdown *, #btnMenu i, #btnMenu a, #docButtons p') && $("#tocDropdown").hasClass("show")) {
+	if (!event.target.matches('.dropbtn, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p') && $("#tocDropdown").hasClass("show")) {
 		showToc();
 	}
-	if (!event.target.matches('.dropdown, #tocDropdown *, #btnMenu i, #btnMenu a, #docButtons p, #accordion *, #btnShowToc') && $("#btnMenu").hasClass("showMenu")) {
+	if (!event.target.matches('.dropdown, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, #accordion *, #btnShowToc') && $("#btnMenu").hasClass("showMenu")) {
 		showMenu();
 	}
 };

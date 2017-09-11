@@ -15,9 +15,9 @@ font-size:1em
   display: block;
     animation: spin 1.2s linear infinite;
     margin: auto;
-    width: 5em;
-    height: 5em;
-    padding: 8em
+    width: 4em;
+    height: 4em;
+    padding: 4em
 }
 
 @keyframes spin {
@@ -747,13 +747,13 @@ text-indent:.4em
 body {
 height:calc(100%-44px);
 line-height:1.75em;
-transition:all 2s ease
+transition:all 1s ease
 }
 
 #content > .inner {
 max-width:1038px;
 padding-bottom:6em;
-transition:max-width 2s ease, padding-bottom 2s ease
+transition:max-width 1s ease, padding-bottom 1s ease
 }
 }
 
@@ -765,24 +765,24 @@ overflow:auto
 #content {
 margin:55px 0 0;
 min-height:0;
-transition:margin-top 2s ease, margin-bottom 2s ease, margin-left 2s ease, margin-right 2s ease, min-height 2s ease
+transition:margin-top 1s ease, margin-bottom 1s ease, margin-left 1s ease, margin-right 1s ease, min-height 1s ease
 }
 }
 
 @media screen and (min-width: 1201px){
   body {
   min-width:1200px;
-  transition:all 2s ease
+  transition:all 1s ease
   }
 
   #content {
   margin:70px auto 0;
   max-width:900px;
-  transition: margin-top 2s ease,
-              margin-bottom 2s ease,
-              margin-left 2s ease,
-              margin-right 2s ease,
-              max-width 2s ease;
+  transition: margin-top 1s ease,
+              margin-bottom 1s ease,
+              margin-left 1s ease,
+              margin-right 1s ease,
+              max-width 1s ease;
   }
 
   .documentMode {
@@ -796,13 +796,13 @@ transition:margin-top 2s ease, margin-bottom 2s ease, margin-left 2s ease, margi
 body {
 font-size:100%;
 min-width:1000px;
-transition:all 2s ease
+transition:all 1s ease
 }
 
 #content {
 margin-left:auto;
 margin-right:auto;
-transition:margin-left 2s ease, margin-right 2s ease
+transition:margin-left 1s ease, margin-right 1s ease
 }
 }
 
@@ -810,12 +810,12 @@ transition:margin-left 2s ease, margin-right 2s ease
 body {
 font-size:100%;
 min-width:641px;
-transition:all 2s ease
+transition:all 1s ease
 }
 
 input,textarea,select {
 font-size:1em;
-transition:all 2s ease
+transition:all 1s ease
 }
 }
 
@@ -836,7 +836,7 @@ width:45px
 #content {
 margin-top:55px;
 padding:.8em;
-transition:padding 2s ease, margin-top 2s ease
+transition:padding 1s ease, margin-top 1s ease
 }
 }
 
@@ -845,7 +845,7 @@ body,input,textarea,select {
 font-size:90%;
 letter-spacing:0;
 line-height:1.75em;
-transition:all 2s ease
+transition:all 1s ease
 }
 
 #drag1::before,#drag2::before {
@@ -860,6 +860,6 @@ clear:both
 #content {
 margin-top:55px;
 padding:.8em;
-transition:padding 2s ease, margin-top 2s ease
+transition:padding 1s ease, margin-top 1s ease
 }
 }
