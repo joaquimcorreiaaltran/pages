@@ -37,36 +37,36 @@ Campo   |Descrição |Tipo de dados | Nº Carateres | Editável | Obrigatório |
 
 O relatório da gestão de projetos apresenta os valores contemplados no menu de parametrização ou seja, a informação de valor do relatório de gestão de projetos, tem de estar em consonância com a informação constante no seguinte menu:
 
-![img_1.png](https://spmssicc.github.io/pages/markdown/assets/gestao_projetos/img_1.png)
+![img_1.png](https://spmssicc.github.io/pages/markdown/gestao_projetos.assets/img_1.png)
 
-![img_2.png](https://spmssicc.github.io/pages/markdown/assets/gestao_projetos/img_2.png)
+![img_2.png](https://spmssicc.github.io/pages/markdown/gestao_projetos.assets/img_2.png)
 
 Desta forma, e para criação do referido relatório, existe a necessidade de compreender o seu ciclo de execução da despesa decorre conforme representado no diagrama:
 
-![img_3.png](https://spmssicc.github.io/pages/markdown/assets/gestao_projetos/img_3.png)
+![img_3.png](https://spmssicc.github.io/pages/markdown/gestao_projetos.assets/img_3.png)
 
 Com base no exposto, o relatório tem o seguinte layout:
 
-![img_4.png](https://spmssicc.github.io/pages/markdown/assets/gestao_projetos/img_4.png)
+![img_4.png](https://spmssicc.github.io/pages/markdown/gestao_projetos.assets/img_4.png)
 
 Sendo que a execução funcionará da seguinte maneira:
 
 - 1)	Quando se define a primeira e ultima data, as mesmas referem-se sempre ao tipo de documento CB. A data de referência é obrigatória e por defeito será igual à última data, sendo que nesse intervalo listará todos os CB’s efetuados;
 
-![img_5.png](https://spmssicc.github.io/pages/markdown/assets/gestao_projetos/img_5.png)
+![img_5.png](https://spmssicc.github.io/pages/markdown/gestao_projetos.assets/img_5.png)
 
 Para o exemplo abaixo demonstrado, foram criados 2 CB’s, um com data de 23JAN16 e outro com data de 11ABR16. Nesse mesmo intervalo e para o primeiro CB criado, o CP foi efetuado com data de 01MAI2016 e para o segundo com data de 10JUN2016. O resultado do relatório é o seguinte:
 
-![img_6.png](https://spmssicc.github.io/pages/markdown/assets/gestao_projetos/img_6.png)
+![img_6.png](https://spmssicc.github.io/pages/markdown/gestao_projetos.assets/img_6.png)
 
 - 2)	Sendo que a data de referência aparece por defeito igual à última, conforme ponto 1), existe a possibilidade do utilizador escolher a data de referência que pretenda (seja a atual ou outra). Procedendo a essa alteração, consegue visualizar os restantes documentos criados, nomeadamente os CP; P1 (caso não exista P2); P2 e PG;
 
-![img_7.png](https://spmssicc.github.io/pages/markdown/assets/gestao_projetos/img_7.png)
+![img_7.png](https://spmssicc.github.io/pages/markdown/gestao_projetos.assets/img_7.png)
 
 Aproveitando o exemplo anteriormente demonstrado e com o campo “data de referência” preenchido, o relatório deverá apresentar os documentos CP, P1 (caso não exista P2); P2 e PG.
 
-![img_8.png](https://spmssicc.github.io/pages/markdown/assets/gestao_projetos/img_8.png)
+![img_8.png](https://spmssicc.github.io/pages/markdown/gestao_projetos.assets/img_8.png)
 
 Para este mesmo relatório o nome atribuído por defeito para criação do CSV. deverá ser o seguinte: GESTAO_PROJETOS
 
-![img_9.png](https://spmssicc.github.io/pages/markdown/assets/gestao_projetos/img_9.png)
+![img_9.png](https://spmssicc.github.io/pages/markdown/gestao_projetos.assets/img_9.png)
