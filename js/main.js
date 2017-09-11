@@ -25,48 +25,44 @@ function loadContent(){
 
 	//var fullURL = window.location.href; // Returns full URL
 
-	var fullURL = "https://spmssicc.github.io/pages/index.html?doc=processdos&anchor=titulo";
+	//var fullURL = "https://spmssicc.github.io/pages/index.html?doc=menus";
+	var fullURL = "https://spmssicc.github.io/pages/index.html?doc=processos&anchor=#421-gestão-de-produtos---recolha";
 
 	var index = fullURL.indexOf("?");
 
-	console.log("fullURL: " + fullURL);
-	console.log("INDEX OF: " + fullURL.indexOf("?"));
+	console.log("[loadContent] fullURL: " + fullURL);
 
-	if ( index != -1 )
-	{
+	if ( index != -1 ){
 
-			var queryString = fullURL.split("?"); // Returns query string of  2 is the limit of splits
+					var queryString = fullURL.split("?"); // Returns query string. 2 is the limit of splits
 
-			console.log("[loadContent] Has query string! Parameters = " + queryString.length);
+					console.log("[loadContent] Query string: " + queryString);
 
-			var variables = queryString[1].split("&",2); // Returns variables passed of the query string. splits until the max of 2 variables
-			var doc = variables[0].substring(variables[0].indexOf("=") + 1, 99); // Returns doc name
-			var anchor = variables[1].substring(variables[1].indexOf("=") + 1, 99); // Returns anchor of the document
+					var variables = queryString[1].split("&",2); // Returns variables passed of the query string. splits until the max of 2 variables
+					var doc = variables[0].substring(variables[0].indexOf("=") + 1, 99); // Returns doc name
+					var anchor = variables[1].substring(variables[1].indexOf("=") + 1, 99); // Returns anchor of the document
 
-			if (doc.length > 1 && anchor.length > 1) {
+						if (doc.length && anchor.length) {
 
-					console.log("[loadContent] doc.length: " + doc.length);
-					console.log("[loadContent] doc: " + doc);
-					console.log("[loadContent] anchor: " + anchor);
+							console.log("[loadContent] doc: " + doc);
+							console.log("[loadContent] anchor: " + anchor);
 
+							loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnShowToc','tocDropdown'],anchor);
 
-					loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnShowToc','tocDropdown'])
+							//chamar loadIframe se for um PDF ou pptx
 
-						//colocar scroll o documento na anchor
-
-
-					//chamar loadIframe se for um PDF ou pptx
-
-					//chamar loadICommitHistory se for um PDF ou pptx
-					}
+							//chamar loadICommitHistory se for um PDF ou pptx
+						}
+						else{
+							console.log("[loadContent] Document name and/or anchor invalid");
+							loadIndexContent(Btns);
+							loadIndexContent(["btnMenu"]);
+						}
 	}/*close if*/
 	else if ( index == -1 ) {
 
-				console.log("CARREGA INDEX");
-
-				var Btns = ["btnMenu"]; //["btnMenu","btnPDF","btnEditarDoc","btnShowToc","tocDropdown"]
-
-				loadIndexContent(Btns);
+				console.log("[loadContent] Query string not detected");
+				loadIndexContent(["btnMenu"]);
 
 	}/*close else if*/
 	else{
@@ -189,25 +185,21 @@ function loadIframe(option, btnsToShow) {
 
 }
 
-function loadMdDoc(mdFile, btnsToShow) {
+function loadMdDoc(mdFile, btnsToShow, anchor) {
 
 		startLoader();
 
 		if($("#documento").length < 1){
-			//adjust html style and structure
-				$("body, #content").removeAttr("style");
-				$("#content").html("<article id='documento' class='modulo'></article>");
-				$("footer").addClass("documentMode");
+				$("body, #content").removeAttr("style"); 																 //adjust html style and structure
+				$("#content").html("<article id='documento' class='modulo'></article>"); //adjust html style and structure
+				$("footer").addClass("documentMode"); 																	 //adjust html style and structure
 		}
 
 		convertMdToHtml("documento", function() {
 							loadToc("tocDropdown");
-			}, mdFile);
+			}, mdFile, anchor);
 
 		showElements(btnsToShow);
-
-		// top scrolling
-		window.scrollTo(0,0);
 
 		$("#btnEditarDoc").click(function() {
 				window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/" + mdFile + ".md", "_blank");
@@ -217,7 +209,7 @@ function loadMdDoc(mdFile, btnsToShow) {
 }
 
 //load and convert Markdown to Html and show it
-function convertMdToHtml(elementId, funcao, mdFile) {
+function convertMdToHtml(elementId, funcao, mdFile, anchor) {
 
 	if (elementId == undefined || mdFile.length < 1) {
 		elementId = "documento";
@@ -252,7 +244,25 @@ function convertMdToHtml(elementId, funcao, mdFile) {
 		.fail(function() {
 				console.log();("[convertMdToHtml] Error on document loading. The document exists?");
 				loadIndexContent(['btnMenu']);
-	});
+	})
+		.always(function() {
+
+					//dom not only ready, but everything is loaded
+					//navigate document to the anchor or to the top
+				if ($(anchor).length) {
+						// get top position relative to the document
+						var pos = $(anchor).offset().top;
+						console.log("\n\n\n\n\n\nBORA CARREGAR O ANCHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOR\n\n\n\npos= " + pos);
+
+						// set animated top scrolling to the anchor
+						$('body, html').animate({
+								scrollTop: pos
+							});
+				}
+				else{
+						window.scrollTo(0,0);// top scrolling
+				}
+		});
 
 } /*close convertMdToHtml()*/
 
@@ -369,7 +379,7 @@ function loadCommitHistory(btnsToShow) {
 	return $.ajax({
 			url: "https://api.github.com/repos/" + username + "/" + repo + "/commits?callback=callback&callback=jQuery171010727564072631068_1487000384850&per_page=10&_=1487000384930",
 			data: {
-				per_page: "20"
+				per_page: "100"
 			},
 			dataType: "jsonp",
 			type: "GET",
@@ -388,38 +398,29 @@ $.fn.exists = function() {
 
 function loadToc(elementId) {
 
-	elementId = "#" + elementId;
 
-	if ($(elementId).exists() == false) {
-		$("#docButtons").after("<div id='tocDropdown' class='dropdown-content'></div>");
-	} /*if*/
-	else {
-		console.log("Não foi possível criar o índice porque o elemento \"" + elementId + "\" não existe no HTML.");
-	}
+	var elementId = "#" + elementId;
 
 	if ($(elementId).exists()) {
+
 		$(elementId).html("");
 
 		var toc_html =
 			"<i id='drag1' title='Arraste-me...' class='fa fa-arrows fa-fw' style='cursor: move;'></i>" +
-			"<nav role='navigation' class='table-of-contents'>" +
-			"<ul>";
+				"<nav role='navigation' class='table-of-contents'>" +
+					"<ul>";
 
 		var newLine, el, title, link;
 
 		//chose the HTML elements to include in the Table of Content
-		$("article h2,h3,h4")
-			.each(function() {
+		$("article h2,h3,h4").each(function() {
 
 				el = $(this);
 				link = "#" + el.attr("id");
 				title = el.text();
-				nodeName = el.get(0)
-					.nodeName.toLowerCase();
+				nodeName = el.get(0).nodeName.toLowerCase();
 
-				newLine = "<li>" +
-					"<a class='toc_" + nodeName + "' href='" + link + "'>" + title + "</a>" +
-					"</li>";
+				newLine = "<li><a class='toc_" + nodeName + "' href='" + link + "'>" + title + "</a></li>";
 
 				toc_html += newLine;
 			});
@@ -501,7 +502,7 @@ $(document).on('click', 'a[href^="#"]', function(e) {
 		// top position relative to the document
 		var pos = $id.offset().top - 55;
 
-		console.log(" [Click!!] pos= " + pos);
+		console.log("[TOC link click] pos= " + pos);
 
 		// animated top scrolling
 		$('body, html').animate({
