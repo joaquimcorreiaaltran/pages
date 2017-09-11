@@ -23,10 +23,10 @@ blockRightClick = true;
 /*falta adicionar suporte para as anchor de documentos e suporte para carregar iframes e  o load commit history*/
 function loadContent(){
 
-	//var fullURL = window.location.href; // Returns full URL
+	var fullURL = window.location.href; // Returns full URL
 
 	//var fullURL = "https://spmssicc.github.io/pages/index.html?doc=menus";
-	var fullURL = "https://spmssicc.github.io/pages/index.html?doc=processos&anchor=#421-gestão-de-produtos---recolha";
+	//var fullURL = "https://spmssicc.github.io/pages/index.html?doc=processos&anchor=#421-gestão-de-produtos---recolha";
 
 	var index = fullURL.indexOf("?");
 
