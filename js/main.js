@@ -263,14 +263,14 @@ function scrollToAnchor(anchor){
 	//navigate document to the anchor or to the top
 	if ($(anchor).length) {
 
-		var pos1 = -500,ancora="",posicao="";
+		var pos = -500,ancora="",posicao="";
 
 				// get top position relative to the document
-				pos1 = $(anchor).offset().top;
+				pos = $(anchor).offset().top;
 
 						// set animated top scrolling to the anchor
 						$('body, html').animate({
-							scrollTop: pos1
+							scrollTop: pos
 						});
 
 			console.log("[scrollToAnchor] DEPOIS\n\n anchor:"+anchor+"\n\n$(anchor).offset().top:" + $(anchor).offset().top + "\n\npos1: " + pos + "\n\ni=" + i + "\n");
