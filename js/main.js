@@ -26,7 +26,7 @@ function loadContent(){
 	var fullURL = window.location.href; // Returns full URL
 
 	//var fullURL = "https://spmssicc.github.io/pages/index.html?doc=menus";
-	//var fullURL = "https://spmssicc.github.io/pages/index.html?doc=processos&anchor=#213-mapas-lpca";//#41-tabelas-genéricas //#213-mapas-lpca
+	//var fullURL = "https://spmssicc.github.io/pages/index.html?doc=processos&anchor=#316-alteração-de-lançamentos-al";//#41-tabelas-genéricas //#213-mapas-lpca
 
 	var index = fullURL.indexOf("?");
 
@@ -48,8 +48,8 @@ function loadContent(){
 							console.log("[loadContent] anchor: " + anchor);
 
 							loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnShowToc','tocDropdown'], anchor);
-							setTimeout(function(){ scrollToAnchor(anchor); }, 3000);
-							setTimeout(function(){ stopLoader(); }, 3000);
+							//setTimeout(function(){ scrollToAnchor(anchor); }, 3000);
+							//setTimeout(function(){ stopLoader(); }, 3000);
 
 							//chamar loadIframe se for um PDF ou pptx
 
@@ -234,11 +234,11 @@ function convertMdToHtml(elementId, funcao, mdFile, anchor) {
 
 				console.log("[convertMdToHtml] mdFile converted!");
 
-				//seleciona o elemento "elementId" e coloca o documento markdown convertido dentro desse "elementId"
-				$("#" + elementId).html(html);
-
-				zommClickImagem();
-				responsiveTable();
+				$("#" + elementId).html(html).promise().done(function(){
+						zommClickImagem();
+						responsiveTable();
+    				scrollToAnchor(anchor);
+				});
 
 				//Execute the function received by parameter
 				if (funcao != undefined && typeof funcao == "function") {
@@ -263,10 +263,8 @@ function scrollToAnchor(anchor){
 	//navigate document to the anchor or to the top
 	if ($(anchor).length) {
 
-		var pos = -500,ancora="",posicao="";
-
 				// get top position relative to the document
-				pos = $(anchor).offset().top;
+				var pos = $(anchor).offset().top;
 
 						// set animated top scrolling to the anchor
 						$('body, html').animate({
