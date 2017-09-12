@@ -1,9 +1,10 @@
-/*
+/***************************************************************************
 Functions to use in SICC project (https://spmssicc.github.io/pages)
 Author: SPMS, EPE
 Project: SICC
-Date: Aug-2017
-*/
+Date: Sep-2017
+****************************************************************************/
+
 //get the current html document name without extension
 //doc_name = window.location.pathname.split("/").pop().replace(/.html|htm/gi, "");
 
@@ -23,10 +24,10 @@ blockRightClick = true;
 /*falta adicionar suporte para as anchor de documentos e suporte para carregar iframes e  o load commit history*/
 function loadContent(){
 
-	var fullURL = window.location.href; // Returns full URL
+	//var fullURL = window.location.href; // Returns full URL
 
 	//var fullURL = "https://spmssicc.github.io/pages/index.html?doc=menus";
-	//var fullURL = "https://spmssicc.github.io/pages/index.html?doc=processos&anchor=#316-alteração-de-lançamentos-al";//#41-tabelas-genéricas //#213-mapas-lpca
+	var fullURL = "https://spmssicc.github.io/pages/index.html?doc=processos&anchor=#316-alteração-de-lançamentos-al";//#41-tabelas-genéricas //#213-mapas-lpca
 
 	var index = fullURL.indexOf("?");
 
@@ -44,12 +45,9 @@ function loadContent(){
 
 						if (doc.length && anchor.length) {
 
-							console.log("[loadContent] doc: " + doc);
-							console.log("[loadContent] anchor: " + anchor);
+							console.log("[loadContent] doc: " + doc + "\n[loadContent] anchor: " + anchor);
 
 							loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnShowToc','tocDropdown'], anchor);
-							//setTimeout(function(){ scrollToAnchor(anchor); }, 3000);
-							//setTimeout(function(){ stopLoader(); }, 3000);
 
 							//chamar loadIframe se for um PDF ou pptx
 
@@ -57,7 +55,6 @@ function loadContent(){
 						}
 						else{
 							console.log("[loadContent] Document name and/or anchor invalid");
-							loadIndexContent(Btns);
 							loadIndexContent(["btnMenu"]);
 							stopLoader();
 						}
@@ -198,9 +195,7 @@ function loadMdDoc(mdFile, btnsToShow, anchor) {
 				$("footer").addClass("documentMode"); 																	 //adjust html style and structure
 		}
 
-		convertMdToHtml("documento", function() {
-							loadToc("tocDropdown");
-			}, mdFile, anchor);
+		convertMdToHtml("documento", mdFile, anchor);
 
 		$("#btnEditarDoc").click(function() {
 				window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/" + mdFile + ".md", "_blank");
@@ -210,17 +205,20 @@ function loadMdDoc(mdFile, btnsToShow, anchor) {
 
 		showElements(btnsToShow);
 		window.scrollTo(0,0);
+		stopLoader();
 }
 
 //load and convert Markdown to Html and show it
-function convertMdToHtml(elementId, funcao, mdFile, anchor) {
+function convertMdToHtml(elementId, mdFile, anchor) {
+
+	startLoader();
 
 	if (elementId == undefined || mdFile.length < 1) {
 		elementId = "documento";
 		console.log("[convertMdToHtml] elementId = \"documento\";");
 	}
 
-	console.log("[convertMdToHtml] elementId: " + elementId + " |\nmdFile" + mdFile + "\nfuncao: " + funcao+ "\n\n");
+	console.log("[convertMdToHtml] elementId: " + elementId + " |\nmdFile" + mdFile);
 
 	//Vai buscar o ficheiro markdown ao diretório ./markdown/
 	$.get('./markdown/' + mdFile + '.md', function() {
@@ -230,25 +228,22 @@ function convertMdToHtml(elementId, funcao, mdFile, anchor) {
 		    console.log("[convertMdToHtml] mdFile loaded");
 
 				//declara 3 variáveis: converter, data e a html. A variável html irá conter o ficheiro markdown convertido em HTML.
-				var converter = new showdown.Converter(),	data, html = converter.makeHtml(data);
+				var converter = new showdown.Converter(),	data2, html = converter.makeHtml(data);
 
-				console.log("[convertMdToHtml] mdFile converted!");
+				console.log("[convertMdToHtml] mdFile converted to HTML!");
 
 				$("#" + elementId).html(html).promise().done(function(){
 						zommClickImagem();
 						responsiveTable();
-    				scrollToAnchor(anchor);
+						loadToc("tocDropdown");
+						setTimeout( function(){ scrollToAnchor(anchor); }, 2000);
 				});
-
-				//Execute the function received by parameter
-				if (funcao != undefined && typeof funcao == "function") {
-					funcao();
-				}
-
+				stopLoader();
   })
 		.fail(function() {
 				console.log();("[convertMdToHtml] Error on document loading. The document exists?");
 				loadIndexContent(['btnMenu']);
+				stopLoader();
 	})
 
 } /*close convertMdToHtml()*/
@@ -259,25 +254,33 @@ function tipoObj( obj ) {
 
 function scrollToAnchor(anchor){
 
-	//dom not only ready, but everything is loaded
-	//navigate document to the anchor or to the top
-	if ($(anchor).length) {
+	startLoader();
+
+	if ($(anchor).length && $(anchor) != "") {
 
 				// get top position relative to the document
 				var pos = $(anchor).offset().top;
+
+				console.log("\n\n\n\n\npos1: " + pos);
+
+				pos = pos - 250;
+
+				console.log("\n\n\n\n\npos2: " + pos);
 
 						// set animated top scrolling to the anchor
 						$('body, html').animate({
 							scrollTop: pos
 						});
 
-			console.log("[scrollToAnchor] DEPOIS\n\n anchor:"+anchor+"\n\n$(anchor).offset().top:" + $(anchor).offset().top + "\n\npos1: " + pos + "\n\ni=" + i + "\n");
+			console.log("[scrollToAnchor] anchor:" + anchor + "\n\n$(anchor).offset().top:" + $(anchor).offset().top + "\n\nposition: " + pos);
 			anchor = "";
 	}
 	else{
 			window.scrollTo(0,0);// top scrolling
-			console.log("[scrollToAnchor] Anchor not found in the html");
+			console.log("[scrollToAnchor] Anchor not found in the html. Anchor requested: " + anchor);
 	}
+
+	stopLoader();
 
 }
 
@@ -406,7 +409,9 @@ function loadCommitHistory(btnsToShow) {
 
 function loadToc(elementId) {
 
-	var elementId = "#" + elementId;
+	showToc();
+
+	elementId = "#" + elementId;
 
 	if ($(elementId).length) {
 
@@ -457,6 +462,7 @@ function loadToc(elementId) {
 		}
 	}
 	stopLoader();
+
 } /*builds toc*/
 
 function showToc() {
