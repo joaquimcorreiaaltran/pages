@@ -23,10 +23,10 @@ blockRightClick = true;
 /*falta adicionar suporte para as anchor de documentos e suporte para carregar iframes e  o load commit history*/
 function loadContent(){
 
-	var fullURL = window.location.href; // Returns full URL
+	//var fullURL = window.location.href; // Returns full URL
 
 	//var fullURL = "https://spmssicc.github.io/pages/index.html?doc=menus";
-	//var fullURL = "https://spmssicc.github.io/pages/index.html?doc=processos&anchor=#421-gestão-de-produtos---recolha";
+	var fullURL = "https://spmssicc.github.io/pages/index.html?doc=processos&anchor=#213-mapas-lpca";//#41-tabelas-genéricas //#213-mapas-lpca
 
 	var index = fullURL.indexOf("?");
 
@@ -47,8 +47,9 @@ function loadContent(){
 							console.log("[loadContent] doc: " + doc);
 							console.log("[loadContent] anchor: " + anchor);
 
-							loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnShowToc','tocDropdown'],anchor);
+							loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnShowToc','tocDropdown'], anchor);
 
+							//setTimeout(function(){ scrollToAnchor(anchor); },1500);
 							//chamar loadIframe se for um PDF ou pptx
 
 							//chamar loadICommitHistory se for um PDF ou pptx
@@ -72,7 +73,7 @@ function loadContent(){
 
 	/**************************************************/
 	/**************************************************/
-
+	setTimeout(function(){ scrollToAnchor(anchor); },4000);
 	stopLoader();
 }
 
@@ -109,13 +110,13 @@ function loadIndexContent(btnsToShow) {
 	})
 	.done(function(data){
 			$("#content").html(data);
+			showElements(btnsToShow);
+			$("footer").removeClass("documentMode");
 	})
 	.fail(function(){
 			console.log("[loadIndexContent] Error on loading requested file");
 	});
 
-	showElements(btnsToShow);
-	$("footer").removeClass("documentMode");
 	stopLoader();
 
 }
@@ -199,13 +200,13 @@ function loadMdDoc(mdFile, btnsToShow, anchor) {
 							loadToc("tocDropdown");
 			}, mdFile, anchor);
 
-		showElements(btnsToShow);
-
 		$("#btnEditarDoc").click(function() {
 				window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/" + mdFile + ".md", "_blank");
 			});
 
 		$("#btnPDF").attr({"onclick":"window.open('https://spmssicc.github.io/pages/pdf/" + mdFile + ".pdf', '_blank')"});
+
+		showElements(btnsToShow);
 }
 
 //load and convert Markdown to Html and show it
@@ -216,7 +217,7 @@ function convertMdToHtml(elementId, funcao, mdFile, anchor) {
 		console.log("[convertMdToHtml] elementId = \"documento\";");
 	}
 
-	console.log("[convertMdToHtml] elementId: " + elementId + ",\nmdFile" + mdFile + ", \nfuncao: " + funcao);
+	console.log("[convertMdToHtml] elementId: " + elementId + " |\nmdFile" + mdFile + "\nfuncao: " + funcao+ "\n\n");
 
 	//Vai buscar o ficheiro markdown ao diretório ./markdown/
 	$.get('./markdown/' + mdFile + '.md', function() {
@@ -240,31 +241,43 @@ function convertMdToHtml(elementId, funcao, mdFile, anchor) {
 				if (funcao != undefined && typeof funcao == "function") {
 					funcao();
 				}
+
   })
 		.fail(function() {
 				console.log();("[convertMdToHtml] Error on document loading. The document exists?");
 				loadIndexContent(['btnMenu']);
 	})
-		.always(function() {
 
-					//dom not only ready, but everything is loaded
-					//navigate document to the anchor or to the top
-				if ($(anchor).length) {
-						// get top position relative to the document
-						var pos = $(anchor).offset().top;
-						console.log("\n\n\n\n\n\nBORA CARREGAR O ANCHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOR\n\n\n\npos= " + pos);
+} /*close convertMdToHtml()*/
+
+function tipoObj( obj ) {
+		return ({}).toString.call(obj).match(/\s([a-zA-Z]+)/)[1].toLowerCase()
+	}
+
+function scrollToAnchor(anchor){
+
+	//dom not only ready, but everything is loaded
+	//navigate document to the anchor or to the top
+	if ($(anchor).length) {
+
+		var pos1 = -500,ancora="",posicao="";
+
+				// get top position relative to the document
+				pos1 = $(anchor).offset().top;
 
 						// set animated top scrolling to the anchor
 						$('body, html').animate({
-								scrollTop: pos
-							});
-				}
-				else{
-						window.scrollTo(0,0);// top scrolling
-				}
-		});
+							scrollTop: pos1
+						});
 
-} /*close convertMdToHtml()*/
+			console.log("[scrollToAnchor] DEPOIS\n\n anchor:"+anchor+"\n\n$(anchor).offset().top:" + $(anchor).offset().top + "\n\npos1: " + pos + "\n\ni=" + i + "\n");
+	}
+	else{
+			window.scrollTo(0,0);// top scrolling
+			console.log("[scrollToAnchor] Anchor not found in the html");
+	}
+
+}
 
 function showElements(elements) {
 
@@ -389,19 +402,11 @@ function loadCommitHistory(btnsToShow) {
 		});
 } /*loadCommitHistory()*/
 
-/*detect if a selector returns null
-Used like:
-$("#notAnElement").exists();*/
-$.fn.exists = function() {
-	return this.length !== 0;
-};
-
 function loadToc(elementId) {
-
 
 	var elementId = "#" + elementId;
 
-	if ($(elementId).exists()) {
+	if ($(elementId).length) {
 
 		$(elementId).html("");
 
