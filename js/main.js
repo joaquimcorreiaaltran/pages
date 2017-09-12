@@ -48,8 +48,9 @@ function loadContent(){
 							console.log("[loadContent] anchor: " + anchor);
 
 							loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnShowToc','tocDropdown'], anchor);
+							setTimeout(function(){ scrollToAnchor(anchor); }, 3000);
+							setTimeout(function(){ stopLoader(); }, 3000);
 
-							//setTimeout(function(){ scrollToAnchor(anchor); },1500);
 							//chamar loadIframe se for um PDF ou pptx
 
 							//chamar loadICommitHistory se for um PDF ou pptx
@@ -58,23 +59,21 @@ function loadContent(){
 							console.log("[loadContent] Document name and/or anchor invalid");
 							loadIndexContent(Btns);
 							loadIndexContent(["btnMenu"]);
+							stopLoader();
 						}
 	}/*close if*/
 	else if ( index == -1 ) {
 
 				console.log("[loadContent] Query string not detected");
 				loadIndexContent(["btnMenu"]);
+				stopLoader();
 
 	}/*close else if*/
 	else{
-		window.alert("Erro. fullURL.indexOf('?'): " + fullURL.indexOf("?") +"\nfullURL: " + fullURL);
+		console.log("Erro. fullURL.indexOf('?'): " + fullURL.indexOf("?") +"\nfullURL: " + fullURL);
+		loadIndexContent(["btnMenu"]);
+		stopLoader();
 	}
-
-
-	/**************************************************/
-	/**************************************************/
-	setTimeout(function(){ scrollToAnchor(anchor); },4000);
-	stopLoader();
 }
 
 function startLoader(){
@@ -90,9 +89,12 @@ function startLoader(){
 }
 
 function stopLoader(){
-		while($("#loader").length){
+		if($("#loader").length){
 				$("#loader").remove();
 				console.log("[stopLoader] Removido");
+		}
+		else{
+			console.log("[stopLoader] Já tinha sito removido");
 		}
 }
 
@@ -207,6 +209,7 @@ function loadMdDoc(mdFile, btnsToShow, anchor) {
 		$("#btnPDF").attr({"onclick":"window.open('https://spmssicc.github.io/pages/pdf/" + mdFile + ".pdf', '_blank')"});
 
 		showElements(btnsToShow);
+		window.scrollTo(0,0);
 }
 
 //load and convert Markdown to Html and show it
@@ -271,6 +274,7 @@ function scrollToAnchor(anchor){
 						});
 
 			console.log("[scrollToAnchor] DEPOIS\n\n anchor:"+anchor+"\n\n$(anchor).offset().top:" + $(anchor).offset().top + "\n\npos1: " + pos + "\n\ni=" + i + "\n");
+			anchor = "";
 	}
 	else{
 			window.scrollTo(0,0);// top scrolling
@@ -453,9 +457,8 @@ function loadToc(elementId) {
 		if ($("#tocDropdown").hasClass("show")) {
 			$("#btnShowToc").addClass("enabled");
 		}
-
-		stopLoader();
 	}
+	stopLoader();
 } /*builds toc*/
 
 function showToc() {
