@@ -169,7 +169,7 @@ O utilizador tem de proceder à aprovação, através do botão "Aprovar". Assim
 
 |Botão| Descritivo|
 |:----|:----------|
-|Gravar Alterações|Este botão permite a gravar alterações que tenham sido necessárias de ajustar|
+|Gravar Alterações|Este botão permite gravar alterações que tenham sido necessárias de ajustar|
 |Consulta|Este botão permite ao utilizador consultar os valores carregados de orçamento, bem como os respetivos classificadores económicos|
 |Abater|Este botão permite eliminar uma entidade. Após carregar neste botão, o utilizador, tem de carregar no botão Confirmar de forma a que a informação seja validada e gravada|
 |Sair|Este botão permite ao utilizador sair do ecrã corrente|
@@ -184,11 +184,11 @@ No ecrã e para efeitos de registo, ao selecionar "Alteração Orç", de forma a
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-b590bbcf.png)
 
-Selecionando a “Nova alteração”, o sistema de forma automática gera novo ecrã, no qual mostra todos os classificadores económicos com valores a 0, onde se pode registar a alteração orçamental com os montantes pretendidos. No seguinte exemplo, foi retirado valor parcial do carregado inicialmente na rúbrica de "Representação" para a rúbrica de "Ajudas de custo"". Findas as alterações, deverá confirmar.
+Selecionando a “Nova alteração”, o sistema de forma automática gera novo ecrã, no qual mostra todos os classificadores económicos com valores a 0, onde se pode registar a alteração orçamental com os montantes pretendidos. No seguinte exemplo, foi retirado valor parcial do carregado inicialmente na rubrica de "Representação" para a rubrica de "Ajudas de custo"". Findas as alterações, deverá confirmar.
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-a00e2e44.png)
 
-Após a confirmação surge novo ecrã com a informação que a alteração orçamental com o número de lançamento “1” é existente em sistema. Poderá assim o utilizador fazer a “consulta” ou “abater” o registo da alteração orçamental.
+Após a confirmação surge novo ecrã com a informação que a alteração orçamental com o número de lançamento “1” é existente em sistema. Poderá assim o utilizador fazer a “Consulta” ou “Abater” o registo da alteração orçamental.
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-f229ceb3.png)
 
@@ -286,7 +286,7 @@ O utilizador neste processo, tem a possibilidade de extrair relatórios do siste
 
 |Botão|Descrição|
 |:----|:---------|
-|Extrato|Este botão permite a gravar alterações que no diretório escolhido pelo utilizador|
+|Extrato|Este botão permite gravar alterações que no diretório escolhido pelo utilizador|
 |XML|Esta opção permite a produção do mapa em ficheiro com extensão XML|
 |Mapa|Este botão permite ao utilizador consultar diretamente o mapa no ecrã. ![img_32.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_32.png)|
 |Sair|Este botão permite ao utilizador sair do ecrã corrente|
@@ -371,7 +371,7 @@ Relativamente a este processo, o Mapa de Execução Orçamental da Despesa e Map
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-871fecbd.png)
 
-Para tal, as opções no ecrã permite imprimir os formulários (gerando PDF), bem como, a extração para formato Excel, tendo o utilizador de definir o caminho para gravação do ficheiro.
+Para tal, as opções no ecrã permitem imprimir os formulários (gerando PDF), bem como, a extração para formato Excel, tendo o utilizador de definir o caminho para gravação do ficheiro.
 
 #### 2.2.4. Controlo Orçamental - Despesa
 
@@ -537,7 +537,7 @@ Neste processo o que se pretende demonstrar é uma alteração a um CB já exist
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-19410ace.png)
 
-Ao entrar no ecrã de Alteração de CB, deve o utilizador associar o “nº de CB” criado anteriormente para proceder á alteração. Terá igualmente de dar duplo clique na linha assinalada abaixo, para proceder à AM.
+Ao entrar no ecrã de Alteração de CB, deve o utilizador associar o “nº de CB” criado anteriormente para proceder à alteração. Terá igualmente de dar duplo clique na linha assinalada abaixo, para proceder à AM.
 
 ![img_79.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_79.gif)
 
@@ -625,7 +625,7 @@ O utilizador ao selecionar o botão "Imprimir", gera no ecrã o resultado da cri
 
 __A novidade no novo sistema SICC-SNC-AP é o aparecimento do botão , que permite aos utilizadores carregarem a partir de um documento de Excel vários compromissos de forma muito mais rápida e viável.__
 
-No ecrã inicial, o utilizador o utilizador ao selecionar este novo botão, vai fazer com quer novo ecrã surja para importação do ficheiro.
+No ecrã inicial, o utilizador ao selecionar este novo botão, vai fazer com que novo ecrã surja para importação do ficheiro.
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-532c3768.png)
 
@@ -655,7 +655,7 @@ _(Imagem em atualização)_
 
 __Existe igualmente a possibilidade de proceder à alteração no Compromisso, pelo que o utilizador terá de ter em atenção que as alterações efetuadas também têm de estar alinhadas com o valor do Cabimento. O sistema deteta e envia mensagem de erro caso se verifique que o valor do compromisso seja superior ao cabimento, ou mesmo quando não existe cabimento para determinado item financeiro produzido posteriormente no compromisso. O Processo em si é semelhante ao explicado anteriormente nas alterações dos cabimentos (AM).__
 
-Menu de acesso:
+</br> Menu de acesso:
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-c02d02d9.png)
 
@@ -697,7 +697,7 @@ Este compromisso para a entidade “2 – Sindicato dos trabalhadores Função P
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-87ac079d.png)
 
-Selecionando a opção "Confirme", ss movimentos contabilísticos são guardados de acordo com o apresentado no quadro "Razão Geral" e o formulário "Recolha de Contabilidade" é fechado.
+Selecionando a opção "Confirme", os movimentos contabilísticos são guardados de acordo com o apresentado no quadro "Razão Geral" e o formulário "Recolha de Contabilidade" é fechado.
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-18efe6fa.png)
 
@@ -716,7 +716,7 @@ Ao gerar os documentos na contabilidade, é necessário que na analítica seja a
 
 __O botão "Desdobrar Conta", permite ao utilizador, para a mesma conta (separador ca Cont. Analítica) , a possibilidade de escolher o número de linhas para desdobrar, no sentido de integrar vários Centros de Custo.__
 
-Posteriormente á confirmação, o sistema gera uma mensagem com a seguinte informação.
+Posteriormente à confirmação, o sistema gera uma mensagem com a seguinte informação.
 
 ![img_115.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_115.png)
 
@@ -779,12 +779,12 @@ A autorização de pagamento das despesas, são autorizadas pelos dirigentes dos
 _(Imagem em atualização)_
 ![img_131.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_131.png)
 
-Neste processo, o utilizador terá de identificar a entidade e os documentos que dela fazem parte, bem como atribuir um nº de autorização. O não preenchimento deste ultimo, determina que a numeração seja automática. Ao exemplo do anterior, terá de dar duplo clique na linha que contem os elementos para a mesma subir ao nível seguinte.
+Neste processo, o utilizador terá de identificar a entidade e os documentos que dela fazem parte, bem como atribuir um nº de autorização. O não preenchimento deste ultimo, determina que a numeração seja automática. Ao exemplo do anterior, terá de dar duplo clique na linha que contém os elementos para a mesma subir ao nível seguinte.
 
 _(Imagem em atualização)_
 ![img_132.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_132.png)
 
-O utilizador define também se a pagamento é efetuado por tesouraria ou por Transf. Bancária, sendo que para este ultimo caso tem de selecionar qual a Instituição bancária.
+O utilizador define também se o pagamento é efetuado por tesouraria ou por Transf. Bancária, sendo que para este último caso tem de selecionar qual a Instituição bancária.
 
 _(Imagem em atualização)_
 ![img_133.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_133.png)
@@ -820,7 +820,7 @@ __O utilizador tem de selecionar sempre os documentos que deseja, sejam para co
 
 _Global_
 
-O utilizador tem a possibilidade de definir um intervalo, com a possibilidade escolher as entidades das quais pretende extrair as Autorizações de Pagamento.
+O utilizador tem a possibilidade de definir um intervalo, com a possibilidade de escolher as entidades das quais pretende extrair as Autorizações de Pagamento.
 
 ![img_141.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_141.png)
 
@@ -871,7 +871,7 @@ __No caso da ACSS, o utilizador na altura da criação dos vários tipos de docu
 |Última data|Obrigatório|Definir intervalo última data|
 |Primeiro documento|Obrigatório|Definir intervalo primeiro documento a integrar|
 |Último documento|Obrigatório|Definir intervalo último documento a integrar|
-|Gerar Ficheiro de carregamento|Obrigatório|Geração do ficheiro com número sequencial, sendo que prevalece o número de cálculo maior, ou seja, se o número da ultima transferência efetuada for superior ao ![img_num_de_sequencia_prox.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_num_de_sequencia_prox.png), do caminho: _Parametrização - Tabelas Genéricas - Inst. Bancárias – Recolha_, a numeração atribuída é sempre a mais alta numericamente|
+|Gerar Ficheiro de carregamento|Obrigatório|Geração do ficheiro com número sequencial, sendo que prevalece o número de cálculo maior, ou seja, se o número da última transferência efetuada for superior ao ![img_num_de_sequencia_prox.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_num_de_sequencia_prox.png), do caminho: _Parametrização - Tabelas Genéricas - Inst. Bancárias – Recolha_, a numeração atribuída é sempre a mais alta numericamente|
 
 Findo o preenchimento dos campos, deve o utilizador dar continuidade ao processo pressionando o botão "Transferência Bancária", originando novo ecrã.
 
@@ -890,7 +890,7 @@ __O utilizador tem de ter escolher o tipo de documento que quer gerar, dependend
 
 __Após a geração do ficheiro, este botão deixa de estar “ativo”, pelo que o utilizador pode gerar uma 2ª via do Ficheiro.__
 
-O ficheiro, após gerado, fica guardado na extensão definida pelo utilizador para posteriormente ser submetido. Caso o utilizador queira imprimir o resumo do ficheiro de forma a obter o comprovativo, pode entrar novamente no ecrã e “Imprimir 2º Via”, pressionando sobre o botão. De forma automática e no Browser, surgirá o comprovativo, conforme abaixo demonstrado.
+O ficheiro, após gerado, fica guardado na extensão definida pelo utilizador para posteriormente ser submetido. Caso o utilizador queira imprimir o resumo do ficheiro de forma a obter o comprovativo, pode entrar novamente no ecrã e “Imprimir 2ª Via”, pressionando sobre o botão. De forma automática e no Browser, surgirá o comprovativo, conforme abaixo demonstrado.
 
 ![img_154.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_154.png)
 
@@ -917,7 +917,7 @@ Nesta etapa, um novo ecrã surge, em que o utilizador tem possibilidade de reali
 |Ficheiro 2ª Via|Este botão permite ao utilizador gerar uma segunda via do ficheiro TXT ou XML|
 |Sair|Este botão permite que o utilizador saia do ecrã e regresse ao menu inicial|
 
-__Na importação de TXT. ou na Conversão para XML, o sistema ao carregar o ficheiro, vai determinar o ultimo "Número de sequência", sendo que o vai atribuir de forma automática e sequencial para cada um dos casos referidos.__
+__Na importação de TXT. ou na Conversão para XML, o sistema ao carregar o ficheiro, vai determinar o último "Número de sequência", sendo que o vai atribuir de forma automática e sequencial para cada um dos casos referidos.__
 
 #### 3.1.9 Pagamentos (PG)
 
