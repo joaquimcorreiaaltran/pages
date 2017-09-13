@@ -44,7 +44,7 @@ function loadContent(){
 							if (paramArr.length >= 2){
 									anchor = paramArr[1].substring(paramArr[1].indexOf("=") + 1, 99); // Returns anchor of the document
 								}
-							console.log("[loadContent] paramArr1 : " + doc + "\n. paramArr2 = " + anchor);
+							console.log("[loadContent] paramArr1 (doc) : " + doc + "\n. paramArr2 (anchor) = " + anchor);
 
 							if (doc.length) {
 
@@ -77,7 +77,7 @@ function loadContent(){
 function startLoader(){
 
 		if( $("#loader .loader").length ){
-				console.log("[startLoader] Loader já tinha sido carregado anteriormente");
+				console.log("[startLoader] Loader loaded previously");
 		}
 		else{
 				var spinnerHtml = "<div id ='loader'> <img  class='loader' src='./img/icons/sicc.ico' alt='Loader'></img></div>";
@@ -92,7 +92,7 @@ function stopLoader(){
 				console.log("[stopLoader] Removido");
 		}
 		else{
-			console.log("[stopLoader] Já tinha sito removido");
+			console.log("[stopLoader] Loader removed previously");
 		}
 }
 
@@ -115,10 +115,12 @@ function loadIndexContent(btnsToShow) {
 	})
 	.fail(function(){
 			console.log("[loadIndexContent] Error on loading requested file");
+	})
+	.always(function(){
+			window.scrollTo(0,0);
+			history.replaceState(null, "SICC Documentação - página inicial", location.href.split("?")[0]);
+			stopLoader();
 	});
-
-	stopLoader();
-	window.scrollTo(0,0);
 
 }
 
