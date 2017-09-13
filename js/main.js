@@ -206,6 +206,7 @@ function loadMdDoc(mdFile, btnsToShow, anchor) {
 
 		showElements(btnsToShow);
 		window.scrollTo(0,0);
+
 		stopLoader();
 }
 
@@ -234,6 +235,11 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 				console.log("[convertMdToHtml] mdFile converted to HTML!");
 
 				$("#" + elementId).html(html).promise().done(function(){
+
+						var stateObj = { foo: "bar" };
+						history.pushState(stateObj, "SICC - Documentação", "https://spmssicc.github.io/pages/index.html?doc=" + mdFile);
+						console.log("[loadMdDoc] history.pushState: https://spmssicc.github.io/pages/index.html?doc=" + mdFile);
+						
 						zommClickImagem();
 						responsiveTable();
 						loadToc("tocDropdown");
