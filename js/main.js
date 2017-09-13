@@ -26,8 +26,8 @@ function loadContent(){
 
 	//var fullURL = window.location.href; // Returns full URL
 
-	 var fullURL = window.location.href;//#41-tabelas-genéricas //#213-mapas-lpca
-	 var qs = window.location.search; //Get QueryString
+	 var fullURL = location.href.split("?")[0] + location.search;//#41-tabelas-genéricas //#213-mapas-lpca
+	 var qs = location.search; //Get QueryString
 
 	if ( qs.length ){
 
@@ -236,7 +236,7 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 				$("#" + elementId).html(html).promise().done(function(){
 
 						var stateObj = { foo: "bar" };
-						history.pushState(stateObj, "SICC - Documentação", window.location.href + "?doc=" + mdFile + "&anchor=" + anchor); //+ mdFile);
+						history.pushState(stateObj, "SICC - Documentação", location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor); //+ mdFile);
 						console.log();("[convertMdToHtml] Query string: " + window.location.search);
 
 						zommClickImagem();
