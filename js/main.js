@@ -33,7 +33,7 @@ function loadContent(){
 
 					console.log("[loadContent] Query string: " + qs);
 
-					var variables = qs[1].split("&",2); // Returns variables passed of the query string. splits until the max of 2 variables
+					var variables = qs.split("&",10); // Returns variables passed of the query string. splits until the max of 10 variables
 					console.log("\n\n\nvariables: " + variables + "\nvariables.length: " + variables.length + "\n\n\n");
 
 					if (variables.length ) {
@@ -58,15 +58,15 @@ function loadContent(){
 							stopLoader();
 						}
 	}/*close if*/
-	else if ( qs.length <= 0  ) {
+	else if ( qs.length <= 1  ) {
 
-				console.log("[loadContent] Query string not detected");
+				console.log("[loadContent] Query string not detected/not valid");
 				loadIndexContent(["btnMenu"]);
 				stopLoader();
 
 	}/*close else if*/
 	else{
-		console.log("Erro. fullURL.indexOf('?'): " + fullURL.indexOf("?") +"\nfullURL: " + fullURL);
+		console.log("[loadContent] Erro. window.location.href: " + window.location.href);
 		loadIndexContent(["btnMenu"]);
 		stopLoader();
 	}
