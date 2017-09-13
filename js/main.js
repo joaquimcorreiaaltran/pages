@@ -257,7 +257,9 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 						zommClickImagem();
 						responsiveTable();
 						loadToc("tocDropdown");
-						setTimeout( function(){ scrollToAnchor(anchor); }, 2000);
+						if(anchor.length > 1){
+							setTimeout( function(){ scrollToAnchor(anchor); }, 2000);
+						}
 				});
 				stopLoader();
   })
