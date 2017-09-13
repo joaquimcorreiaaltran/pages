@@ -26,7 +26,7 @@ function loadContent(){
 
 	//var fullURL = window.location.href; // Returns full URL
 
-	 var qs = location.search; //Get QueryString
+	 var qs = window.location.search; //Get QueryString
 
 	 console.log("[loadContent] Query string (1): " + qs);
 
@@ -50,7 +50,7 @@ function loadContent(){
 							var anchor;
 
 							if (paramArr.length >= 2){
-									anchor = paramArr[1].substring(paramArr[1].indexOf("=") + 1, 99); // Returns anchor of the document
+									anchor = "#" + paramArr[1].substring(paramArr[1].indexOf("=") + 1, 99); // Returns anchor of the document
 									console.log("\n\n\n\n\nENTROU AQUI! anchor:"+anchor+"\nparamArr[1].substring(paramArr[1].indexOf('=') + 1, 99): "+paramArr[1].substring(paramArr[1].indexOf('=') + 1, 99)+"\n\n\n\n");
 								}
 							console.log("[loadContent] doc: " + doc +
