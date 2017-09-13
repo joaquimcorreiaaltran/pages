@@ -278,7 +278,7 @@ function scrollToAnchor(anchor){
 	}
 	else{
 			window.scrollTo(0,0);// top scrolling
-			console.log("[scrollToAnchor] Anchor not found in the html. Anchor requested: " + anchor);
+			console.log("[scrollToAnchor] Anchor not found in the html.");
 	}
 
 	stopLoader();
