@@ -26,7 +26,6 @@ function loadContent(){
 
 	//var fullURL = window.location.href; // Returns full URL
 
-	 var fullURL = location.href.split("?")[0] + location.search;//#41-tabelas-genéricas //#213-mapas-lpca
 	 var qs = location.search; //Get QueryString
 
 	// qs = "?doc=menus&anchor=#225-responsáveis"; // TEST
@@ -48,6 +47,7 @@ function loadContent(){
 
 							if (paramArr.length >= 2){
 									anchor = paramArr[1].substring(paramArr[1].indexOf("=") + 1, 99); // Returns anchor of the document
+									console.log("\n\n\n\n\nENTROU AQUI! anchor:"+anchor+"\n\n\n\n\n");
 								}
 							console.log("[loadContent] doc: " + doc +
 												"\n[loadContent] anchor: " + anchor);
