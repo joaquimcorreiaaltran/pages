@@ -279,16 +279,16 @@ function scrollToAnchor(anchor){
 
 	var elementId = '#' + anchor;
 
-	if ($('#' + elementId).length) {
+	if ($(elementId).length) {
 
 					// get top position relative to the document
-					var pos = $("#"+elementId).offset().top - 250; //- 250 to compensate the doc bar
+					var pos = $(elementId).offset().top - 250; //- 250 to compensate the doc bar
 
 					// set animated top scrolling to the elementId
 					$('body, html').animate({scrollTop: pos});
 
 				console.log("[scrollToAnchor] elementId:" + elementId + "\n$(elementId).offset().top <-> pos\n" + $(elementId).offset().top + " <-> " + (pos + 250));
-				elementId = "";
+				anchor = "";
 		}
 		else{
 				window.scrollTo(0,0);// top scrolling
