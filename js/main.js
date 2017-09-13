@@ -251,7 +251,7 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 				$("#" + elementId).html(html).promise().done(function(){
 
 						var stateObj = { foo: "bar" };
-						
+
 						zommClickImagem();
 						responsiveTable();
 						loadToc("tocDropdown");
@@ -264,6 +264,7 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 							history.pushState(stateObj, "SICC - Documentação", location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor); //+ mdFile);
 						}
 						console.log();("[convertMdToHtml] Query string: " + window.location.search);
+						stopLoader();
 				});
 				stopLoader();
   })
