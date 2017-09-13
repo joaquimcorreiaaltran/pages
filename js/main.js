@@ -29,12 +29,17 @@ function loadContent(){
 	 var fullURL = location.href.split("?")[0] + location.search;//#41-tabelas-genéricas //#213-mapas-lpca
 	 var qs = location.search; //Get QueryString
 
+	 qs = "?doc=menus&anchor=#225-responsáveis"; // TEST
+
 	if ( qs.indexOf("=") != -1 ){
 
 					console.log("[loadContent] Query string: " + qs);
 
 					var paramArr = qs.split("&",10); // Returns paramArr passed of the query string. splits until the max of 10 paramArr
-					console.log("[loadContent] paramArr: " + paramArr + "\n[loadContent] paramArr.length: " + paramArr.length + "\n\n\n");
+					console.log("[loadContent] paramArr: " + paramArr +
+										"\n[loadContent] paramArr.length: " + paramArr.length +
+										"\n[loadContent] paramArr[0]: " + paramArr[0] +
+										"\n[loadContent] paramArr[1]: " + paramArr[1]);
 
 					var doc, anchor;
 
@@ -44,7 +49,8 @@ function loadContent(){
 							if (paramArr.length >= 2){
 									anchor = paramArr[1].substring(paramArr[1].indexOf("=") + 1, 99); // Returns anchor of the document
 								}
-							console.log("[loadContent] paramArr1 (doc) : " + doc + "\n. paramArr2 (anchor) = " + anchor);
+							console.log("[loadContent] doc: " + doc +
+												"\n[loadContent] anchor: " + anchor);
 
 							if (doc.length) {
 
@@ -77,12 +83,13 @@ function loadContent(){
 function startLoader(){
 
 		if( $("#loader .loader").length ){
-				console.log("[startLoader] Loader loaded previously");
+				console.log("[startLoader] Loader started previously");
 		}
 		else{
 				var spinnerHtml = "<div id ='loader'> <img  class='loader' src='./img/icons/sicc.ico' alt='Loader'></img></div>";
-				$(spinnerHtml).insertAfter("#header");
-				console.log("[startLoader] Adicionado");
+				$(spinnerHtml).insertAfter("#header").promise().done(function(){
+						console.log("[startLoader] Adicionado");
+				});
 		}
 }
 
@@ -92,7 +99,7 @@ function stopLoader(){
 				console.log("[stopLoader] Removido");
 		}
 		else{
-			console.log("[stopLoader] Loader removed previously");
+			console.log("[stopLoader] Loader stopped previously");
 		}
 }
 
@@ -269,23 +276,19 @@ function scrollToAnchor(anchor){
 	if ($(anchor).length) {
 
 					// get top position relative to the document
-					var pos = $(anchor).offset().top;
+					var pos = $(anchor).offset().top - 250; //- 250 to compensate the doc bar
 
-							// set animated top scrolling to the anchor
-							$('body, html').animate({
-								scrollTop: pos
-							});
+					// set animated top scrolling to the anchor
+					$('body, html').animate({scrollTop: pos});
 
-				console.log("[scrollToAnchor] DEPOIS\n\n anchor:"+anchor+"\n\n$(anchor).offset().top:" + $(anchor).offset().top + "\n\npos1: " + pos + "\n\ni=" + i + "\n");
+				console.log("[scrollToAnchor] anchor:" + anchor + "\n$(anchor).offset().top <-> pos\n" + $(anchor).offset().top + " <-> " + (pos + 250));
 				anchor = "";
 		}
 		else{
 				window.scrollTo(0,0);// top scrolling
 				console.log("[scrollToAnchor] Anchor not found in the html");
 		}
-
 	stopLoader();
-
 }
 
 function showElements(elements) {
