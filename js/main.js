@@ -29,7 +29,7 @@ function loadContent(){
 	 var fullURL = location.href.split("?")[0] + location.search;//#41-tabelas-genéricas //#213-mapas-lpca
 	 var qs = location.search; //Get QueryString
 
-	 qs = "?doc=menus&anchor=#225-responsáveis"; // TEST
+	// qs = "?doc=menus&anchor=#225-responsáveis"; // TEST
 
 	if ( qs.indexOf("=") != -1 ){
 
