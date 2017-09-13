@@ -24,22 +24,21 @@ blockRightClick = true;
 /*falta adicionar suporte para as anchor de documentos e suporte para carregar iframes e  o load commit history*/
 function loadContent(){
 
-	var fullURL = window.location.href; // Returns full URL
+	//var fullURL = window.location.href; // Returns full URL
 
-	//var fullURL = "https://spmssicc.github.io/pages/index.html?doc=menus";
-	//var fullURL = "https://spmssicc.github.io/pages/index.html?doc=processos&anchor=#316-alteração-de-lançamentos-al";//#41-tabelas-genéricas //#213-mapas-lpca
+	 var fullURL = window.location.href;//#41-tabelas-genéricas //#213-mapas-lpca
+	 var qs = window.location.search; //Get QueryString
 
-	var index = fullURL.indexOf("?");
+	if ( qs.length ){
 
-	console.log("[loadContent] fullURL: " + fullURL);
+					console.log("[loadContent] Query string: " + qs);
 
-	if ( index != -1 ){
+					var variables = qs[1].split("&",2); // Returns variables passed of the query string. splits until the max of 2 variables
+					console.log("\n\n\nvariables: " + variables + "\nvariables.length: " + variables.length + "\n\n\n");
 
-					var queryString = fullURL.split("?"); // Returns query string. 2 is the limit of splits
+					if (variables.length ) {
 
-					console.log("[loadContent] Query string: " + queryString);
-
-					var variables = queryString[1].split("&",2); // Returns variables passed of the query string. splits until the max of 2 variables
+					}
 					var doc = variables[0].substring(variables[0].indexOf("=") + 1, 99); // Returns doc name
 					var anchor = variables[1].substring(variables[1].indexOf("=") + 1, 99); // Returns anchor of the document
 
@@ -59,7 +58,7 @@ function loadContent(){
 							stopLoader();
 						}
 	}/*close if*/
-	else if ( index == -1 ) {
+	else if ( qs.length <= 0  ) {
 
 				console.log("[loadContent] Query string not detected");
 				loadIndexContent(["btnMenu"]);
@@ -237,9 +236,9 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 				$("#" + elementId).html(html).promise().done(function(){
 
 						var stateObj = { foo: "bar" };
-						history.pushState(stateObj, "SICC - Documentação", "https://spmssicc.github.io/pages/index.html?doc=" + mdFile);
-						console.log("[loadMdDoc] history.pushState: https://spmssicc.github.io/pages/index.html?doc=" + mdFile);
-						
+						history.pushState(stateObj, "SICC - Documentação", window.location.href + "?doc=" + mdFile + "&anchor=" + anchor); //+ mdFile);
+						console.log();("[convertMdToHtml] Query string: " + window.location.search);
+
 						zommClickImagem();
 						responsiveTable();
 						loadToc("tocDropdown");
@@ -263,29 +262,23 @@ function scrollToAnchor(anchor){
 
 	startLoader();
 
-	if ($(anchor).length && $(anchor) != "") {
+	if ($(anchor).length) {
 
-				// get top position relative to the document
-				var pos = $(anchor).offset().top;
+					// get top position relative to the document
+					var pos = $(anchor).offset().top;
 
-				console.log("\n\n\n\n\npos1: " + pos);
+							// set animated top scrolling to the anchor
+							$('body, html').animate({
+								scrollTop: pos
+							});
 
-				pos = pos - 250;
-
-				console.log("\n\n\n\n\npos2: " + pos);
-
-						// set animated top scrolling to the anchor
-						$('body, html').animate({
-							scrollTop: pos
-						});
-
-			console.log("[scrollToAnchor] anchor:" + anchor + "\n\n$(anchor).offset().top:" + $(anchor).offset().top + "\n\nposition: " + pos);
-			anchor = "";
-	}
-	else{
-			window.scrollTo(0,0);// top scrolling
-			console.log("[scrollToAnchor] Anchor not found in the html.");
-	}
+				console.log("[scrollToAnchor] DEPOIS\n\n anchor:"+anchor+"\n\n$(anchor).offset().top:" + $(anchor).offset().top + "\n\npos1: " + pos + "\n\ni=" + i + "\n");
+				anchor = "";
+		}
+		else{
+				window.scrollTo(0,0);// top scrolling
+				console.log("[scrollToAnchor] Anchor not found in the html");
+		}
 
 	stopLoader();
 
