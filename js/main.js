@@ -277,20 +277,22 @@ function scrollToAnchor(anchor){
 
 	startLoader();
 
-	if ($("#" + anchor).length) {
+	var elementId = '#' + anchor;
+
+	if ($('#' + elementId).length) {
 
 					// get top position relative to the document
-					var pos = $("#"+anchor).offset().top - 250; //- 250 to compensate the doc bar
+					var pos = $("#"+elementId).offset().top - 250; //- 250 to compensate the doc bar
 
-					// set animated top scrolling to the anchor
+					// set animated top scrolling to the elementId
 					$('body, html').animate({scrollTop: pos});
 
-				console.log("[scrollToAnchor] anchor:" + anchor + "\n$(anchor).offset().top <-> pos\n" + $("#"+anchor).offset().top + " <-> " + (pos + 250));
-				anchor = "";
+				console.log("[scrollToAnchor] elementId:" + elementId + "\n$(elementId).offset().top <-> pos\n" + $(elementId).offset().top + " <-> " + (pos + 250));
+				elementId = "";
 		}
 		else{
 				window.scrollTo(0,0);// top scrolling
-				console.log("[scrollToAnchor] Anchor not found in the html");
+				console.log("[scrollToAnchor] elementId not found in the html");
 		}
 	stopLoader();
 }
