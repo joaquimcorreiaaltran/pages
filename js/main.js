@@ -29,34 +29,32 @@ function loadContent(){
 	 var fullURL = location.href.split("?")[0] + location.search;//#41-tabelas-genéricas //#213-mapas-lpca
 	 var qs = location.search; //Get QueryString
 
-	if ( qs.length ){
+	if ( qs.indexOf("=") != -1 ){
 
 					console.log("[loadContent] Query string: " + qs);
 
-					var variables = qs.split("&",10); // Returns variables passed of the query string. splits until the max of 10 variables
-					console.log("\n\n\nvariables: " + variables + "\nvariables.length: " + variables.length + "\n\n\n");
+					var paramArr = qs.split("&",10); // Returns paramArr passed of the query string. splits until the max of 10 paramArr
+					console.log("\n\n\nparamArr: " + paramArr + "\nparamArr.length: " + paramArr.length + "\n\n\n");
 
-					if (variables.length ) {
+					if (paramArr.length ) {
+							var doc = paramArr[0].substring(paramArr[0].indexOf("=") + 1, 99); // Returns doc name
+							var anchor = paramArr[1].substring(paramArr[1].indexOf("=") + 1, 99); // Returns anchor of the document
 
+							console.log("[loadContent] paramArr 1 = : " + doc + "\n. paramArr 2 = " + anchor);
+
+							if (doc.length && anchor.length) {
+
+									loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnShowToc','tocDropdown'], anchor);
+
+									//to-do: chamar loadIframe se for um PDF ou ppt
+									//to-do: chamar loadICommitHistory se for um PDF ou pptx
+							}
+							else{
+									console.log("[loadContent] Document name and/or anchor invalid");
+									loadIndexContent(["btnMenu"]);
+									stopLoader();
+							}
 					}
-					var doc = variables[0].substring(variables[0].indexOf("=") + 1, 99); // Returns doc name
-					var anchor = variables[1].substring(variables[1].indexOf("=") + 1, 99); // Returns anchor of the document
-
-						if (doc.length && anchor.length) {
-
-							console.log("[loadContent] doc: " + doc + "\n[loadContent] anchor: " + anchor);
-
-							loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnShowToc','tocDropdown'], anchor);
-
-							//chamar loadIframe se for um PDF ou pptx
-
-							//chamar loadICommitHistory se for um PDF ou pptx
-						}
-						else{
-							console.log("[loadContent] Document name and/or anchor invalid");
-							loadIndexContent(["btnMenu"]);
-							stopLoader();
-						}
 	}/*close if*/
 	else if ( qs.length <= 1  ) {
 
