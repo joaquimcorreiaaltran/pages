@@ -90,7 +90,7 @@ function startLoader(){
 				console.log("[startLoader] Loader started previously");
 		}
 		else{
-				var spinnerHtml = "<div id ='loader'> <img  class='loader' src='./img/icons/sicc.ico' alt='Loader'></img></div>";
+				var spinnerHtml = "<div id ='loader'> <img  class='loader' src='./img/icons/sicc.png' alt='Loader'></img></div>";
 				$(spinnerHtml).insertAfter("#header").promise().done(function(){
 						console.log("[startLoader] Adicionado");
 				});
