@@ -24,10 +24,10 @@ blockRightClick = true;
 /*falta adicionar suporte para as anchor de documentos e suporte para carregar iframes e  o load commit history*/
 function loadContent(){
 
-	//var fullURL = window.location.href; // Returns full URL
+	var fullURL = window.location.href; // Returns full URL
 
 	//var fullURL = "https://spmssicc.github.io/pages/index.html?doc=menus";
-	var fullURL = "https://spmssicc.github.io/pages/index.html?doc=processos&anchor=#316-alteração-de-lançamentos-al";//#41-tabelas-genéricas //#213-mapas-lpca
+	//var fullURL = "https://spmssicc.github.io/pages/index.html?doc=processos&anchor=#316-alteração-de-lançamentos-al";//#41-tabelas-genéricas //#213-mapas-lpca
 
 	var index = fullURL.indexOf("?");
 
