@@ -51,8 +51,7 @@ function loadContent(){
 
 							if (paramArr.length >= 2){
 									anchor = paramArr[1].substring(paramArr[1].indexOf("=") + 1, 99); // Returns anchor of the document
-									anchor = "#" + decodeURI(anchor);
-									console.log("\n\n\n\n\nENTROU AQUI! anchor:"+anchor+"\nparamArr[1].substring(paramArr[1].indexOf('=') + 1, 99): "+paramArr[1].substring(paramArr[1].indexOf('=') + 1, 99)+"\n\n\n\n");
+									anchor = decodeURI(anchor);
 								}
 							console.log("[loadContent] doc: " + doc +
 												"\n[loadContent] anchor: " + anchor);
@@ -278,15 +277,15 @@ function scrollToAnchor(anchor){
 
 	startLoader();
 
-	if ($(anchor).length) {
+	if ($("#" + anchor).length) {
 
 					// get top position relative to the document
-					var pos = $(anchor).offset().top - 250; //- 250 to compensate the doc bar
+					var pos = $("#"+anchor).offset().top - 250; //- 250 to compensate the doc bar
 
 					// set animated top scrolling to the anchor
 					$('body, html').animate({scrollTop: pos});
 
-				console.log("[scrollToAnchor] anchor:" + anchor + "\n$(anchor).offset().top <-> pos\n" + $(anchor).offset().top + " <-> " + (pos + 250));
+				console.log("[scrollToAnchor] anchor:" + anchor + "\n$(anchor).offset().top <-> pos\n" + $("#"+anchor).offset().top + " <-> " + (pos + 250));
 				anchor = "";
 		}
 		else{
