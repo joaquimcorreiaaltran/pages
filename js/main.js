@@ -251,15 +251,19 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 				$("#" + elementId).html(html).promise().done(function(){
 
 						var stateObj = { foo: "bar" };
-						history.pushState(stateObj, "SICC - Documentação", location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor); //+ mdFile);
-						console.log();("[convertMdToHtml] Query string: " + window.location.search);
-
+						
 						zommClickImagem();
 						responsiveTable();
 						loadToc("tocDropdown");
+
 						if(anchor.length > 1){
 							setTimeout( function(){ scrollToAnchor(anchor); }, 2000);
+							history.pushState(stateObj, "SICC - Documentação", location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor); //+ mdFile);
 						}
+						else{
+							history.pushState(stateObj, "SICC - Documentação", location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor); //+ mdFile);
+						}
+						console.log();("[convertMdToHtml] Query string: " + window.location.search);
 				});
 				stopLoader();
   })
