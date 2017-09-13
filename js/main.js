@@ -117,6 +117,7 @@ function loadIndexContent(btnsToShow) {
 	});
 
 	stopLoader();
+	window.scrollTo(0,0);
 
 }
 
@@ -383,6 +384,7 @@ function loadCommitHistory(btnsToShow) {
 				})(index, result));
 			}
 			stopLoader();
+			window.scrollTo(0,0);
 			//Show an UI message if the request limit to the API was reached
 		} else if (rate_limit_remaining == 0) {
 			stopLoader();
@@ -405,6 +407,7 @@ function loadCommitHistory(btnsToShow) {
 		.done(function(response, textStatus, jqXHR) {
 			return callback(response, textStatus, jqXHR);
 		});
+
 } /*loadCommitHistory()*/
 
 function loadToc(elementId) {
