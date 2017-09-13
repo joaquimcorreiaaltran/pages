@@ -40,11 +40,13 @@ function loadContent(){
 										"\n[loadContent] paramArr[0]: " + paramArr[0] +
 										"\n[loadContent] paramArr[1]: " + paramArr[1]);
 
-					var doc, anchor;
+					var doc;
 
 					if (paramArr.length >= 1) {
 							doc = paramArr[0].substring(paramArr[0].indexOf("=") + 1, 99); // Returns doc name
 
+							var anchor;
+							
 							if (paramArr.length >= 2){
 									anchor = paramArr[1].substring(paramArr[1].indexOf("=") + 1, 99); // Returns anchor of the document
 									console.log("\n\n\n\n\nENTROU AQUI! anchor:"+anchor+"\n\n\n\n\n");
