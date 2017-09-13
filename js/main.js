@@ -34,15 +34,15 @@ function loadContent(){
 					console.log("[loadContent] Query string: " + qs);
 
 					var paramArr = qs.split("&",10); // Returns paramArr passed of the query string. splits until the max of 10 paramArr
-					console.log("\n\n\nparamArr: " + paramArr + "\nparamArr.length: " + paramArr.length + "\n\n\n");
+					console.log("[loadContent] paramArr: " + paramArr + "\n[loadContent] paramArr.length: " + paramArr.length + "\n\n\n");
 
 					if (paramArr.length ) {
 							var doc = paramArr[0].substring(paramArr[0].indexOf("=") + 1, 99); // Returns doc name
 							var anchor = paramArr[1].substring(paramArr[1].indexOf("=") + 1, 99); // Returns anchor of the document
 
-							console.log("[loadContent] paramArr 1 = : " + doc + "\n. paramArr 2 = " + anchor);
+							console.log("[loadContent] paramArr1 : " + doc + "\n. paramArr2 = " + anchor);
 
-							if (doc.length && anchor.length) {
+							if (doc.length) {
 
 									loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnShowToc','tocDropdown'], anchor);
 
