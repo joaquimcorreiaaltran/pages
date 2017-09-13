@@ -36,10 +36,14 @@ function loadContent(){
 					var paramArr = qs.split("&",10); // Returns paramArr passed of the query string. splits until the max of 10 paramArr
 					console.log("[loadContent] paramArr: " + paramArr + "\n[loadContent] paramArr.length: " + paramArr.length + "\n\n\n");
 
-					if (paramArr.length ) {
-							var doc = paramArr[0].substring(paramArr[0].indexOf("=") + 1, 99); // Returns doc name
-							var anchor = paramArr[1].substring(paramArr[1].indexOf("=") + 1, 99); // Returns anchor of the document
+					var doc, anchor;
 
+					if (paramArr.length >= 1) {
+							doc = paramArr[0].substring(paramArr[0].indexOf("=") + 1, 99); // Returns doc name
+
+							if (paramArr.length >= 2){
+									anchor = paramArr[1].substring(paramArr[1].indexOf("=") + 1, 99); // Returns anchor of the document
+								}
 							console.log("[loadContent] paramArr1 : " + doc + "\n. paramArr2 = " + anchor);
 
 							if (doc.length) {
