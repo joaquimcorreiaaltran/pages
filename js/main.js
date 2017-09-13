@@ -46,10 +46,10 @@ function loadContent(){
 							doc = paramArr[0].substring(paramArr[0].indexOf("=") + 1, 99); // Returns doc name
 
 							var anchor;
-							
+
 							if (paramArr.length >= 2){
 									anchor = paramArr[1].substring(paramArr[1].indexOf("=") + 1, 99); // Returns anchor of the document
-									console.log("\n\n\n\n\nENTROU AQUI! anchor:"+anchor+"\n\n\n\n\n");
+									console.log("\n\n\n\n\nENTROU AQUI! anchor:"+anchor+"\nparamArr[1].substring(paramArr[1].indexOf('=') + 1, 99)"+paramArr[1].substring(paramArr[1].indexOf("=") + 1, 99)+"\n\n\n\n");
 								}
 							console.log("[loadContent] doc: " + doc +
 												"\n[loadContent] anchor: " + anchor);
