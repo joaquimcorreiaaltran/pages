@@ -28,11 +28,13 @@ function loadContent(){
 
 	 var qs = location.search; //Get QueryString
 
+	 console.log("[loadContent] Query string (1): " + qs);
+
 	// qs = "?doc=menus&anchor=#225-responsáveis"; // TEST
 
 	if ( qs.indexOf("=") != -1 ){
 
-					console.log("[loadContent] Query string: " + qs);
+					console.log("[loadContent] Query string (2): " + qs);
 
 					var paramArr = qs.split("&",10); // Returns paramArr passed of the query string. splits until the max of 10 paramArr
 					console.log("[loadContent] paramArr: " + paramArr +
