@@ -283,23 +283,26 @@ function tipoObj( obj ) {
 function scrollToAnchor(anchor){
 
 	startLoader();
+	var anchorId;
 
-	var elementId = '#' + anchor;
+	if(anchor.length > 1){
+		anchorId = '#' + anchor;
+	}
 
-	if ($(elementId).length) {
+	if ($(anchorId).length) {
 
 					// get top position relative to the document
-					var pos = $(elementId).offset().top - 250; //- 250 to compensate the doc bar
+					var pos = $(anchorId).offset().top - 250; //- 250 to compensate the doc bar
 
-					// set animated top scrolling to the elementId
+					// set animated top scrolling to the anchorId
 					$('body, html').animate({scrollTop: pos});
 
-				console.log("[scrollToAnchor] elementId:" + elementId + "\n$(elementId).offset().top <-> pos\n" + $(elementId).offset().top + " <-> " + (pos + 250));
+				console.log("[scrollToAnchor] anchorId:" + anchorId + "\n$(anchorId).offset().top <-> pos\n" + $(anchorId).offset().top + " <-> " + (pos + 250));
 				anchor = "";
 		}
 		else{
 				window.scrollTo(0,0);// top scrolling
-				console.log("[scrollToAnchor] elementId not found in the html");
+				console.log("[scrollToAnchor] anchorId not found in the html");
 		}
 	stopLoader();
 }
