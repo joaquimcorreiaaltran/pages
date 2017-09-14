@@ -25,21 +25,19 @@ function loadContent(){
 
 	 var qs = window.location.search; //Get QueryString
 
-	 console.log("[loadContent] Query string (1): " + qs);
+	 //console.log("[loadContent] Query string (1): " + qs);
 
 	// qs = "?doc=menus&anchor=#225-responsáveis"; // TEST
 
 	if ( qs.indexOf("=") != -1 ){
 
-					console.log("[loadContent] Query string (2): " + qs);
+					//console.log("[loadContent] Query string (2): " + qs);
 
-					var paramArr = qs.split("&",10); // Returns paramArr passed of the query string. splits until the max of 10 paramArr
+					var doc, paramArr = qs.split("&",10); // Returns paramArr passed of the query string. splits until the max of 10 paramArr
 					console.log("[loadContent] paramArr: " + paramArr +
 										"\n[loadContent] paramArr.length: " + paramArr.length +
 										"\n[loadContent] paramArr[0]: " + paramArr[0] +
 										"\n[loadContent] paramArr[1]: " + paramArr[1]);
-
-					var doc;
 
 					if (paramArr.length >= 1) {
 							doc = paramArr[0].substring(paramArr[0].indexOf("=") + 1, 99); // Returns doc name
@@ -83,7 +81,7 @@ function loadContent(){
 function startLoader(){
 
 		if( $("#loader .loader").length ){
-				console.log("[startLoader] Loader started previously");
+				//console.log("[startLoader] Loader started previously");
 		}
 		else{
 				var spinnerHtml = "<div id ='loader'> <img  class='loader' src='./img/icons/sicc.png' alt='Loader'></img></div>";
@@ -96,7 +94,7 @@ function startLoader(){
 function stopLoader(){
 		if($("#loader").length){
 				$("#loader").remove();
-				console.log("[stopLoader] Removido");
+				//console.log("[stopLoader] Removido");
 		}
 		else{
 			console.log("[stopLoader] Loader stopped previously");
@@ -105,7 +103,7 @@ function stopLoader(){
 
 function loadIndexContent(btnsToShow) {
 
-	console.log("[loadIndexContent] btnsToShow: ", btnsToShow);
+	//console.log("[loadIndexContent] btnsToShow: ", btnsToShow);
 
 	startLoader();
 
@@ -175,7 +173,7 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 		elementId = "documento";
 	}
 
-	console.log("[convertMdToHtml] mdFile: " + mdFile + "\n[convertMdToHtml] elementId to place the html: " + elementId);
+	//console.log("[convertMdToHtml] mdFile: " + mdFile + "\n[convertMdToHtml] elementId to place the html: " + elementId);
 
 	//Vai buscar o ficheiro markdown ao diretório ./markdown/
 	$.get('./markdown/' + mdFile + '.md', function() {
@@ -232,7 +230,7 @@ function scrollToAnchor(mdFile, anchor){
 	try {
 			$(anchorId);
 		} catch(e) {
-			console.log('[scrollToAnchor] Your URL anchor parameter is invalid: ' + anchorId);
+			console.log('[scrollToAnchor] URL anchor parameter is invalid: ' + anchorId);
 			anchorId = '';
 			stopLoader();
 			return;
@@ -244,11 +242,11 @@ function scrollToAnchor(mdFile, anchor){
 
 				$('body, html').animate({scrollTop: pos});// set animated top scrolling to the anchorId
 
-				console.log("[scrollToAnchor] anchorId:" + anchorId + "\n Positions should be the same: " + $(anchorId).offset().top + " <-> " + (pos + 250));
+				//console.log("[scrollToAnchor] anchorId:" + anchorId + "\n Positions should be the same: " + $(anchorId).offset().top + " <-> " + (pos + 250));
 
 				var stateObj = { foo: "bar" }, url = location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor;
 				history.pushState(stateObj, "SICC - Documentação", url);
-				console.log("[scrollToAnchor] Adicionada entrada no histórico: " + url);
+				//console.log("[scrollToAnchor] Adicionada entrada no histórico: " + url);
 
 				anchor = ""; // clear the anchor
 		}
@@ -266,7 +264,7 @@ function showElements(elements) {
 	for (i = 0; i < elements.length; i++) {
 		$("#" + elements[i]).addClass("show");
 	}
-	console.log("[showElements] show: ", elements);
+	//console.log("[showElements] show: ", elements);
 }
 
 function hideElements() {
@@ -276,7 +274,7 @@ function hideElements() {
 	for (i = 0; i < elements.length; i++) {
 		$("#" + elements[i]).removeClass("show");
 	}
-	console.log("[hideElements] hide: ", elements);
+	//console.log("[hideElements] hide: ", elements);
 }
 
 // Add zoom functionality to images in the HTML
@@ -304,7 +302,7 @@ function loadCommitHistory(btnsToShow) {
 
 		startLoader();
 
-		console.log("[loadCommitHistory] started. Buttons to show: " + btnsToShow);
+		//console.log("[loadCommitHistory] started. Buttons to show: " + btnsToShow);
 
 		if($("#documento").length < 1){
 			//adjust html style and structure
@@ -456,7 +454,6 @@ function loadToc(mdFile, elementId) {
 					containment: "window",handle: "i",snap: "#docButtons, #content",cursor: "move",cursorAt: {top: 5,left: 5}
 				});
 				//$("#tocDropdown").resizable();
-
 		}
 
 		if ($("#tocDropdown").hasClass("show")) {
@@ -470,17 +467,15 @@ function loadToc(mdFile, elementId) {
 function showToc() {
 	$(".dropdown-content").toggleClass("show");
 	$("#btnShowToc").toggleClass("enabled");
-
-	console.log("[showToc] TOC visibility:" + $(".dropdown-content").hasClass("show"));
-	console.log("[showToc] #btnShowToc visibility:" + $("#btnShowToc").hasClass("show"));
+	//console.log("[showToc] TOC visibility:" + $(".dropdown-content").hasClass("show"));
+	//console.log("[showToc] #btnShowToc visibility:" + $("#btnShowToc").hasClass("show"));
 }
 
 function showMenu() {
 	$("#accordion").toggleClass("showMenu");
 	$("#btnMenu").toggleClass("showMenu");
-
-	console.log("[showMenu] #accordion visibility:" + $("#accordion").hasClass("showMenu"));
-	console.log("[showMenu] #btnMenu visibility:" + $("#accordion").hasClass("showMenu"));
+	//console.log("[showMenu] #accordion visibility:" + $("#accordion").hasClass("showMenu"));
+	//console.log("[showMenu] #btnMenu visibility:" + $("#accordion").hasClass("showMenu"));
 }
 
 // Close the dropdown menu and the menu if the user clicks outside of it
