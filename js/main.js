@@ -235,7 +235,7 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 		elementId = "documento";
 	}
 
-	console.log("[convertMdToHtml] elementId: " + elementId + "\n[convertMdToHtml] mdFile: " + mdFile);
+	console.log("[convertMdToHtml] mdFile: " + mdFile + "\n[convertMdToHtml] elementId to place the html: " + elementId);
 
 	//Vai buscar o ficheiro markdown ao diretório ./markdown/
 	$.get('./markdown/' + mdFile + '.md', function() {
@@ -258,11 +258,10 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 						loadToc("tocDropdown");
 
 						if(anchor.length > 1){
-							setTimeout( function(){ scrollToAnchor(anchor); }, 2000);
-							history.pushState(stateObj, "SICC - Documentação", location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor); //+ mdFile);
+							setTimeout( function(){ scrollToAnchor(mdFile, anchor); }, 2000);
 						}
 						else{
-							history.pushState(stateObj, "SICC - Documentação", location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor); //+ mdFile);
+							history.pushState(stateObj, "SICC - Documentação", location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor);
 						}
 						console.log("[convertMdToHtml] Query string: " + window.location.search);
 						stopLoader();
@@ -281,7 +280,7 @@ function tipoObj( obj ) {
 		return ({}).toString.call(obj).match(/\s([a-zA-Z]+)/)[1].toLowerCase()
 	}
 
-function scrollToAnchor(anchor){
+function scrollToAnchor(mdFile, anchor){
 
 	startLoader();
 	var anchorId;
@@ -301,13 +300,14 @@ function scrollToAnchor(anchor){
 
 	if ($(anchorId).length) {
 
-					// get top position relative to the document
-					var pos = $(anchorId).offset().top - 250; //- 250 to compensate the doc bar
+				// get top position relative to the document
+				var pos = $(anchorId).offset().top - 250; //- 250 to compensate the doc bar
 
-					// set animated top scrolling to the anchorId
-					$('body, html').animate({scrollTop: pos});
+				// set animated top scrolling to the anchorId
+				$('body, html').animate({scrollTop: pos});
 
 				console.log("[scrollToAnchor] anchorId:" + anchorId + "\n$(anchorId).offset().top <-> pos\n" + $(anchorId).offset().top + " <-> " + (pos + 250));
+				history.pushState(stateObj, "SICC - Documentação", location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor);
 				anchor = "";
 		}
 		else{
