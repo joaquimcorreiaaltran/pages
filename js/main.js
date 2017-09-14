@@ -289,6 +289,12 @@ function scrollToAnchor(anchor){
 		anchorId = '#' + anchor;
 	}
 
+	try {
+			$(anchorId)
+		} catch(e) {
+			alert('Your URL anchor parameter is invalid'); 
+		}
+
 	if ($(anchorId).length) {
 
 					// get top position relative to the document
