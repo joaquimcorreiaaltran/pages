@@ -604,7 +604,7 @@ Após a criação do compromisso, o utilizador terá assim a possibilidade de te
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-b000b868.png)
 
-Neste ecrã, surge o resumo da criação efetuada no passo anterior
+Neste ecrã, surge o resumo da criação efetuada no passo anterior.
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-299ce3c5.png)
 
@@ -645,11 +645,9 @@ Após validação dos elementos integrados e constatado que os valores estão co
 
 ![img_98a.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_98a.png)
 
-O sistema deve apresentar a seguinte mensagem, sempre que ao “Número de Processo de Aquisição”, já tenha Compromissos integrados.
+Sempre que um "Número de Processos de Aquisição" já tenha Compromissos associados, o sistema deve apresentar a seguinte mensagem:
 
-_(Imagem em atualização)_
-<!-- Para atualizar esta imagem é necessário criar ficheiro com Verificações prévias-->
-![img_99.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_99.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-0ed3fcdb.png)
 
 #### 3.1.4. Alteração de Compromisso (AB)
 
@@ -701,8 +699,27 @@ Selecionando a opção "Confirme", os movimentos contabilísticos são guardados
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-18efe6fa.png)
 
-No separador "Processado - F.Confer. (P2)", o utilizador deve selecionar "Compromisso Assumido" e a entidade a que diz respeito para que o sistema indique o montante do compromisso que tem disponível.
-De seguida, define-se, pelo menos, o "Nº de fatura" bem como a "Data da Contabilização" e respetiva "Importância" da fatura, que neste exemplo será de 200€. Para gravar, deve selecionar sobre o botão "Gravar novo P2".``
+Em caso de haver necessidade cria-se um "Processado - F.Conf.\Rec.(P1)" no separador seguinte. Caso não seja necessário, o utilizador prossegue para o separador "Processado - F.Confer. (P2)".
+
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-4e97c0a0.png)
+
+</br> No separador "Processado-F.Rec.\Conf. (P1)" o utilizador deve inserir o Nº do Compromisso Assumido para que o sistema mostre o Valor Disponível e a Entidade correspondente. De seguida, o utilizador deve inserir o "Nº de guia/factura" bem como a "Importância" respectiva. Para gravar, deverá ser seleccionado o botão "Gravar novo P1".
+
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-c065dc68.png)
+
+Após a gravação do P1 surge a janela de Recolha de Contabilidade com a conta de custos preenchida. O utilizador deve apenas introduzir a conta de contrapartida e o respetivo valor. De seguida gera-se a contabilidade através do botão correspondente.
+
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-9ba5eaac.png)
+
+No separador "Analítica", que é aberto ao gerar os documentos na contabilidade, é necessário atribuír um centro de custo para as contas de classe 6. O botão "![img_radio_unselected.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_radio_unselected.png)" permite o acesso a todos os centros de custos inseridos no sistema à semelhança do exemplo anterior. Para terminar deve ser selecionada a opção "Confirme".
+
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-5f97b9c1.png)
+
+O separador "Processado - F.Confer. (P2)" é preenchido conforme o tipo de documento anterior: "Compromisso Assumido" ou "F.Conf.\Rec.".
+
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-9f4ebec9.png)
+
+Quando "Compromisso Assumido" é selecionado, o utilizador deve preencher os campos relativos à "Entidade" e ao número do "Compromisso Assumido" gerado para que o sistema indique o montante disponível. De seguida devem ser preenchidos os campos do "Nº de factura" bem como o da "Data da Contabilização" e a respetiva "Importância". Para gravar, deve selecionar sobre o botão "Gravar novo P2".
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-2ebaaaa2.png)
 
@@ -723,6 +740,18 @@ Posteriormente à confirmação, o sistema gera uma mensagem com a seguinte info
 Após confirmação, o sistema assume assim que para o compromisso e para a entidade já é existente o registo de fatura.
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-40dd47b7.png)
+
+Para gerar um P2 proveniente de um P1, o utilizador deve selecionar a opção "F.Conf.\Rec.". De seguida, deve preencher os campos da "Entidade", do número de "F.Conf.\Rec."", do "Nº de factura", da "Data de Contabilização" e da "Importância" da fatura. Para gravar deve selecionar o botão "Gravar novo P2".
+
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-cf071459.png)
+
+Na janela que surge após a gravação, o utilizador deve selecionar a conta "221" e atribuír-lhe o respetivo montante, neste exemplo será de 200€. De seguida deve selecionar o botão "Confirme".
+
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-9433a3fc.png)
+
+Após confirmação, o sistema assume assim que para o P1 e para a entidade já é existente o registo de fatura.
+
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-32c2e610.png)
 
 Nesta fase, ao exemplo das anteriores, demostramos este processo lançamento feito por importação de ficheiro através do botão "Importar".
 
@@ -748,8 +777,7 @@ Após validação dos elementos integrados e constatado que os valores estão co
 
 Neste processo o que se pretende demonstrar é uma alteração a um CP existente. O caminho que o utilizador deve seguir é:
 
-_(Imagem em atualização)_
-![img_121.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_121.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-a2374f53.png)
 
 Neste processo, demostramos a título de exemplo o este processo de Alteração de lançamentos efetuada por carregamento de ficheiro através do botão "Importar".
 
@@ -776,13 +804,11 @@ Após validação dos elementos integrados e constatado que os valores estão co
 
 A autorização de pagamento das despesas, são autorizadas pelos dirigentes dos serviços ou outros que detenham autorização, mediante operações de tesouraria ou ainda através de transferência bancária, quando esta forma se revelar a mais conveniente.
 
-_(Imagem em atualização)_
-![img_131.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_131.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-a2995da1.png)
 
 Neste processo, o utilizador terá de identificar a entidade e os documentos que dela fazem parte, bem como atribuir um nº de autorização. O não preenchimento deste ultimo, determina que a numeração seja automática. Ao exemplo do anterior, terá de dar duplo clique na linha que contém os elementos para a mesma subir ao nível seguinte.
 
-_(Imagem em atualização)_
-![img_132.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_132.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-f3ce9222.png)
 
 O utilizador define também se o pagamento é efetuado por tesouraria ou por Transf. Bancária, sendo que para este último caso tem de selecionar qual a Instituição bancária.
 
