@@ -268,7 +268,7 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 				stopLoader();
   })
 		.fail(function() {
-				console.log();("[convertMdToHtml] Error on document loading. The document exists?");
+				console.log("[convertMdToHtml] Error on document loading. The document exists?");
 				loadIndexContent(['btnMenu']);
 				stopLoader();
 	})
