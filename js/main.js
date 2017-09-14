@@ -303,16 +303,17 @@ function scrollToAnchor(mdFile, anchor){
 
 	if ($(anchorId).length) {
 
-				// get top position relative to the document
-				var pos = $(anchorId).offset().top - 250; //- 250 to compensate the doc bar
+				var pos = $(anchorId).offset().top - 250;// get top position relative to the document //- 250 to compensate the doc bar
 
-				// set animated top scrolling to the anchorId
-				$('body, html').animate({scrollTop: pos});
+				$('body, html').animate({scrollTop: pos});// set animated top scrolling to the anchorId
 
-				console.log("[scrollToAnchor] anchorId:" + anchorId + "\n$(anchorId).offset().top <-> pos\n" + $(anchorId).offset().top + " <-> " + (pos + 250));
-				var stateObj = { foo: "bar" };
-				history.pushState(stateObj, "SICC - Documentação", location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor);
-				anchor = "";
+				console.log("[scrollToAnchor] anchorId:" + anchorId + "\n Positions should be the same: " + $(anchorId).offset().top + " <-> " + (pos + 250));
+
+				var stateObj = { foo: "bar" }, url = location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor;
+				history.pushState(stateObj, "SICC - Documentação", url);
+				console.log("[scrollToAnchor] Adicionada entrada no histórico: " + url);
+
+				anchor = ""; // clear the anchor
 		}
 		else{
 				window.scrollTo(0,0);// top scrolling
