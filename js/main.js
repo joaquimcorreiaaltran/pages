@@ -64,7 +64,7 @@ function loadContent(){
 									//to-do: chamar loadICommitHistory se for um PDF ou pptx
 							}
 							else{
-									console.log("[loadContent] Document name and/or anchor invalid");
+									console.log("[loadContent] Invalid document name: " + doc);
 									loadIndexContent(["btnMenu"]);
 									stopLoader();
 							}
@@ -72,7 +72,7 @@ function loadContent(){
 	}/*close if*/
 	else if ( qs.length <= 1  ) {
 
-				console.log("[loadContent] Query string not detected/not valid");
+				console.log("[loadContent] Query string not detected/not valid: " + qs);
 				loadIndexContent(["btnMenu"]);
 				stopLoader();
 
@@ -116,7 +116,9 @@ function loadIndexContent(btnsToShow) {
 	$("body").attr("style", "margin:0 0 0 0;  width:100%");
 	$("#content").attr("style", "min-height: 90vh; margin: 0 0 0 0; padding:1em 1em 1em 1em; widht: 100%; max-width:5000px");
 
-	$.get("./html/index_content.html", function() {
+	var filePath ='./html/index_content.html';
+
+	$.get(filePath, function() {
 		//console.log("[loadIndexContent] Loaded requested file");
 	})
 	.done(function(data){
@@ -125,7 +127,7 @@ function loadIndexContent(btnsToShow) {
 			$("footer").removeClass("documentMode");
 	})
 	.fail(function(){
-			console.log("[loadIndexContent] Error on loading requested file");
+			console.log("[loadIndexContent] Error on loading requested file: " + filePath);
 	})
 	.always(function(){
 			window.scrollTo(0,0);
@@ -240,12 +242,12 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 				//console.log("[convertMdToHtml] sucess");
 	})
 		.done(function(data) {
-		    console.log("[convertMdToHtml] mdFile loaded");
+		    console.log("[convertMdToHtml] mdFile \"" + mdFile + "\"  loaded");
 
 				//declara 3 variáveis: converter, data e a html. A variável html irá conter o ficheiro markdown convertido em HTML.
 				var converter = new showdown.Converter(),	data2, html = converter.makeHtml(data);
 
-				console.log("[convertMdToHtml] mdFile converted to HTML!");
+				console.log("[convertMdToHtml] mdFile  \"" + mdFile + "\"  converted to HTML!");
 
 				$("#" + elementId).html(html).promise().done(function(){
 
@@ -268,7 +270,7 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 				stopLoader();
   })
 		.fail(function() {
-				console.log("[convertMdToHtml] Error on document loading. The document exists?");
+				console.log("[convertMdToHtml] Error on document loading. The file \"" + mdFile + "\" exists in the markdown folder?");
 				loadIndexContent(['btnMenu']);
 				stopLoader();
 	})
@@ -291,7 +293,7 @@ function scrollToAnchor(anchor){
 	try {
 			$(anchorId);
 		} catch(e) {
-			console.log('[scrollToAnchor] Your URL anchor parameter is invalid');
+			console.log('[scrollToAnchor] Your URL anchor parameter is invalid: ' + anchorId);
 			anchorId = '';
 			stopLoader();
 			return;
@@ -310,7 +312,7 @@ function scrollToAnchor(anchor){
 		}
 		else{
 				window.scrollTo(0,0);// top scrolling
-				console.log("[scrollToAnchor] anchorId not found in the html");
+				console.log("[scrollToAnchor] anchorId not found in the html: " + anchorId);
 		}
 	stopLoader();
 }
@@ -360,7 +362,7 @@ function loadCommitHistory(btnsToShow) {
 
 		startLoader();
 
-		console.log("[loadCommitHistory] started");
+		console.log("[loadCommitHistory] started. Buttons to show: " + btnsToShow);
 
 		if($("#documento").length < 1){
 			//adjust html style and structure
@@ -547,7 +549,7 @@ $(document).on('click', 'a[href^="#"]', function(e) {
 		// top position relative to the document
 		var pos = $id.offset().top - 55;
 
-		console.log("[TOC link click] pos= " + pos);
+		console.log("[TOC link click] position: " + pos);
 
 		// animated top scrolling
 		$('body, html').animate({
