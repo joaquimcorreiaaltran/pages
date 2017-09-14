@@ -387,7 +387,6 @@ function loadToc(mdFile, elementId) {
 
 	showToc();
 
-	var anchor = elementId;
 	elementId = "#" + elementId;
 
 	if ($(elementId).length) {
@@ -399,6 +398,8 @@ function loadToc(mdFile, elementId) {
 											"<ul>";
 
 		var toc="", newLine, el, title, link, a, i, sectionURL;
+
+		var docTitle = $("article h1").html;
 
 		//chose the HTML elements to include in the Table of Content
 		$("article h2,h3,h4").each(function() {
@@ -412,9 +413,10 @@ function loadToc(mdFile, elementId) {
 				a.attr('href', link);
 				el.prepend(a);
 
-				sectionURL = location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor;
+				sectionURL = location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + el.attr("id");
 				i = $("<a title='Partilhar esta secção do documento' " +
-				"href='mailto:?Subject=SPMS|SICC|Partilha%20de%20documento%20online&body="+sectionURL+"' target='_top'>" +
+								"href='mailto:?Subject=SPMS|SICC|Partilha%20do%20documento%20online%20"+docTitle+
+								"&body=\n\n\n\nDocumento:"+docTitle+".\n\nEndereço de acesso: "+sectionURL+".' target='_top'>" +
 								"<i class='fa fa-share-alt fa-fw'></i>" +
 							"</a>");
 
