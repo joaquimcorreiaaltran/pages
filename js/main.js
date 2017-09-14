@@ -413,8 +413,10 @@ function loadToc(mdFile, elementId) {
 				el.prepend(a);
 
 				sectionURL = location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor;
-				i = $("<i class='fa fa-share-alt fa-fw' aria-hidden='true' alt='Partilhar esta secção do documento " +
-										"title='Partilhar esta secção do documento' onclick=shareDoc("+ sectionURL +")'></i>");
+				i = $("<a title='Partilhar esta secção do documento' " +
+				"href='mailto:?Subject=SPMS|SICC|Partilha%20de%20documento%20online&body="+sectionURL+"' target='_top'>" +
+								"<i class='fa fa-share-alt fa-fw'></i>" +
+							"</a>");
 
 				el.append(i);
 
@@ -454,10 +456,6 @@ function loadToc(mdFile, elementId) {
 	stopLoader();
 
 } /*builds toc*/
-
-function shareDoc (url){
-	window.open("mailto:someone@example.com?Subject=Hello%20again", target="_top");
-}
 
 function showToc() {
 	$(".dropdown-content").toggleClass("show");
