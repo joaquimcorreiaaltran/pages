@@ -416,7 +416,7 @@ function loadToc(mdFile, elementId) {
 				sectionURL = location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + el.attr("id");
 				i = $("<a title='Partilhar esta secção do documento' " +
 								"href='mailto:?Subject=SPMS|SICC|Partilha%20do%20documento%20online%20"+docTitle+
-								"&body=\n\n\n\nDocumento:"+docTitle+".\n\nEndereço de acesso: "+sectionURL+".' target='_top'>" +
+								"&body=%0A%0ADocumento:"+docTitle+".%0A%0AEndereço de acesso: "+sectionURL+".' target='_top'>" +
 								"<i class='fa fa-share-alt fa-fw'></i>" +
 							"</a>");
 
