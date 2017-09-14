@@ -193,7 +193,7 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 
 						zommClickImagem();
 						responsiveTable();
-						loadToc("tocDropdown");
+						loadToc(mdFile, "tocDropdown");
 
 						if(anchor.length > 1){
 							setTimeout( function(){ scrollToAnchor(mdFile, anchor); }, 2500);
@@ -383,10 +383,11 @@ function loadCommitHistory(btnsToShow) {
 
 } /*loadCommitHistory()*/
 
-function loadToc(elementId) {
+function loadToc(mdFile, elementId) {
 
 	showToc();
 
+	var anchor = elementId;
 	elementId = "#" + elementId;
 
 	if ($(elementId).length) {
@@ -397,7 +398,7 @@ function loadToc(elementId) {
 										"<nav role='navigation' class='table-of-contents'>" +
 											"<ul>";
 
-		var toc="", newLine, el, title, link;
+		var toc="", newLine, el, title, link, a, i, sectionURL;
 
 		//chose the HTML elements to include in the Table of Content
 		$("article h2,h3,h4").each(function() {
@@ -407,9 +408,15 @@ function loadToc(elementId) {
 				title = el.text();
 				nodeName = el.get(0).nodeName.toLowerCase();
 
-				var a = $('<a><i class="fa fa-link fa-fw"></i></a>');
+				a = $('<a></a>');
 				a.attr('href', link);
-				el.append(a);
+				el.prepend(a);
+
+				sectionURL = location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor;
+				i = $("<i class='fa fa-share-alt fa-fw' aria-hidden='true' alt='Partilhar esta secção do documento " +
+										"title='Partilhar esta secção do documento' onclick=shareDoc("+ sectionURL +")'></i>");
+
+				el.append(i);
 
 				newLine = "<li><a class='toc_" + nodeName + "' href='" + link + "'>" + title + "</a></li>";
 
@@ -447,6 +454,10 @@ function loadToc(elementId) {
 	stopLoader();
 
 } /*builds toc*/
+
+function shareDoc (url){
+	window.open("mailto:someone@example.com?Subject=Hello%20again", target="_top");
+}
 
 function showToc() {
 	$(".dropdown-content").toggleClass("show");
@@ -497,7 +508,7 @@ $(document).on('click', 'a[href^="#"]', function(e) {
 		// top position relative to the document
 		var pos = $id.offset().top - 55;
 
-		console.log("[TOC link click] position: " + pos);
+		//console.log("[TOC link click] position: " + pos);
 
 		// animated top scrolling
 		$('body, html').animate({

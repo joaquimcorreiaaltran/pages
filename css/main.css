@@ -222,15 +222,15 @@ margin-top:1.3em;
 text-align:left
 }
 
-article a>i.fa{
-  color:grey !important;
+article i.fa{
+  color:grey;
   font-size: 0.5em;
-  vertical-align: top;
-
+  vertical-align: top
 }
 
-article a>i.fa:hover{
-  color:blue !important;
+article i.fa:hover{
+  color:#29615D;
+  cursor:pointer
 }
 
 
