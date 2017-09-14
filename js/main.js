@@ -194,6 +194,7 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 						zommClickImagem();
 						responsiveTable();
 						loadToc(mdFile, "tocDropdown");
+						addSharelink(mdFile);
 
 						if(anchor.length > 1){
 							setTimeout( function(){ scrollToAnchor(mdFile, anchor); }, 2500);
@@ -383,6 +384,30 @@ function loadCommitHistory(btnsToShow) {
 
 } /*loadCommitHistory()*/
 
+
+function addSharelink(mdFile){
+
+	var el, href, i, docURL, docTitle = $("article h1").html();
+
+	docURL = location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile;
+
+	$("article h1").each(function() {
+
+			el = $(this);
+
+			href = encodeURI("mailto:?Subject=SPMS|SICC|Partilha de documentação: "+docTitle+
+							"&body=\n\nDocumento: " + docTitle + ".\n\nEndereço: " + docURL);
+
+			i = $("<a title='Partilhar este documento' href='" + href + "' target='_top'>" +
+							"<i class='fa fa-share-alt fa-fw'></i>" +
+						"</a>");
+
+			el.append(i);
+	});
+
+}
+
+
 function loadToc(mdFile, elementId) {
 
 	showToc();
@@ -393,28 +418,11 @@ function loadToc(mdFile, elementId) {
 
 		$(elementId).html("");
 
+		var toc="", newLine, el, title, link;
+
 		var toc_top_html =	"<i id='drag1' title='Arraste-me...' class='fa fa-arrows fa-fw' style='cursor: move;'></i>" +
 										"<nav role='navigation' class='table-of-contents'>" +
 											"<ul>";
-
-		var toc="", newLine, el, title, link, a, i, docURL, href, docTitle = $("article h1").html();
-
-		docURL = location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile;
-
-
-		$("article h1").each(function() {
-
-				el = $(this);
-
-				href = encodeURI("mailto:?Subject=SPMS|SICC|Partilha de documentação: "+docTitle+
-								"&body=\n\nDocumento: " + docTitle + ".\n\nEndereço: " + docURL);
-
-				i = $("<a title='Partilhar este documento' href='" + href + "' target='_top'>" +
-								"<i class='fa fa-share-alt fa-fw'></i>" +
-							"</a>");
-
-				el.append(i);
-		});
 
 		//chose the HTML elements to include in the Table of Content
 		$("article h2,h3,h4").each(function() {
@@ -424,16 +432,10 @@ function loadToc(mdFile, elementId) {
 				title = el.text();
 				nodeName = el.get(0).nodeName.toLowerCase();
 
-				a = $('<a></a>');
-				a.attr('href', link);
-				el.prepend(a);
-
 				newLine = "<li><a class='toc_" + nodeName + "' href='" + link + "'>" + title + "</a></li>";
 
 				toc += newLine;
 			});
-
-
 
 		toc_bottom_html = "</ul>" + "</nav>" + "<div><i id='drag2' title='Arraste-me...' class='fa fa-arrows fa-fw' style='cursor: move;'></i></div>";
 
@@ -446,8 +448,6 @@ function loadToc(mdFile, elementId) {
 		}
 
 		//console.log("[loadToc] $(" + elementId + ").html:\n\n" + $(elementId).html());
-
-
 
 		/*Dependency: jquery-ui.js*/
 		if ($("#tocDropdown").length) {
