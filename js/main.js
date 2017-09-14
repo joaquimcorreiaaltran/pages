@@ -262,7 +262,9 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 							setTimeout( function(){ scrollToAnchor(mdFile, anchor); }, 2500);
 						}
 						else{
-							history.pushState(stateObj, "SICC - Documentação", location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor);
+							var url = location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor;
+							history.pushState(stateObj, "SICC - Documentação", url);
+							console.log("[convertMdToHtml] Adicionada entrada no histórico: " + url);
 						}
 						console.log("[convertMdToHtml] Query string: " + window.location.search);
 						stopLoader();
