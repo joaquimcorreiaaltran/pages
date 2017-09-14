@@ -397,9 +397,24 @@ function loadToc(mdFile, elementId) {
 										"<nav role='navigation' class='table-of-contents'>" +
 											"<ul>";
 
-		var toc="", newLine, el, title, link, a, i, sectionURL;
+		var toc="", newLine, el, title, link, a, i, docURL, href, docTitle = $("article h1").html();
 
-		var docTitle = $("article h1").html;
+		docURL = location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile;
+
+
+		$("article h1").each(function() {
+
+				el = $(this);
+
+				href = encodeURI("mailto:?Subject=SPMS|SICC|Partilha de documentação: "+docTitle+
+								"&body=\n\nDocumento: " + docTitle + ".\n\nEndereço: " + docURL);
+
+				i = $("<a title='Partilhar este documento' href='" + href + "' target='_top'>" +
+								"<i class='fa fa-share-alt fa-fw'></i>" +
+							"</a>");
+
+				el.append(i);
+		});
 
 		//chose the HTML elements to include in the Table of Content
 		$("article h2,h3,h4").each(function() {
@@ -413,19 +428,12 @@ function loadToc(mdFile, elementId) {
 				a.attr('href', link);
 				el.prepend(a);
 
-				sectionURL = location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + el.attr("id");
-				i = $("<a title='Partilhar esta secção do documento' " +
-								"href='mailto:?Subject=SPMS|SICC|Partilha%20do%20documento%20online%20"+docTitle+
-								"&body=%0A%0ADocumento:"+docTitle+".%0A%0AEndereço de acesso: "+sectionURL+".' target='_top'>" +
-								"<i class='fa fa-share-alt fa-fw'></i>" +
-							"</a>");
-
-				el.append(i);
-
 				newLine = "<li><a class='toc_" + nodeName + "' href='" + link + "'>" + title + "</a></li>";
 
 				toc += newLine;
 			});
+
+
 
 		toc_bottom_html = "</ul>" + "</nav>" + "<div><i id='drag2' title='Arraste-me...' class='fa fa-arrows fa-fw' style='cursor: move;'></i></div>";
 
