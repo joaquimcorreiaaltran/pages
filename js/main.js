@@ -23,8 +23,6 @@ blockRightClick = true;
 /*Carregar documento através de parametros no URL (queryString)*/
 function loadContent(){
 
-	//var fullURL = window.location.href; // Returns full URL
-
 	 var qs = window.location.search; //Get QueryString
 
 	 console.log("[loadContent] Query string (1): " + qs);
@@ -59,7 +57,6 @@ function loadContent(){
 
 									loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnShowToc','tocDropdown'], anchor);
 
-									//to-do: chamar loadIframe se for um PDF ou ppt
 									//to-do: chamar loadICommitHistory se for um PDF ou pptx
 							}
 							else{
@@ -185,16 +182,14 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 				//console.log("[convertMdToHtml] sucess");
 	})
 		.done(function(data) {
-		    console.log("[convertMdToHtml] mdFile \"" + mdFile + "\"  loaded");
+		    //console.log("[convertMdToHtml] mdFile \"" + mdFile + "\"  loaded");
 
 				//declara 3 variáveis: converter, data e a html. A variável html irá conter o ficheiro markdown convertido em HTML.
 				var converter = new showdown.Converter(),	data2, html = converter.makeHtml(data);
 
-				console.log("[convertMdToHtml] mdFile  \"" + mdFile + "\"  converted to HTML!");
+				//console.log("[convertMdToHtml] mdFile  \"" + mdFile + "\"  converted to HTML!");
 
 				$("#" + elementId).html(html).promise().done(function(){
-
-						var stateObj = { foo: "bar" };
 
 						zommClickImagem();
 						responsiveTable();
@@ -204,11 +199,10 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 							setTimeout( function(){ scrollToAnchor(mdFile, anchor); }, 2500);
 						}
 						else{
-							var url = location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor;
+							var stateObj = { foo: "bar" } ,url =  location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor;
 							history.pushState(stateObj, "SICC - Documentação", url);
-							console.log("[convertMdToHtml] Adicionada entrada no histórico: " + url);
+							//console.log("[convertMdToHtml] Adicionada entrada no histórico: " + url);
 						}
-						console.log("[convertMdToHtml] Query string: " + window.location.search);
 						stopLoader();
 				});
 				stopLoader();
@@ -217,13 +211,13 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 				console.log("[convertMdToHtml] Error on document loading. The file \"" + mdFile + "\" exists in the markdown folder?");
 				loadIndexContent(['btnMenu']);
 				stopLoader();
-	})
+	});
 
 } /*close convertMdToHtml()*/
 
 function tipoObj( obj ) {
 		return ({}).toString.call(obj).match(/\s([a-zA-Z]+)/)[1].toLowerCase()
-	}
+}
 
 function scrollToAnchor(mdFile, anchor){
 
@@ -399,12 +393,11 @@ function loadToc(elementId) {
 
 		$(elementId).html("");
 
-		var toc_html =
-			"<i id='drag1' title='Arraste-me...' class='fa fa-arrows fa-fw' style='cursor: move;'></i>" +
-				"<nav role='navigation' class='table-of-contents'>" +
-					"<ul>";
+		var toc_top_html =	"<i id='drag1' title='Arraste-me...' class='fa fa-arrows fa-fw' style='cursor: move;'></i>" +
+										"<nav role='navigation' class='table-of-contents'>" +
+											"<ul>";
 
-		var newLine, el, title, link;
+		var toc="", newLine, el, title, link;
 
 		//chose the HTML elements to include in the Table of Content
 		$("article h2,h3,h4").each(function() {
@@ -414,20 +407,28 @@ function loadToc(elementId) {
 				title = el.text();
 				nodeName = el.get(0).nodeName.toLowerCase();
 
+				var a = $('<a><i class="fa fa-link fa-fw"></i></a>');
+				a.attr('href', link);
+				el.append(a);
+
 				newLine = "<li><a class='toc_" + nodeName + "' href='" + link + "'>" + title + "</a></li>";
 
-				toc_html += newLine;
+				toc += newLine;
 			});
 
-		toc_html += "</ul>" + "</nav>" + "<div><i id='drag2' title='Arraste-me...' class='fa fa-arrows fa-fw' style='cursor: move;'></i></div>";
+		toc_bottom_html = "</ul>" + "</nav>" + "<div><i id='drag2' title='Arraste-me...' class='fa fa-arrows fa-fw' style='cursor: move;'></i></div>";
 
-		$(elementId).html(toc_html);
-
-		console.log("[loadToc] $(" + elementId + ").html:\n\n" + $(elementId).html());
-
-		if (!$(elementId).hasClass("show")) {
+		if ( toc.length > 1 && !$(elementId).hasClass("show")) {
+			$(elementId).html(toc_top_html + toc + toc_bottom_html);
 			showToc();
 		}
+		else{
+			$(elementId).removeClass("show");
+		}
+
+		//console.log("[loadToc] $(" + elementId + ").html:\n\n" + $(elementId).html());
+
+
 
 		/*Dependency: jquery-ui.js*/
 		if ($("#tocDropdown").length) {
