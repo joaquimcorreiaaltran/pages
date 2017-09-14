@@ -231,10 +231,9 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 
 	if (elementId == undefined || mdFile.length < 1) {
 		elementId = "documento";
-		console.log("[convertMdToHtml] elementId = \"documento\";");
 	}
 
-	console.log("[convertMdToHtml] elementId: " + elementId + " |\nmdFile" + mdFile);
+	console.log("[convertMdToHtml] elementId: " + elementId + "\n[convertMdToHtml] mdFile: " + mdFile);
 
 	//Vai buscar o ficheiro markdown ao diretório ./markdown/
 	$.get('./markdown/' + mdFile + '.md', function() {
@@ -263,7 +262,7 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 						else{
 							history.pushState(stateObj, "SICC - Documentação", location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor); //+ mdFile);
 						}
-						console.log();("[convertMdToHtml] Query string: " + window.location.search);
+						console.log("[convertMdToHtml] Query string: " + window.location.search);
 						stopLoader();
 				});
 				stopLoader();
@@ -284,8 +283,6 @@ function scrollToAnchor(anchor){
 
 	startLoader();
 	var anchorId;
-
-
 
 	try {
 			$(anchorId);
