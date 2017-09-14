@@ -259,7 +259,7 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 						loadToc("tocDropdown");
 
 						if(anchor.length > 1){
-							setTimeout( function(){ scrollToAnchor(mdFile, anchor); }, 2000);
+							setTimeout( function(){ scrollToAnchor(mdFile, anchor); }, 2500);
 						}
 						else{
 							history.pushState(stateObj, "SICC - Documentação", location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor);
