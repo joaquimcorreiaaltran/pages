@@ -285,14 +285,16 @@ function scrollToAnchor(anchor){
 	startLoader();
 	var anchorId;
 
-	if(anchor.length > 1){
-		anchorId = '#' + anchor;
-	}
+
 
 	try {
-			$(anchorId)
+			$(anchorId);
+
+			if(anchor.length > 1){
+				anchorId = '#' + anchor;
+			}
 		} catch(e) {
-			alert('Your URL anchor parameter is invalid'); 
+			console.log('[scrollToAnchor] Your URL anchor parameter is invalid');
 		}
 
 	if ($(anchorId).length) {
