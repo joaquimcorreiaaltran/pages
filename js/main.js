@@ -131,7 +131,8 @@ function loadIndexContent(btnsToShow) {
 	})
 	.always(function(){
 			window.scrollTo(0,0);
-			history.replaceState(null, "SICC Documentação - página inicial", location.href.split("?")[0]);
+			var stateObj = { foo: "bar" };
+			history.replaceState(stateObj, "SICC Documentação - página inicial", location.href.split("?")[0]);
 			stopLoader();
 	});
 
@@ -307,6 +308,7 @@ function scrollToAnchor(mdFile, anchor){
 				$('body, html').animate({scrollTop: pos});
 
 				console.log("[scrollToAnchor] anchorId:" + anchorId + "\n$(anchorId).offset().top <-> pos\n" + $(anchorId).offset().top + " <-> " + (pos + 250));
+				var stateObj = { foo: "bar" };
 				history.pushState(stateObj, "SICC - Documentação", location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor);
 				anchor = "";
 		}
