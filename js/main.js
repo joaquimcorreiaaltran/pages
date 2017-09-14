@@ -284,14 +284,17 @@ function scrollToAnchor(anchor){
 	startLoader();
 	var anchorId;
 
+	if(anchor.length > 1){
+		anchorId = '#' + anchor;
+	}
+
 	try {
 			$(anchorId);
-
-			if(anchor.length > 1){
-				anchorId = '#' + anchor;
-			}
 		} catch(e) {
 			console.log('[scrollToAnchor] Your URL anchor parameter is invalid');
+			anchorId = '';
+			stopLoader();
+			return;
 		}
 
 	if ($(anchorId).length) {
