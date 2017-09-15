@@ -52,10 +52,7 @@ function loadContent(){
 												"\n[loadContent] anchor: " + anchor);
 
 							if (doc.length) {
-
 									loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnShowToc','tocDropdown'], anchor, null);
-
-									//to-do: chamar loadICommitHistory se for um PDF ou pptx
 							}
 							else{
 									console.log("[loadContent] Invalid document name: " + doc);
@@ -207,8 +204,6 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 
 				$("#" + elementId).html(html).promise().done(function(){
 
-						zommClickImagem();
-						responsiveTable();
 						loadToc(mdFile, "tocDropdown");
 						addSharelink(mdFile);
 
@@ -216,10 +211,12 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 							setTimeout( function(){ scrollToAnchor(mdFile, anchor); }, 2500);
 						}
 						else{
-							var stateObj = { foo: "bar" } ,url =  location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor;
+							var stateObj = { foo: "bar" } ,url =  location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile;
 							history.pushState(stateObj, "SICC - Documentação", url);
 							//console.log("[convertMdToHtml] Adicionada entrada no histórico: " + url);
 						}
+						responsiveTable();
+						imageZoom();
 						stopLoader();
 				});
 				stopLoader();
@@ -296,16 +293,23 @@ function hideElements() {
 }
 
 // Add zoom functionality to images in the HTML
-function zommClickImagem() {
+function imageZoom() {
 
-	$('#documento img').each(function() {
-			var alt = $(this).attr("alt");
-			$(this).wrap("<a class='imagem' href='" +
-			$(this).attr("src") + "' onclick='return hs.expand(this)'></a>");
-		});
+	var i=0, imgs = $('#documento img');
 
-	console.log("[zommClickImagem] image zoom ready!");
+	if(imgs.length){
+		imgs.each(function() {
+			var img = $(this), alt = img.attr("alt");
+				img.wrap("<a class='imagem' href='" + img.attr("src") +	"' onclick='return hs.expand(this)'></a>");
+				img.attr({
+					'height':img[0]['height']+"px",
+					'width':img[0]['width']+"px"
+				})
+				i++;
+			});
 
+		console.log("[imageZoom] " + imgs.length + " imgs ready for zoom");
+	}
 } /*close zommClickImagem*/
 
 /* Add auto scroll to document tables */
@@ -425,8 +429,6 @@ function addSharelink(mdFile){
 
 function loadToc(mdFile, elementId) {
 
-	showToc();
-
 	elementId = "#" + elementId;
 
 	if ($(elementId).length) {
@@ -454,9 +456,8 @@ function loadToc(mdFile, elementId) {
 
 		toc_bottom_html = "</ul>" + "</nav>" + "<div><i id='drag2' title='Arraste-me...' class='fa fa-arrows fa-fw' style='cursor: move;'></i></div>";
 
-		if ( toc.length > 1 && !$(elementId).hasClass("show")) {
+		if ( toc.length > 1 ) {
 			$(elementId).html(toc_top_html + toc + toc_bottom_html);
-			showToc();
 		}
 		else{
 			$(elementId).removeClass("show");
@@ -516,15 +517,9 @@ $('#tocDropdown').on('click', 'a[href^="#"]', function(e) {
 		// target element id
 		var id = $(this).attr('href');
 
-		console.log('e antes',e + "e.parentElement",e.target.parentElement);
-
 		$('#tocDropdown *').removeClass('active');
 		$(e.target).addClass('active');
 		$(e.target.parentElement).addClass('active');
-
-		console.log('e depois',e);
-
-
 
 		// target element
 		var $id = $(id);
