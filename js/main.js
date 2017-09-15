@@ -343,8 +343,6 @@ function loadCommitHistory(btnsToShow) {
 
 		$("footer").addClass("documentMode");
 
-
-
 	var branch, callback, container, limit, repo, url, username;
 	username = "SPMSSICC";
 	repo = "pages";

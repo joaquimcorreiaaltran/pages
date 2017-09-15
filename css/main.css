@@ -412,6 +412,10 @@ background-color:rgba(236,249,238,.4);
 border-left:5px solid #29615D
 }
 
+.table-of-contents li.active a.toc_h2, .table-of-contents li:active a.toc_h2{
+padding-left:5px
+}
+
 .table-of-contents a:active, .table-of-contents a.active {
 color:#29615D;
 font-weight:700
