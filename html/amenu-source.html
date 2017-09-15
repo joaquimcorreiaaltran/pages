@@ -8,7 +8,7 @@
 <body>
   <div id="accordion">
       <ul>
-           <li id="pagina_inicial" onclick="loadIndexContent(['btnMenu'])">
+           <li id="pagina_inicial" onclick="loadIndexContent(['btnMenu'], event)">
               <div><i class="fa fa-home fa-fw" aria-hidden="true"></i>Página inicial</div>
            </li>
            <li><div id="snc-ap"><i class="fa fa-university fa-fw" aria-hidden="true"></i>SNC-AP</div>
@@ -40,7 +40,7 @@
               <li><div onclick="loadMdDoc('reposicao_pagamentos_cobrancas',['btnMenu','btnPDF','btnEditarDoc','btnShowToc','tocDropdown'],'')">Reposição a Pagamentos e Cobranças</a></div></li>
             </ul><!--Manual de Utilizador-->
         <li id="historico_atualizacoes">
-           <div onclick="loadCommitHistory(['btnMenu'])"><i onclick="loadCommitHistory(['btnMenu'])" class="fa fa-list fa-fw" aria-hidden="true"></i>Histórico de atualizações</a></div>
+           <div onclick="loadCommitHistory(['btnMenu'], event)"><i onclick="loadCommitHistory(['btnMenu'], event)" class="fa fa-list fa-fw" aria-hidden="true"></i>Histórico de atualizações</a></div>
         </li>
         <li>
           <a href="http://redmine.min-saude.pt/projects/spms-siccv1/wiki/Requisitos_de_Seguran%C3%A7a_de_Utiliza%C3%A7%C3%A3o_SICC" target="_blank" rel="noopener"><i class="fa fa-external-link fa-fw" aria-hidden="true"></i>Requisitos</a>

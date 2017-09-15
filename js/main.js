@@ -59,7 +59,7 @@ function loadContent(){
 							}
 							else{
 									console.log("[loadContent] Invalid document name: " + doc);
-									loadIndexContent(["btnMenu"]);
+									loadIndexContent(["btnMenu"], event);
 									stopLoader();
 							}
 					}
@@ -67,13 +67,13 @@ function loadContent(){
 	else if ( qs.length <= 1  ) {
 
 				console.log("[loadContent] Query string not detected/not valid: " + qs);
-				loadIndexContent(["btnMenu"]);
+				loadIndexContent(["btnMenu"], event);
 				stopLoader();
 
 	}/*close else if*/
 	else{
 		console.log("[loadContent] Erro. window.location.href: " + window.location.href);
-		loadIndexContent(["btnMenu"]);
+		loadIndexContent(["btnMenu"], event);
 		stopLoader();
 	}
 }
@@ -101,7 +101,7 @@ function stopLoader(){
 		}
 }
 
-function loadIndexContent(btnsToShow) {
+function loadIndexContent(btnsToShow, event) {
 
 	//console.log("[loadIndexContent] btnsToShow: ", btnsToShow);
 
@@ -119,6 +119,7 @@ function loadIndexContent(btnsToShow) {
 			$("#content").html(data);
 			showElements(btnsToShow);
 			$("footer").removeClass("documentMode");
+			highlightMenuItem(event);
 	})
 	.fail(function(){
 			console.log("[loadIndexContent] Error on loading requested file: " + filePath);
@@ -132,18 +133,26 @@ function loadIndexContent(btnsToShow) {
 
 }
 
-function highlightMenuItem (mdFile, event) {
+function highlightMenuItem (event) {
 	if(event != null){
-			$("#accordion .active").removeClass("active");
-			$(event.target.parentNode).addClass("active");
-			$(event.target.parentNode.children).addClass("active");
+
+			var el;
+			$("#accordion .active").each(function() {
+				el = $(this);
+				if (!el.hasClass('caret')){
+					el.removeClass('active');
+				}
+			});
+
+			$(event.target).parents().addClass("active");
+			$(event.target.parentNode.children).addClass("active")
 	}
 }
 
 function loadMdDoc(mdFile, btnsToShow, anchor, event) {
 
 		startLoader();
-		highlightMenuItem(mdFile, event);
+		highlightMenuItem(event);
 
 		if($("#documento").length < 1){
 				$("body, #content").removeAttr("style"); 																 //adjust html style and structure
@@ -217,7 +226,7 @@ function convertMdToHtml(elementId, mdFile, anchor) {
   })
 		.fail(function() {
 				console.log("[convertMdToHtml] Error on document loading. The file \"" + mdFile + "\" exists in the markdown folder?");
-				loadIndexContent(['btnMenu']);
+				loadIndexContent(['btnMenu'],null);
 				stopLoader();
 	});
 
@@ -330,6 +339,7 @@ function loadCommitHistory(btnsToShow) {
 		$("#documento").html(htmlcontent);
 
 		showElements(btnsToShow);
+		highlightMenuItem(event);
 
 		$("footer").addClass("documentMode");
 
@@ -364,8 +374,9 @@ function loadCommitHistory(btnsToShow) {
 					}
 				})(index, result));
 			}
-			stopLoader();
+
 			window.scrollTo(0,0);
+			stopLoader();
 			//Show an UI message if the request limit to the API was reached
 		} else if (rate_limit_remaining == 0) {
 			stopLoader();
@@ -388,7 +399,6 @@ function loadCommitHistory(btnsToShow) {
 		.done(function(response, textStatus, jqXHR) {
 			return callback(response, textStatus, jqXHR);
 		});
-
 } /*loadCommitHistory()*/
 
 
