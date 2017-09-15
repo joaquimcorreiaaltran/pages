@@ -337,12 +337,6 @@ padding-left:.5em;
 transition:all .3s ease-out
 }
 
-#tocDropdown h2 {
-line-height:30px;
-margin-bottom:.2em;
-margin-top:.2em
-}
-
 .dropdown-content a {
 border:0;
 color:#656565;
@@ -399,11 +393,26 @@ text-align:left
 text-decoration:none
 }
 
-.table-of-contents li:hover {
-background-color:rgba(236,249,238,.54)
+.table-of-contents a {
+text-decoration:none
 }
 
-.table-of-contents a:active {
+.table-of-contents li:hover {
+background-color:rgba(236,249,238,.8)
+}
+
+.table-of-contents h2 {
+line-height:30px;
+margin-bottom:.2em;
+margin-top:.2em
+}
+
+.table-of-contents li.active, .table-of-contents li:active {
+background-color:rgba(236,249,238,.4);
+border-left:5px solid #29615D
+}
+
+.table-of-contents a:active, .table-of-contents a.active {
 color:#29615D;
 font-weight:700
 }

@@ -132,15 +132,18 @@ function loadIndexContent(btnsToShow) {
 
 }
 
+function highlightMenuItem (mdFile, event) {
+	if(event != null){
+			$("#accordion .active").removeClass("active");
+			$(event.target.parentNode).addClass("active");
+			$(event.target.parentNode.children).addClass("active");
+	}
+}
+
 function loadMdDoc(mdFile, btnsToShow, anchor, event) {
 
 		startLoader();
-
-		if(event != null){
-				$("#accordion .active").removeClass("active");
-				$(event.target.parentNode).addClass("active");
-				$(event.target.parentNode.children).addClass("active");
-		}
+		highlightMenuItem(mdFile, event);
 
 		if($("#documento").length < 1){
 				$("body, #content").removeAttr("style"); 																 //adjust html style and structure
@@ -499,11 +502,21 @@ override standard href-id navigation on page without change HTML markup
 for smooth scrolling
 *********************************************************************/
 
-// handle links with @href started with '#' only
-$(document).on('click', 'a[href^="#"]', function(e) {
+// handle links in the table of contents with @href started with '#' only
+$('#tocDropdown').on('click', 'a[href^="#"]', function(e) {
 
 		// target element id
 		var id = $(this).attr('href');
+
+		console.log('e antes',e + "e.parentElement",e.target.parentElement);
+
+		$('#tocDropdown *').removeClass('active');
+		$(e.target).addClass('active');
+		$(e.target.parentElement).addClass('active');
+
+		console.log('e depois',e);
+
+
 
 		// target element
 		var $id = $(id);
