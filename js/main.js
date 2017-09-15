@@ -136,13 +136,11 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
 
 		startLoader();
 
-		console.log("event:", event.target.parentNode);
-
-		$("#accordion .active").removeClass("active");
-		$(event.target.parentNode).addClass("active");
-		$(event.target.parentNode.children).addClass("active");
-
-
+		if(event.target != null){
+				$("#accordion .active").removeClass("active");
+				$(event.target.parentNode).addClass("active");
+				$(event.target.parentNode.children).addClass("active");
+		}
 
 		if($("#documento").length < 1){
 				$("body, #content").removeAttr("style"); 																 //adjust html style and structure
