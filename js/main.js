@@ -293,16 +293,18 @@ function hideElements() {
 // Add zoom functionality to images in the HTML
 function imageZoom() {
 
-	var i=0, imgs = $('#documento img');
+	var i=0, imgs = $('#documento img'),img;
 
 	if(imgs.length){
 		imgs.each(function() {
-			var img = $(this), alt = img.attr("alt");
-				img.wrap("<a class='imagem' href='" + img.attr("src") +	"' onclick='return hs.expand(this)'></a>");
-				/*img.attr({
-					'height':img[0]['height']+"px",
-					'width':img[0]['width']+"px"
-				})*/
+			img = $(this), alt = img.attr("alt");
+			img.wrap("<a class='imagem' href='" + img.attr("src") +	"' onclick='return hs.expand(this)'></a>");
+
+				// add height and width properties to the img tags
+				/*if(img[0]['height'] > 0 && img[0]['width'] > 0){
+						img.attr({'height':img[0]['height']+"px",'width':img[0]['width']+"px"})
+				}*/
+				//console.log(img);/*+
 				i++;
 			});
 
@@ -348,50 +350,50 @@ function loadCommitHistory(btnsToShow) {
 	var branch, callback, container, limit, repo, url, username;
 	username = "SPMSSICC";
 	repo = "pages";
-
 	container = $('#latest-commits');
+
 	callback = function(response, textStatus, jqXHR) {
-		var index, items, result, ul, _results;
-		// Request limit to the gitHub API per hour
-		var rate_limit = response.meta["X-RateLimit-Limit"];
-		// Requests left to the gitHub API in the current hour
-		var rate_limit_remaining = response.meta["X-RateLimit-Remaining"];
-		var timestamp = Math.abs(new Date() - response.meta["X-RateLimit-Reset"] - new Date());
-		var time_to_reset = new Date(timestamp * 1000);
-		time_to_reset = time_to_reset.getHours() + ":" + time_to_reset.getMinutes();
+			var index, items, result, ul, _results;
+			// Request limit to the gitHub API per hour
+			var rate_limit = response.meta["X-RateLimit-Limit"];
+			// Requests left to the gitHub API in the current hour
+			var rate_limit_remaining = response.meta["X-RateLimit-Remaining"];
+			var timestamp = Math.abs(new Date() - response.meta["X-RateLimit-Reset"] - new Date());
+			var time_to_reset = new Date(timestamp * 1000);
+			time_to_reset = time_to_reset.getHours() + ":" + time_to_reset.getMinutes();
 
-		items = response.data;
-		ul = $('#commit-history');
-		ul.empty();
-		_results = [];
+			items = response.data;
+			ul = $('#commit-history');
+			ul.empty();
+			_results = [];
 
-		if (rate_limit_remaining > 0) {
-			for (index in items) {
-				result = items[index];
-				_results.push((function(index, result) {
-					if (result.author != null) {
-						return ul.append("<li>\n\n <div>\n\n </div>\n <div>\n <b>" + ($.timeago(result.commit.committer.date)) + "</b>: <i>\"" + result.commit.message + "\" </i>(<a href=\"https://github.com/" + username + "/" + repo + "/commit/" + result.sha + "\" target=\"_blank\">ver alterações</a>).<br />\n  </div>\nAutor: <a href=\"https://github.com/" + result.author.login + "\"><b>" + result.author.login + "</b></a>.</li><br />");
-					}
-				})(index, result));
+			if (rate_limit_remaining > 0) {
+				for (index in items) {
+					result = items[index];
+					_results.push((function(index, result) {
+						if (result.author != null) {
+							return ul.append("<li>\n\n <div>\n\n </div>\n <div>\n <b>" + ($.timeago(result.commit.committer.date)) + "</b>: <i>\"" + result.commit.message + "\" </i>(<a href=\"https://github.com/" + username + "/" + repo + "/commit/" + result.sha + "\" target=\"_blank\">ver alterações</a>).<br />\n  </div>\nAutor: <a href=\"https://github.com/" + result.author.login + "\"><b>" + result.author.login + "</b></a>.</li><br />");
+						}
+					})(index, result));
+				}
+
+				window.scrollTo(0,0);
+				stopLoader();
+				//Show an UI message if the request limit to the API was reached
+			} else if (rate_limit_remaining == 0) {
+				stopLoader();
+				return ul.append("<b>Atenção: </b> Não foi possível mostrar as atualizações devido a sobrecarga de pedidos (>" + rate_limit + "/hr), realizados pelo seu atual IP. Pode utilizar outro IP ou voltar a tentar depois das " + time_to_reset + ":59s de hoje. <br /><br />Mensagem do servidor: \"<i>" + response.data.message + "</i>\"");
+			} else {
+				stopLoader();
+				return ul.append("Ops! :( <br /><br /> Ocorreu algo inesperado.");
 			}
-
-			window.scrollTo(0,0);
-			stopLoader();
-			//Show an UI message if the request limit to the API was reached
-		} else if (rate_limit_remaining == 0) {
-			stopLoader();
-			return ul.append("<b>Atenção: </b> Não foi possível mostrar as atualizações devido a sobrecarga de pedidos (>" + rate_limit + "/hr), realizados pelo seu atual IP. Pode utilizar outro IP ou voltar a tentar depois das " + time_to_reset + ":59s de hoje. <br /><br />Mensagem do servidor: \"<i>" + response.data.message + "</i>\"");
-		} else {
-			stopLoader();
-			return ul.append("Ops! :( <br /><br /> Ocorreu algo inesperado.");
-		}
-		return _results;
+			return _results;
 	}; /*callback function*/
 
 	return $.ajax({
-			url: "https://api.github.com/repos/" + username + "/" + repo + "/commits?callback=callback&callback=jQuery171010727564072631068_1487000384850&per_page=10&_=1487000384930",
+			url: "https://api.github.com/repos/" + username + "/" + repo + "/commits?",
 			data: {
-				per_page: "100"
+				per_page: "200"
 			},
 			dataType: "jsonp",
 			type: "GET",
