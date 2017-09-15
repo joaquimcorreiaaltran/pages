@@ -322,6 +322,8 @@ function responsiveTable() {
 //Loads the gitHub repository and insert insert into the HTML
 function loadCommitHistory(btnsToShow) {
 
+		loadFileHistory();//TEST
+
 		startLoader();
 
 		//console.log("[loadCommitHistory] started. Buttons to show: " + btnsToShow);
@@ -347,61 +349,100 @@ function loadCommitHistory(btnsToShow) {
 
 		$("footer").addClass("documentMode");
 
-	var branch, callback, container, limit, repo, url, username;
-	username = "SPMSSICC";
-	repo = "pages";
-	container = $('#latest-commits');
+		var branch, callback, container, limit, repo, url, username;
+		username = "SPMSSICC";
+		repo = "pages";
+		container = $('#latest-commits');
 
-	callback = function(response, textStatus, jqXHR) {
-			var index, items, result, ul, _results;
-			// Request limit to the gitHub API per hour
-			var rate_limit = response.meta["X-RateLimit-Limit"];
-			// Requests left to the gitHub API in the current hour
-			var rate_limit_remaining = response.meta["X-RateLimit-Remaining"];
-			var timestamp = Math.abs(new Date() - response.meta["X-RateLimit-Reset"] - new Date());
-			var time_to_reset = new Date(timestamp * 1000);
-			time_to_reset = time_to_reset.getHours() + ":" + time_to_reset.getMinutes();
+		callback = function(response, textStatus, jqXHR) {
+				var index, items, result, ul, _results;
+				// Request limit to the gitHub API per hour
+				var rate_limit = response.meta["X-RateLimit-Limit"];
+				// Requests left to the gitHub API in the current hour
+				var rate_limit_remaining = response.meta["X-RateLimit-Remaining"];
+				var timestamp = Math.abs(new Date() - response.meta["X-RateLimit-Reset"] - new Date());
+				var time_to_reset = new Date(timestamp * 1000);
+				time_to_reset = time_to_reset.getHours() + ":" + time_to_reset.getMinutes();
 
-			items = response.data;
-			ul = $('#commit-history');
-			ul.empty();
-			_results = [];
+				items = response.data;
+				ul = $('#commit-history');
+				ul.empty();
+				_results = [];
 
-			if (rate_limit_remaining > 0) {
-				for (index in items) {
-					result = items[index];
-					_results.push((function(index, result) {
-						if (result.author != null) {
-							return ul.append("<li>\n\n <div>\n\n </div>\n <div>\n <b>" + ($.timeago(result.commit.committer.date)) + "</b>: <i>\"" + result.commit.message + "\" </i>(<a href=\"https://github.com/" + username + "/" + repo + "/commit/" + result.sha + "\" target=\"_blank\">ver alterações</a>).<br />\n  </div>\nAutor: <a href=\"https://github.com/" + result.author.login + "\"><b>" + result.author.login + "</b></a>.</li><br />");
-						}
-					})(index, result));
+				if (rate_limit_remaining > 0) {
+					for (index in items) {
+						result = items[index];
+						_results.push((function(index, result) {
+							if (result.author != null) {
+								return ul.append("<li>\n\n <div>\n\n </div>\n <div>\n <b>" + ($.timeago(result.commit.committer.date)) + "</b>: <i>\"" + result.commit.message + "\" </i>(<a href=\"https://github.com/" + username + "/" + repo + "/commit/" + result.sha + "\" target=\"_blank\">ver alterações</a>).<br />\n  </div>\nAutor: <a href=\"https://github.com/" + result.author.login + "\"><b>" + result.author.login + "</b></a>.</li><br />");
+							}
+						})(index, result));
+					}
+
+					window.scrollTo(0,0);
+					stopLoader();
+					//Show an UI message if the request limit to the API was reached
+				} else if (rate_limit_remaining == 0) {
+					stopLoader();
+					return ul.append("<b>Atenção: </b> Não foi possível mostrar as atualizações devido a sobrecarga de pedidos (>" + rate_limit + "/hr), realizados pelo seu atual IP. Pode utilizar outro IP ou voltar a tentar depois das " + time_to_reset + ":59s de hoje. <br /><br />Mensagem do servidor: \"<i>" + response.data.message + "</i>\"");
+				} else {
+					stopLoader();
+					return ul.append("Ops! :( <br /><br /> Ocorreu algo inesperado.");
 				}
+				return _results;
+		}; /*callback function*/
 
-				window.scrollTo(0,0);
-				stopLoader();
-				//Show an UI message if the request limit to the API was reached
-			} else if (rate_limit_remaining == 0) {
-				stopLoader();
-				return ul.append("<b>Atenção: </b> Não foi possível mostrar as atualizações devido a sobrecarga de pedidos (>" + rate_limit + "/hr), realizados pelo seu atual IP. Pode utilizar outro IP ou voltar a tentar depois das " + time_to_reset + ":59s de hoje. <br /><br />Mensagem do servidor: \"<i>" + response.data.message + "</i>\"");
-			} else {
-				stopLoader();
-				return ul.append("Ops! :( <br /><br /> Ocorreu algo inesperado.");
-			}
-			return _results;
-	}; /*callback function*/
+		return $.ajax({
+				url: "https://api.github.com/repos/" + username + "/" + repo + "/commits?",
+				data: {
+					per_page: "200"
+				},
+				dataType: "jsonp",
+				type: "GET",
+			})
+			.done(function(response, textStatus, jqXHR) {
+				return callback(response, textStatus, jqXHR);
+			});
 
-	return $.ajax({
-			url: "https://api.github.com/repos/" + username + "/" + repo + "/commits?",
-			data: {
-				per_page: "200"
-			},
-			dataType: "jsonp",
-			type: "GET",
-		})
-		.done(function(response, textStatus, jqXHR) {
-			return callback(response, textStatus, jqXHR);
-		});
+
 } /*loadCommitHistory()*/
+
+
+function loadFileHistory(){
+
+/**************************************
+	https://api.github.com/repos/SPMSSICC/pages/commits?path=markdown/menus.md
+*************************************/
+
+var ext = '.md';
+var file = 'menus';
+
+var branch, callback, container, limit, repo, url, username;
+username = "SPMSSICC";
+repo = "pages";
+container = $('#latest-commits');
+
+callback = function(response, textStatus, jqXHR) {
+
+	console.log("aquiB");
+
+	console.log(response);
+
+}; /*callback function*/
+
+		return $.ajax({
+				url: "https://api.github.com/repos/SPMSSICC/pages/commits?path=markdown/"+file+ext,
+				data: {
+					per_page: "200"
+				},
+				dataType: "jsonp",
+				type: "GET",
+			})
+			.done(function(response, textStatus, jqXHR) {
+				console.log("aquiA");
+				return callback(response, textStatus, jqXHR);
+			});
+}
 
 
 function addSharelink(mdFile){
