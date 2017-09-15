@@ -53,7 +53,7 @@ function loadContent(){
 
 							if (doc.length) {
 
-									loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnShowToc','tocDropdown'], anchor);
+									loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnShowToc','tocDropdown'], anchor, null);
 
 									//to-do: chamar loadICommitHistory se for um PDF ou pptx
 							}
@@ -132,9 +132,17 @@ function loadIndexContent(btnsToShow) {
 
 }
 
-function loadMdDoc(mdFile, btnsToShow, anchor) {
+function loadMdDoc(mdFile, btnsToShow, anchor, event) {
 
 		startLoader();
+
+		console.log("event:", event.target.parentNode);
+
+		$("#accordion .active").removeClass("active");
+		$(event.target.parentNode).addClass("active");
+		$(event.target.parentNode.children).addClass("active");
+
+
 
 		if($("#documento").length < 1){
 				$("body, #content").removeAttr("style"); 																 //adjust html style and structure
@@ -486,22 +494,7 @@ window.onclick = function(event) {
 	if (!event.target.matches('.dropdown, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, #accordion *, #btnShowToc') && $("#btnMenu").hasClass("showMenu")) {
 		showMenu();
 	}
-
 };
-
-document.body.onclick = function(event) {
-
-	if (event.target.matches('#accordion div, #accordion li, #accordion ul')) {
-
-		$('#accordion div, #accordion li, #accordion ul, #accordion *').removeClass('active');
-
-			console.log("event", $(event.target));
-
-			$(event.target).addClass('active');
-	}
-
-};
-
 
 /*********************************************************************
 override standard href-id navigation on page without change HTML markup
