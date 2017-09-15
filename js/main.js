@@ -136,7 +136,7 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
 
 		startLoader();
 
-		if(event.target != null){
+		if(event != null){
 				$("#accordion .active").removeClass("active");
 				$(event.target.parentNode).addClass("active");
 				$(event.target.parentNode.children).addClass("active");
