@@ -27,8 +27,6 @@ function loadContent(){
 
 	 //console.log("[loadContent] Query string (1): " + qs);
 
-	// qs = "?doc=menus&anchor=#225-responsáveis"; // TEST
-
 	if ( qs.indexOf("=") != -1 ){
 
 					//console.log("[loadContent] Query string (2): " + qs);
@@ -301,10 +299,10 @@ function imageZoom() {
 		imgs.each(function() {
 			var img = $(this), alt = img.attr("alt");
 				img.wrap("<a class='imagem' href='" + img.attr("src") +	"' onclick='return hs.expand(this)'></a>");
-				img.attr({
+				/*img.attr({
 					'height':img[0]['height']+"px",
 					'width':img[0]['width']+"px"
-				})
+				})*/
 				i++;
 			});
 
