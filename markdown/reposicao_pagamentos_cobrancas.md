@@ -10,13 +10,13 @@ Sempre que seja detetado um pagamento / recebimento indevido, deverá proceder �
 
 ## 2. Reposição Abatida aos Pagamentos
 
-![img_1.png](https://spmssicc.github.io/pages/markdown/reposicao_pagamentos_cobrancas.assets/img_1.webp)
+![img_1](https://spmssicc.github.io/pages/markdown/reposicao_pagamentos_cobrancas.assets/img_1.webp)
 
 
 As reposições abatidas nos pagamentos são todas as importâncias que abatem aos pagamentos realizados, libertando as dotações correspondentes, e têm as seguintes características comuns:
 A existência de uma reposição abatida pressupõe que houve um pagamento excessivo em relação a uma determinada aquisição, cuja regularização é efetuada, no respetivo ano financeiro, através da correção da dotação utilizada e do respetivo saldo disponível, aumentando-o. Decorre deste entendimento que a reposição abatida aos pagamentos não seja tida como uma receita orçamental.
 
-![img_2.png](https://spmssicc.github.io/pages/markdown/reposicao_pagamentos_cobrancas.assets/img_2.webp)
+![img_2](https://spmssicc.github.io/pages/markdown/reposicao_pagamentos_cobrancas.assets/img_2.webp)
 
 **Legenda:**
 1. Esta corresponde a um documento (nota de crédito ou similar) emitida por um fornecedor, que tem associado o compromisso que deu origem ao pagamento indevido e que reflete o respetivo crédito;
@@ -29,35 +29,35 @@ A existência de uma reposição abatida pressupõe que houve um pagamento exces
 Estas operações abatem aos pagamentos realizados, libertando as dotações correspondentes. Trata-se da situação que ocorre com as entregas de fundos relativas a pagamentos em excesso ou indevidos, ocorridos no ano em curso.
 
 Desta forma, no menu:
-![img_3.png](https://spmssicc.github.io/pages/markdown/reposicao_pagamentos_cobrancas.assets/img_3.webp)
+![img_3](https://spmssicc.github.io/pages/markdown/reposicao_pagamentos_cobrancas.assets/img_3.webp)
 
 Este mesmo registo de reposição pagamento poderá ser efetuado por uma das seguintes contas: 3\*,4\*,6\* ou 7\*.
 
-![img_4.png](https://spmssicc.github.io/pages/markdown/reposicao_pagamentos_cobrancas.assets/img_4.webp)
+![img_4](https://spmssicc.github.io/pages/markdown/reposicao_pagamentos_cobrancas.assets/img_4.webp)
 
-![img_5.png](https://spmssicc.github.io/pages/markdown/reposicao_pagamentos_cobrancas.assets/img_5.webp)
+![img_5](https://spmssicc.github.io/pages/markdown/reposicao_pagamentos_cobrancas.assets/img_5.webp)
 
 Desta forma e para a despesa, o sistema SICC, identifica os documentos quando se efetuar o CE (automaticamente), no entanto demonstram-se os respetivos lançamentos:
 
-![img_6.png](https://spmssicc.github.io/pages/markdown/reposicao_pagamentos_cobrancas.assets/img_6.webp)
+![img_6](https://spmssicc.github.io/pages/markdown/reposicao_pagamentos_cobrancas.assets/img_6.webp)
 
 NC – O processo de lançamento de uma Reposição de pagamento, é bastante similar a uma Nota de crédito convencional. Desta forma, todas as contas 2\* (exceto a 25\*) são movimentadas a débito, por contrapartida das contas 3\*, 4\*, 5\*, 6\*, 7\*.
 
 **Movimentação Contabilística: Lançar Nota de Crédito (doc. NC)**
 
-![img_7.png](https://spmssicc.github.io/pages/markdown/reposicao_pagamentos_cobrancas.assets/img_7.webp)
+![img_7](https://spmssicc.github.io/pages/markdown/reposicao_pagamentos_cobrancas.assets/img_7.webp)
 
 CE – Na altura do lançamento do CE, a informação é proveniente do criado anteriormente na NC, sendo que a conta 2*passa a crédito e a conta 2529* a débito, com o classificador e económico e chave orçamental associado à conta 3\*, 4\*, 5\*, 6\*, 7\* gerado anteriormente.
 
-![img_8.png](https://spmssicc.github.io/pages/markdown/reposicao_pagamentos_cobrancas.assets/img_8.webp)
+![img_8](https://spmssicc.github.io/pages/markdown/reposicao_pagamentos_cobrancas.assets/img_8.webp)
 
 **Movimentação Contabilística: Liquidação da RAP (doc. CE)**
 
-![img_9.png](https://spmssicc.github.io/pages/markdown/reposicao_pagamentos_cobrancas.assets/img_9.webp)
+![img_9](https://spmssicc.github.io/pages/markdown/reposicao_pagamentos_cobrancas.assets/img_9.webp)
 
 Finda a etapa, deve o utilizador confirmar a criação do CE e passar para o nível seguinte:
 
-![img_10.png](https://spmssicc.github.io/pages/markdown/reposicao_pagamentos_cobrancas.assets/img_10.webp)
+![img_10](https://spmssicc.github.io/pages/markdown/reposicao_pagamentos_cobrancas.assets/img_10.webp)
 
 AP - Neste passo, pode-se efetuar a confirmação sem associar a fatura, pelo facto de se tratar de uma Reposição abatida aos pagamentos. Desta forma, todos os lançamentos aqui demonstrados, são provenientes da CE. Este movimento não é refletido na contabilidade. O valor deste documento será negativo.
 
