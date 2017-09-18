@@ -806,43 +806,40 @@ A autorização de pagamento das despesas, são autorizadas pelos dirigentes dos
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-a2995da1.png)
 
-Neste processo, o utilizador terá de identificar a entidade e os documentos que dela fazem parte, bem como atribuir um nº de autorização. O não preenchimento deste ultimo, determina que a numeração seja automática. Ao exemplo do anterior, terá de dar duplo clique na linha que contém os elementos para a mesma subir ao nível seguinte.
+Neste processo, o utilizador terá de identificar a entidade e os documentos que dela fazem parte, bem como atribuir um nº de autorização. O não preenchimento deste último, determina que a numeração seja automática. Ao exemplo do anterior, terá de dar duplo clique na linha que contém os elementos para a mesma subir ao nível seguinte.
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-f3ce9222.png)
 
-O utilizador define também se o pagamento é efetuado por tesouraria ou por Transf. Bancária, sendo que para este último caso tem de selecionar qual a Instituição bancária.
+O utilizador define também se o pagamento é efetuado por tesouraria ou por Transf. Bancária, sendo que para este último caso tem de selecionar qual a Instituição Bancária.
 
-_(Imagem em atualização)_
-![img_133.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_133.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-519d916a.png)
 
 |Campo|Descrição|
 |:---|:---|
-|NIB/IBAN|Este campo dá a hipótese do utilizador escolher se é um NIB ou um IBAN, aparecendo as seguintes opções: ![img_nib_credor.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_nib_credor.png)|
+|NIB/IBAN|Este campo dá a hipótese do utilizador escolher se é um IBAN Credor ou _Factoring_, aparecendo as seguintes opções: ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-4a09e554.png)|
 |Motivo|O motivo deverá igualmente ser escolhido dentro das parametrizações inseridas em sistema: ![img_secu_pag_igcp.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_secu_pag_igcp.png)|
 
-Para o exemplo, escolhemos um IBAN, sendo que para este caso é sempre obrigatório colocar um motivo. Deve o utilizador confirmar para dar continuidade à AP.
+Para o exemplo, escolhemos IBAN Credor, sendo que para este caso é sempre obrigatório colocar um motivo. Deve o utilizador, seguidamente, confirmar para dar continuidade à AP.
 
-_(Imagem em atualização)_
-![img_134.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_134.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-5242482a.png)
 
-Ao confirmar, uma nova janela surge com os movimentos contabilísticos associados. Caso estejam corretos, novamente o utilizador terá de confirmar para finalizar o processo.
+Ao confirmar, uma nova janela surge com os movimentos contabilísticos associados. Caso estejam corretos, o utilizador terá de confirmar para finalizar o processo.
 
-_(Imagem em atualização)_
-![img_135.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_135.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-396a3f91.png)
 
 ##### Impressão de Autorizações de Pagamento (AP)
 
 Nesta etapa, é demonstrado o procedimento para fazer as impressões das AP’s (de forma _individual_ ou _global_) geradas no passo anterior. Para isso, deve o utilizador seguir o seguinte caminho no sistema:
 
-![img_139.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_139.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-97b60cbd.png)
 
 _Individual_
 
 Deve o utilizador, escolher a entidade da qual pretende extrair a Autorização de Pagamento.
 
-![img_140.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_140.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-19178dba.png)
 
-__O utilizador tem de selecionar sempre os documentos que deseja, sejam para consulta ou impressão através da colocação de ![img_checkbox_checked.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_checkbox_checked.png) no ecrã.__
+__O utilizador tem de selecionar SEMPRE os documentos que deseja, sejam para consulta ou impressão através da colocação de ![img_checkbox_checked.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_checkbox_checked.png) no ecrã.__
 
 _Global_
 
@@ -850,7 +847,7 @@ O utilizador tem a possibilidade de definir um intervalo, com a possibilidade de
 
 ![img_141.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_141.png)
 
-__O utilizador tem de selecionar sempre os documentos que deseja, sejam para consulta ou impressão através da colocação de ![img_checkbox_checked.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_checkbox_checked.png) no ecrã.__
+__O utilizador tem de selecionar SEMPRE os documentos que deseja, sejam para consulta ou impressão através da colocação de ![img_checkbox_checked.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_checkbox_checked.png) no ecrã.__
 
 |Campo|Obrigatoriedade|Descrição|
 |:---|:---|:---|
@@ -867,11 +864,11 @@ __O utilizador tem de selecionar sempre os documentos que deseja, sejam para con
 |Imprimir|Este botão permite a geração do documento em PDF|
 |Sair|Este botão permite ao utilizador sair do ecrã corrente|
 
-De forma _Individual_, ao selecionar “imprimir”, o sistema produz a Autorização de Pagamento em PDF.
+De forma _Individual_, ao selecionar “Imprimir”, o sistema produz a Autorização de Pagamento em PDF.
 
 ![img_144.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_144.png)
 
-De forma _Global_, ao selecionar “imprimir”, o sistema produz a Autorização de Pagamento Coletiva em PDF.
+De forma _Global_, ao selecionar “Imprimir”, o sistema produz a Autorização de Pagamento Coletiva em PDF.
 
 ![img_145.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_145.png)
 
@@ -879,11 +876,11 @@ De forma _Global_, ao selecionar “imprimir”, o sistema produz a Autorizaçã
 
 Nesta etapa, o utilizador vai criar os ficheiros para enviar aos respetivos órgãos com indicação das entidades e montantes associados. Deve assim seguir o seguinte caminho no sistema:
 
-![img_146.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_146.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-837d7d7c.png)
 
 Surge um ecrã na qual o utilizador tem de preencher de acordo com o quadro abaixo:
 
-![img_147.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_147.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-bd925707.png)
 
 __No caso da ACSS, o utilizador na altura da criação dos vários tipos de documentos (notas de crédito, notas de débito, etc), pode associar os mesmos ao referido Departamento a que dizem respeito, evidenciando posteriormente no ecrã e no respetivo campo![img_actividade_departamento.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_actividade_departamento.png).__
 
@@ -903,11 +900,11 @@ Findo o preenchimento dos campos, deve o utilizador dar continuidade ao processo
 
 __O utilizador tem de ter escolher o tipo de documento que quer gerar, dependendo das obrigatoriedades associadas. Para o efeito o sistema pode criar 3 tipos de documentos, associado cada um deles ao tipo de identificador, sendo que a sua seleção é sempre obrigatória.__
 
-![img_150.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_150.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-3d73cf14.png)
 
 |Botão|Descrição|
 |:---|:---|
-|Ficheiro|Este botão permite ao utilizador escolher o diretório de gravação do ficheiroTXT. (IGCP) ou XML. (IGCP – Novo) que será gerado. ![img_151.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_151.png) ![img_152.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_152.png)|
+|Ficheiro|Este botão permite ao utilizador escolher o diretório de gravação do ficheiroTXT. (IGCP) ou XML. (IGCP – Novo) que será gerado. ![](mu_snc_ap.assets/mu_snc_ap-b51ea880.png) ![img_152.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_152.png)|
 |Imprimir 2ª Via|Este botão permite que o utilizador gere relatório diretamente no ecrã|
 |Ficheiro 2ª Via|Este botão permite ao utilizador escolher o novo diretório de gravação do ficheiro TXT ou XML a ser produzido em caso de alteração ou engano|
 |Sair|Este botão permite que o utilizador saia do ecrã e regresse ao menu inicial|
@@ -928,8 +925,7 @@ O  sistema SICC, permite ao utilizador a importação de ficheiros TXT. e a conv
 
 Para o efeito, o passo para este processo é o abaixo demonstrado.
 
-_(Imagem em atualização)_
-![img_155.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_155.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-8133feeb.png)
 
 Nesta etapa, um novo ecrã surge, em que o utilizador tem possibilidade de realizar as seguintes tarefas:
 
@@ -949,19 +945,17 @@ __Na importação de TXT. ou na Conversão para XML, o sistema ao carregar o fic
 
 De forma automática, uma conta de disponibilidades deve ser lançada a crédito por contrapartida da compensação da partida de autorização de pagamento com código de razão especial (252*).
 
-_(Imagem em atualização)_
-![img_160.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_160.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-645ee5ad.png)
 
-Ao entrar neste submenu, é onde o utilizador deve fazer o registo do pagamento. A informação referente à entidade é obrigatória, bem como a visualização dos documentos. O utilizador ainda no presente ecrã, terá de definir o número de tesouraria para registo do pagamento. Desta forma e a título de exemplo foi escolhido o número 12.
+Ao entrar neste submenu, o utilizador deve fazer o registo do pagamento. A informação referente à entidade é obrigatória, bem como a visualização dos documentos. O utilizador ainda no presente ecrã, terá de definir o número de tesouraria para registo do pagamento. Desta forma e a título de exemplo foi escolhido o número 11.
 
 Ao fazer duplo clique sobre a linha resumo, a informação é preenchida automaticamente com base no que foi definido anteriormente, nomeadamente: IBAN e importância, devendo no final confirmar.
 
-![img_161.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_161.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-b5df60d0.png)
 
-Surge nova janela na qual apresenta as movimentações contabilísticas, para o utilizador ver os registos efetuados pelo sistema. Para concluir, deve selecionar confirmar.
+Surge nova janela na qual apresenta as movimentações contabilísticas, para o utilizador ver os registos efetuados pelo sistema. Para concluir, deve selecionar "Confirme".
 
-_(Imagem em atualização)_
-![img_162.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_162.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-21efb928.png)
 
 Ao confirmar surge de novo o ecrã inicial e pode constatar que a AP não aparece. Este principio tem como finalidade evitar que possam vir a existir pagamentos em duplicado.
 
@@ -969,24 +963,23 @@ Ao confirmar surge de novo o ecrã inicial e pode constatar que a AP não aparec
 
 __Deve o utilizador no final, verificar o impacto no mapa de execução orçamental da despesa.__
 
-Para finalizar o processo de pagamento, o utilizador no ecrã principal tem de selecionar: “Número de entidade”, bem como a “situação do documento”.
+Para finalizar o processo de pagamento, o utilizador no ecrã principal tem de selecionar: “Número de entidade”, bem como a “Situação do Documento”.
 
 __O utilizador tem de ter em conta qual o tipo de situação do documento, sendo que neste processo o que se pretende é a visualização dos documentos pagos.__
 
-![img_164.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_164.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-6d01295b.png)
 
-Como o sistema dá indicação da situação do documento, deve o utilizador fazer uma impressão do documento.
+Como o sistema dá indicação da situação do documento, deve o utilizador fazer uma impressão do mesmo.
 
 Para o efeito, tem de seguir o caminho:
 
-_(Imagem em atualização)_
-![img_165.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_165.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-01eba65e.png)
 
 Neste ecrã, o utilizador tem de preencher com a informação de acordo com as instruções do quadro abaixo:
 
-![img_166.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_166.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-8feaaa84.png)
 
-__O utilizador tem de selecionar _sempre_ os documentos que deseja, sejam para consulta ou impressão através da colocação do visto ![img_checkbox_checked.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_checkbox_checked.png) no ecrã anterior.__
+__O utilizador tem de selecionar SEMPRE os documentos que deseja, sejam para consulta ou impressão através da colocação do visto ![img_checkbox_checked.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_checkbox_checked.png) no ecrã anterior.__
 
 
 |Campo|Obrigatoriedade|Descrição|
@@ -1000,9 +993,9 @@ __O utilizador tem de selecionar _sempre_ os documentos que deseja, sejam para c
 |Texto|Opcional|Campo de texto|
 |AP/DA por regularizar/regularizadas|Obrigatório|O utilizador escolhe a opção "AP/DA regularizadas" , sendo que, para mais que um registo existe a possibilidade de "Selecionar todos"|
 
-Ao selecionar “imprimir”, o sistema produz o documento em PDF
+Ao selecionar “Imprimir”, o sistema produz o documento em PDF:
 
-![img_168.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_168.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-ce32adec.png)
 
 ### 3.2. Ciclo Receita
 
@@ -1083,6 +1076,8 @@ __O utilizador tem de selecionar sempre os documentos que deseja, sejam para con
 Ao selecionar “imprimir”, o sistema produz a Guia de receita em PDF
 
 ![img_184.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_184.png)
+
+
 
 #### 3.2.4. Cobranças (CO)
 
