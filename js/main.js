@@ -205,7 +205,7 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 						loadToc(mdFile, "tocDropdown");
 						addSharelink(mdFile);
 
-						if(anchor.length > 1){
+						if(anchor != undefined && anchor.length >= 2){
 							setTimeout( function(){ scrollToAnchor(mdFile, anchor); }, 2500);
 						}
 						else{
