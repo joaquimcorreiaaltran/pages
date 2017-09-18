@@ -904,7 +904,7 @@ __O utilizador tem de ter escolher o tipo de documento que quer gerar, dependend
 
 |Botão|Descrição|
 |:---|:---|
-|Ficheiro|Este botão permite ao utilizador escolher o diretório de gravação do ficheiroTXT. (IGCP) ou XML. (IGCP – Novo) que será gerado. ![](mu_snc_ap.assets/mu_snc_ap-b51ea880.png) ![img_152.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_152.png)|
+|Ficheiro|Este botão permite ao utilizador escolher o diretório de gravação do ficheiroTXT. (IGCP) ou XML. (IGCP – Novo) que será gerado. ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-b51ea880.png) ![img_152.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_152.png)|
 |Imprimir 2ª Via|Este botão permite que o utilizador gere relatório diretamente no ecrã|
 |Ficheiro 2ª Via|Este botão permite ao utilizador escolher o novo diretório de gravação do ficheiro TXT ou XML a ser produzido em caso de alteração ou engano|
 |Sair|Este botão permite que o utilizador saia do ecrã e regresse ao menu inicial|
