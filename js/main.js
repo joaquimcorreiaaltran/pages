@@ -424,11 +424,26 @@ container = $('#latest-commits');
 
 callback = function(response, textStatus, jqXHR) {
 
-	console.log("aquiB");
+	var d = response.data, html_commits;
 
-	console.log(response);
+	console.log(d); //all updates
 
-}; /*callback function*/
+	/*for (i = 0; i < d.length; i++){
+
+
+		if(i=0){
+			html_commits = "<div class='docOptions'>";
+		}
+
+		//console.log(d[0].commit.author.name);
+		//console.log(d[i].commit.message + " " + $.timeago(d[0].commit.author.date) + " (" + d[0].html_url+")");
+		html_commits += "<div>";
+		html_commits += d[i].commit.message + " " + $.timeago(d[0].commit.author.date) + " (" + d[0].html_url+")";
+		html_commits += "</div></div>";
+		console.log(html_commits);
+	}
+
+};*/ /*callback function*/
 
 		return $.ajax({
 				url: "https://api.github.com/repos/SPMSSICC/pages/commits?path=markdown/"+file+ext,
@@ -439,7 +454,6 @@ callback = function(response, textStatus, jqXHR) {
 				type: "GET",
 			})
 			.done(function(response, textStatus, jqXHR) {
-				console.log("aquiA");
 				return callback(response, textStatus, jqXHR);
 			});
 }
