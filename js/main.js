@@ -442,8 +442,8 @@ callback = function(response, textStatus, jqXHR) {
 		html_commits += "</div></div>";
 		console.log(html_commits);
 	}
-
-};*/ /*callback function*/
+*/
+}; /*callback function*/
 
 		return $.ajax({
 				url: "https://api.github.com/repos/SPMSSICC/pages/commits?path=markdown/"+file+ext,
