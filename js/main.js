@@ -290,10 +290,14 @@ function showElements(elements) {
 
 function hideElements() {
 
-	var elements = ["btnMenu","btnPDF","btnEditarDoc","btnShowToc","tocDropdown"];
+	var elements = ["btnMenu","btnPDF","btnEditarDoc","btnShowToc","tocDropdown","btnOpt"];
 
 	for (i = 0; i < elements.length; i++) {
 		$("#" + elements[i]).removeClass("show");
+	}
+
+	if($("#docOptions").hasClass("active")){
+		$("#docOptions").removeClass("active");
 	}
 	//console.log("[hideElements] hide: ", elements);
 }
@@ -414,7 +418,13 @@ function loadCommitHistory(btnsToShow) {
 } /*loadCommitHistory()*/
 
 
+function toggleDocOptions(){
+	$('.dropdown-doc-options').toggleClass('active');
+}
+
 function loadFileHistory(){
+
+	console.log("[loadFileHistory]");
 
 /**************************************
 	https://api.github.com/repos/SPMSSICC/pages/commits?path=markdown/menus.md
@@ -435,9 +445,10 @@ function loadFileHistory(){
 				var d = response.data, html_commits ="";
 
 				console.log(d); //all file updates
-				html_commits = "<div class='file-history'><h3>Últimas alterações ao documento:</h3>";
+				html_commits = "<div class='file-history active'><h3>Últimas alterações ao documento:</h3>";
 
 				for (i = 0; i < d.length; i++){
+
 					html_commits = html_commits + "<div>";
 					html_commits = html_commits +	" <a href='" +	d[0].html_url+"' target='_blank' title='Ver detalhes'><i class='fa fa-external-link fa-fw' aria-hidden='true'></i></a> " +
 												$.timeago(d[0].commit.author.date) + ": \"" + d[i].commit.message + "\";" ;
@@ -464,8 +475,13 @@ function loadFileHistory(){
 						return callback(response, textStatus, jqXHR);
 					});
 	}
-	else if ( $(".file-history").length && $(".file-history").hasClass("active") ) {
-		//$(".file-history")
+	else if ( $(".file-history").length && !$(".file-history").hasClass("active") ) {
+		$(".file-history").addClass("active");
+		console.log("adicionada classe active");
+	}
+	else if( $(".file-history").length && $(".file-history").hasClass("active") ){
+		$(".file-history").removeClass("active");
+		console.log("histórico escondido");
 	}
 	else{
 		console.log("[loadFileHistory] Erro");
@@ -478,21 +494,13 @@ function addSharelink(mdFile){
 	var el, href, i, docURL, docTitle = $("article h1").html();
 
 	docURL = location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile;
-
-	$("article h1").each(function() {
-
-			el = $(this);
-
-			href = encodeURI("mailto:?Subject=SPMS|SICC|Partilha de documentação: "+docTitle+
-							"&body=\n\nDocumento: " + docTitle + ".\n\nEndereço: " + docURL);
-
-			i = $("<a title='Partilhar este documento' href='" + href + "' target='_top'>" +
-							"<i class='fa fa-share-alt fa-fw'></i>" +
-						"</a>");
-
-			el.append(i);
-	});
-
+	//add href to the share button in the doc options
+	$("#btnShare").attr(
+			{
+				"href":encodeURI("mailto:?Subject=SPMS|SICC|Partilha de documentação: " + docTitle + "&body=\n\nDocumento: " + docTitle + ".\n\nEndereço: " + docURL),
+				"target":"_blank"
+			}
+		);
 }
 
 
@@ -572,9 +580,6 @@ window.onclick = function(event) {
 	}
 	if (!event.target.matches('.dropdown, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, #accordion *, #btnShowToc') && $("#btnMenu").hasClass("showMenu")) {
 		showMenu();
-	}
-	if (!event.target.matches('.file-history *') && $(".file-history").hasClass("ative")) {
-		$(".file-history").removeClass("active");
 	}
 };
 
