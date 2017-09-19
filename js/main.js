@@ -163,6 +163,12 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
 				window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/" + mdFile + ".md", "_blank");
 			});
 
+		$("#btnShare, #btnShare>i").click(function() {
+				loadFileHistory(mdFile);
+			});
+
+
+
 		//$("#btnPDF").attr({"onclick":"window.open('https://spmssicc.github.io/pages/pdf/" + mdFile + ".pdf', '_blank')"});
 
 		if (mdFile == "apresentacao_snc_ap") {$("#btnPDF").attr({"onclick":"window.open('https://view.officeapps.live.com/op/embed.aspx?src=https://spmssicc.github.io/pages/pptx/SPMS_SICC_SNC_AP_20160606_04-pics.pptx','_blank')"});}
@@ -433,7 +439,7 @@ function loadFileHistory(){
 	if( !$(".file-history").length ){
 
 			var ext = '.md';
-			var file = 'menus';
+			//var file = 'menus';
 
 			var branch, callback, container, limit, repo, url, username;
 			username = "SPMSSICC";
