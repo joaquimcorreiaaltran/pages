@@ -163,11 +163,9 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
 				window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/" + mdFile + ".md", "_blank");
 			});
 
-		$("#btnShare, #btnShare>i").click(function() {
+		$("#fileHistory, #fileHistory > i").click(function() {
 				loadFileHistory(mdFile);
 			});
-
-
 
 		//$("#btnPDF").attr({"onclick":"window.open('https://spmssicc.github.io/pages/pdf/" + mdFile + ".pdf', '_blank')"});
 
