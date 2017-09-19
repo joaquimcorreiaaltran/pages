@@ -78,8 +78,8 @@ transition:all .3s ease-out;
 
 .file-history.active{
 display: block;;
-left:5%;
-right:5%;
+left:10%;
+right:10%;
 transition:all .3s ease-out;
 }
 

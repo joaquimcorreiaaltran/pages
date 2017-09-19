@@ -102,6 +102,7 @@ function loadIndexContent(btnsToShow, event) {
 
 	startLoader();
 
+	$("#fileHistory").remove();
 	$("body").attr("style", "margin:0 0 0 0;  width:100%");
 	$("#content").attr("style", "min-height: 90vh; margin: 0 0 0 0; padding:1em 1em 1em 1em; widht: 100%; max-width:5000px");
 
