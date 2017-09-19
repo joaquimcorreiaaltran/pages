@@ -455,8 +455,8 @@ function loadFileHistory(file){
 				for (i = 0; i < d.length; i++){
 
 					html_commits = html_commits + "<div>";
-					html_commits = html_commits +	" <a href='" +	d[0].html_url+"' target='_blank' title='Ver detalhes'><i class='fa fa-external-link fa-fw' aria-hidden='true'></i></a> " +
-												$.timeago(d[0].commit.author.date) + ": \"" + d[i].commit.message + "\";" ;
+					html_commits = html_commits +	" <a href='" +	d[i].html_url+"' target='_blank' title='Ver detalhes'><i class='fa fa-external-link fa-fw' aria-hidden='true'></i></a> " +
+												$.timeago(d[i].commit.author.date) + ": \"" + d[i].commit.message + "\";" ;
 
 					html_commits = html_commits + "</div>";
 				}
