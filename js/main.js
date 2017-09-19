@@ -179,7 +179,7 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
 		else if (mdFile == "circ1382") {$("#btnPDF").attr({"onclick":"window.open('http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1382.pdf','_blank')"});}
 		else if (mdFile == "dec_lei192") {$("#btnPDF").attr({"onclick":"window.open('https://dre.pt/application/conteudo/70262478','_blank')"});}
 		else if (mdFile == "dec_lei85") {$("#btnPDF").attr({"onclick":"window.open('https://dre.pt/application/conteudo/105583346','_blank')"});}
-		else {$("#btnPDF").attr({"onclick":"window.openn'window.open('https://spmssicc.github.io/pages/pdf/" + mdFile + ".pdf','_blank')"});}
+		else {$("#btnPDF").attr({"onclick":"window.open('https://spmssicc.github.io/pages/pdf/" + mdFile + ".pdf','_blank')"});}
 
 		showElements(btnsToShow);
 		window.scrollTo(0,0);
