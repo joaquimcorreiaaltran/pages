@@ -1003,48 +1003,48 @@ Ao selecionar “Imprimir”, o sistema produz o documento em PDF:
 
 Neste processo, o objetivo é o utilizador fazer as contabilizações de faturas de devedores. Desta forma, o caminho no sistema a seguir é:
 
-![img_169.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_169.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-89f6f793.png)
 
-No ecrã, o utilizador terá de preencher a entidade, bem como atribuir um número de fatura, importância e respetivas datas. Findo esse passo, deve “gravar nova FD”.
+No ecrã, o utilizador terá de preencher a "Entidade", bem como atribuir um "Número de Fatura", "Importância" e respetivas datas. Findo esse passo, deve “Gravar nova FD”.
 
-![img_170.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_170.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-45993053.png)
 
-Ao selecionar o botão, o utilizador terá de fazer o preenchimento das contabilizações necessárias, sendo que no final deve confirmar.
+Ao selecionar o botão, o utilizador terá de fazer o preenchimento das contabilizações necessárias, sendo que no final deve selecionar o botão "Gerar Contabilidade".
 
-_(Imagem em atualização)_
-![img_171.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_171.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-2ee283d4.png)
 
-A partir desse momento a fatura foi gerada e registada em sistema. Pode no entanto ser feita uma consulta aos dados registados anteriormente.
+Seguidamente irá abrir o separador "Analítica" onde o utilizador deve selecionar o centro de custo associado à respetiva conta. Para gravar, deve ser pressionado o botão "Confirme".
+
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-370444bb.png)
+
+A partir desse momento a fatura foi gerada e registada no sistema. Pode no entanto ser feita uma consulta aos dados registados anteriormente.
 
 Neste ecrã, há necessidade do preenchimento dos campos obrigatórios, sendo que para o efeito basta o: “Número de entidade” e “número de fatura”. Tendo estes dois campos preenchidos o sistema de forma automática completa a restante informação, bem como demonstra no ecrã "Existente".
 
-![img_172.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_172.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-4d71312f.png)
 
 
-__Igualmente ao efetuado no anterior, os botões: "Consulta", "Abater" e "Sair", apresentam as mesmas funcionalidades.__
+__Igualmente ao apresentado no capítulo anterior, os botões: "Consulta", "Abater" e "Sair", apresentam as mesmas funcionalidades.__
 
 #### 3.2.3. Guias de Receita (GR)
 
 O Serviço Financeiro procede ao registo emitindo a Guia de Receita através de aplicação e que consiste na classificação económica e patrimonial das receitas. Posteriormente, os documentos são enviados para a Tesouraria para registo da cobrança.
 
-![img_177.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_177.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-7cadb4cf.png)
 
-Cumprindo com o realizado em processos anteriores, deve o utilizador preencher: “Nº de entidade”, respetivo “Nº de GR” e dar duplo clique na linha resumo, para a mesma subir de nível.
+Cumprindo com o realizado em processos anteriores, deve o utilizador preencher: “Nº de entidade”, o respetivo “Nº de GR” e dar duplo clique na linha resumo, para a mesma subir de nível.
 
-_(Imagem em atualização)_
-![img_178.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_178.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-75c6d4a4.png)
 
 Após a fatura ficar no nível superior, deve assim o utilizador selecionar sobre o botão "Gravar novo GR".
 
-_(Imagem em atualização)_
-![img_179.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_179.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-2a17e02a.png)
 
 Os movimentos contabilísticos surgem de forma automática, pelo que o utilizador tem de validar e confirmar.
 
-_(Imagem em atualização)_
-![img_180.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_180.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-b70b929d.png)
 
-Nova mensagem surgirá com a Guia de receita criada, sendo que este processo está concluído:
+Quando o utilizador não atribui um número à Guia de receita, este é gerado automaticamente e é apresentado no fim através da seguinte mensagem.
 
 ![img_181.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_181.png)
 
@@ -1052,12 +1052,11 @@ Nova mensagem surgirá com a Guia de receita criada, sendo que este processo est
 
 Neste passo, é demonstrado o procedimento para fazer as impressões das GR geradas no passo anterior. Para isso, deve o utilizador seguir o seguinte caminho no sistema:
 
-_(Imagem em atualização)_
-![img_182.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_182.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-33dc5198.png)
 
 __O utilizador tem de selecionar sempre os documentos que deseja, sejam para consulta ou impressão através da colocação de "visto" no ecrã.__
 
-![img_183.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_183.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-7373792b.png)
 
 |Campo|Obrigatoriedade|Descrição|
 |:---|:---|:----|
@@ -1073,7 +1072,8 @@ __O utilizador tem de selecionar sempre os documentos que deseja, sejam para con
 |Imprimir|Este botão permite a geração do documento em PDF|
 |Sair|Este botão permite ao utilizador sair do ecrã corrente|
 
-Ao selecionar “imprimir”, o sistema produz a Guia de receita em PDF
+Ao selecionar “Imprimir”, o sistema produz a Guia de Receita em PDF.
+_Imagem em atualização_
 
 ![img_184.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_184.png)
 
@@ -1083,61 +1083,20 @@ Ao selecionar “imprimir”, o sistema produz a Guia de receita em PDF
 
 No processo de Cobrança, deve o utilizador lançar as várias contas de disponibilidades a débito por contrapartida de compensação da partida de liquidação da receita-cliente com código de razão especial (251*).
 
-_(Imagem em atualização)_
-![img_185.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_185.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-662dc2c8.png)
 
 Deve o utilizador para dar continuidade ao processo, preencher: “Nº de entidade”, respetivo “Nº de tesouraria” e dar duplo clique na linha resumo para preenchimento automático dos restantes campos. Identificar igualmente qual o “Tipo de pagamento” e proceder à escolha da entidade bancária. Deve por fim selecionar sobre o botão "Gravar novo CO".
 
-![img_186.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_186.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-943520bb.png)
 
 Os movimentos contabilísticos surgem de forma automática, pelo que o utilizador tem de validar e confirmar.
 
-_(Imagem em atualização)_
-![img_187.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_187.png)
-
-##### Impressão de Listagem de Cobrança
-
-De igual modo à impressão das GR, neste processo é demonstrado o procedimento para fazer as impressões das cobranças geradas no passo anterior. Para isso, deve o utilizador seguir o seguinte caminho no sistema:
-
-_(Imagem em atualização)_
-![img_188.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_188.png)
-
-__O utilizador tem de selecionar _sempre_ os documentos que deseja, sejam para consulta ou impressão através da colocação de no ecrã.__
-
-![img_189.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_189.png)
-
-|Campo|Obrigatoriedade|Descrição|
-|:---|:---|:---|
-|Primeira Entidade|Obrigatório|Definir primeira entidade a filtrar|
-|Última Entidade|Obrigatório|Definir última entidade a filtrar|
-|Primeira data|Obrigatório|Definir intervalo primeira data|
-|Última data|Obrigatório|Definir intervalo última data|
-|Primeiro Documento|Opcional|Definir primeiro Doc. a integrar|
-|Último Documento|Opcional|Definir último Doc. a integrar|
-
-|Botão|Descrição|
-|:---|:---|
-|Calcular|Este botão permite ao utilizador consultar os valores carregados de orçamento, bem como os respetivos classificadores económicos|
-|Imprimir|Este botão permite a geração do documento em PDF|
-|Ficheiro|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido|
-|Sair|Este botão permite ao utilizador sair do ecrã corrente|
-
-Ao selecionar “imprimir”, o sistema produz a Listagem de Cobranças em PDF
-
-![img_190.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_190.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-39ad4005.png)
 
 
-#### 3.2.5. Cobranças (CO)
+No segundo separador "Receita sem Factura (CO->OR)" deve o utilizador para dar continuidade ao processo, preenchendo: “Nº de entidade”, “Ano” e “Nº de Doc” seguido do botão "Pesquisar OR". Também deve ser atribuido o "Nº de tesouraria" ou o sistema pode atribuí-lo de forma automática e deve-se dar um duplo clique na linha resumo. Desta forma, o preenchimento dos restantes campos é automático. Porfim, deve selecionar o botão "Gravar novo CO".
 
-![img_195.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_195.png)
-
-No segundo separador, deve o utilizador para dar continuidade ao processo, preencher: “Nº de entidade”, “Ano” e “Nº de Doc” seguido do botão "Pesquisar OR"
-
-![img_196.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_196.png)
-
-Deve igualmente o utilizador atribuir “Nº de tesouraria” e dar duplo clique na linha resumo. Desta forma, o preenchimento dos restantes campos são automaticamente preenchidos. Deve por fim selecionar sobre o botão "Gravar novo CO".
-
-![img_197.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_197.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-a0055c12.png)
 
 Os movimentos contabilísticos surgem de forma automática, pelo que o utilizador tem de validar e confirmar.
 
@@ -1148,10 +1107,9 @@ _(Imagem em atualização)_
 
 Neste passo, é demonstrado o procedimento para fazer as impressões das GR geradas no passo anterior. Para isso, deve o utilizador seguir o seguinte caminho no sistema:
 
-_(Imagem em atualização)_
-![img_199.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_199.png)
+![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-e53ed698.png)
 
-__O utilizador tem de selecionar _sempre_ os documentos que deseja, sejam para consulta ou impressão através da colocação de um visto ![img_checkbox_checked.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_checkbox_checked.png) no ecrã.__
+__O utilizador tem de selecionar SEMPRE os documentos que deseja, sejam para consulta ou impressão através da colocação de um visto ![img_checkbox_checked.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_checkbox_checked.png) no ecrã.__
 
 ![img_200.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_200.png)
 
@@ -1169,7 +1127,7 @@ __O utilizador tem de selecionar _sempre_ os documentos que deseja, sejam para c
 |Imprimir|Este botão permite a geração do documento em PDF|
 |Sair|Este botão permite ao utilizador sair do ecrã corrente|
 
-Ao selecionar “imprimir”, o sistema produz a Guia de Receita em PDF
+Ao selecionar “Imprimir”, o sistema produz a Guia de Receita em PDF.
 
 ![img_201.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_201.png)
 
