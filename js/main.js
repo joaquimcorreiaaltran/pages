@@ -102,8 +102,6 @@ function loadIndexContent(btnsToShow, event) {
 
 	startLoader();
 
-	$("#docOptions").removeClass("active");
-
 	$("body").attr("style", "margin:0 0 0 0;  width:100%");
 	$("#content").attr("style", "min-height: 90vh; margin: 0 0 0 0; padding:1em 1em 1em 1em; widht: 100%; max-width:5000px");
 
@@ -123,6 +121,7 @@ function loadIndexContent(btnsToShow, event) {
 	})
 	.always(function(){
 			window.scrollTo(0,0);
+			$("#docOptions").removeClass("active");
 			var stateObj = { foo: "bar" };
 			history.replaceState(stateObj, "SICC Documentação - página inicial", location.href.split("?")[0]);
 			stopLoader();
@@ -151,6 +150,7 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
 
 		startLoader();
 		highlightMenuItem(event);
+		$("#fileHistory").remove();
 
 		//if the HTML element "#documento" doesn't exist, then create it inside the "documento" element
 		if($("#documento").length < 1){
@@ -161,11 +161,14 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
 
 		convertMdToHtml("documento", mdFile, anchor);
 
+		$("#btnEditarDoc" ).off("click");
 		$("#btnEditarDoc").click(function() {
 				window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/" + mdFile + ".md", "_blank");
 			});
 
-		$("#fileHistory, #fileHistory > i").click(function() {
+		$("#btnHistory").off("click");
+		$("#btnHistory").click(function() {
+				console.log("[loadMdDoc] Chama loadFileHistory()");
 				loadFileHistory(mdFile);
 			});
 
@@ -430,13 +433,9 @@ function toggleDocOptions(){
 
 function loadFileHistory(file){
 
-	console.log("[loadFileHistory]");
+	if( !$("#fileHistory").length ) {
 
-/**************************************
-	https://api.github.com/repos/SPMSSICC/pages/commits?path=markdown/menus.md
-*************************************/
-
-	if( !$(".file-history").length ){
+		console.log("[loadFileHistory] novo histórico criado!");
 
 			var ext = '.md';
 			//var file = 'menus';
@@ -451,7 +450,7 @@ function loadFileHistory(file){
 				var d = response.data, html_commits ="";
 
 				console.log(d); //all file updates
-				html_commits = "<div class='file-history active'><h3>Últimas alterações ao documento:</h3>";
+				html_commits = "<div id='fileHistory' class='file-history active'><h3>Últimas alterações ao documento:</h3>";
 
 				for (i = 0; i < d.length; i++){
 
@@ -481,12 +480,12 @@ function loadFileHistory(file){
 						return callback(response, textStatus, jqXHR);
 					});
 	}
-	else if ( $(".file-history").length && !$(".file-history").hasClass("active") ) {
-		$(".file-history").addClass("active");
+	else if ( $("#fileHistory").length && !$("#fileHistory").hasClass("active") ) {
+		$("#fileHistory").addClass("active");
 		console.log("adicionada classe active");
 	}
-	else if( $(".file-history").length && $(".file-history").hasClass("active") ){
-		$(".file-history").removeClass("active");
+	else if( $(".file-history").length && $("#fileHistory").hasClass("active") ){
+		$("#fileHistory").removeClass("active");
 		console.log("histórico escondido");
 	}
 	else{
