@@ -130,17 +130,18 @@ function loadIndexContent(btnsToShow, event) {
 
 function highlightMenuItem (event) {
 	if(event != null){
-
 			var el;
+
 			$("#accordion .active").each(function() {
 				el = $(this);
+
 				if (!el.hasClass('caret')){
 					el.removeClass('active');
 				}
 			});
 
-			$(event.target).parents().addClass("active");
 			$(event.target.parentNode.children).addClass("active")
+			$(event.target).parents().addClass("active");
 	}
 }
 
@@ -149,6 +150,7 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
 		startLoader();
 		highlightMenuItem(event);
 
+		//if the HTML element "#documento" doesn't exist, then create it inside the "documento" element
 		if($("#documento").length < 1){
 				$("body, #content").removeAttr("style"); 																 //adjust html style and structure
 				$("#content").html("<article id='documento' class='modulo'></article>"); //adjust html style and structure
@@ -160,7 +162,6 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
 		$("#btnEditarDoc").click(function() {
 				window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/" + mdFile + ".md", "_blank");
 			});
-
 
 		//$("#btnPDF").attr({"onclick":"window.open('https://spmssicc.github.io/pages/pdf/" + mdFile + ".pdf', '_blank')"});
 
@@ -182,7 +183,9 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 
 	startLoader();
 
-	if (elementId == undefined || mdFile.length < 1) {
+	//Check if the "elementId" has value to place the converted markdown into the page
+	if ( elementId.length < 1 || elementId == undefined ) {
+		//window.alert("elementID está vazio! elementId:"+ elementId);
 		elementId = "documento";
 	}
 
@@ -200,6 +203,7 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 
 				//console.log("[convertMdToHtml] mdFile  \"" + mdFile + "\"  converted to HTML!");
 
+				//Place the converted markdown into the elementID
 				$("#" + elementId).html(html).promise().done(function(){
 
 						loadToc(mdFile, "tocDropdown");
@@ -209,7 +213,8 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 							setTimeout( function(){ scrollToAnchor(mdFile, anchor); }, 2500);
 						}
 						else{
-							var stateObj = { foo: "bar" } ,url =  location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile;
+							var stateObj = { foo: "bar" }, url =  location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile;
+
 							history.pushState(stateObj, "SICC - Documentação", url);
 							//console.log("[convertMdToHtml] Adicionada entrada no histórico: " + url);
 						}
@@ -227,11 +232,14 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 
 } /*close convertMdToHtml()*/
 
+//to know the type of a variable
 function tipoObj( obj ) {
 		return ({}).toString.call(obj).match(/\s([a-zA-Z]+)/)[1].toLowerCase()
 }
 
 function scrollToAnchor(mdFile, anchor){
+
+	//the anchor parameter can not have the character "#"
 
 	startLoader();
 	var anchorId;
@@ -257,7 +265,7 @@ function scrollToAnchor(mdFile, anchor){
 
 				//console.log("[scrollToAnchor] anchorId:" + anchorId + "\n Positions should be the same: " + $(anchorId).offset().top + " <-> " + (pos + 250));
 
-				var stateObj = { foo: "bar" }, url = location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor;
+				var stateObj = { foo: "bar" }, url = location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor; //the anchor parameter can not have the character "#"
 				history.pushState(stateObj, "SICC - Documentação", url);
 				//console.log("[scrollToAnchor] Adicionada entrada no histórico: " + url);
 
@@ -282,10 +290,14 @@ function showElements(elements) {
 
 function hideElements() {
 
-	var elements = ["btnMenu","btnPDF","btnEditarDoc","btnShowToc","tocDropdown"];
+	var elements = ["btnMenu","btnPDF","btnEditarDoc","btnShowToc","tocDropdown","btnOpt"];
 
 	for (i = 0; i < elements.length; i++) {
 		$("#" + elements[i]).removeClass("show");
+	}
+
+	if($("#docOptions").hasClass("active")){
+		$("#docOptions").removeClass("active");
 	}
 	//console.log("[hideElements] hide: ", elements);
 }
@@ -300,7 +312,7 @@ function imageZoom() {
 			img = $(this), alt = img.attr("alt");
 			img.wrap("<a class='imagem' href='" + img.attr("src") +	"' onclick='return hs.expand(this)'></a>");
 
-				// add height and width properties to the img tags
+				// add height and width properties to the img tags Works only after the images have been loaded
 				/*if(img[0]['height'] > 0 && img[0]['width'] > 0){
 						img.attr({'height':img[0]['height']+"px",'width':img[0]['width']+"px"})
 				}*/
@@ -321,8 +333,6 @@ function responsiveTable() {
 
 //Loads the gitHub repository and insert insert into the HTML
 function loadCommitHistory(btnsToShow) {
-
-		loadFileHistory();//TEST
 
 		startLoader();
 
@@ -408,54 +418,74 @@ function loadCommitHistory(btnsToShow) {
 } /*loadCommitHistory()*/
 
 
+function toggleDocOptions(){
+	$('.dropdown-doc-options').toggleClass('active');
+}
+
 function loadFileHistory(){
+
+	console.log("[loadFileHistory]");
 
 /**************************************
 	https://api.github.com/repos/SPMSSICC/pages/commits?path=markdown/menus.md
 *************************************/
 
-var ext = '.md';
-var file = 'menus';
+	if( !$(".file-history").length ){
 
-var branch, callback, container, limit, repo, url, username;
-username = "SPMSSICC";
-repo = "pages";
-container = $('#latest-commits');
+			var ext = '.md';
+			var file = 'menus';
 
-callback = function(response, textStatus, jqXHR) {
+			var branch, callback, container, limit, repo, url, username;
+			username = "SPMSSICC";
+			repo = "pages";
+			container = $('#latest-commits');
 
-	var d = response.data, html_commits;
+			callback = function(response, textStatus, jqXHR) {
 
-	console.log(d); //all updates
+				var d = response.data, html_commits ="";
 
-	/*for (i = 0; i < d.length; i++){
+				console.log(d); //all file updates
+				html_commits = "<div class='file-history active'><h3>Últimas alterações ao documento:</h3>";
 
+				for (i = 0; i < d.length; i++){
 
-		if(i=0){
-			html_commits = "<div class='docOptions'>";
-		}
+					html_commits = html_commits + "<div>";
+					html_commits = html_commits +	" <a href='" +	d[0].html_url+"' target='_blank' title='Ver detalhes'><i class='fa fa-external-link fa-fw' aria-hidden='true'></i></a> " +
+												$.timeago(d[0].commit.author.date) + ": \"" + d[i].commit.message + "\";" ;
 
-		//console.log(d[0].commit.author.name);
-		//console.log(d[i].commit.message + " " + $.timeago(d[0].commit.author.date) + " (" + d[0].html_url+")");
-		html_commits += "<div>";
-		html_commits += d[i].commit.message + " " + $.timeago(d[0].commit.author.date) + " (" + d[0].html_url+")";
-		html_commits += "</div></div>";
-		console.log(html_commits);
+					html_commits = html_commits + "</div>";
+				}
+
+				html_commits = html_commits + "</div>"
+
+				$("#content").after(html_commits);
+				//console.log(html_commits);
+
+				}; /*callback function*/
+
+				return $.ajax({
+						url: "https://api.github.com/repos/SPMSSICC/pages/commits?path=markdown/"+file+ext,
+						data: {
+							per_page: "200"
+						},
+						dataType: "jsonp",
+						type: "GET",
+					})
+					.done(function(response, textStatus, jqXHR) {
+						return callback(response, textStatus, jqXHR);
+					});
 	}
-*/
-}; /*callback function*/
-
-		return $.ajax({
-				url: "https://api.github.com/repos/SPMSSICC/pages/commits?path=markdown/"+file+ext,
-				data: {
-					per_page: "200"
-				},
-				dataType: "jsonp",
-				type: "GET",
-			})
-			.done(function(response, textStatus, jqXHR) {
-				return callback(response, textStatus, jqXHR);
-			});
+	else if ( $(".file-history").length && !$(".file-history").hasClass("active") ) {
+		$(".file-history").addClass("active");
+		console.log("adicionada classe active");
+	}
+	else if( $(".file-history").length && $(".file-history").hasClass("active") ){
+		$(".file-history").removeClass("active");
+		console.log("histórico escondido");
+	}
+	else{
+		console.log("[loadFileHistory] Erro");
+	}
 }
 
 
@@ -464,21 +494,13 @@ function addSharelink(mdFile){
 	var el, href, i, docURL, docTitle = $("article h1").html();
 
 	docURL = location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile;
-
-	$("article h1").each(function() {
-
-			el = $(this);
-
-			href = encodeURI("mailto:?Subject=SPMS|SICC|Partilha de documentação: "+docTitle+
-							"&body=\n\nDocumento: " + docTitle + ".\n\nEndereço: " + docURL);
-
-			i = $("<a title='Partilhar este documento' href='" + href + "' target='_top'>" +
-							"<i class='fa fa-share-alt fa-fw'></i>" +
-						"</a>");
-
-			el.append(i);
-	});
-
+	//add href to the share button in the doc options
+	$("#btnShare").attr(
+			{
+				"href":encodeURI("mailto:?Subject=SPMS|SICC|Partilha de documentação: " + docTitle + "&body=\n\nDocumento: " + docTitle + ".\n\nEndereço: " + docURL),
+				"target":"_blank"
+			}
+		);
 }
 
 
@@ -572,15 +594,19 @@ $('#tocDropdown').on('click', 'a[href^="#"]', function(e) {
 		// target element id
 		var id = $(this).attr('href');
 
-		$('#tocDropdown *').removeClass('active');
-		$(e.target).addClass('active');
-		$(e.target.parentElement).addClass('active');
-
 		// target element
 		var $id = $(id);
+
 		if ($id.length === 0) {
 			return;
 		}
+		else{
+			$('#tocDropdown *').removeClass('active');
+			$(e.target).addClass('active');
+			$(e.target.parentElement).addClass('active');
+		}
+
+		console.log("\n\n\n\n\n\n",e);
 
 		// prevent standard hash navigation (avoid blinking in IE)
 		e.preventDefault();
@@ -594,11 +620,4 @@ $('#tocDropdown').on('click', 'a[href^="#"]', function(e) {
 		$('body, html').animate({
 				scrollTop: pos
 			});
-	});
-
-
-/*to add support for IE to endsWith()*/
-String.prototype.endsWith = function(pattern) {
-	var d = this.length - pattern.length;
-	return d >= 0 && this.lastIndexOf(pattern) === d;
-};
+});
