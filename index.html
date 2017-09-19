@@ -45,13 +45,17 @@
 				<button title="Transferir documento" id="btnPDF" type="button" alt="btnPDF"><i class="fa fa-file-pdf-o fa-fw"></i></button>
 				<button title="Sugerir alterações ao documento" id="btnEditarDoc" type="button" alt="btnEditarDoc"><i class="fa fa-pencil fa-fw"></i></button>
 				<button title="Ver índice" id="btnShowToc" type="button" alt="showToc" onclick="showToc()" class="dropbtn">Índice</button>
+				<div id="docOptions" class="dropdown-doc-options">
+					<div class='doc-option'>T1</div>
+					<div class='doc-option'>T2</div>
+					<div id="fileHistory" class="doc-option" onclick="loadFileHistory()">T3</div>
+				</div>
 			</div>
 			<a id="amenuLink" href="./html/amenu-source.html"></a>
 			<div id="tocDropdown" class="dropdown-content"></div>
-		</header>
 		<div id ="loader"> <img  class="loader" src="./img/icons/sicc.ico" alt="Loader"></img></div>
-		<div id="content" style="min-height: 90vh; margin: 0 0 0 0; padding:1em 1em 1em 1em; widht: 100%; max-width:5000px;">
-		</div>
+	</header>
+		<div id="content" style="min-height: 90vh; margin: 0 0 0 0; padding:1em 1em 1em 1em; widht: 100%; max-width:5000px;"></div>
 		<footer id="footer">
 			<div id="p_logos">
 				 <a id="SICC_logo" href="http://spms.min-saude.pt/product/sicc" target="_blank" rel="noopener" title="Abrir página">

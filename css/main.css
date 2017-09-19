@@ -20,6 +20,45 @@ height: 4em;
 padding: 4em
 }
 
+.dropdown-doc-options {
+position: fixed;
+top: 44px;
+right:0;
+z-index: 1;
+}
+.doc-option {
+background-color:yellow;
+height: 34px;
+width:35px;
+margin:5px;
+cursor:pointer;
+}
+.file-history{
+border-radius:8px;
+max-height: 80vh;
+overflow: auto;
+padding: 1em;
+background-color:white;
+position:absolute;
+top:70px;left:5%;
+right:5%;
+z-index:1;
+box-shadow:8px 8px 400px 400px rgba(0,0,0,0.5);
+}
+
+.file-history>div{
+padding: 0.2em 1em 0.2em 1em;
+}
+
+.file-history>div>a{
+color: #29615D;
+}
+
+.file-history>div:hover{
+background-color: rgba(41, 97, 93, 0.05);
+color: #29615D;
+}
+
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
