@@ -158,14 +158,13 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
 
 		convertMdToHtml("documento", mdFile, anchor);
 
-		$("#btnEditarDoc" ).off("click");
+		$("#btnEditarDoc, #btnHistory" ).off("click");
+
 		$("#btnEditarDoc").click(function() {
 				window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/" + mdFile + ".md", "_blank");
 			});
-
-		$("#btnHistory").off("click");
 		$("#btnHistory").click(function() {
-				loadFileHistory(mdFile);
+				loadFileHistory(mdFile, event);
 			});
 
 		//$("#btnPDF").attr({"onclick":"window.open('https://spmssicc.github.io/pages/pdf/" + mdFile + ".pdf', '_blank')"});
@@ -428,7 +427,7 @@ function toggleDocOptions(){
 	$('.dropdown-doc-options').toggleClass('active');
 }
 
-function loadFileHistory(file){
+function loadFileHistory(file, e){
 
 	startLoader();
 
@@ -447,7 +446,7 @@ function loadFileHistory(file){
 				var d = response.data, html_commits ="";
 
 				console.log(d); //all file updates
-				html_commits = "<div id='fileHistory' class='file-history active'><h3>Últimas alterações ao documento:</h3>";
+				html_commits = "<div id='behindFileHistory' class='active'><div id='fileHistory' class='file-history active'><h3>Últimas alterações ao documento:</h3>";
 
 				for (i = 0; i < d.length; i++){
 
@@ -458,9 +457,11 @@ function loadFileHistory(file){
 					html_commits = html_commits + "</div>";
 				}
 
-				html_commits = html_commits + "</div>"
+				html_commits = html_commits + "</div></div>"
 
 				$("#content").after(html_commits);
+				$("#btnHistory").addClass("active");
+
 				//console.log(html_commits);
 
 				stopLoader();
@@ -483,12 +484,12 @@ function loadFileHistory(file){
 					//}
 	}
 	else if ( $("#fileHistory").length && !$("#fileHistory").hasClass("active") ) {
-		$("#fileHistory").addClass("active");
+		$("#btnHistory, #fileHistory, #behindFileHistory").addClass("active");
 		//console.log("adicionada classe active");
 		stopLoader();
 	}
 	else if( $(".file-history").length && $("#fileHistory").hasClass("active") ){
-		$("#fileHistory").removeClass("active");
+		$("#fileHistory, #btnHistory, #behindFileHistory").removeClass("active");
 		stopLoader();
 		//console.log("histórico escondido");
 	}
@@ -582,8 +583,7 @@ function showToc() {
 }
 
 function showMenu() {
-	$("#accordion").toggleClass("showMenu");
-	$("#btnMenu").toggleClass("showMenu");
+	$("#accordion, #btnMenu").toggleClass("showMenu");
 	//console.log("[showMenu] #accordion visibility:" + $("#accordion").hasClass("showMenu"));
 	//console.log("[showMenu] #btnMenu visibility:" + $("#accordion").hasClass("showMenu"));
 }
@@ -595,6 +595,10 @@ window.onclick = function(event) {
 	}
 	if (!event.target.matches('.dropdown, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, #accordion *, #btnShowToc') && $("#btnMenu").hasClass("showMenu")) {
 		showMenu();
+	}
+	console.log(event.target);
+	if (event.target.matches('#behindFileHistory')) {
+		$("#behindFileHistory, #fileHistory").removeClass("active");
 	}
 };
 
@@ -617,8 +621,7 @@ $('#tocDropdown').on('click', 'a[href^="#"]', function(e) {
 		}
 		else{
 			$('#tocDropdown *').removeClass('active');
-			$(e.target).addClass('active');
-			$(e.target.parentElement).addClass('active');
+			$(e.target, e.target.parentElement).addClass('active');
 		}
 
 		console.log("\n\n\n\n\n\n",e);
