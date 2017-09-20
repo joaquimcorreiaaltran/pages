@@ -42,8 +42,6 @@
 				<button id="btnMenu" title="Ver Menu" type="button" alt="btnMenu" onclick="showMenu()" class="show"><i class="fa fa-bars fa-fw"></i></button>
 				<p id="barTitle" style="cursor:pointer;" onclick="loadIndexContent(['btnMenu'], event)">SICC</p>
 				<button id="btnOpt" title="Opções do documento" type="button" alt="btnOpt" onclick="toggleDocOptions()" class="dropdown-op"><i class="fa fa-ellipsis-v fa-fw"></i></button>
-				<!--<button title="Transferir documento" id="btnPDF" type="button" alt="btnPDF"><i class="fa fa-file-pdf-o fa-fw"></i></button>
-				<button title="Sugerir alterações ao documento" id="btnEditarDoc" type="button" alt="btnEditarDoc"><i class="fa fa-pencil fa-fw"></i></button>-->
 				<button title="Ver índice" id="btnShowToc" type="button" alt="showToc" onclick="showToc()" class="dropbtn">Índice</button>
 				<div id="docOptions" class="dropdown-doc-options">
 					<div id="btnEditarDoc" title="Sugerir alterações ao documento" type="button" alt="btnEditarDoc" class='doc-option'><i class="fa fa-pencil fa-fw"></i>Editar documento</div>
@@ -54,8 +52,10 @@
 			</div>
 			<a id="amenuLink" href="./html/amenu-source.html"></a>
 			<div id="tocDropdown" class="dropdown-content"></div>
-		<div id ="loader"> <img  class="loader" src="./img/icons/sicc.ico" alt="Loader"></img></div>
 	</header>
+	<div id ='loader' class='active' alt='Loader'>
+		<img src='./img/icons/sicc.png'></img>
+	</div>
 		<div id="content" style="min-height: 90vh; margin: 0 0 0 0; padding:1em 1em 1em 1em; widht: 100%; max-width:5000px;"></div>
 		<footer id="footer">
 			<div id="p_logos">
@@ -71,7 +71,6 @@
 				 <p>© 2017 Direitos Reservados</p>
 			</div>
 		</footer>
-		<!-- Content -->
 		<!-- libs -->
 		<script src="./js/jquery-3.1.1.js"></script>
 		<script src="./js/main.js"></script>
@@ -86,7 +85,7 @@
 
 				startLoader();
 
-				loadContent(); //carrega a página consoante o querylink introduzido
+				loadContent(); //load the main page or the document in the url query string
 
 			});
 		</script>

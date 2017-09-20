@@ -74,26 +74,13 @@ function loadContent(){
 }
 
 function startLoader(){
-
-		if( $("#loader .loader").length ){
-				//console.log("[startLoader] Loader started previously");
-		}
-		else{
-				var spinnerHtml = "<div id ='loader'> <img  class='loader' src='./img/icons/sicc.png' alt='Loader'></img></div>";
-				$(spinnerHtml).insertAfter("#header").promise().done(function(){
-						console.log("[startLoader] Adicionado");
-				});
-		}
+	$('#loader').addClass('active');
+	//console.log("[startLoader]",$('#loader'));
 }
 
 function stopLoader(){
-		if($("#loader").length){
-				$("#loader").remove();
-				//console.log("[stopLoader] Removido");
-		}
-		else{
-			console.log("[stopLoader] Loader stopped previously");
-		}
+	$('#loader').removeClass('active');
+	//console.log("[stopLoader]");
 }
 
 function loadIndexContent(btnsToShow, event) {
@@ -329,8 +316,7 @@ function imageZoom() {
 				//console.log(img);/*+
 				i++;
 			});
-
-		console.log("[imageZoom] " + imgs.length + " imgs ready for zoom");
+		//console.log("[imageZoom] " + imgs.length + " imgs ready for zoom");
 	}
 } /*close zommClickImagem*/
 
@@ -434,9 +420,9 @@ function toggleDocOptions(){
 
 function loadFileHistory(file){
 
-	if( !$("#fileHistory").length ) {
+	startLoader();
 
-		console.log("[loadFileHistory] novo histórico criado!");
+	if( !$("#fileHistory").length ) {
 
 			var ext = '.md';
 			//var file = 'menus';
@@ -467,6 +453,8 @@ function loadFileHistory(file){
 				$("#content").after(html_commits);
 				//console.log(html_commits);
 
+				stopLoader();
+
 				}; /*callback function*/
 
 				return $.ajax({
@@ -480,17 +468,23 @@ function loadFileHistory(file){
 					.done(function(response, textStatus, jqXHR) {
 						return callback(response, textStatus, jqXHR);
 					});
+					//.always(){
+						//stopLoader();
+					//}
 	}
 	else if ( $("#fileHistory").length && !$("#fileHistory").hasClass("active") ) {
 		$("#fileHistory").addClass("active");
-		console.log("adicionada classe active");
+		//console.log("adicionada classe active");
+		stopLoader();
 	}
 	else if( $(".file-history").length && $("#fileHistory").hasClass("active") ){
 		$("#fileHistory").removeClass("active");
-		console.log("histórico escondido");
+		stopLoader();
+		//console.log("histórico escondido");
 	}
 	else{
 		console.log("[loadFileHistory] Erro");
+		stopLoader();
 	}
 }
 

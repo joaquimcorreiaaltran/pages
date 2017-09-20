@@ -11,13 +11,22 @@ font-size:1em
 }
 
 
-.loader {
-display: block;
-animation: spin 1.2s linear infinite;
+#loader {
+display: none;
 margin: auto;
-width: 4em;
-height: 4em;
-padding: 4em
+}
+#loader>img {
+width: 3em;
+height: 3em;
+margin: 20px 50% 20px 50%;
+}
+
+#loader.active{
+ display: block;
+}
+
+#loader>img {
+ animation: spin 1.2s linear infinite
 }
 
 .dropdown-doc-options {
