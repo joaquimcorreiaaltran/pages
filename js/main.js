@@ -121,6 +121,7 @@ function loadIndexContent(btnsToShow, event) {
 
 function highlightMenuItem (event) {
 	if(event != null){
+		if(event.target != undefined){
 			var el;
 
 			$("#accordion .active").each(function() {
@@ -133,13 +134,19 @@ function highlightMenuItem (event) {
 
 			$(event.target.parentNode.children).addClass("active")
 			$(event.target).parents().addClass("active");
+		}
+	}
+	else {
+		return;
 	}
 }
 
 function loadMdDoc(mdFile, btnsToShow, anchor, event) {
 
 		startLoader();
+
 		highlightMenuItem(event);
+
 		$("#fileHistory").remove();
 
 		//if the HTML element "#documento" doesn't exist, then create it inside the "documento" element
@@ -277,6 +284,8 @@ function scrollToAnchor(mdFile, anchor){
 }
 
 function showElements(elements) {
+
+	console.log(elements);
 
 	hideElements();
 
