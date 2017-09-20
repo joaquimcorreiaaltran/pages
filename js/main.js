@@ -158,7 +158,6 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
 
 		$("#btnHistory").off("click");
 		$("#btnHistory").click(function() {
-				console.log("[loadMdDoc] Chama loadFileHistory()");
 				loadFileHistory(mdFile);
 			});
 
@@ -515,7 +514,6 @@ function loadToc(mdFile, elementId) {
 		$(elementId).html("");
 
 		var toc="", newLine, el, title, link;
-
 		var toc_top_html =	"<i id='drag1' title='Arraste-me...' class='fa fa-arrows fa-fw' style='cursor: move;'></i>" +
 										"<nav role='navigation' class='table-of-contents'>" +
 											"<ul>";
@@ -527,7 +525,6 @@ function loadToc(mdFile, elementId) {
 				link = "#" + el.attr("id");
 				title = el.text();
 				nodeName = el.get(0).nodeName.toLowerCase();
-
 				newLine = "<li><a class='toc_" + nodeName + "' href='" + link + "'>" + title + "</a></li>";
 
 				toc += newLine;
@@ -537,6 +534,9 @@ function loadToc(mdFile, elementId) {
 
 		if ( toc.length > 1 ) {
 			$(elementId).html(toc_top_html + toc + toc_bottom_html);
+			if(!$(elementId).hasClass("show")){
+					$(elementId).addClass("show");
+				}
 		}
 		else{
 			$(elementId).removeClass("show");
@@ -548,7 +548,11 @@ function loadToc(mdFile, elementId) {
 		if ($("#tocDropdown").length) {
 
 			$("#tocDropdown").draggable({
-					containment: "window",handle: "i",snap: "#docButtons, #content",cursor: "move",cursorAt: {top: 5,left: 5}
+					containment: "window",
+					handle: "i",
+					snap: "#docButtons, #content",
+					cursor: "move"/*,
+					cursorAt: {top: 5,left: 5}*/
 				});
 				//$("#tocDropdown").resizable();
 		}
