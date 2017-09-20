@@ -53,7 +53,7 @@ function loadContent(){
 							}
 							else{
 									//console.log("[loadContent] Invalid document name: " + doc);
-									loadIndexContent(["btnMenu"], event);
+									loadIndexContent(["btnMenu"], null);
 									stopLoader();
 							}
 					}
@@ -61,13 +61,13 @@ function loadContent(){
 	else if ( qs.length <= 1  ) {
 
 				//console.log("[loadContent] Query string not detected/not valid: " + qs);
-				loadIndexContent(["btnMenu"], event);
+				loadIndexContent(["btnMenu"], null);
 				stopLoader();
 
 	}/*close else if*/
 	else{
 		console.log("[loadContent] Erro. window.location.href: " + window.location.href);
-		loadIndexContent(["btnMenu"], event);
+		loadIndexContent(["btnMenu"], null);
 		stopLoader();
 	}
 }
