@@ -505,12 +505,8 @@ function addSharelink(mdFile){
 
 	docURL = location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile;
 	//add href to the share button in the doc options
-	$("#btnShare").attr(
-			{
-				"href":"window.open('"+encodeURI("mailto:?Subject=SPMS|SICC|Partilha de documentação: " + docTitle + "&body=\n\nDocumento: " + docTitle + ".\n\nEndereço: " + docURL + "')"),
-				"target":"_blank"
-			}
-		);
+	$("#btnShare").attr("onclick","window.open('" + encodeURI("mailto:?Subject=SPMS|SICC|Partilha de documentação: "
+	 																							+ docTitle + "&body=\n\nDocumento: " + docTitle + ".\n\nEndereço: " + docURL + "','_blank')"));
 }
 
 
