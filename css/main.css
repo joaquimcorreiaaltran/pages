@@ -104,18 +104,19 @@ cursor: pointer !important
 .file-history{
 display: none;
 border-radius:8px;
-max-height: 80vh;
+max-height: 60vh;
 overflow: auto;
 padding: 1em;
 background-color:white;
 position:absolute;
-top:200px;
+top:100px;
 right:-100%;
 z-index:1;
 transition:all .3s ease-out;
 }
 
 .file-history.active{
+overflow: auto;
 display: block;;
 left:10%;
 right:10%;

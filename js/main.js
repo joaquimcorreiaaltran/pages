@@ -91,7 +91,7 @@ function loadIndexContent(btnsToShow, event) {
 
 	startLoader();
 
-	$("#fileHistory").remove();
+	$("#fileHistory, #behindFileHistory").remove();
 	$("body").attr("style", "margin:0 0 0 0;  width:100%");
 	$("#content").attr("style", "min-height: 90vh; margin: 0 0 0 0; padding:1em 1em 1em 1em; widht: 100%; max-width:5000px");
 
@@ -600,7 +600,7 @@ window.onclick = function(event) {
 		showMenu();
 	}
 	if (event.target.id == 'behindFileHistory'){
-		$("#behindFileHistory, #fileHistory").removeClass("active");
+		$("#behindFileHistory, #fileHistory, #btnHistory").removeClass("active");
 	}
 };
 
