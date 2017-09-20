@@ -32,11 +32,11 @@ function loadContent(){
 					//console.log("[loadContent] Query string (2): " + qs);
 
 					var doc, paramArr = qs.split("&",10); // Returns paramArr passed of the query string. splits until the max of 10 paramArr
-					console.log("[loadContent] paramArr: " + paramArr +
+					/*console.log("[loadContent] paramArr: " + paramArr +
 										"\n[loadContent] paramArr.length: " + paramArr.length +
 										"\n[loadContent] paramArr[0]: " + paramArr[0] +
 										"\n[loadContent] paramArr[1]: " + paramArr[1]);
-
+					*/
 					if (paramArr.length >= 1) {
 							doc = paramArr[0].substring(paramArr[0].indexOf("=") + 1, 99); // Returns doc name
 
@@ -46,14 +46,13 @@ function loadContent(){
 									anchor = paramArr[1].substring(paramArr[1].indexOf("=") + 1, 99); // Returns anchor of the document
 									anchor = decodeURI(anchor);
 								}
-							console.log("[loadContent] doc: " + doc +
-												"\n[loadContent] anchor: " + anchor);
+							//console.log("[loadContent] doc: " + doc + "\n[loadContent] anchor: " + anchor);
 
 							if (doc.length) {
 									loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnShowToc','tocDropdown'], anchor, null);
 							}
 							else{
-									console.log("[loadContent] Invalid document name: " + doc);
+									//console.log("[loadContent] Invalid document name: " + doc);
 									loadIndexContent(["btnMenu"], event);
 									stopLoader();
 							}
@@ -61,7 +60,7 @@ function loadContent(){
 	}/*close if*/
 	else if ( qs.length <= 1  ) {
 
-				console.log("[loadContent] Query string not detected/not valid: " + qs);
+				//console.log("[loadContent] Query string not detected/not valid: " + qs);
 				loadIndexContent(["btnMenu"], event);
 				stopLoader();
 
@@ -277,14 +276,12 @@ function scrollToAnchor(mdFile, anchor){
 		}
 		else{
 				window.scrollTo(0,0);// top scrolling
-				console.log("[scrollToAnchor] anchorId not found in the html: " + anchorId);
+				//console.log("[scrollToAnchor] anchorId not found in the html: " + anchorId);
 		}
 	stopLoader();
 }
 
 function showElements(elements) {
-
-	console.log(elements);
 
 	hideElements();
 
@@ -445,7 +442,7 @@ function loadFileHistory(file, e){
 
 				var d = response.data, html_commits ="";
 
-				console.log(d); //all file updates
+				//console.log(d); //all file updates
 				html_commits = "<div id='behindFileHistory' class='active'><div id='fileHistory' class='file-history active'><h3>Últimas alterações ao documento:</h3>";
 
 				for (i = 0; i < d.length; i++){
@@ -625,8 +622,6 @@ $('#tocDropdown').on('click', 'a[href^="#"]', function(e) {
 			$('#tocDropdown *').removeClass('active');
 			$(e.target, e.target.parentElement).addClass('active');
 		}
-
-		console.log("\n\n\n\n\n\n",e);
 
 		// prevent standard hash navigation (avoid blinking in IE)
 		e.preventDefault();
