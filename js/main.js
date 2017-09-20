@@ -75,11 +75,13 @@ function loadContent(){
 
 function startLoader(){
 	$('#loader').addClass('active');
+	$('*').css( 'cursor', 'wait' );
 	//console.log("[startLoader]",$('#loader'));
 }
 
 function stopLoader(){
 	$('#loader').removeClass('active');
+	$('*').css( 'cursor', 'auto' );
 	//console.log("[stopLoader]");
 }
 
