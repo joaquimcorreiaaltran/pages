@@ -443,7 +443,9 @@ function loadFileHistory(file, e){
 				var d = response.data, html_commits ="";
 
 				//console.log(d); //all file updates
-				html_commits = "<div id='behindFileHistory' class='active'><div id='fileHistory' class='file-history active'><h3>Últimas alterações ao documento:</h3>";
+				html_commits = "<div id='behindFileHistory' class='active'><div id='fileHistory' class='file-history active'>"+
+												"<h3>Últimas alterações ao documento:</h3>"+
+												"<i onclick='loadFileHistory()' title='Voltar ao documento' class='fa fa-times fa-fw fa-2x' aria-hidden='true'></i>";
 
 				for (i = 0; i < d.length; i++){
 

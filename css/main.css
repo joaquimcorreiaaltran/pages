@@ -115,8 +115,24 @@ z-index:1;
 transition:all .3s ease-out;
 }
 
+#fileHistory>i.fa.fa-times.fa-fw:before{
+  position: absolute !important;
+  top:10px !important;
+  right: 10px !important;
+  cursor: pointer !important;
+}
+
+#fileHistory > h3{
+margin-top: 15px;
+margin-bottom: 0;
+}
+
+.file-history>i:hover{
+  cursor: pointer !important;
+  color:#29615D;
+}
+
 .file-history.active{
-overflow: auto;
 display: block;;
 left:10%;
 right:10%;
