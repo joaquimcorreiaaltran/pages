@@ -648,7 +648,7 @@ transition: all 0.3 ease-out;
 #accordion div.caret.active {
 color:#29615D;
 transform:rotate(90deg);
-transition:all .5s;
+transition:all .3s;
 -ms-transform:rotate(90deg);
 -webkit-transform:rotate(90deg)
 }
@@ -710,9 +710,9 @@ z-index:100
 }
 
 #docButtons button {
--moz-transition:all .2s ease;
+/*-moz-transition:all .2s ease;
 -ms-transition:all .2s ease;
--webkit-transition:all .2s ease;
+-webkit-transition:all .2s ease;*/
 border-color:#FFF;
 border-style:solid;
 border-width:1.5px;
@@ -723,7 +723,7 @@ height:34px;
 margin:5px;
 padding:0;
 text-align:center;
-transition:all .2s ease;
+/*transition:all .2s ease;*/
 width:35px
 }
 
@@ -751,6 +751,7 @@ color:#29615D
 
 #docButtons p {
 color:#FFF;
+cursor: pointer;
 float:left;
 font-weight:700;
 height:44px;
@@ -780,14 +781,8 @@ margin: -0.5em
 }
 
 #docButtons button:hover {
-font-size:1.1em;
-width:calc(50px)
-}
-
-button#btnMenu:hover {
-font-size:1.2em;
 text-align:center;
-transition:all .2s ease
+background-color: rgba(255,255,255,.25);
 }
 
 button#btnShowToc.enabled {
@@ -795,7 +790,6 @@ background-color:#FFF;
 border-color:#FFF;
 color:#29615D;
 font-weight:700;
-transition:all .4s ease;
 width:80px !important
 }
 
@@ -1006,7 +1000,7 @@ transition:all 1s ease
 font-size:.8em;
 line-height:44px;
 opacity:1;
-transition:all 3s ease
+transition:all 1s ease
 }
 
 button#btnShowToc {
