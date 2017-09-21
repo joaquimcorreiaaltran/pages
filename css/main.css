@@ -33,8 +33,8 @@ text-align: center;
 }
 
 #mapaEntidadesSICC iframe {
-width: 100%;
-height:600px;
+width: 95%;
+height:500px;
 }
 
 .dropdown-doc-options {
@@ -954,7 +954,7 @@ transition:margin-top 1s ease, margin-bottom 1s ease, margin-left 1s ease, margi
   }
 
   #mapaEntidadesSICC iframe {
-  width: 60%;
+  width: 80%;
   }
 
   #content {
