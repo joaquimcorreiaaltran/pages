@@ -28,7 +28,7 @@ margin: 20px 50% 20px 50%;
  animation: spin 1.2s linear infinite
 }
 
-#mapaEntidadesSICC div {
+#mapaEntidadesSICC {
 text-align: center;
 }
 
@@ -948,7 +948,7 @@ transition:margin-top 1s ease, margin-bottom 1s ease, margin-left 1s ease, margi
   }
 
   #mapaEntidadesSICC iframe {
-  width: 80%;
+  width: 70%;
   }
 
   #content {

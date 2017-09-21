@@ -615,21 +615,24 @@ $('#tocDropdown').on('click', 'a[href^="#"]', function(e) {
 		}
 		else{
 			$('#tocDropdown *').removeClass('active');
-			$(e.target.parentElement).addClass('active');
+			$(e.target).addClass('active');
+			$(e.target.parentNode).addClass('active');
 		}
 
 		// prevent standard hash navigation (avoid blinking in IE)
 		e.preventDefault();
 
 		// top position relative to the document
-		var pos = $id.offset().top - 55;
+		var pos = parseInt($id.offset().top - 55);
 
-		//console.log("[TOC link click] position: " + pos);
+		window.scrollTo(0,pos);
+
+		//$('html, body').css({'scrollTop' : pos});
 
 		// animated top scrolling
-		$('body, html').animate({
-				scrollTop: pos
-			});
+		//$('html, body').animate({'scrollTop' : pos},1000);
+
+		console.log($('html, body').css('scrollTop'));
 
 
 });
