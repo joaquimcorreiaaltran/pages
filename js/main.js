@@ -49,38 +49,37 @@ function loadContent(){
 							//console.log("[loadContent] doc: " + doc + "\n[loadContent] anchor: " + anchor);
 
 							if (doc.length) {
-									loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnShowToc','tocDropdown'], anchor, null);
+									loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnShowToc','tocDropdown','btnOpt'], anchor, null);
 							}
 							else{
 									//console.log("[loadContent] Invalid document name: " + doc);
 									loadIndexContent(["btnMenu"], null);
-									stopLoader();
+									stopLoader("[loadContent-1]");
 							}
 					}
 	}/*close if*/
 	else if ( qs.length <= 1  ) {
-
 				//console.log("[loadContent] Query string not detected/not valid: " + qs);
 				loadIndexContent(["btnMenu"], null);
-				stopLoader();
 
 	}/*close else if*/
 	else{
 		console.log("[loadContent] Erro. window.location.href: " + window.location.href);
 		loadIndexContent(["btnMenu"], null);
-		stopLoader();
+		stopLoader("[loadContent-3]");
 	}
 }
 
 function startLoader(){
 	$('#loader').addClass('active');
-	$('*').css( 'cursor', 'wait' );
+	$( "*" ).css( "cursor", "progress" );
 	//console.log("[startLoader]",$('#loader'));
 }
 
-function stopLoader(){
+function stopLoader(origin){
+	//window.alert("origin->" + origin + "\ncursor->"+$( "*" ).css( "cursor"));
 	$('#loader').removeClass('active');
-	$('*').css( 'cursor', 'auto' );
+	$( "*" ).css( "cursor", "" );
 	//console.log("[stopLoader]");
 }
 
@@ -104,16 +103,18 @@ function loadIndexContent(btnsToShow, event) {
 			showElements(btnsToShow);
 			$("footer").removeClass("documentMode");
 			highlightMenuItem(event);
+			setTimeout(function(){stopLoader("[loadIndexContent_1]");},1000);
 	})
 	.fail(function(){
 			console.log("[loadIndexContent] Error on loading requested file: " + filePath);
+			stopLoader("[loadIndexContent_2]");
 	})
 	.always(function(){
 			window.scrollTo(0,0);
 			$("#docOptions").removeClass("active");
 			var stateObj = { foo: "bar" };
 			history.replaceState(stateObj, "SICC Documentação - página inicial", location.href.split("?")[0]);
-			stopLoader();
+
 	});
 
 }
@@ -177,8 +178,6 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
 
 		showElements(btnsToShow);
 		window.scrollTo(0,0);
-
-		stopLoader();
 }
 
 //load and convert Markdown to Html and show it
@@ -223,14 +222,13 @@ function convertMdToHtml(elementId, mdFile, anchor) {
 						}
 						responsiveTable();
 						imageZoom();
-						stopLoader();
 				});
-				stopLoader();
+				stopLoader("[convertMdToHtml_1]");
   })
 		.fail(function() {
 				console.log("[convertMdToHtml] Error on document loading. The file \"" + mdFile + "\" exists in the markdown folder?");
 				loadIndexContent(['btnMenu'],null);
-				stopLoader();
+				stopLoader("[convertMdToHtml_3]");
 	});
 
 } /*close convertMdToHtml()*/
@@ -256,7 +254,7 @@ function scrollToAnchor(mdFile, anchor){
 		} catch(e) {
 			console.log('[scrollToAnchor] URL anchor parameter is invalid: ' + anchorId);
 			anchorId = '';
-			stopLoader();
+			stopLoader("[scrollToAnchor]");
 			return;
 		}
 
@@ -278,7 +276,7 @@ function scrollToAnchor(mdFile, anchor){
 				window.scrollTo(0,0);// top scrolling
 				//console.log("[scrollToAnchor] anchorId not found in the html: " + anchorId);
 		}
-	stopLoader();
+	stopLoader("[scrollToAnchor]");
 }
 
 function showElements(elements) {
@@ -392,13 +390,13 @@ function loadCommitHistory(btnsToShow) {
 					}
 
 					window.scrollTo(0,0);
-					stopLoader();
+					stopLoader("[loadCommitHistory_1]");
 					//Show an UI message if the request limit to the API was reached
 				} else if (rate_limit_remaining == 0) {
-					stopLoader();
+					stopLoader("[loadCommitHistory_2]");
 					return ul.append("<b>Atenção: </b> Não foi possível mostrar as atualizações devido a sobrecarga de pedidos (>" + rate_limit + "/hr), realizados pelo seu atual IP. Pode utilizar outro IP ou voltar a tentar depois das " + time_to_reset + ":59s de hoje. <br /><br />Mensagem do servidor: \"<i>" + response.data.message + "</i>\"");
 				} else {
-					stopLoader();
+					stopLoader("[loadCommitHistory_3]");
 					return ul.append("Ops! :( <br /><br /> Ocorreu algo inesperado.");
 				}
 				return _results;
@@ -422,6 +420,7 @@ function loadCommitHistory(btnsToShow) {
 
 function toggleDocOptions(){
 	$('.dropdown-doc-options').toggleClass('active');
+	$('#btnOpt').toggleClass('active');
 }
 
 function loadFileHistory(file, e){
@@ -463,7 +462,7 @@ function loadFileHistory(file, e){
 
 				//console.log(html_commits);
 
-				stopLoader();
+				stopLoader("[loadFileHistory_1]");
 
 				}; /*callback function*/
 
@@ -485,16 +484,16 @@ function loadFileHistory(file, e){
 	else if ( $("#fileHistory").length && !$("#fileHistory").hasClass("active") ) {
 		$("#btnHistory, #fileHistory, #behindFileHistory").addClass("active");
 		//console.log("adicionada classe active");
-		stopLoader();
+		stopLoader("[loadFileHistory_2]");
 	}
 	else if( $(".file-history").length && $("#fileHistory").hasClass("active") ){
 		$("#fileHistory, #btnHistory, #behindFileHistory").removeClass("active");
-		stopLoader();
+		stopLoader("[loadFileHistory_4]");
 		//console.log("histórico escondido");
 	}
 	else{
 		console.log("[loadFileHistory] Erro");
-		stopLoader();
+		stopLoader("[loadFileHistory_5]");
 	}
 }
 
@@ -566,8 +565,6 @@ function loadToc(mdFile, elementId) {
 			$("#btnShowToc").addClass("enabled");
 		}
 	}
-	stopLoader();
-
 } /*builds toc*/
 
 function showToc() {

@@ -68,6 +68,14 @@ border-left-width: 0.4em;
 border-top-left-radius:8px;
 padding:0 0.3em 0 0.1em;
 }
+#btnOpt.active {
+  background-color: white;
+  width: calc(50px);
+}
+
+ #btnOpt.active i{
+   color: #29615D;
+ }
 
 #docOptions > div:last-child {
   border-bottom-left-radius:8px;
@@ -83,7 +91,7 @@ background-color:#48aba4
 }
 
 .doc-option:hover, .doc-option:hover i {
-cursor: pointer !important;
+cursor: pointer;
 }
 
 .doc-option:hover i {
@@ -119,7 +127,7 @@ transition:all .3s ease-out;
   position: absolute !important;
   top:10px !important;
   right: 10px !important;
-  cursor: pointer !important;
+  cursor: pointer;
 }
 
 #fileHistory > h3{
@@ -128,7 +136,7 @@ margin-bottom: 0;
 }
 
 .file-history>i:hover{
-  cursor: pointer !important;
+  cursor: pointer;
   color:#29615D;
 }
 
@@ -259,10 +267,6 @@ margin:0;
 vertical-align:middle
 }
 
-button[disabled],input[disabled] {
-cursor:default
-}
-
 ::-webkit-scrollbar {
 background:transparent;
 width:0
@@ -362,7 +366,7 @@ article i.fa{
 
 article i.fa:hover{
   color:#29615D;
-  cursor:pointer
+  cursor:pointer;
 }
 
 
@@ -406,7 +410,6 @@ text-align:left
 border:1px solid #656565;
 border-radius:8px;
 border-spacing:10px;
-cursor:url(../img/highslide/graphics/zoomin.cur), pointer;
 display:block;
 margin-left:auto;
 margin-right:auto;
@@ -422,8 +425,11 @@ max-width:100%;
 transform:scale(0.8,0.8)
 }
 
+#documento p a img, td img{
+  cursor:url(../img/highslide/graphics/zoomin.cur);
+}
+
 td img {
-cursor:url(../img/highslide/graphics/zoomin.cur), pointer;
 margin-left:auto;
 margin-right:auto;
 max-height:100px;
@@ -591,6 +597,10 @@ transition:left .3s ease-out
 list-style:none;
 margin:0;
 padding:0
+}
+
+#accordion li{
+  cursor:pointer;
 }
 
 #accordion a {
