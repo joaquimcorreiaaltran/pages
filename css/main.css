@@ -426,7 +426,8 @@ transform:scale(0.8,0.8)
 }
 
 #documento p a img, td img{
-  cursor:url(../img/highslide/graphics/zoomin.cur);
+  cursor:pointer;
+  cursor:url(./img/highslide/graphics/zoomin.cur), pointer !important;
 }
 
 td img {
@@ -477,7 +478,7 @@ transition:all .3s ease-out
 }
 
 .dropdown-content,#accordion {
-background:url(../img/logos/imagem_background.png) no-repeat;
+background:url(./img/logos/imagem_background.png) no-repeat;
 background-color:#FFF
 }
 
