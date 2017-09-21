@@ -585,7 +585,10 @@ window.onclick = function(event) {
 	if (!event.target.matches('.dropbtn, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p') && $("#tocDropdown").hasClass("show")) {
 		showToc();
 	}
-	if (!event.target.matches('.dropdown, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, #accordion *, #btnShowToc') && $("#btnMenu").hasClass("showMenu")) {
+	/*if (!event.target.matches('.dropdown, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, #accordion *, #btnShowToc') && $("#btnMenu").hasClass("showMenu")) {
+		showMenu();
+	}*/
+	if ( !$.inArray(event.target.id,['tocDropdown','btnMenu', 'docButtons', 'accordion', 'btnShowToc']) && $("#btnMenu").hasClass("showMenu")) {
 		showMenu();
 	}
 	if (event.target.id == 'behindFileHistory'){
@@ -612,7 +615,7 @@ $('#tocDropdown').on('click', 'a[href^="#"]', function(e) {
 		}
 		else{
 			$('#tocDropdown *').removeClass('active');
-			$(e.target, e.target.parentElement).addClass('active');
+			$(e.target.parentElement).addClass('active');
 		}
 
 		// prevent standard hash navigation (avoid blinking in IE)
@@ -627,6 +630,8 @@ $('#tocDropdown').on('click', 'a[href^="#"]', function(e) {
 		$('body, html').animate({
 				scrollTop: pos
 			});
+
+
 });
 
 
