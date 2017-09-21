@@ -1048,6 +1048,11 @@ transition:padding 1s ease, margin-top 1s ease
 
 
 /*Google Maps Iframe*/
-.scrolloff {
-    pointer-events: none;
+.overlay {
+   background:transparent;
+   position:relative;
+   width:640px;
+   height:480px; /* your iframe height */
+   top:480px;  /* your iframe height */
+   margin-top:-480px;  /* your iframe height */
 }
