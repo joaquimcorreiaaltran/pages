@@ -3,7 +3,7 @@
 or its subdirectories. This means that if you place the service worker file in a scripts directory
 it will only be able to interact with pages in the scripts directory or below.*/
 
-var cacheName = 'spmssicc_v13/09/2017v4'; //Edit this to update cache
+var cacheName = 'spmssicc_v22/09/2017v4'; //Edit this to update cache
 var cacheFiles = [
     '/pages/',
     '/pages/index.html',
@@ -24,11 +24,11 @@ var cacheFiles = [
     '/pages/js/libs/jquery.zoom.js',
     '/pages/js/libs/jquery.zoom.min.js',
     '/pages/js/libs/showdown.js',
-    '/pages/js/cache-polyfill.js',
-    '/pages/js/highslide-with-gallery.js',
-    '/pages/js/jquery-3.1.1.js',
-    '/pages/js/jquery.timeago.js',
-    '/pages/js/jquery.zoom.js',
+    '/pages/js/libs/cache-polyfill.js',
+    '/pages/js/libs/highslide-with-gallery.js',
+    '/pages/js/libs/jquery-3.1.1.js',
+    '/pages/js/libs/jquery.timeago.js',
+    '/pages/js/libs/jquery.zoom.js',
     '/pages/js/main.js',
 
     '/pages/markdown/about.md',
