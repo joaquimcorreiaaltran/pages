@@ -1412,7 +1412,7 @@ Este menu agrega funcionalidades relacionadas com o registo de informação cont
 
 ###### 4.1.1.1.1 Recolha de Produtos -->
 
-###### 4.1 Referências MB
+### 4.1 Referências MB
 
 Caminho:
 ![Caminho: Referências MB](menus.assets/menus-2506f944.png)
