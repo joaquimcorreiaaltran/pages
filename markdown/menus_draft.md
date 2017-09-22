@@ -103,7 +103,7 @@ tabulações.
 
 ##### SICC
 
-![menus-108c6384.png](https://spmssicc.github.io/pages/markdown/menus.assets-108c6384.png)
+![menus-108c6384.png](https://spmssicc.github.io/pages/markdown/menus.assets/menus-108c6384.png)
 
 | Campo/Botão | Descrição/Ação |
 |:---|:---|
@@ -1415,10 +1415,10 @@ Este menu agrega funcionalidades relacionadas com o registo de informação cont
 ### 4.1 Referências MB
 
 Caminho:
-![Caminho: Referências MB](https://spmssicc.github.io/pages/markdown/menus.assets-2506f944.png)
+![Caminho: Referências MB](https://spmssicc.github.io/pages/markdown/menus.assets/menus-2506f944.png)
 
 Composição do ecrã:
-![Ecrã: Referências MB](https://spmssicc.github.io/pages/markdown/menus.assets-d16fa591.png)
+![Ecrã: Referências MB](https://spmssicc.github.io/pages/markdown/menus.assets/menus-d16fa591.png)
 
 | Campo/Botão | Descrição/Ação |
 |:---|:---|
@@ -1433,16 +1433,16 @@ Composição do ecrã:
 
 ###### Como gerar uma referência MB?
 
-![Animação: como gerar uma referência MB?](https://spmssicc.github.io/pages/markdown/menus.assets-700ae22a.gif)
+![Animação: como gerar uma referência MB?](https://spmssicc.github.io/pages/markdown/menus.assets/menus-700ae22a.gif)
 
 ###### Como listar referências MB geradas?
 
-![Animação: Como listar referências MB geradas?](https://spmssicc.github.io/pages/markdown/menus.assets-7dd7d8ed.gif)
+![Animação: Como listar referências MB geradas?](https://spmssicc.github.io/pages/markdown/menus.assets/menus-7dd7d8ed.gif)
 
 ###### Como exportar para CSV a listagem de referências MB?
 
-![Como exportar referências MB?](https://spmssicc.github.io/pages/markdown/menus.assets-988bf528.gif)
+![Como exportar referências MB?](https://spmssicc.github.io/pages/markdown/menus.assets/menus-988bf528.gif)
 
 ###### Exemplo de exportação
 
-![Animação: Exemplo de exportação](https://spmssicc.github.io/pages/markdown/menus.assets-8ffd9631.png)
+![Animação: Exemplo de exportação](https://spmssicc.github.io/pages/markdown/menus.assets/menus-8ffd9631.png)
