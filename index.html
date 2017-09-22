@@ -92,6 +92,7 @@
 					})
 					.then(function (registration) {
 						// console.log("[ServiceWorker] Registered");
+						registration.update();
 					});
 
 				navigator.serviceWorker.ready.then(function (registration) {
