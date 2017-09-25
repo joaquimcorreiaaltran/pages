@@ -589,21 +589,20 @@ function loadToc(mdFile, elementId) {
 } /*builds toc*/
 
 function showToc() {
-	$(".dropdown-content").toggleClass("show");
-	$("#btnShowToc").toggleClass("enabled");
-	//console.log("[showToc] TOC visibility:" + $(".dropdown-content").hasClass("show"));
-	//console.log("[showToc] #btnShowToc visibility:" + $("#btnShowToc").hasClass("show"));
+	if( $('.dropdown-content').hasClass('show') )	$('.dropdown-content').removeClass('show');
+	else{$('.dropdown-content').addClass('show');}
+	if( $('#btnShowToc').hasClass('enabled') )	$('#btnShowToc').removeClass('enabled');
+	else{$('#btnShowToc').addClass('enabled');}
 }
 
 function showMenu() {
-	$("#accordion, #btnMenu").toggleClass("showMenu");
-	//console.log("[showMenu] #accordion visibility:" + $("#accordion").hasClass("showMenu"));
-	//console.log("[showMenu] #btnMenu visibility:" + $("#accordion").hasClass("showMenu"));
+	if( $('#accordion, #btnMenu').hasClass('showMenu') && $('.dropdown-content').hasClass('show') )	$('#accordion, #btnMenu').removeClass('showMenu');
+	else{$('#accordion, #btnMenu').addClass('showMenu');}
 }
 
 function toggleDocOptions(){
-	$('.dropdown-doc-options').toggleClass('active');
-	$('#btnOpt').toggleClass('active');
+	if( $('.dropdown-doc-options, #btnOpt').hasClass('active') )	$('.dropdown-doc-options, #btnOpt').removeClass('active');
+	else{$('.dropdown-doc-options, #btnOpt').addClass('active');}
 }
 
 // Close the dropdown menu and the menu if the user clicks outside of it
