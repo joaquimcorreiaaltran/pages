@@ -589,20 +589,20 @@ function loadToc(mdFile, elementId) {
 } /*builds toc*/
 
 function showToc() {
-	if( $('.dropdown-content').hasClass('show') )	$('.dropdown-content').removeClass('show');
-	else{$('.dropdown-content').addClass('show');}
-	if( $('#btnShowToc').hasClass('enabled') )	$('#btnShowToc').removeClass('enabled');
-	else{$('#btnShowToc').addClass('enabled');}
+	if( $('.dropdown-content').hasClass('show') )	{$('.dropdown-content').removeClass('show');}
+	else{ $('.dropdown-content').addClass('show'); }
+	if( $('#btnShowToc').hasClass('enabled') )	{$('#btnShowToc').removeClass('enabled');}
+	else{ $('#btnShowToc').addClass('enabled'); }
 }
 
 function showMenu() {
-	if( $('#accordion, #btnMenu').hasClass('showMenu') && $('.dropdown-content').hasClass('show') )	$('#accordion, #btnMenu').removeClass('showMenu');
-	else{$('#accordion, #btnMenu').addClass('showMenu');}
+	if( $('#accordion, #btnMenu').hasClass('showMenu') )	{	$('#accordion, #btnMenu').removeClass('showMenu');}
+	else{	$('#accordion, #btnMenu').addClass('showMenu');	}
 }
 
 function toggleDocOptions(){
-	if( $('.dropdown-doc-options, #btnOpt').hasClass('active') )	$('.dropdown-doc-options, #btnOpt').removeClass('active');
-	else{$('.dropdown-doc-options, #btnOpt').addClass('active');}
+	if( $('.dropdown-doc-options, #btnOpt').hasClass('active') )	{$('.dropdown-doc-options, #btnOpt').removeClass('active');}
+	else{ $('.dropdown-doc-options, #btnOpt').addClass('active'); }
 }
 
 // Close the dropdown menu and the menu if the user clicks outside of it
@@ -610,10 +610,8 @@ window.onclick = function(event) {
 	if (!event.target.matches('.dropbtn, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p') && $("#tocDropdown").hasClass("show")) {
 		showToc();
 	}
-	/*if (!event.target.matches('.dropdown, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, #accordion *, #btnShowToc') && $("#btnMenu").hasClass("showMenu")) {
-		showMenu();
-	}*/
-	if ( !$.inArray(event.target.id,['tocDropdown','btnMenu', 'docButtons', 'accordion', 'btnShowToc']) && $("#btnMenu").hasClass("showMenu")) {
+	if (!event.target.matches('.dropdown, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, #accordion *, #btnShowToc') && $("#btnMenu").hasClass("showMenu")) {
+		console.log($("#btnMenu").hasClass("showMenu"));
 		showMenu();
 	}
 	if (event.target.id == 'behindFileHistory'){
