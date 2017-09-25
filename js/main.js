@@ -393,13 +393,18 @@ function loadCommitHistory(btnsToShow) {
 					stopLoader("[loadCommitHistory_1]");
 					//Show an UI message if the request limit to the API was reached
 				} else if (rate_limit_remaining == 0) {
-					stopLoader("[loadCommitHistory_2]");
-					return ul.append("<b>Atenção: </b> Não foi possível mostrar as atualizações devido a sobrecarga de pedidos (>" + rate_limit + "/hr), realizados pelo seu atual IP. Pode utilizar outro IP ou voltar a tentar depois das " + time_to_reset + ":59s de hoje. <br /><br />Mensagem do servidor: \"<i>" + response.data.message + "</i>\"");
+					alert("### Atingido limite máximo de pedidos à API GitHub ###\nO seu IP realizou "
+									+ rate_limit + " pedidos na última hora.\nPara consultar o histórico, neste momento, poderá utilizar outra ligação à internet ou tentar novamente a partir das "
+									+ time_to_reset + ":59s de hoje. \n\n### Mensagem Github ### \n\"" + response.data.message + "\"");
+					stopLoader("[loadFileHistory_2]");
+					return;
 				} else {
-					stopLoader("[loadCommitHistory_3]");
-					return ul.append("Ops! :( <br /><br /> Ocorreu algo inesperado.");
+					alert("Ops! :( \n\n Ocorreu algo inesperado.\n\n\n\n\n### Detalhe ###\nficheiro: main.js\nfunção: loadFileHistory()\nGithub rate_limit_remaining: "
+								+ rate_limit_remaining + "\nGithub time_to_reset: " + time_to_reset);
+					stopLoader("[loadFileHistory_3]");
+					return;
 				}
-				return _results;
+			return _results;
 		}; /*callback function*/
 
 		return $.ajax({
@@ -417,12 +422,6 @@ function loadCommitHistory(btnsToShow) {
 
 } /*loadCommitHistory()*/
 
-
-function toggleDocOptions(){
-	$('.dropdown-doc-options').toggleClass('active');
-	$('#btnOpt').toggleClass('active');
-}
-
 function loadFileHistory(file, e){
 
 	startLoader();
@@ -439,30 +438,52 @@ function loadFileHistory(file, e){
 
 			callback = function(response, textStatus, jqXHR) {
 
-				var d = response.data, html_commits ="";
+				var rate_limit = response.meta["X-RateLimit-Limit"]; // Request limit to the gitHub API per hour
+				var rate_limit_remaining = response.meta["X-RateLimit-Remaining"]; // Requests left to the gitHub API in the current hour
+				var timestamp = Math.abs(new Date() - response.meta["X-RateLimit-Reset"] - new Date());
+				var time_to_reset = new Date(timestamp * 1000);
+				time_to_reset = time_to_reset.getHours() + ":" + time_to_reset.getMinutes();
 
-				//console.log(d); //all file updates
-				html_commits = "<div id='behindFileHistory' class='active'><div id='fileHistory' class='file-history active'>"+
-												"<h3>Últimas alterações ao documento:</h3>"+
-												"<i onclick='loadFileHistory()' title='Voltar ao documento' class='fa fa-times fa-fw fa-2x' aria-hidden='true'></i>";
+				console.log(response);
 
-				for (i = 0; i < d.length; i++){
+				if (rate_limit_remaining > 0) {
 
-					html_commits = html_commits + "<div>";
-					html_commits = html_commits +	" <a href='" +	d[i].html_url+"' target='_blank' title='Ver detalhes'><i class='fa fa-external-link fa-fw' aria-hidden='true'></i></a> " +
-												$.timeago(d[i].commit.author.date) + ": \"" + d[i].commit.message + "\";" ;
+							var d = response.data, html_commits ="";
 
-					html_commits = html_commits + "</div>";
-				}
+							//console.log(d); //all file updates
+							html_commits = "<div id='behindFileHistory' class='active'><div id='fileHistory' class='file-history active'>"+
+															"<h3>Últimas alterações ao documento:</h3>"+
+															"<i onclick='loadFileHistory()' title='Voltar ao documento' class='fa fa-times fa-fw fa-2x' aria-hidden='true'></i>";
 
-				html_commits = html_commits + "</div></div>"
+							for (i = 0; i < d.length; i++){
 
-				$("#content").after(html_commits);
-				$("#btnHistory").addClass("active");
+								html_commits = html_commits + "<div>";
+								html_commits = html_commits +	" <a href='" +	d[i].html_url+"' target='_blank' title='Ver detalhes'><i class='fa fa-external-link fa-fw' aria-hidden='true'></i></a> " +
+															$.timeago(d[i].commit.author.date) + ": \"" + d[i].commit.message + "\";" ;
 
-				//console.log(html_commits);
+								html_commits = html_commits + "</div>";
+							}
 
-				stopLoader("[loadFileHistory_1]");
+							html_commits = html_commits + "</div></div>"
+
+							$("#content").after(html_commits);
+							$("#btnHistory").addClass("active");
+
+							//console.log(html_commits);
+							stopLoader("[loadFileHistory_1]");
+					}
+					else if (rate_limit_remaining == 0) {
+						alert("### Atingido limite máximo de pedidos à API GitHub ###\nO seu IP realizou "
+										+ rate_limit + " pedidos na última hora.\nPara consultar o histórico, neste momento, poderá utilizar outra ligação à internet ou tentar novamente a partir das "
+										+ time_to_reset + ":59s de hoje. \n\n### Mensagem Github ### \n\"" + response.data.message + "\"");
+						stopLoader("[loadFileHistory_2]");
+						return;
+					} else {
+						alert("Ops! :( \n\n Ocorreu algo inesperado.\n\n\n\n\n### Detalhe ###\nficheiro: main.js\nfunção: loadFileHistory()\nGithub rate_limit_remaining: "
+									+ rate_limit_remaining + "\nGithub time_to_reset: " + time_to_reset);
+						stopLoader("[loadFileHistory_3]");
+						return;
+					}
 
 				}; /*callback function*/
 
@@ -578,6 +599,11 @@ function showMenu() {
 	$("#accordion, #btnMenu").toggleClass("showMenu");
 	//console.log("[showMenu] #accordion visibility:" + $("#accordion").hasClass("showMenu"));
 	//console.log("[showMenu] #btnMenu visibility:" + $("#accordion").hasClass("showMenu"));
+}
+
+function toggleDocOptions(){
+	$('.dropdown-doc-options').toggleClass('active');
+	$('#btnOpt').toggleClass('active');
 }
 
 // Close the dropdown menu and the menu if the user clicks outside of it
