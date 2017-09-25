@@ -649,7 +649,7 @@ $('#tocDropdown').on('click', 'a[href^="#"]', function(e) {
 		e.preventDefault();
 
 		// top position relative to the document
-		var pos = parseInt($id.offset().top - 40);
+		var pos = parseInt($id.offset().top - 50);
 
 		window.scrollTo(0,pos);
 
