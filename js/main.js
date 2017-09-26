@@ -648,12 +648,11 @@ $('#tocDropdown').on('click', 'a[href^="#"]', function(e) {
 		// top position relative to the document
 		var pos = parseInt($id.offset().top - 50);
 
-		window.scrollTo(0,pos);
 
 		//$('html, body').css({'scrollTop' : pos});
 
 		// animated top scrolling
-		//$('html, body').animate({'scrollTop' : pos},1000);
+		$('html, body').animate({'scrollTop' : pos},1000);
 
 		console.log($('html, body').css('scrollTop'));
 
