@@ -33,7 +33,6 @@ function Kateryna(){
 
           var start = (match.index - 15), end = (match.index + 25);
 
-
           htmlResults = htmlResults + '<li><a onclick="loadMdDoc(\'' + d.name + '\', [\'btnMenu\'],\'\', event)">'+
                                       '\'...'+d.content.substring(start,end) +'...\' (ver documento: '+d.name+');'+'</a></li>';
 
@@ -47,7 +46,7 @@ function Kateryna(){
     htmlResults = htmlResults + "</div></div>";
 
     setTimeout(function () {
-      $("#novidadeSncAP").before(htmlResults);
+      $("#content").before(htmlResults);
     }, 100);
 
 

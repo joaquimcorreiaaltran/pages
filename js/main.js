@@ -617,6 +617,9 @@ window.onclick = function(event) {
 	if (event.target.id == 'behindFileHistory'){
 		$("#behindFileHistory, #fileHistory, #btnHistory").removeClass("active");
 	}
+	if (event.target.id == 'behindSearchMatches'){
+		$("#behindSearchMatches, #searchMatches, #searchMatches i").removeClass("active");
+	}
 };
 
 /*********************************************************************
