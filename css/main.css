@@ -14,6 +14,8 @@ a{
   cursor:pointer;
 }
 
+
+
 #loader {
 display: none;
 margin: auto;
@@ -40,6 +42,81 @@ text-align: center;
 width: 95%;
 height:500px;
 }
+
+#findInPage {
+  background:#f4f4f4;
+  background:#29615D;
+  border: 1px solid #d3d3d3;
+  display:block;
+  padding: 2px 2px;
+  margin-left: auto;
+  margin-right: auto;
+
+  box-shadow:0 4px 9px rgba(0,0,0,.37);
+  -moz-box-shadow:0 4px 9px rgba(0,0,0,.37);
+  -webkit-box-shadow:0 4px 9px rgba(0,0,0,.37);
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px
+}
+
+#findInPage input,#findInPage button {
+	float:left
+}
+#form {
+	background:#fefefe;
+	border: none;
+	font:12px/12px 'HelveticaNeue', Helvetica, Arial, sans-serif;
+  display:block;
+	margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 5px;
+	padding: 10px;
+	width: 350px;
+	box-shadow: 0 0 4px rgba(0,0,0,.4) inset, 1px 1px 1px rgba(255,255,255,.75);
+	-moz-box-shadow: 0 0 4px rgba(0,0,0,.4) inset, 1px 1px 1px rgba(255,255,255,.75);
+	-webkit-box-shadow: 0 0 4px rgba(0,0,0,.4) inset, 1px 1px 1px rgba(255,255,255,.75);
+  border-radius: 9px;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px
+}
+	#form:focus {
+
+		box-shadow:0 0 4px #29615D inset;
+		-moz-box-shadow:0 0 4px #29615D inset;
+		-webkit-box-shadow:0 0 4px #29615D inset;
+	}
+	#form::-webkit-input-placeholder {
+  	font-style: italic;
+  	line-height: 15px
+	}
+
+	#form:-moz-placeholder {
+	  font-style: italic;
+  	line-height: 15px
+	}
+
+
+#search {
+	border: none;
+  background:#37837e;
+	color:#fff;
+	cursor: pointer;
+	font: 14px/14px 'HelveticaNeue', Helvetica, Arial, sans-serif;
+  display:block;
+	padding: 10px;
+  margin:auto;
+	width:106px;
+	box-shadow: 0 0 2px #37837e inset;
+	-moz-box-shadow: 0 0 2px #37837e inset;
+	-webkit-box-shadow: 0 0 2px #37837e inset;
+  border-radius: 9px;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+}
+#search:hover {
+		opacity:.9;
+	}
 
 .dropdown-doc-options {
 box-shadow:-5px 5px 15px 2px rgba(0,0,0,0.2);
@@ -111,7 +188,7 @@ cursor: pointer;
 cursor: pointer !important
 }
 
-#behindFileHistory.active{
+#behindFileHistory, #behindSearchMatches .active{
   display: block;
   background-color:rgba(0, 0, 0, 0.5);
   height: 100vh;
@@ -122,7 +199,7 @@ cursor: pointer !important
   z-index: 101;
 }
 
-.file-history{
+.file-history, .search-matches{
 display: none;
 border-radius:8px;
 max-height: 60vh;
@@ -136,39 +213,39 @@ z-index:1;
 transition:all .3s ease-out;
 }
 
-#fileHistory>i.fa.fa-times.fa-fw:before{
+#fileHistory>i.fa.fa-times.fa-fw:before, #searchMatches>i.fa.fa-times.fa-fw:before{
   position: absolute !important;
   top:10px !important;
   right: 10px !important;
   cursor: pointer;
 }
 
-#fileHistory > h3{
+#fileHistory > h3, #searchMatches > h3{
 margin-top: 15px;
 margin-bottom: 0;
 }
 
-.file-history>i:hover{
+.file-history>i:hover, .search-matches>i:hover{
   cursor: pointer;
   color:#29615D;
 }
 
-.file-history.active{
+.file-history.active, .search-matches.active{
 display: block;;
 left:10%;
 right:10%;
 transition:all .3s ease-out;
 }
 
-.file-history>div{
+.file-history>div, .search-matches>div{
 padding: 0.2em 1em 0.2em 1em;
 }
 
-.file-history>div>a{
+.file-history>div>a,.search-matches>div>a{
 color: #29615D;
 }
 
-.file-history>div:hover{
+.file-history>div:hover, .search-matches>div:hover{
 background-color: rgba(41, 97, 93, 0.05);
 color: #29615D;
 }
