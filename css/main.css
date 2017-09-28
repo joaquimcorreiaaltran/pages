@@ -42,6 +42,34 @@ width: 95%;
 height:500px;
 }
 
+#resultsList {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(245, 245, 245);
+  border-radius: 9px;
+}
+
+#resultsList>li{
+  padding: 0 0 0 1em;
+  list-style:decimal;
+}
+
+#resultsList a:hover{
+  text-indent: 1em;
+  font-weight: bold;
+}
+
+#resultsList a:hover{
+  text-indent: 1em;
+  font-weight: bold;
+}
+
+#resultsList>li:hover, #resultsList>li>a:hover {
+  background-color: rgba(25, 251, 55, 0.1);
+  cursor: pointer;
+}
+
 .speech {
   width: 80%;
   height: 50px;
