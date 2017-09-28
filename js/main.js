@@ -349,6 +349,10 @@ function hideElements() {
 
 function hideOptions(){
 	var options = ["btnEditarDoc","btnPDF", "btnShare", "btnHistory"];
+
+	if($("#documento").length <1){
+		$("#btnPdf");
+	}
 }
 
 // Add zoom functionality to images in the HTML
@@ -652,9 +656,7 @@ function toggleDocOptions(){
 	if( $('.dropdown-doc-options, #btnOpt').hasClass('active') )	{$('.dropdown-doc-options, #btnOpt').removeClass('active');}
 	else{ $('.dropdown-doc-options, #btnOpt').addClass('active'); }
 }
-function toggleOptions(){
-	if($())
-}
+
 
 // Close the dropdown menu and the menu if the user clicks outside of it
 window.onclick = function(event) {
