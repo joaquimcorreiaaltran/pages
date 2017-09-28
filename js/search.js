@@ -17,7 +17,7 @@ function loadAllMdownDocs(){
 }
 
 
-function kateryna(){
+function findInDocs(){
 
   $("#resultsList").html("");
 

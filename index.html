@@ -77,12 +77,20 @@
 		<script src="./js/libs/highslide-with-gallery.js" async></script>
 		<script src="./js/libs/jquery.zoom.js" async></script>
 		<script src="./js/libs/jquery.timeago.js" async></script>
+		<script src="./js/search.js"></script>
 		<script type="text/javascript">
 			$(function () {
 
 				startLoader();
 
 				loadContent(); //load the main page or the document in the url query string
+
+				loadAllMdownDocs();
+
+				setTimeout(function () {
+					$("#textToSearch").click();
+				}, 1500);
+
 
 			});
 		</script>

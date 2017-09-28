@@ -141,50 +141,6 @@ function highlightMenuItem (event) {
 	}
 }
 
-/*function findInPage(){
-var str = document.getElementById('form').value;
-var regexp = new RegExp(str.toUpperCase(),"g");
-var arrDocs =[];
-var htmlResults = "div id='behindMatches' class='acive'><div id=searchMatches' class='search-matches active'>"+"<h3>Resultados da pesquisa:</h3>"+"<i onclick=´loadContent()' title='Voltar à página inicial' class='fa fa-times fa-fw fa-2x' aria-hidden='true'></i>";
-
-var arrDocNames = ['about', 'apresentacao_snc_ap', 'cer_migracao_sicc','chave_orcamental_por_ano', 'documentos_af_e_ar','gestao_exercicios', 'gestao_projetos','help','importacao_csvs','macro_tarefas','menus_draft','menus','mu_snc_ap','perguntas_frequentes','processos','reposicao_pagamentos_cobrancas','snc_ap_faqs'];
-jQuery.ajaxSetup({async:false});
-
-console.log(str);
-	$.each(arrDocNames, function(i, doc){
-			$.get("./markdown/" + doc +".md").done(
-					function(content) {
-						var doc ={name:"",content:""};
-						doc.name = name;
-						doc.content = content;
-						arrDocs.push(doc);
-					}//function
-				);//done
-			}//function
-		);//each
-		jQuery.ajaxSetup({async:true});
-
-		var match, arrMatches = [];
-
-		$.each(arrDocs, function(i, d){
-
-							while ((match = regexp.exec(d.content.toUpperCase())) != null) {
- 									var start =(match.index-15), end=(match.index+25);
-									htmlResults = htmlResults + '<li><a onclick="loadMdDoc(\'' + d.name + '\', [\'btnMenu\'],\'\', event)">'+ '\'...'+d.content.substring(start,end) +'...\' (ver documento: '+d.name+');'+'</a></li>';
-
-							}//while
-					}//each
-				);//each
-
-	htmlResults = htmlResults + "</div></div>";
-
-	setTimeout(function () {
-      $("#content").before(htmlResults);
-    }, 100);
-
-}//findInPage*/
-
-
 function loadMdDoc(mdFile, btnsToShow, anchor, event) {
 
 		startLoader();
@@ -670,10 +626,9 @@ window.onclick = function(event) {
 	if (event.target.id == 'behindFileHistory'){
 		$("#behindFileHistory, #fileHistory, #btnHistory").removeClass("active");
 	}
-
 	if (event.target.id == 'behindSearchMatches'){
-	 	$("#behindSearchMatches, #searchMatches, #searchMatches i").removeClass("active");
-		}
+		$("#behindSearchMatches, #searchMatches, #searchMatches i").removeClass("active");
+	}
 };
 
 /*********************************************************************
