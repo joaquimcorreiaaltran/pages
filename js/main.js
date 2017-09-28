@@ -607,10 +607,10 @@ function toggleDocOptions(){
 
 // Close the dropdown menu and the menu if the user clicks outside of it
 window.onclick = function(event) {
-	if (!event.target.matches('.dropbtn, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p') && $("#tocDropdown").hasClass("show")) {
+	if (!event.target.matches('.dropbtn,#search, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p') && $("#tocDropdown").hasClass("show")) {
 		showToc();
 	}
-	if (!event.target.matches('.dropdown, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, #accordion *, #btnShowToc') && $("#btnMenu").hasClass("showMenu")) {
+	if (!event.target.matches('.dropdown, #search, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, #accordion *, #btnShowToc') && $("#btnMenu").hasClass("showMenu")) {
 		console.log($("#btnMenu").hasClass("showMenu"));
 		showMenu();
 	}
