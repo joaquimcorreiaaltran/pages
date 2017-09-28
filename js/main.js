@@ -335,7 +335,7 @@ function showElements(elements) {
 
 function hideElements() {
 
-	var elements = ["btnMenu","btnPDF","btnEditarDoc","btnShowToc","tocDropdown","btnOpt"];
+	var elements = ["btnMenu","btnShowToc","tocDropdown","btnOpt"];
 
 	for (i = 0; i < elements.length; i++) {
 		$("#" + elements[i]).removeClass("show");
@@ -345,6 +345,10 @@ function hideElements() {
 		$("#docOptions").removeClass("active");
 	}
 	//console.log("[hideElements] hide: ", elements);
+}
+
+function hideOptions(){
+	var options = ["btnEditarDoc","btnPDF", "btnShare", "btnHistory"];
 }
 
 // Add zoom functionality to images in the HTML
@@ -647,6 +651,9 @@ function showMenu() {
 function toggleDocOptions(){
 	if( $('.dropdown-doc-options, #btnOpt').hasClass('active') )	{$('.dropdown-doc-options, #btnOpt').removeClass('active');}
 	else{ $('.dropdown-doc-options, #btnOpt').addClass('active'); }
+}
+function toggleOptions(){
+	if($())
 }
 
 // Close the dropdown menu and the menu if the user clicks outside of it
