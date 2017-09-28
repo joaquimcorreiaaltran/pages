@@ -1,4 +1,15 @@
 <h1 style="text-align: center;padding: 0 1em 1em 0em">Bem-vindo à página de documentação do SICC</h1>
+<div id = "searchDiv">
+
+  <form id="labnol" method="get" action="https://www.google.com/search">
+    <div class="speech">
+      <input type="text" name="q" onkeyup="kateryna()" id="textToSearch" placeholder="Texto a pesquisar..." />
+      <img onclick="startDictation()" src="./img/mic.gif"/>
+    </div>
+    <button id="btnSearch" type="button" onclick="kateryna()" style="display:block; margin-left: auto; margin-right: auto">Pesquisar</button>
+  </form>
+</div>
+
 <div id="novidadeSncAP">
   <h2><hr/>Solução SNC-AP para entidades de saúde<br/></h2>
   <p>

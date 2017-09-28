@@ -81,9 +81,13 @@
 
 				startLoader();
 
-				Kateryna();
-
 				loadContent(); //load the main page or the document in the url query string
+
+				loadAllMdownDocs();
+
+				setTimeout(function () {
+					$("#textToSearch").click();
+				}, 1500);
 
 
 			});

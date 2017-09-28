@@ -14,6 +14,27 @@ a{
   cursor:pointer;
 }
 
+.speech {
+  border: 1px solid #29615D;
+  width: 80%;
+  padding: 0;
+  margin: 0;
+  display:block;
+  margin-left: auto;
+  margin-right: auto
+}
+.speech input {
+  border: 0;
+  color: #29615D;
+  width: 95%;
+  display: inline-block;
+  height: 30px;
+}
+.speech img {
+  float: right;
+  width: 5%;
+}
+
 #loader {
 display: none;
 margin: auto;
@@ -137,7 +158,7 @@ transition:all .3s ease-out;
 }
 
 #fileHistory>i.fa.fa-times.fa-fw:before,
-#searchMatchesy>i.fa.fa-times.fa-fw:before{
+#searchMatches>i.fa.fa-times.fa-fw:before{
   position: absolute !important;
   top:10px !important;
   right: 10px !important;
