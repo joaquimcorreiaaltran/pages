@@ -63,8 +63,9 @@ function startDictation() {
     recognition.onresult = function(e) {
       document.getElementById('textToSearch').value = e.results[0][0].transcript;
       recognition.stop();
-      console.log("onresult:", e.results[0][0].transcript);
-      document.getElementById('labnol').submit();
+      findInDocs();
+      //console.log("onresult:", e.results[0][0].transcript);
+      //document.getElementById('labnol').submit();
     };
 
     recognition.onerror = function(e) {
