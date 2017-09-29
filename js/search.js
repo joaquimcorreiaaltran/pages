@@ -26,6 +26,8 @@ function loadAllMdownDocs(){
   console.log(arrDocs);
 }
 
+var mobileDeviceCheck = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
+
 function findInDocs(){
 
   startLoader();
@@ -34,7 +36,14 @@ function findInDocs(){
 
   var str = $("#textToSearch")["0"].value;
 
-    if(str.length >= 2){
+  alert("mobileDeviceCheck:"+mobileDeviceCheck);
+
+  var minLen;
+
+  if (mobileDeviceCheck) {minLen=4;} //to reduce interface block
+  else {minLen=2;}
+
+    if(str.length >= minLen){
       var regexp = new RegExp(str.toUpperCase(),"g"),match, arrMatches = [],html_1, html_2="", html_final;
 
       $.each(arrDocs, function(i, d){
@@ -81,11 +90,7 @@ function findInDocs(){
 }/*kateryna*/
 
 
-
-
 function startDictation() {
-
-
 
   if (window.hasOwnProperty('webkitSpeechRecognition') || window.hasOwnProperty('SpeechRecognition')) {
 
