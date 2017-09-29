@@ -1,4 +1,4 @@
-var arrDocNames = ['about','cer_migracao_sicc','chave_orcamental_por_ano','menus','processos'];
+var arrDocNames = ['about', 'apresentacao_snc_ap', 'cer_migracao_sicc','chave_orcamental_por_ano', 'documentos_af_e_ar','gestao_exercicios', 'gestao_projetos','help','importacao_csvs','macro_tarefas','menus_draft','menus','mu_snc_ap','perguntas_frequentes','processos','reposicao_pagamentos_cobrancas','snc_ap_faqs'];
 var arrDocs = []; // array
 
 //load all markdown documents synchronously
