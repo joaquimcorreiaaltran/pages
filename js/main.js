@@ -696,6 +696,4 @@ $('#tocDropdown').on('click', 'a[href^="#"]', function(e) {
 		//$('html, body').animate({'scrollTop' : pos},1000);
 
 		//console.log($('html, body').css('scrollTop'));
-
-
 });

@@ -47,13 +47,38 @@ height:500px;
   margin-left: auto;
   margin-right: auto;
   background-color: rgb(245, 245, 245);
+  padding: 0.5em 1em 1em 1em;
+  margin-top: 1em;
+  border-color: rgba(41, 97, 93, 0.2);
   border-radius: 9px;
-  padding:1em;
+  border-style: solid;
+  border-width: 1px;
 }
-
+#resultsList>h3{
+  margin: 0.6em;
+}
 #resultsList>li{
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
   padding: 0.2em 0 0 1em;
   list-style:decimal;
+  margin: 5px;
+  padding: 5px;
+  border-color: rgba(41, 97, 93, 0.2);
+  border-style: solid;
+  border-width: 1px;
+}
+#resultsList span.title{
+  font-weight: bold;
+}
+
+#resultsList span.highlight{
+  background-color: yellow;
+}
+
+#resultsList li p{
+  text-indent: 1em;
+  font-style: italic;
 }
 
 #resultsList a:hover{
