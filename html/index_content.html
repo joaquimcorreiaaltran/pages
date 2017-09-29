@@ -1,6 +1,6 @@
 <h1 style="text-align: center;padding: 0 1em 1em 0em">Bem-vindo à página de documentação do SICC</h1>
 
-<!-- JOAQUIM
+<!-- JOAQUIM: voice input test
 
 <div id = "searchDiv">
   <form id="labnol" method="get" action="https://www.google.com/search">
@@ -13,12 +13,15 @@
 </div>
 
 JOAQUIM -->
-
-<div>
-    <input id="textToSearch" class="text-to-search" type="text" onkeyup="findInDocs()" placeholder="Introduzir texto">
-    <button id="btnSearch" class="btn-search" type="button" onclick="findInDocs()">Pesquisar</button>
+<div id = "searchDiv">
+  <form id="labnol" method="get" action="https://www.google.com/search">
+    <div class="speech">
+      <input id="textToSearch" class="text-to-search" type="text" onkeyup="findInDocs()" name="q" placeholder="  Introduzir texto"></input>
+      <img onclick="startDictation()" src="./img/mic.gif"/>
+    </div>
+  </form>
 </div>
-
+<button id="btnSearch" class="btn-search" type="button" onclick="findInDocs()">Pesquisar</button>
 <div id="novidadeSncAP">
   <h2><hr/>Solução SNC-AP para entidades de saúde<br/></h2>
   <p>

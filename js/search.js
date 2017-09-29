@@ -32,7 +32,7 @@ function findInDocs(){
         $.each(arrDocs, function(i, d){
               while ((match = regexp.exec(d.content.toUpperCase())) != null) {
               var start = (match.index - 15), end = (match.index + 25);
-              htmlTest = htmlTest + '<li><a onclick="loadMdDoc(\'' + d.name + '\', [\'btnMenu\'],\'\', event)">'+
+              htmlTest = htmlTest + '<li onclick="loadMdDoc(\'' + d.name + '\', [\'btnMenu\'],\'\', event)"><a onclick="loadMdDoc(\'' + d.name + '\', [\'btnMenu\'],\'\', event)">'+
                                           '\'...'+d.content.substring(start,end) +'...\' (ver documento: '+d.name+');'+'</a></li>';
 
                   //arrMatches.push(d.name + "|" + match.index);

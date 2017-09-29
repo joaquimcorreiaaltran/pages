@@ -14,26 +14,6 @@ a{
   cursor:pointer;
 }
 
-.speech {
-  border: 1px solid #29615D;
-  width: 80%;
-  padding: 0;
-  margin: 0;
-  display:block;
-  margin-left: auto;
-  margin-right: auto
-}
-.speech input {
-  border: 0;
-  color: #29615D;
-  width: 95%;
-  display: inline-block;
-  height: 30px;
-}
-.speech img {
-  float: right;
-  width: 5%;
-}
 
 #loader {
 display: none;
@@ -62,38 +42,83 @@ width: 95%;
 height:500px;
 }
 
-#textToSearch {
-background:#fefefe;
-border: none;
-font:12px/12px 'HelveticaNeue', Helvetica, Arial, sans-serif;
-display:block;
-margin-left:auto;
-margin-right:auto;
-margin-bottom: 5px;
-padding: 10px;
-width: 350px;
-box-shadow: 0 0 4px rgba(0,0,0,.4) inset, 1px 1px 1px rgba(255,255,255,.75);
--moz-box-shadow: 0 0 4px rgba(0,0,0,.4) inset, 1px 1px 1px rgba(255,255,255,.75);
--webkit-box-shadow: 0 0 4px rgba(0,0,0,.4) inset, 1px 1px 1px rgba(255,255,255,.75);
-border-radius: 9px;
--moz-border-radius: 9px;
--webkit-border-radius: 9px
+#resultsList {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(245, 245, 245);
+  border-radius: 9px;
 }
 
-#textToSearch:focus {
-box-shadow:0 0 4px #29615D inset;
--moz-box-shadow:0 0 4px #29615D inset;
--webkit-box-shadow:0 0 4px #29615D inset;
+#resultsList>li{
+  padding: 0 0 0 1em;
+  list-style:decimal;
 }
+
+#resultsList a:hover{
+  text-indent: 1em;
+  font-weight: bold;
+}
+
+#resultsList a:hover{
+  text-indent: 1em;
+  font-weight: bold;
+}
+
+#resultsList>li:hover, #resultsList>li>a:hover {
+  background-color: rgba(25, 251, 55, 0.1);
+  cursor: pointer;
+}
+
+.speech {
+  width: 80%;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 4px #29615D inset, 1px 1px 1px rgba(255,255,255,.75);
+  -moz-box-shadow: 0 0 4px #29615D inset, 1px 1px 1px rgba(255,255,255,.75);
+  -webkit-box-shadow: 0 0 4px #29615D inset, 1px 1px 1px rgba(255,255,255,.75);
+  border-radius: 9px;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px
+}
+.speech img {
+float: right;
+width: 50px;
+height: 50px;
+vertical-align: middle;
+}
+
+.speech img:hover {
+  background-color: rgba(0, 255, 79, 0.1);
+}
+
+#textToSearch {
+color: #29615D;
+width: calc(80% - 85px);
+height: 15px;
+display: inline-block;
+background:#fefefe;
+border: none;
+font:13px/13px 'HelveticaNeue', Helvetica, Arial, sans-serif;
+float: left;
+padding: 14px 0 14px 0;
+margin:3px 0 3px 8px;
+vertical-align: middle;
+position: absolute;
+}
+
+
 
 #textToSearch::-webkit-input-placeholder {
 font-style: italic;
-line-height: 15px
 }
 
 #textToSearch:-moz-placeholder {
 font-style: italic;
-line-height: 15px
 }
 
 #btnSearch {
@@ -104,7 +129,7 @@ cursor: pointer;
 font: 14px/14px 'HelveticaNeue', Helvetica, Arial, sans-serif;
 display:block;
 padding: 10px;
-margin:auto;
+margin: 20px auto 20px auto;
 width:106px;
 box-shadow: 0 0 2px #37837e inset;
 -moz-box-shadow: 0 0 2px #37837e inset;
