@@ -34,7 +34,7 @@ function findInDocs(){
 
   var str = $("#textToSearch")["0"].value;
 
-    if(str.length > 1){
+    if(str.length >= 2){
       var regexp = new RegExp(str.toUpperCase(),"g"),match, arrMatches = [],html_1, html_2="", html_final;
 
       $.each(arrDocs, function(i, d){
@@ -85,7 +85,7 @@ function findInDocs(){
 
 function startDictation() {
 
-  $("#speech>img").css({'background-color':'red'});
+
 
   if (window.hasOwnProperty('webkitSpeechRecognition') || window.hasOwnProperty('SpeechRecognition')) {
 
@@ -101,6 +101,7 @@ function startDictation() {
     recognition.onresult = function(e) {
       document.getElementById('textToSearch').value = e.results[0][0].transcript;
       recognition.stop();
+      $(".speech img").css({'background-color':'none'});
       findInDocs();
       //console.log("onresult:", e.results[0][0].transcript);
       //document.getElementById('labnol').submit();
@@ -108,7 +109,17 @@ function startDictation() {
 
     recognition.onerror = function(e) {
       recognition.stop();
+      $(".speech img").css({'background-color':'none'});
     }
 
-  }
+    recognition.onstart = function() {
+      $(".speech img").css({'background-color':'rgba(252,0,0,.4)'});
+      $("#textToSearch").attr({'placeholder':'A escutar...'});
+    }
+    recognition.onend = function() {
+      $(".speech img").css({'background-color':'rgba(252,0,0,0)'});
+      $("#textToSearch").attr({'placeholder':'Texto a pesquisar...'});
+    }
+
+    }
 }
