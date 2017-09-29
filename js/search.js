@@ -34,11 +34,7 @@ function findInDocs(){
 
   $("#resultsList").remove();
 
-  var str = $("#textToSearch")["0"].value;
-
-  alert("mobileDeviceCheck:"+mobileDeviceCheck);
-
-  var minLen;
+  var str = $("#textToSearch")["0"].value, minLen;
 
   if (mobileDeviceCheck) {minLen=4;} //to reduce interface block
   else {minLen=2;}
