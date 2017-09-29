@@ -311,7 +311,7 @@ function hideElements() {
 function hideOptions(mdFile){
 	//var options = ["btnEditarDoc","btnPDF", "btnShare", "btnHistory"];
 	showOptions();
-	var arrDocNames1 = ['about','apresentacao_snc_ap','help','perguntas_frequentes','snc_ap_faqs'];
+	var arrDocNames1 = ['about','apresentacao_snc_ap','help','perguntas_frequentes','snc_ap_faqs','cer_migracao_sicc','mu_snc_ap'];
 
 		$.each(arrDocNames1, function(i, name){
 			if (mdFile.match(name) == name){
@@ -321,7 +321,7 @@ function hideOptions(mdFile){
 					$("#btnEditarDoc").off("click");
 					//console.log($("#btnEditarDoc").hasClass("active"));
 				}
-				if($.inArray(name, ['apresentacao_snc_ap','perguntas_frequentes','snc_ap_faqs']) != -1){
+				if($.inArray(name, ['apresentacao_snc_ap','perguntas_frequentes','snc_ap_faqs','cer_migracao_sicc','mu_snc_ap']) != -1){
 					//alert("entrei3");
 					$("#btnPDF").addClass("disabled");
 					//$("#btnPDF").parent().addClass("disabled");
