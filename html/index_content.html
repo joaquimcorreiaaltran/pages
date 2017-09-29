@@ -14,14 +14,14 @@
 
 JOAQUIM -->
 <div id = "searchDiv">
-  <form id="labnol" method="get" action="https://www.google.com/search">
+  <form id="labnol">
     <div class="speech">
       <input id="textToSearch" class="text-to-search" type="text" onkeyup="findInDocs()" name="q" placeholder="  Introduzir texto"></input>
-      <img onclick="startDictation()" src="./img/mic.gif"/>
+      <img id="mic" onclick="startDictation()" src="./img/mic.gif" title="Selecione para falar"/>
     </div>
   </form>
 </div>
-<button id="btnSearch" class="btn-search" type="button" onclick="findInDocs()">Pesquisar</button>
+<!--<button id="btnSearch" class="btn-search" type="button" onclick="findInDocs()">Pesquisar</button>-->
 <div id="novidadeSncAP">
   <h2><hr/>Solução SNC-AP para entidades de saúde<br/></h2>
   <p>

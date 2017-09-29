@@ -103,7 +103,11 @@ function loadIndexContent(btnsToShow, event) {
 			showElements(btnsToShow);
 			$("footer").removeClass("documentMode");
 			highlightMenuItem(event);
-			setTimeout(function(){stopLoader("[loadIndexContent_1]");},1000);
+			if (!window.hasOwnProperty('webkitSpeechRecognition') && !window.hasOwnProperty('SpeechRecognition')){
+					console.log("Browser doesn't support speech recognition");
+					$("#mic").remove();
+			}
+			setTimeout(function(){stopLoader("[loadIndexContent_1]");},800);
 	})
 	.fail(function(){
 			console.log("[loadIndexContent] Error on loading requested file: " + filePath);
@@ -611,7 +615,6 @@ window.onclick = function(event) {
 		showToc();
 	}
 	if (!event.target.matches('.dropdown, #search, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, #accordion *, #btnShowToc') && $("#btnMenu").hasClass("showMenu")) {
-		console.log($("#btnMenu").hasClass("showMenu"));
 		showMenu();
 	}
 	if (event.target.id == 'behindFileHistory'){
@@ -655,9 +658,29 @@ $('#tocDropdown').on('click', 'a[href^="#"]', function(e) {
 		//$('html, body').css({'scrollTop' : pos});
 
 		// animated top scrolling
-		$('html, body').animate({'scrollTop' : pos},1000);
 
-		console.log($('html, body').css('scrollTop'));
+		//$('html')["0"].animate({'scrollTop': pos},1000);.
+
+		$('body')["0"].animate({'scrollTop' : pos},1000);
+
+		console.log("$('html')[0].scrollTop",$('html'));
+		console.log("$('html')[0].scrollTop",$('html')["0"].scrollTop);
+
+
+		/*
+
+		if ($('html, body').animate({'scrollTop' : pos},1000) == 'undefined') {
+			window.scrollTo(0,pos);
+			console.log($('html, body').animate({'scrollTop' : pos},1000));
+		}else{
+			$('html, body').animate({'scrollTop' : pos},1000);
+			console.log($('html, body').animate({'scrollTop' : pos},1000));
+		}
+
+*/
+		//window.scrollTo(0,pos);
+
+
 
 
 });

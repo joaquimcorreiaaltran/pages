@@ -48,21 +48,18 @@ height:500px;
   margin-right: auto;
   background-color: rgb(245, 245, 245);
   border-radius: 9px;
+  padding:1em;
 }
 
 #resultsList>li{
-  padding: 0 0 0 1em;
+  padding: 0.2em 0 0 1em;
   list-style:decimal;
 }
 
 #resultsList a:hover{
-  text-indent: 1em;
+  text-indent: 3em;
   font-weight: bold;
-}
-
-#resultsList a:hover{
-  text-indent: 1em;
-  font-weight: bold;
+  margin: 1em;
 }
 
 #resultsList>li:hover, #resultsList>li>a:hover {
@@ -98,17 +95,17 @@ vertical-align: middle;
 
 #textToSearch {
 color: #29615D;
-width: calc(80% - 85px);
+width: calc(80% - 80px);
 height: 15px;
 display: inline-block;
 background:#fefefe;
 border: none;
-font:13px/13px 'HelveticaNeue', Helvetica, Arial, sans-serif;
 float: left;
 padding: 14px 0 14px 0;
-margin:3px 0 3px 8px;
+margin:4px 0px 4px 3px;
 vertical-align: middle;
 position: absolute;
+text-indent: 1em;
 }
 
 
