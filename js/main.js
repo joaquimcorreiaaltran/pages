@@ -177,7 +177,6 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
 		else {$("#btnPDF").attr({"onclick":"window.open('https://spmssicc.github.io/pages/pdf/" + mdFile + ".pdf','_blank')"});}
 
 		showElements(btnsToShow);
-		hideOptions(mdFile);
 		window.scrollTo(0,0);
 }
 
@@ -304,37 +303,14 @@ function hideElements() {
 	//console.log("[hideElements] hide: ", elements);
 }
 
-function hideOptions(mdFile){
-	//var options = ["btnEditarDoc","btnPDF", "btnShare", "btnHistory"];
-	showOptions();
-	var arrDocNames1 = ['about','apresentacao_snc_ap','help','perguntas_frequentes','snc_ap_faqs'];
-
-		$.each(arrDocNames1, function(i, name){
-			if (mdFile.match(name) == name){
-				if ($.inArray(name, ['about', 'help']) != -1){
-					$("#btnEditarDoc").addClass("disabled");
-					//$("#btnPDF").parent().addClass("disabled");
-					$("#btnEditarDoc").off("click");
-					//console.log($("#btnEditarDoc").hasClass("active"));
-				}
-				if($.inArray(name, ['apresentacao_snc_ap','perguntas_frequentes','snc_ap_faqs']) != -1){
-					//alert("entrei3");
-					$("#btnPDF").addClass("disabled");
-					//$("#btnPDF").parent().addClass("disabled");
-					$("#btnPDF").off("click");
-				}//if
-			}//if match
-		});
-}
-
-function showOptions () {
-
+function hideOptions(){
 	var options = ["btnEditarDoc","btnPDF", "btnShare", "btnHistory"];
-	$.each(options, function(i,b){
-		$("#"+b).removeClass("disabled");
-		$("#"+b).on("click");
-	});
+
+	if($("#documento").length <1){
+		$("#btnPdf");
+	}
 }
+
 // Add zoom functionality to images in the HTML
 function imageZoom() {
 
@@ -628,7 +604,7 @@ function showToc() {
 }
 
 function showMenu() {
-	if( $('#accordion, #btnMenu').hasClass('showMenu') )	{$('#accordion, #btnMenu').removeClass('showMenu');}
+	if( $('#accordion, #btnMenu').hasClass('showMenu') )	{	$('#accordion, #btnMenu').removeClass('showMenu');}
 	else{	$('#accordion, #btnMenu').addClass('showMenu');	}
 }
 
@@ -640,21 +616,20 @@ function toggleDocOptions(){
 
 // Close the dropdown menu and the menu if the user clicks outside of it
 window.onclick = function(event) {
-	if (!event.target.matches('.dropbtn, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, #btnOpt *,#btnOpt, #docOptions *, .drop-doc-options') && $("#tocDropdown").hasClass("show")) {
+	if (!event.target.matches('.dropbtn,#search, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p') && $("#tocDropdown").hasClass("show")) {
 		showToc();
 	}
-//.dropbtn, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p,
-	if (!event.target.matches('.dropdown, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, #accordion *, #btnShowToc, #btnOpt,  #btnOpt *, #docOptions *, .drop-doc-options') && $("#btnMenu").hasClass("showMenu")) {
-		//console.log($("#btnMenu").hasClass("showMenu"));
+	if (!event.target.matches('.dropdown, #search, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, #accordion *, #btnShowToc') && $("#btnMenu").hasClass("showMenu")) {
+		console.log($("#btnMenu").hasClass("showMenu"));
 		showMenu();
 	}
-
-	if (!event.target.matches('#docOptions *, #btnOpt *, #btnOpt, .drop-doc-options')){
-		if($("#docOptions, #btnOpt").hasClass("active")){
-			$(".dropdown-doc-options, #docOptions, #btnOpt").removeClass("active");
-		}//if
-	}//if
-};//window
+	if (event.target.id == 'behindFileHistory'){
+		$("#behindFileHistory, #fileHistory, #btnHistory").removeClass("active");
+	}
+	if (event.target.id == 'behindSearchMatches'){
+		$("#behindSearchMatches, #searchMatches, #searchMatches i").removeClass("active");
+	}
+};
 
 /*********************************************************************
 override standard href-id navigation on page without change HTML markup
@@ -684,14 +659,14 @@ $('#tocDropdown').on('click', 'a[href^="#"]', function(e) {
 
 		// top position relative to the document
 		var pos = parseInt($id.offset().top - 50);
-			window.scrollTo(0, pos);
+
 
 		//$('html, body').css({'scrollTop' : pos});
 
 		// animated top scrolling
-		//$('html, body').animate({'scrollTop' : pos},1000);
+		$('html, body').animate({'scrollTop' : pos},1000);
 
-		//console.log($('html, body').css('scrollTop'));
+		console.log($('html, body').css('scrollTop'));
 
 
 });
