@@ -26,15 +26,20 @@ function loadAllMdownDocs(){
   console.log(arrDocs);
 }
 
+var mobileDeviceCheck = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
+
 function findInDocs(){
 
   startLoader();
 
   $("#resultsList").remove();
 
-  var str = $("#textToSearch")["0"].value;
+  var str = $("#textToSearch")["0"].value, minLen;
 
-    if(str.length > 1){
+  if (mobileDeviceCheck) {minLen=4;} //to reduce interface block
+  else {minLen=2;}
+
+    if(str.length >= minLen){
       var regexp = new RegExp(str.toUpperCase(),"g"),match, arrMatches = [],html_1, html_2="", html_final;
 
       $.each(arrDocs, function(i, d){
@@ -81,11 +86,7 @@ function findInDocs(){
 }/*kateryna*/
 
 
-
-
 function startDictation() {
-
-  $("#speech>img").css({'background-color':'red'});
 
   if (window.hasOwnProperty('webkitSpeechRecognition') || window.hasOwnProperty('SpeechRecognition')) {
 
@@ -101,6 +102,7 @@ function startDictation() {
     recognition.onresult = function(e) {
       document.getElementById('textToSearch').value = e.results[0][0].transcript;
       recognition.stop();
+      $(".speech img").css({'background-color':'none'});
       findInDocs();
       //console.log("onresult:", e.results[0][0].transcript);
       //document.getElementById('labnol').submit();
@@ -108,7 +110,17 @@ function startDictation() {
 
     recognition.onerror = function(e) {
       recognition.stop();
+      $(".speech img").css({'background-color':'none'});
     }
 
-  }
+    recognition.onstart = function() {
+      $(".speech img").css({'background-color':'rgba(252,0,0,.4)'});
+      $("#textToSearch").attr({'placeholder':'A escutar...'});
+    }
+    recognition.onend = function() {
+      $(".speech img").css({'background-color':'rgba(252,0,0,0)'});
+      $("#textToSearch").attr({'placeholder':'Texto a pesquisar...'});
+    }
+
+    }
 }
