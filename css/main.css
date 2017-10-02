@@ -14,6 +14,23 @@ a{
   cursor:pointer;
 }
 
+.scrollerWrapper { overflow: hidden; *position: relative; }
+ul.scroller { position: relative; white-space: nowrap; }
+ul.scroller li {
+  display: inline-block;
+  *display: inline;
+  white-space: normal;
+  vertical-align:
+  middle; padding: 10px;
+}
+ul.scroller>li>a,{
+  backgroud-color:red;
+  display: block;
+  height: 100px;
+  width: 100px;
+  font-color: black;
+}
+
 #loader {
 display: none;
 margin: auto;
