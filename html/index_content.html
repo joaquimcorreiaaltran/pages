@@ -1,4 +1,6 @@
-<h1 style="text-align: center;padding: 0 1em 1em 0em">Bem-vindo à página de documentação do SICC</h1>
+<div>
+  <h1 style="text-align: center;padding: 0">Bem-vindo à página de documentação do SICC</h1>
+</div>
 <div id = "searchDiv">
   <form id="labnol">
     <div class="speech">
@@ -8,15 +10,26 @@
   </form>
 </div>
 <!--<button id="btnSearch" class="btn-search" type="button" onclick="findInDocs()">Pesquisar</button>-->
-<div class="scrollerWrapper">
-  <ul class="scroller">
-    <li><img src="http://placehold.it/50x150"></li>
-    <li><img src="http://placehold.it/50x150"></li>
-    <li><img src="http://placehold.it/150x100"></li>
-    <li><a href="www.google.pt">asdasd</a></li>
-  </ul>
-</div>
+<hr/>
 <div id="novidadeSncAP">
+  <h2>Solução SNC-AP para entidades de saúde<br/></h2>
+    <div class="floating-box" onclick="loadMdDoc('snc_ap_faqs', ['btnMenu','btnOpt','btnShowToc'],'', null)">
+      <figure><i class="fa fa-users fa-fw fa-3x" aria-hidden="true"></i></figure>
+      <p>Perguntas Frequentes</p>
+      <i class="fa fa-chevron-right fa-fw fa-1x fa-open" aria-hidden="true"></i>
+    </div>
+    <div class="floating-box" onclick="loadMdDoc('dec_lei192', ['btnMenu','btnOpt'],'', null)">
+      <figure><i class="fa fa-university fa-fw fa-3x" aria-hidden="true"></i></figure>
+      <p>Documentação Legal</p>
+      <i class="fa fa-chevron-right fa-fw fa-1x fa-open" aria-hidden="true"></i>
+    </div>
+    <div class="floating-box" onclick="loadMdDoc('apresentacao_snc_ap', ['btnMenu','btnOpt'],'', null)">
+      <figure><i class="fa fa-object-group fa-fw fa-3x" aria-hidden="true"></i></figure>
+      <p>Apresentação</p>
+      <i class="fa fa-chevron-right fa-fw fa-1x fa-open" aria-hidden="true"></i>
+    </div>
+</div>
+<!--<div id="novidadeSncAP">
   <h2><hr/>Solução SNC-AP para entidades de saúde<br/></h2>
   <p>
     Conheça as <a style="color: blue; text-decoration: underline; cursor: pointer;" onclick="loadMdDoc('snc_ap_faqs', ['btnMenu','btnOpt','btnShowToc'],'', null)">perguntas frequentes</a>,
@@ -24,6 +37,7 @@
     <a style="color: blue; text-decoration: underline; cursor: pointer;" onclick="loadMdDoc('apresentacao_snc_ap', ['btnMenu','btnOpt'],'', null)">apresentação</a>.
   </p>
 </div>
+-->
 <div id="mapaEntidadesSICC" style="center; padding: 0em 0 2em 0">
   <h3><hr/>Explore o mapa com as entidades de saúde SICC</h3>
   <div class="overlay" onClick="style.pointerEvents='none';" title="clique/toque para explorar o mapa"></div>
@@ -32,4 +46,5 @@
                     frameborder="0"
   </iframe>
   </div>
+
 <hr/>
