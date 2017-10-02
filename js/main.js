@@ -108,7 +108,7 @@ function loadIndexContent(btnsToShow, event) {
 					$("#mic").remove();
 			}
 			setTimeout(function(){stopLoader("[loadIndexContent_1]");},800);
-			scroller();
+			$("#docOptions").removeClass("active");
 	})
 	.fail(function(){
 			console.log("[loadIndexContent] Error on loading requested file: " + filePath);
@@ -292,7 +292,6 @@ function showElements(elements) {
 	for (i = 0; i < elements.length; i++) {
 		$("#" + elements[i]).addClass("show");
 	}
-	//console.log("[showElements] show: ", elements);
 }
 
 function hideElements() {
@@ -301,10 +300,6 @@ function hideElements() {
 
 	for (i = 0; i < elements.length; i++) {
 		$("#" + elements[i]).removeClass("show");
-	}
-
-	if($("#docOptions").hasClass("active")){
-		$("#docOptions").removeClass("active");
 	}
 	//console.log("[hideElements] hide: ", elements);
 }
@@ -638,8 +633,8 @@ function showMenu() {
 }
 
 function toggleDocOptions(){
-	if( $('.dropdown-doc-options, #btnOpt').hasClass('active') )	{$('.dropdown-doc-options, #btnOpt').removeClass('active');}
-	else{ $('.dropdown-doc-options, #btnOpt').addClass('active'); }
+	if( $('.dropdown-doc-options, #docOptions, #btnOpt').hasClass('active') )	{$('.dropdown-doc-options, #docOptions, #btnOpt').removeClass('active');}
+	else{$('.dropdown-doc-options, #docOptions, #btnOpt').addClass('active');}
 }
 
 
@@ -655,7 +650,7 @@ window.onclick = function(event) {
 	}
 
 	if (!event.target.matches('#docOptions *, #btnOpt *, #btnOpt, .drop-doc-options')){
-		if($("#docOptions, #btnOpt").hasClass("active")){
+		if($(".dropdown-doc-options, #docOptions, #btnOpt").hasClass("active")){
 			$(".dropdown-doc-options, #docOptions, #btnOpt").removeClass("active");
 		}//if
 	}//if
