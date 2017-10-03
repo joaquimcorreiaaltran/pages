@@ -640,20 +640,23 @@ function toggleDocOptions(){
 
 // Close the dropdown menu and the menu if the user clicks outside of it
 window.onclick = function(event) {
-	if (!event.target.matches('.dropbtn, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, #btnOpt *,#btnOpt, #docOptions *, .drop-doc-options') && $("#tocDropdown").hasClass("show")) {
-		showToc();
-	}
-//.dropbtn, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p,
-	if (!event.target.matches('.dropdown, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, #accordion *, #btnShowToc, #btnOpt,  #btnOpt *, #docOptions *, .drop-doc-options') && $("#btnMenu").hasClass("showMenu")) {
-		//console.log($("#btnMenu").hasClass("showMenu"));
-		showMenu();
+	if(window.navigator.userAgent.indexOf("MSIE") == -1 || window.navigator.userAgent.toUpperCase().indexOf("MICROSOFT")== -1){
+		if (!event.target.matches('.dropbtn, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, #btnOpt *,#btnOpt, #docOptions *, .drop-doc-options') && $("#tocDropdown").hasClass("show")) {
+			showToc();
+		}
+	//.dropbtn, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p,
+		if (!event.target.matches('.dropdown, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, #accordion *, #btnShowToc, #btnOpt,  #btnOpt *, #docOptions *, .drop-doc-options') && $("#btnMenu").hasClass("showMenu")) {
+			//console.log($("#btnMenu").hasClass("showMenu"));
+			showMenu();
+		}
+
+		if (!event.target.matches('#docOptions *, #btnOpt *, #btnOpt, .drop-doc-options')){
+			if($(".dropdown-doc-options, #docOptions, #btnOpt").hasClass("active")){
+				$(".dropdown-doc-options, #docOptions, #btnOpt").removeClass("active");
+			}//if
+		}//if
 	}
 
-	if (!event.target.matches('#docOptions *, #btnOpt *, #btnOpt, .drop-doc-options')){
-		if($(".dropdown-doc-options, #docOptions, #btnOpt").hasClass("active")){
-			$(".dropdown-doc-options, #docOptions, #btnOpt").removeClass("active");
-		}//if
-	}//if
 };//window
 
 /*********************************************************************
