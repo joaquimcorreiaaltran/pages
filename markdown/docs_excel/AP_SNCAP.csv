@@ -1,0 +1,6 @@
+AP,Entidade,Data documento,Data Contabilistica,Tipo Doc (P2/CF/DF/NC),Nº Doc (do P2/CF/DF/NC),Ano (do P2/CF/DF/NC),Série (do P2/CF/DF/NC),Nº AP,Conta Bancaria,NIB _IBAN,Categoria de Motivo,Observações Documento 
+AP,973833,20170928,20171003,DF,559,2017,,560,,,,
+AP,973833,20171003,20171003,P2,66,2017,,561,,,,
+AP,1,20170331,20171003,DF,26071,2017,,563,,,,
+AP,1,20171007,20171003,P2,14,2017,,564,,,,
+AP,1,20170807,20171003,P2,2,2017,,565,,,,
