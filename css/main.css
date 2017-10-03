@@ -47,22 +47,44 @@ height:500px;
   margin-left: auto;
   margin-right: auto;
   background-color: rgb(245, 245, 245);
+  padding: 0.5em 1em 1em 1em;
+  margin-top: 1em;
+  border-color: rgba(41, 97, 93, 0.2);
   border-radius: 9px;
+  border-style: solid;
+  border-width: 1px;
 }
-
+#resultsList>h3{
+  margin: 0.6em;
+}
 #resultsList>li{
-  padding: 0 0 0 1em;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 0.2em 0 0 1em;
   list-style:decimal;
+  margin: 5px;
+  padding: 5px;
+  border-color: rgba(41, 97, 93, 0.2);
+  border-style: solid;
+  border-width: 1px;
 }
-
-#resultsList a:hover{
-  text-indent: 1em;
+#resultsList span.title{
   font-weight: bold;
 }
 
-#resultsList a:hover{
+#resultsList span.highlight{
+  background-color: rgba(250,255,0,.4);
+}
+
+#resultsList li p{
   text-indent: 1em;
+  font-style: italic;
+}
+
+#resultsList a:hover{
+  text-indent: 3em;
   font-weight: bold;
+  margin: 1em;
 }
 
 #resultsList>li:hover, #resultsList>li>a:hover {
@@ -90,25 +112,33 @@ float: right;
 width: 50px;
 height: 50px;
 vertical-align: middle;
+border-radius: 40px;
+-moz-border-radius: 40px;
+-webkit-border-radius: 40px
 }
 
 .speech img:hover {
+
   background-color: rgba(0, 255, 79, 0.1);
 }
 
 #textToSearch {
 color: #29615D;
-width: calc(80% - 85px);
+width: calc(80% - 80px);
 height: 15px;
 display: inline-block;
 background:#fefefe;
 border: none;
-font:13px/13px 'HelveticaNeue', Helvetica, Arial, sans-serif;
 float: left;
 padding: 14px 0 14px 0;
-margin:3px 0 3px 8px;
+margin:4px 0px 4px 3px;
 vertical-align: middle;
 position: absolute;
+text-indent: 1em;
+}
+
+#textToSearch:hover{
+  background-color: rgba(0, 255, 79, 0.1);
 }
 
 
@@ -1167,4 +1197,59 @@ transition:padding 1s ease, margin-top 1s ease
    height:500px; /* your iframe height */
    /*top:480px;  /* your iframe height */
   /* margin-top:-480px;  /* your iframe height */
+}
+
+.floating-box {
+    display: inline-block;
+    height: 60px;
+    width: 310px;
+    margin: 10px;
+    border: 1px solid #29615D;
+    background: white; /* For browsers that do not support gradients */
+}
+
+.floating-box:hover{
+  background-color: rgba(0, 255, 79, 0.1);
+  color:white;
+  cursor: pointer;
+}
+
+.floating-box figure{
+  background-color: #649f9b;
+  height: 100%;
+  width: 80px;
+}
+.floating-box figure i{
+display: block;
+color: white;
+margin-top: 7px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.floating-box>p,
+.floating-box>figure {
+display: inline-block;
+}
+
+.floating-box p{
+  top:0;
+  vertical-align: top;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-indent: .5em;
+  line-height: 60px;
+}
+
+i.fa-open{
+  position: relative;
+  color: #29615D;
+  float: right;
+  width: 10px;
+  padding-top: 7px;
+  padding: 5px 5px 39px 5px;
+}
+
+#searchDiv{
+  margin-bottom: 2.5em;
 }

@@ -90,8 +90,8 @@ function loadIndexContent(btnsToShow, event) {
 	startLoader();
 
 	$("#fileHistory, #behindFileHistory").remove();
-	$("body").attr("style", "margin:0 0 0 0;  width:100%");
-	$("#content").attr("style", "min-height: 90vh; margin: 0 0 0 0; padding:1em 1em 1em 1em; widht: 100%; max-width:5000px");
+	$("body").attr("style", "margin:0 0 0 0;  width:100%;");
+	$("#content").attr("style", "min-height: 90vh; margin: 0 0 0 0; padding:1em 1em 1em 1em; widht: 100%; max-width:5000px;");
 
 	var filePath ='./html/index_content.html';
 
@@ -103,7 +103,12 @@ function loadIndexContent(btnsToShow, event) {
 			showElements(btnsToShow);
 			$("footer").removeClass("documentMode");
 			highlightMenuItem(event);
-			setTimeout(function(){stopLoader("[loadIndexContent_1]");},1000);
+			if (!window.hasOwnProperty('webkitSpeechRecognition') && !window.hasOwnProperty('SpeechRecognition')){
+					console.log("Browser doesn't support speech recognition");
+					$("#mic").remove();
+			}
+			setTimeout(function(){stopLoader("[loadIndexContent_1]");},800);
+			$("#docOptions").removeClass("active");
 	})
 	.fail(function(){
 			console.log("[loadIndexContent] Error on loading requested file: " + filePath);
@@ -287,7 +292,6 @@ function showElements(elements) {
 	for (i = 0; i < elements.length; i++) {
 		$("#" + elements[i]).addClass("show");
 	}
-	//console.log("[showElements] show: ", elements);
 }
 
 function hideElements() {
@@ -297,17 +301,13 @@ function hideElements() {
 	for (i = 0; i < elements.length; i++) {
 		$("#" + elements[i]).removeClass("show");
 	}
-
-	if($("#docOptions").hasClass("active")){
-		$("#docOptions").removeClass("active");
-	}
 	//console.log("[hideElements] hide: ", elements);
 }
 
 function hideOptions(mdFile){
 	//var options = ["btnEditarDoc","btnPDF", "btnShare", "btnHistory"];
 	showOptions();
-	var arrDocNames1 = ['about','apresentacao_snc_ap','help','perguntas_frequentes','snc_ap_faqs'];
+	var arrDocNames1 = ['about','apresentacao_snc_ap','help','perguntas_frequentes','snc_ap_faqs','cer_migracao_sicc','mu_snc_ap'];
 
 		$.each(arrDocNames1, function(i, name){
 			if (mdFile.match(name) == name){
@@ -317,7 +317,7 @@ function hideOptions(mdFile){
 					$("#btnEditarDoc").off("click");
 					//console.log($("#btnEditarDoc").hasClass("active"));
 				}
-				if($.inArray(name, ['apresentacao_snc_ap','perguntas_frequentes','snc_ap_faqs']) != -1){
+				if($.inArray(name, ['apresentacao_snc_ap','perguntas_frequentes','snc_ap_faqs','cer_migracao_sicc','mu_snc_ap']) != -1){
 					//alert("entrei3");
 					$("#btnPDF").addClass("disabled");
 					//$("#btnPDF").parent().addClass("disabled");
@@ -633,8 +633,8 @@ function showMenu() {
 }
 
 function toggleDocOptions(){
-	if( $('.dropdown-doc-options, #btnOpt').hasClass('active') )	{$('.dropdown-doc-options, #btnOpt').removeClass('active');}
-	else{ $('.dropdown-doc-options, #btnOpt').addClass('active'); }
+	if( $('.dropdown-doc-options, #docOptions, #btnOpt').hasClass('active') )	{$('.dropdown-doc-options, #docOptions, #btnOpt').removeClass('active');}
+	else{$('.dropdown-doc-options, #docOptions, #btnOpt').addClass('active');}
 }
 
 
@@ -650,7 +650,7 @@ window.onclick = function(event) {
 	}
 
 	if (!event.target.matches('#docOptions *, #btnOpt *, #btnOpt, .drop-doc-options')){
-		if($("#docOptions, #btnOpt").hasClass("active")){
+		if($(".dropdown-doc-options, #docOptions, #btnOpt").hasClass("active")){
 			$(".dropdown-doc-options, #docOptions, #btnOpt").removeClass("active");
 		}//if
 	}//if
@@ -692,6 +692,4 @@ $('#tocDropdown').on('click', 'a[href^="#"]', function(e) {
 		//$('html, body').animate({'scrollTop' : pos},1000);
 
 		//console.log($('html, body').css('scrollTop'));
-
-
 });
