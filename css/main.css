@@ -733,6 +733,16 @@ font-weight:700
 padding:.3em .2em .2em .3em
 }
 
+#documento.modulo button a{
+color:white;
+font-weight: normal;
+
+}
+
+#documento.modulo button a:hover{
+color:rgb(131, 183, 215);
+}
+
 #accordion {
 box-shadow:8px 0 60px rgba(0,0,0,0.5);
 height:100vh;
