@@ -733,14 +733,23 @@ font-weight:700
 padding:.3em .2em .2em .3em
 }
 
-#documento.modulo button a{
+#descarregar{
+  border:none;
+  border-radius:.2em;
+  width: 150px;
+  height: 25px;
+  opacity: 0.4;
+  display:block;
+  float:right;
+}
+
+#descarregar:hover{
+    opacity: 1;
+}
+#documento.modulo button {
 color:white;
 font-weight: normal;
 
-}
-
-#documento.modulo button a:hover{
-color:rgb(131, 183, 215);
 }
 
 #accordion {
