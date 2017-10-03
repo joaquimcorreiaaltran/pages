@@ -637,23 +637,31 @@ function toggleDocOptions(){
 	else{$('.dropdown-doc-options, #docOptions, #btnOpt').addClass('active');}
 }
 
+var uAgent = window.navigator.userAgent.toUpperCase();
 
 // Close the dropdown menu and the menu if the user clicks outside of it
 window.onclick = function(event) {
-	if (!event.target.matches('.dropbtn, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, #btnOpt *,#btnOpt, #docOptions *, .drop-doc-options') && $("#tocDropdown").hasClass("show")) {
-		showToc();
+
+	if(uAgent.indexOf("MSIE") == -1 && uAgent.indexOf("MICROSOFT") == -1){
+		console.log("Dentro do IF: window.onclick - userAgent:"+uAgent);
+		if (!event.target.matches('.dropbtn, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, #btnOpt *,#btnOpt, #docOptions *, .drop-doc-options') && $("#tocDropdown").hasClass("show")) {
+			showToc();
+		}
+	//.dropbtn, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p,
+		if (!event.target.matches('.dropdown, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, #accordion *, #btnShowToc, #btnOpt,  #btnOpt *, #docOptions *, .drop-doc-options') && $("#btnMenu").hasClass("showMenu")) {
+			//console.log($("#btnMenu").hasClass("showMenu"));
+			showMenu();
+		}
+		if (!event.target.matches('#docOptions *, #btnOpt *, #btnOpt, .drop-doc-options')){
+			if($(".dropdown-doc-options, #docOptions, #btnOpt").hasClass("active")){
+				$(".dropdown-doc-options, #docOptions, #btnOpt").removeClass("active");
+			}//if
+		}//if
 	}
-//.dropbtn, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p,
-	if (!event.target.matches('.dropdown, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, #accordion *, #btnShowToc, #btnOpt,  #btnOpt *, #docOptions *, .drop-doc-options') && $("#btnMenu").hasClass("showMenu")) {
-		//console.log($("#btnMenu").hasClass("showMenu"));
-		showMenu();
+	else{
+		console.log("Dentro do ELSE: window.onclick - userAgent:"+window.navigator.userAgent);
 	}
 
-	if (!event.target.matches('#docOptions *, #btnOpt *, #btnOpt, .drop-doc-options')){
-		if($(".dropdown-doc-options, #docOptions, #btnOpt").hasClass("active")){
-			$(".dropdown-doc-options, #docOptions, #btnOpt").removeClass("active");
-		}//if
-	}//if
 };//window
 
 /*********************************************************************
