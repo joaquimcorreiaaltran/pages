@@ -640,7 +640,8 @@ function toggleDocOptions(){
 
 // Close the dropdown menu and the menu if the user clicks outside of it
 window.onclick = function(event) {
-	if(window.navigator.userAgent.indexOf("MSIE") == -1 || window.navigator.userAgent.toUpperCase().indexOf("MICROSOFT")== -1){
+	if(window.navigator.userAgent.indexOf("MSIE") == -1 || window.navigator.userAgent.toUpperCase().indexOf("MICROSOFT") == -1){
+		console.log("Dentro do IF: window.onclick - userAgent:"+window.navigator.userAgent);
 		if (!event.target.matches('.dropbtn, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, #btnOpt *,#btnOpt, #docOptions *, .drop-doc-options') && $("#tocDropdown").hasClass("show")) {
 			showToc();
 		}
@@ -655,6 +656,9 @@ window.onclick = function(event) {
 				$(".dropdown-doc-options, #docOptions, #btnOpt").removeClass("active");
 			}//if
 		}//if
+	}
+	else{
+		console.log("Dentro do ELSE: window.onclick - userAgent:"+window.navigator.userAgent);
 	}
 
 };//window
