@@ -9,13 +9,6 @@ function loadAllMdownDocs(){
             var doc = {name:"",title:"",content:""};
             doc.name = name;
             doc.content = content;
-            doc.content = doc.content.replace(/#/g,"");
-            doc.content = doc.content.replace(/>/g,"");
-            doc.content = doc.content.replace(/\r?\n|\r/g,"");
-            doc.content = doc.content.replace("*","");
-            doc.content = doc.content.replace("|","");
-            doc.content = doc.content.replace("\t","");
-            doc.content = doc.content.replace(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g,"");
             doc.title = content.substring(content.indexOf("#",0)+2,content.indexOf("\n",0));
             doc.title = doc.title.trim();
             arrDocs.push(doc);
@@ -45,7 +38,8 @@ function findInDocs(){
       $.each(arrDocs, function(i, d){
           while ((match = regexp.exec(d.content.toUpperCase())) != null) {
 
-            var start = (match.index - 60), end = (match.index + 50);
+            var start = d.content.indexOf(" ",match.index - 70)+1,
+                end =  d.content.indexOf(" ",match.index + 70);
             citation = "\"..." + d.content.substring(start,end) + "...\"";
             html_2 = html_2 + '<li title="Ver documento '+d.title+'" onclick="loadMdDoc(\'' + d.name +
                               '\', [\'btnMenu\'],\'\', event)"><span class="title">['+d.title+']</span><p><span class=' + 'citation' + '>'+
