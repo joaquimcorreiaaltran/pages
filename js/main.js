@@ -53,28 +53,28 @@ function loadContent(){
 //load all markdown documents
 function loadAllMdownDocs(doc, anchor){
 
-		let promises = []; //variable that can be assigned multiple times
+		var promises = []; //variable that can be assigned multiple times
 
 		$.each(arrDocNames, function(i, name){
 			promises.push(
-				new Promise((resolve, reject) => {
+				new Promise(function (resolve, reject) {
 						 $.get("./markdown/" + name + ".md")
-							 .done((value) => resolve({value, name}))
-							 .fail(() => reject("Falhou!!!\n\n\n"));
+							 .done(function (value) {resolve({value, name})})
+							 .fail(function () {reject("The document loading failed. Check the elements in the array arrDocNames[]")});
 				 }
 			));
 			} //function
 		); //each
 
-		Promise.all(promises).then(array => {
-			arrDocs = array.map((item) => {
+		Promise.all(promises).then(function (array) {
+			arrDocs = array.map(function (item) {
 				return {
 					name: item.name,
 					title: item.value.substring(item.value.indexOf("#",0)+2,item.value.indexOf("\n",0)).trim(),
 					content: item.value
 				}
 			});
-			loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnShowToc','tocDropdown','btnOpt'], anchor, null);
+			if(doc != null) loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnShowToc','tocDropdown','btnOpt'], anchor, null);
 		})
 } //function
 
@@ -653,13 +653,10 @@ var uAgent = window.navigator.userAgent.toUpperCase();
 window.onclick = function(event) {
 
 	if(uAgent.indexOf("MSIE") == -1 && uAgent.indexOf("MICROSOFT") == -1){
-		console.log("Dentro do IF: window.onclick - userAgent:"+uAgent);
 		if (!event.target.matches('.dropbtn, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, #btnOpt *,#btnOpt, #docOptions *, .drop-doc-options') && $("#tocDropdown").hasClass("show")) {
 			showToc();
 		}
-	//.dropbtn, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p,
 		if (!event.target.matches('.dropdown, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, #accordion *, #btnShowToc, #btnOpt,  #btnOpt *, #docOptions *, .drop-doc-options') && $("#btnMenu").hasClass("showMenu")) {
-			//console.log($("#btnMenu").hasClass("showMenu"));
 			showMenu();
 		}
 		if (!event.target.matches('#docOptions *, #btnOpt *, #btnOpt, .drop-doc-options')){
