@@ -85,7 +85,7 @@ function loadAllMdownDocs(doc, anchor){
 			promises.push(
 				new Promise(function (resolve, reject) {
 						 $.get("./markdown/" + name + ".md")
-							 .done(function (value) {resolve({value, name})})
+							 .done(function (value) {resolve({value:value, name:name})})
 							 .fail(function () {reject("The document loading failed. Check the elements in the array arrDocNames[]")});
 				 }
 			));
