@@ -1221,7 +1221,7 @@ transition:padding 1s ease, margin-top 1s ease
 .floating-box {
     display: inline-block;
     height: 60px;
-    width: 310px;
+    width: 320px;
     margin: 10px;
     border: 1px solid #29615D;
     background: white; /* For browsers that do not support gradients */
@@ -1254,6 +1254,7 @@ display: inline-block;
 .floating-box p{
   top:0;
   vertical-align: top;
+  max-width: 200px;
   font-weight: bold;
   font-size: 1.2em;
   text-indent: .5em;
