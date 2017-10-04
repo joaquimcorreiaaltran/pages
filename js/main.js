@@ -546,14 +546,14 @@ function loadToc(mdFile, elementId) {
 			$(elementId).removeClass("show");
 		}
 
-		if ($("#tocDropdown").length) {
-			$("#tocDropdown").draggable({/*Dependency: jquery-ui.js*/
-					containment: "window",
-					handle: "i",
-					snap: "#docButtons, #content",
-					cursor: "move"
-				});
-		}
+		// if ($("#tocDropdown").length) {
+		// 	$("#tocDropdown").draggable({/*Dependency: jquery-ui.js*/
+		// 			containment: "window",
+		// 			handle: "i",
+		// 			snap: "#docButtons, #content",
+		// 			cursor: "move"
+		// 		});
+		// }
 	}
 } /*builds toc*/
 
