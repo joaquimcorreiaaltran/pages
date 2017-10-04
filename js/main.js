@@ -44,6 +44,7 @@ function loadContent(){
 	else{
 		console.log("[loadContent] Querystring não detetada.");
 		loadIndexContent(["btnMenu"], null);
+		loadAllMdownDocs(doc, anchor);
 	}
 	stopLoader("[loadContent-1]");
 }
