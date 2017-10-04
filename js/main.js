@@ -19,56 +19,64 @@ dimmingOpacity = 0.5;
 dimmingGeckoFix = true;
 blockRightClick = true;
 
+var mobileDeviceCheck = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
+var arrDocNames = ['about', 'apresentacao_snc_ap', 'cer_migracao_sicc','chave_orcamental_por_ano', 'documentos_af_e_ar','gestao_exercicios', 'gestao_projetos','help','importacao_csvs','macro_tarefas','menus_draft','menus','mu_snc_ap','perguntas_frequentes','processos','reposicao_pagamentos_cobrancas','snc_ap_faqs'];
+var arrDocs = []; // array
 
 /*Carregar documento através de parametros no URL (queryString)*/
 function loadContent(){
 
-	 var qs = window.location.search; //Get QueryString
+	var qs = window.location.search; //Get QueryString
+	//  qs = "?doc=documentos_af_e_ar&anchor=3-criação-de-novo-tipo-de-documento-–-anulação-de-receita-ar";
 
-	 //console.log("[loadContent] Query string (1): " + qs);
+	if ( qs.length ){
+		var doc, anchor, paramArr = qs.split("&",100); // Returns paramArr passed of the query string. splits until the max of 10 paramArr
 
-	if ( qs.indexOf("=") != -1 ){
-
-					//console.log("[loadContent] Query string (2): " + qs);
-
-					var doc, paramArr = qs.split("&",10); // Returns paramArr passed of the query string. splits until the max of 10 paramArr
-					/*console.log("[loadContent] paramArr: " + paramArr +
-										"\n[loadContent] paramArr.length: " + paramArr.length +
-										"\n[loadContent] paramArr[0]: " + paramArr[0] +
-										"\n[loadContent] paramArr[1]: " + paramArr[1]);
-					*/
-					if (paramArr.length >= 1) {
-							doc = paramArr[0].substring(paramArr[0].indexOf("=") + 1, 99); // Returns doc name
-
-							var anchor;
-
-							if (paramArr.length >= 2){
-									anchor = paramArr[1].substring(paramArr[1].indexOf("=") + 1, 99); // Returns anchor of the document
-									anchor = decodeURI(anchor);
-								}
-							//console.log("[loadContent] doc: " + doc + "\n[loadContent] anchor: " + anchor);
-
-							if (doc.length) {
-									loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnShowToc','tocDropdown','btnOpt'], anchor, null);
-							}
-							else{
-									//console.log("[loadContent] Invalid document name: " + doc);
-									loadIndexContent(["btnMenu"], null);
-									stopLoader("[loadContent-1]");
-							}
-					}
+		if (paramArr.length >= 2) {
+			doc = paramArr[0].substring(paramArr[0].indexOf("=") + 1, 99); // Returns doc name
+			anchor = decodeURI( paramArr[1].substring(paramArr[1].indexOf("=") + 1, 99) );
+		}
+		else{
+			doc = qs.substring(qs.indexOf("=")+1,qs.length);
+		}
+		loadAllMdownDocs(doc, anchor);
 	}/*close if*/
-	else if ( qs.length <= 1  ) {
-				//console.log("[loadContent] Query string not detected/not valid: " + qs);
-				loadIndexContent(["btnMenu"], null);
-
-	}/*close else if*/
 	else{
-		console.log("[loadContent] Erro. window.location.href: " + window.location.href);
+		console.log("[loadContent] Querystring não detetada.");
 		loadIndexContent(["btnMenu"], null);
-		stopLoader("[loadContent-3]");
 	}
+	stopLoader("[loadContent-1]");
 }
+
+
+//load all markdown documents
+function loadAllMdownDocs(doc, anchor){
+
+		let promises = []; //variable that can be assigned multiple times
+
+		$.each(arrDocNames, function(i, name){
+			promises.push(
+				new Promise((resolve, reject) => {
+						 $.get("./markdown/" + name + ".md")
+							 .done((value) => resolve({value, name}))
+							 .fail(() => reject("Falhou!!!\n\n\n"));
+				 }
+			));
+			} //function
+		); //each
+
+		Promise.all(promises).then(array => {
+			arrDocs = array.map((item) => {
+				return {
+					name: item.name,
+					title: item.value.substring(item.value.indexOf("#",0)+2,item.value.indexOf("\n",0)).trim(),
+					content: item.value
+				}
+			});
+			loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnShowToc','tocDropdown','btnOpt'], anchor, null);
+		})
+} //function
+
 
 function startLoader(){
 	$('#loader').addClass('active');
@@ -148,8 +156,9 @@ function highlightMenuItem (event) {
 
 function loadMdDoc(mdFile, btnsToShow, anchor, event) {
 
-		startLoader();
+	startLoader();
 
+	if( mdFile != null && mdFile != undefined ){
 		highlightMenuItem(event);
 
 		$("#fileHistory").remove();
@@ -161,7 +170,22 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
 				$("footer").addClass("documentMode"); 																	 //adjust html style and structure
 		}
 
-		convertMdToHtml("documento", mdFile, anchor);
+		convertMdToHtml("documento", mdFile);
+		loadToc(mdFile, "tocDropdown");
+		addSharelink(mdFile);
+		responsiveTable();
+		imageZoom();
+
+		if(anchor != undefined && anchor.length >= 2){
+			console.log("loadMdDoc: "+anchor);
+			setTimeout( function(){ scrollToAnchor(mdFile, anchor); }, 2500);
+		}
+		else{
+			var stateObj = { foo: "bar" }, url =  location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile;
+
+			history.pushState(stateObj, "SICC - Documentação", url);
+			//console.log("[convertMdToHtml] Adicionada entrada no histórico: " + url);
+		}
 
 		$("#btnEditarDoc, #btnHistory" ).off("click");
 
@@ -184,74 +208,59 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
 		showElements(btnsToShow);
 		hideOptions(mdFile);
 		window.scrollTo(0,0);
+	}
+	stopLoader("[loadMdDoc_1]");
 }
 
 //load and convert Markdown to Html and show it
-function convertMdToHtml(elementId, mdFile, anchor) {
+function convertMdToHtml(elementId, mdFile) {
 
 	startLoader();
 
 	//Check if the "elementId" has value to place the converted markdown into the page
-	if ( elementId.length < 1 || elementId == undefined ) {
-		//window.alert("elementID está vazio! elementId:"+ elementId);
-		elementId = "documento";
-	}
+	if ( elementId.length < 1 || elementId == undefined ) {elementId = "documento";}
 
-	//console.log("[convertMdToHtml] mdFile: " + mdFile + "\n[convertMdToHtml] elementId to place the html: " + elementId);
+	$.each(arrDocs, function(i, doc){
+		if(mdFile == doc.name && doc.content.length){
+					//declara 3 variáveis: converter, data e a html. A variável html irá conter o ficheiro markdown convertido em HTML.
+					var converter = new showdown.Converter(),	data2, html = converter.makeHtml(doc.content);
 
-	//Vai buscar o ficheiro markdown ao diretório ./markdown/
-	$.get('./markdown/' + mdFile + '.md', function() {
-				//console.log("[convertMdToHtml] sucess");
-	})
-		.done(function(data) {
-		    //console.log("[convertMdToHtml] mdFile \"" + mdFile + "\"  loaded");
+					//Place the converted markdown into the elementID
+					$("#" + elementId).html(html);
 
-				//declara 3 variáveis: converter, data e a html. A variável html irá conter o ficheiro markdown convertido em HTML.
-				var converter = new showdown.Converter(),	data2, html = converter.makeHtml(data);
+					return false; //to stop the .each loop
 
-				//console.log("[convertMdToHtml] mdFile  \"" + mdFile + "\"  converted to HTML!");
+	  }else if ( i + 1  >= arrDocs.length){
+			console.log("[convertMdToHtml] Error on loading the file \"" + mdFile + "\". Check if it exists in the markdown folder and in the arrayDoc.");
+			loadIndexContent(['btnMenu'],null);
+			return false; //to stop the .each loop
 
-				//Place the converted markdown into the elementID
-				$("#" + elementId).html(html).promise().done(function(){
-
-						loadToc(mdFile, "tocDropdown");
-						addSharelink(mdFile);
-
-						if(anchor != undefined && anchor.length >= 2){
-							setTimeout( function(){ scrollToAnchor(mdFile, anchor); }, 2500);
-						}
-						else{
-							var stateObj = { foo: "bar" }, url =  location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile;
-
-							history.pushState(stateObj, "SICC - Documentação", url);
-							//console.log("[convertMdToHtml] Adicionada entrada no histórico: " + url);
-						}
-						responsiveTable();
-						imageZoom();
-				});
-				stopLoader("[convertMdToHtml_1]");
-  })
-		.fail(function() {
-				console.log("[convertMdToHtml] Error on document loading. The file \"" + mdFile + "\" exists in the markdown folder?");
-				loadIndexContent(['btnMenu'],null);
-				stopLoader("[convertMdToHtml_3]");
+		}else if(mdFile == doc.name && doc.content.length <= 0){
+			console.log("[convertMdToHtml] Error on loading file contents. The file \"" + mdFile + "\" exists but has no content.");
+			loadIndexContent(['btnMenu'],null);
+			return false; //to stop the .each loop
+		}else{
+			return true;
+		}
 	});
-
+	stopLoader("[convertMdToHtml_1]");
 } /*close convertMdToHtml()*/
 
 //to know the type of a variable
-function tipoObj( obj ) {
+function varType( obj ) {
 		return ({}).toString.call(obj).match(/\s([a-zA-Z]+)/)[1].toLowerCase()
 }
 
 function scrollToAnchor(mdFile, anchor){
+
+	console.log("[scrollToAnchor] anchor: "+ anchor);
 
 	//the anchor parameter can not have the character "#"
 
 	startLoader();
 	var anchorId;
 
-	if(anchor.length > 1){
+	if(anchor.length > 1 && anchor != undefined){
 		anchorId = '#' + anchor;
 	}
 
@@ -701,3 +710,101 @@ $('#tocDropdown').on('click', 'a[href^="#"]', function(e) {
 
 		//console.log($('html, body').css('scrollTop'));
 });
+
+function findInDocs(){
+
+  startLoader();
+
+  $("#resultsList").remove();
+
+  var str = $("#textToSearch")["0"].value, minLen;
+
+  if (mobileDeviceCheck) {minLen=4;} //to reduce interface block
+  else {minLen=2;}
+
+    if(str.length >= minLen){
+      var regexp = new RegExp(str.toUpperCase(),"g"),match, arrMatches = [],html_1, html_2="", html_final;
+
+      $.each(arrDocs, function(i, d){
+          while ((match = regexp.exec(d.content.toUpperCase())) != null) {
+
+            var start = d.content.indexOf(" ",match.index - 70)+1,
+                end =  d.content.indexOf(" ",match.index + 70);
+            citation = "\"..." + d.content.substring(start,end) + "...\"";
+            html_2 = html_2 + '<li title="Ver documento '+d.title+'" onclick="loadMdDoc(\'' + d.name +
+                              '\', [\'btnMenu\'],\'\', event)"><span class="title">['+d.title+']</span><p><span class=' + 'citation' + '>'+
+                              citation+'</span></p>'+
+                              '</li>';
+
+            arrMatches.push(d.name + "|" + match.index);
+          } //while
+        } //each
+      ); //each
+      //alert(html_2);
+
+      html_1 = "<div id='resultsList'><h3>"+arrMatches.length+" resultados encontrados.</h3>";
+      html_final = html_1 + html_2 + "</div>";
+
+      //var regexp2 = new RegExp(str,"g")
+      //html_2.replace(regexp2,"<span>" + str + "</span>");
+
+      $("#searchDiv").after(html_final);
+
+      //var citations = $("#resultsList li span.citation");
+
+    //  console.log(citations);
+
+    var spanMatch =  $("span");
+
+      $.each($("#resultsList li span.citation"),function(i,val){
+        var innerHTML = val.innerHTML;
+        var index = innerHTML.toUpperCase().indexOf(str.toUpperCase());
+        if ( index >= 0 )
+        {
+            innerHTML = innerHTML.substring(0,index) + "<span class='highlight'>" + innerHTML.substring(index,index+str.length) + "</span>" + innerHTML.substring(index + str.length);
+            val.innerHTML = innerHTML;
+        }
+      });
+    }
+    stopLoader();
+}/*kateryna*/
+
+
+function startDictation() {
+
+  if (window.hasOwnProperty('webkitSpeechRecognition') || window.hasOwnProperty('SpeechRecognition')) {
+
+    if (window.hasOwnProperty('webkitSpeechRecognition')){var recognition = new webkitSpeechRecognition();}
+    if (window.hasOwnProperty('SpeechRecognition')){var recognition = new SpeechRecognition();}
+
+    recognition.continuous = false;
+    recognition.interimResults = false;
+
+    recognition.lang = "pt-PT";
+    recognition.start();
+
+    recognition.onresult = function(e) {
+      document.getElementById('textToSearch').value = e.results[0][0].transcript;
+      recognition.stop();
+      $(".speech img").css({'background-color':'none'});
+      findInDocs();
+      //console.log("onresult:", e.results[0][0].transcript);
+      //document.getElementById('labnol').submit();
+    };
+
+    recognition.onerror = function(e) {
+      recognition.stop();
+      $(".speech img").css({'background-color':'none'});
+    }
+
+    recognition.onstart = function() {
+      $(".speech img").css({'background-color':'rgba(252,0,0,.4)'});
+      $("#textToSearch").attr({'placeholder':'A escutar...'});
+    }
+    recognition.onend = function() {
+      $(".speech img").css({'background-color':'rgba(252,0,0,0)'});
+      $("#textToSearch").attr({'placeholder':'Texto a pesquisar...'});
+    }
+
+    }
+}
