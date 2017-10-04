@@ -50,7 +50,7 @@ var arrDocNames = ['about',
 var arrDocs = []; // array
 
 /*Carregar documento através de parametros no URL (queryString)*/
-function loadContent(){
+function loadFirstContent(){
 
 	var qs = window.location.search; //Get QueryString
 	//  qs = "?doc=documentos_af_e_ar&anchor=3-criação-de-novo-tipo-de-documento-–-anulação-de-receita-ar";
@@ -68,18 +68,18 @@ function loadContent(){
 		loadAllMdownDocs(doc, anchor);
 	}/*close if*/
 	else{
-		console.log("[loadContent] Querystring não detetada.");
+		console.log("[loadFirstContent] Querystring not detected/not valid.");
 		loadIndexContent(["btnMenu"], null);
 		loadAllMdownDocs(doc, anchor);
 	}
-	stopLoader("[loadContent-1]");
+	stopLoader("[loadFirstContent-1]");
 }
 
 
 //load all markdown documents
 function loadAllMdownDocs(doc, anchor){
 
-		var promises = []; //variable that can be assigned multiple times
+		var promises = [];
 
 		$.each(arrDocNames, function(i, name){
 			promises.push(
@@ -107,20 +107,15 @@ function loadAllMdownDocs(doc, anchor){
 
 function startLoader(){
 	$('#loader').addClass('active');
-	$( "*" ).css( "cursor", "progress" );
-	//console.log("[startLoader]",$('#loader'));
+	$('*').css('cursor','progress');
 }
 
 function stopLoader(origin){
-	//window.alert("origin->" + origin + "\ncursor->"+$( "*" ).css( "cursor"));
 	$('#loader').removeClass('active');
-	$( "*" ).css( "cursor", "" );
-	//console.log("[stopLoader]");
+	$('*').css('cursor','');
 }
 
 function loadIndexContent(btnsToShow, event) {
-
-	//console.log("[loadIndexContent] btnsToShow: ", btnsToShow);
 
 	startLoader();
 
@@ -388,7 +383,6 @@ function imageZoom() {
 				//console.log(img);/*+
 				i++;
 			});
-		//console.log("[imageZoom] " + imgs.length + " imgs ready for zoom");
 	}
 } /*close zommClickImagem*/
 

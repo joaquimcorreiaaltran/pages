@@ -73,19 +73,15 @@
 		<script src="./js/main.js"></script>
 		<script src="./js/libs/accordion-menu.js"></script>
 		<script src="./js/libs/jquery-ui.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script> 
+		<script src="./js/libs/es6-promise.min.js"></script>
+		<script src="./js/libs/es6-promise.auto.min.js"></script>
 		<script src="./js/libs/showdown.js"></script>
 		<script src="./js/libs/highslide-with-gallery.js" async></script>
 		<script src="./js/libs/jquery.zoom.js" async></script>
 		<script src="./js/libs/jquery.timeago.js" async></script>
 		<script type="text/javascript">
 			$(function () {
-
-				startLoader();
-
-				loadContent(); //load the main page or the document in the url query string
-
+				loadFirstContent(); //load the main page or the document in the url query string
 			});
 		</script>
 		<script src="./sw.js" async></script>
