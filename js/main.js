@@ -19,12 +19,6 @@ dimmingOpacity = 0.5;
 dimmingGeckoFix = true;
 blockRightClick = true;
 
-// To add to window
-// if (!window.Promise) {
-//   window.Promise = Promise;
-//   console.log("EXECUTED: window.Promise = Promise;");
-// }
-
 var mobileDeviceCheck = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
 var arrDocNames = [ 'about',
                     'apresentacao_snc_ap',
@@ -101,7 +95,7 @@ function loadAllMdownDocs(doc, anchor){
 					content: item.value
 				}
 			});
-			if(doc != null) loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnShowToc','tocDropdown','btnOpt'], anchor, null);
+			if(doc != null) loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnShowToc','btnOpt'], anchor, null);
 		})
 } //function
 
@@ -277,6 +271,7 @@ function scrollToAnchor(mdFile, anchor){//the anchor parameter can not have the 
 }
 
 function showElements(elements) {
+  console.log(elements);
 	hideElements();
   $.each(elements, function(i, el){
     $("#" + el).addClass("show");
@@ -542,33 +537,22 @@ function loadToc(mdFile, elementId) {
 				toc += newLine;
 			});
 
-		toc_bottom_html = "</ul>" + "</nav>" + "<div><i id='drag2' title='Arraste-me...' class='fa fa-arrows fa-fw' style='cursor: move;'></i></div>";
+		toc_bottom_html = "</ul></nav><div><i id='drag2' title='Arraste-me...' class='fa fa-arrows fa-fw' style='cursor: move;'></i></div>";
 
 		if ( toc.length > 1 ) {
 			$(elementId).html(toc_top_html + toc + toc_bottom_html);
-			if(!$(elementId).hasClass("show")){
-					$(elementId).addClass("show");
-				}
 		}
 		else{
 			$(elementId).removeClass("show");
 		}
 
-		/*Dependency: jquery-ui.js*/
 		if ($("#tocDropdown").length) {
-
-			$("#tocDropdown").draggable({
+			$("#tocDropdown").draggable({/*Dependency: jquery-ui.js*/
 					containment: "window",
 					handle: "i",
 					snap: "#docButtons, #content",
-					cursor: "move"/*,
-					cursorAt: {top: 5,left: 5}*/
+					cursor: "move"
 				});
-				//$("#tocDropdown").resizable();
-		}
-
-		if ($("#tocDropdown").hasClass("show")) {
-			$("#btnShowToc").addClass("enabled");
 		}
 	}
 } /*builds toc*/
