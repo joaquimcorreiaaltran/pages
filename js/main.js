@@ -19,6 +19,12 @@ dimmingOpacity = 0.5;
 dimmingGeckoFix = true;
 blockRightClick = true;
 
+// To add to window
+if (!window.Promise) {
+  window.Promise = Promise;
+  console.log("EXECUTED: window.Promise = Promise;");
+}
+
 var mobileDeviceCheck = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
 var arrDocNames = ['about', 'apresentacao_snc_ap', 'cer_migracao_sicc','chave_orcamental_por_ano', 'documentos_af_e_ar','gestao_exercicios', 'gestao_projetos','help','importacao_csvs','macro_tarefas','menus_draft','menus','mu_snc_ap','perguntas_frequentes','processos','reposicao_pagamentos_cobrancas','snc_ap_faqs'];
 var arrDocs = []; // array
