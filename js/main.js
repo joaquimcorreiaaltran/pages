@@ -26,7 +26,7 @@ blockRightClick = true;
 // }
 
 var mobileDeviceCheck = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
-var arrDocNames = ['about',
+var arrDocNames = [ 'about',
                     'apresentacao_snc_ap',
                     'cer_migracao_sicc',
                     'chave_orcamental_por_ano',
@@ -46,7 +46,8 @@ var arrDocNames = ['about',
                     'perguntas_frequentes',
                     'processos',
                     'reposicao_pagamentos_cobrancas',
-                    'snc_ap_faqs'];
+                    'snc_ap_faqs'
+                  ];
 var arrDocs = []; // array
 
 /*Carregar documento através de parametros no URL (queryString)*/
@@ -104,7 +105,6 @@ function loadAllMdownDocs(doc, anchor){
 		})
 } //function
 
-
 function startLoader(){
 	$('#loader').addClass('active');
 	$('*').css('cursor','progress');
@@ -149,9 +149,7 @@ function loadIndexContent(btnsToShow, event) {
 			$("#docOptions").removeClass("active");
 			var stateObj = { foo: "bar" };
 			history.replaceState(stateObj, "SICC Documentação - página inicial", location.href.split("?")[0]);
-
 	});
-
 }
 
 function highlightMenuItem (event) {
@@ -182,8 +180,7 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
 
 	if( mdFile != null && mdFile != undefined ){
 		highlightMenuItem(event);
-
-		$("#fileHistory").remove();
+		if($("#fileHistory").length) {$("#fileHistory").remove();}
 
 		//if the HTML element "#documento" doesn't exist, then create it inside the "documento" element
 		if($("#documento").length < 1){
@@ -192,33 +189,40 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
 				$("footer").addClass("documentMode"); 																	 //adjust html style and structure
 		}
 
-		convertMdToHtml("documento", mdFile);
+  	$.each(arrDocs, function(i, doc){
+  		if(mdFile == doc.name && doc.content.length){
+  			var converter = new showdown.Converter(),	data2, html = converter.makeHtml(doc.content); //declara 3 variáveis: converter, data e a html. A variável html irá conter o ficheiro markdown convertido em HTML.
+  			$('#documento').html(html);//Place the converted markdown into the elementID
+  			return false; //to stop the .each loop
+  	  }else if ( i + 1  >= arrDocs.length){
+  			console.log("[convertMdToHtml] Error on loading the file \"" + mdFile + "\". Check if it exists in the markdown folder and in the arrayDoc.");
+  			loadIndexContent(['btnMenu'],null);
+  			return false; //to stop the .each loop
+  		}else if(mdFile == doc.name && doc.content.length <= 0){
+  			console.log("[convertMdToHtml] Error on loading file contents. The file \"" + mdFile + "\" exists but has no content.");
+  			loadIndexContent(['btnMenu'],null);
+  			return false; //to stop the .each loop
+  		}else{
+  			return true; //to continue the .each loop
+  		}
+  	});
+
 		loadToc(mdFile, "tocDropdown");
 		addSharelink(mdFile);
 		responsiveTable();
 		imageZoom();
 
 		if(anchor != undefined && anchor.length >= 2){
-			console.log("loadMdDoc: "+anchor);
 			setTimeout( function(){ scrollToAnchor(mdFile, anchor); }, 2500);
 		}
 		else{
 			var stateObj = { foo: "bar" }, url =  location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile;
-
 			history.pushState(stateObj, "SICC - Documentação", url);
-			//console.log("[convertMdToHtml] Adicionada entrada no histórico: " + url);
 		}
 
 		$("#btnEditarDoc, #btnHistory" ).off("click");
-
-		$("#btnEditarDoc").click(function() {
-				window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/" + mdFile + ".md", "_blank");
-			});
-		$("#btnHistory").click(function() {
-				loadFileHistory(mdFile, event);
-			});
-
-		//$("#btnPDF").attr({"onclick":"window.open('https://spmssicc.github.io/pages/pdf/" + mdFile + ".pdf', '_blank')"});
+		$("#btnEditarDoc").click(function() {window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/" + mdFile + ".md", "_blank");});
+		$("#btnHistory").click(function() {loadFileHistory(mdFile, event);});
 
 		if (mdFile == "apresentacao_snc_ap") {$("#btnPDF").attr({"onclick":"window.open('https://view.officeapps.live.com/op/embed.aspx?src=https://spmssicc.github.io/pages/pptx/SPMS_SICC_SNC_AP_20160606_04-pics.pptx','_blank')"});}
 		else if (mdFile == "circ1381") {$("#btnPDF").attr({"onclick":"window.open('http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1381.pdf','_blank')"});}
@@ -234,51 +238,12 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
 	stopLoader("[loadMdDoc_1]");
 }
 
-//load and convert Markdown to Html and show it
-function convertMdToHtml(elementId, mdFile) {
-
-	startLoader();
-
-	//Check if the "elementId" has value to place the converted markdown into the page
-	if ( elementId.length < 1 || elementId == undefined ) {elementId = "documento";}
-
-	$.each(arrDocs, function(i, doc){
-		if(mdFile == doc.name && doc.content.length){
-					//declara 3 variáveis: converter, data e a html. A variável html irá conter o ficheiro markdown convertido em HTML.
-					var converter = new showdown.Converter(),	data2, html = converter.makeHtml(doc.content);
-
-					//Place the converted markdown into the elementID
-					$("#" + elementId).html(html);
-
-					return false; //to stop the .each loop
-
-	  }else if ( i + 1  >= arrDocs.length){
-			console.log("[convertMdToHtml] Error on loading the file \"" + mdFile + "\". Check if it exists in the markdown folder and in the arrayDoc.");
-			loadIndexContent(['btnMenu'],null);
-			return false; //to stop the .each loop
-
-		}else if(mdFile == doc.name && doc.content.length <= 0){
-			console.log("[convertMdToHtml] Error on loading file contents. The file \"" + mdFile + "\" exists but has no content.");
-			loadIndexContent(['btnMenu'],null);
-			return false; //to stop the .each loop
-		}else{
-			return true;
-		}
-	});
-	stopLoader("[convertMdToHtml_1]");
-} /*close convertMdToHtml()*/
-
 //to know the type of a variable
 function varType( obj ) {
 		return ({}).toString.call(obj).match(/\s([a-zA-Z]+)/)[1].toLowerCase()
 }
 
-function scrollToAnchor(mdFile, anchor){
-
-	console.log("[scrollToAnchor] anchor: "+ anchor);
-
-	//the anchor parameter can not have the character "#"
-
+function scrollToAnchor(mdFile, anchor){//the anchor parameter can not have the character "#"
 	startLoader();
 	var anchorId;
 
@@ -287,118 +252,86 @@ function scrollToAnchor(mdFile, anchor){
 	}
 
 	try {
-			$(anchorId);
-		} catch(e) {
-			console.log('[scrollToAnchor] URL anchor parameter is invalid: ' + anchorId);
-			anchorId = '';
-			stopLoader("[scrollToAnchor]");
-			return;
-		}
+		  $(anchorId);
+	} catch(e) {
+  		console.log('[scrollToAnchor] URL anchor parameter is invalid: ' + anchorId);
+  		anchorId = '';
+  		stopLoader("[scrollToAnchor]");
+  		return;
+	}
 
 	if ($(anchorId).length) {
 
-				var pos = $(anchorId).offset().top - 250;// get top position relative to the document //- 250 to compensate the doc bar
+			var pos = $(anchorId).offset().top - 250;// get top position relative to the document //- 250 to compensate the doc bar
 
-				$('body, html').animate({scrollTop: pos});// set animated top scrolling to the anchorId
+			$('body, html').animate({scrollTop: pos});// set animated top scrolling to the anchorId
 
-				//console.log("[scrollToAnchor] anchorId:" + anchorId + "\n Positions should be the same: " + $(anchorId).offset().top + " <-> " + (pos + 250));
-
-				var stateObj = { foo: "bar" }, url = location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor; //the anchor parameter can not have the character "#"
-				history.pushState(stateObj, "SICC - Documentação", url);
-				//console.log("[scrollToAnchor] Adicionada entrada no histórico: " + url);
-
-				anchor = ""; // clear the anchor
+			var stateObj = { foo: "bar" }, url = location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor; //the anchor parameter can not have the character "#"
+			history.pushState(stateObj, "SICC - Documentação", url);
+			anchor = ""; // clear the anchor
 		}
 		else{
 				window.scrollTo(0,0);// top scrolling
-				//console.log("[scrollToAnchor] anchorId not found in the html: " + anchorId);
 		}
 	stopLoader("[scrollToAnchor]");
 }
 
 function showElements(elements) {
-
 	hideElements();
-
-	for (i = 0; i < elements.length; i++) {
-		$("#" + elements[i]).addClass("show");
-	}
+  $.each(elements, function(i, el){
+    $("#" + el).addClass("show");
+  });
 }
 
 function hideElements() {
-
 	var elements = ["btnMenu","btnShowToc","tocDropdown","btnOpt"];
-
-	for (i = 0; i < elements.length; i++) {
-		$("#" + elements[i]).removeClass("show");
-	}
-	//console.log("[hideElements] hide: ", elements);
+  $.each(elements, function (i,el) {
+		$("#" + el).removeClass("show");
+	});
 }
 
 function hideOptions(mdFile){
-	//var options = ["btnEditarDoc","btnPDF", "btnShare", "btnHistory"];
 	showOptions();
 	var arrDocNames1 = ['about','apresentacao_snc_ap','help','perguntas_frequentes','snc_ap_faqs','cer_migracao_sicc','mu_snc_ap'];
 
-		$.each(arrDocNames1, function(i, name){
-			if (mdFile.match(name) == name){
-				if ($.inArray(name, ['about', 'help']) != -1){
-					$("#btnEditarDoc").addClass("disabled");
-					//$("#btnPDF").parent().addClass("disabled");
-					$("#btnEditarDoc").off("click");
-					//console.log($("#btnEditarDoc").hasClass("active"));
-				}
-				if($.inArray(name, ['apresentacao_snc_ap','perguntas_frequentes','snc_ap_faqs','cer_migracao_sicc','mu_snc_ap']) != -1){
-					//alert("entrei3");
-					$("#btnPDF").addClass("disabled");
-					//$("#btnPDF").parent().addClass("disabled");
-					$("#btnPDF").off("click");
-				}//if
-			}//if match
-		});
+	$.each(arrDocNames1, function(i, name){
+		if (mdFile.match(name) == name){
+			if ($.inArray(name, ['about', 'help']) != -1){
+				$("#btnEditarDoc").addClass("disabled");
+				$("#btnEditarDoc").off("click");
+			}
+			if($.inArray(name, ['apresentacao_snc_ap','perguntas_frequentes','snc_ap_faqs','cer_migracao_sicc','mu_snc_ap']) != -1){
+				$("#btnPDF").addClass("disabled");
+				$("#btnPDF").off("click");
+			}//if
+		}//if match
+	});
 }
 
 function showOptions () {
-
 	var options = ["btnEditarDoc","btnPDF", "btnShare", "btnHistory"];
-	$.each(options, function(i,b){
-		$("#"+b).removeClass("disabled");
-		$("#"+b).on("click");
+	$.each(options, function(i,opt){
+		$("#"+opt).removeClass("disabled");
+		$("#"+opt).on("click");
 	});
 }
-// Add zoom functionality to images in the HTML
-function imageZoom() {
 
-	var i=0, imgs = $('#documento img'),img;
-
-	if(imgs.length){
-		imgs.each(function() {
-			img = $(this), alt = img.attr("alt");
-			img.wrap("<a class='imagem' href='" + img.attr("src") +	"' onclick='return hs.expand(this)'></a>");
-
-				// add height and width properties to the img tags Works only after the images have been loaded
-				/*if(img[0]['height'] > 0 && img[0]['width'] > 0){
-						img.attr({'height':img[0]['height']+"px",'width':img[0]['width']+"px"})
-				}*/
-				//console.log(img);/*+
-				i++;
-			});
-	}
+function imageZoom() {// Add zoom functionality to images in the HTML
+	$('#documento img').each(function(i, img) {
+		$(img).wrap("<a class='imagem' href='" +
+    $(img).attr("src") +	"' onclick='return hs.expand(this)'></a>");
+	});
 } /*close zommClickImagem*/
 
-/* Add auto scroll to document tables */
-function responsiveTable() {
-	$('#documento table').each(function() {
-			$(this).wrap("<div style='overflow-x:auto;'></div>");
-		});
+function responsiveTable() {// Add scroll to document tables
+	$('#documento table').each(function(i, table) {
+			$(table).wrap("<div style='overflow-x:auto;'></div>");
+	});
 } /*close responsiveTable()*/
 
-//Loads the gitHub repository and insert insert into the HTML
-function loadCommitHistory(btnsToShow) {
+function loadCommitHistory(btnsToShow) { //Loads the gitHub repository and insert insert into the HTML
 
 		startLoader();
-
-		//console.log("[loadCommitHistory] started. Buttons to show: " + btnsToShow);
 
 		if($("#documento").length < 1){
 			//adjust html style and structure
@@ -480,8 +413,6 @@ function loadCommitHistory(btnsToShow) {
 			.done(function(response, textStatus, jqXHR) {
 				return callback(response, textStatus, jqXHR);
 			});
-
-
 } /*loadCommitHistory()*/
 
 function loadFileHistory(file, e){
@@ -505,8 +436,6 @@ function loadFileHistory(file, e){
 				var timestamp = Math.abs(new Date() - response.meta["X-RateLimit-Reset"] - new Date());
 				var time_to_reset = new Date(timestamp * 1000);
 				time_to_reset = time_to_reset.getHours() + ":" + time_to_reset.getMinutes();
-
-				console.log(response);
 
 				if (rate_limit_remaining > 0) {
 
@@ -560,9 +489,6 @@ function loadFileHistory(file, e){
 					.done(function(response, textStatus, jqXHR) {
 						return callback(response, textStatus, jqXHR);
 					});
-					//.always(){
-						//stopLoader();
-					//}
 	}
 	else if ( $("#fileHistory").length && !$("#fileHistory").hasClass("active") ) {
 		$("#btnHistory, #fileHistory, #behindFileHistory").addClass("active");
@@ -579,7 +505,6 @@ function loadFileHistory(file, e){
 		stopLoader("[loadFileHistory_5]");
 	}
 }
-
 
 function addSharelink(mdFile){
 
@@ -602,8 +527,8 @@ function loadToc(mdFile, elementId) {
 
 		var toc="", newLine, el, title, link;
 		var toc_top_html =	"<i id='drag1' title='Arraste-me...' class='fa fa-arrows fa-fw' style='cursor: move;'></i>" +
-										"<nav role='navigation' class='table-of-contents'>" +
-											"<ul>";
+      									"<nav role='navigation' class='table-of-contents'>" +
+      									"<ul>";
 
 		//chose the HTML elements to include in the Table of Content
 		$("article h2,h3,h4").each(function() {
@@ -628,8 +553,6 @@ function loadToc(mdFile, elementId) {
 		else{
 			$(elementId).removeClass("show");
 		}
-
-		//console.log("[loadToc] $(" + elementId + ").html:\n\n" + $(elementId).html());
 
 		/*Dependency: jquery-ui.js*/
 		if ($("#tocDropdown").length) {
@@ -699,34 +622,23 @@ for smooth scrolling
 // handle links in the table of contents with @href started with '#' only
 $('#tocDropdown').on('click', 'a[href^="#"]', function(e) {
 
-		// target element id
-		var id = $(this).attr('href');
+	var id = $(this).attr('href');// target element id
+	var $id = $(id);// target element
 
-		// target element
-		var $id = $(id);
+	if ($id.length === 0) {
+		return;
+	}
+	else{
+		$('#tocDropdown *').removeClass('active');
+		$(e.target).addClass('active');
+		$(e.target.parentNode).addClass('active');
+	}
 
-		if ($id.length === 0) {
-			return;
-		}
-		else{
-			$('#tocDropdown *').removeClass('active');
-			$(e.target).addClass('active');
-			$(e.target.parentNode).addClass('active');
-		}
+	e.preventDefault(); // prevent standard hash navigation (avoid blinking in IE)
 
-		// prevent standard hash navigation (avoid blinking in IE)
-		e.preventDefault();
-
-		// top position relative to the document
-		var pos = parseInt($id.offset().top - 50);
-			window.scrollTo(0, pos);
-
-		//$('html, body').css({'scrollTop' : pos});
-
-		// animated top scrolling
-		//$('html, body').animate({'scrollTop' : pos},1000);
-
-		//console.log($('html, body').css('scrollTop'));
+	var pos = parseInt($id.offset().top - 50); // top position relative to the document
+	window.scrollTo(0, pos);
+	// $('html, body').css({'scrollTop' : pos});
 });
 
 function findInDocs(){
@@ -763,30 +675,21 @@ function findInDocs(){
       html_1 = "<div id='resultsList'><h3>"+arrMatches.length+" resultados encontrados.</h3>";
       html_final = html_1 + html_2 + "</div>";
 
-      //var regexp2 = new RegExp(str,"g")
-      //html_2.replace(regexp2,"<span>" + str + "</span>");
-
       $("#searchDiv").after(html_final);
 
-      //var citations = $("#resultsList li span.citation");
-
-    //  console.log(citations);
-
-    var spanMatch =  $("span");
+      var spanMatch =  $("span");
 
       $.each($("#resultsList li span.citation"),function(i,val){
-        var innerHTML = val.innerHTML;
-        var index = innerHTML.toUpperCase().indexOf(str.toUpperCase());
+        var innerHTML = val.innerHTML, index = innerHTML.toUpperCase().indexOf(str.toUpperCase());
         if ( index >= 0 )
         {
-            innerHTML = innerHTML.substring(0,index) + "<span class='highlight'>" + innerHTML.substring(index,index+str.length) + "</span>" + innerHTML.substring(index + str.length);
-            val.innerHTML = innerHTML;
+          innerHTML = innerHTML.substring(0,index) + "<span class='highlight'>" + innerHTML.substring(index,index+str.length) + "</span>" + innerHTML.substring(index + str.length);
+          val.innerHTML = innerHTML;
         }
       });
     }
     stopLoader();
 }/*kateryna*/
-
 
 function startDictation() {
 
@@ -814,7 +717,6 @@ function startDictation() {
       recognition.stop();
       $(".speech img").css({'background-color':'none'});
     }
-
     recognition.onstart = function() {
       $(".speech img").css({'background-color':'rgba(252,0,0,.4)'});
       $("#textToSearch").attr({'placeholder':'A escutar...'});
@@ -823,6 +725,5 @@ function startDictation() {
       $(".speech img").css({'background-color':'rgba(252,0,0,0)'});
       $("#textToSearch").attr({'placeholder':'Texto a pesquisar...'});
     }
-
-    }
+  }
 }
