@@ -662,7 +662,7 @@ function findInDocs(){
                 end =  d.content.indexOf(" ",match.index + 70);
             citation = "\"..." + d.content.substring(start,end) + "...\"";
             html_2 = html_2 + '<li title="Ver documento '+d.title+'" onclick="loadMdDoc(\'' + d.name +
-                              '\', [\'btnMenu\'],\'\', event)"><span class="title">['+d.title+']</span><p><span class=' + 'citation' + '>'+
+                              '\', [\'btnMenu\',\'btnShowToc\',\'btnOpt\',\'tocDropdown\'],\'\', null)"><span class="title">['+d.title+']</span><p><span class=' + 'citation' + '>'+
                               citation+'</span></p>'+
                               '</li>';
 
