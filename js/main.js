@@ -20,10 +20,10 @@ dimmingGeckoFix = true;
 blockRightClick = true;
 
 // To add to window
-if (!window.Promise) {
-  window.Promise = Promise;
-  console.log("EXECUTED: window.Promise = Promise;");
-}
+// if (!window.Promise) {
+//   window.Promise = Promise;
+//   console.log("EXECUTED: window.Promise = Promise;");
+// }
 
 var mobileDeviceCheck = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
 var arrDocNames = ['about',
