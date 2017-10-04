@@ -26,7 +26,27 @@ if (!window.Promise) {
 }
 
 var mobileDeviceCheck = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
-var arrDocNames = ['about', 'apresentacao_snc_ap', 'cer_migracao_sicc','chave_orcamental_por_ano', 'documentos_af_e_ar','gestao_exercicios', 'gestao_projetos','help','importacao_csvs','macro_tarefas','menus_draft','menus','mu_snc_ap','perguntas_frequentes','processos','reposicao_pagamentos_cobrancas','snc_ap_faqs'];
+var arrDocNames = ['about',
+                    'apresentacao_snc_ap',
+                    'cer_migracao_sicc',
+                    'chave_orcamental_por_ano',
+                    'circ1381',
+                    'circ1382',
+                    'dec_lei85',
+                    'dec_lei192',
+                    'documentos_af_e_ar',
+                    'gestao_exercicios',
+                    'gestao_projetos',
+                    'help',
+                    'importacao_csvs',
+                    'macro_tarefas',
+                    'menus_draft',
+                    'menus',
+                    'mu_snc_ap',
+                    'perguntas_frequentes',
+                    'processos',
+                    'reposicao_pagamentos_cobrancas',
+                    'snc_ap_faqs'];
 var arrDocs = []; // array
 
 /*Carregar documento através de parametros no URL (queryString)*/
