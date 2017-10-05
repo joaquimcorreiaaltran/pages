@@ -22,6 +22,7 @@ blockRightClick = true;
 var uAgent = window.navigator.userAgent.toUpperCase()
   , mobileDeviceCheck = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()))
   , arrDocs = []
+  , reformatedArrDocs = []
   , arrDocNames = [ 'about','apresentacao_snc_ap','cer_migracao_sicc','chave_orcamental_por_ano','circ1381','circ1382','dec_lei85','dec_lei192','documentos_af_e_ar','gestao_exercicios','gestao_projetos','help','importacao_csvs','macro_tarefas','menus_draft','menus','mu_snc_ap','perguntas_frequentes','processos','reposicao_pagamentos_cobrancas','snc_ap_faqs'];
 
 /*Carregar documento através de parametros no URL (queryString)*/
@@ -75,6 +76,19 @@ function loadAllMdownDocs(doc, anchor){
 				}
 			});
 			if(doc != null) loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnToc','btnOpt'], anchor, null);
+
+      // array to be used in the find functionality
+      reformatedArrDocs = arrDocs.map(
+        function(doc){
+          var rDoc = {name:"",content:"",title:""};
+          rDoc.name = doc.name;
+          rDoc.title = doc.title;
+          // removes some markdown and HTML sintax
+          rDoc.content = doc.content.replace(/!\[(.*?)\)|(#{1,} )|(\*{2})|(\_{2})|(\|:-*)\||(:-{2,})|(<div .*>)|(<\/div>)|(<iframe .*>)|(<\/iframe>)|(<button .*>)|(<\/button>)/g,'');
+          return rDoc;
+        }
+      );
+
 		})
 } //function
 
@@ -577,7 +591,7 @@ function findInDocs(){
     if(str.length >= minLen){
       var regexp = new RegExp(str.toUpperCase(),"g"),match, arrMatches = [],html_1, html_2="", html_final;
 
-      $.each(arrDocs, function(i, d){
+      $.each(reformatedArrDocs, function(i, d){
           while ((match = regexp.exec(d.content.toUpperCase())) != null) {
 
             var start = d.content.indexOf(" ",match.index - 70)+1,
