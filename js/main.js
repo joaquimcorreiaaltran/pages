@@ -19,30 +19,10 @@ dimmingOpacity = 0.5;
 dimmingGeckoFix = true;
 blockRightClick = true;
 
-var mobileDeviceCheck = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
-var arrDocNames = [ 'about',
-                    'apresentacao_snc_ap',
-                    'cer_migracao_sicc',
-                    'chave_orcamental_por_ano',
-                    'circ1381',
-                    'circ1382',
-                    'dec_lei85',
-                    'dec_lei192',
-                    'documentos_af_e_ar',
-                    'gestao_exercicios',
-                    'gestao_projetos',
-                    'help',
-                    'importacao_csvs',
-                    'macro_tarefas',
-                    'menus_draft',
-                    'menus',
-                    'mu_snc_ap',
-                    'perguntas_frequentes',
-                    'processos',
-                    'reposicao_pagamentos_cobrancas',
-                    'snc_ap_faqs'
-                  ];
-var arrDocs = []; // array
+var uAgent = window.navigator.userAgent.toUpperCase()
+  , mobileDeviceCheck = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()))
+  , arrDocs = []
+  , arrDocNames = [ 'about','apresentacao_snc_ap','cer_migracao_sicc','chave_orcamental_por_ano','circ1381','circ1382','dec_lei85','dec_lei192','documentos_af_e_ar','gestao_exercicios','gestao_projetos','help','importacao_csvs','macro_tarefas','menus_draft','menus','mu_snc_ap','perguntas_frequentes','processos','reposicao_pagamentos_cobrancas','snc_ap_faqs'];
 
 /*Carregar documento através de parametros no URL (queryString)*/
 function loadFirstContent(){
@@ -70,7 +50,6 @@ function loadFirstContent(){
 	stopLoader("[loadFirstContent-1]");
 }
 
-
 //load all markdown documents
 function loadAllMdownDocs(doc, anchor){
 
@@ -95,19 +74,9 @@ function loadAllMdownDocs(doc, anchor){
 					content: item.value
 				}
 			});
-			if(doc != null) loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnShowToc','btnOpt'], anchor, null);
+			if(doc != null) loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnToc','btnOpt'], anchor, null);
 		})
 } //function
-
-function startLoader(){
-	$('#loader').addClass('active');
-	$('*').css('cursor','progress');
-}
-
-function stopLoader(origin){
-	$('#loader').removeClass('active');
-	$('*').css('cursor','');
-}
 
 function loadIndexContent(btnsToShow, event) {
 
@@ -146,28 +115,6 @@ function loadIndexContent(btnsToShow, event) {
 	});
 }
 
-function highlightMenuItem (event) {
-	if(event != null){
-		if(event.target != undefined){
-			var el;
-
-			$("#accordion .active").each(function() {
-				el = $(this);
-
-				if (!el.hasClass('caret')){
-					el.removeClass('active');
-				}
-			});
-
-			$(event.target.parentNode.children).addClass("active")
-			$(event.target).parents().addClass("active");
-		}
-	}
-	else {
-		return;
-	}
-}
-
 function loadMdDoc(mdFile, btnsToShow, anchor, event) {
 
 	startLoader();
@@ -192,11 +139,13 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
   			$('#documento').html(html);//Place the converted markdown into the elementID
 
         loadToc(mdFile, "tocDropdown");
+        toggle("toc",true); // hide table-of-contents
         addSharelink(mdFile);
         responsiveTable();
         imageZoom();
         showElements(btnsToShow);
-        hideOptions(mdFile);
+        enableDocOptions();
+        disableDocOptions(mdFile);
 
         $("#btnEditarDoc, #btnHistory" ).off("click");
         $("#btnEditarDoc").click(function() {window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/" + mdFile + ".md", "_blank");});
@@ -248,26 +197,52 @@ function scrollToAnchor(mdFile, anchor){//the anchor parameter can not have the 
 		anchorId = '#' + anchor;
 	}
 
-	try {
-		  $(anchorId);
-	} catch(e) {
-  		console.log('[scrollToAnchor] URL anchor parameter is invalid: ' + anchorId);
-  		anchorId = '';
-  		stopLoader("[scrollToAnchor]");
-  		return;
+	try { $(anchorId); }
+  catch(e) {
+		console.log('[scrollToAnchor] URL anchor parameter is invalid: ' + anchorId);
+		anchorId = '';
+		stopLoader("[scrollToAnchor]");
+		return;
 	}
 
 	if ($(anchorId).length) {
-			var pos = $(anchorId).offset().top - 250;// get top position relative to the document //- 250 to compensate the doc bar
-			$('body, html').animate({scrollTop: pos});// set animated top scrolling to the anchorId
-			var stateObj = { foo: "bar" }, url = location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor; //the anchor parameter can not have the character "#"
-			history.pushState(stateObj, "SICC - Documentação", url);
-			anchor = ""; // clear the anchor
+		var pos = $(anchorId).offset().top - 250;// get top position relative to the document //- 250 to compensate the doc bar
+		$('body, html').animate({scrollTop: pos});// set animated top scrolling to the anchorId
+		var stateObj = { foo: "bar" }, url = location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor; //the anchor parameter can not have the character "#"
+		history.pushState(stateObj, "SICC - Documentação", url);
+		anchor = ""; // clear the anchor
 		}
 		else{
 			window.scrollTo(0,0);// top scrolling
 		}
 	stopLoader("[scrollToAnchor]");
+}
+
+function startLoader(){
+	$('#loader').addClass('active');
+	$('*').css('cursor','progress');
+}
+
+function stopLoader(origin){
+	$('#loader').removeClass('active');
+	$('*').css('cursor','');
+}
+
+function toggle(op, off){
+  var el, btn;
+
+  if (op == "menu" ){ el = $('#accordion'); btn = $('#btnMenu'); }
+  else if (op == "toc") { el = $('#tocDropdown'); btn = $('#btnToc'); }
+  else if (op == "docOptions"){ el = $('#docOptions'); btn = $('#btnOpt'); }
+  else{ return; }
+
+	if( el.hasClass('show') || btn.hasClass('active') || off)	{
+    el.removeClass('show');
+    btn.removeClass('active');
+  }	else{
+    el.addClass('show');
+    btn.addClass('active');
+  }
 }
 
 function showElements(elements) {
@@ -279,36 +254,43 @@ function showElements(elements) {
 }
 
 function hideElements() {
-	var elements = ["btnMenu","btnShowToc","tocDropdown","btnOpt"];
+	var elements = ["btnMenu","btnToc","tocDropdown","btnOpt"];
   $.each(elements, function (i,el) {
 		$("#" + el).removeClass("show");
 	});
 }
 
-function hideOptions(mdFile){
-	showOptions();
-	var arrDocNames1 = ['about','apresentacao_snc_ap','help','perguntas_frequentes','snc_ap_faqs','cer_migracao_sicc','mu_snc_ap'];
+function highlightMenuItem (event) {
+	if(event != null){
+		if(event.target != undefined){
+			var el;
+			$("#accordion .active").each(function() {
+				el = $(this);
+				if (!el.hasClass('caret')){el.removeClass('active');}
+			});
 
-	$.each(arrDocNames1, function(i, name){
-		if (mdFile.match(name) == name){
-			if ($.inArray(name, ['about', 'help']) != -1){
-				$("#btnEditarDoc").addClass("disabled");
-				$("#btnEditarDoc").off("click");
-			}
-			if($.inArray(name, ['apresentacao_snc_ap','perguntas_frequentes','snc_ap_faqs','cer_migracao_sicc','mu_snc_ap']) != -1){
-				$("#btnPDF").addClass("disabled");
-				$("#btnPDF").off("click");
-			}//if
-		}//if match
-	});
+			$(event.target.parentNode.children).addClass("active")
+			$(event.target).parents().addClass("active");
+		}
+	}else{return;}
 }
 
-function showOptions () {
-	var options = ["btnEditarDoc","btnPDF", "btnShare", "btnHistory"];
-	$.each(options, function(i,opt){
-		$("#"+opt).removeClass("disabled");
-		$("#"+opt).on("click");
-	});
+function disableDocOptions(mdFile){
+  if ($.inArray(mdFile, ['about','help']) != -1) {
+    $("#btnEditarDoc").addClass("disabled");
+    $("#btnEditarDoc").off("click");
+    return;
+  }
+  if ($.inArray(mdFile, ['apresentacao_snc_ap','perguntas_frequentes','snc_ap_faqs','cer_migracao_sicc','mu_snc_ap']) != -1) {
+    $("#btnPDF").addClass("disabled");
+    $("#btnPDF").off("click");
+    return;
+  }
+}
+
+function enableDocOptions() {
+  $("#docOptions>div").removeClass("disabled");
+  $("#docOptions>div").on("click");
 }
 
 function imageZoom() {// Add zoom functionality to images in the HTML
@@ -323,6 +305,14 @@ function responsiveTable() {// Add scroll to document tables
 			$(table).wrap("<div style='overflow-x:auto;'></div>");
 	});
 } /*close responsiveTable()*/
+
+function addSharelink(mdFile){
+	var el, href, i, docURL, docTitle = $("article h1").html();
+	docURL = location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile;
+	//add href to the share button in the doc options
+	$("#btnShare").attr("onclick","window.open('" + encodeURI("mailto:?Subject=SPMS|SICC|Partilha de documentação: "
+	 																							+ docTitle + "&body=\n\nDocumento: " + docTitle + ".\n\nEndereço: " + docURL + "')"));
+}
 
 function loadCommitHistory(btnsToShow) { //Loads the gitHub repository and insert insert into the HTML
 
@@ -442,11 +432,9 @@ function loadFileHistory(file, e){
 															"<i onclick='loadFileHistory()' title='Voltar ao documento' class='fa fa-times fa-fw fa-2x' aria-hidden='true'></i>";
 
 							for (i = 0; i < d.length; i++){
-
 								html_commits = html_commits + "<div>";
 								html_commits = html_commits +	" <a href='" +	d[i].html_url+"' target='_blank' title='Ver detalhes'><i class='fa fa-external-link fa-fw' aria-hidden='true'></i></a> " +
 															$.timeago(d[i].commit.author.date) + ": \"" + d[i].commit.message + "\";" ;
-
 								html_commits = html_commits + "</div>";
 							}
 
@@ -455,7 +443,6 @@ function loadFileHistory(file, e){
 							$("#content").after(html_commits);
 							$("#btnHistory").addClass("active");
 
-							//console.log(html_commits);
 							stopLoader("[loadFileHistory_1]");
 					}
 					else if (rate_limit_remaining == 0) {
@@ -501,49 +488,25 @@ function loadFileHistory(file, e){
 	}
 }
 
-function addSharelink(mdFile){
-
-	var el, href, i, docURL, docTitle = $("article h1").html();
-
-	docURL = location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile;
-	//add href to the share button in the doc options
-	$("#btnShare").attr("onclick","window.open('" + encodeURI("mailto:?Subject=SPMS|SICC|Partilha de documentação: "
-	 																							+ docTitle + "&body=\n\nDocumento: " + docTitle + ".\n\nEndereço: " + docURL + "')"));
-}
-
-
 function loadToc(mdFile, elementId) {
 
 	elementId = "#" + elementId;
 
 	if ($(elementId).length) {
+		var toc="", newLine, el, title, link,
+        toc_top_html =	"<nav role='navigation' class='table-of-contents'><ul>";
 
-		$(elementId).html("");
-
-		var toc="", newLine, el, title, link;
-		var toc_top_html =	"<i id='drag1' title='Arraste-me...' class='fa fa-arrows fa-fw' style='cursor: move;'></i>" +
-      									"<nav role='navigation' class='table-of-contents'>" +
-      									"<ul>";
-
-		//chose the HTML elements to include in the Table of Content
-		$("article h2,h3,h4").each(function() {
-
+		$("article h2,h3,h4").each(function() {//chose the HTML elements to include in the Table of Content
 				el = $(this);
 				link = "#" + el.attr("id");
 				title = el.text();
 				nodeName = el.get(0).nodeName.toLowerCase();
 				newLine = "<li><a class='toc_" + nodeName + "' href='" + link + "'>" + title + "</a></li>";
-
 				toc += newLine;
 			});
 
-		toc_bottom_html = "</ul></nav><div><i id='drag2' title='Arraste-me...' class='fa fa-arrows fa-fw' style='cursor: move;'></i></div>";
-
 		if ( toc.length > 1 ) {
-			$(elementId).html(toc_top_html + toc + toc_bottom_html);
-		}
-		else{
-			$(elementId).removeClass("show");
+			$(elementId).html(toc_top_html + toc + "</ul></nav>");
 		}
 
 		// if ($("#tocDropdown").length) {
@@ -553,50 +516,31 @@ function loadToc(mdFile, elementId) {
 		// 			snap: "#docButtons, #content",
 		// 			cursor: "move"
 		// 		});
+    //   $("nav.table-of-contents").before("<div><i id='drag1' title='Arraste-me...' class='fa fa-arrows fa-fw' style='cursor: move;'></i></div>");
+    //   $("nav.table-of-contents").after("<div><i id='drag2' title='Arraste-me...' class='fa fa-arrows fa-fw' style='cursor: move;'></i></div>");
 		// }
 	}
 } /*builds toc*/
 
-function showToc() {
-	if( $('.dropdown-content').hasClass('show') )	{$('.dropdown-content').removeClass('show');}
-	else{ $('.dropdown-content').addClass('show'); }
-	if( $('#btnShowToc').hasClass('active') )	{$('#btnShowToc').removeClass('active');}
-	else{ $('#btnShowToc').addClass('active'); }
-}
-
-function showMenu() {
-	if( $('#accordion, #btnMenu').hasClass('showMenu') )	{$('#accordion, #btnMenu').removeClass('showMenu');}
-	else{	$('#accordion, #btnMenu').addClass('showMenu');	}
-}
-
-function toggleDocOptions(){
-	if( $('.dropdown-doc-options, #docOptions, #btnOpt').hasClass('active') )	{$('.dropdown-doc-options, #docOptions, #btnOpt').removeClass('active');}
-	else{$('.dropdown-doc-options, #docOptions, #btnOpt').addClass('active');}
-}
-
-var uAgent = window.navigator.userAgent.toUpperCase();
-
-// Close the dropdown menu and the menu if the user clicks outside of it
+// Close one or multiple menus if the user clicks outside of it
 window.onclick = function(event) {
+  var t = event.target;
 
 	if(uAgent.indexOf("MSIE") == -1 && uAgent.indexOf("MICROSOFT") == -1){
-		if (!event.target.matches('.dropbtn, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, #btnOpt *,#btnOpt, #docOptions *, .drop-doc-options') && $("#tocDropdown").hasClass("show")) {
-			showToc();
+    if (!t.matches('#tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, .drop-doc-options, #btnOpt *,#btnOpt, #docOptions *') ) {
+      if (!t.matches('#btnToc, #accordion *, .dropdown') && ($("#btnMenu").hasClass("active") || $("#accordion").hasClass("show")) ){
+        toggle("menu",true); // hide menu
+      }
+      if (!t.matches('.dropbtn') && $("#tocDropdown").hasClass("show")) {
+        toggle("toc",true); // hide table of contents
+      }
+      if (!t.matches('#docOptions *, #btnOpt *, #btnOpt, .drop-doc-options')){
+  			toggle("docOptions",true); // hide document options
+  		}
 		}
-		if (!event.target.matches('.dropdown, #tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, #accordion *, #btnShowToc, #btnOpt,  #btnOpt *, #docOptions *, .drop-doc-options') && $("#btnMenu").hasClass("showMenu")) {
-			showMenu();
-		}
-		if (!event.target.matches('#docOptions *, #btnOpt *, #btnOpt, .drop-doc-options')){
-			if($(".dropdown-doc-options, #docOptions, #btnOpt").hasClass("active")){
-				$(".dropdown-doc-options, #docOptions, #btnOpt").removeClass("active");
-			}//if
-		}//if
 	}
-	else{
-		console.log("Dentro do ELSE: window.onclick - userAgent:"+window.navigator.userAgent);
-	}
-
-};//window
+	else{	return;	}
+}; //window.onclick
 
 /*********************************************************************
 override standard href-id navigation on page without change HTML markup
@@ -646,7 +590,7 @@ function findInDocs(){
                 end =  d.content.indexOf(" ",match.index + 70);
             citation = "\"..." + d.content.substring(start,end) + "...\"";
             html_2 = html_2 + '<li title="Ver documento '+d.title+'" onclick="loadMdDoc(\'' + d.name +
-                              '\', [\'btnMenu\',\'btnShowToc\',\'btnOpt\',\'tocDropdown\'],\'\', null)"><span class="title">['+d.title+']</span><p><span class=' + 'citation' + '>'+
+                              '\', [\'btnMenu\',\'btnToc\',\'btnOpt\',\'tocDropdown\'],\'\', null)"><span class="title">['+d.title+']</span><p><span class=' + 'citation' + '>'+
                               citation+'</span></p>'+
                               '</li>';
 

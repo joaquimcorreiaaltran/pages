@@ -185,7 +185,7 @@ z-index:-1;
 transition:all .3s ease-out;
 }
 
-.dropdown-doc-options.active{
+#docOptions.show{
 right:0%;
 transition:all .3s ease-out;
 }
@@ -621,27 +621,23 @@ width:auto;
 z-index:98
 }
 
-.dropdown-content.show {
+#tocDropdown.show {
+height:calc(100%-45px);
 min-width:250px;
 opacity:1;
+padding-left:.5em;
 position:fixed;
 right:0;
 transition:all .3s ease-out
 }
 
 .dropdown-content i:hover{
-  cursor: move;
+cursor: move;
 }
 
 .dropdown-content,#accordion {
 background:url(../img/logos/imagem_background.png) no-repeat;
 background-color:#FFF
-}
-
-div.dropdown-content.show {
-height:calc(100%-45px);
-padding-left:.5em;
-transition:all .3s ease-out
 }
 
 .dropdown-content a {
@@ -811,7 +807,7 @@ width:22.5em;
 z-index:99
 }
 
-#accordion.showMenu {
+#accordion.show {
 left:0;
 transition:left .3s ease-out
 }
@@ -949,7 +945,7 @@ float:left;
   visibility: visible !important
 }
 
-#btnMenu.showMenu {
+#btnMenu.active {
 background-color:#FFF;
 border-color:#FFF;
 border-width:3px;
@@ -958,11 +954,11 @@ font-weight:700;
 width:50px
 }
 
-#btnMenu.showMenu:hover{
+#btnMenu.active:hover{
 background-color:#FFF
 }
 
-#btnMenu.showMenu i {
+#btnMenu.active i {
 color:#29615D
 }
 
@@ -980,7 +976,7 @@ width:100%;
 z-index:-1
 }
 
-#docButtons #btnShowToc {
+#docButtons #btnToc {
 font-size:1em;
 font-weight:400;
 min-width:65px
@@ -1002,7 +998,7 @@ text-align:center;
 background-color: rgba(255,255,255,.25);
 }
 
-button#btnShowToc.active {
+button#btnToc.active {
 background-color:#FFF;
 border-color:#FFF;
 color:#29615D;
@@ -1085,7 +1081,7 @@ background-color:#FFF;
 overflow:auto;
 padding:1.4em 3em 6em;
 position:relative;
-transition:transform .5s ease
+transition:transform .5s ease;
 }
 
 #content > .inner {
@@ -1118,7 +1114,7 @@ width:100%
 }
 
 @media screen and (min-width: 200px) and (max-width: 800px){
-.dropdown-content.show {
+#tocDropdown.show {
 width:150px
 }
 
@@ -1234,7 +1230,7 @@ opacity:1;
 transition:all 1s ease
 }
 
-button#btnShowToc {
+button#btnToc {
 font-size:.8em;
 margin-right:1px;
 width:45px
@@ -1255,11 +1251,6 @@ line-height:1.75em;
 transition:all 1s ease
 }
 
-#drag1::before,#drag2::before {
-content:"";
-height:0
-}
-
 section,article {
 clear:both
 }
@@ -1269,9 +1260,7 @@ margin-top:30px;
 padding:1em;
 transition:padding 1s ease, margin-top 1s ease
 }
-
 }
-
 
 /*Google Maps Iframe*/
 .overlay {
