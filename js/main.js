@@ -159,8 +159,6 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
         addSharelink(doc.name, doc.title);
         imageZoom();
         showElements(btnsToShow);
-        enableDocOptions();
-        disableDocOptions(doc.name);
 
         $("#btnEditarDoc, #btnHistory" ).off("click");
         $("#btnEditarDoc").click(function() {window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/" + doc.name + ".md", "_blank");});
@@ -172,6 +170,9 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
         else if (doc.name == "dec_lei192") {$("#btnPDF").attr({"onclick":"window.open('https://dre.pt/application/conteudo/70262478','_blank')"});}
         else if (doc.name == "dec_lei85") {$("#btnPDF").attr({"onclick":"window.open('https://dre.pt/application/conteudo/105583346','_blank')"});}
         else {$("#btnPDF").attr({"onclick":"window.open('https://spmssicc.github.io/pages/pdf/" + doc.name + ".pdf','_blank')"});}
+
+        enableDocOptions();
+        disableDocOptions(doc.name);
 
         if(anchor != undefined && anchor.length >= 2){
           setTimeout( function(){ scrollToAnchor(doc.name, anchor); }, 2500);
