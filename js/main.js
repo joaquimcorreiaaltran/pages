@@ -300,7 +300,7 @@ function imageZoom() {// Add zoom functionality to images in the HTML
 } /*close zommClickImagem*/
 
 function responsiveTables(arrTables) {// Add scroll to document tables
-  arrTables.map( (i, table) => {
+  arrTables.map( function (i, table) {
 		$(table).wrap("<div style='overflow-x:auto;'></div>");
 	});
 } /*close responsiveTables()*/
