@@ -173,21 +173,52 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
 	startLoader();
 
 	if( mdFile != null && mdFile != undefined ){
-		highlightMenuItem(event);
-		if($("#fileHistory").length) {$("#fileHistory").remove();}
-
-		//if the HTML element "#documento" doesn't exist, then create it inside the "documento" element
-		if($("#documento").length < 1){
-				$("body, #content").removeAttr("style"); 																 //adjust html style and structure
-				$("#content").html("<article id='documento' class='modulo'></article>"); //adjust html style and structure
-				$("footer").addClass("documentMode"); 																	 //adjust html style and structure
-		}
 
   	$.each(arrDocs, function(i, doc){
   		if(mdFile == doc.name && doc.content.length){
+
+        highlightMenuItem(event);
+        window.scrollTo(0,0);
+        if($("#fileHistory").length) {$("#fileHistory").remove();}
+
+        //if the HTML element "#documento" doesn't exist, then create it inside the "documento" element
+        if($("#documento").length < 1){
+            $("body, #content").removeAttr("style"); 																 //adjust html style and structure
+            $("#content").html("<article id='documento' class='modulo'></article>"); //adjust html style and structure
+            $("footer").addClass("documentMode"); 																	 //adjust html style and structure
+        }
+
   			var converter = new showdown.Converter(),	data2, html = converter.makeHtml(doc.content); //declara 3 variáveis: converter, data e a html. A variável html irá conter o ficheiro markdown convertido em HTML.
   			$('#documento').html(html);//Place the converted markdown into the elementID
+
+        loadToc(mdFile, "tocDropdown");
+        addSharelink(mdFile);
+        responsiveTable();
+        imageZoom();
+        showElements(btnsToShow);
+        hideOptions(mdFile);
+
+        $("#btnEditarDoc, #btnHistory" ).off("click");
+        $("#btnEditarDoc").click(function() {window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/" + mdFile + ".md", "_blank");});
+        $("#btnHistory").click(function() {loadFileHistory(mdFile, event);});
+
+        if (mdFile == "apresentacao_snc_ap") {$("#btnPDF").attr({"onclick":"window.open('https://view.officeapps.live.com/op/embed.aspx?src=https://spmssicc.github.io/pages/pptx/SPMS_SICC_SNC_AP_20160606_04-pics.pptx','_blank')"});}
+        else if (mdFile == "circ1381") {$("#btnPDF").attr({"onclick":"window.open('http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1381.pdf','_blank')"});}
+        else if (mdFile == "circ1382") {$("#btnPDF").attr({"onclick":"window.open('http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1382.pdf','_blank')"});}
+        else if (mdFile == "dec_lei192") {$("#btnPDF").attr({"onclick":"window.open('https://dre.pt/application/conteudo/70262478','_blank')"});}
+        else if (mdFile == "dec_lei85") {$("#btnPDF").attr({"onclick":"window.open('https://dre.pt/application/conteudo/105583346','_blank')"});}
+        else {$("#btnPDF").attr({"onclick":"window.open('https://spmssicc.github.io/pages/pdf/" + mdFile + ".pdf','_blank')"});}
+
+        if(anchor != undefined && anchor.length >= 2){
+          setTimeout( function(){ scrollToAnchor(mdFile, anchor); }, 2500);
+        }
+        else{
+          var stateObj = { foo: "bar" }, url =  location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile;
+          history.pushState(stateObj, "SICC - Documentação", url);
+        }
+
   			return false; //to stop the .each loop
+
   	  }else if ( i + 1  >= arrDocs.length){
   			console.log("[convertMdToHtml] Error on loading the file \"" + mdFile + "\". Check if it exists in the markdown folder and in the arrayDoc.");
   			loadIndexContent(['btnMenu'],null);
@@ -200,34 +231,6 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
   			return true; //to continue the .each loop
   		}
   	});
-
-		loadToc(mdFile, "tocDropdown");
-		addSharelink(mdFile);
-		responsiveTable();
-		imageZoom();
-
-		if(anchor != undefined && anchor.length >= 2){
-			setTimeout( function(){ scrollToAnchor(mdFile, anchor); }, 2500);
-		}
-		else{
-			var stateObj = { foo: "bar" }, url =  location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile;
-			history.pushState(stateObj, "SICC - Documentação", url);
-		}
-
-		$("#btnEditarDoc, #btnHistory" ).off("click");
-		$("#btnEditarDoc").click(function() {window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/" + mdFile + ".md", "_blank");});
-		$("#btnHistory").click(function() {loadFileHistory(mdFile, event);});
-
-		if (mdFile == "apresentacao_snc_ap") {$("#btnPDF").attr({"onclick":"window.open('https://view.officeapps.live.com/op/embed.aspx?src=https://spmssicc.github.io/pages/pptx/SPMS_SICC_SNC_AP_20160606_04-pics.pptx','_blank')"});}
-		else if (mdFile == "circ1381") {$("#btnPDF").attr({"onclick":"window.open('http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1381.pdf','_blank')"});}
-		else if (mdFile == "circ1382") {$("#btnPDF").attr({"onclick":"window.open('http://www.dgo.pt/instrucoes/Instrucoes/2016/ca1382.pdf','_blank')"});}
-		else if (mdFile == "dec_lei192") {$("#btnPDF").attr({"onclick":"window.open('https://dre.pt/application/conteudo/70262478','_blank')"});}
-		else if (mdFile == "dec_lei85") {$("#btnPDF").attr({"onclick":"window.open('https://dre.pt/application/conteudo/105583346','_blank')"});}
-		else {$("#btnPDF").attr({"onclick":"window.open('https://spmssicc.github.io/pages/pdf/" + mdFile + ".pdf','_blank')"});}
-
-		showElements(btnsToShow);
-		hideOptions(mdFile);
-		window.scrollTo(0,0);
 	}
 	stopLoader("[loadMdDoc_1]");
 }
@@ -255,17 +258,14 @@ function scrollToAnchor(mdFile, anchor){//the anchor parameter can not have the 
 	}
 
 	if ($(anchorId).length) {
-
 			var pos = $(anchorId).offset().top - 250;// get top position relative to the document //- 250 to compensate the doc bar
-
 			$('body, html').animate({scrollTop: pos});// set animated top scrolling to the anchorId
-
 			var stateObj = { foo: "bar" }, url = location.protocol + '//' + location.host + location.pathname + "?doc=" + mdFile + "&anchor=" + anchor; //the anchor parameter can not have the character "#"
 			history.pushState(stateObj, "SICC - Documentação", url);
 			anchor = ""; // clear the anchor
 		}
 		else{
-				window.scrollTo(0,0);// top scrolling
+			window.scrollTo(0,0);// top scrolling
 		}
 	stopLoader("[scrollToAnchor]");
 }
@@ -560,8 +560,8 @@ function loadToc(mdFile, elementId) {
 function showToc() {
 	if( $('.dropdown-content').hasClass('show') )	{$('.dropdown-content').removeClass('show');}
 	else{ $('.dropdown-content').addClass('show'); }
-	if( $('#btnShowToc').hasClass('enabled') )	{$('#btnShowToc').removeClass('enabled');}
-	else{ $('#btnShowToc').addClass('enabled'); }
+	if( $('#btnShowToc').hasClass('active') )	{$('#btnShowToc').removeClass('active');}
+	else{ $('#btnShowToc').addClass('active'); }
 }
 
 function showMenu() {
