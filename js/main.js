@@ -110,9 +110,10 @@ function loadIndexContent(btnsToShow, event) {
 			showElements(btnsToShow);
 			$("footer").removeClass("documentMode");
 			highlightMenuItem(event);
-			if (!window.hasOwnProperty('webkitSpeechRecognition') && !window.hasOwnProperty('SpeechRecognition')){
+      if (!window.hasOwnProperty('webkitSpeechRecognition') && !window.hasOwnProperty('SpeechRecognition')){
 					console.log("Browser doesn't support speech recognition");
 					$("#mic").remove();
+          $("#textToSearch").css({'width': 'calc(80% - 30px)'});
 			}
 			setTimeout(function(){stopLoader("[loadIndexContent_1]");},800);
 			$("#docOptions").removeClass("active");
