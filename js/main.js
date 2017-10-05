@@ -520,7 +520,7 @@ function loadToc(arrHeaders, tocEl) {
 // Close one or multiple menus if the user clicks outside of it
 window.onclick = function(event) {
   var t = event.target;
-  console.log("uAgent: "+uAgent);
+
 	if(uAgent.indexOf("MSIE") == -1 && uAgent.indexOf("MICROSOFT") == -1){
     if (!t.matches('#tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, .drop-doc-options, #btnOpt *,#btnOpt, #docOptions *') ) {
       if (!t.matches('#btnToc, #accordion *, .dropdown') && ($("#btnMenu").hasClass("active") || $("#accordion").hasClass("show")) ){
@@ -534,19 +534,6 @@ window.onclick = function(event) {
   		}
 		}
 	}
-	else{
-    if (!t.msMatchesSelector('#tocDropdown *, .dropdown-content, #btnMenu i, #btnMenu a, #docButtons p, .drop-doc-options, #btnOpt *,#btnOpt, #docOptions *') ) {
-      if (!t.msMatchesSelector('#btnToc, #accordion *, .dropdown') && ($("#btnMenu").hasClass("active") || $("#accordion").hasClass("show")) ){
-        toggle("menu",true); // hide menu
-      }
-      if (!t.msMatchesSelector('.dropbtn') && $("#tocDropdown").hasClass("show")) {
-        toggle("toc",true); // hide table of contents
-      }
-      if (!t.msMatchesSelector('#docOptions *, #btnOpt *, #btnOpt, .drop-doc-options')){
-        toggle("docOptions",true); // hide document options
-      }
-    }
-  }
 }; //window.onclick
 
 /*********************************************************************
