@@ -572,6 +572,70 @@ transform:scale(0.8,0.8)
   margin-left: 1.5em;
 }
 
+.shareable-section h1:hover > a > i,
+.shareable-section h2:hover > a > i,
+.shareable-section h3:hover > a > i,
+.shareable-section h4:hover > a > i,
+.shareable-section h5:hover > a > i,
+.shareable-section h6:hover > a > i,
+.shareable-section i:hover {
+  background-color: rgb(240, 240, 240);
+  visibility: visible;
+  left:-4%;
+  transition:all .5s ease;
+  -moz-transition:all .5s ease; /* FireFox */
+  -ms-transition:all .5s ease; /* IE */
+  -webkit-transition:all .5s ease; /* Safari */
+  -moz-transition-delay: .2s; /* FireFox */
+  -ms-transition-delay: .2s; /* IE */
+  -webkit-transition-delay: .2s; /* Safari */
+}
+
+.shareable-section h1 > a > i:hover,
+.shareable-section h2 > a > i:hover,
+.shareable-section h3 > a > i:hover,
+.shareable-section h4 > a > i:hover,
+.shareable-section h5 > a > i:hover,
+.shareable-section h6 > a > i:hover {
+  background: white;
+  color: #29615D;
+  border-width: 2px;
+  border-style:solid;
+  -moz-transition:all .2s ease; /* FireFox */
+  -ms-transition:all .2s ease; /* IE */
+  -webkit-transition:all .2s ease; /* Safari */
+}
+
+.shareable-section h1>a > i,
+.shareable-section h2>a > i,
+.shareable-section h3>a > i,
+.shareable-section h4>a > i,
+.shareable-section h5>a > i,
+.shareable-section h6>a > i {
+  position: absolute;
+  visibility: hidden;
+  left:-10%;
+  border-radius: 50px;
+  padding: 0.3em;
+  transition:all .5s ease;
+  -moz-transition:all .5s ease;
+  -ms-transition:all .5s ease;
+  -webkit-transition:all .5s ease;
+  transition-delay: 1s;
+  -moz-transition-delay: 1s; /* FireFox */
+  -ms-transition-delay: 1s; /* IE */
+  -webkit-transition-delay: 1s; /* Safari */
+}
+
+.shareable-section h1,
+.shareable-section h2,
+.shareable-section h3,
+.shareable-section h4,
+.shareable-section h5,
+.shareable-section h6 {
+  position: relative;
+}
+
 td img {
 margin-left:auto;
 margin-right:auto;

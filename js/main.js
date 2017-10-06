@@ -151,12 +151,12 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
         }
 
   			var converter = new showdown.Converter(),	data2, html = converter.makeHtml(doc.content); //declara 3 variáveis: converter, data e a html. A variável html irá conter o ficheiro markdown convertido em HTML.
-        $('#documento').html(html);//Place the converted markdown into the elementID
+        $('#documento').html(html);//Place the converted markdown into the page
 
         responsiveTables($(html).filter('table'));
         loadToc($(html).filter('h2,h3,h4'), $('#tocDropdown'));
         toggle('toc',true); // hide table-of-contents
-        addSharelink(doc.name, doc.title);
+        addSharelinks(doc.name, doc.title);
         imageZoom();
         showElements(btnsToShow);
 
@@ -321,10 +321,17 @@ function responsiveTables(arrTables) {// Add scroll to document tables
 	});
 } /*close responsiveTables()*/
 
-function addSharelink(docName, docTitle){//add link to the share button in the doc options
+function addSharelinks(docName, docTitle){//add link to the share button in the doc options
 	var docURL = location.protocol + '//' + location.host + location.pathname + "?doc=" + docName;
 	$("#btnShare").attr("onclick","window.open('" + encodeURI("mailto:?Subject=SPMS|SICC|Partilha de documentação: "
 	 																							+ docTitle + "&body=\n\nDocumento: " + docTitle + ".\n\nEndereço: " + docURL + "')"));
+  $('#documento h1,h2,h3,h4,h5').each(function(i, h){
+
+      $(h).wrap( "<span class='shareable-section'></span>");
+      $(h).prepend( "<a href='"+docURL+"'><i class='fa fa-link fa-4x' title='Copiar link'></i></a>");
+      // $(h).prepend( "<i class='fa fa-link fa-4x' title='Copiar link'></i>");
+    } // fucntion
+  ); // each
 }
 
 function loadCommitHistory(btnsToShow) { //Loads the gitHub repository and insert insert into the HTML
@@ -591,6 +598,7 @@ function findInDocs(){
   else {minLen=2;}
 
     if(str.length >= minLen){
+      console.log("[findInDocs] Pesquisou!");
       var regexp = new RegExp(str.toUpperCase(),"g"),match, arrMatches = [],html_1, html_2="", html_final;
 
       $.each(reformatedArrDocs, function(i, d){
