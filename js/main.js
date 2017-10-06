@@ -328,12 +328,52 @@ function addSharelinks(docName, docTitle){//add link to the share button in the 
   $('#documento h1,h2,h3,h4,h5').each(function(i, h){
 
     anchor = "&anchor="+ $(h).attr("id");
-    sectionURL = encodeURI(docURL + anchor);
+    sectionURL = docURL + anchor;
+    sectionURL = encodeURI(sectionURL);
+    var teste = "TESTE";
+    var iId = "i-" + docName + "-" + $(h).attr("id").replace('#','');
 
-    $(h).wrap( "<span class='shareable-section'></span>");
-    $(h).prepend( "<a href='"+sectionURL+"'><i class='fa fa-link fa-4x' title='Copiar link'></i></a>");
+    $(h).wrap("<span class='shareable-section'></span>");
+    $(h).prepend( "<a><i class='fa fa-link fa-4x' title='Copiar link' id="+iId+" data-section-url="+sectionURL+" onclick='copyLinkToClipBoard(event)'></i></a>");
     } // fucntion
   ); // each
+}
+
+function copyLinkToClipBoard(event,docName){
+
+    var elId = event.target.id, el = $("#"+elId);
+
+    // gets the link (URI) to the document header
+    var sectionURL = el.attr('data-section-url');
+
+    // Create a dummy element
+    var dummy = document.createElement("input");
+    // Add it to the document
+    document.body.appendChild(dummy);
+    // Set its ID
+    dummy.setAttribute("id", "dummy_id");
+    // Output the array into it
+    document.getElementById("dummy_id").value=sectionURL;
+    // Select it
+    dummy.select();
+    // Copy its contents
+    document.execCommand("copy");
+    // Remove it as its not needed anymore
+    document.body.removeChild(dummy);
+
+    el.css({'background':'rgba(41, 97, 93, 0.9)','color':'white'});
+    el.removeClass('fa-link');
+    el.addClass('fa-check');
+
+    setTimeout(function () {
+      el.css({'background':'rgb(240, 240, 240)','color':'rgb(128, 128, 128)'});
+      el.removeClass('fa-check');
+      el.addClass('fa-link');
+    }, 1200);
+
+
+
+
 }
 
 function loadCommitHistory(btnsToShow) { //Loads the gitHub repository and insert insert into the HTML
