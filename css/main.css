@@ -63,17 +63,22 @@ height:500px;
   padding: 0.2em 0 0 1em;
   list-style:decimal;
   margin: 5px;
-  padding: 5px;
   border-color: rgba(41, 97, 93, 0.2);
   border-style: solid;
   border-width: 1px;
+  font-weight: bold;
 }
 #resultsList span.title{
   font-weight: bold;
 }
 
+#resultsList span.citation{
+  font-weight: normal;
+}
+
 #resultsList span.highlight{
-  background-color: rgba(250,255,0,.4);
+  background-color: rgba(250,255,0,.6);
+  font-weight: bold;
 }
 
 #resultsList li p{
@@ -272,6 +277,30 @@ right: 10px !important;
 cursor: pointer;
 }
 
+#fileHistory{
+  background-color: rgb(228, 228, 228);
+}
+
+#commit-history{
+  background-color: rgba(228, 228, 228, 0.4);
+  border-radius: 8px;
+  padding: 1em;
+}
+
+#commit-history li {
+  background-color: white;
+  border-radius:8px;
+  padding:1em;
+  padding-left:.5em;
+  margin-left: 0;
+}
+
+#commit-history li:hover{
+  cursor: pointer;
+  background-color: rgba(25, 251, 55, 0.1);
+}
+
+
 #fileHistory > h3, #btnSearchMatches > h3{
 margin-top: 15px;
 margin-bottom: 0;
@@ -290,15 +319,24 @@ transition:all .3s ease-out;
 }
 
 .file-history>div, .search-matches>div{
-padding: 0.2em 1em 0.2em 1em;
+padding: 0.1em 0.5em 0.1em 0.5em;
+}
+
+.file-history>div{
+  border-radius: 7px;
+  border-width: 1px;
+  border-style: solid;
+  background-color: white;
+  border-color: grey;
+  margin: 3px;
 }
 
 .file-history>div>a,.search-matches>div>a{
 color: #29615D;
 }
 
-.file-history>div:hover, .search-matches>div:hover{
-background-color: rgba(41, 97, 93, 0.05);
+.file-history>div:hover{
+background-color: rgba(25, 251, 55, 0.1);
 color: #29615D;
 }
 
@@ -392,6 +430,13 @@ img {
 border:0;
 vertical-align:middle;
 -ms-interpolation-mode:bicubic
+}
+
+.imagem p{
+  font-style: italic;
+  text-align: center;
+  text-decoration: none !important;
+  margin-bottom: 0.5em;
 }
 
 figure {

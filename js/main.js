@@ -44,7 +44,7 @@ function loadFirstContent(){
 		loadAllMdownDocs(doc, anchor);
 	}/*close if*/
 	else{
-		console.log("[loadFirstContent] Querystring not detected/not valid.");
+		// console.log("[loadFirstContent] Querystring not detected/not valid.");
 		loadIndexContent(["btnMenu"], null);
 		loadAllMdownDocs(doc, anchor);
 	}
@@ -111,7 +111,7 @@ function loadIndexContent(btnsToShow, event) {
 			$("footer").removeClass("documentMode");
 			highlightMenuItem(event);
       if (!window.hasOwnProperty('webkitSpeechRecognition') && !window.hasOwnProperty('SpeechRecognition')){
-					console.log("Browser doesn't support speech recognition");
+					// console.log("Browser doesn't support speech recognition");
 					$("#mic").remove();
           $("#textToSearch").css({'width': 'calc(80% - 30px)'});
 			}
@@ -119,7 +119,7 @@ function loadIndexContent(btnsToShow, event) {
 			$("#docOptions").removeClass("active");
 	})
 	.fail(function(){
-			console.log("[loadIndexContent] Error on loading requested file: " + filePath);
+			// console.log("[loadIndexContent] Error on loading requested file: " + filePath);
 			stopLoader("[loadIndexContent_2]");
 	})
 	.always(function(){
@@ -185,11 +185,11 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
   			return false; //to stop the .each loop
 
   	  }else if ( i + 1  >= arrDocs.length){
-  			console.log("[convertMdToHtml] Error on loading the file \"" + mdFile + "\". Check if it exists in the markdown folder and in the arrayDoc.");
+  			// console.log("[convertMdToHtml] Error on loading the file \"" + mdFile + "\". Check if it exists in the markdown folder and in the arrayDoc.");
   			loadIndexContent(['btnMenu'],null);
   			return false; //to stop the .each loop
   		}else if(mdFile == doc.name && doc.content.length <= 0){
-  			console.log("[convertMdToHtml] Error on loading file contents. The file \"" + mdFile + "\" exists but has no content.");
+  			// console.log("[convertMdToHtml] Error on loading file contents. The file \"" + mdFile + "\" exists but has no content.");
   			loadIndexContent(['btnMenu'],null);
   			return false; //to stop the .each loop
   		}else{
@@ -215,7 +215,7 @@ function scrollToAnchor(mdFile, anchor){//the anchor parameter can not have the 
 
 	try { $(anchorId); }
   catch(e) {
-		console.log('[scrollToAnchor] URL anchor parameter is invalid: ' + anchorId);
+		// console.log('[scrollToAnchor] URL anchor parameter is invalid: ' + anchorId);
 		anchorId = '';
 		stopLoader("[scrollToAnchor]");
 		return;
@@ -310,8 +310,10 @@ function enableDocOptions() {
 
 function imageZoom() {// Add zoom functionality to images in the HTML
 	$('#documento img').each(function(i, img) {
-		$(img).wrap("<a class='imagem' href='" +
-    $(img).attr("src") +	"' onclick='return hs.expand(this)'></a>");
+    var img = $(img);
+		img.wrap("<a class='imagem' href='" +
+    img.attr("src") +	"' onclick='return hs.expand(this)'></a>");
+    img.after("<p>Figura "+i+1+"</p>");
 	});
 } /*close zommClickImagem*/
 
@@ -630,12 +632,12 @@ var searchDocs;
 
 function startFindInDocs() {
     searchDocs = setInterval(function(){ findInDocs() }, 500);
-    console.log("[stopFindInDocs] Search started");
+    // console.log("[stopFindInDocs] Search started");
 }
 
 function stopFindInDocs() {
     clearTimeout(searchDocs);
-    console.log("[stopFindInDocs] Search stopped");
+    // console.log("[stopFindInDocs] Search stopped");
 }
 
 
@@ -644,12 +646,12 @@ function findInDocs(){
   var txtInserted = $("#textToSearch")["0"].value;
 
   if (txtInserted == lastSearchStr || txtInserted.length  <= 0){
-    console.log("Do not search txtInserted: " + txtInserted + ", lastSearchStr: " + lastSearchStr);
+    // console.log("Do not search txtInserted: " + txtInserted + ", lastSearchStr: " + lastSearchStr);
     if(txtInserted.length  <= 0){ $("#resultsList").remove(); }
     return; // exit function
   }
   else{
-    console.log("Search! txtInserted: " + txtInserted + ", lastSearchStr: " + lastSearchStr);
+    // console.log("Search! txtInserted: " + txtInserted + ", lastSearchStr: " + lastSearchStr);
 
     startLoader();
 
