@@ -491,6 +491,10 @@ O aspeto do ficheiro CSV é o abaixo demonstrado, sendo que o mesmo deve obedece
 
 ![img_67.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_67.png)
 
+<div style="height:40px">
+<button id=descarregar type="button" onclick="location.href='https://spmssicc.github.io/pages/markdown/docs_excel/CB_SNCAP.csv'">Descarregar CSV</button>
+</div>
+
 Antes da importação,o utilizador, tem de usar o botão "Ver/Testar Ficheiro". Ao selecionar este mesmo botão, o utilizador constata que os elementos do ficheiro CSV estão visíveis e que o ficheiro integrado está testado. Caso ocorram erros, os mesmos produzem um relatório no ecrã, na caixa criada para o efeito, no canto inferior direito do ecrã.
 
 ![img_68.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_68.png)
@@ -572,6 +576,10 @@ O aspeto do ficheiro CSV. é o abaixo demonstrado, sendo que o mesmo deve obedec
 
 ![img_86.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_86.png)
 
+<div style="height:40px">
+<button id=descarregar type="button" onclick="location.href='https://spmssicc.github.io/pages/markdown/docs_excel/actualização.xlsx'">Descarregar CSV</button>
+</div>
+
 Antes da importação, o utilizador, tem de usar o botão "Verificar Ficheiro". Ao selecionar este mesmo botão, o utilizador constata que os elementos do ficheiro CSV estão visíveis e que o ficheiro integrado está testado. Caso ocorram erros, os mesmos produzem um relatório no ecrã, na caixa criada para o efeito, no canto inferior direito do ecrã.
 
 ![img_87.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_87.png)
@@ -633,10 +641,12 @@ Ao pressionar, o utilizador vai deparar-se com o seguinte ecrã, sendo que para 
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-c0a092cc.png)
 
-O aspeto do ficheiro CSV. é o abaixo demonstrado, sendo que o mesmo deve obedecer ao critério das colunas estipuladas, para efeito de carregamento.
+O aspeto do ficheiro CSV é o abaixo demonstrado, sendo que o mesmo deve obedecer ao critério das colunas estipuladas, para efeito de carregamento.
 
 ![img_97.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_97.png)
-<button id=descarregar type="button">[Descarregar CSV](https://spmssicc.github.io/pages/markdown/docs_excel/Book1.xlsx)</button>
+<div style="height:40px">
+<button id=descarregar type="button" onclick="location.href='https://spmssicc.github.io/pages/markdown/docs_excel/CM-SNCAP.csv'">Descarregar CSV</button>
+</div>
 
 Antes da importação,o utilizador, tem de usar o botão "Ver/Testar Ficheiro". Ao selecionar este mesmo botão, o utilizador constata que os elementos do ficheiro CSV estão visíveis e que o ficheiro integrado está testado. Caso ocorram erros, os mesmos produzem um relatório no ecrã, na caixa criada para o efeito, no canto inferior direito do ecrã.
 
@@ -669,6 +679,10 @@ Ao selecionar o botão "Importar", o utilizador vai deparar-se com o seguinte ec
 O aspeto do ficheiro CSV. é o abaixo demonstrado, sendo que o mesmo deve obedecer ao critério das colunas estipuladas, para efeito de carregamento.
 
 ![img_102.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_102.png)
+
+<div style="height:40px">
+<button id=descarregar type="button" onclick="location.href='https://spmssicc.github.io/pages/markdown/docs_excel/actualização.xlsx'">Descarregar CSV</button>
+</div>
 
 Antes da importação,o utilizador, tem de usar o botão "Ver/Testar Ficheiro". Ao selecionar este mesmo botão, o utilizador constata que os elementos do ficheiro CSV estão visíveis e que o ficheiro integrado está testado. Caso ocorram erros, os mesmos produzem um relatório no ecrã, na caixa criada para o efeito, no canto inferior direito do ecrã.
 
@@ -766,6 +780,10 @@ O aspeto do ficheiro CSV. é o abaixo demonstrado, sendo que o mesmo deve obedec
 
 ![img_119.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_119.png)
 
+<div style="height:40px">
+<button id=descarregar type="button" onclick="location.href='https://spmssicc.github.io/pages/markdown/docs_excel/CP_SNCAP.csv'">Descarregar CSV</button>
+</div>
+
 Antes da importação,o utilizador, tem de usar o botão "Ver/Testar Ficheiro". Ao selecionar este mesmo botão, o utilizador constata que os elementos do ficheiro CSV estão visíveis e que o ficheiro integrado está testado. Caso ocorram erros, os mesmos produzem um relatório no ecrã, na caixa criada para o efeito, no canto inferior direito do ecrã.
 
 ![img_120.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_120.png)
@@ -791,6 +809,10 @@ Ao pressionar, o utilizador vai deparar-se com o seguinte ecrã, sendo que para 
 O aspeto do ficheiro CSV. é o abaixo demonstrado, sendo que o mesmo deve obedecer ao critério das colunas estipuladas, para efeito de carregamento.
 
 ![img_124.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_124.png)
+
+<div style="height:40px">
+<button id=descarregar type="button" onclick="location.href='https://spmssicc.github.io/pages/markdown/docs_excel/actualização.xlsx'">Descarregar CSV</button>
+</div>
 
 Antes da importação,o utilizador, tem de usar o botão "Verificar Ficheiro". Ao selecionar este mesmo botão, o utilizador constata que os elementos do ficheiro CSV estão visíveis e que o ficheiro integrado está testado. Caso ocorram erros, os mesmos produzem um relatório no ecrã, na caixa criada para o efeito, no canto inferior direito do ecrã.
 

@@ -118,42 +118,40 @@ border-radius: 40px;
 }
 
 .speech img:hover {
-
-  background-color: rgba(0, 255, 79, 0.1);
+background-color: rgba(0, 255, 79, 0.1)
 }
 
 #textToSearch {
-color: #29615D;
-width: calc(80% - 80px);
-height: 15px;
-display: inline-block;
 background:#fefefe;
 border: none;
+color: #29615D;
+display: inline-block;
 float: left;
-padding: 14px 0 14px 0;
+height: 15px;
 margin:4px 0px 4px 3px;
-vertical-align: middle;
+padding: 14px 0 14px 0;
 position: absolute;
 text-indent: 1em;
+vertical-align: middle;
+width: calc(80% - 80px)
 }
 
 #textToSearch:hover{
-  background-color: rgba(0, 255, 79, 0.1);
+background-color: rgba(0, 255, 79, 0.1)
 }
 
-
-
 #textToSearch::-webkit-input-placeholder {
-font-style: italic;
+font-style: italic
 }
 
 #textToSearch:-moz-placeholder {
-font-style: italic;
+font-style: italic
 }
 
 #btnSearch {
-border: none;
 background:#37837e;
+border: none;
+border-radius: 9px;
 color:#fff;
 cursor: pointer;
 font: 14px/14px 'HelveticaNeue', Helvetica, Arial, sans-serif;
@@ -164,7 +162,6 @@ width:106px;
 box-shadow: 0 0 2px #37837e inset;
 -moz-box-shadow: 0 0 2px #37837e inset;
 -webkit-box-shadow: 0 0 2px #37837e inset;
-border-radius: 9px;
 -moz-border-radius: 9px;
 -webkit-border-radius: 9px;
 }
@@ -188,9 +185,9 @@ z-index:-1;
 transition:all .3s ease-out;
 }
 
-.dropdown-doc-options.active{
-  right:0%;
-  transition:all .3s ease-out;
+#docOptions.show{
+right:0%;
+transition:all .3s ease-out;
 }
 
 .doc-option {
@@ -214,22 +211,22 @@ border-top-left-radius:8px;
 padding:0 0.3em 0 0.1em;
 }
 #btnOpt.active, #btnOpt.active:hover {
-  background-color: white;
-  width: calc(50px);
+background-color: white;
+width: calc(50px);
 }
 
  #btnOpt.active i{
-   color: #29615D;
+color: #29615D;
  }
 
 #docOptions > div:last-child {
-  border-bottom-left-radius:8px;
-  border-bottom-right-radius:8px;
-  padding-bottom: 0.2em;
+border-bottom-left-radius:8px;
+border-bottom-right-radius:8px;
+padding-bottom: 0.2em;
 }
 
 .doc-option > i {
-  vertical-align:middle;
+vertical-align:middle;
 }
 .doc-option:hover{
 background-color:#48aba4
@@ -244,14 +241,14 @@ cursor: pointer !important
 }
 
 #behindFileHistory.active, #behindSearchMatches.active {
-  display: block;
-  background-color:rgba(0, 0, 0, 0.5);
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 101;
+display: block;
+background-color:rgba(0, 0, 0, 0.5);
+height: 100vh;
+width: 100%;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 101;
 }
 
 .file-history, .search-matches{
@@ -269,10 +266,10 @@ transition:all .3s ease-out;
 }
 
 #fileHistory>i.fa.fa-times.fa-fw:before, #btnSearchMatches>i.fa.fa-times.fa-fw:before{
-  position: absolute !important;
-  top:10px !important;
-  right: 10px !important;
-  cursor: pointer;
+position: absolute !important;
+top:10px !important;
+right: 10px !important;
+cursor: pointer;
 }
 
 #fileHistory > h3, #btnSearchMatches > h3{
@@ -281,8 +278,8 @@ margin-bottom: 0;
 }
 
 .file-history>i:hover, .search-matches>i:hover{
-  cursor: pointer;
-  color:#29615D;
+cursor: pointer;
+color:#29615D;
 }
 
 .file-history.active, .search-matches.active{
@@ -571,6 +568,10 @@ transform:scale(0.8,0.8)
   cursor:url(../img/highslide/graphics/zoomin.cur), pointer !important;
 }
 
+#documento ul li{
+  margin-left: 1.5em;
+}
+
 td img {
 margin-left:auto;
 margin-right:auto;
@@ -586,16 +587,14 @@ text-align:center
 }
 
 .disabled {
-  background-color: rgb(103, 163, 161);
-  opacity:0.6;
-
+background-color:rgb(103, 163, 161);
+opacity:.6
 }
 
 .disabled:hover{
-    cursor: not-allowed;
-    background-color: none;
+cursor:not-allowed;
+background-color:none
 }
-
 
 .dropdown-content-op{
 display: inline-block;
@@ -622,27 +621,23 @@ width:auto;
 z-index:98
 }
 
-.dropdown-content.show {
+#tocDropdown.show {
+height:calc(100%-45px);
 min-width:250px;
 opacity:1;
+padding-left:.5em;
 position:fixed;
 right:0;
 transition:all .3s ease-out
 }
 
 .dropdown-content i:hover{
-  cursor: move;
+cursor: move;
 }
 
 .dropdown-content,#accordion {
 background:url(../img/logos/imagem_background.png) no-repeat;
 background-color:#FFF
-}
-
-div.dropdown-content.show {
-height:calc(100%-45px);
-padding-left:.5em;
-transition:all .3s ease-out
 }
 
 .dropdown-content a {
@@ -733,14 +728,70 @@ font-weight:700
 padding:.3em .2em .2em .3em
 }
 
-#documento.modulo button a{
+
+.floating-box {
+    display: inline-block;
+    height: 60px;
+    width: 320px;
+    margin: 3px;
+    border: 1px solid #29615D;
+    background: white; /* For browsers that do not sup gradients */
+}
+
+.floating-box:hover{
+  background-color: rgba(0, 255, 79, 0.1);
+  color:white;
+  cursor: pointer;
+}
+
+.floating-box figure{
+  background-color: #649f9b;
+  height: 100%;
+  width: 80px;
+}
+.floating-box figure i{
+display: block;
+color: white;
+margin-top: 7px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.floating-box>p,
+.floating-box>figure {
+display: inline-block;
+}
+
+.floating-box p{
+  top:0;
+  vertical-align: top;
+  max-width: 220px;
+  max-height: 60px;
+  height: 60px;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-indent: .5em;
+}
+
+
+
+#descarregar{
+  border:none;
+  border-radius:.2em;
+  width: 150px;
+  height: 25px;
+  opacity: 0.4;
+  display:block;
+  float:right;
+}
+
+#descarregar:hover{
+    opacity: 1;
+}
+#documento.modulo button {
 color:white;
 font-weight: normal;
 
-}
-
-#documento.modulo button a:hover{
-color:rgb(131, 183, 215);
 }
 
 #accordion {
@@ -756,7 +807,7 @@ width:22.5em;
 z-index:99
 }
 
-#accordion.showMenu {
+#accordion.show {
 left:0;
 transition:left .3s ease-out
 }
@@ -894,7 +945,7 @@ float:left;
   visibility: visible !important
 }
 
-#btnMenu.showMenu {
+#btnMenu.active {
 background-color:#FFF;
 border-color:#FFF;
 border-width:3px;
@@ -903,7 +954,11 @@ font-weight:700;
 width:50px
 }
 
-#btnMenu.showMenu i {
+#btnMenu.active:hover{
+background-color:#FFF
+}
+
+#btnMenu.active i {
 color:#29615D
 }
 
@@ -921,7 +976,7 @@ width:100%;
 z-index:-1
 }
 
-#docButtons #btnShowToc {
+#docButtons #btnToc {
 font-size:1em;
 font-weight:400;
 min-width:65px
@@ -943,7 +998,7 @@ text-align:center;
 background-color: rgba(255,255,255,.25);
 }
 
-button#btnShowToc.enabled {
+button#btnToc.active {
 background-color:#FFF;
 border-color:#FFF;
 color:#29615D;
@@ -1026,7 +1081,7 @@ background-color:#FFF;
 overflow:auto;
 padding:1.4em 3em 6em;
 position:relative;
-transition:transform .5s ease
+transition:transform .5s ease;
 }
 
 #content > .inner {
@@ -1059,8 +1114,14 @@ width:100%
 }
 
 @media screen and (min-width: 200px) and (max-width: 800px){
-.dropdown-content.show {
+#tocDropdown.show {
 width:150px
+}
+
+.floating-box {
+display: block;
+margin-left: auto;
+margin-right: auto
 }
 
 #accordion {
@@ -1138,6 +1199,7 @@ margin-left:auto;
 margin-right:auto;
 transition:margin-left 1s ease, margin-right 1s ease
 }
+
 }
 
 @media screen and (min-width: 737px) and (max-width: 1000px){
@@ -1151,6 +1213,13 @@ input,textarea,select {
 font-size:1em;
 transition:all 1s ease
 }
+
+.floating-box {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 }
 
 @media screen and (max-width: 560px){
@@ -1161,7 +1230,7 @@ opacity:1;
 transition:all 1s ease
 }
 
-button#btnShowToc {
+button#btnToc {
 font-size:.8em;
 margin-right:1px;
 width:45px
@@ -1182,22 +1251,16 @@ line-height:1.75em;
 transition:all 1s ease
 }
 
-#drag1::before,#drag2::before {
-content:"";
-height:0
-}
-
 section,article {
 clear:both
 }
 
 #content {
-margin-top:55px;
-padding:.8em;
+margin-top:30px;
+padding:1em;
 transition:padding 1s ease, margin-top 1s ease
 }
 }
-
 
 /*Google Maps Iframe*/
 .overlay {
@@ -1207,48 +1270,6 @@ transition:padding 1s ease, margin-top 1s ease
    height:500px; /* your iframe height */
    /*top:480px;  /* your iframe height */
   /* margin-top:-480px;  /* your iframe height */
-}
-
-.floating-box {
-    display: inline-block;
-    height: 60px;
-    width: 310px;
-    margin: 10px;
-    border: 1px solid #29615D;
-    background: white; /* For browsers that do not support gradients */
-}
-
-.floating-box:hover{
-  background-color: rgba(0, 255, 79, 0.1);
-  color:white;
-  cursor: pointer;
-}
-
-.floating-box figure{
-  background-color: #649f9b;
-  height: 100%;
-  width: 80px;
-}
-.floating-box figure i{
-display: block;
-color: white;
-margin-top: 7px;
-margin-left: auto;
-margin-right: auto;
-}
-
-.floating-box>p,
-.floating-box>figure {
-display: inline-block;
-}
-
-.floating-box p{
-  top:0;
-  vertical-align: top;
-  font-weight: bold;
-  font-size: 1.2em;
-  text-indent: .5em;
-  line-height: 60px;
 }
 
 i.fa-open{

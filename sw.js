@@ -64,32 +64,31 @@ var cacheFiles = [
 ];
 
 
-self.addEventListener('install', e => {
+self.addEventListener('install', function(e) {
 	console.log("[ServiceWorker] Installed");
 
 	e.waitUntil(
 
 		caches.open(cacheName)
-		.then(cache => {
+		.then(function(cache) {
 			console.log("[ServiceWorker] Caching cacheFiles");
 			return cache.addAll(cacheFiles)
-				.then(() => self.skipWaiting());
-
+				.then(function() {self.skipWaiting()});
 		})
 	)
 });
 
 
-self.addEventListener('activate', event => {
+self.addEventListener('activate', function (event) {
 	event.waitUntil(self.clients.claim());
 });
 
 
-self.addEventListener('fetch', event => {
+self.addEventListener('fetch', function (event) {
 	console.log("[ServiceWorker] Fetching", event.request.url);
 	event.respondWith(
 		caches.match(event.request, { ignoreSearch: true })
-		  .then(response => {
+		  .then(function(response) {
 			    return response || fetch(event.request);
 		})
 	);
