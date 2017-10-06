@@ -328,7 +328,7 @@ function addSharelinks(docName, docTitle){//add link to the share button in the 
   $('#documento h1,h2,h3,h4,h5').each(function(i, h){
 
     var anchor = "&anchor="+ $(h).attr("id");
-    var sectionURL = docURL + anchor;
+    var sectionURL = encodeURI(docURL + anchor);
     console.log(sectionURL);
 
     $(h).wrap( "<span class='shareable-section'></span>");
