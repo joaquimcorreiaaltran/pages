@@ -327,9 +327,13 @@ function addSharelinks(docName, docTitle){//add link to the share button in the 
 	 																							+ docTitle + "&body=\n\nDocumento: " + docTitle + ".\n\nEndereço: " + docURL + "')"));
   $('#documento h1,h2,h3,h4,h5').each(function(i, h){
 
-      $(h).wrap( "<span class='shareable-section'></span>");
-      $(h).prepend( "<a href='"+docURL+"'><i class='fa fa-link fa-4x' title='Copiar link'></i></a>");
-      // $(h).prepend( "<i class='fa fa-link fa-4x' title='Copiar link'></i>");
+    var anchor = "&anchor="+ $(h).attr("id");
+    var sectionURL = docURL + anchor;
+    console.log(sectionURL);
+
+    $(h).wrap( "<span class='shareable-section'></span>");
+    $(h).prepend( "<a href='"+docURL+"'><i class='fa fa-link fa-4x' title='Copiar link'></i></a>");
+    console.log("h:",h+"\n",$(h));
     } // fucntion
   ); // each
 }
