@@ -23,8 +23,8 @@ var uAgent = window.navigator.userAgent.toUpperCase()
   , mobileDeviceCheck = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()))
   , arrDocs = []
   , reformatedArrDocs = []
-  , arrDocNames = [ 'about','apresentacao_snc_ap','cer_migracao_sicc','chave_orcamental_por_ano','circ1381','circ1382','dec_lei85','dec_lei192','documentos_af_e_ar','gestao_exercicios','gestao_projetos','help','importacao_csvs','macro_tarefas','menus_draft','menus','mu_snc_ap','perguntas_frequentes','processos','reposicao_pagamentos_cobrancas','snc_ap_faqs'];
-
+  , arrDocNames = [ 'about','apresentacao_snc_ap','cer_migracao_sicc','chave_orcamental_por_ano','circ1381','circ1382','dec_lei85','dec_lei192','documentos_af_e_ar','gestao_exercicios','gestao_projetos','help','importacao_csvs','macro_tarefas','menus_draft','menus','mu_snc_ap','perguntas_frequentes','processos','reposicao_pagamentos_cobrancas','snc_ap_faqs']
+  , lastSearchStr = "";
 /*Carregar documento através de parametros no URL (queryString)*/
 function loadFirstContent(){
 
@@ -370,15 +370,12 @@ function copyLinkToClipBoard(event,docName){
       el.removeClass('fa-check');
       el.addClass('fa-link');
     }, 1200);
-
-
-
-
 }
 
 function loadCommitHistory(btnsToShow) { //Loads the gitHub repository and insert insert into the HTML
 
 		startLoader();
+    stopFindInDocs();
 
 		if($("#documento").length < 1){
 			//adjust html style and structure
@@ -628,19 +625,42 @@ $('#tocDropdown').on('click', 'a[href^="#"]', function(e) {
 	// $('html, body').css({'scrollTop' : pos});
 });
 
+
+var searchDocs;
+
+function startFindInDocs() {
+    searchDocs = setInterval(function(){ findInDocs() }, 500);
+    console.log("[stopFindInDocs] Search started");
+}
+
+function stopFindInDocs() {
+    clearTimeout(searchDocs);
+    console.log("[stopFindInDocs] Search stopped");
+}
+
+
 function findInDocs(){
 
-  startLoader();
+  var txtInserted = $("#textToSearch")["0"].value;
 
-  $("#resultsList").remove();
+  if (txtInserted == lastSearchStr || txtInserted.length  <= 0){
+    console.log("Do not search txtInserted: " + txtInserted + ", lastSearchStr: " + lastSearchStr);
+    if(txtInserted.length  <= 0){ $("#resultsList").remove(); }
+    return; // exit function
+  }
+  else{
+    console.log("Search! txtInserted: " + txtInserted + ", lastSearchStr: " + lastSearchStr);
 
-  var str = $("#textToSearch")["0"].value, minLen;
+    startLoader();
 
-  if (mobileDeviceCheck) {minLen=4;} //to reduce interface block
-  else {minLen=2;}
+    lastSearchStr = txtInserted;
+    var str = txtInserted;
+
+    if (mobileDeviceCheck) {minLen=4;} //to reduce interface block
+    else {minLen=2;}
 
     if(str.length >= minLen){
-      console.log("[findInDocs] Pesquisou!");
+
       var regexp = new RegExp(str.toUpperCase(),"g"),match, arrMatches = [],html_1, html_2="", html_final;
 
       $.each(reformatedArrDocs, function(i, d){
@@ -662,7 +682,7 @@ function findInDocs(){
 
       html_1 = "<div id='resultsList'><h3>"+arrMatches.length+" resultados encontrados.</h3>";
       html_final = html_1 + html_2 + "</div>";
-
+      $("#resultsList").remove();
       $("#searchDiv").after(html_final);
 
       var spanMatch =  $("span");
@@ -676,8 +696,9 @@ function findInDocs(){
         }
       });
     }
-    stopLoader();
-}/*kateryna*/
+  } // else
+  stopLoader();
+} // findInDocs()
 
 function startDictation() {
 
