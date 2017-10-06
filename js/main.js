@@ -313,7 +313,7 @@ function imageZoom() {// Add zoom functionality to images in the HTML
     var img = $(img);
 		img.wrap("<a class='imagem' href='" +
     img.attr("src") +	"' onclick='return hs.expand(this)'></a>");
-    img.after("<p>Figura "+i+1+"</p>");
+    img.after("<p>Figura "+i+"</p>");
 	});
 } /*close zommClickImagem*/
 
