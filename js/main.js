@@ -322,18 +322,16 @@ function responsiveTables(arrTables) {// Add scroll to document tables
 } /*close responsiveTables()*/
 
 function addSharelinks(docName, docTitle){//add link to the share button in the doc options
-	var docURL = location.protocol + '//' + location.host + location.pathname + "?doc=" + docName;
+	var anchor, sectionURL, docURL = location.protocol + '//' + location.host + location.pathname + "?doc=" + docName;
 	$("#btnShare").attr("onclick","window.open('" + encodeURI("mailto:?Subject=SPMS|SICC|Partilha de documentação: "
 	 																							+ docTitle + "&body=\n\nDocumento: " + docTitle + ".\n\nEndereço: " + docURL + "')"));
   $('#documento h1,h2,h3,h4,h5').each(function(i, h){
 
-    var anchor = "&anchor="+ $(h).attr("id");
-    var sectionURL = encodeURI(docURL + anchor);
-    console.log(sectionURL);
+    anchor = "&anchor="+ $(h).attr("id");
+    sectionURL = encodeURI(docURL + anchor);
 
     $(h).wrap( "<span class='shareable-section'></span>");
-    $(h).prepend( "<a href='"+docURL+"'><i class='fa fa-link fa-4x' title='Copiar link'></i></a>");
-    console.log("h:",h+"\n",$(h));
+    $(h).prepend( "<a href='"+sectionURL+"'><i class='fa fa-link fa-4x' title='Copiar link'></i></a>");
     } // fucntion
   ); // each
 }
