@@ -157,7 +157,7 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
         loadToc($(html).filter('h2,h3,h4'), $('#tocDropdown'));
         toggle('toc',true); // hide table-of-contents
         addSharelinks(doc.name, doc.title);
-        imageZoom();
+        imagesZoomAndLegend(doc.name);
         showElements(btnsToShow);
 
         $("#btnEditarDoc, #btnHistory" ).off("click");
@@ -308,12 +308,12 @@ function enableDocOptions() {
   $("#docOptions>div").on("click");
 }
 
-function imageZoom() {// Add zoom functionality to images in the HTML
+function imagesZoomAndLegend(docName) {// Add zoom functionality to images in the HTML
 	$('#documento img').each(function(i, img) {
     var img = $(img);
 		img.wrap("<a class='imagem' href='" +
     img.attr("src") +	"' onclick='return hs.expand(this)'></a>");
-    img.after("<p>Figura "+i+"</p>");
+    if(docName != 'help'){img.after("<p>Figura "+i+"</p>");}
 	});
 } /*close zommClickImagem*/
 
