@@ -23,8 +23,8 @@ var uAgent = window.navigator.userAgent.toUpperCase()
   , mobileDeviceCheck = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()))
   , arrDocs = []
   , reformatedArrDocs = []
-  , arrDocNames = [ 'about','apresentacao_snc_ap','cer_migracao_sicc','chave_orcamental_por_ano','circ1381','circ1382','dec_lei85','dec_lei192','documentos_af_e_ar','gestao_exercicios','gestao_projetos','help','importacao_csvs','macro_tarefas','menus_draft','menus','mu_snc_ap','perguntas_frequentes','processos','reposicao_pagamentos_cobrancas','snc_ap_faqs'];
-
+  , arrDocNames = [ 'about','apresentacao_snc_ap','cer_migracao_sicc','chave_orcamental_por_ano','circ1381','circ1382','dec_lei85','dec_lei192','documentos_af_e_ar','gestao_exercicios','gestao_projetos','help','importacao_csvs','macro_tarefas','menus_draft','menus','mu_snc_ap','perguntas_frequentes','processos','reposicao_pagamentos_cobrancas','snc_ap_faqs']
+  , lastSearchStr = "";
 /*Carregar documento através de parametros no URL (queryString)*/
 function loadFirstContent(){
 
@@ -44,7 +44,7 @@ function loadFirstContent(){
 		loadAllMdownDocs(doc, anchor);
 	}/*close if*/
 	else{
-		console.log("[loadFirstContent] Querystring not detected/not valid.");
+		// console.log("[loadFirstContent] Querystring not detected/not valid.");
 		loadIndexContent(["btnMenu"], null);
 		loadAllMdownDocs(doc, anchor);
 	}
@@ -111,7 +111,7 @@ function loadIndexContent(btnsToShow, event) {
 			$("footer").removeClass("documentMode");
 			highlightMenuItem(event);
       if (!window.hasOwnProperty('webkitSpeechRecognition') && !window.hasOwnProperty('SpeechRecognition')){
-					console.log("Browser doesn't support speech recognition");
+					// console.log("Browser doesn't support speech recognition");
 					$("#mic").remove();
           $("#textToSearch").css({'width': 'calc(80% - 30px)'});
 			}
@@ -119,7 +119,7 @@ function loadIndexContent(btnsToShow, event) {
 			$("#docOptions").removeClass("active");
 	})
 	.fail(function(){
-			console.log("[loadIndexContent] Error on loading requested file: " + filePath);
+			// console.log("[loadIndexContent] Error on loading requested file: " + filePath);
 			stopLoader("[loadIndexContent_2]");
 	})
 	.always(function(){
@@ -151,13 +151,13 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
         }
 
   			var converter = new showdown.Converter(),	data2, html = converter.makeHtml(doc.content); //declara 3 variáveis: converter, data e a html. A variável html irá conter o ficheiro markdown convertido em HTML.
-        $('#documento').html(html);//Place the converted markdown into the elementID
+        $('#documento').html(html);//Place the converted markdown into the page
 
         responsiveTables($(html).filter('table'));
         loadToc($(html).filter('h2,h3,h4'), $('#tocDropdown'));
         toggle('toc',true); // hide table-of-contents
-        addSharelink(doc.name, doc.title);
-        imageZoom();
+        addSharelinks(doc.name, doc.title);
+        imagesZoomAndLegend(doc.name);
         showElements(btnsToShow);
 
         $("#btnEditarDoc, #btnHistory" ).off("click");
@@ -185,11 +185,11 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
   			return false; //to stop the .each loop
 
   	  }else if ( i + 1  >= arrDocs.length){
-  			console.log("[convertMdToHtml] Error on loading the file \"" + mdFile + "\". Check if it exists in the markdown folder and in the arrayDoc.");
+  			// console.log("[convertMdToHtml] Error on loading the file \"" + mdFile + "\". Check if it exists in the markdown folder and in the arrayDoc.");
   			loadIndexContent(['btnMenu'],null);
   			return false; //to stop the .each loop
   		}else if(mdFile == doc.name && doc.content.length <= 0){
-  			console.log("[convertMdToHtml] Error on loading file contents. The file \"" + mdFile + "\" exists but has no content.");
+  			// console.log("[convertMdToHtml] Error on loading file contents. The file \"" + mdFile + "\" exists but has no content.");
   			loadIndexContent(['btnMenu'],null);
   			return false; //to stop the .each loop
   		}else{
@@ -215,7 +215,7 @@ function scrollToAnchor(mdFile, anchor){//the anchor parameter can not have the 
 
 	try { $(anchorId); }
   catch(e) {
-		console.log('[scrollToAnchor] URL anchor parameter is invalid: ' + anchorId);
+		// console.log('[scrollToAnchor] URL anchor parameter is invalid: ' + anchorId);
 		anchorId = '';
 		stopLoader("[scrollToAnchor]");
 		return;
@@ -308,10 +308,12 @@ function enableDocOptions() {
   $("#docOptions>div").on("click");
 }
 
-function imageZoom() {// Add zoom functionality to images in the HTML
+function imagesZoomAndLegend(docName) {// Add zoom functionality to images in the HTML
 	$('#documento img').each(function(i, img) {
-		$(img).wrap("<a class='imagem' href='" +
-    $(img).attr("src") +	"' onclick='return hs.expand(this)'></a>");
+    var img = $(img);
+		img.wrap("<a class='imagem' href='" +
+    img.attr("src") +	"' onclick='return hs.expand(this)'></a>");
+    if(docName != 'help'){img.after("<p>Figura "+i+"</p>");}
 	});
 } /*close zommClickImagem*/
 
@@ -321,15 +323,61 @@ function responsiveTables(arrTables) {// Add scroll to document tables
 	});
 } /*close responsiveTables()*/
 
-function addSharelink(docName, docTitle){//add link to the share button in the doc options
-	var docURL = location.protocol + '//' + location.host + location.pathname + "?doc=" + docName;
+function addSharelinks(docName, docTitle){//add link to the share button in the doc options
+	var anchor, sectionURL, docURL = location.protocol + '//' + location.host + location.pathname + "?doc=" + docName;
 	$("#btnShare").attr("onclick","window.open('" + encodeURI("mailto:?Subject=SPMS|SICC|Partilha de documentação: "
 	 																							+ docTitle + "&body=\n\nDocumento: " + docTitle + ".\n\nEndereço: " + docURL + "')"));
+  $('#documento h1,h2,h3,h4,h5').each(function(i, h){
+
+    anchor = "&anchor="+ $(h).attr("id");
+    sectionURL = docURL + anchor;
+    sectionURL = encodeURI(sectionURL);
+    var teste = "TESTE";
+    var iId = "i-" + docName + "-" + $(h).attr("id").replace('#','');
+
+    $(h).wrap("<span class='shareable-section'></span>");
+    $(h).prepend( "<a><i class='fa fa-link fa-4x' title='Copiar link' id="+iId+" data-section-url="+sectionURL+" onclick='copyLinkToClipBoard(event)'></i></a>");
+    } // fucntion
+  ); // each
+}
+
+function copyLinkToClipBoard(event,docName){
+
+    var elId = event.target.id, el = $("#"+elId);
+
+    // gets the link (URI) to the document header
+    var sectionURL = el.attr('data-section-url');
+
+    // Create a dummy element
+    var dummy = document.createElement("input");
+    // Add it to the document
+    document.body.appendChild(dummy);
+    // Set its ID
+    dummy.setAttribute("id", "dummy_id");
+    // Output the array into it
+    document.getElementById("dummy_id").value=sectionURL;
+    // Select it
+    dummy.select();
+    // Copy its contents
+    document.execCommand("copy");
+    // Remove it as its not needed anymore
+    document.body.removeChild(dummy);
+
+    el.css({'background':'rgba(41, 97, 93, 0.9)','color':'white'});
+    el.removeClass('fa-link');
+    el.addClass('fa-check');
+
+    setTimeout(function () {
+      el.css({'background':'rgb(240, 240, 240)','color':'rgb(128, 128, 128)'});
+      el.removeClass('fa-check');
+      el.addClass('fa-link');
+    }, 1200);
 }
 
 function loadCommitHistory(btnsToShow) { //Loads the gitHub repository and insert insert into the HTML
 
 		startLoader();
+    stopFindInDocs();
 
 		if($("#documento").length < 1){
 			//adjust html style and structure
@@ -579,18 +627,42 @@ $('#tocDropdown').on('click', 'a[href^="#"]', function(e) {
 	// $('html, body').css({'scrollTop' : pos});
 });
 
+
+var searchDocs;
+
+function startFindInDocs() {
+    searchDocs = setInterval(function(){ findInDocs() }, 500);
+    // console.log("[stopFindInDocs] Search started");
+}
+
+function stopFindInDocs() {
+    clearTimeout(searchDocs);
+    // console.log("[stopFindInDocs] Search stopped");
+}
+
+
 function findInDocs(){
 
-  startLoader();
+  var txtInserted = $("#textToSearch")["0"].value;
 
-  $("#resultsList").remove();
+  if (txtInserted == lastSearchStr || txtInserted.length  <= 0){
+    // console.log("Do not search txtInserted: " + txtInserted + ", lastSearchStr: " + lastSearchStr);
+    if(txtInserted.length  <= 0){ $("#resultsList").remove(); }
+    return; // exit function
+  }
+  else{
+    // console.log("Search! txtInserted: " + txtInserted + ", lastSearchStr: " + lastSearchStr);
 
-  var str = $("#textToSearch")["0"].value, minLen;
+    startLoader();
 
-  if (mobileDeviceCheck) {minLen=4;} //to reduce interface block
-  else {minLen=2;}
+    lastSearchStr = txtInserted;
+    var str = txtInserted;
+
+    if (mobileDeviceCheck) {minLen=4;} //to reduce interface block
+    else {minLen=2;}
 
     if(str.length >= minLen){
+
       var regexp = new RegExp(str.toUpperCase(),"g"),match, arrMatches = [],html_1, html_2="", html_final;
 
       $.each(reformatedArrDocs, function(i, d){
@@ -612,7 +684,7 @@ function findInDocs(){
 
       html_1 = "<div id='resultsList'><h3>"+arrMatches.length+" resultados encontrados.</h3>";
       html_final = html_1 + html_2 + "</div>";
-
+      $("#resultsList").remove();
       $("#searchDiv").after(html_final);
 
       var spanMatch =  $("span");
@@ -626,8 +698,9 @@ function findInDocs(){
         }
       });
     }
-    stopLoader();
-}/*kateryna*/
+  } // else
+  stopLoader();
+} // findInDocs()
 
 function startDictation() {
 

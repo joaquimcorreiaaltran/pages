@@ -63,17 +63,22 @@ height:500px;
   padding: 0.2em 0 0 1em;
   list-style:decimal;
   margin: 5px;
-  padding: 5px;
   border-color: rgba(41, 97, 93, 0.2);
   border-style: solid;
   border-width: 1px;
+  font-weight: bold;
 }
 #resultsList span.title{
   font-weight: bold;
 }
 
+#resultsList span.citation{
+  font-weight: normal;
+}
+
 #resultsList span.highlight{
-  background-color: rgba(250,255,0,.4);
+  background-color: rgba(250,255,0,.6);
+  font-weight: bold;
 }
 
 #resultsList li p{
@@ -341,6 +346,30 @@ right: 10px !important;
 cursor: pointer;
 }
 
+#fileHistory{
+  background-color: rgb(228, 228, 228);
+}
+
+#commit-history{
+  background-color: rgba(228, 228, 228, 0.4);
+  border-radius: 8px;
+  padding: 1em;
+}
+
+#commit-history li {
+  background-color: white;
+  border-radius:8px;
+  padding:1em;
+  padding-left:.5em;
+  margin-left: 0;
+}
+
+#commit-history li:hover{
+  cursor: pointer;
+  background-color: rgba(25, 251, 55, 0.1);
+}
+
+
 #fileHistory > h3, #btnSearchMatches > h3{
 margin-top: 15px;
 margin-bottom: 0;
@@ -359,15 +388,24 @@ transition:all .3s ease-out;
 }
 
 .file-history>div, .search-matches>div{
-padding: 0.2em 1em 0.2em 1em;
+padding: 0.1em 0.5em 0.1em 0.5em;
+}
+
+.file-history>div{
+  border-radius: 7px;
+  border-width: 1px;
+  border-style: solid;
+  background-color: white;
+  border-color: grey;
+  margin: 3px;
 }
 
 .file-history>div>a,.search-matches>div>a{
 color: #29615D;
 }
 
-.file-history>div:hover, .search-matches>div:hover{
-background-color: rgba(41, 97, 93, 0.05);
+.file-history>div:hover{
+background-color: rgba(25, 251, 55, 0.1);
 color: #29615D;
 }
 
@@ -461,6 +499,13 @@ img {
 border:0;
 vertical-align:middle;
 -ms-interpolation-mode:bicubic
+}
+
+.imagem p{
+  font-style: italic;
+  text-align: center;
+  text-decoration: none !important;
+  margin-bottom: 0.5em;
 }
 
 figure {
@@ -639,6 +684,70 @@ transform:scale(0.8,0.8)
 
 #documento ul li{
   margin-left: 1.5em;
+}
+
+.shareable-section h1:hover > a > i,
+.shareable-section h2:hover > a > i,
+.shareable-section h3:hover > a > i,
+.shareable-section h4:hover > a > i,
+.shareable-section h5:hover > a > i,
+.shareable-section h6:hover > a > i,
+.shareable-section i:hover {
+  background-color: rgb(240, 240, 240);
+  visibility: visible;
+  left:-4%;
+  transition:all .4s ease;
+  -moz-transition:all .4s ease; /* FireFox */
+  -ms-transition:all .4s ease; /* IE */
+  -webkit-transition:all .4s ease; /* Safari */
+  -moz-transition-delay: .3s; /* FireFox */
+  -ms-transition-delay: .3s; /* IE */
+  -webkit-transition-delay: .3s; /* Safari */
+}
+
+.shareable-section h1 > a > i:hover,
+.shareable-section h2 > a > i:hover,
+.shareable-section h3 > a > i:hover,
+.shareable-section h4 > a > i:hover,
+.shareable-section h5 > a > i:hover,
+.shareable-section h6 > a > i:hover {
+  background: white;
+  color: #29615D;
+  border-width: 2px;
+  border-style:solid;
+  -moz-transition:all .2s ease; /* FireFox */
+  -ms-transition:all .2s ease; /* IE */
+  -webkit-transition:all .2s ease; /* Safari */
+}
+
+.shareable-section h1>a > i,
+.shareable-section h2>a > i,
+.shareable-section h3>a > i,
+.shareable-section h4>a > i,
+.shareable-section h5>a > i,
+.shareable-section h6>a > i {
+  position: absolute;
+  visibility: hidden;
+  left:-10%;
+  border-radius: 50px;
+  padding: 0.3em;
+  transition:all .5s ease;
+  -moz-transition:all .5s ease;
+  -ms-transition:all .5s ease;
+  -webkit-transition:all .5s ease;
+  transition-delay: 1.5s;
+  -moz-transition-delay: 1.5s; /* FireFox */
+  -ms-transition-delay: 1.5s; /* IE */
+  -webkit-transition-delay: 1.5s; /* Safari */
+}
+
+.shareable-section h1,
+.shareable-section h2,
+.shareable-section h3,
+.shareable-section h4,
+.shareable-section h5,
+.shareable-section h6 {
+  position: relative;
 }
 
 td img {
@@ -1306,9 +1415,19 @@ width:45px
 }
 
 #content {
-margin-top:55px;
-padding:.8em;
+margin-top:30px;
+padding:1em 2em 6em 2em;
 transition:padding 1s ease, margin-top 1s ease
+}
+
+.shareable-section h1:hover > a > i,
+.shareable-section h2:hover > a > i,
+.shareable-section h3:hover > a > i,
+.shareable-section h4:hover > a > i,
+.shareable-section h5:hover > a > i,
+.shareable-section h6:hover > a > i,
+.shareable-section i:hover {
+  left: -1.8em;
 }
 }
 
@@ -1326,8 +1445,11 @@ clear:both
 
 #content {
 margin-top:30px;
-padding:1em;
+padding:1em 2em 6em 2em;
 transition:padding 1s ease, margin-top 1s ease
+}
+.shareable-section i:hover{
+  left: -2%;
 }
 }
 

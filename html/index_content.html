@@ -4,7 +4,7 @@
 <div id = "searchDiv">
   <form id="labnol">
     <div class="speech">
-      <input id="textToSearch" class="text-to-search" type="text" onkeyup="findInDocs()" name="q" placeholder="Texto a pesquisar..." title="Introduza o texto a pesquisar"></input>
+       <input id="textToSearch" class="text-to-search" type="text" onfocus="startFindInDocs();" onblur="stopFindInDocs();" name="q" placeholder="Texto a pesquisar..." title="Introduza o texto a pesquisar"></input>
       <img id="mic" onclick="startDictation()" src="./img/mic.gif" title="Selecione para falar"/>
     </div>
   </form>
