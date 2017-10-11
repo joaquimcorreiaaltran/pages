@@ -148,7 +148,76 @@ font-style: italic
 font-style: italic
 }
 
-#btnSearch {
+.container-2{
+  width: 150px;
+  vertical-align:middle;
+  white-space: nowrap;
+  position:relative;
+  top:4px;
+
+}
+
+.container-2 input#search{
+  width: 35px;
+  height: 35px;
+  background: #37837e;
+  background-image:url('./img/icons/lupa.png');
+  background-position:1px 1px;
+  background-repeat: no-repeat;
+  background-size: 5px 5px;
+  border: none;
+  font-size: 10pt;
+  float:left;
+  color: white;
+  padding-left: 35px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: white;
+
+  -webkit-transition: width .55s ease;
+  -moz-transition: width .55s ease;
+  -ms-transition: width .55s ease;
+  -o-transition: width .55s ease;
+  transition: width .55s ease;
+}
+
+.container-2 input#search::-webkit-input-placeholder {
+   color: white;
+}
+
+.container-2 input#search:-moz-placeholder { /* Firefox 18- */
+   color: white;
+}
+
+.container-2 input#search::-moz-placeholder {  /* Firefox 19+ */
+   color: white;
+}
+
+.container-2 input#search:-ms-input-placeholder {
+   color: white;
+}
+.container-2 .icon{
+  position:absolute;
+
+  margin-left: 8px;
+  margin-top:8px;
+  z-index: 1;
+  color: white;
+}
+
+.container-2 input#search:focus, .container-2 input#search:active{
+  outline:none;
+  width: 150px;
+}
+.container-2:hover input#search{
+width: 150px;
+}
+
+.container-2:hover .icon{
+color: white;
+}
+/*#btnSearch {
 background:#37837e;
 border: none;
 border-radius: 9px;
@@ -168,7 +237,7 @@ box-shadow: 0 0 2px #37837e inset;
 
 #btnSearch:hover {
 opacity:.9;
-}
+}*/
 
 .dropdown-doc-options {
 box-shadow:-5px 5px 15px 2px rgba(0,0,0,0.2);

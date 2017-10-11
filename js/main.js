@@ -77,7 +77,7 @@ function loadAllMdownDocs(doc, anchor){
 			});
 			if(doc != null) loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnToc','btnOpt'], anchor, null);
 
-      // array to be used in the find functionality
+      // array to be used in the find functionality without markdown elements
       reformatedArrDocs = arrDocs.map(
         function(doc){
           var rDoc = {name:"",content:"",title:""};

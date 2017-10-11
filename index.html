@@ -38,7 +38,6 @@
 				<p id="barTitle" style="cursor:pointer;" title="Ver página inicial" onclick="loadIndexContent(['btnMenu'], event)">SICC</p>
 				<button id="btnOpt" title="Ver opções do documento" type="button" alt="btnOpt" onclick="toggle('docOptions',null)" class="dropdown-op"><i class="fa fa-ellipsis-v fa-fw"></i></button>
 				<button title="Ver índice" id="btnToc" type="button" alt="showToc" onclick="toggle('toc',null)" class="dropbtn">Índice</button>
-
 				<div id="docOptions" class="dropdown-doc-options">
 					<div id="btnEditarDoc" title="Sugerir alterações ao documento (Github)" type="button" alt="btnEditarDoc" class='doc-option'><i class="fa fa-pencil fa-fw"></i> Editar</div>
 					<div id="btnPDF" title="Transferir documento (PDF)" type="button" alt="btnPDF" class='doc-option'><i class="fa fa-download fa-fw"></i> Guardar</div>
@@ -52,6 +51,11 @@
 	<div id ='loader' class='active'>
 		<img src='./img/icons/sicc.png' alt='Loader'>
 	</div>
+
+		<div class="container-2">
+			<input type="search" id="search" placeholder="Pesquisar.." />
+	</div>
+
 		<div id="content" style="min-height: 90vh; margin: 0 0 0 0; padding:1em 1em 1em 1em; widht: 100%; max-width:5000px;"></div>
 
 		<footer id="footer">
