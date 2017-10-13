@@ -34,7 +34,13 @@
 		</noscript>
 		<header id="header">
 			<div id="docButtons">
+
 				<button id="btnMenu" title="Ver Menu" type="button" alt="btnMenu" onclick="toggle('menu',null)" class="show"><i class="fa fa-bars fa-fw"></i></button>
+				<div id="pesquisar" alt="pesquisar" class="container-2">
+					<span class='icon icon-search'>
+						<img id="lupa" src="./img/icons/search.png" />
+					<input type="search" id="search" onsearch="findInFile()" placeholder="Pesquisar.." /></span>
+				</div>
 				<p id="barTitle" style="cursor:pointer;" title="Ver página inicial" onclick="loadIndexContent(['btnMenu'], event)">SICC</p>
 				<button id="btnOpt" title="Ver opções do documento" type="button" alt="btnOpt" onclick="toggle('docOptions',null)" class="dropdown-op"><i class="fa fa-ellipsis-v fa-fw"></i></button>
 				<button title="Ver índice" id="btnToc" type="button" alt="showToc" onclick="toggle('toc',null)" class="dropbtn">Índice</button>
@@ -51,13 +57,7 @@
 	<div id ='loader' class='active'>
 		<img src='./img/icons/sicc.png' alt='Loader'>
 	</div>
-
-		<div class="container-2">
-			<input type="search" id="search" placeholder="Pesquisar.." />
-	</div>
-
 		<div id="content" style="min-height: 90vh; margin: 0 0 0 0; padding:1em 1em 1em 1em; widht: 100%; max-width:5000px;"></div>
-
 		<footer id="footer">
 			<div id="p_logos">
 				 <a id="SICC_logo" href="http://spms.min-saude.pt/product/sicc" target="_blank" rel="noopener" title="Abrir página">

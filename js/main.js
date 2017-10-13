@@ -75,7 +75,7 @@ function loadAllMdownDocs(doc, anchor){
 					content: item.value
 				}
 			});
-			if(doc != null) loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnToc','btnOpt'], anchor, null);
+			if(doc != null) loadMdDoc(doc, ['btnMenu','btnEditarDoc','btnToc','btnOpt','pesquisar'], anchor, null);
 
       // array to be used in the find functionality without markdown elements
       reformatedArrDocs = arrDocs.map(
@@ -159,7 +159,9 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
         addSharelinks(doc.name, doc.title);
         imagesZoomAndLegend(doc.name);
         showElements(btnsToShow);
+        select_doc(doc.name, doc.content);
 
+        $("#pesquisar").addClass("show");
         $("#btnEditarDoc, #btnHistory" ).off("click");
         $("#btnEditarDoc").click(function() {window.open("https://github.com/SPMSSICC/pages/edit/master/markdown/" + doc.name + ".md", "_blank");});
         $("#btnHistory").click(function() {loadFileHistory(doc.name, event);});
@@ -269,7 +271,7 @@ function showElements(elements) {
 }
 
 function hideElements() {
-	var elements = ["btnMenu","btnToc","tocDropdown","btnOpt"];
+	var elements = ["btnMenu","btnToc","tocDropdown","btnOpt","pesquisar"];
   $.each(elements, function (i,el) {
 		$("#" + el).removeClass("show");
 	});
@@ -701,6 +703,46 @@ function findInDocs(){
   } // else
   stopLoader();
 } // findInDocs()
+
+function select_doc(mdFile,fileContent){
+  console.log(mdFile);
+  // console.log(fileContent);
+  var found_doc = $.grep(reformatedArrDocs,function (d){
+    return d.name==mdFile;
+  }); // array of an object which corresponds to the opened document
+  console.log(found_doc);
+  var fContent = found_doc["0"].content; //content of the selected document in a string
+  // console.log(fContent);
+  findInFile(fContent);
+}
+
+function findInFile(fContent){
+
+var content = fContent;
+// console.log(content);
+var textToFind = document.getElementById("search").value;
+if (textToFind.length >=4){
+
+  var regexp = new RegExp(textToFind.toUpperCase(),"g");
+
+  var encontrei = regexp.exec(content);
+  console.log(encontrei);
+  // while ((match = regexp.exec(fContent)) != null) {
+  //   console.log("entrei!");
+  //         var text = fileContent.indexOf(" ",match.index);
+  //           $.each(match.index, function(i, val){
+  //             console.log("a escolher");
+  //             var innerHTML = val.innerHTML, index = innerHTML.toUpperCase().indexOf(textTofind.toUpperCase());
+  //             if ( index >= 0 )
+  //             {
+  //               innerHTML = innerHTML.substring(0,index) + "<span class='highlight'>" + innerHTML.substring(index,index+str.length) + "</span>" + innerHTML.substring(index + str.length);
+  //               val.innerHTML = innerHTML;
+  //             }//if
+  //           });//each
+  //
+  //     }//while
+    }//if
+}//finInFile
 
 function startDictation() {
 

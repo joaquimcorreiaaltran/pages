@@ -81,6 +81,10 @@ height:500px;
   font-weight: bold;
 }
 
+.highlight{
+  background-color: red;
+}
+
 #resultsList li p{
   text-indent: 1em;
   font-style: italic;
@@ -131,7 +135,7 @@ background:#fefefe;
 border: none;
 color: #29615D;
 display: inline-block;
-float: left;
+/*float: left;*/
 height: 15px;
 margin:4px 0px 4px 3px;
 padding: 14px 0 14px 0;
@@ -153,32 +157,53 @@ font-style: italic
 font-style: italic
 }
 
-.container-2{
-  width: 150px;
-  vertical-align:middle;
-  white-space: nowrap;
-  position:relative;
-  top:4px;
-
+#pesquisar{
+  display:none
 }
 
-.container-2 input#search{
-  width: 35px;
-  height: 35px;
-  background: #37837e;
-  background-image:url('./img/icons/lupa.png');
-  background-position:1px 1px;
-  background-repeat: no-repeat;
-  background-size: 5px 5px;
-  border: none;
-  font-size: 10pt;
-  float:left;
-  color: white;
-  padding-left: 35px;
+#pesquisar.container-2.show{
+  width: 120px;
+  vertical-align:middle;
+  white-space: nowrap;
+  left:4em;
+  top:4.5px;
+  position: fixed;
+  border-color:#FFF;
+  border-style:solid;
+  border-width: 1.5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+
+  -webkit-transition: width .55s ease;
+  -moz-transition: width .55s ease;
+  -ms-transition: width .55s ease;
+  -o-transition: width .55s ease;
+  transition: width .55s ease;
+}
+.container-2 img{
+  color:white;
+  position:relative;
+  float:left;
+  display:block;
+  width: 30px;
+  height: 30px;
+  top:2px;
+
+}
+
+#pesquisar.container-2.show input#search{
+  width: 80px;
+  height: 32px;
+  background: #29615D;
+  border:none;
+  font-size: 10pt;
+  float:left;
   color: white;
+  padding-left: 12px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 
   -webkit-transition: width .55s ease;
   -moz-transition: width .55s ease;
@@ -187,62 +212,35 @@ font-style: italic
   transition: width .55s ease;
 }
 
-.container-2 input#search::-webkit-input-placeholder {
+#pesquisar.container-2.show input#search::-webkit-input-placeholder {
    color: white;
 }
 
-.container-2 input#search:-moz-placeholder { /* Firefox 18- */
+#pesquisar.container-2.show input#search:-moz-placeholder { /* Firefox 18- */
    color: white;
 }
 
-.container-2 input#search::-moz-placeholder {  /* Firefox 19+ */
+#pesquisar.container-2.show input#search::-moz-placeholder {  /* Firefox 19+ */
    color: white;
 }
 
-.container-2 input#search:-ms-input-placeholder {
+#pesquisar.container-2.show input#search:-ms-input-placeholder {
    color: white;
 }
-.container-2 .icon{
-  position:absolute;
 
-  margin-left: 8px;
-  margin-top:8px;
-  z-index: 1;
-  color: white;
-}
-
-.container-2 input#search:focus, .container-2 input#search:active{
+#pesquisar.container-2.show input#search:focus, #pesquisar.container-2.show input#search:active{
   outline:none;
-  width: 150px;
+  /*width: 150px;*/
 }
-.container-2:hover input#search{
+#peasquisar.container-2.show:hover input#search{
 width: 150px;
+padding:12px;
 }
 
-.container-2:hover .icon{
-color: white;
-}
-/*#btnSearch {
-background:#37837e;
-border: none;
-border-radius: 9px;
-color:#fff;
-cursor: pointer;
-font: 14px/14px 'HelveticaNeue', Helvetica, Arial, sans-serif;
-display:block;
-padding: 10px;
-margin: 20px auto 20px auto;
-width:106px;
-box-shadow: 0 0 2px #37837e inset;
--moz-box-shadow: 0 0 2px #37837e inset;
--webkit-box-shadow: 0 0 2px #37837e inset;
--moz-border-radius: 9px;
--webkit-border-radius: 9px;
+#pesquisar.container-2.show:hover{
+  width: 180px;
 }
 
-#btnSearch:hover {
-opacity:.9;
-}*/
 
 .dropdown-doc-options {
 box-shadow:-5px 5px 15px 2px rgba(0,0,0,0.2);
