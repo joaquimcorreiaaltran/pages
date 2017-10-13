@@ -672,6 +672,7 @@ function findInDocs(){
 
             var start = d.content.indexOf(" ",match.index - 70)+1,
                 end =  d.content.indexOf(" ",match.index + 70);
+
             citation = "\"..." + d.content.substring(start,end) + "...\"";
             html_2 = html_2 + '<li title="Ver documento '+d.title+'" onclick="loadMdDoc(\'' + d.name +
                               '\', [\'btnMenu\',\'btnToc\',\'btnOpt\',\'tocDropdown\'],\'\', null)"><span class="title">['+d.title+']</span><p><span class=' + 'citation' + '>'+
@@ -713,36 +714,44 @@ function select_doc(mdFile,fileContent){
   console.log(found_doc);
   var fContent = found_doc["0"].content; //content of the selected document in a string
   // console.log(fContent);
-  findInFile(fContent);
+  // findInFile(fContent);
 }
 
-function findInFile(fContent){
-
-var content = fContent;
+function findInFile(){
+var content = document.getElementById("content").innerText;
 // console.log(content);
+
 var textToFind = document.getElementById("search").value;
+
 if (textToFind.length >=4){
+  var regexp = new RegExp(textToFind.toUpperCase(),"g"),match;
+  console.log(regexp);
+  //var encontrei = regexp.exec(content.toUpperCase());
+  //console.log(encontrei);
+  while ((match = regexp.exec(content.toUpperCase())) != null) {
+    console.log("entrei!");
+    console.log(match);
+    // var pos =[];
+    // pos.push(match.index);
+  var start = match.index,
+      end =  content.indexOf(" ",match.index);
 
-  var regexp = new RegExp(textToFind.toUpperCase(),"g");
+      $(match, function(i, val){
+              console.log("a escolher");
 
-  var encontrei = regexp.exec(content);
-  console.log(encontrei);
-  // while ((match = regexp.exec(fContent)) != null) {
-  //   console.log("entrei!");
-  //         var text = fileContent.indexOf(" ",match.index);
-  //           $.each(match.index, function(i, val){
-  //             console.log("a escolher");
-  //             var innerHTML = val.innerHTML, index = innerHTML.toUpperCase().indexOf(textTofind.toUpperCase());
-  //             if ( index >= 0 )
-  //             {
-  //               innerHTML = innerHTML.substring(0,index) + "<span class='highlight'>" + innerHTML.substring(index,index+str.length) + "</span>" + innerHTML.substring(index + str.length);
-  //               val.innerHTML = innerHTML;
-  //             }//if
-  //           });//each
-  //
-  //     }//while
+              inner = val.substring(start,end).attr({"color":"red"});
+                // val.innerHTML = inner;
+
+
+
+              // console.log(highlight);
+            });//each
+
+      }//while
     }//if
 }//finInFile
+
+
 
 function startDictation() {
 
