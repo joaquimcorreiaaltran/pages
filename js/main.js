@@ -313,7 +313,7 @@ function imagesZoomAndLegend(docName) {// Add zoom functionality to images in th
     var img = $(img);
 		img.wrap("<a class='imagem' href='" +
     img.attr("src") +	"' onclick='return hs.expand(this)'></a>");
-    if(docName != 'help'){img.after("<p>Figura "+i+"</p>");}
+    if(docName != 'help'){img.after("<p>Figura "+(i+1)+"</p>");}
 	});
 } /*close zommClickImagem*/
 
