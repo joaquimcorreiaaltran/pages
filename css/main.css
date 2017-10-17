@@ -146,7 +146,8 @@ width: calc(80% - 80px)
 }
 
 #textToSearch:hover{
-background-color: rgba(0, 255, 79, 0.1)
+background-color: rgba(0, 255, 79, 0.1);
+outline:none;
 }
 
 #textToSearch::-webkit-input-placeholder {
