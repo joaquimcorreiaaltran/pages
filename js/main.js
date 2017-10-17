@@ -702,6 +702,21 @@ function findInDocs(){
   stopLoader();
 } // findInDocs()
 
+// document.documentElement.scrollTop >20
+
+window.onscroll = function(){scrollFunction();};
+
+function scrollFunction(){
+  if($(this).scrollTop()>30){
+    $("#btnUp").fadeIn();}
+  else {
+    $("#btnUp").fadeOut();}
+}
+
+function topFunction(){
+  window.scrollTo(0,0);
+}
+
 function startDictation() {
 
   if (window.hasOwnProperty('webkitSpeechRecognition') || window.hasOwnProperty('SpeechRecognition')) {
