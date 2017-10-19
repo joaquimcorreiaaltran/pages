@@ -1344,7 +1344,16 @@ Ao selecionar “Imprimir”, o sistema produz a Guia de Receita em PDF.
 
 __O utilizador pode verificar na impressão o novo campo de “Observações” criado no ponto 3.2.7. .__
 
-## 2. Menu Orçamental - Registo do Orçamento
+<!-- ## 4. Gestão de Tesouraria
+
+### 4.1. Pagamentos
+### 4.2. Cobranças
+### 4.3. Folhas de Caixa
+
+## 5. Contabilidade Geral
+## 6. Analítica -->
+
+## 7. Menu Orçamental - Registo do Orçamento
 
 Neste menu, o utilizador poderá fazer o registo das dotações através do carregamento do Orçamento anual:
 
@@ -1352,9 +1361,9 @@ Neste menu, o utilizador poderá fazer o registo das dotações através do carr
 
 Este submenu permite o acesso às propostas orçamentais e respetivo registo do Orçamento anual.
 
-### 2.1. Orçamento Anual
+### 7.1. Orçamento Anual
 
-#### 2.1.1. Recolha de Propostas Orçamentais
+#### 7.1.1. Recolha de Propostas Orçamentais
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-ab7ac365.png)
 
@@ -1374,7 +1383,7 @@ O formulário para recolha de propostas orçamentais é composta por:
 Neste ecrã, decidir os valores a constarem na proposta do orçamento através da inserção dos montantes de receita ou despesa pelos vários itens de orçamento.
 Nesta etapa, o utilizador que efetua o carregamento em SICC, tem de ter em conta a divisão pelas respetivas rubricas orçamentais. Verificar no entanto nesta fase se o total das receitas igual às despesas.
 
-##### 2.1.1.1. Orçamento Ordinário
+##### 7.1.1.1. Orçamento Ordinário
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/Criacao_orcamento.gif)
 
@@ -1411,7 +1420,7 @@ Após a confirmação surge novo ecrã com a informação que a alteração orç
 
 Se as alterações estão validadas, o próximo passo é de “Aprovar” para que o sistema assuma os novos valores propostos.
 
-##### 2.1.1.2. Consulta de Contabilidade
+##### 7.1.1.2. Consulta de Contabilidade
 
 É possível proceder à “Consulta” e verificar o resultado das alterações geradas nos passos anteriores.
 
@@ -1419,7 +1428,7 @@ Se as alterações estão validadas, o próximo passo é de “Aprovar” para q
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-c362c238.png)
 
-#### 2.1.2. Fundos disponíveis(LPCA)
+#### 7.1.2. Fundos disponíveis(LPCA)
 
 Neste processo, e através do caminho abaixo indicado, será demonstrado o processo de registo dos Fundos disponíveis (LCPA).
 
@@ -1465,15 +1474,13 @@ No final de cada mês, o utilizador ao Confirmar, surge no ecrã a indicação d
 
 Para validar, que o sistema efetua um controle dos fundos criados, não permitindo a criação de Compromissos com valor superior aos Fundos Disponiveis, fica o exemplo abaixo:
 
-
-
-##### 2.1.2.1. Criação de Cabimento
+##### 7.1.2.1. Criação de Cabimento
 
 O Processo de criação de cabimentos e compromissos encontra-se detalhado no ponto 3.1 do documento.
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-3243dd2d.png)
 
-##### 2.1.2.2. Verificação prévia de fundos disponíveis
+##### 7.1.2.2. Verificação prévia de fundos disponíveis
 
 O sistema efetua no processo de despesa, uma verificação de fundos que atribui um número sequencial e valida a realização de compromisso assumido por parte da gestão de compras.
 
@@ -1485,17 +1492,17 @@ Mensagem do sistema indicando que as importâncias inseridas não correspondem a
 
 Desta forma, a verificação prévia irá ser criada, conforme demonstrado no ecrã abaixo.
 
-##### 2.1.2.3. Criação de Verificação Prévia (CM) com fundos disponíveis
+##### 7.1.2.3. Criação de Verificação Prévia (CM) com fundos disponíveis
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-e73da692.png)
 
-##### 2.1.2.4. Geração de movimentos contabilísticos e confirmação
+##### 7.1.2.4. Geração de movimentos contabilísticos e confirmação
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-2343a163.png)
 
-#### 2.1.3. Mapas (LPCA)
+#### 7.1.3. Mapas (LPCA)
 
-##### 2.1.3.1. Tabela 1 – Fundos disponíveis
+##### 7.1.3.1. Tabela 1 – Fundos disponíveis
 
 O utilizador neste processo, tem a possibilidade de extrair relatórios do sistema com base nas informações e valores introduzidas nos passos anteriores.
 
@@ -1517,7 +1524,7 @@ O utilizador neste processo, tem a possibilidade de extrair relatórios do siste
 |Mês|Seleção do mês para carregamento dos fundos. ![img_mes_janeiro.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_mes_janeiro.png)|
 |Diretório|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido.</br> ![img_33.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_33.png)|
 
-##### 2.1.3.2. Tabela 4 - (SPA’s): Passivos/ Contas a pagar
+##### 7.1.3.2. Tabela 4 - (SPA’s): Passivos/ Contas a pagar
 
 De igual modo à extração dos mapas anteriores, o utilizador nesta Tabela, usa o mesmo procedimento.
 
@@ -1542,7 +1549,7 @@ De igual modo à extração dos mapas anteriores, o utilizador nesta Tabela, usa
 |Mês|Seleção do mês para carregamento dos fundos. ![img_mes_janeiro.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_mes_janeiro.png)|
 |Diretório|Este botão permite ao utilizador escolher o diretório de gravação do Excel que irá ser produzido.</br> ![img_36.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_36.png)|
 
-### 2.2. Mapas Legais
+### 7.2. Mapas Legais
 
 De modo a analisar os orçamentos da despesa/receita
 
@@ -1550,7 +1557,7 @@ Nos mapas, os ecrãs são idênticos na construção dos relatórios e de modo a
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-7a5287c2.png)
 
-#### 2.2.1. Mapas - Orçamento de Despesa/Receita
+#### 7.2.1. Mapas - Orçamento de Despesa/Receita
 
 Nos mapas, os ecrãs são idênticos na construção dos relatórios. Desta forma, o seguinte menu e respetivos submenus, permitem ao utilizador fazer uma análise ao Orçamento da despesa.
 
@@ -1558,7 +1565,7 @@ Nos mapas, os ecrãs são idênticos na construção dos relatórios. Desta form
 
 Ao clicar, surge o ecrã abaixo e que permite proceder à escolha do tipo de informação que pretende analisar, podendo para o efeito fazer várias combinações possíveis.
 
-#### 2.2.2. Orçamento de Despesa
+#### 7.2.2. Orçamento de Despesa
 
 ![img_38.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_38.png)
 
@@ -1582,7 +1589,7 @@ O exemplo seguinte, demonstra um relatório de alteração orçamental gerada em
 
 ![img_46.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_46.png)
 
-#### 2.2.3. Mapas de Execução Orçamental
+#### 7.2.3. Mapas de Execução Orçamental
 
 Relativamente a este processo, o Mapa de Execução Orçamental da Despesa e Mapa de Execução Orçamental da Receita, têm como finalidade permitir o controlo da execução orçamental da despesa e receita durante o exercício:
 
@@ -1590,7 +1597,7 @@ Relativamente a este processo, o Mapa de Execução Orçamental da Despesa e Map
 
 Para tal, as opções no ecrã permitem imprimir os formulários (gerando PDF), bem como, a extração para formato Excel, tendo o utilizador de definir o caminho para gravação do ficheiro.
 
-#### 2.2.4. Controlo Orçamental - Despesa
+#### 7.2.4. Controlo Orçamental - Despesa
 
 ![img_48.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_48.png)
 
@@ -1612,7 +1619,7 @@ O procedimento do mapa 7.2 é idêntico ao explicado anteriormente, sendo apenas
 
 - Irá ser incluída a chave orçamental neste mapa
 
-#### 2.2.5. Mapa - Alterações Orçamentais Despesa/Receita
+#### 7.2.5. Mapa - Alterações Orçamentais Despesa/Receita
 
 Os Mapas das Alterações Orçamentais da Despesa e Alterações orçamentais da Receita têm por finalidade evidenciar as alterações orçamentais existentes durante o exercício depois da dotação e previsão iniciais:
 
@@ -1645,3 +1652,6 @@ O exemplo seguinte, demonstra um relatório de alteração orçamental gerada em
 O procedimento destes mapas é idêntico ao explicado anteriormente, sendo apenas diferente o resultado final, dependendo de estarmos na receita ou na despesa.
 
 ![img_55.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_55.png)
+
+<!-- ## 8. SNC-AP
+## 9. Utilitários -->
