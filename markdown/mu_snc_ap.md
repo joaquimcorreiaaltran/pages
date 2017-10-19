@@ -108,7 +108,7 @@ instituição, nomeadamente:
 | Nome da Instituição | Nome da instituição. |
 | Morada | Morada da instituição. |
 | Localidade | Localidade a que pertence a instituição. |
-| Código Postal | Código postal associado à instituição. A lista de códigos postais é acessível através do botão redondo que se encontra entre os campos. ![](mu_snc_ap.assets/mu_snc_ap-71c6c4cd.png) |
+| Código Postal | Código postal associado à instituição. A lista de códigos postais é acessível através do botão redondo que se encontra entre os campos. ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-71c6c4cd.png) |
 | NIF | Número de identificação fiscal da instituição. |
 | CAE | Classificação portuguesa das atividades económicas a que pertence a Instituição. |
 | Capital | Capital da instituição. |
@@ -193,7 +193,7 @@ Este ecrã permite ao utilizador manipular as informações relacionadas com os 
 | Listagem de Códigos Postais | A listagem de códigos, números e localidades apresentada no ecrã, permite a manipulação da mesma. |
 | (Pesquisa) Código Postal | Este campo permite ao utilizador efetuar uma pesquisa de código postal através da introdução de um código numérico de quatro dígitos. Deve o utilizador após introduzir, pelo menos esta informação e carregar no botão Filtrar, para ter acesso à informação pretendida na listagem de códigos postais. Este campo pode ser utilizado em simultâneo com os restantes. |
 | (Pesquisa) Número Postal | Este campo permite ao utilizador efetuar uma pesquisa de código postal através da introdução de um código numérico de três dígitos. Deve o utilizador após introduzir, pelo menos esta informação e carregar no botão Filtrar, para ter acesso à informação pretendida na listagem de códigos postais. Este campo pode ser utilizado em simultâneo com os restantes. |
-| (Pesquisa) Localidade | Este campo permite ao utilizador efetuar uma pesquisa de código postal através da introdução da localidade. Deve o utilizador após introduzir, pelo menos esta informação e carregar no botão Filtrar, para ter acesso à informação pretendida na listagem de códigos postais. Este campo pode ser utilizado em simultâneo com os restantes. :<span style="color:">NOTA</span>: **A informação introduzida neste campo deve estar em letras maiúsculas.** |
+| (Pesquisa) Localidade | Este campo permite ao utilizador efetuar uma pesquisa de código postal através da introdução da localidade. Deve o utilizador após introduzir, pelo menos esta informação e carregar no botão Filtrar, para ter acesso à informação pretendida na listagem de códigos postais. Este campo pode ser utilizado em simultâneo com os restantes. :<span style="color:#29615D">**NOTA**</span>: **A informação introduzida neste campo deve estar em letras maiúsculas.** |
 
 #### 1.2.2. Bancos
 
@@ -265,7 +265,7 @@ Este ecrã permite ao utilizador manipular as informações relacionadas com as 
 |Num. de sequência prox.:   |   |
 |Departamento   |   |
 
-Neste formulário de configuração, a ACSS tem acesso a 2 Departamentos, sendo que o utilizador neste campo define o Identificador do IGCP, o Num. de Sequência e o Departamento a que diz respeito. Todas as restantes informações já existiam, pelo que o procedimento de preenchimento continua a ser o mesmo utilizado até à data.
+</br>Neste formulário de configuração, a ACSS tem acesso a 2 Departamentos, sendo que o utilizador neste campo define o Identificador do IGCP, o Num. de Sequência e o Departamento a que diz respeito. Todas as restantes informações já existiam, pelo que o procedimento de preenchimento continua a ser o mesmo utilizado até à data.
 
 #### 1.2.6. Responsáveis
 
@@ -604,7 +604,7 @@ Este ecrã permite ao utilizador manipular as informações relacionadas com a G
 | Contacto | Responsável de relações publicas da entidade. |
 | Email | Endereço de correio eletrónico da entidade. |
 | Nº de Contribuinte | Número de identificação fiscal da entidade. |
-| (Entidade *Factoring*) – Tipo | Tipo de número de conta bancária:- NIB : Numero de Identificação Bancária;- IBAN : Número Internacional de Conta Bancária.![](mu_snc_ap.assets/mu_snc_ap-9927385f.png) |
+| (Entidade *Factoring*) – Tipo | Tipo de número de conta bancária:- NIB : Numero de Identificação Bancária;- IBAN : Número Internacional de Conta Bancária.![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-9927385f.png) |
 | (Entidade *Factoring*) – Numero | Número de conta bancária, no formato indicado no campo anterior. |
 | (Entidade *Factoring*) – Swift | Número de BIC (*Bank Identifier Code*), código que permite identificar bancos internacionais. |
 | (Entidade *Factoring*) – Nome | Identificação da instituição bancária escolhida no campo anterior. Este campo é de preenchimento automático pelo sistema. |
