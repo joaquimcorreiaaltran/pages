@@ -7,7 +7,7 @@ O presente documento visa especificar o funcionamento do novo sistema SNC-AP, ev
 O sistema é composto por nove Menus principais cada um com vários sub-menus.
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-e7c5a0e4.png)
 
-**Botões Gerais**
+</br>**Botões Gerais**
 
 O sistema, ao longo da navegação por vários ecrãs contempla vários botões que se podem ou não repetir de ecrã para ecrã. A sua descrição segue na tabela abaixo.
 
@@ -41,7 +41,7 @@ Acedendo ao mesmo temos as seguintes opções disponíveis:
 | ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-f2465919.png)| Terminar sessão de utilização. | Todos |
 | ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-f4c03c4b.png) | Sair da aplicação. | Todos |
 
-A maioria dos sub-menus disponiliza formulários de recolha de dados, "Recolhas", e a listagem dos dados já guardados em cada sub-menu, "Listagens".
+</br>A maioria dos sub-menus disponiliza formulários de recolha de dados, "Recolhas", e a listagem dos dados já guardados em cada sub-menu, "Listagens".
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-24451670.png)
 
 **Recolhas**
@@ -71,7 +71,7 @@ Este ecrã permite ao utilizador extrair a listagem de Códigos Postais, para fi
 | ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-31dd08c7.png) | Imprimir uma listagem de códigos postais com base nos critérios definidos.|
 |![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-ef069651.png) | Sair do ecrã. |
 
-Existem ecrãs de "Listagens" que possibilitam a pesquisa do primeiro e último registo a listar através do botão posicionado entre dois campos.
+</br>Existem ecrãs de "Listagens" que possibilitam a pesquisa do primeiro e último registo a listar através do botão posicionado entre dois campos.
 A título de exemplo está apresentado na imagem abaixo o processo de listagem de contas no sub-menu Contabilidade > Plano multidimensional > Plano de Contas-SNC-AP.
 
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-b2ba79bf.png)
@@ -193,7 +193,7 @@ Este ecrã permite ao utilizador manipular as informações relacionadas com os 
 | Listagem de Códigos Postais | A listagem de códigos, números e localidades apresentada no ecrã, permite a manipulação da mesma. |
 | (Pesquisa) Código Postal | Este campo permite ao utilizador efetuar uma pesquisa de código postal através da introdução de um código numérico de quatro dígitos. Deve o utilizador após introduzir, pelo menos esta informação e carregar no botão Filtrar, para ter acesso à informação pretendida na listagem de códigos postais. Este campo pode ser utilizado em simultâneo com os restantes. |
 | (Pesquisa) Número Postal | Este campo permite ao utilizador efetuar uma pesquisa de código postal através da introdução de um código numérico de três dígitos. Deve o utilizador após introduzir, pelo menos esta informação e carregar no botão Filtrar, para ter acesso à informação pretendida na listagem de códigos postais. Este campo pode ser utilizado em simultâneo com os restantes. |
-| (Pesquisa) Localidade | Este campo permite ao utilizador efetuar uma pesquisa de código postal através da introdução da localidade. Deve o utilizador após introduzir, pelo menos esta informação e carregar no botão Filtrar, para ter acesso à informação pretendida na listagem de códigos postais. Este campo pode ser utilizado em simultâneo com os restantes. :<span style="color:#29615D">**NOTA**</span>: **A informação introduzida neste campo deve estar em letras maiúsculas.** |
+| (Pesquisa) Localidade | Este campo permite ao utilizador efetuar uma pesquisa de código postal através da introdução da localidade. Deve o utilizador após introduzir, pelo menos esta informação e carregar no botão Filtrar, para ter acesso à informação pretendida na listagem de códigos postais. Este campo pode ser utilizado em simultâneo com os restantes. <span style="color:#29615D">**NOTA**</span>: **A informação introduzida neste campo deve estar em letras maiúsculas.** |
 
 #### 1.2.2. Bancos
 
@@ -539,7 +539,7 @@ Este ecrã permite ao utilizador manipular as informações relacionadas com a G
 |:---|:---|
 | ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-43ff2890.png) | Ao carregar neste botão é aberto outro ecrã onde o utilizador pode inserir, alterar ou apagar dados relativos à entidade. Ver ecrã e conceitos por baixo das tabelas do ecrã atual. |
 
-</br>**Situação Contributiva**
+##### Situação Contributiva
 
 Ao carregar no botão Situação Contributiva, é aberto o seguinte ecrã:
 ![](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/mu_snc_ap-7ecf1980.png)
@@ -643,11 +643,11 @@ A gravação do CB abre novo ecrã, onde teremos um botão de ajuda no preenchim
 |Conta|Obrigatório|Seleção da conta ao classificador. ![img_62.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_62.png)|
 |Valor|Obrigatório|Montante do cabimento: ![img_62a.png](https://spmssicc.github.io/pages/markdown/mu_snc_ap.assets/img_62a.png)|
 
-__Existem dois métodos de Registo (método de classificador económico e método de conta patrimonial definido no menu de parametrização – Configuração__
+</br>__Existem dois métodos de Registo (método de classificador económico e método de conta patrimonial) definido no menu de parametrização – Configuração__
 
 O método apresentado é de conta patrimonial que deverá ser registado a contas da classe 3, 4, 5, 6. Automaticamente associa o classificador económico, sendo que este poderá ser alterado pelo utilizador. Relativamente à chave orçamental esta transparece automaticamente de acordo com a chave definida no menu parametrização configuração e que nesta fase também pode ser alterada.
 
-__Se existirem para a mesma conta ou classificador económico chaves orçamentais diferentes então devem ser criadas várias linhas com a mesma informação mas com chaves orçamentais diferentes.__
+</br>__Se existirem para a mesma conta ou classificador económico chaves orçamentais diferentes então devem ser criadas várias linhas com a mesma informação mas com chaves orçamentais diferentes.__
 
 O preenchimento final, é idêntico ao do ecrã abaixo. O próximo passo é o de gerar de forma automática os movimentos na contabilidade selecionando o botão "Gerar Contabilidade".
 
