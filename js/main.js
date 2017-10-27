@@ -157,7 +157,7 @@ function loadMdDoc(mdFile, btnsToShow, anchor, event) {
         loadToc($(html).filter('h2,h3,h4'), $('#tocDropdown'));
         toggle('toc',true); // hide table-of-contents
         addSharelinks(doc.name, doc.title);
-        imageZoom();
+        imagesZoomAndLegend(doc.name);
         showElements(btnsToShow);
 
         $("#btnEditarDoc, #btnHistory" ).off("click");
@@ -296,7 +296,7 @@ function disableDocOptions(mdFile){
     $("#btnEditarDoc").off("click");
     return;
   }
-  if ($.inArray(mdFile, ['apresentacao_snc_ap','perguntas_frequentes','snc_ap_faqs','cer_migracao_sicc','mu_snc_ap']) != -1) {
+  if ($.inArray(mdFile, ['apresentacao_snc_ap','perguntas_frequentes','snc_ap_faqs','mu_snc_ap']) != -1) {
     $("#btnPDF").addClass("disabled");
     $("#btnPDF").off("click");
     return;
@@ -308,12 +308,12 @@ function enableDocOptions() {
   $("#docOptions>div").on("click");
 }
 
-function imageZoom() {// Add zoom functionality to images in the HTML
+function imagesZoomAndLegend(docName) {// Add zoom functionality to images in the HTML
 	$('#documento img').each(function(i, img) {
     var img = $(img);
 		img.wrap("<a class='imagem' href='" +
     img.attr("src") +	"' onclick='return hs.expand(this)'></a>");
-    img.after("<p>Figura "+i+"</p>");
+    // if(docName != 'help'){img.after("<p>Figura "+(i+1)+"</p>");}
 	});
 } /*close zommClickImagem*/
 
@@ -701,6 +701,21 @@ function findInDocs(){
   } // else
   stopLoader();
 } // findInDocs()
+
+// document.documentElement.scrollTop >20
+
+window.onscroll = function(){scrollFunction();};
+
+function scrollFunction(){
+  if($(this).scrollTop()>30){
+    $("#btnUp").fadeIn();}
+  else {
+    $("#btnUp").fadeOut();}
+}
+
+function topFunction(){
+  window.scrollTo(0,0);
+}
 
 function startDictation() {
 
