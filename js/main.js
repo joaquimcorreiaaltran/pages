@@ -296,7 +296,7 @@ function disableDocOptions(mdFile){
     $("#btnEditarDoc").off("click");
     return;
   }
-  if ($.inArray(mdFile, ['apresentacao_snc_ap','perguntas_frequentes','snc_ap_faqs','cer_migracao_sicc','mu_snc_ap']) != -1) {
+  if ($.inArray(mdFile, ['apresentacao_snc_ap','perguntas_frequentes','snc_ap_faqs','mu_snc_ap']) != -1) {
     $("#btnPDF").addClass("disabled");
     $("#btnPDF").off("click");
     return;
